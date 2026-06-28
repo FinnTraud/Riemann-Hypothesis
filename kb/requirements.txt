@@ -1,0 +1,8 @@
+# Kern (CLI + Build + Graph): NUR Python-Stdlib — keine Installation nötig.
+#
+# Optional, nur für den MCP-Server (kb/server.py):
+mcp[cli]>=1.2.0
+#
+# Optional, für semantische Embeddings zusätzlich zu BM25 (zukünftige Aufwertung):
+# sentence-transformers>=2.2.0
+# numpy>=1.24
