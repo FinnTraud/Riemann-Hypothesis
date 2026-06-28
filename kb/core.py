@@ -200,3 +200,42 @@ def stats():
     K = kb()
     by_status = collections.Counter(n.get("status") for n in K["nodes"].values() if n.get("type") == "document")
     return {"meta": K["meta"], "documents_by_status": dict(by_status)}
+
+# ---------- Strukturiertes Denkprotokoll ----------
+def reasoning_scaffold(task=""):
+    """Gibt das 7-Schritte-Protokoll (docs/50) zurück, auf die Aufgabe zugeschnitten:
+    erzwingt Klassifikation, Annahmen, Status-Trennung, Obstruktions-Check, Experiment."""
+    t = (task or "").lower()
+    is_proof = any(w in t for w in ["beweis", "proof", "zeige", "prove", "folgt", "impl"])
+    steps = [
+        {"step": 1, "name": "Frage präzisieren",
+         "do": "Behauptung formal notieren (ζ, ξ, ρ=β+iγ). RH/GRH/Kriterium/Teilresultat?",
+         "tools": ["get_claim", "search"]},
+        {"step": 2, "name": "Leitmotiv klassifizieren",
+         "do": "Positivität(A)/Spektral(B)/Geometrie(C)? Verwandte Ansätze finden.",
+         "tools": ["graph_neighbors", "find_path"]},
+        {"step": 3, "name": "Annahmen explizit",
+         "do": "Voraussetzungen markieren; jede selbst auf Status prüfen.",
+         "tools": ["get_claim"]},
+        {"step": 4, "name": "Status trennen",
+         "do": "[BEWIESEN]/[OFFEN]/[EVIDENZ]/[HEURISTIK]. Widerlegtes nie als Baustein.",
+         "tools": ["list_by_status"]},
+        {"step": 5, "name": "Obstruktions-Check",
+         "do": "Euler-Produkt? Positivität bewiesen? Operator kanonisch? nur Numerik? Voronin?",
+         "tools": ["evaluate_proof_idea", "get_document(doc-35)", "get_document(doc-43)"]},
+        {"step": 6, "name": "Experiment/Verifikation",
+         "do": "Numerisch testen, falsifizierbar formulieren, ggf. Lean-formalisierbar.",
+         "tools": ["compute_first_zeros", "compute_li_coefficient", "compute_count_zeros", "plot_*"]},
+        {"step": 7, "name": "Ehrliches Fazit",
+         "do": "gesichert / offen / nächster prüfbarer Schritt. Keine Überverkäufe.",
+         "tools": []},
+    ]
+    note = ("BEWEIS-MODUS: Schritt 5 ist PFLICHT; ohne bestandenen Obstruktions-Check "
+            "nicht von 'Beweis' sprechen."
+            if is_proof else
+            "Analyse-Modus: dennoch Status sauber trennen und Tool-Belege liefern.")
+    return {"task": task, "protocol": steps, "mode_note": note,
+            "answer_template": ("FRAGE(formal) / KLASSE / ANNAHMEN[Status] / "
+                                "ANALYSE[BEWIESEN|OFFEN|EVIDENZ] / OBSTRUKTIONS-CHECK / "
+                                "EXPERIMENT / FAZIT"),
+            "see": "docs/50_reasoning_protocol.md"}

@@ -28,8 +28,20 @@ def main():
     cl = sub.add_parser("claim"); cl.add_argument("query")
     do = sub.add_parser("doc"); do.add_argument("node")
     ev = sub.add_parser("evaluate"); ev.add_argument("text")
+    sc = sub.add_parser("scaffold"); sc.add_argument("task", nargs="?", default="")
+    z = sub.add_parser("zero"); z.add_argument("n", type=int)
+    vr = sub.add_parser("verify"); vr.add_argument("start", type=int); vr.add_argument("end", type=int)
+    li = sub.add_parser("li"); li.add_argument("n", type=int)
     sub.add_parser("stats")
     a = p.parse_args()
+
+    if a.cmd in ("zero", "verify", "li"):
+        import compute
+        if a.cmd == "zero":   show(compute.nth_zero(a.n)); return
+        if a.cmd == "verify": show(compute.verify_rh_range(a.start, a.end)); return
+        if a.cmd == "li":     show(compute.li_coefficient(a.n)); return
+    if a.cmd == "scaffold":
+        show(core.reasoning_scaffold(a.task)); return
 
     if a.cmd == "search":      show(core.search(a.query, a.k, a.status, a.category))
     elif a.cmd == "neighbors": show(core.graph_neighbors(a.node, a.rel))

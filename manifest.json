@@ -2,7 +2,7 @@
   "name": "Riemann Hypothesis Knowledge Base",
   "version": "1.0",
   "updated": "2026-06",
-  "count": 50,
+  "count": 51,
   "documents": [
     {
       "number": "00",
@@ -780,6 +780,23 @@
       ],
       "file": "docs/49_live_analytic_frontier.md",
       "summary": "Dokumentiert die *lebendige* Front, an der tatsächlich unbedingte Fortschritte erzielt werden — jenseits des Guth–Maynard-Durchbruchs (Dok. 22). Für einen RH-Assistenten ist dies der „Newsfeed\": wo sich messbar etwas bewegt."
+    },
+    {
+      "number": "50",
+      "id": "doc-50",
+      "title": "Denkprotokoll: strukturiert-analytisches Arbeiten an der RH",
+      "category": "meta",
+      "status": "meta",
+      "tags": [
+        "reasoning",
+        "protocol",
+        "methodology",
+        "tool-forcing",
+        "verification",
+        "structured-thinking"
+      ],
+      "file": "docs/50_reasoning_protocol.md",
+      "summary": "Dieses Dokument zwingt den KI-Assistenten zu **strukturiertem, analytischem, verifizierbarem** Denken statt zu plausibel klingender Prosa. Es ist als System-Prompt-Grundlage und als Rückgabe des Tools `reasoning_scaffold` gedacht."
     }
   ]
 }
