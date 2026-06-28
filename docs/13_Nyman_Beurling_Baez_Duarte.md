@@ -23,6 +23,44 @@ Das Nyman–Beurling-Kriterium formuliert die RH als ein **Approximations-/Dicht
 - Numerisch: Partialsummen der Approximation konvergieren, aber **extrem langsam** — kein praktischer Beweisweg, und die nötige Dichte ist bis heute unbewiesen.
 - Verwandt mit dem Hilbertraum-Zugang von de Branges (Dok. 20) und der Weil-Positivität (Dok. 14).
 
+## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+
+### Die Funktionen und der Raum
+Sei {x} = x − ⌊x⌋ der Bruchteil, ρ(x) = {1/x} für x ∈ (0,1). Für θ ∈ (0,1) definiere die Dilatation
+```
+f_θ(x) = { θ/x } = ρ_θ(x),   x ∈ (0,1).
+```
+Sei 𝒩 = abgeschlossene lineare Hülle (in L²(0,1)) der { f_θ : 0 < θ < 1 }.
+
+### Nyman–Beurling-Satz (1955)
+```
+RH  ⟺  𝟙_{(0,1)} ∈ 𝒩      (die konstante Funktion 1 liegt im Abschluss von 𝒩)
+⟺  inf_{c_k, θ_k, N}  ‖ 1 − Σ_{k=1}^N c_k f_{θ_k} ‖_{L²(0,1)} = 0.
+```
+**Beweisidee:** Mellin-Transformation. Für g ∈ L²(0,1) ist Ĝ(s) = ∫_0^1 g(x) x^{s−1} dx. Die Dilatationen f_θ erzeugen via der Identität ∫_0^1 {θ/x} x^{s−1} dx = −(θ^s/s)·ζ(s)/(s−1)-artiger Faktoren einen Raum, dessen Orthogonalkomplement genau dann trivial ist, wenn ζ(s) keine Nullstellen mit Re(s) > 1/2 hat (Beurlings Theorem über invariante Teilräume / die Lage der Nullstellen von ζ als „innere Funktion").
+
+### Báez-Duarte-Verschärfung (2003)
+Beschränke θ auf die Kehrwerte ganzer Zahlen, θ = 1/k. Mit
+```
+A_N(x) = Σ_{k=1}^N c_k {k x}   (geeignete Koeffizienten c_k)
+```
+gilt:
+```
+RH  ⟺  d_N := inf_{c} ‖ 1 − Σ_{k=1}^N c_k ρ_{1/k} ‖²_{L²}  →  0   (N → ∞).
+```
+Báez-Duarte–Balazard–Landreau–Saias zeigten zudem die **quantitative** Vermutung:
+```
+d_N  ~  (Σ_ρ 1/|ρ|²) / log N   ≈  C / log N,
+```
+d. h. die Konvergenzrate ist (unter RH, mit einfachen Nullstellen) ∝ 1/log N — extrem langsam.
+
+### Distanz-Formel über die Nullstellen
+Die optimale Approximationsdistanz hat eine Darstellung über die nicht-trivialen Nullstellen:
+```
+liminf_{N→∞} (log N) · d_N  ≥  Σ_ρ m_ρ²/|ρ|²    (m_ρ = Vielfachheit),
+```
+was den direkten Bezug Distanz ↔ Nullstellenlage herstellt.
+
 ## Quellen
 - [A general strong Nyman-Beurling Criterion for the Riemann Hypothesis (arXiv math/0505453)](https://arxiv.org/pdf/math/0505453)
 - [New versions of the Nyman-Beurling criterion for the Riemann hypothesis — Báez-Duarte (Wiley)](https://onlinelibrary.wiley.com/doi/pdf/10.1155/S0161171202013248)

@@ -39,6 +39,41 @@ N(σ, T) = O_ε( T^{2(1−σ) + ε} )   für 1/2 ≤ σ ≤ 1
 - Dichteabschätzungen ersetzen die RH in vielen Anwendungen (Primzahlen in kurzen Intervallen, Primzahlen in arithmetischen Progressionen) — **unbedingt**, d. h. ohne RH anzunehmen.
 - Wichtigste *praktische* Front: Selbst ohne RH-Beweis liefern bessere Dichte-/Subkonvexitätsschranken konkrete zahlentheoretische Resultate.
 
+## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+
+### Der μ-Exponent
+Definiere μ(σ) = inf{ a ≥ 0 : ζ(σ + it) = O(|t|^a) }. Bekannt:
+- μ(σ) = 0 für σ > 1; μ(σ) = 1/2 − σ für σ < 0 (aus Funktionalgleichung + Stirling).
+- μ ist konvex und nicht-wachsend. Konvexitätsschranke (Phragmén–Lindelöf): μ(1/2) ≤ 1/4.
+
+### Lindelöf-Hypothese
+```
+LH:  μ(1/2) = 0,   d. h.  ζ(1/2 + it) = O(|t|^ε)  ∀ε > 0.
+```
+**Subkonvexitäts-Fortschritte (jeweils μ(1/2) ≤ …):** Weyl/Hardy–Littlewood 1/6 ≈ 0,1667; van der Corput; Titchmarsh; Huxley 32/205 ≈ 0,15610; **Bourgain (2017) 13/84 ≈ 0,15476**. Ziel 0.
+
+### Äquivalenz LH ⟺ Momentenwachstum
+```
+LH  ⟺  (1/T)∫_0^T |ζ(1/2+it)|^{2k} dt = O(T^ε)  für jedes feste k ≥ 1.
+```
+(vgl. Keating–Snaith (log T)^{k²}, Dok. 07 — verträglich, da T^ε jedes log-Potenzwachstum dominiert.)
+
+### Hierarchie und Implikationen
+```
+RH  ⟹  LH  ⟹  Dichte-Hypothese (DH).   (Rückrichtungen unbekannt.)
+```
+Beweis RH ⇒ LH: Unter RH gilt log|ζ(1/2+it)| ≤ (c log t)/log log t, also ζ(1/2+it) = O(exp(c log t/log log t)) = O(t^ε).
+
+### Dichte-Hypothese
+Mit N(σ,T) = #{ρ = β+iγ : β ≥ σ, 0 < γ ≤ T}:
+```
+DH:  N(σ, T) ≪_ε T^{2(1−σ) + ε}   für  1/2 ≤ σ ≤ 1.
+```
+Klassisch (Ingham 1940): N(σ,T) ≪ T^{3(1−σ)/(2−σ)+ε}. **Log-freie** Form: N(σ,T) ≪ A·T^{B(1−σ)}. Guth–Maynard (2024, Dok. 22) verbessern den Exponenten nahe σ = 3/4 (N(3/4,T) ≪ T^{13/25+o(1)} statt T^{3/5+o(1)}).
+
+### Warum DH praktisch reicht
+Für Primzahlen in kurzen Intervallen [x, x+x^θ] genügt eine hinreichend starke Dichteabschätzung (statt RH), um asymptotische Primzahlzählung zu sichern — Grund, warum Dichteresultate *unbedingte* zahlentheoretische Anwendungen haben.
+
 ## Quellen
 - [Lindelöf hypothesis — Wikipedia](https://en.wikipedia.org/wiki/Lindel%C3%B6f_hypothesis)
 - [An explicit log-free zero density estimate for the Riemann zeta-function (arXiv 2405.12545)](https://arxiv.org/pdf/2405.12545)

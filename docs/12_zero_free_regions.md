@@ -30,6 +30,43 @@ Statt die RH direkt zu beweisen, verfolgt ein Jahrhundert analytischer Arbeit da
 - **Fundamentale Schwäche:** Eine nullstellenfreie Region, so klein sie auch sein mag, hält Nullstellen nur von σ = 1 fern — sie *fixiert* sie nicht auf σ = 1/2. Damit prinzipiell schwächer als die RH.
 - Der Vinogradov–Korobov-Exponent (2/3) blieb ~70 Jahre der beste; jüngste Decoupling-basierte Arbeiten (vgl. Guth–Maynard, Dok. 22) beginnen, an Exponenten in verwandten Dichteabschätzungen zu rütteln.
 
+## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+
+### Das 3+4cos+cos2-Argument (de la Vallée Poussin)
+Grundlage ist die nicht-negative trigonometrische Identität
+```
+3 + 4 cos θ + cos 2θ = 2(1 + cos θ)² ≥ 0.
+```
+Angewandt auf Re(log ζ) = Σ_{p,k} (1/k) p^{−kσ} cos(kt log p) liefert für σ > 1:
+```
+3 log ζ(σ) + 4 Re log ζ(σ+it) + Re log ζ(σ+2it) ≥ 0
+⟺  ζ(σ)³ |ζ(σ+it)|⁴ |ζ(σ+2it)| ≥ 1.
+```
+Hätte ζ eine Nullstelle bei 1 + it₀, so würde die linke Seite beim Grenzübergang σ → 1⁺ gegen 0 gehen (Faktor |ζ(σ+it)|⁴ → 0 schneller als ζ(σ)³ → ∞ divergiert) — Widerspruch. ⇒ **ζ(1+it) ≠ 0** (Primzahlsatz). Quantifizierung des Arguments liefert die Region.
+
+### de la Vallée Poussin (1899) — quantitativ
+Mit Schranken |ζ'/ζ| ≪ log t in der Nähe von σ = 1 ergibt das obige Argument eine explizite Konstante c > 0 mit
+```
+ζ(σ + it) ≠ 0   für   σ > 1 − c/log|t|,   |t| ≥ 2.
+```
+
+### Vinogradov–Korobov (1958) — die Methode
+Schärfere Abschätzungen von **Exponentialsummen** Σ_{n≤N} n^{−it} = Σ e^{−it log n} (Vinogradovs Mittelwertsatz / Weyl-van-der-Corput) liefern die subkonvexe Schranke
+```
+ζ(σ + it) ≪ |t|^{B(1−σ)^{3/2}} (log|t|)^{2/3}
+```
+und damit die bislang beste asymptotische nullstellenfreie Region
+```
+ζ(σ+it) ≠ 0   für   σ ≥ 1 − c/( (log|t|)^{2/3} (log log|t|)^{1/3} ).
+```
+
+### Konsequenz für den Primzahlsatz (Fehlerterm)
+Eine Region σ > 1 − η(t) liefert via Konturverschiebung (Dok. 02)
+```
+ψ(x) − x ≪ x · exp( −c (log x)^{3/5} (log log x)^{−1/5} )   (Vinogradov–Korobov-Fehlerterm).
+```
+Unter RH wäre der Fehler O(√x log²x) — exponentiell besser. Das illustriert: nullstellenfreie Region ⇒ Fehlerterm, aber strikt schwächer als RH.
+
 ## Quellen
 - [Zero-free regions for the Riemann zeta function (arXiv 1910.08205)](https://arxiv.org/pdf/1910.08205)
 - [Explicit bounds on ζ(s) in the critical strip and a zero-free region (arXiv 2301.03165)](https://arxiv.org/pdf/2301.03165)
