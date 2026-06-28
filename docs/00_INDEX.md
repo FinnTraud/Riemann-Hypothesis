@@ -60,6 +60,17 @@
 - `31_Deninger_cohomology_foliated_dynamical.md` — Deningers Kohomologie-Programm & dynamische Systeme auf gefolierten Räumen
 - `32_Landau_Siegel_zeros_Zhang.md` — Landau–Siegel-(Ausnahme-)Nullstellen & Yitang Zhang (2022)
 - `33_statistical_mechanics_Lee_Yang.md` — Statistische Mechanik & Lee–Yang-Analogie (Newman)
+- `34_Bost_Connes_system.md` — Bost–Connes-Quantenstatistik (ζ als Zustandssumme)
+
+### M. Meta / „Bulletproof"-Schicht (Obstruktionen, Synthese, Verifikation)
+- `35_obstructions_barriers.md` — **Warum naive Ansätze scheitern MÜSSEN** (Davenport–Heilbronn, Parität, Mertens/Skewes-Warnungen) + Anti-Crackpot-Checkliste
+- `36_consequences_of_RH.md` — Was aus der RH folgt (Primzahlen, Miller–Rabin, Klassenzahlen …)
+- `37_formalization_lean_proof_assistants.md` — Lean/mathlib-Formalisierung als Verifikations-Gateway
+- `38_Bombieri_official_problem_statement.md` — Offizielle Clay-Problemstellung (autoritative Referenz)
+- `39_Cramer_probabilistic_model.md` — Cramér-Modell & probabilistische Heuristiken (inkl. Maier-Warnung)
+- `40_glossary_notation.md` — Glossar & Notation (verbessert Retrieval)
+- `41_synthesis_what_a_proof_needs.md` — **Synthese: Querschnittsmotive & notwendige Bedingungen für einen gültigen Beweis**
+- `42_timeline_and_reading_list.md` — Zeittafel & kanonische Leseliste (Titchmarsh, Iwaniec–Kowalski, Conrey, AIM, LMFDB)
 
 ## Übergeordnete Übersichtsdatei
 Die Datei `../Riemann_Hypothesis_Proof_Approaches.md` (eine Ebene höher) enthält die zusammenfassende Gesamtübersicht aller Ansätze in einem Dokument.
