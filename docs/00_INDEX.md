@@ -54,5 +54,12 @@
 ### K. KI-Kontext
 - `28_AI_and_RH.md` — KI/Machine Learning und die Riemann-Vermutung (Studienarbeits-Kontext)
 
+### L. Weitere aktive Lösungsprogramme (potenziell beweisrelevant)
+- `29_Jensen_Polya_Laguerre_Polya_GORZ.md` — Jensen–Pólya-Programm, Laguerre–Pólya-Klasse, Griffin–Ono–Rolen–Zagier (2019)
+- `30_F1_field_one_element_arithmetic_site.md` — Körper mit einem Element 𝔽₁, Connes–Consani arithmetic site
+- `31_Deninger_cohomology_foliated_dynamical.md` — Deningers Kohomologie-Programm & dynamische Systeme auf gefolierten Räumen
+- `32_Landau_Siegel_zeros_Zhang.md` — Landau–Siegel-(Ausnahme-)Nullstellen & Yitang Zhang (2022)
+- `33_statistical_mechanics_Lee_Yang.md` — Statistische Mechanik & Lee–Yang-Analogie (Newman)
+
 ## Übergeordnete Übersichtsdatei
 Die Datei `../Riemann_Hypothesis_Proof_Approaches.md` (eine Ebene höher) enthält die zusammenfassende Gesamtübersicht aller Ansätze in einem Dokument.
