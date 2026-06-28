@@ -5,8 +5,14 @@ Alle Funktionen geben JSON-fähige Dicts zurück. Hohe Präzision via mpmath.
 Wichtig (Ehrlichkeit): Numerik ist EVIDENZ, kein Beweis (siehe docs/35).
 """
 import mpmath as mp
+from functools import lru_cache
 
 mp.mp.dps = 30  # Dezimalstellen Präzision
+
+@lru_cache(maxsize=20000)
+def _zero(n):
+    """Gecachte n-te Nullstelle (mpmath.zetazero) — beschleunigt λ_n, ψ(x), Plots stark."""
+    return mp.zetazero(n)
 
 def _c(z):
     """komplexe mpmath-Zahl -> [re, im] als float."""
@@ -26,7 +32,7 @@ def hardy_Z(t):
 
 def nth_zero(n):
     """n-te nicht-triviale Nullstelle ρ=1/2+iγ (mpmath.zetazero)."""
-    rho = mp.zetazero(n)
+    rho = _zero(n)
     gamma = float(mp.im(rho))
     re = float(mp.re(rho))
     return {"n": n, "rho": _c(rho), "gamma": gamma, "re": re,
@@ -36,7 +42,7 @@ def first_zeros(count=10):
     """Die ersten `count` nicht-trivialen Nullstellen (γ-Werte)."""
     out = []
     for n in range(1, count + 1):
-        rho = mp.zetazero(n)
+        rho = _zero(n)
         out.append({"n": n, "gamma": float(mp.im(rho)), "re": float(mp.re(rho))})
     return {"count": count, "zeros": out,
             "all_on_line": all(abs(z["re"] - 0.5) < 1e-12 for z in out)}
@@ -47,7 +53,7 @@ def verify_rh_range(n_start=1, n_end=50):
     max_dev = 0.0
     worst = None
     for n in range(n_start, n_end + 1):
-        rho = mp.zetazero(n)
+        rho = _zero(n)
         dev = abs(float(mp.re(rho)) - 0.5)
         if dev > max_dev:
             max_dev, worst = dev, n
@@ -62,7 +68,7 @@ def count_zeros(T):
     # exakt zählen, bis γ>T
     n = 0
     while True:
-        g = float(mp.im(mp.zetazero(n + 1)))
+        g = float(mp.im(_zero(n + 1)))
         if g > T:
             break
         n += 1
@@ -81,7 +87,7 @@ def li_coefficient(n, num_zeros=2000):
                 "formula": "1 + γ/2 − ½·log(4π)", "nonneg": float(val) >= 0}
     total = mp.mpf(0)
     for k in range(1, num_zeros + 1):
-        rho = mp.zetazero(k)
+        rho = _zero(k)
         for r in (rho, mp.conj(rho)):
             total += 1 - (1 - 1 / r) ** n
     val = mp.re(total)
@@ -96,14 +102,11 @@ def psi_explicit(x, num_zeros=200):
     x = mp.mpf(x)
     approx = x - mp.log(2 * mp.pi) - mp.mpf("0.5") * mp.log(1 - x ** -2)
     for k in range(1, num_zeros + 1):
-        rho = mp.zetazero(k)
+        rho = _zero(k)
         for r in (rho, mp.conj(rho)):
             approx -= x ** r / r
-    # echtes psi(x)
-    import sympy  # nur falls vorhanden; sonst überspringen
-    real = None
+    # echtes psi(x) = Σ_{n≤x} Λ(n)  (reine Python-Siebung, keine Extra-Abhängigkeit)
     try:
-        import sympy
         real = float(sum(float(mp.log(p)) for p in _prime_powers(int(x))))
     except Exception:
         real = None

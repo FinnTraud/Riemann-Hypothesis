@@ -139,5 +139,63 @@ if _NUM:
         """Plot N(T) exakt vs. glatte Näherung. PNG-Pfad."""
         return {"path": _vz.plot_counting_N(T)}
 
+    @mcp.tool()
+    def plot_pair_correlation(num_zeros: int = 300) -> dict:
+        """Nullstellenabstände vs. GUE-Vorhersage (Random-Matrix-Evidenz, docs/06). PNG-Pfad."""
+        return {"path": _vz.plot_pair_correlation(num_zeros)}
+
+    @mcp.tool()
+    def plot_li_coefficients(n_max: int = 12) -> dict:
+        """λ_n für n=1..n_max (RH ⟺ alle ≥0, docs/14). PNG-Pfad."""
+        return {"path": _vz.plot_li_coefficients(n_max)}
+
+    @mcp.tool()
+    def plot_psi_convergence(x: float = 30.0, max_zeros: int = 150) -> dict:
+        """Konvergenz der expliziten ψ(x)-Formel mit Zahl der Nullstellen (docs/02). PNG-Pfad."""
+        return {"path": _vz.plot_psi_convergence(x, max_zeros)}
+
+# ---------------- Experiment-Logbuch ----------------
+try:
+    import experiment as _ex
+    _LOG = True
+except Exception:
+    _LOG = False
+
+if _LOG:
+    @mcp.tool()
+    def log_experiment(hypothesis: str, method: str, params: dict,
+                       result: dict, conclusion: str = "", tags: list = None) -> dict:
+        """Speichert ein Experiment reproduzierbar (JSON+Markdown) für die Zusammenarbeit."""
+        return _ex.log_experiment(hypothesis, method, params, result, conclusion, tags)
+
+    @mcp.tool()
+    def list_experiments() -> dict:
+        """Listet alle protokollierten Experimente."""
+        return _ex.list_experiments()
+
+    @mcp.tool()
+    def get_experiment(experiment_id: str) -> dict:
+        """Holt ein Experiment per ID."""
+        return _ex.get_experiment(experiment_id)
+
+# ---------------- Formale Verifikation (Lean) ----------------
+try:
+    import formal as _fm
+    _FORMAL = True
+except Exception:
+    _FORMAL = False
+
+if _FORMAL:
+    @mcp.tool()
+    def formal_statement() -> dict:
+        """Formale RH-Aussage in Lean 4/mathlib + Setup-Anleitung (docs/37)."""
+        return _fm.formal_statement()
+
+    @mcp.tool()
+    def lean_check(code: str) -> dict:
+        """Prüft Lean-Code maschinell, FALLS eine Lean-Toolchain installiert ist (sonst ehrliche
+        Statusmeldung). Die einzige Schicht ohne Halluzinationsrisiko."""
+        return _fm.lean_check(code)
+
 if __name__ == "__main__":
     mcp.run()

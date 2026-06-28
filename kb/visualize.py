@@ -67,6 +67,56 @@ def plot_zeta_abs_strip(t0=0.0, t1=50.0, sig0=0.0, sig1=1.0, res=200, name="zeta
     fig.colorbar(im, ax=ax, label="log|ζ|")
     return _save(fig, name)
 
+def plot_pair_correlation(num_zeros=300, name="pair_correlation.png"):
+    """Nächste-Nachbar-Abstände der Nullstellen (normiert) vs. GUE-Vorhersage (docs/06)."""
+    gammas = [float(mp.im(mp.zetazero(k))) for k in range(1, num_zeros+1)]
+    # lokale Normierung mit mittlerer Dichte log(γ/2π)/2π
+    spac = []
+    for i in range(1, len(gammas)):
+        g = gammas[i]
+        dens = float(mp.log(g/(2*mp.pi))/(2*mp.pi))
+        spac.append((gammas[i]-gammas[i-1])*dens)
+    s = np.array(spac)
+    fig, ax = plt.subplots(figsize=(9, 5))
+    ax.hist(s, bins=30, density=True, alpha=0.6, label="Nullstellen (normiert)")
+    xs = np.linspace(0, 3, 200)
+    # Wigner-Surmise (GUE-Näherung)
+    gue = (32/np.pi**2)*xs**2*np.exp(-4*xs**2/np.pi)
+    ax.plot(xs, gue, "r-", lw=2, label="GUE (Wigner-Surmise)")
+    poisson = np.exp(-xs)
+    ax.plot(xs, poisson, "g--", lw=1.2, label="Poisson (unkorreliert)")
+    ax.set_xlabel("normierter Abstand s"); ax.set_ylabel("p(s)")
+    ax.set_title(f"Nullstellenabstände vs. GUE ({num_zeros} Nullstellen)")
+    ax.legend()
+    return _save(fig, name)
+
+def plot_li_coefficients(n_max=20, name="li_coefficients.png"):
+    """λ_n für n=1..n_max (RH ⟺ alle λ_n≥0, docs/14). Näherung via Nullstellensumme."""
+    import compute
+    ns = list(range(1, n_max+1))
+    vals = [compute.li_coefficient(n, num_zeros=800)["lambda"] for n in ns]
+    fig, ax = plt.subplots(figsize=(9, 5))
+    ax.axhline(0, color="black", lw=0.8)
+    ax.bar(ns, vals, color=["C0" if v>=0 else "red" for v in vals])
+    ax.set_xlabel("n"); ax.set_ylabel("λ_n")
+    ax.set_title("Li-Koeffizienten λ_n (RH ⟺ alle ≥ 0)")
+    return _save(fig, name)
+
+def plot_psi_convergence(x=30.0, max_zeros=200, name="psi_convergence.png"):
+    """ψ(x)-Näherung (explizite Formel) gegen Zahl der genutzten Nullstellen (docs/02)."""
+    import compute
+    xs_n = list(range(5, max_zeros+1, 5))
+    approx = [compute.psi_explicit(x, m)["psi_explicit_approx"] for m in xs_n]
+    true = compute.psi_explicit(x, 5).get("psi_true")
+    fig, ax = plt.subplots(figsize=(9, 5))
+    ax.plot(xs_n, approx, "o-", ms=3, label="ψ(x) explizite Formel")
+    if true is not None:
+        ax.axhline(true, color="red", ls="--", label=f"echtes ψ({x:g})={true:.3f}")
+    ax.set_xlabel("Anzahl genutzter Nullstellen"); ax.set_ylabel(f"ψ({x:g})")
+    ax.set_title("Konvergenz der expliziten Formel (Nullstellen steuern Primzahlen)")
+    ax.legend()
+    return _save(fig, name)
+
 def plot_counting_N(T=100.0, name="counting_N.png"):
     """N(T) exakt (Treppe) vs. glatte Riemann-von-Mangoldt-Näherung."""
     gammas = []
