@@ -1,3 +1,14 @@
+---
+id: doc-16
+number: 16
+title: "Mertens-Funktion & Riesz-Kriterium (Möbius-basierte Kriterien)"
+category: criterion
+status: open
+tags: [mertens, mobius, riesz, mertens-conjecture-refuted]
+source_file: 16_Mertens_function_Riesz_criterion.md
+lang: de
+---
+
 # Mertens-Funktion & Riesz-Kriterium (Möbius-basierte Kriterien)
 
 **Kategorie:** Äquivalentes Kriterium (Möbius-/Summatorik)

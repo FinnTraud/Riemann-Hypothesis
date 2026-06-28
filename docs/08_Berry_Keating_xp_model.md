@@ -1,3 +1,14 @@
+---
+id: doc-08
+number: 08
+title: "Berry–Keating H = xp Modell (Quantenchaos-Ansatz)"
+category: spectral
+status: open
+tags: [berry-keating, xp-model, quantum-chaos, semiclassical]
+source_file: 08_Berry_Keating_xp_model.md
+lang: de
+---
+
 # Berry–Keating H = xp Modell (Quantenchaos-Ansatz)
 
 **Kategorie:** Spektraler Ansatz / Quantenphysik

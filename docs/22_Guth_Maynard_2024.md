@@ -1,3 +1,14 @@
+---
+id: doc-22
+number: 22
+title: "Guth–Maynard (2024): Durchbruch bei Nullstellendichte-Abschätzungen"
+category: breakthrough
+status: proven
+tags: [guth-maynard, zero-density, decoupling, dirichlet-polynomials, 2024]
+source_file: 22_Guth_Maynard_2024.md
+lang: de
+---
+
 # Guth–Maynard (2024): Durchbruch bei Nullstellendichte-Abschätzungen
 
 **Kategorie:** Aktueller Durchbruch (unbedingt, kein RH-Beweis)

@@ -1,3 +1,14 @@
+---
+id: doc-24
+number: 24
+title: "Numerische Verifikation der Riemann-Vermutung"
+category: numerical
+status: reference
+tags: [computation, odlyzko, platt, zetagrid, turing-method, verification]
+source_file: 24_computational_verification.md
+lang: de
+---
+
 # Numerische Verifikation der Riemann-Vermutung
 
 **Kategorie:** Numerische Evidenz

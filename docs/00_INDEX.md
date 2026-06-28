@@ -1,3 +1,14 @@
+---
+id: doc-00
+number: 00
+title: "Riemann Hypothesis — Dokumenten-Index (RAG Knowledge Base)"
+category: index
+status: reference
+tags: [index, overview]
+source_file: 00_INDEX.md
+lang: de
+---
+
 # Riemann Hypothesis — Dokumenten-Index (RAG Knowledge Base)
 
 > Diese Wissensbasis enthält je ein eigenständiges Dokument pro Paper, Beweisansatz, Kriterium, gescheitertem Beweis oder Meilenstein rund um die Riemann-Vermutung (Riemann Hypothesis, RH). Jede Datei ist als unabhängig abrufbarer Chunk für Vektordatenbank / RAG konzipiert: einheitliche Struktur (Metadaten → Zusammenfassung → Kernidee → Status → Bedeutung → Quellen). Stand: Juni 2026.
@@ -71,6 +82,16 @@
 - `40_glossary_notation.md` — Glossar & Notation (verbessert Retrieval)
 - `41_synthesis_what_a_proof_needs.md` — **Synthese: Querschnittsmotive & notwendige Bedingungen für einen gültigen Beweis**
 - `42_timeline_and_reading_list.md` — Zeittafel & kanonische Leseliste (Titchmarsh, Iwaniec–Kowalski, Conrey, AIM, LMFDB)
+- `43_Epstein_zeta_Selberg_class_rigidity.md` — **Epstein-Zeta & Selberg-Klassen-Rigidität: welche Eigenschaft die Gerade erzwingt** (Tier-1-Obstruktion)
+- `44_Lapidus_fractal_strings_spectral_operator.md` — Lapidus: fraktale Saiten, inverses Spektralproblem (D=1/2), Spektraloperator
+- `45_further_equivalent_criteria.md` — Volchkov, Sekatskii, Redheffer-Matrix, Salem, BBLS-quantitativ
+- `46_Voronin_universality.md` — Voronin-Universalität (Meta-Obstruktion gegen „weiche" Beweise)
+- `47_physics_layer_primon_gas_quantum_graphs.md` — Primon-Gas, Schumayer–Hutchinson, Sierra Rindler–Dirac, Quantengraphen
+- `48_Meyer_Kurokawa_algebraic_programs.md` — Meyer (Distributionen), Kurokawa (absolute Zeta)
+- `49_live_analytic_frontier.md` — Live-Front 2019–2026: explizite/log-freie Dichte, Tao-Programm, Nelson-Subkonvexität, Harper-Momente
+
+## Quellen-Verifikation / Recherche
+Diese Wissensbasis wurde durch einen 5-Schritt-Recherche-Agenten auf Vollständigkeit geprüft (Stand Juni 2026); die Dokumente 43–49 schließen die dabei identifizierten Lücken. Hinweise zur Nutzung im Vektor-/MCP-Server: siehe `README_RAG.md`.
 
 ## Übergeordnete Übersichtsdatei
 Die Datei `../Riemann_Hypothesis_Proof_Approaches.md` (eine Ebene höher) enthält die zusammenfassende Gesamtübersicht aller Ansätze in einem Dokument.

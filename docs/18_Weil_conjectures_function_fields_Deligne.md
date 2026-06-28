@@ -1,3 +1,14 @@
+---
+id: doc-18
+number: 18
+title: "Weil-Vermutungen: RH über endlichen Körpern (Deligne) — BEWIESEN"
+category: proven-analogue
+status: proven
+tags: [weil-conjectures, deligne, function-fields, finite-fields, etale-cohomology]
+source_file: 18_Weil_conjectures_function_fields_Deligne.md
+lang: de
+---
+
 # Weil-Vermutungen: RH über endlichen Körpern (Deligne) — BEWIESEN
 
 **Kategorie:** Bewiesenes Analogon (algebraisch/geometrisch)

@@ -1,3 +1,14 @@
+---
+id: doc-13
+number: 13
+title: "Nyman–Beurling-Kriterium & Báez-Duarte-Verschärfung"
+category: criterion
+status: open
+tags: [nyman-beurling, baez-duarte, density, hilbert-space]
+source_file: 13_Nyman_Beurling_Baez_Duarte.md
+lang: de
+---
+
 # Nyman–Beurling-Kriterium & Báez-Duarte-Verschärfung
 
 **Kategorie:** Äquivalentes Kriterium (funktionalanalytisch)

@@ -1,3 +1,14 @@
+---
+id: doc-02
+number: 02
+title: "Riemann–von-Mangoldt-Formel und die explizite Formel"
+category: foundations
+status: reference
+tags: [explicit-formula, von-mangoldt, counting-function, prime-counting]
+source_file: 02_Riemann_von_Mangoldt_formula_explicit_formula.md
+lang: de
+---
+
 # Riemann–von-Mangoldt-Formel und die explizite Formel
 
 **Kategorie:** Fundament

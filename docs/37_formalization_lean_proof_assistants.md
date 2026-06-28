@@ -1,3 +1,14 @@
+---
+id: doc-37
+number: 37
+title: "Formalisierung: Lean, mathlib & Proof Assistants (Verifikations-Infrastruktur)"
+category: verification
+status: reference
+tags: [lean, mathlib, formalization, proof-assistant, prime-number-theorem]
+source_file: 37_formalization_lean_proof_assistants.md
+lang: de
+---
+
 # Formalisierung: Lean, mathlib & Proof Assistants (Verifikations-Infrastruktur)
 
 **Kategorie:** Infrastruktur / Verifikation (nicht Lösungsansatz, aber „bulletproof"-relevant)

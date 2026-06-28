@@ -1,3 +1,14 @@
+---
+id: doc-17
+number: 17
+title: "Lindelöf-Hypothese & Dichte-Hypothese"
+category: analytic
+status: open
+tags: [lindelof, density-hypothesis, subconvexity, mu-exponent]
+source_file: 17_Lindelof_density_hypothesis.md
+lang: de
+---
+
 # Lindelöf-Hypothese & Dichte-Hypothese
 
 **Kategorie:** Schwächere Konsequenzen / verwandte Hypothesen

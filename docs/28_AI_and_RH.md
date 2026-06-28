@@ -1,3 +1,14 @@
+---
+id: doc-28
+number: 28
+title: "KI / Machine Learning und die Riemann-Vermutung"
+category: ai-context
+status: meta
+tags: [AI, machine-learning, LLM, formal-verification, hallucination]
+source_file: 28_AI_and_RH.md
+lang: de
+---
+
 # KI / Machine Learning und die Riemann-Vermutung
 
 **Kategorie:** KI-Kontext / Methodenkritik

@@ -1,3 +1,14 @@
+---
+id: doc-03
+number: 03
+title: "Hardy (1914): Unendlich viele Nullstellen auf der kritischen Geraden"
+category: partial-results
+status: proven
+tags: [hardy, critical-line, Z-function, theta-function]
+source_file: 03_Hardy_1914_infinitely_many_zeros.md
+lang: de
+---
+
 # Hardy (1914): Unendlich viele Nullstellen auf der kritischen Geraden
 
 **Kategorie:** Partielles Resultat

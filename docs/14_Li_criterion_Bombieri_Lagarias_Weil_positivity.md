@@ -1,3 +1,14 @@
+---
+id: doc-14
+number: 14
+title: "Li-Kriterium, Bombieri–Lagarias & Weil-Positivität"
+category: criterion
+status: open
+tags: [li-criterion, bombieri-lagarias, weil-positivity, positivity]
+source_file: 14_Li_criterion_Bombieri_Lagarias_Weil_positivity.md
+lang: de
+---
+
 # Li-Kriterium, Bombieri–Lagarias & Weil-Positivität
 
 **Kategorie:** Äquivalentes Kriterium (Positivität)

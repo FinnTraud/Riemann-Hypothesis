@@ -1,3 +1,14 @@
+---
+id: doc-34
+number: 34
+title: "Bost–Connes-System (Quantenstatistik mit ζ als Zustandssumme)"
+category: spectral
+status: proven
+tags: [bost-connes, KMS-states, phase-transition, partition-function, quantum-statistical]
+source_file: 34_Bost_Connes_system.md
+lang: de
+---
+
 # Bost–Connes-System (Quantenstatistik mit ζ als Zustandssumme)
 
 **Kategorie:** Spektraler/algebraischer Ansatz (Quantenstatistische Mechanik)

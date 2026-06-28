@@ -1,3 +1,14 @@
+---
+id: doc-05
+number: 05
+title: "Die Hilbert–Pólya-Vermutung (spektraler Ansatz)"
+category: spectral
+status: open
+tags: [hilbert-polya, self-adjoint-operator, spectral]
+source_file: 05_Hilbert_Polya_conjecture.md
+lang: de
+---
+
 # Die Hilbert–Pólya-Vermutung (spektraler Ansatz)
 
 **Kategorie:** Spektraler Ansatz (Dachprogramm)

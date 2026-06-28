@@ -1,3 +1,14 @@
+---
+id: doc-31
+number: 31
+title: "Deningers Kohomologie-Programm & dynamische Systeme auf gefolierten Räumen"
+category: solution-program
+status: open
+tags: [deninger, cohomology, foliated-spaces, dynamical-systems, regularized-determinant]
+source_file: 31_Deninger_cohomology_foliated_dynamical.md
+lang: de
+---
+
 # Deningers Kohomologie-Programm & dynamische Systeme auf gefolierten Räumen
 
 **Kategorie:** Aktives Lösungsprogramm (arithmetische Geometrie / Dynamik)

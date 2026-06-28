@@ -1,3 +1,14 @@
+---
+id: doc-35
+number: 35
+title: "Obstruktionen & Barrieren: Warum naive Ansätze scheitern MÜSSEN"
+category: obstruction
+status: meta
+tags: [obstructions, davenport-heilbronn, parity-problem, mertens-warning, skewes, checklist]
+source_file: 35_obstructions_barriers.md
+lang: de
+---
+
 # Obstruktionen & Barrieren: Warum naive Ansätze scheitern MÜSSEN
 
 **Kategorie:** Meta / Negativresultate (entscheidend für „bulletproof")

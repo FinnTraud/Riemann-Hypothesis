@@ -1,3 +1,14 @@
+---
+id: doc-06
+number: 06
+title: "Montgomery-Paarkorrelation & Random-Matrix-Theorie (GUE)"
+category: spectral
+status: open
+tags: [montgomery, pair-correlation, GUE, random-matrix, odlyzko]
+source_file: 06_Montgomery_pair_correlation_RMT.md
+lang: de
+---
+
 # Montgomery-Paarkorrelation & Random-Matrix-Theorie (GUE)
 
 **Kategorie:** Spektraler Ansatz / statistische Evidenz

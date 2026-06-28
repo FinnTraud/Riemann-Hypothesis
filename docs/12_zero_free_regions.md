@@ -1,3 +1,14 @@
+---
+id: doc-12
+number: 12
+title: "Nullstellenfreie Regionen (klassischer analytischer Ansatz)"
+category: analytic
+status: open
+tags: [zero-free-region, vinogradov-korobov, de-la-vallee-poussin, prime-number-theorem]
+source_file: 12_zero_free_regions.md
+lang: de
+---
+
 # Nullstellenfreie Regionen (klassischer analytischer Ansatz)
 
 **Kategorie:** Analytischer Ansatz

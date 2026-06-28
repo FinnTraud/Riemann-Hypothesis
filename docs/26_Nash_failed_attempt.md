@@ -1,3 +1,14 @@
+---
+id: doc-26
+number: 26
+title: "John Nash (1959): gescheiterter Versuch"
+category: failed-proof
+status: refuted
+tags: [nash, historical, failed]
+source_file: 26_Nash_failed_attempt.md
+lang: de
+---
+
 # John Nash (1959): gescheiterter Versuch
 
 **Kategorie:** Gescheiterter Versuch (historisch)

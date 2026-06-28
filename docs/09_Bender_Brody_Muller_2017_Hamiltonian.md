@@ -1,3 +1,14 @@
+---
+id: doc-09
+number: 09
+title: "Bender–Brody–Müller (2017): PT-symmetrischer Hamiltonian für die Riemann-Nullstellen"
+category: spectral
+status: open
+tags: [bender-brody-muller, PT-symmetry, hamiltonian]
+source_file: 09_Bender_Brody_Muller_2017_Hamiltonian.md
+lang: de
+---
+
 # Bender–Brody–Müller (2017): PT-symmetrischer Hamiltonian für die Riemann-Nullstellen
 
 **Kategorie:** Spektraler Ansatz / Quantenphysik

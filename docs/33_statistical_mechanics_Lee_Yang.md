@@ -1,3 +1,14 @@
+---
+id: doc-33
+number: 33
+title: "Statistische Mechanik & Lee–Yang-Analogie (Newman)"
+category: solution-program
+status: open
+tags: [statistical-mechanics, lee-yang, newman, polya, heat-flow]
+source_file: 33_statistical_mechanics_Lee_Yang.md
+lang: de
+---
+
 # Statistische Mechanik & Lee–Yang-Analogie (Newman)
 
 **Kategorie:** Lösungsrelevante Analogie (mathematische Physik)

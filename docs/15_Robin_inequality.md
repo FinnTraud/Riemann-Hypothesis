@@ -1,3 +1,14 @@
+---
+id: doc-15
+number: 15
+title: "Robins Ungleichung & Lagarias' elementares Kriterium (arithmetische Kriterien)"
+category: criterion
+status: open
+tags: [robin, lagarias, divisor-function, elementary]
+source_file: 15_Robin_inequality.md
+lang: de
+---
+
 # Robins Ungleichung & Lagarias' elementares Kriterium (arithmetische Kriterien)
 
 **Kategorie:** Äquivalentes Kriterium (arithmetisch/elementar)

@@ -1,3 +1,14 @@
+---
+id: doc-10
+number: 10
+title: "Alain Connes: Spurformel & nichtkommutative Geometrie"
+category: spectral
+status: open
+tags: [connes, noncommutative-geometry, trace-formula, adele, weil-positivity]
+source_file: 10_Connes_noncommutative_geometry.md
+lang: de
+---
+
 # Alain Connes: Spurformel & nichtkommutative Geometrie
 
 **Kategorie:** Spektraler Ansatz / nichtkommutative Geometrie

@@ -1,3 +1,14 @@
+---
+id: doc-30
+number: 30
+title: "Der Körper mit einem Element (𝔽₁) & Connes–Consani arithmetic site"
+category: solution-program
+status: open
+tags: [field-one-element, F1, connes-consani, arithmetic-site, bost-connes]
+source_file: 30_F1_field_one_element_arithmetic_site.md
+lang: de
+---
+
 # Der Körper mit einem Element (𝔽₁) & Connes–Consani arithmetic site
 
 **Kategorie:** Aktives Lösungsprogramm (arithmetische Geometrie)

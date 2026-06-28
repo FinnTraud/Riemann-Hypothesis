@@ -1,3 +1,14 @@
+---
+id: doc-40
+number: 40
+title: "Glossar & Notation (Begriffe, Symbole, Definitionen)"
+category: glossary
+status: reference
+tags: [glossary, notation, definitions]
+source_file: 40_glossary_notation.md
+lang: de
+---
+
 # Glossar & Notation (Begriffe, Symbole, Definitionen)
 
 **Kategorie:** Referenz (verbessert RAG-Retrieval bei Begriffsfragen)

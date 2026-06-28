@@ -1,3 +1,14 @@
+---
+id: doc-19
+number: 19
+title: "Selberg-Spurformel & Selberg-Zetafunktion (RH-Analogon BEWIESEN)"
+category: proven-analogue
+status: proven
+tags: [selberg, trace-formula, selberg-zeta, laplacian, geodesics]
+source_file: 19_Selberg_trace_formula_zeta.md
+lang: de
+---
+
 # Selberg-Spurformel & Selberg-Zetafunktion (RH-Analogon BEWIESEN)
 
 **Kategorie:** Bewiesenes Analogon (spektral/geometrisch)

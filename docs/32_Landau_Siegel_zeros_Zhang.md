@@ -1,3 +1,14 @@
+---
+id: doc-32
+number: 32
+title: "Landau–Siegel-Nullstellen (Ausnahme-Nullstellen) & Yitang Zhang (2022)"
+category: solution-program
+status: open
+tags: [landau-siegel, exceptional-zeros, yitang-zhang, GRH, 2022]
+source_file: 32_Landau_Siegel_zeros_Zhang.md
+lang: de
+---
+
 # Landau–Siegel-Nullstellen (Ausnahme-Nullstellen) & Yitang Zhang (2022)
 
 **Kategorie:** RH-nahes Lösungsfeld (Ausnahme-Nullstellen / GRH)

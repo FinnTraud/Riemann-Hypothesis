@@ -1,3 +1,14 @@
+---
+id: doc-36
+number: 36
+title: "Konsequenzen der Riemann-Vermutung (was folgt, wenn sie wahr ist)"
+category: context
+status: reference
+tags: [consequences, prime-gaps, miller-rabin, class-numbers, GRH-applications]
+source_file: 36_consequences_of_RH.md
+lang: de
+---
+
 # Konsequenzen der Riemann-Vermutung (was folgt, wenn sie wahr ist)
 
 **Kategorie:** Kontext / Implikationen

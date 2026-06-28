@@ -1,3 +1,14 @@
+---
+id: doc-38
+number: 38
+title: "Bombieris offizielle Clay-Problemstellung (Millennium-Problem)"
+category: reference
+status: reference
+tags: [bombieri, clay, millennium-problem, official-statement]
+source_file: 38_Bombieri_official_problem_statement.md
+lang: de
+---
+
 # Bombieris offizielle Clay-Problemstellung (Millennium-Problem)
 
 **Kategorie:** Referenz / autoritative Problemstellung

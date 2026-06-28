@@ -1,3 +1,14 @@
+---
+id: doc-25
+number: 25
+title: "Michael Atiyah (2018): gescheiterter Beweisversuch (Todd-Funktion)"
+category: failed-proof
+status: refuted
+tags: [atiyah, todd-function, fine-structure-constant, 2018, failed]
+source_file: 25_Atiyah_2018_failed_proof.md
+lang: de
+---
+
 # Michael Atiyah (2018): gescheiterter Beweisversuch (Todd-Funktion)
 
 **Kategorie:** Gescheiterter / umstrittener Beweis

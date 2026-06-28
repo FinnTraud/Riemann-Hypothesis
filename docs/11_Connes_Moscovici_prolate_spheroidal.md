@@ -1,3 +1,14 @@
+---
+id: doc-11
+number: 11
+title: "Connes–Moscovici: Prolate-Spheroidal-Operator und Zeta (2021–2022)"
+category: spectral
+status: open
+tags: [connes-moscovici, prolate-spheroidal, operator]
+source_file: 11_Connes_Moscovici_prolate_spheroidal.md
+lang: de
+---
+
 # Connes–Moscovici: Prolate-Spheroidal-Operator und Zeta (2021–2022)
 
 **Kategorie:** Spektraler Ansatz / nichtkommutative Geometrie (jüngste Entwicklung)

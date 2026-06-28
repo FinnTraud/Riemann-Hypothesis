@@ -1,3 +1,14 @@
+---
+id: doc-42
+number: 42
+title: "Zeittafel & kanonische Leseliste"
+category: reference
+status: reference
+tags: [timeline, chronology, reading-list, bibliography]
+source_file: 42_timeline_and_reading_list.md
+lang: de
+---
+
 # Zeittafel & kanonische Leseliste
 
 **Kategorie:** Referenz (historischer Anker + Primärquellen)

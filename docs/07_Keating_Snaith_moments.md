@@ -1,3 +1,14 @@
+---
+id: doc-07
+number: 07
+title: "Keating–Snaith: Momente der Zetafunktion via charakteristische Polynome (CUE)"
+category: spectral
+status: open
+tags: [keating-snaith, moments, CUE, random-matrix, barnes-G]
+source_file: 07_Keating_Snaith_moments.md
+lang: de
+---
+
 # Keating–Snaith: Momente der Zetafunktion via charakteristische Polynome (CUE)
 
 **Kategorie:** Spektraler Ansatz / Random-Matrix-Theorie

@@ -1,3 +1,14 @@
+---
+id: doc-20
+number: 20
+title: "Louis de Branges: Hilberträume ganzer Funktionen (mehrfach gescheiterte Beweise)"
+category: analytic
+status: refuted
+tags: [de-branges, hilbert-spaces-entire-functions, conrey-li, failed]
+source_file: 20_de_Branges_Hilbert_spaces.md
+lang: de
+---
+
 # Louis de Branges: Hilberträume ganzer Funktionen (mehrfach gescheiterte Beweise)
 
 **Kategorie:** Analytischer Ansatz / prominenter gescheiterter Beweis

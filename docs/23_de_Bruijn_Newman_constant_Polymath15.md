@@ -1,3 +1,14 @@
+---
+id: doc-23
+number: 23
+title: "De-Bruijn–Newman-Konstante: Rodgers–Tao & Polymath15"
+category: breakthrough
+status: open
+tags: [de-bruijn-newman, rodgers-tao, polymath15, lehmer-pairs]
+source_file: 23_de_Bruijn_Newman_constant_Polymath15.md
+lang: de
+---
+
 # De-Bruijn–Newman-Konstante: Rodgers–Tao & Polymath15
 
 **Kategorie:** Aktueller Fortschritt (RH "auf der Kippe")

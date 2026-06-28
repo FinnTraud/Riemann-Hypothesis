@@ -1,3 +1,14 @@
+---
+id: doc-39
+number: 39
+title: "Cramér-Modell & probabilistische Heuristiken der Primzahlen"
+category: heuristic
+status: open
+tags: [cramer-model, probabilistic, prime-gaps, maier-theorem]
+source_file: 39_Cramer_probabilistic_model.md
+lang: de
+---
+
 # Cramér-Modell & probabilistische Heuristiken der Primzahlen
 
 **Kategorie:** Heuristik / probabilistisches Modell

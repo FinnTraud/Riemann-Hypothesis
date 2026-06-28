@@ -1,3 +1,14 @@
+---
+id: doc-27
+number: 27
+title: "Weitere umstrittene, zurückgezogene & fehlerhafte Beweisbehauptungen"
+category: failed-proof
+status: refuted
+tags: [disputed-proofs, retracted, error-patterns, crackpot]
+source_file: 27_other_disputed_claimed_proofs.md
+lang: de
+---
+
 # Weitere umstrittene, zurückgezogene & fehlerhafte Beweisbehauptungen
 
 **Kategorie:** Gescheiterte / umstrittene Beweise (Sammeldokument)

@@ -1,3 +1,14 @@
+---
+id: doc-04
+number: 04
+title: "Levinson, Conrey & Co.: Positiver Anteil der Nullstellen auf der kritischen Geraden"
+category: partial-results
+status: proven
+tags: [levinson, conrey, mollifier, positive-proportion, speiser]
+source_file: 04_Levinson_Conrey_positive_proportion.md
+lang: de
+---
+
 # Levinson, Conrey & Co.: Positiver Anteil der Nullstellen auf der kritischen Geraden
 
 **Kategorie:** Partielles Resultat

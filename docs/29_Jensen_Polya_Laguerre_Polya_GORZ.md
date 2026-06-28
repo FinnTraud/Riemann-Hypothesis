@@ -1,3 +1,14 @@
+---
+id: doc-29
+number: 29
+title: "Jensen–Pólya-Programm: Laguerre–Pólya-Klasse & Jensen-Polynome (Griffin–Ono–Rolen–Zagier 2019)"
+category: solution-program
+status: open
+tags: [jensen-polya, laguerre-polya, griffin-ono-rolen-zagier, turan-inequalities, hyperbolicity]
+source_file: 29_Jensen_Polya_Laguerre_Polya_GORZ.md
+lang: de
+---
+
 # Jensen–Pólya-Programm: Laguerre–Pólya-Klasse & Jensen-Polynome (Griffin–Ono–Rolen–Zagier 2019)
 
 **Kategorie:** Aktiver Lösungsansatz (äquivalente Reformulierung + Fortschritt)

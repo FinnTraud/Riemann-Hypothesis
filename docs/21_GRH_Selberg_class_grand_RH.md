@@ -1,3 +1,14 @@
+---
+id: doc-21
+number: 21
+title: "Verallgemeinerte, Große Riemann-Vermutung & Selberg-Klasse"
+category: generalization
+status: open
+tags: [GRH, selberg-class, grand-RH, automorphic-L-functions, langlands]
+source_file: 21_GRH_Selberg_class_grand_RH.md
+lang: de
+---
+
 # Verallgemeinerte, Große Riemann-Vermutung & Selberg-Klasse
 
 **Kategorie:** Verallgemeinerungen

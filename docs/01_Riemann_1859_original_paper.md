@@ -1,3 +1,14 @@
+---
+id: doc-01
+number: 01
+title: "Riemanns Originalarbeit (1859) und die Riemann-Siegel-Formel"
+category: foundations
+status: reference
+tags: [zeta, functional-equation, euler-product, riemann-siegel, xi-function]
+source_file: 01_Riemann_1859_original_paper.md
+lang: de
+---
+
 # Riemanns Originalarbeit (1859) und die Riemann-Siegel-Formel
 
 **Kategorie:** Fundament

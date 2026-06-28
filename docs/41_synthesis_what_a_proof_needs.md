@@ -1,3 +1,14 @@
+---
+id: doc-41
+number: 41
+title: "Synthese: Querschnittsthemen & was ein erfolgreicher Beweis leisten muss"
+category: synthesis
+status: meta
+tags: [synthesis, positivity, spectral, geometry, necessary-conditions, evaluation]
+source_file: 41_synthesis_what_a_proof_needs.md
+lang: de
+---
+
 # Synthese: Querschnittsthemen & was ein erfolgreicher Beweis leisten muss
 
 **Kategorie:** Meta / Synthese (Kern-Dokument für „bulletproof")
