@@ -30,6 +30,43 @@ Die **Selberg-Spurformel** (1956) verknüpft auf einer hyperbolischen Riemannsch
 - Stärkt die Plausibilität des spektralen Ansatzes erheblich.
 - **Einschränkung:** Die hyperbolische Geometrie ist *gegeben*; für ζ fehlt das entsprechende geometrische Objekt — der Operator ist nicht bekannt.
 
+## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+
+### Setting
+Sei Γ \ ℍ eine kompakte hyperbolische Fläche (Γ ⊂ PSL₂(ℝ) diskret, kokompakt), Δ der Laplace–Beltrami-Operator. Eigenwerte 0 = λ_0 < λ_1 ≤ λ_2 ≤ …, schreibe λ_n = 1/4 + r_n² (also r_n = √(λ_n − 1/4)).
+
+### Selberg-Zetafunktion
+Produkt über primitive geschlossene Geodäten γ₀ mit Länge ℓ(γ₀):
+```
+Z(s) = ∏_{γ₀ primitiv} ∏_{k=0}^∞ ( 1 − e^{−(s+k) ℓ(γ₀)} ),   Re(s) > 1.
+```
+(Längen ℓ(γ₀) ↔ log p; die geschlossenen Geodäten ↔ Primzahlen.)
+
+### Funktionalgleichung & Nullstellen
+Z(s) erfüllt eine Funktionalgleichung Z(s) = Z(1−s)·(explizit) und hat:
+- „triviale" Nullstellen bei s = −k (k ≥ 0) und
+- **nicht-triviale Nullstellen bei s = 1/2 ± i r_n** (aus den Laplace-Eigenwerten).
+
+### Das bewiesene RH-Analogon
+Da Δ **selbstadjungiert positiv** ist, sind die λ_n ≥ 0 reell. Für λ_n ≥ 1/4 ist r_n ∈ ℝ, also liegen die nicht-trivialen Nullstellen 1/2 ± i r_n **exakt auf Re(s) = 1/2**. (Endlich viele „kleine" Eigenwerte 0 ≤ λ_n < 1/4 geben Ausnahme-Nullstellen auf dem reellen Segment — das exakte Analogon möglicher Siegel-Nullstellen, Dok. 32.) ⇒ RH-Analogon bewiesen, weil der Operator selbstadjungiert ist.
+
+### Selberg-Spurformel
+Für eine geeignete Testfunktion h (gerade, holomorph im Streifen) mit Fourier-Transformierter g:
+```
+Σ_{n=0}^∞ h(r_n)  =  (Area/4π) ∫_{−∞}^∞ h(r) r tanh(π r) dr  +  Σ_{γ₀} Σ_{k=1}^∞  (ℓ(γ₀) g(k ℓ(γ₀))) / (2 sinh(k ℓ(γ₀)/2)).
+```
+- **Linke (spektrale) Seite:** Summe über Laplace-Eigenwerte ↔ in der Riemann-Welt Summe über Nullstellen γ.
+- **Rechte (geometrische) Seite:** Identitätsterm (Fläche) + Summe über Geodäten-Längen ↔ in der Riemann-Welt Σ Λ(n)/√n g(log n).
+
+### Wörterbuch zur expliziten Formel (Dok. 02)
+| Selberg-Spurformel | Weils explizite Formel |
+|---|---|
+| Σ_n h(r_n) | Σ_ρ h(γ) |
+| (Area/4π)∫ h(r) r tanh(πr) dr | archimedischer Γ'/Γ-Term |
+| Σ_{γ₀,k} ℓ g(kℓ)/(2 sinh(kℓ/2)) | Σ_n Λ(n) n^{−1/2} g(log n) |
+
+**Kernbotschaft:** In der Selberg-Welt *existiert* der selbstadjungierte Operator (Δ) und liefert das RH-Analogon umsonst. Das ist die Blaupause, die Connes (Dok. 10) und Deninger (Dok. 31) für ζ zu realisieren suchen.
+
 ## Quellen
 - [Selberg trace formula — Wikipedia](https://en.wikipedia.org/wiki/Selberg_trace_formula)
 - [The Selberg trace formula and the Riemann zeta function — Hejhal (Experts@Minnesota)](https://experts.umn.edu/en/publications/the-selberg-trace-formula-and-the-riemann-zeta-function)

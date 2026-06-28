@@ -27,6 +27,43 @@ Weil formulierte (modelliert nach Riemann) drei Vermutungen, die nacheinander be
 - **Schlüsselzutat Positivität:** Sowohl Weils als auch Delignes Zugang beruhen auf Positivitäts-/Schnittargumenten — das spiegelt sich in der Weil-Positivität der klassischen RH (Dok. 14).
 - **Wichtige Einschränkung:** Über ℤ fehlt bislang die analoge geometrische/kohomologische Struktur — der Transfer ist *die* offene Aufgabe.
 
+## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+
+### Kongruenz-Zetafunktion einer Kurve über 𝔽_q
+Für eine glatte projektive Kurve C/𝔽_q vom Geschlecht g sei N_m = #C(𝔽_{q^m}). Definiere
+```
+Z(C, t) = exp( Σ_{m=1}^∞ N_m t^m / m )   =   ∏_{x abgeschlossener Punkt} (1 − t^{deg x})^{−1}.
+```
+Das Produkt über Punkte ist das exakte Analogon des Eulerprodukts (Punkte ↔ Primzahlen). Mit t = q^{−s} entsteht ζ_C(s) = Z(C, q^{−s}).
+
+### Rationalität & Funktionalgleichung (Dwork, Weil)
+```
+Z(C, t) = P(t) / ((1 − t)(1 − q t)),   P(t) = ∏_{i=1}^{2g} (1 − α_i t) ∈ ℤ[t], deg P = 2g.
+```
+Funktionalgleichung: Z(C, 1/(qt)) = q^{1−g} t^{2−2g} Z(C, t), äquivalent α_i ↦ q/α_i als Permutation der Wurzeln.
+
+### Das RH-Analogon (Weil 1948 für Kurven, Deligne 1974 allgemein)
+```
+|α_i| = q^{1/2}   für alle i = 1, …, 2g.
+```
+Übersetzt via t = q^{−s}: die Nullstellen von ζ_C(s) (Nullstellen von P(q^{−s})) erfüllen q^{−s} = 1/α_i, also q^{s} = α_i, |α_i| = q^{1/2} ⟺ **Re(s) = 1/2**. Exaktes Analogon der RH. Daraus die scharfe Punktschätzung:
+```
+| N_m − (q^m + 1) | ≤ 2g · q^{m/2}    (Hasse–Weil-Schranke).
+```
+
+### Weils Beweis (Positivität / Schnitttheorie)
+Auf der Fläche C × C betrachtet man den Frobenius-Graphen Γ_F und die Diagonale Δ. Die **Hodge-Index-Ungleichung** (Positivität der Schnittform auf Divisoren) liefert für die Frobenius-Korrespondenz die Cauchy–Schwarz-artige Abschätzung, die |α_i| = √q erzwingt. Kern: positive Definitheit von ⟨D, D⟩ auf der primitiven Kohomologie/Néron–Severi-Gruppe.
+
+### Delignes Beweis (étale Kohomologie)
+Die α_i sind die Eigenwerte des **geometrischen Frobenius** F* auf H¹_{ét}(C̄, ℚ_ℓ):
+```
+P(t) = det( 1 − t F* | H¹_{ét} ),   Z(C,t) = ∏_{i=0}^{2} det(1 − tF*|H^i)^{(−1)^{i+1}}.
+```
+Deligne (Weil I, 1974) beweist |α_i| = q^{w/2} (w = Gewicht) für allgemeine Varietäten via Monodromie von Lefschetz-Büscheln, Rankin–Selberg-artige Potenzierungstricks und L-Funktionen von Symmetrieprodukten — ohne die Standardvermutungen.
+
+### Warum kein Transfer auf ℤ
+Es fehlt für Spec(ℤ) das „×_{𝔽₁} "-Produkt, die Frobenius-Wirkung und die passende Kohomologie (vgl. 𝔽₁ Dok. 30, Deninger Dok. 31). Die Positivität (Weil) bzw. Reinheit (Deligne) hat über ℤ kein bekanntes Analogon.
+
 ## Quellen
 - [The Riemann Hypothesis over Finite Fields: From Weil to the Present Day (arXiv 1509.00797)](https://arxiv.org/abs/1509.00797)
 - [The Riemann Hypothesis over Finite Fields — J. Milne](https://www.jmilne.org/math/xnotes/pRH.html)

@@ -23,6 +23,34 @@ Louis de Branges (berühmt für seinen *korrekten* Beweis der Bieberbach-Vermutu
 - Die zugrunde liegende **Theorie der Hilberträume ganzer Funktionen** ist eigenständig wertvoll und korrekt; nur die *Anwendung* auf die RH gelang nicht.
 - Verwandt mit anderen Positivitäts-/Hilbertraum-Kriterien (Nyman–Beurling Dok. 13, Weil-Positivität Dok. 14).
 
+## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+
+### de-Branges-Räume H(E)
+Ausgangspunkt ist eine **Hermite–Biehler-Funktion** E(z): ganz, mit |E(z̄)| < |E(z)| für Im(z) > 0 (alle Nullstellen in der unteren Halbebene). Der zugehörige Raum:
+```
+H(E) = { f ganz : ‖f‖² = ∫_{−∞}^∞ |f(x)/E(x)|² dx < ∞,  und f/E, f*/E ∈ H²(obere Halbebene) }
+```
+H(E) ist ein **reproduzierender Kern-Hilbertraum** mit Kern
+```
+K(w, z) = ( E(z) E*(w̄) − E*(z) E(w̄) ) / ( 2πi (w̄ − z) ).
+```
+
+### Struktursatz & Schrumpfungsbedingung
+De Branges' Strukturtheorie ordnet einer Kette ineinander geschachtelter Räume H(E_a) eine **Phasenfunktion** φ(x) zu (E(x) = |E(x)| e^{−iφ(x)}), mit φ'(x) > 0. Die Zugehörigkeit von Funktionen zu solchen Ketten wird durch Monotonie-/Positivitätsbedingungen geregelt.
+
+### Anwendung auf ζ: die ξ-Funktion als E
+Man möchte E so wählen, dass die zur ξ-Funktion gehörige Struktur entsteht. Schreibe ξ(1/2 + iz) als Funktion mit reellen Nullstellen (genau dann, wenn RH gilt). De Branges' **Positivitätskriterium** (vereinfacht): Wenn für die zugehörige Gewichtsfunktion W(z) (analytisch, nullstellenfrei in einer Halbebene) gilt
+```
+(de-Branges-Bedingung)   ∫ |f(x)|² / W(x) dx ≥ 0  bzw. die Phasen-Monotonie  φ'(x) ≥ 0
+```
+für alle f des Raumes, dann liegen die Nullstellen von ξ auf der reellen Achse ⇒ RH.
+
+### Warum es für ζ scheitert — Conrey–Li (2000)
+Conrey und Li zeigten **konkret**, dass die von de Branges geforderte Positivitäts-/Strukturbedingung für die Euler-ζ-Funktion **verletzt** ist: Sie konstruierten explizite Gegenbeispiele zu den hinreichenden Bedingungen, indem sie zeigten, dass eine gewisse, von de Branges als positiv-definit angenommene Funktion (im Zusammenhang mit der ζ zugeordneten E) bei numerischer/analytischer Prüfung **negative** Werte annimmt. Damit ist der Ansatz in der vorgeschlagenen Form nicht auf ζ anwendbar — die wiederholten Beweisversuche (2004–2017) umgehen diese Obstruktion nicht.
+
+### Bezug zu anderen Positivitätskriterien
+Die de-Branges-Bedingung ist eng verwandt mit Weil-Positivität (Dok. 14) und Nyman–Beurling (Dok. 13) — alle verlangen die Positivität einer quadratischen Form / Reellwurzeligkeit; alle stoßen an dieselbe ungelöste Kernhürde.
+
 ## Quellen
 - [The Riemann hypothesis for Hilbert spaces of entire functions — de Branges (Purdue)](https://www.math.purdue.edu/~branges/riemann-hilbert.pdf)
 - [A Proof of the Riemann Hypothesis — de Branges (2017 draft, Purdue)](https://www.math.purdue.edu/~branges/proof-riemann-2017-04.pdf)

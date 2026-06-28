@@ -30,6 +30,48 @@ Die Riemann-Vermutung ist der Spezialfall einer ganzen Hierarchie von Vermutunge
 - Random-Matrix-Statistik (Katz–Sarnak) sagt für *Familien* von L-Funktionen unterschiedliche Symmetrietypen (unitär, symplektisch, orthogonal) voraus — starke struktur­übergreifende Evidenz.
 - Praktisch: Viele zahlentheoretische/algorithmische Resultate hängen an GRH, nicht nur an der klassischen RH.
 
+## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+
+### Dirichlet-L-Funktionen (GRH)
+Für einen Dirichlet-Charakter χ mod q:
+```
+L(s, χ) = Σ_{n=1}^∞ χ(n)/n^s = ∏_p (1 − χ(p) p^{−s})^{−1}   (Re s > 1).
+```
+**GRH:** Alle nicht-trivialen Nullstellen von L(s,χ) (für jedes primitive χ) haben Re(s) = 1/2.
+
+### Axiome der Selberg-Klasse 𝒮
+Eine Dirichlet-Reihe F(s) = Σ a_n n^{−s} gehört zu 𝒮, falls:
+1. **Ramanujan-Bedingung:** a_n ≪_ε n^ε.
+2. **Analytische Fortsetzung:** (s−1)^m F(s) ganz für ein m ≥ 0.
+3. **Funktionalgleichung:** Φ(s) = Q^s ∏_j Γ(λ_j s + μ_j) F(s) erfüllt Φ(s) = ω Φ̄(1 − s̄), |ω| = 1.
+4. **Euler-Produkt:** log F(s) = Σ_n b_n n^{−s} mit b_n = 0 außer für Primzahlpotenzen, b_n ≪ n^θ (θ < 1/2).
+Definierende Invarianten: **Grad** d_F = 2 Σ_j λ_j (vermutet stets ∈ ℤ_{≥0}); Beispiele: ζ (Grad 1), L(s,χ) (Grad 1), automorphe L (Grad n).
+
+### RH für die Selberg-Klasse
+```
+Für alle F ∈ 𝒮 liegen alle nicht-trivialen Nullstellen auf Re(s) = 1/2.
+```
+
+### Automorphe L-Funktionen (Große RH)
+Für eine automorphe Darstellung π von GL_n(𝔸_ℚ):
+```
+L(s, π) = ∏_p ∏_{i=1}^n (1 − α_{i,p} p^{−s})^{−1}.
+```
+**Große RH:** alle nicht-trivialen Nullstellen von L(s,π) auf Re(s) = 1/2 (für alle π).
+
+### Strukturhierarchie & offene Identität
+```
+{Dirichlet/Hecke-L} ⊂ {automorphe L-Funktionen} ⊆? Selberg-Klasse 𝒮.
+```
+Vermutung (Teil des Langlands-Programms): 𝒮 = {automorphe L-Funktionen}. Bekannt: Elemente von 𝒮 vom Grad 0 sind konstant 1; Grad zwischen 0 und 1 existiert nicht (Conrey–Ghosh / Kaczorowski–Perelli-Klassifikation der niedrigen Grade).
+
+### Katz–Sarnak-Symmetrietypen (Random-Matrix, Dok. 06/07)
+Familien von L-Funktionen zeigen je nach Symmetrie verschiedene Niedrig-Nullstellen-Statistiken:
+```
+unitär (U)  →  ζ, Dirichlet-L;   symplektisch (USp)  →  quadratische L;   orthogonal (O)  →  elliptische Kurven-L.
+```
+Diese strukturübergreifende Universalität ist starke Evidenz für die Große RH.
+
 ## Quellen
 - [Generalized Riemann hypothesis — Wikipedia](https://en.wikipedia.org/wiki/Generalized_Riemann_hypothesis)
 - [Grand Riemann hypothesis — Wikipedia](https://en.wikipedia.org/wiki/Grand_Riemann_hypothesis)
