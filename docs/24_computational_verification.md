@@ -32,6 +32,44 @@ Seit den ersten Handrechnungen (Riemann, Gram, Backlund, Hutchinson) wurde die R
 - **Prinzipielle Grenze:** Numerik kann die RH niemals beweisen (unendlich viele Nullstellen). Die Mertens-Vermutung mahnt: bei ~10^30 hätte numerische Evidenz in die Irre geführt.
 - Wichtig für die kritische Einordnung datengetriebener / KI-gestützter "Bestätigungen" der RH (Dok. 28).
 
+## Mathematischer Kern (Formeln, Verfahren, Rechnungen)
+
+### Riemann-Siegel-Formel (Auswertung auf der Geraden)
+```
+Z(t) = 2 Σ_{n=1}^{N} n^{−1/2} cos(θ(t) − t log n) + R(t),   N = ⌊√(t/2π)⌋,
+θ(t) = (t/2) log(t/2π) − t/2 − π/8 + 1/(48t) + 7/(5760 t³) + …
+R(t) = (−1)^{N−1} (2π/t)^{1/4} [ Ψ(p) + Korrekturen ],  p = √(t/2π) − N,  Ψ(p)=cos(2π(p²−p−1/16))/cos(2πp).
+```
+Aufwand O(√t) pro Auswertung (statt O(t)). Vorzeichenwechsel von Z lokalisieren Nullstellen.
+
+### Turing-Methode (Vollständigkeitsnachweis)
+Man zählt die gefundenen Vorzeichenwechsel von Z auf [0,T] und vergleicht mit
+```
+N(T) = θ(T)/π + 1 + S(T),   S(T) = (1/π) arg ζ(1/2 + iT).
+```
+Turing zeigte: ∫_{T}^{T'} S(t) dt ist klein und beschränkt, sodass aus
+```
+| (gefundene Anzahl) − θ(T)/π − 1 | < (Turing-Schranke)
+```
+folgt, dass *alle* Nullstellen bis T gefunden wurden — und alle auf der Geraden liegen. Wenn die gezählten Geraden-Nullstellen = N(T), ist RH bis Höhe T verifiziert.
+
+### Gram-Punkte
+Gram-Punkte g_n: θ(g_n) = nπ. „Gramsche Gesetzmäßigkeit": meist liegt genau eine Nullstelle zwischen aufeinanderfolgenden Gram-Punkten ((−1)^n Z(g_n) > 0). Ausnahmen (Gram-Punkt-Versagen) werden mit der Turing-Methode aufgefangen.
+
+### Odlyzko–Schönhage-Algorithmus
+Beschleunigt die *gleichzeitige* Auswertung von ζ(1/2 + it) an vielen Punkten t durch schnelle Mehrpunkt-Auswertung der Dirichlet-Summe (FFT-artige Bandbegrenzung / Taylor-Entwicklung von Σ n^{−it}). Amortisierte Kosten O(t^{1/2+o(1)}) für ~t^{1/2} nahe beieinanderliegende Werte ⇒ Massenberechnung sehr hoher Nullstellen.
+
+### Rigorose Verifikation (Intervallarithmetik, Platt)
+Statt Gleitkomma nutzt Platt **Intervallarithmetik** mit garantierten Fehlerschranken und eine rigorose Version der Turing-Methode. Verifiziert: RH gilt rigoros für alle Nullstellen mit 0 < Im < ~3,06·10^{10}. Grundlage u. a. für Helfgotts Beweis der ternären Goldbach-Vermutung.
+
+### Status der Rechnungen
+| Schranke | Methode |
+|---|---|
+| 10^{13} Nullstellen (Gourdon–Demichel 2004) | Odlyzko–Schönhage, Gleitkomma |
+| ~9·10^{11} (ZetaGrid) | verteilt, van-de-Lune-Software |
+| rigoros bis Höhe 3,06·10^{10} (Platt) | Intervallarithmetik |
+Alle gefundenen Nullstellen: einfach und exakt auf Re(s) = 1/2.
+
 ## Quellen
 - [Andrew Odlyzko: Papers & tables on Zeros of the Riemann Zeta Function](https://www-users.cse.umn.edu/~odlyzko/doc/zeta.html)
 - [ZetaGrid — Wikipedia](https://en.wikipedia.org/wiki/ZetaGrid)

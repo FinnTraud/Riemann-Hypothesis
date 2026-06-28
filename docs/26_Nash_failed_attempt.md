@@ -21,6 +21,21 @@ John Nash (Nobelpreis Wirtschaft 1994 für Spieltheorie, Abel-Preis 2015 für ni
 ## Hinweis
 Diese Episode ist gut dokumentiert (Biografie *A Beautiful Mind* von Sylvia Nasar; PBS-Dokumentation *A Brilliant Madness*). Sie betrifft Nashs *Versuch*, nicht ein publiziertes fehlerhaftes Paper — im Unterschied etwa zu Atiyah (Dok. 25) oder den arXiv-Behauptungen (Dok. 27).
 
+## Mathematischer Kontext (was überliefert ist)
+
+### Kein verwertbarer mathematischer Inhalt
+Nash hinterließ zur RH **keine** ausgearbeitete Methode, kein Manuskript mit prüfbaren Formeln und keinen Beweisansatz, der in die Fachliteratur eingegangen wäre. Der Columbia-Vortrag (~1959) war inhaltlich inkohärent; Zeugen (u. a. die spätere Schilderung in Nasars Biografie) berichten von zusammenhanglosen Aussagen ohne mathematischen Faden.
+
+### Spätere relevante Mathematik (Kontext, nicht RH-Beweis)
+Nashs *tatsächliche* mathematische Größe lag andernorts und ist wohldefiniert:
+- **Nash-Einbettungssatz** (jede Riemannsche Mannigfaltigkeit lässt sich isometrisch in einen ℝ^N einbetten),
+- **Nash–Moser-Iteration** und Regularität von Lösungen elliptischer/parabolischer PDE (De Giorgi–Nash–Moser-Theorem) — dafür 2015 der Abel-Preis,
+- **Nash-Gleichgewicht** (Nobelpreis Wirtschaft 1994).
+Diese Werkzeuge haben *keinen* etablierten Bezug zur RH; es gibt keine „Nash-Methode" für die Zetafunktion.
+
+### Einordnung
+Historisch/biografisch bedeutsam als Mahnung über die Schwere des Problems; mathematisch trägt die Episode nichts zur Lösung bei. Im Unterschied zu Atiyah (Dok. 25, konkrete falsche Konstruktion) oder den arXiv-Behauptungen (Dok. 27, prüfbare fehlerhafte Argumente) gibt es bei Nash schlicht keinen zu analysierenden Beweistext.
+
 ## Quellen
 - [A Brilliant Madness — PBS American Experience](https://www.pbs.org/wgbh/americanexperience/films/nash/)
 - [John Nash and his Experiences with Schizophrenia](https://lmclark7.com/john-nash-documentary/)

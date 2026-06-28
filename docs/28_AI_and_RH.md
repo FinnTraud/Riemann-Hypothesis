@@ -34,6 +34,29 @@ Moderne KI- und Machine-Learning-Methoden (Klassifikatoren, neuronale Netze, LLM
 - Sinnvolle Rollen: Generierung von Vermutungen, Lokalisierung vielversprechender Strukturen, formale Verifikation menschlicher Beweise, numerische Großrechnungen.
 - Offene Frage (Tao): Ob KI je einen RH-Beweis "ohne Verständnis" liefern könnte — und ob ein solcher von der Community als Erkenntnis akzeptiert würde.
 
+## Mathematischer/Methodischer Kern (woran KI arbeitet, formal)
+
+### Was die ML-Modelle konkret als Daten nutzen
+- **Normierte Nullstellenabstände** δ_n = (γ_{n+1} − γ_n)·(1/2π)log(γ_n/2π) (vgl. Dok. 06): Eingabe für Klassifikatoren, die GUE- vs. Nicht-GUE-Statistik unterscheiden.
+- **Werte von Z(t)** / ζ(1/2+it) (Dok. 03/24) als Zeitreihe: Mustererkennung für Vorzeichenwechsel.
+- **Li-Koeffizienten λ_n** / Turán-Ausdrücke (Dok. 14/29): Positivitäts-Checks als Features.
+
+### Formales Lernproblem (Beispiel Klassifikation)
+Trainiere f_θ: (Feature-Vektor aus {γ_n}) → {„on-line", „off-line"}. Befund (MDPI 2025): diskriminative Signale treten **nur** entlang Re=1/2 stabil auf; Kontradiktions-Tests finden kein Off-Line-Muster. **Aber:** Das ist Induktion über endliche Stichproben — kein Allquantor-Beweis ∀ρ.
+
+### Warum KI hier prinzipiell an eine Wand stößt
+- **Endlichkeit:** Jedes ML-Modell sieht endlich viele Nullstellen; die RH ist eine Aussage über ∞ viele. Die widerlegte Mertens-Vermutung (Dok. 16) zeigt formal: M(x)/√x < 1 gilt bis ~10^{14}, ist aber falsch (Odlyzko–te Riele: limsup > 1,06). Ein Klassifikator hätte „Mertens wahr" gelernt.
+- **Halluzination bei LLM:** Ein generativer „Beweis" ist ein Sample aus p_θ(Text); Korrektheit ist *nicht* Teil der Zielfunktion. Daher Trend zu **formaler Verifikation** (Lean/mathlib, Coq): Dort wird jeder Schritt gegen Axiome geprüft, p(Beweis korrekt) = 1 per Konstruktion.
+
+### Sinnvolle, formal saubere KI-Rollen
+1. **Vermutungsgenerierung** (z. B. Muster in λ_n, Momentkonstanten g_k, Dok. 07/14).
+2. **Beweissuche + formale Verifikation** (Mensch/Maschine-Hybrid, wie Polymath15, Dok. 23, wo Computer Lehmer-Paar-Schranken rigoros prüften).
+3. **Numerische Großrechnung** (Dok. 24) — aber Verifikation per Intervallarithmetik, nicht per neuronalem Netz.
+
+### Erfolgs- vs. Fehlbeispiele (formal eingeordnet)
+- **Erdős-Einheitsabstandsproblem:** kombinatorisch-endliches Problem ⇒ KI-gestützte Konstruktion verifizierbar. RH ist *nicht* von diesem Typ.
+- **Navier-Stokes-Fehlclaim:** zeigt, dass ein KI-„Beweis" eines Millennium-Problems ohne Peer Review/formale Prüfung scheitert — exakt das Risiko bei einem KI-„RH-Beweis".
+
 ## Quellen
 - [Will AI Prove the Riemann Hypothesis Without Understanding It? — Terence Tao (YouTube)](https://youtu.be/PU1LMVGcyXA?si=RcL7JrKpHE5izoso)
 - [Empirical Investigation of the Riemann Hypothesis Using Machine Learning (MDPI Mathematics 2025)](https://www.mdpi.com/2227-7390/13/17/2824)

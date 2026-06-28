@@ -23,6 +23,31 @@ Sir Michael Atiyah (Fields-Medaille 1966, Abel-Preis 2004 — einer der bedeuten
 - Wurde respektvoll, aber klar zurückgewiesen; Atiyah verstarb im Januar 2019.
 - Lehre für KI-Kontext: Auch menschliche Genies produzieren falsche "Durchbrüche"; strenge Verifikation ist unverzichtbar (vgl. Dok. 27, 28).
 
+## Mathematischer Kern (behauptete Konstruktion & der Fehler)
+
+### Die behauptete Todd-Funktion T
+Atiyah definierte (in Anlehnung an die von-Neumann-Hyperfinite-Faktor-Theorie) eine Funktion T als Limes von Polynomen, die er „schwach analytisch" nannte:
+```
+T = lim_{n→∞} T_n,   wobei T_n iterierte Exponential-/Polynomkonstruktionen sind,
+T(1) = 1,   T  „polynomial auf jedem konvexen Bereich".
+```
+T sollte additiv/„kompatibel" mit der Hirzebruch-Todd-Klasse sein.
+
+### Der behauptete Beweis durch Widerspruch
+Definiere die Funktion (Atiyahs Notation) für eine angebliche Nullstelle b = 1/2 + iβ_0 außerhalb der Geraden:
+```
+F(s) = T( 1 + ζ(s) )  − 1   (schematisch),
+```
+und betrachte F auf einem Kreis um die kritische Stelle. Atiyah behauptete: aus der „schwachen Analytizität" von T folge, dass F auf einem 2-dimensionalen Bereich polynomial sei, dort aber zugleich verschwinden müsse ⇒ F ≡ 0 ⇒ Widerspruch zur Annahme der Off-Line-Nullstelle.
+
+### Warum es falsch ist (präzise)
+- **Verletzung des Identitätssatzes/Liouville:** Eine Funktion, die auf einem 2-dimensionalen (offenen) Bereich „polynomial" *und* beschränkt ist und sich wie verlangt verhält, müsste **konstant** sein (Liouville). Atiyahs T kann daher nicht gleichzeitig nicht-konstant *und* die geforderten Limes-/Analytizitätseigenschaften haben — der Kernschritt kollabiert.
+- **Feinstrukturkonstante α:** Atiyah behauptete als „Korollar" eine geschlossene Formel α^{−1} = π · (ein Ausdruck in T). α ≈ 137,035999 ist eine *empirisch gemessene, dimensionslose physikalische* Größe ohne bekannten Grund, eine geschlossene mathematische Form zu besitzen — die Behauptung gilt als unbegründet.
+- **Unveröffentlichte Grundlage:** Der Satz über T (woraus RH „leicht" folgen sollte) war nie in nachprüfbarer, begutachteter Form vorhanden.
+
+### Einordnung
+Strukturell ein Positivitäts-/Reellwurzeligkeits-Ansatz wie viele (Dok. 14, 20), aber der entscheidende analytische Schritt ist nicht haltbar. Lehre: Auch ein Fields-Medaillen-Träger ersetzt keinen prüfbaren Beweis.
+
 ## Quellen
 - [Skepticism surrounds renowned mathematician's attempted proof — Science/AAAS](https://www.science.org/content/article/skepticism-surrounds-renowned-mathematician-s-attempted-proof-160-year-old-hypothesis)
 - [Riemann hypothesis, the fine structure constant, and the Todd function — John D. Cook](https://www.johndcook.com/blog/2018/09/24/riemann-hypothesis-the-fine-structure-constant-and-the-todd-function/)

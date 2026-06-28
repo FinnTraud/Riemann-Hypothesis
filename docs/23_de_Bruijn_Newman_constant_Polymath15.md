@@ -24,6 +24,45 @@ Die **De-Bruijn–Newman-Konstante Λ** quantifiziert, "wie knapp" die RH gilt. 
 - Vorbild für **Polymath-Kollaboration** (massiv parallele, offene Mathematik) und Mensch-Computer-Zusammenarbeit.
 - **Kein** Beweis der RH (das wäre Λ ≤ 0); die Lücke 0 ≤ Λ ≤ 0,22 müsste auf Λ ≤ 0 geschlossen werden.
 
+## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+
+### Die deformierte Familie H_t
+Schreibe die ξ-Funktion als Fourier-Transformierte einer positiven geraden Funktion:
+```
+ξ(1/2 + iz) = (1/2) ∫_{−∞}^∞ Φ(u) e^{izu} du,   Φ(u) = Σ_{n=1}^∞ (2π²n⁴ e^{9u} − 3πn² e^{5u}) exp(−πn² e^{4u}) > 0.
+```
+Deformiere mit einem Wärmeleitungsparameter t:
+```
+H_t(z) = ∫_{−∞}^∞ e^{t u²} Φ(u) e^{izu} du.
+```
+H_0 ist (bis auf Normierung) ξ. H_t erfüllt die Rückwärts-Wärmeleitungsgleichung ∂_t H = −∂_{zz} H; die Nullstellen z_k(t) bewegen sich gemäß einem Gradientenfluss.
+
+### Definition der Konstante Λ
+**Satz (de Bruijn 1950 / Newman 1976).** Es gibt Λ ∈ ℝ mit:
+```
+H_t hat nur reelle Nullstellen   ⟺   t ≥ Λ.
+```
+Da H_0 = ξ, folgt:
+```
+RH  ⟺  Λ ≤ 0.
+```
+de Bruijn zeigte Λ ≤ 1/2; Newman vermutete Λ ≥ 0.
+
+### Rodgers–Tao (2018): Λ ≥ 0
+**Beweisidee (Widerspruch).** Wäre Λ < 0, so wären die Nullstellen für ein t < 0 schon reell und würden unter dem Fluss zu t = 0 eine *zu reguläre* Verteilung annehmen: Man zeigt, dass dann die Nullstellen asymptotisch in nahezu arithmetischer Progression lägen (Abstände gleichmäßiger als erlaubt). Das widerspricht der bekannten **Paarkorrelations-/Montgomery-Statistik** (Dok. 06), die Niveau-Abstoßung *und* Fluktuationen verlangt. Formal: eine Größe (gemittelte Nullstellendynamik) müsste zugleich → 0 und ≥ c > 0 sein. ⇒ Λ ≥ 0.
+
+### Polymath15 (2019): obere Schranke Λ ≤ 0,22
+Strategie: Zeige H_t(x+iy) ≠ 0 für y > 0 und alle x, sobald t ≥ 0,2 und die Höhe groß genug ist; für niedrige Höhen numerische Verifikation, dass keine **Lehmer-Paare** (extrem nahe Nullstellen) die Reellheit gefährden. Werkzeuge:
+```
+- Newtonsche Ungleichungen / Approximation von H_t durch ein effektiv berechenbares A+B−C-Modell,
+- explizite Schranken an den Quotienten H_t'/H_t,
+- mollifizierte Barrieren-Argumente + großräumige Computerrechnung.
+```
+Ergebnis: **0 ≤ Λ ≤ 0,22**.
+
+### Interpretation
+Λ = 0 (RH) bedeutet: die ξ-Nullstellen sind „auf der Kippe" reell — jede infinitesimale Rückwärts-Wärmeleitung (t < 0) würde sofort komplexe Nullstellen erzeugen. Lehmer-Paare (z. B. nahe γ ≈ 7005) sind die empirischen Zeugen dieser Knappheit.
+
 ## Quellen
 - [The De Bruijn-Newman constant is non-negative — Terence Tao (Blog)](https://terrytao.wordpress.com/2018/01/19/the-de-bruijn-newman-constant-is-non-negativ/)
 - [The de Bruijn–Newman constant is non-negative — Forum of Mathematics, Pi (Cambridge)](https://www.cambridge.org/core/journals/forum-of-mathematics-pi/article/de-bruijnnewman-constant-is-nonnegative/D4B85BA067E2D5A71D87E4FFB0D21E46)

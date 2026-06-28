@@ -30,6 +30,34 @@ Die Riemann-Vermutung zieht eine außergewöhnlich große Zahl an Beweis- (und W
 - **Peer Review funktioniert:** Behauptungen werden systematisch geprüft; Fehler werden gefunden (oft binnen Tagen/Wochen).
 - Praktischer Hinweis: Clay Mathematics Institute erkennt einen Millennium-Preis-Beweis erst nach Publikation in einer angesehenen Zeitschrift und mehrjähriger Bewährung in der Fachwelt an — nicht auf bloße Preprint-Ankündigung hin.
 
+## Mathematischer Kern (typische Fehlermechanismen, an Formeln gezeigt)
+
+### Fehlertyp 1 — unzulässige Vertauschung von Limes/Summe/Integral
+Häufig wird die explizite Formel (Dok. 02) manipuliert, etwa
+```
+"ψ(x) − x = −Σ_ρ x^ρ/ρ"   →   (falsch) Σ_ρ x^ρ/ρ = O(x^{1/2}) "weil jeder Term ≤ x^{1/2}/|ρ|".
+```
+Der Fehler: Die Summe über ρ ist nur **bedingt** konvergent und nicht absolut; gliedweises Abschätzen ist ungültig. Ohne Kontrolle von Σ 1/|ρ| (divergent) kollabiert das Argument.
+
+### Fehlertyp 2 — Positivität wird angenommen statt bewiesen
+Bei Li/Weil-artigen Beweisen (Dok. 14) wird λ_n = Σ_ρ[1−(1−1/ρ)^n] ≥ 0 „gezeigt", indem die zu beweisende Lage Re(ρ)=1/2 in einem Zwischenschritt schon benutzt wird:
+```
+"(1 − 1/ρ) hat Betrag ≤ 1, also λ_n ≥ 0" — gilt nur, wenn Re(ρ) ≤ 1/2, also zirkulär.
+```
+
+### Fehlertyp 3 — falsche Verallgemeinerung
+Ein für Re(s) > 1 (Eulerprodukt-Bereich, ζ ≠ 0) gültiges Argument wird unzulässig in den kritischen Streifen 0 < Re(s) < 1 fortgesetzt, wo das Eulerprodukt divergiert.
+
+### Konkrete dokumentierte Fälle
+- **Vega, „New Criterion for the RH"** (Cambridge Open Engage, 2023): vom Autor selbst zurückgezogen — fehlerhafter Schritt auf S. 7 (eine behauptete Ungleichung gilt nicht).
+- **Agélas (GRH-Beweis):** Brent (arXiv 2103.09418) lokalisiert den Fehler in einer unzulässigen Abschätzung einer L-Funktions-Summe.
+- **„The Riemann Hypothesis is false" (arXiv 2006.12546), „Disproof…" (2102.08313):** numerische/definitorische Missverständnisse; keine valide Konstruktion einer Off-Line-Nullstelle.
+- **Jin Gyu Lee:** in arXiv 1305.4614 als fehlerhaft analysiert (Fehler in einer Konturverschiebung).
+- **arXiv 2202.11652 (selbst-dokumentierter Fehlversuch):** zeigt explizit, an welcher Stelle ein pseudodifferentieller Operatoransatz die nötige Selbstadjungiertheit *nicht* liefert — lehrreich.
+
+### Meta-Regel (Clay-Institut)
+Ein Millennium-Beweis wird erst nach Publikation in einer angesehenen Zeitschrift **und** ~2 Jahren Bewährung in der Fachwelt anerkannt — nie auf bloße Preprint-Ankündigung.
+
 ## Quellen
 - [Retracted: New Criterion for the Riemann Hypothesis — Cambridge Open Engage](https://www.cambridge.org/engage/coe/article-details/647ff4fe4f8b1884b7f34706)
 - [On some results of Agelas concerning the GRH ... (Brent, arXiv 2103.09418)](https://arxiv.org/pdf/2103.09418)
