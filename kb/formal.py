@@ -19,34 +19,68 @@ theorem riemann_hypothesis_statement :
   sorry  -- offen: vollständiger Beweis (Millennium-Problem)
 """.strip()
 
+_ELAN_BIN = os.path.expanduser("~/.elan/bin")
+
+def _lean_path():
+    """lean-Binary finden (PATH oder ~/.elan/bin)."""
+    p = shutil.which("lean")
+    if p:
+        return p
+    cand = os.path.join(_ELAN_BIN, "lean")
+    return cand if os.path.exists(cand) else None
+
 def formal_statement():
-    """Gibt die formale RH-Aussage in Lean + Erläuterung zurück."""
+    """Gibt die formale RH-Aussage in Lean + Erläuterung + Projekt-Gerüst zurück."""
+    scaffold = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lean")
     return {
         "lean": RH_STATEMENT_LEAN,
         "explanation": ("Jede Nullstelle ist entweder kritisch (Re=1/2) oder trivial (-2,-4,…). "
                         "'sorry' markiert die offene Stelle. In mathlib ist die RH als Statement "
                         "vorhanden; der Beweis ist offen (siehe docs/37)."),
-        "setup": ["elan/Lean 4 installieren (https://leanprover-community.github.io)",
-                  "lake new rh_project; mathlib als Abhängigkeit hinzufügen",
-                  "obige Datei als RH.lean ablegen; 'lake build' prüft sie"],
-        "see": "docs/37_formalization_lean_proof_assistants.md",
+        "project_scaffold": scaffold,
+        "scaffold_files": ["RH/SelfContained.lean (ohne mathlib, baut sofort)",
+                           "RH/Statement.lean (RH-Aussage, braucht mathlib)",
+                           "lakefile.toml", "lean-toolchain", "README.md"],
+        "setup": ["curl .../elan-init.sh | sh -s -- -y   (Lean 4 + elan)",
+                  "cd kb/lean && lean RH/SelfContained.lean   (sofortiger Test, kein mathlib)",
+                  "lake exe cache get && lake build   (volles Projekt mit mathlib)"],
+        "see": "docs/37_formalization_lean_proof_assistants.md, kb/lean/README.md",
     }
 
+def lean_status():
+    """Ehrlicher Toolchain-Status."""
+    lean = _lean_path()
+    elan = shutil.which("elan") or (os.path.join(_ELAN_BIN, "elan")
+                                    if os.path.exists(os.path.join(_ELAN_BIN, "elan")) else None)
+    toolchain = False
+    if lean:
+        try:
+            r = subprocess.run([lean, "--version"], capture_output=True, text=True, timeout=20)
+            toolchain = (r.returncode == 0)
+        except Exception:
+            toolchain = False
+    return {"elan_installed": bool(elan), "lean_binary": lean,
+            "toolchain_usable": toolchain}
+
 def lean_available():
-    return shutil.which("lean") is not None or shutil.which("lake") is not None
+    st = lean_status()
+    return st["toolchain_usable"]
 
 def lean_check(code):
     """Prüft Lean-Code, falls Toolchain vorhanden. Sonst ehrliche Statusmeldung."""
+    lean = _lean_path()
     if not lean_available():
-        return {"lean_available": False,
-                "status": "skipped",
-                "message": ("Keine Lean-Toolchain gefunden. Code NICHT geprüft. "
-                            "Zur echten Verifikation Lean 4 + mathlib installieren (siehe formal_statement.setup)."),
+        st = lean_status()
+        return {"lean_available": False, "status": "skipped", "lean_status": st,
+                "message": ("Lean-Toolchain nicht nutzbar (Code NICHT geprüft). "
+                            + ("elan ist installiert, aber der Toolchain-Download ist blockiert. "
+                               if st["elan_installed"] else "Lean 4 ist nicht installiert. ")
+                            + "Lokal bauen: siehe kb/lean/README.md."),
                 "code_received_chars": len(code)}
     try:
         with tempfile.NamedTemporaryFile("w", suffix=".lean", delete=False, encoding="utf-8") as f:
             f.write(code); path = f.name
-        proc = subprocess.run(["lean", path], capture_output=True, text=True, timeout=120)
+        proc = subprocess.run([lean, path], capture_output=True, text=True, timeout=120)
         ok = proc.returncode == 0
         return {"lean_available": True, "status": "ok" if ok else "error",
                 "returncode": proc.returncode,

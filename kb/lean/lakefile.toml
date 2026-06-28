@@ -1,0 +1,12 @@
+name = "rh"
+defaultTargets = ["RH"]
+
+# Mathlib wird für die formale RH-Aussage benötigt (riemannZeta).
+# Beim ersten `lake build` lädt Lake mathlib (mehrere GB Cache) — nur dort ausführen,
+# wo Netzwerkzugriff auf releases.lean-lang.org / GitHub erlaubt ist.
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+
+[[lean_lib]]
+name = "RH"

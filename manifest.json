@@ -2,7 +2,7 @@
   "name": "Riemann Hypothesis Knowledge Base",
   "version": "1.0",
   "updated": "2026-06",
-  "count": 51,
+  "count": 52,
   "documents": [
     {
       "number": "00",
@@ -797,6 +797,23 @@
       ],
       "file": "docs/50_reasoning_protocol.md",
       "summary": "Dieses Dokument zwingt den KI-Assistenten zu **strukturiertem, analytischem, verifizierbarem** Denken statt zu plausibel klingender Prosa. Es ist als System-Prompt-Grundlage und als Rückgabe des Tools `reasoning_scaffold` gedacht."
+    },
+    {
+      "number": "51",
+      "id": "doc-51",
+      "title": "Kollaborations-Leitfaden: sinnvoll mit einer Fachperson an der RH arbeiten",
+      "category": "meta",
+      "status": "meta",
+      "tags": [
+        "collaboration",
+        "open-problems",
+        "research-program",
+        "professor",
+        "experiments",
+        "formalization"
+      ],
+      "file": "docs/51_collaboration_brief.md",
+      "summary": ""
     }
   ]
 }

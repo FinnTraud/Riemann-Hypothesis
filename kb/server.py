@@ -197,5 +197,10 @@ if _FORMAL:
         Statusmeldung). Die einzige Schicht ohne Halluzinationsrisiko."""
         return _fm.lean_check(code)
 
+    @mcp.tool()
+    def lean_status() -> dict:
+        """Ehrlicher Status der Lean-Toolchain (elan installiert? lean nutzbar?)."""
+        return _fm.lean_status()
+
 if __name__ == "__main__":
     mcp.run()

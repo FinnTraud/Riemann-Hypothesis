@@ -29,11 +29,13 @@ def kb():
 def _tok(s):
     return [w.lower() for w in WORD.findall(s)]
 
-# ---------- Hybrid-Retrieval (BM25 + Graph-Expansion) ----------
-def search(query, k=6, status=None, category=None, expand_graph=True):
+# ---------- Hybrid-Retrieval (BM25 + Semantik + Graph-Expansion) ----------
+def search(query, k=6, status=None, category=None, expand_graph=True, semantic=True, alpha=0.6):
+    """Hybrid: alpha·BM25 + (1-alpha)·Semantik (Embeddings/TF-IDF), dann Graph-Expansion.
+    semantic=False schaltet rein lexikalisch (BM25). alpha gewichtet BM25 vs. Semantik."""
     K = kb(); idf = K["idf"]; avgdl = K["avgdl"]; b, k1 = 0.75, 1.5
     q = _tok(query)
-    scored = []
+    bm25 = {}
     for c in K["chunks"]:
         if status and c["status"] != status:      continue
         if category and c["category"] != category: continue
@@ -43,8 +45,33 @@ def search(query, k=6, status=None, category=None, expand_graph=True):
                 f = c["tf"][t]
                 s += idf.get(t, 0.0) * (f*(k1+1)) / (f + k1*(1 - b + b*c["len"]/avgdl))
         if s > 0:
-            scored.append((s, c))
-    scored.sort(key=lambda x: -x[0])
+            bm25[c["cid"]] = s
+    # semantische Scores (optional)
+    sem = {}
+    backend = None
+    if semantic:
+        try:
+            import embed
+            backend = embed.backend_name()
+            sem = embed.semantic_scores(query)
+        except Exception:
+            sem = {}
+    # Normalisieren und blenden
+    def _norm(d):
+        if not d: return {}
+        mx = max(d.values()) or 1.0
+        return {k_: v/mx for k_, v in d.items()}
+    bn, sn = _norm(bm25), _norm(sem)
+    cmap = {c["cid"]: c for c in K["chunks"]}
+    combined = {}
+    cand = set(bm25) | (set(sem) & set(cmap))
+    for cid in cand:
+        c = cmap.get(cid)
+        if not c: continue
+        if status and c["status"] != status:      continue
+        if category and c["category"] != category: continue
+        combined[cid] = alpha*bn.get(cid, 0.0) + (1-alpha)*sn.get(cid, 0.0)
+    scored = sorted(((v, cmap[cid]) for cid, v in combined.items()), key=lambda x: -x[0])
     hits = []
     seen = set()
     for s, c in scored[:k]:
@@ -65,7 +92,8 @@ def search(query, k=6, status=None, category=None, expand_graph=True):
                 n = K["nodes"].get(other, {})
                 related.append({"from": nid, "type": e["type"], "to": other,
                                 "label": n.get("label", other), "note": e.get("note", "")})
-    return {"query": query, "hits": hits, "graph_related": related[:12]}
+    return {"query": query, "retrieval": f"hybrid(bm25+{backend or 'none'})",
+            "hits": hits, "graph_related": related[:12]}
 
 def _snippet(text, n=320):
     t = re.sub(r"\s+", " ", text).strip()

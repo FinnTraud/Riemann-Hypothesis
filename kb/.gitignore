@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 figures/
 experiments/
+lean/.lake/
+lean/build/
+lean/lake-manifest.json

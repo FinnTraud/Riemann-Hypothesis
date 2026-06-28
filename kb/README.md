@@ -69,7 +69,32 @@ Registrierung in einem MCP-Client (Beispiel `claude_desktop_config.json` / `.mcp
 | `list_by_status(status)` | Dokumente + Claims nach proven/open/refuted/… |
 | `get_claim(query)` | Atomare Aussagen **mit Status** (Anti-Halluzination) |
 | `evaluate_proof_idea(idea)` | Prüft Beweisidee gegen Obstruktionen (Doc 35/41/43/46) |
+| `reasoning_scaffold(task)` | 7-Schritte-Denkprotokoll (Doc 50) |
 | `kb_stats()` | Kennzahlen |
+
+### Rechnen & Visualisieren (mpmath / matplotlib)
+| Tool | Zweck |
+|---|---|
+| `compute_zeta`, `compute_nth_zero`, `compute_first_zeros` | ζ-Werte & Nullstellen |
+| `compute_verify_rh_range`, `compute_count_zeros` | RH-Check (Evidenz), N(T) |
+| `compute_li_coefficient`, `compute_psi_explicit` | λ_n, explizite Formel |
+| `plot_hardy_Z`, `plot_zeros_on_line`, `plot_zeta_strip`, `plot_counting_N` | Grundplots |
+| `plot_pair_correlation`, `plot_li_coefficients`, `plot_psi_convergence` | Forschungsplots |
+
+### Experiment & formale Verifikation
+| Tool | Zweck |
+|---|---|
+| `log_experiment`, `list_experiments`, `get_experiment` | reproduzierbares Logbuch |
+| `formal_statement` | RH-Aussage in Lean + Projekt-Gerüst (kb/lean/) |
+| `lean_check`, `lean_status` | Lean-Verifikation (falls Toolchain vorhanden) |
+
+### Semantische Suche
+`search` ist hybrid: **BM25 + Semantik** (neuronale Embeddings, falls `sentence-transformers`
+installiert; sonst TF-IDF-Cosinus ohne Download) + Graph-Expansion. Parameter `semantic`/`alpha`.
+
+### Flaggschiff-Experiment
+`python3 kb/research/spacing_vs_gue.py 500` — Montgomery–Odlyzko-Gesetz (Nullstellenabstände
+vs. GUE), schreibt Ergebnis ins Logbuch.
 
 ## Empfohlener System-Prompt für den RH-Assistenten
 > Für jede Behauptung über die RH zuerst `get_claim` aufrufen und den `status` respektieren
