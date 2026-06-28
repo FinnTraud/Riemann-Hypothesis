@@ -176,4 +176,70 @@ Numerous arXiv preprints periodically claim full proofs of RH (e.g., "Proof of t
 
 ---
 
+## 9. KI und die Riemann-Vermutung: Möglichkeiten und Grenzen maschinellen Lernens
+
+> Ergänzung auf Basis einer Studienarbeits-Gliederung ("Die Riemann-Vermutung und KI: Möglichkeiten und Grenzen maschinellen Lernens in der Zahlentheorie", Übersichtsarbeit). Diese Sektion sammelt die dort referenzierten Quellen und ordnet sie thematisch für die RAG-Wissensbasis ein.
+
+### 9.1 Motivation und Ausgangsthese
+Leitfrage: *"Will AI Prove the Riemann Hypothesis Without Understanding It?"* — eine von Terence Tao (Fields-Medaillengewinner) aufgeworfene Fragestellung, die das Spannungsfeld zwischen statistisch-mustererkennenden KI-Methoden und einem formalen, verstandenen Beweis markiert.
+
+- [Will AI Prove the Riemann Hypothesis Without Understanding It? — Terence Tao (YouTube)](https://youtu.be/PU1LMVGcyXA?si=RcL7JrKpHE5izoso)
+- [Terence Tao: "Beweise sind nicht mehr das Wichtigste in der Mathematik" — Der Standard](https://www.derstandard.de/story/3000000320851/terence-tao-beweise-sind-nicht-mehr-das-wichtigste-in-der-mathematik)
+- [Verschlüsselte Mathematik: Beweise fordern KI heraus — Spektrum](https://www.spektrum.de/news/verschluesselte-mathematik-beweise-fordern-ki-heraus/2308813)
+
+### 9.2 Grundlagen: Was ist die Riemann-Vermutung — vertiefende Quelle
+- [Die Riemannsche Vermutung — Weihnachtsvorlesung 2016 (YouTube)](https://youtu.be/sZhl6PyTflw?si=QBvUI15ADHSpIjh9)
+  - Behandelt: Was besagt die RV, Relevanz, warum ungelöst, Konsequenzen eines Beweises, Einordnung als Millennium-Problem.
+
+### 9.3 Was ist KI? Begriffsklärung und Eignung für mathematische Probleme
+Relevante Aspekte für die Einordnung: Begriffssortierung (LLM vs. klassische ML-Klassifikatoren vs. symbolische KI), Chancen und Risiken (insbesondere Halluzination), Frage welche KI-Architektur für formale mathematische Probleme geeignet ist, und welche Vorteile KI gegenüber menschlichen Mathematikern bieten könnte (Rechenleistung, Mustererkennung in großen Zahlenräumen, Erschöpfung von Suchräumen).
+
+- [Kein Platz für Halluzinationen: KI-Start-up will korrekte Mathebeweise garantieren — The Decoder](https://the-decoder.de/kein-platz-fuer-halluzinationen-ki-start-up-will-korrekte-mathebeweise-garantieren/)
+
+### 9.4 Wo hat KI bereits mathematische Theoreme bewiesen/unterstützt? (Fallbeispiele)
+
+**Project First Proof (Harvard)** — Initiative zur KI-gestützten Verifikation/Generierung formaler Beweise.
+
+**Erdős-Einheitsabstands-Problem (Erdős unit-distance problem, gelöst nach ~60 Jahren, 1946 gestellt):**
+- [Kreativer Lösungsweg: KI löst 60 Jahre altes Erdős-Problem — Heise](https://www.heise.de/news/Kreativer-Loesungsweg-KI-loest-60-Jahre-altes-Erd-s-Problem-11275796.html)
+- [Bisher bedeutendster mathematischer Beweis mittels Sprach-KI verblüfft Fachleute — Der Standard](https://www.derstandard.de/story/3000000321753/bisher-bedeutendster-mathematischer-beweis-mittels-sprach-ki-verbluefft-fachleute)
+
+**Navier-Stokes-Gleichungen (Millennium-Problem) — Gegenbeispiel für einen *fehlgeschlagenen* KI-Durchbruch-Claim:**
+- [KI hat gerade ein 100 Jahre altes Million-Dollar-Wissenschaftsrätsel gelöst (Ankündigung) — YouTube](https://youtu.be/XohlBa8NkKw?si=ZExr5UfsNRt4QGQr)
+- [OpenAI-Forscher verkünden falschen Mathedurchbruch und ernten Spott — MSN/Der Standard](https://www.msn.com/de-ch/nachrichten/other/open-ai-forscher-verk%C3%BCnden-falschen-mathedurchbruch-und-ernten-spott/ar-AA1OSsBR)
+- [Nature-Artikel zum Vorfall](https://www.nature.com/articles/d41586-026-00969-z)
+  - **Wichtig für die kritische Würdigung:** Dies ist ein zentrales Gegenbeispiel zur Erfolgsgeschichte — zeigt, dass KI-generierte "Durchbrüche" bei Millennium-Problemen ohne strenge Peer-Review zu öffentlich falschen Behauptungen führen können. Direkt relevant für die kritische Einordnung von KI-Ansätzen zur Riemann-Vermutung.
+
+**Grenzen und Fehlerquellen von KI bei Mathematik allgemein:**
+- [KI scheitert an Matheaufgaben für Spitzenforscher — Forschung und Wissen](https://www.forschung-und-wissen.de/nachrichten/technik/ki-scheitert-an-matheaufgaben-fuer-spitzenforscher-133711288)
+- [Die simple Aufgabe, an der jede KI scheitert — YouTube](https://www.youtube.com/watch?v=x_ZhqjbgdAQ&t=58)
+
+**Wo KI Mathematiker korrigiert hat (Gegenbeispiel: KI als nützliches Korrektiv):**
+- [KI beweist: Mathematiker lagen falsch — Heise](https://www.heise.de/news/KI-beweist-Mathematiker-lagen-falsch-11302698.html)
+
+**Grundsätzliche Grenze — Goldbach-Vermutung als Analogiefall zur Riemann-Vermutung:**
+- [AI Cannot Prove Goldbach's Conjecture. Not Because It Isn't Smart Enough. Because It's the Wrong Kind of Smart — Towards AI](https://pub.towardsai.net/ai-cannot-prove-goldbachs-conjecture-115bca355678)
+  - Kernargument: Für offene zahlentheoretische Vermutungen wie Goldbach (und analog die Riemann-Vermutung) fehlt es nicht an Rechenleistung oder Mustererkennungsfähigkeit, sondern an der Art von strukturellem/konzeptuellem Verständnis, die ein gültiger formaler Beweis erfordert — ein Kernargument für die "kritische Würdigung" im Kontext von KI und RH.
+
+### 9.5 Aktueller Stand: Leitlinien und Selbstregulierung der Mathematik-Community
+- [Leitlinien: Mathematiker wollen Einsatz von KI in ihrem Fach eindämmen — Spektrum](https://www.spektrum.de/news/leitlinien-mathematiker-wollen-einsatz-von-ki-in-ihrem-fach-eindaemmen/2327655)
+  - Relevant für Abschnitt "Stand der Dinge" / "Ausblick": zeigt, dass die Fachcommunity bereits Regeln für den verantwortungsvollen KI-Einsatz in der mathematischen Forschung diskutiert/etabliert — wichtig für die Einordnung gegenüber einem KI-Beweis der RH.
+
+### 9.6 Vorgeschlagene Gliederung der Studienarbeit (Referenz)
+1. Einleitung
+2. Was ist die Riemann-Vermutung (RV)? — Aussage, Relevanz, warum ungelöst, Konsequenzen eines Beweises, Millennium-Problem
+3. Was ist KI? — Begriffssortierung (LLM etc.), Chancen/Risiken (Halluzination), geeignete KI-Architekturen für mathematische Probleme, Vorteile ggü. menschlichen Mathematikern
+4. Connect Mathematik / RV – KI:
+   - Wo hat KI bereits mathematische Theoreme bewiesen? (Erdős-Einheitsabstands-Problem, Project First Proof)
+   - Wo ist es schiefgelaufen? (Navier-Stokes-Fehlclaim)
+   - Wo hat KI Mathematiker korrigiert?
+   - Wo liegen die Grenzen? (Goldbach-Vermutung als Analogie)
+5. Riemann-Vermutung und KI: Stand der Dinge
+6. Kritische Würdigung
+7. Ausblick
+8. Quellen
+9. Glossar
+
+---
+
 *Document compiled for RAG ingestion. Each numbered section is intended to function as an independently retrievable chunk describing one proof strategy, criterion, or development in Riemann Hypothesis research as of June 2026.*
