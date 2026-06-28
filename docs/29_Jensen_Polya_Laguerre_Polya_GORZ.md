@@ -34,6 +34,49 @@ RH  ⟺  ξ ∈ Laguerre–Pólya-Klasse (nur reelle Nullstellen)
 - Eng verwandt mit der **de-Bruijn–Newman-Konstante** (Dok. 23): Λ ≤ 0 ⟺ ξ ∈ Laguerre–Pólya. Pólyas Untersuchung von Fourier-Transformierten positiver Funktionen ist die gemeinsame Wurzel.
 - Positivitäts-/Reellwurzeligkeits-Leitmotiv wie bei Weil-Positivität (Dok. 14) und de Branges (Dok. 20).
 
+## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+
+### Laguerre–Pólya-Klasse (LP)
+Eine ganze Funktion gehört zu LP, wenn sie lokal gleichmäßiger Limes reeller Polynome mit nur reellen Nullstellen ist. Charakterisierung (Hadamard-Produkt):
+```
+f(x) = c x^m e^{−a x² + b x} ∏_k (1 − x/x_k) e^{x/x_k},   a ≥ 0, b,c,x_k ∈ ℝ,  Σ 1/x_k² < ∞.
+```
+**Satz (Pólya).** RH ⟺ ξ(1/2 + iz) ∈ LP (als Funktion von z, nur reelle Nullstellen z = γ_n).
+
+### Jensen-Polynome
+Für eine reelle Folge (a(k)) (hier: Taylor-Koeffizienten, ξ(1/2+iz) = Σ a(k) z^{2k}/k! o. ä.) definiere
+```
+J^{d,n}(X) = Σ_{j=0}^d binom(d,j) a(n+j) X^j.
+```
+„Hyperbolisch" := nur reelle Wurzeln. **Satz:** f ∈ LP ⟺ alle J^{d,n} (d,n ≥ 0) sind hyperbolisch. Also:
+```
+RH  ⟺  J^{d,n} hyperbolisch für alle d, n  (für die ξ-Koeffizienten).
+```
+
+### Höhere Turán-Ungleichungen (äquivalente konkrete Form)
+Hyperbolizität für kleine d entspricht expliziten Ungleichungen an die Koeffizienten:
+```
+d = 2 (Turán):     a(n)² − a(n−1) a(n+1) ≥ 0,
+d = 3 (höhere T.):  4(a_n² − a_{n−1}a_{n+1})(a_{n+1}² − a_n a_{n+2}) − (a_n a_{n+1} − a_{n−1}a_{n+2})² ≥ 0,
+```
+und so weiter für jedes d — eine Folge immer komplexerer, aber elementarer Polynom-Ungleichungen, deren *Gesamtheit* die RH ist.
+
+### GORZ-Hauptsatz (2019): Hermite-Limes
+**Satz (Griffin–Ono–Rolen–Zagier).** Geeignet normiert (mit Verschiebung/Skalierung g(n), δ(n)) konvergieren die Jensen-Polynome gegen die **Hermite-Polynome** H_d:
+```
+lim_{n→∞}  ( δ(n)^{−d} J^{d,n}( δ(n) X − g(n) ) / a(n) )  =  H_d(X),
+```
+gleichmäßig auf Kompakta. Da die H_d nur reelle Wurzeln haben und diese „stabil" sind, folgt:
+- **Hyperbolizität für jedes feste d und alle n ≥ N(d)** (also für eine Dichte-1-Teilmenge jeder Grades).
+- Für ξ explizit verifiziert: **alle d ≤ 8** vollständig hyperbolisch.
+Asymptotik der zentralen Ableitungen (Schlüssel-Lemma): a(n) bestimmt aus
+```
+a(n) ~ (Hauptterm via Sattelpunktmethode auf ∫ Φ(u) u^{2n} du), Φ wie in Dok. 23.
+```
+
+### Kritik (arXiv 2008.07206)
+Die Hermite-Approximation kontrolliert nur das Regime n → ∞ bei **festem** d. Für die RH braucht man d und n *gemeinsam* groß (d ~ n). Genau dort versagt die Hermite-Kontrolle — daher „kein plausibler Weg zur vollen RH". Realistisch ist GORZ ein starkes Resultat über die *Verteilung* der Jensen-Wurzeln, nicht über alle simultan.
+
 ## Quellen
 - [Jensen polynomials for the Riemann zeta function and other sequences — PNAS (Griffin, Ono, Rolen, Zagier)](https://www.pnas.org/doi/10.1073/pnas.1902572116)
 - [Jensen polynomials for the Riemann zeta function and other sequences (arXiv 1902.07321)](https://arxiv.org/pdf/1902.07321)

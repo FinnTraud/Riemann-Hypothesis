@@ -28,6 +28,39 @@ Das wohl ambitionierteste strukturelle Programm: die RH zu beweisen, indem man *
 - Teilt das Positivitäts-Leitmotiv mit Dok. 14 (Weil-Positivität).
 - Parallel zu Deningers Kohomologie-Programm (Dok. 31).
 
+## Mathematischer Kern (Formeln, Konstruktionen, Analogien)
+
+### Die Ziel-Analogie (Weil-Beweis übertragen)
+Im Funktionenkörper-Fall (Dok. 18) ist
+```
+ζ_C(s) = det(1 − q^{−s} F* | H¹) / [ det(1 − q^{−s}F*|H⁰) det(1 − q^{−s}F*|H²) ],
+```
+und RH ⟺ Frobenius-Eigenwerte |α_i| = q^{1/2}. **Wunsch über ℤ:** finde Raum „Spec(ℤ) ×_{𝔽₁} Spec(ℤ)" mit Frobenius-artigem Fluss, sodass
+```
+ζ(s) "=" det_∞( (s − Θ)/2π | H¹ ) / [ (s/2π)(s−1 .../2π) ]
+```
+und die γ_n = Eigenwerte von Θ reell sind (Positivität analog Weils Schnittform).
+
+### Monoid-/𝔽₁-Geometrie
+𝔽₁ ist kein Körper; Modelle ersetzen Ringe durch **kommutative Monoide** (Deitmar) oder **Λ-Ringe** / **Blueprints** (Lorscheid). Beispiel: Spec(𝔽₁) hat einen Punkt; 𝔾_m über 𝔽₁ ist das Monoid ℤ; „𝔽_{1^n}" entspricht der zyklischen Gruppe μ_n. Tits' Ursprung: #G(𝔽_q) → #(Weyl-Gruppe) für q → 1 (z. B. #GL_n(𝔽_q)/(q−1)^n → n! = #S_n).
+
+### Connes–Consani arithmetic site
+Der **arithmetic site** ist das Paar (Topos, Strukturgarbe):
+```
+( N̂^× = Topos der ℕ^×-Mengen,  Strukturgarbe ℤ_max = (ℤ ∪ {−∞}, max, +) ).
+```
+Seine Punkte über dem Halbring ℝ_+^{max} sind die **Adèleklassen** 𝔸_ℚ/ℚ* aus Connes' Spurformel (Dok. 10). Der Frobenius wird durch die Wirkung von ℝ_+^× (Skalierung) realisiert; die explizite Formel erscheint als Lefschetz-Spurformel über diesem Situs.
+
+### Bost–Connes-System (Quantenstatistik mit ζ)
+Ein C*-dynamisches System (A, σ_t) mit Hamilton-Erzeuger H, dessen **Zustandssumme** genau ζ ist:
+```
+Z(β) = Tr(e^{−βH}) = Σ_{n=1}^∞ n^{−β} = ζ(β),
+```
+mit einer Galois-Wirkung von Gal(ℚ^{ab}/ℚ) auf den KMS-Zuständen (Phasenübergang bei β = 1). Verbindet Klassenkörpertheorie, Quantenstatistik und ζ — Teil des 𝔽₁-Programms.
+
+### Status der Formeln
+Die Determinante det_∞ (zeta-regularisiert) und die benötigte H¹-Kohomologie über ℤ sind **konjektural** — die rechte Seite der „Wunschgleichung" ist nicht als wohldefiniertes geometrisches Objekt konstruiert. Daher: starkes strukturelles Programm, kein Beweis.
+
 ## Quellen
 - [Field with one element — Wikipedia](https://en.wikipedia.org/wiki/Field_with_one_element)
 - [nLab: field with one element](https://ncatlab.org/nlab/show/field+with+one+element)

@@ -23,6 +23,35 @@ Es gibt eine tiefe Analogie zwischen der RH (Reellwurzeligkeit der ξ-Funktion) 
 - Verbindet drei Stränge: Pólya/Laguerre–Pólya (Dok. 29), de-Bruijn–Newman (Dok. 23) und Random-Matrix/Quantenchaos (Dok. 06–08).
 - **Grenze:** Liefert ein quantitatives "wie knapp" und starke Heuristik, aber keinen Mechanismus, der Λ ≤ 0 erzwingt — also keinen Beweis.
 
+## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+
+### Lee–Yang-Theorem (1952)
+Für ein ferromagnetisches Ising-Modell mit Zustandssumme als Polynom in der Fugazität z = e^{−2βh} (h = Magnetfeld):
+```
+Z_N(z) = Σ_{config} ... = c ∏_{k=1}^{N} (z − z_k).
+```
+**Satz (Lee–Yang).** Alle Nullstellen z_k liegen auf dem Einheitskreis |z_k| = 1 (äquivalent: rein imaginäres Feld h). Beweis nutzt Positivität der Kopplungen (Korrelationsungleichungen) — die Nullstellen werden durch Positivität auf eine Kurve gezwungen.
+
+### Analogie zur ξ-Funktion
+ξ ist die Fourier-(Laplace-)Transformierte der **positiven, geraden** Dichte Φ (Dok. 23):
+```
+ξ(1/2 + iz) = ∫_{−∞}^∞ Φ(u) e^{izu} du,   Φ(u) > 0, Φ(−u) = Φ(u).
+```
+RH = „alle Nullstellen z reell" ist die **exakte Entsprechung** des Lee–Yang-Phänomens (Nullstellen auf einer Geraden/Kurve, erzwungen durch Positivität von Φ).
+
+### Pólyas Kriterium (hinreichende Bedingung)
+**Satz (Pólya).** Ist Φ(u) > 0 gerade und erfüllt gewisse Konvexitäts-/log-Konkavitätsbedingungen (Φ ∈ geeignete Klasse), so hat ∫ Φ(u)e^{izu}du nur reelle Nullstellen. Das tatsächliche Φ für ξ erfüllt diese hinreichenden Bedingungen *nicht* nachweislich — genau hier klafft die Lücke.
+
+### Wärmefluss und Newmans Λ (Verbindung zu Dok. 23)
+Falte Φ mit Gauß-Kern (Wärmeleitung): Φ_t(u) = e^{t u²}-Gewichtung ⇒ H_t(z) = ∫ e^{tu²}Φ(u)e^{izu}du. Die Nullstellen z_k(t) erfüllen eine Gradientenfluss-ODE
+```
+dz_k/dt = − Σ_{j≠k} 2/(z_k − z_j)   (Calogero-artige Dynamik / „Coulomb-Gas" auf der Geraden).
+```
+Reelle Nullstellen sind ein Fixpunkt dieser Dynamik für t ≥ Λ. **GHS-Ungleichung** und Monotonie liefern Kontrolle ⇒ Newmans Λ existiert, Λ ≤ 0 ⟺ RH.
+
+### Lehmer-Paare als kritische Konfigurationen
+Zwei Nullstellen γ_n, γ_{n+1} mit Abstand ≪ Mittelwert bilden ein **Lehmer-Paar**; im Coulomb-Gas-Bild sind sie „fast kollidierende" Teilchen. Ihre Existenz (z. B. bei γ ≈ 7005,06) zeigt, dass die Reellheit nur knapp gehalten wird — der Hebel für Rodgers–Tao Λ ≥ 0 (Dok. 23).
+
 ## Quellen
 - [2016 Mini-Course by Chuck Newman — Statistical Mechanics and the Riemann Hypothesis (NYU Shanghai)](https://research.shanghai.nyu.edu/centers-and-institutes/math/2016-mini-course-chuck-newman-statistical-mechanics-and-riemann)
 - [Constants of de Bruijn-Newman type in analytic number theory and statistical physics (arXiv 1901.06596)](https://arxiv.org/pdf/1901.06596)

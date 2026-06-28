@@ -24,6 +24,49 @@ Eine **Landau–Siegel-Nullstelle** (Ausnahme-Nullstelle) ist eine hypothetische
 - Paradoxerweise hätte sogar die *Existenz* einer Siegel-Nullstelle starke (teils GRH-artige) Konsequenzen ("illusory world") — ein vieluntersuchtes Phänomen.
 - Verbindet sich mit Dichte-/nullstellenfreien Abschätzungen (Dok. 12, 17) und der GRH (Dok. 21).
 
+## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+
+### Definition der Ausnahme-Nullstelle
+Für χ reeller primitiver Charakter mod D besagt die klassische nullstellenfreie Region (Page/Landau): L(s,χ) ≠ 0 in
+```
+σ > 1 − c/log(D(|t|+2)),
+```
+**außer** möglicherweise einer einzigen reellen, einfachen **Siegel-Nullstelle** β mit
+```
+β > 1 − c/log D.
+```
+
+### Äquivalenz Siegel-Nullstelle ⟺ kleines L(1,χ)
+Über die Klassenzahlformel / Mittelwertbeziehung gilt:
+```
+β nahe 1   ⟺   L(1, χ) klein,   genauer  1 − β  ≍  L(1,χ)/log D.
+```
+Eine untere Schranke für L(1,χ) hält β von 1 fern.
+
+### Siegels (ineffektiver) Satz vs. effektive Schranken
+```
+Siegel (1935):  L(1,χ) ≫_ε D^{−ε}   — aber die Konstante ist NICHT berechenbar.
+Klassisch effektiv (Goldfeld–Gross–Zagier-Umfeld):  L(1,χ) ≫ (log D)^{−1}·(...)  nur unter Zusatzannahmen.
+```
+
+### Yitang Zhang (2022) — das Resultat
+```
+L(1, χ) ≫ (log D)^{−2022},   mit absoluter, EFFEKTIV berechenbarer Konstante.
+```
+Äquivalent: jede Siegel-Nullstelle erfüllt 1 − β ≫ (log D)^{−2023} (effektiv).
+
+### Beweisstrategie (Skizze)
+1. Verknüpfe die untere Schranke für L(1,χ) mit der **Verteilung der Nullstellen** einer Familie von Dirichlet-L-Funktionen L(s, ψ) in einem Bereich nahe s = 1; eine Siegel-Nullstelle erzwingt anomale Nullstellen-Cluster (Deuring–Heilbronn-Phänomen: eine Ausnahme-Nullstelle stößt andere Nullstellen weg).
+2. Werte **diskrete Mittelwerte vom Large-Sieve-Typ** aus:
+```
+Σ_{ψ mod Q}^* | Σ_{n ~ N} a_n ψ(n) |²  ≪  (Q + N) Σ |a_n|²,
+```
+über geeignete Familien und Gewichte (Zhang konstruiert spezielle Mollifier/Gewichte a_n).
+3. Wäre L(1,χ) zu klein, so ergäben sich aus 1.+2. zwei unvereinbare Schätzungen desselben diskreten Mittels ⇒ **Widerspruch**.
+
+### Bedeutung der Formeln
+Die effektive Schranke ist schwächer als „keine Siegel-Nullstelle" (das wäre 1−β ≫ 1/log D), aber stärker und effektiv gegenüber Siegel. Ausschluss der Siegel-Nullstelle hätte u. a. zur Folge: GRH-artige Schranken für kleinste Primzahlen in Progressionen, Klassenzahl-1-Probleme, Twin-Prime-Konstanten.
+
 ## Quellen
 - [Discrete mean estimates and the Landau-Siegel zero — Y. Zhang (arXiv 2211.02515)](https://arxiv.org/abs/2211.02515)
 - [Discrete mean estimates and the Landau-Siegel zero (PDF)](https://arxiv.org/pdf/2211.02515)
