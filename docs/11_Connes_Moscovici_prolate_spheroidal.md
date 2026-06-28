@@ -19,6 +19,31 @@ Connes und Moscovici untersuchten ab 2021 das Spektrum des **Prolate-Spheroidal-
 - Verbindet Signalverarbeitung / Spektraltheorie / nichtkommutative Geometrie / Zahlentheorie.
 - **Einschränkung:** Die Übereinstimmung ist asymptotisch/approximativ ("ultraviolettes Verhalten", "annähernde Lösung"). Eine *exakte* spektrale Realisierung *aller* Nullstellen samt Beweis der RH ist damit **nicht** erreicht.
 
+## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+
+### Der Prolate-Wellenoperator
+Klassischer Slepian–Landau–Pollak-Operator auf L²(−1,1), kommutierend mit der bandbegrenzten Fourier-Projektion:
+```
+(W_λ f)(x) = d/dx [ (1 − x²) df/dx ] + λ² x² f
+```
+W_λ ist selbstadjungiert mit diskretem Spektrum; seine Eigenfunktionen sind die **prolaten Sphäroidwellenfunktionen** (PSWF). Connes–Moscovici untersuchen die Einschränkung auf das **Komplement** eines Intervalls.
+
+### Schlüsselresultat (asymptotisches Spektrum)
+Für die selbstadjungierte Fortsetzung des auf das Außenintervall eingeschränkten Operators gilt: die negativen Eigenwerte −E_n erfüllen asymptotisch (Ultraviolett-Verhalten)
+```
+E_n  ~  (γ_n / 2)²   bzw.   die Zählfunktion der E_n  ≈  Zählfunktion der  γ_n²
+```
+wobei γ_n die Imaginärteile der nicht-trivialen Nullstellen sind. D. h.: das Spektrum reproduziert die **Quadrate der Riemann-Nullstellen**.
+
+### Quadratwurzel ⇒ approximative Hilbert–Pólya-Lösung
+Definiert man (heuristisch) den Operator √(Prolate) auf dem passenden Teilraum, so hat dieser Eigenwerte ≈ γ_n/2 — ein konkreter selbstadjungierter Operator, dessen Spektrum die γ_n *approximiert*. Wegen Selbstadjungiertheit sind diese reell (das war stets das Ziel, Dok. 05). Daher: „konkrete annähernde Realisierung der Hilbert–Pólya-Vermutung".
+
+### Einbettung in die semilokale Spurformel
+Connes setzt dies in das **semilokale** Framework (endlich viele Stellen S = {∞, p_1, …, p_k}): ein semilokaler Prolate-Operator W_S, dessen Spurformel die explizite Formel über S realisiert (vgl. Dok. 10). Die zu erreichende Aussage bleibt die globale Positivität.
+
+### Warum nur approximativ
+Die Übereinstimmung E_n ~ (γ_n/2)² ist **asymptotisch** (führende Ordnung im UV); die exakte Identität des Spektrums mit allen γ_n — und damit RH — ist nicht etabliert. Korrekturterme und die Niederenergie-Region sind nicht kontrolliert.
+
 ## Quellen
 - [Prolate spheroidal operator and Zeta — Connes & Moscovici (arXiv 2112.05500)](https://arxiv.org/pdf/2112.05500)
 - [Prolate operator and Riemann Zeta — Connes (PNAS)](https://alainconnes.org/wp-content/uploads/PNAS_030322.pdf)

@@ -24,6 +24,37 @@ Alain Connes entwickelte einen Ansatz, der die explizite Formel der Zahlentheori
 - Erfolg: präzise *Reduktion* der RH auf eine konkrete Spurformel/Positivität.
 - Offen: Die Gültigkeit ebendieser Spurformel/Positivität ist genauso schwer wie die RH selbst — der Kern ist unbewiesen (Stand 2026).
 
+## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+
+### Adèle, Idèle, Adèleklassenraum
+Sei 𝔸_ℚ = ℝ × ∏'_p ℚ_p der Adèlering (eingeschränktes Produkt), 𝔸_ℚ* die Idèle. Connes betrachtet die Wirkung der Idèleklassengruppe C_ℚ = 𝔸_ℚ*/ℚ* auf dem **Adèleklassenraum** X = 𝔸_ℚ/ℚ*. Auf L²-Funktionen über X (mit Cutoff) wirkt die skalierende Wirkung von C_ℚ.
+
+### Spektrale Realisierung als Absorptionsspektrum
+Connes konstruiert einen Hilbertraum H (Sobolev-Vervollständigung von Schwartz-Funktionen modulo der von der Theta/Poisson-Spur erzeugten Teilräume) und einen Operator D (Erzeuger der skalierenden Wirkung). Hauptsatz (informell):
+```
+Spektrum von D  =  { γ : ζ(1/2 + iγ) = 0 }   (als Absorptionsspektrum)
+```
+Die kritischen Nullstellen erscheinen als *fehlende* Linien; Nullstellen mit Re ≠ 1/2 würden als **Resonanzen** außerhalb der reellen Achse auftreten.
+
+### Die Spurformel (Herzstück)
+Für eine Testfunktion h auf C_ℚ lautet Connes' Spurformel (global, Weil-Form):
+```
+Tr( R_Λ U(h) )  =  2 h(1) log'Λ  +  ĥ(0) + ĥ(1)  −  Σ_v  ∫'_{ℚ_v*}  h(u^{−1})/|1 − u|  d*u  +  o(1)
+```
+- Linke Seite (spektral): Spur des regularisierten Operators ⇒ Σ_ρ ĥ(ρ) über die Nullstellen.
+- Rechte Seite (geometrisch): Summe über die Stellen v von ℚ (archimedisch + alle Primzahlen p), die **Weils Hauptwert-Integrale** sind — exakt **Weils explizite Formel** (Dok. 02/14).
+
+**Reduktionssatz (Connes).** Die RH ist äquivalent zur **Positivität (Gültigkeit)** dieser Spurformel:
+```
+RH  ⟺  Σ_v W_v(h ⋆ h*) ≥ 0  für alle Testfunktionen h   (Weil-Positivität, vgl. Dok. 14)
+```
+
+### Weil-Positivität explizit
+Mit der Weil-Distribution W(h) = Σ_ρ ĥ(ρ) − ĥ(0) − ĥ(1) gilt: RH ⟺ W(h ⋆ h̄) ≥ 0 ∀h. Connes–Consani (2021) bewiesen einen Teil hiervon an der **archimedischen Stelle** (positiver Beitrag des reellen Faktors); die volle Positivität über alle Stellen bleibt offen — das ist die eigentliche Hürde.
+
+### Analogie zum bewiesenen Fall
+Im Funktionenkörper-Fall (Dok. 18) ist genau diese Positivität die **Riemann–Roch-/Schnitt-Positivität** auf C × C (Weils Beweis). Connes' Programm sucht das Analogon über Spec(ℤ) (vgl. 𝔽₁, Dok. 30).
+
 ## Quellen
 - [Trace formula in noncommutative geometry and the zeros of the Riemann zeta function (arXiv math/9811068)](https://arxiv.org/abs/math/9811068)
 - [An essay on the Riemann Hypothesis — A. Connes (arXiv 1509.05576)](https://arxiv.org/pdf/1509.05576)

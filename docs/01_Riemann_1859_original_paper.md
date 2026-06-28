@@ -25,6 +25,53 @@
 - Liefert die strukturelle Grundlage (Funktionalgleichung, explizite Formel) für praktisch alle späteren Beweisansätze.
 - Zeigt: Riemann selbst hatte bereits numerische Evidenz, hielt die Aussage aber für nebensächlich gegenüber dem Primzahlsatz.
 
+## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+
+### Eulerprodukt (Ausgangspunkt)
+Für Re(s) > 1 gilt die von Euler entdeckte Identität, die ζ mit den Primzahlen verknüpft:
+```
+ζ(s) = Σ_{n=1}^∞ 1/n^s = ∏_{p prim} (1 − p^{−s})^{−1}
+```
+Beweis (Skizze): Geometrische Reihe (1 − p^{−s})^{−1} = Σ_{k≥0} p^{−ks}; Ausmultiplizieren über alle p liefert wegen eindeutiger Primfaktorzerlegung jeden Term n^{−s} genau einmal. Aus dem Produkt folgt ζ(s) ≠ 0 für Re(s) > 1 (kein Faktor verschwindet, Konvergenz).
+
+### Analytische Fortsetzung über die Theta-Funktion
+Mit der Jacobischen Theta-Funktion ψ(x) = Σ_{n=1}^∞ e^{−n²πx} und der Integraldarstellung
+```
+π^{−s/2} Γ(s/2) ζ(s) = ∫_0^∞ x^{s/2 − 1} ψ(x) dx
+```
+nutzt Riemann die Funktionalgleichung der Theta-Funktion ψ(1/x) = −1/2 + (1/2)√x + √x·ψ(x) (aus der Poisson-Summenformel), um das Integral in eine für alle s ∈ ℂ konvergente Form zu spalten:
+```
+ξ-Integral:  π^{−s/2}Γ(s/2)ζ(s) = 1/(s(s−1)) + ∫_1^∞ (x^{s/2−1} + x^{−(s+1)/2}) ψ(x) dx
+```
+Die rechte Seite ist offensichtlich invariant unter s ↦ 1 − s ⇒ Funktionalgleichung.
+
+### Funktionalgleichung
+```
+ζ(s) = 2^s π^{s−1} sin(πs/2) Γ(1−s) ζ(1−s)
+```
+oder symmetrisch über die vervollständigte Funktion (vollständige Zeta):
+```
+ξ(s) := (1/2) s(s−1) π^{−s/2} Γ(s/2) ζ(s),     ξ(s) = ξ(1 − s)
+```
+ξ ist eine ganze Funktion (Pol bei s=1 und trivialer Faktor herausgekürzt). Die Symmetrie ξ(s) = ξ(1−s) zwingt die nicht-trivialen Nullstellen in spiegelsymmetrische Lage zur Geraden Re(s) = 1/2. Zusammen mit ξ(s) = ξ(s̄) (reelle Koeffizienten) liegen Nullstellen in Quadrupeln ρ, 1−ρ, ρ̄, 1−ρ̄ (außer auf der Geraden, wo sie zu Paaren ρ, ρ̄ kollabieren).
+
+### Triviale Nullstellen
+Der Faktor sin(πs/2) in der Funktionalgleichung erzwingt ζ(−2n) = 0 für n = 1, 2, 3, … (triviale Nullstellen); diese werden in ξ durch Γ(s/2) kompensiert.
+
+### Die explizite Formel (Riemanns Resultat)
+Riemann gibt für die gewichtete Primzahlfunktion J(x) = Σ_{p^k ≤ x} 1/k eine Formel an:
+```
+J(x) = Li(x) − Σ_ρ Li(x^ρ) − log 2 + ∫_x^∞ dt/(t(t²−1) log t)
+```
+und kehrt via Möbius-Inversion zu π(x) = Σ_{n} μ(n)/n · J(x^{1/n}) zurück. Die Summe Σ_ρ über die Nullstellen ist der oszillierende Korrekturterm (vgl. Dok. 02).
+
+### Riemann-Siegel-Formel (aus dem Nachlass)
+Zur Berechnung auf der kritischen Geraden mit Z(t) = e^{iθ(t)} ζ(1/2 + it) (reell):
+```
+Z(t) = 2 Σ_{n=1}^{N} cos(θ(t) − t log n)/√n  +  R(t),   N = ⌊√(t/2π)⌋
+```
+mit Riemann-Siegel-Theta θ(t) = arg Γ(1/4 + it/2) − (t/2) log π und einem asymptotisch berechenbaren Restterm R(t) ~ (−1)^{N−1} (t/2π)^{−1/4} · [C_0 + C_1(t/2π)^{−1/2} + …].
+
 ## Quellen
 - [On the Number of Primes Less Than a Given Magnitude — Wikipedia](https://en.wikipedia.org/wiki/On_the_Number_of_Primes_Less_Than_a_Given_Magnitude)
 - [On Riemann's Paper "On the Number of Primes Less Than a Given Magnitude" (arXiv 1609.02301)](https://arxiv.org/abs/1609.02301)

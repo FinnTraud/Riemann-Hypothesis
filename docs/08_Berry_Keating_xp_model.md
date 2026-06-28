@@ -26,6 +26,40 @@ Berry und Keating schlugen vor, dass die Riemann-Nullstellen die Energieniveaus 
 - Verbindet Primzahlen ↔ periodische Orbits ↔ Spektrallinien.
 - **Stand 2026:** Keine Konstruktion liefert die *exakten* Nullstellen als Eigenwerte eines rigoros definierten selbstadjungierten Operators — nur geglättete/statistische Übereinstimmung. Damit kein vollständiger RH-Beweis.
 
+## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+
+### Klassisches H = xp und semiklassische Niveauzählung
+Klassischer Hamiltonian H = x·p hat hyperbolische Trajektorien x p = E (Hyperbeln im Phasenraum). Die semiklassische Anzahl der Zustände mit Energie ≤ E ist das Phasenraumvolumen / (2πℏ):
+```
+N_{sc}(E) = (1/2πℏ) · Vol{ (x,p) : 0 < x p < E, mit Cutoffs x ≥ ℓ_x, p ≥ ℓ_p }
+```
+Mit Abschneidungen x ≥ l_x, p ≥ l_p (Cutoffs l_x l_p = 2πℏ) ergibt sich
+```
+N_{sc}(E) = (E/2πℏ)( log(E/2πℏ) − 1 ) + 7/8 + …
+```
+
+### Übereinstimmung mit der Riemann-Zählfunktion
+Vergleiche mit dem glatten Teil von N(T) (Dok. 02):
+```
+⟨N(E)⟩ = (E/2π) log(E/2π) − E/2π + 7/8 + …
+```
+Setzt man ℏ = 1, so stimmen **glatter Term inklusive der Konstante 7/8** überein! Das ist die zentrale Beobachtung von Berry–Keating: H = xp reproduziert die mittlere Nullstellendichte exakt.
+
+### Fehlende Teile (warum nur „glatt")
+- Die fluktuierende Korrektur N(E) − ⟨N(E)⟩ = S(E)/π (Dok. 02) entspräche in der Gutzwiller-Spurformel einer Summe über periodische Orbits:
+```
+N_{fl}(E) ≈ (1/π) Σ_p Σ_{r≥1} (1/r) (Λ(p^r)/p^{r/2}) sin(r E log p)
+```
+— formal identisch zur expliziten Formel mit Primzahlen p als „Orbits" der Periode log p. Aber: das nackte H = xp hat **keine** periodischen Orbits (Trajektorien laufen ins Unendliche) ⇒ Spektrum kontinuierlich, Fluktuationsterm fehlt.
+- Abhilfe durch Modifikation (Sierra–Townsend 2011):
+```
+H = x(p + ℓ_p²/p)   bzw.   H = (x + ℓ_x²/x)(p + ℓ_p²/p)
+```
+erzeugt gebundene, diskrete Spektren, die die geglätteten Nullstellen approximieren; die *exakten* γ_n bleiben unerreicht.
+
+### Connes-Regularisierung (Kontrast)
+Connes' adelische Version (Dok. 10) liefert statt eines diskreten Emissionsspektrums ein **Absorptionsspektrum**: die γ_n erscheinen als *Lücken* (fehlende Linien) im Kontinuum — formal Spur über den Adèleklassenraum mit der expliziten Formel als Spurformel.
+
 ## Quellen
 - [H = xp and the Riemann Zeros — Berry & Keating (Springer)](https://link.springer.com/chapter/10.1007/978-1-4615-4875-1_19)
 - [The Riemann zeros as spectrum and the Riemann hypothesis (arXiv 1601.01797)](https://arxiv.org/pdf/1601.01797)

@@ -25,6 +25,39 @@ Eine Reihe von Arbeiten beweist, dass ein *positiver Bruchteil* aller nicht-triv
 - Grenze der Methode: Mollifier-Techniken scheinen einen Anteil deutlich unter 100 % nicht überschreiten zu können — sie liefern prinzipiell **keinen** Weg zur vollen RH (man bräuchte exakt 100 % *und* den Ausschluss jeglicher Ausnahme).
 - Eng verbunden mit der Random-Matrix-Theorie (Momente von ζ, Dok. 07) und Dichte-Abschätzungen (Dok. 17).
 
+## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+
+### Levinsons Methode (1974) — Formeln
+Zentrale Größe: Zähle Nullstellen über das Argumentprinzip für eine modifizierte Funktion. Levinson betrachtet
+```
+G(s) = ξ(s) + (Korrektur),   bzw. die Funktion  B(s) = ½ + (1/log T)·ζ'(s)/ζ(s)
+```
+und nutzt **Speisers Äquivalenz** (RH ⟺ ζ'(s) ≠ 0 für Re(s) < 1/2). Schlüssel ist ein **Mollifier** — ein Dirichlet-Polynom
+```
+M(s) = Σ_{n ≤ y} μ(n) P(log(y/n)/log y) · n^{−(s−1/2)}/ ...,   y = T^θ
+```
+der |ζ| nahe der Geraden „glättet". Man zeigt, dass die Anzahl der Vorzeichenwechsel (bzw. reellen Nullstellen) einer zugehörigen reellen Funktion mindestens
+```
+N₀(T) ≥ κ · N(T),   κ = 1 − (1/R) log( (1/(2πi)) ∮ ... )
+```
+ergibt, wobei R = log(y)/log(T) (Mollifier-Länge) und ein Mittelwertintegral
+```
+I = (1/T) ∫_0^T |V·M (1/2 + it)|² dt
+```
+asymptotisch ausgewertet wird (V eine Linearkombination von ζ und ζ'). Levinson erhält κ = 1/3 mit θ = 1/2 − ε.
+
+### Conrey (1989) und darüber hinaus
+- Conrey verlängerte den Mollifier auf θ = 4/7 − ε (mittels Kloosterman-Summen-Abschätzungen) ⇒ **κ ≥ 2/5 = 0,40**.
+- Zweistufige Mollifier M = M₁ + M₂ (Feng; Bui–Conrey–Young; Pratt–Robles–Zaharescu) ⇒ **κ > 0,41** (aktueller Rekordbereich ~0,4172).
+- Allgemeine Form des auszuwertenden Hauptterms (Mollified second moment):
+```
+(1/T)∫_0^T |ζ(1/2+it)|² |M(1/2+it)|² dt ~ c(P) · log T
+```
+mit einem Funktional c(P) im Mollifier-Polynom P, das man variationsrechnerisch optimiert (Euler–Lagrange-Gleichung für P).
+
+### Warum die Methode bei < 100 % blockiert
+Die Mollifier-Länge θ ist durch die verfügbaren Mittelwertsätze (zweite/vierte Momente, Large Sieve) begrenzt; selbst θ → 1 (unter starken Vermutungen) liefert κ deutlich unter 1. Es gibt also keinen bekannten Weg, über Mollifier zu κ = 1 *und* dem Ausschluss aller Ausnahmen zu gelangen.
+
 ## Quellen
 - [More than 41% of the zeros of the zeta function are on the critical line (ResearchGate)](https://www.researchgate.net/publication/45902466_More_than_41_of_the_zeros_of_the_zeta_function_are_on_the_critical_line)
 - [Zeros on the Critical Line — E. Naslund (UBC)](https://personal.math.ubc.ca/~gerg/teaching/613-Winter2011/ZerosCriticalLine.pdf)

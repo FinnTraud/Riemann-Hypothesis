@@ -21,6 +21,37 @@
 - Liefert die Z-Funktion, die zum zentralen Werkzeug numerischer Verifikation wurde (Vorzeichenwechsel von Z(t) lokalisieren Nullstellen — Grundlage von Turing-Methode, Odlyzko etc., Dok. 24).
 - Wichtig: "Unendlich viele auf der Geraden" schließt nicht aus, dass *auch* unendlich viele abseits liegen könnten — genau diese Lücke schließen erst die Anteilsresultate (Dok. 04) teilweise, die volle RH bleibt offen.
 
+## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+
+### Die Hardysche Z-Funktion
+Definiere die Riemann-Siegel-Theta-Funktion und Z(t):
+```
+θ(t) = arg Γ(1/4 + it/2) − (t/2) log π,    Z(t) = e^{iθ(t)} ζ(1/2 + it)
+```
+**Eigenschaften:** Z(t) ist reellwertig für reelles t, und |Z(t)| = |ζ(1/2 + it)|. Daher gilt: Z(t₀) = 0 ⟺ ζ hat eine Nullstelle bei 1/2 + it₀ auf der kritischen Geraden. Vorzeichenwechsel von Z ⇒ Nullstelle auf der Geraden.
+
+### Hardys Satz und Beweisidee (1914)
+**Satz (Hardy).** Z(t) besitzt unendlich viele reelle Nullstellen; also liegen unendlich viele Nullstellen von ζ auf Re(s) = 1/2.
+
+**Beweisskizze (Momentenmethode mit Theta-Transformation).** Hardy betrachtet Integrale von Z(t) gegen Testkerne und nutzt die Funktionalgleichung der Jacobi-Theta-Funktion
+```
+ϑ(x) = Σ_{n=−∞}^∞ e^{−πn²x},    ϑ(1/x) = √x · ϑ(x).
+```
+Aus der Mellin-Darstellung von ξ gewinnt er, dass gewisse Mittel von Z(t) nicht für alle großen T dasselbe Vorzeichen behalten können: Wäre Z(t) ab einem Punkt vorzeichenfest, so widerspräche das asymptotische Verhalten der Integrale
+```
+∫_0^T Z(t) t^{2k} dt
+```
+(für geeignete k, ausgewertet über die Theta-Transformation an der Stelle, die der kritischen Geraden entspricht) der Annahme. Genauer zeigt Hardy, dass das Verhalten nahe x = 1 der Theta-Funktion erzwingt, dass Z unendlich oft das Vorzeichen wechselt.
+
+### Quantitative Verschärfungen (mit Formeln)
+Sei N₀(T) die Anzahl der Nullstellen *auf* der kritischen Geraden bis Höhe T, N(T) die Gesamtzahl (Dok. 02).
+- **Hardy–Littlewood (1921):** N₀(T) > c·T für ein c > 0.
+- **Selberg (1942):** N₀(T) > c·T log T, also N₀(T) > c·N(T) (positiver Bruchteil), via Mollifier-Mittel ∫ |ζ(1/2+it) M(1/2+it)|² dt mit Dirichlet-Polynom M.
+- **Anteil κ := liminf N₀(T)/N(T):** Levinson κ ≥ 1/3, Conrey κ ≥ 2/5, heute κ > 0,41 (Dok. 04).
+
+### Speiser-Äquivalenz (Hintergrund der Mollifier-Methode)
+**Satz (Speiser 1934).** RH ⟺ ζ'(s) ≠ 0 für 0 < Re(s) < 1/2. Die Levinson-Methode zählt Nullstellen von ζ'·(Mollifier) und überträgt sie via dieser Äquivalenz auf ζ.
+
 ## Quellen
 - [Hardy's function Z(t) — results and problems (arXiv 1601.06512)](https://arxiv.org/pdf/1601.06512)
 - [A note on Hardy's theorem (HAL)](https://hal.science/hal-01425570v1/document)

@@ -23,6 +23,32 @@ Bender, Brody und Müller konstruierten 2017 einen konkreten Hamiltonian-Operato
 - Belebte die Diskussion über PT-symmetrische (nicht-hermitesche) Quantenmechanik im RH-Kontext neu.
 - **Kein Beweis der RH.**
 
+## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+
+### Der konstruierte Operator
+Bender–Brody–Müller definieren auf einem geeigneten Hilbertraum (Eigenfunktionen mit Randbedingung) den Operator
+```
+Ĥ = (1/(1 − e^{−i p̂})) ( x̂ p̂ + p̂ x̂ ) (1 − e^{−i p̂})
+```
+mit x̂ = i d/dx (bzw. kanonisch [x̂, p̂] = i). Das ist eine Konjugation des symmetrisierten Berry–Keating-Operators (x̂p̂ + p̂x̂)/2 mit dem nicht-unitären Operator (1 − e^{−ip̂}).
+
+### Behauptete Eigenwert-Beziehung
+Erfüllen die Eigenfunktionen ψ die Randbedingung ψ(0) = 0, so behaupten die Autoren: die Eigenwerte E_n liefern die nicht-trivialen Nullstellen via
+```
+z_n = 1/2 + i·(... )   ⇔   die Sekulärgleichung wird zu  ζ(1/2 + i E_n …) = 0,
+```
+genauer in der Formulierung E_n ↔ z_n durch z_n = ½(1 − i E_n). Sind alle E_n reell ⇒ Re(z_n) = 1/2 ⇒ RH.
+
+### PT-Symmetrie statt Hermitezität
+Ĥ ist nicht hermitesch, aber es gilt
+```
+(PT) (i Ĥ) (PT)^{−1} = i Ĥ
+```
+mit Parität P: x ↦ −x und Zeitumkehr T: i ↦ −i. **Schlüsselsatz der PT-Theorie:** Ist die PT-Symmetrie ungebrochen (alle Eigenzustände PT-invariant), so ist das Spektrum reell. Die Autoren benötigen, dass die PT-Symmetrie **maximal gebrochen** auf dem relevanten Teilraum so wirkt, dass dennoch Realität folgt.
+
+### Die Lücke (präzise)
+Es fehlt der Beweis, dass Ĥ (bzw. die zugehörige Bilinearform) auf dem konstruierten Definitionsbereich tatsächlich **selbstadjungiert** (bzw. die PT-Symmetrie im nötigen Sinn ungebrochen) ist. Ohne diesen Schritt ist die Realität der E_n nicht gesichert. Zudem zeigt die Konjugation mit (1 − e^{−ip̂}) formal nur, dass die *Sekulärfunktion* mit ζ verwandt ist — die eigentliche Schwierigkeit (Lage der Nullstellen) wird reproduziert, nicht gelöst. Kommentar arXiv 1704.02644 weist auf Wohldefiniertheits-/Domänenprobleme hin.
+
 ## Quellen
 - [Hamiltonian for the Zeros of the Riemann Zeta Function — Phys. Rev. Lett. 118, 130201](https://link.aps.org/doi/10.1103/PhysRevLett.118.130201)
 - [Hamiltonian for the zeros of the Riemann zeta function (arXiv 1608.03679)](https://arxiv.org/abs/1608.03679)

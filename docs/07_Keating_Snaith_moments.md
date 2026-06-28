@@ -28,6 +28,47 @@ Keating und Snaith schlugen 2000 vor, die Riemannsche Zetafunktion auf der kriti
 - Liefert tiefe strukturelle Evidenz für einen spektralen/Random-Matrix-Ursprung der Nullstellen.
 - Trägt indirekt zur RH bei (Momentschranken ↔ Anteil der Nullstellen auf der Geraden, Dok. 04), ist aber selbst kein Beweisweg zur vollen RH.
 
+## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+
+### CUE-Seite: charakteristisches Polynom
+Für U ∈ U(N) Haar-verteilt sei Λ_U(θ) = det(I − U e^{−iθ}) = ∏_{n=1}^N (1 − e^{i(θ_n − θ)}). Keating–Snaith berechnen die Momente exakt:
+```
+E_{U(N)} |Λ_U(θ)|^{2k} = ∏_{j=1}^N  Γ(j) Γ(j + 2k) / Γ(j + k)²
+```
+Großes N (Barnes-G-Funktion G):
+```
+E |Λ|^{2k} ~ (G(1+k)² / G(1+2k)) · N^{k²}   (N → ∞)
+```
+
+### Übersetzung in die Zeta-Momente (Vermutung)
+Identifiziere N ↔ log(T/2π) (gleiche lokale Dichte). Keating–Snaith-Vermutung für die 2k-ten Momente auf der kritischen Geraden:
+```
+(1/T) ∫_0^T |ζ(1/2 + it)|^{2k} dt  ~  a_k · g_k · (log T)^{k²}
+```
+mit
+```
+g_k = G(1+k)² / G(1+2k)         (Random-Matrix-Faktor, aus CUE)
+a_k = ∏_p [ (1 − 1/p)^{k²} Σ_{m≥0} (Γ(m+k)/(m! Γ(k)))² p^{−m} ]   (arithmetischer Faktor, Eulerprodukt)
+```
+
+### Bekannte Spezialfälle (bewiesen)
+```
+k = 1:  (1/T)∫|ζ(1/2+it)|² dt ~ log T           (g_1 = 1, a_1 = 1; Hardy–Littlewood)
+k = 2:  (1/T)∫|ζ(1/2+it)|⁴ dt ~ (1/2π²)(log T)⁴  (g_2 = 1/12, a_2 = 6/π²; Ingham)
+```
+Die Werte g_1 = 1, g_2 = 1/12 reproduzieren exakt G(2)²/G(3) bzw. G(3)²/G(5) — Bestätigung des RMT-Modells.
+
+### Erweiterungen
+- Ableitungsmomente: E|Λ'_U|² etc. ↔ Momente von ζ' (Hughes, Conrey–Ghosh–Gonek).
+- **Fyodorov–Hiary–Keating-Vermutung** für das Maximum in kurzen Intervallen:
+```
+max_{|h| ≤ 1} log|ζ(1/2 + i(t+h))| = log log T − (3/4) log log log T + O(1)
+```
+(log-korreliertes Feld, Branching-Random-Walk-Analogie).
+
+### Bezug zur RH
+Momentschranken ⇒ untere Schranken für N₀(T)/N(T) (Anteil auf der Geraden, Dok. 04); k = 0-Verhalten ↔ Wertverteilung. Selbst die volle Momentvermutung impliziert die RH nicht, ist aber Teil desselben spektralen Bildes.
+
 ## Quellen
 - [Derivative Moments for Characteristic Polynomials from the CUE (Springer, Comm. Math. Phys.)](https://link.springer.com/article/10.1007/s00220-012-1512-1)
 - [Moments of the Riemann Zeta Function and Log-Correlated Random Variables (Oxford)](https://ora.ox.ac.uk/objects/uuid:9bbc320c-9738-43ef-b0f0-f18bf4b7c0d6/files/dh415pb096)
