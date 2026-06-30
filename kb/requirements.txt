@@ -1,0 +1,12 @@
+# Kern (Suche/Graph/Claims/Scaffold via kb/query.py + build_kb.py): NUR Stdlib.
+#
+# Numerik & Visualisierung (kb/compute.py, kb/visualize.py):
+mpmath>=1.3
+numpy>=1.24
+matplotlib>=3.7
+#
+# MCP-Server (kb/server.py):
+mcp[cli]>=1.2.0
+#
+# Optional, für semantische Embeddings zusätzlich zu BM25 (zukünftige Aufwertung):
+# sentence-transformers>=2.2.0

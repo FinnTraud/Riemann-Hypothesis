@@ -1,6 +1,8 @@
 # The Riemann Hypothesis: Proof Approaches — Research Compendium
 
 > Compiled via agentic web retrieval (June 2026). This document surveys the major mathematical strategies that have been pursued toward proving the Riemann Hypothesis (RH), their current status, key equivalences, recent breakthroughs, and known failed/disputed attempts. It is structured for chunked ingestion into a vector database / RAG pipeline (each `##`/`###` section is a self-contained retrievable unit).
+>
+> **Vertiefung mit Mathematik:** Dieser Überblick ist die Kurzfassung. Der Ordner `docs/` enthält 34 Einzeldokumente — je eines pro Ansatz / Paper / gescheitertem Beweis — die zusätzlich einen Abschnitt **„Mathematischer Kern (Formeln, Sätze, Beweisskizzen)"** mit den tatsächlichen Definitionen, Gleichungen, Sätzen und Beweisrechnungen enthalten. Einstieg: `docs/00_INDEX.md`.
 
 ## 1. The Statement of the Riemann Hypothesis
 
