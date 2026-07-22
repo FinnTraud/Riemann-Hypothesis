@@ -53,6 +53,7 @@ lang: de
 | 2022 | Yitang Zhang: Landau–Siegel-Nullstellen | 32 |
 | 2024 | **Guth–Maynard:** Nullstellendichte-Durchbruch | 22 |
 | 2025 | Loeffler–Stoll: ζ/L-Funktionen in Lean formalisiert | 37 |
+| 2026 | **Connes:** 42-seitige Auftrags-Übersicht + neue Perspektive (arXiv 2602.04022) | 52 |
 
 ## Kanonische Leseliste (Primär- & Standardquellen)
 
@@ -69,7 +70,7 @@ lang: de
 - [A. Connes — *An Essay on the Riemann Hypothesis* (arXiv 1509.05576)](https://arxiv.org/pdf/1509.05576)
 - [J. Milne — *The Riemann Hypothesis over Finite Fields: From Weil to the Present Day*](https://www.jmilne.org/math/xnotes/pRH.html)
 - [A. Ivić — *On some reasons for doubting the Riemann hypothesis* (arXiv math/0311162)](https://arxiv.org/pdf/math/0311162)
-- [The Riemann Hypothesis: Past, Present and a Letter Through Time (arXiv 2602.04022)](https://arxiv.org/abs/2602.04022)
+- [**A. Connes** — *The Riemann Hypothesis: Past, Present and a Letter Through Time* (arXiv 2602.04022, Feb. 2026, 42 S.) — aktuellster maßgeblicher Gesamtüberblick](https://arxiv.org/abs/2602.04022)
 
 ### Daten / Numerik
 - [A. Odlyzko — Tables of zeros of ζ](https://www-users.cse.umn.edu/~odlyzko/zeta_tables/index.html)

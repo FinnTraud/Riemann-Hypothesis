@@ -89,6 +89,7 @@ lang: de
 - `47_physics_layer_primon_gas_quantum_graphs.md` — Primon-Gas, Schumayer–Hutchinson, Sierra Rindler–Dirac, Quantengraphen
 - `48_Meyer_Kurokawa_algebraic_programs.md` — Meyer (Distributionen), Kurokawa (absolute Zeta)
 - `49_live_analytic_frontier.md` — Live-Front 2019–2026: explizite/log-freie Dichte, Tao-Programm, Nelson-Subkonvexität, Harper-Momente
+- `52_studienarbeit_priorisierte_leseliste.md` — **Priorisierte Leseliste für die Studienarbeit** (markierte Kernansätze ⭐, Pflichtlektüre, neu online gefundene Paper 🆕)
 
 ## Quellen-Verifikation / Recherche
 Diese Wissensbasis wurde durch einen 5-Schritt-Recherche-Agenten auf Vollständigkeit geprüft (Stand Juni 2026); die Dokumente 43–49 schließen die dabei identifizierten Lücken. Hinweise zur Nutzung im Vektor-/MCP-Server: siehe `README_RAG.md`.
