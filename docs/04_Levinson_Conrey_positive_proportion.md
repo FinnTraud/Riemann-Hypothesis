@@ -1,75 +1,75 @@
 ---
 id: doc-04
 number: 04
-title: "Levinson, Conrey & Co.: Positiver Anteil der Nullstellen auf der kritischen Geraden"
+title: "Levinson, Conrey & Co.: Positive Proportion of Zeros on the Critical Line"
 category: partial-results
 status: proven
 tags: [levinson, conrey, mollifier, positive-proportion, speiser]
 source_file: 04_Levinson_Conrey_positive_proportion.md
-lang: de
+lang: en
 ---
 
-# Levinson, Conrey & Co.: Positiver Anteil der Nullstellen auf der kritischen Geraden
+# Levinson, Conrey & Co.: Positive Proportion of Zeros on the Critical Line
 
-**Kategorie:** Partielles Resultat
-**Autoren / Jahre:** Norman Levinson (1974), J. Brian Conrey (1989), Conrey–Iwaniec–Soundararajan u. a. (>2010)
-**Typ:** Bewiesene quantitative Teilresultate zur RH
-**Status:** Bewiesen; aktuell >41 % nachgewiesen, volle RH (100 %) offen
+**Category:** Partial result
+**Authors / years:** Norman Levinson (1974), J. Brian Conrey (1989), Conrey–Iwaniec–Soundararajan and others (>2010)
+**Type:** Proven quantitative partial results on the RH
+**Status:** Proven; currently >41% established, full RH (100%) open
 
-## Zusammenfassung
-Eine Reihe von Arbeiten beweist, dass ein *positiver Bruchteil* aller nicht-trivialen Nullstellen auf der kritischen Geraden liegt — quantitativ deutlich mehr als Hardys "unendlich viele". Die Entwicklung der nachgewiesenen Untergrenze:
-- **Selberg (1942):** ein positiver (kleiner) Anteil.
-- **Levinson (1974):** mindestens **1/3** (≈ 33,3 %).
-- **Conrey (1989):** mindestens **2/5** (= 40 %).
-- **Spätere Arbeiten (Bui–Conrey–Young, Feng, Pratt–Robles u. a., ab ~2011):** **über 41 %**.
+## Summary
+A series of papers proves that a *positive fraction* of all non-trivial zeros lie on the critical line — quantitatively much more than Hardy's "infinitely many". The evolution of the proven lower bound:
+- **Selberg (1942):** a positive (small) proportion.
+- **Levinson (1974):** at least **1/3** (≈ 33.3%).
+- **Conrey (1989):** at least **2/5** (= 40%).
+- **Later work (Bui–Conrey–Young, Feng, Pratt–Robles and others, from ~2011):** **over 41%**.
 
-## Kernidee: die Levinson–Conrey-Mollifier-Methode
-- Man zählt nicht direkt die Nullstellen von ζ auf der Geraden, sondern nutzt einen Zusammenhang zwischen Nullstellen von ζ und Nullstellen seiner Ableitung ζ′ (bzw. einer modifizierten Funktion).
-- Ein **Mollifier** (ein geschickt gewähltes Dirichlet-Polynom) "glättet" die Zetafunktion in der Nähe der kritischen Geraden, sodass man die relevanten Vorzeichenwechsel / das Argumentprinzip kontrollieren und die Anzahl der Nullstellen auf der Geraden von unten abschätzen kann.
-- Verfeinerungen bestehen vor allem in raffinierteren Mollifiern (längere Dirichlet-Polynome, zweistufige Mollifier) und schärferer asymptotischer Analyse der entstehenden Momentintegrale.
+## Core idea: the Levinson–Conrey mollifier method
+- One does not count the zeros of ζ on the line directly, but exploits a relationship between the zeros of ζ and the zeros of its derivative ζ′ (resp. a modified function).
+- A **mollifier** (a cleverly chosen Dirichlet polynomial) "smooths" the zeta function near the critical line, so that one can control the relevant sign changes / the argument principle and bound the number of zeros on the line from below.
+- Refinements consist mainly of more sophisticated mollifiers (longer Dirichlet polynomials, two-piece mollifiers) and sharper asymptotic analysis of the resulting moment integrals.
 
-## Verwandtes: Speiser-Theorem
-- Speiser (1934) zeigte: Die RH ist äquivalent dazu, dass ζ′(s) keine Nullstellen im Streifen 0 < Re(s) < 1/2 besitzt. Die Levinson-Methode nutzt diesen Zusammenhang zwischen Nullstellen von ζ und ζ′ aus.
+## Related: the Speiser theorem
+- Speiser (1934) showed: the RH is equivalent to ζ′(s) having no zeros in the strip 0 < Re(s) < 1/2. The Levinson method exploits this connection between the zeros of ζ and ζ′.
 
-## Bedeutung / Einordnung
-- Stärkstes Resultat *in Richtung* RH mit klassischen Methoden: Über 41 % aller Nullstellen liegen nachweislich auf der Geraden.
-- Grenze der Methode: Mollifier-Techniken scheinen einen Anteil deutlich unter 100 % nicht überschreiten zu können — sie liefern prinzipiell **keinen** Weg zur vollen RH (man bräuchte exakt 100 % *und* den Ausschluss jeglicher Ausnahme).
-- Eng verbunden mit der Random-Matrix-Theorie (Momente von ζ, Dok. 07) und Dichte-Abschätzungen (Dok. 17).
+## Significance / context
+- The strongest result *toward* the RH with classical methods: over 41% of all zeros are provably on the line.
+- Limit of the method: mollifier techniques seem unable to exceed a proportion well below 100% — in principle they provide **no** route to the full RH (one would need exactly 100% *and* the exclusion of any exception).
+- Closely connected to random matrix theory (moments of ζ, Doc. 07) and density estimates (Doc. 17).
 
-## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+## Mathematical core (formulas, theorems, proof sketches)
 
-### Levinsons Methode (1974) — Formeln
-Zentrale Größe: Zähle Nullstellen über das Argumentprinzip für eine modifizierte Funktion. Levinson betrachtet
+### Levinson's method (1974) — formulas
+Central quantity: count zeros via the argument principle for a modified function. Levinson considers
 ```
-G(s) = ξ(s) + (Korrektur),   bzw. die Funktion  B(s) = ½ + (1/log T)·ζ'(s)/ζ(s)
+G(s) = ξ(s) + (correction),   or the function  B(s) = ½ + (1/log T)·ζ'(s)/ζ(s)
 ```
-und nutzt **Speisers Äquivalenz** (RH ⟺ ζ'(s) ≠ 0 für Re(s) < 1/2). Schlüssel ist ein **Mollifier** — ein Dirichlet-Polynom
+and uses **Speiser's equivalence** (RH ⟺ ζ'(s) ≠ 0 for Re(s) < 1/2). The key is a **mollifier** — a Dirichlet polynomial
 ```
 M(s) = Σ_{n ≤ y} μ(n) P(log(y/n)/log y) · n^{−(s−1/2)}/ ...,   y = T^θ
 ```
-der |ζ| nahe der Geraden „glättet". Man zeigt, dass die Anzahl der Vorzeichenwechsel (bzw. reellen Nullstellen) einer zugehörigen reellen Funktion mindestens
+that "smooths" |ζ| near the line. One shows that the number of sign changes (resp. real zeros) of an associated real function is at least
 ```
 N₀(T) ≥ κ · N(T),   κ = 1 − (1/R) log( (1/(2πi)) ∮ ... )
 ```
-ergibt, wobei R = log(y)/log(T) (Mollifier-Länge) und ein Mittelwertintegral
+where R = log(y)/log(T) (mollifier length) and a mean-value integral
 ```
 I = (1/T) ∫_0^T |V·M (1/2 + it)|² dt
 ```
-asymptotisch ausgewertet wird (V eine Linearkombination von ζ und ζ'). Levinson erhält κ = 1/3 mit θ = 1/2 − ε.
+is evaluated asymptotically (V a linear combination of ζ and ζ'). Levinson obtains κ = 1/3 with θ = 1/2 − ε.
 
-### Conrey (1989) und darüber hinaus
-- Conrey verlängerte den Mollifier auf θ = 4/7 − ε (mittels Kloosterman-Summen-Abschätzungen) ⇒ **κ ≥ 2/5 = 0,40**.
-- Zweistufige Mollifier M = M₁ + M₂ (Feng; Bui–Conrey–Young; Pratt–Robles–Zaharescu) ⇒ **κ > 0,41** (aktueller Rekordbereich ~0,4172).
-- Allgemeine Form des auszuwertenden Hauptterms (Mollified second moment):
+### Conrey (1989) and beyond
+- Conrey lengthened the mollifier to θ = 4/7 − ε (via Kloosterman-sum estimates) ⇒ **κ ≥ 2/5 = 0.40**.
+- Two-piece mollifiers M = M₁ + M₂ (Feng; Bui–Conrey–Young; Pratt–Robles–Zaharescu) ⇒ **κ > 0.41** (current record range ~0.4172).
+- General form of the main term to be evaluated (mollified second moment):
 ```
 (1/T)∫_0^T |ζ(1/2+it)|² |M(1/2+it)|² dt ~ c(P) · log T
 ```
-mit einem Funktional c(P) im Mollifier-Polynom P, das man variationsrechnerisch optimiert (Euler–Lagrange-Gleichung für P).
+with a functional c(P) in the mollifier polynomial P, which one optimizes variationally (Euler–Lagrange equation for P).
 
-### Warum die Methode bei < 100 % blockiert
-Die Mollifier-Länge θ ist durch die verfügbaren Mittelwertsätze (zweite/vierte Momente, Large Sieve) begrenzt; selbst θ → 1 (unter starken Vermutungen) liefert κ deutlich unter 1. Es gibt also keinen bekannten Weg, über Mollifier zu κ = 1 *und* dem Ausschluss aller Ausnahmen zu gelangen.
+### Why the method stalls below 100%
+The mollifier length θ is limited by the available mean-value theorems (second/fourth moments, large sieve); even θ → 1 (under strong conjectures) yields κ well below 1. So there is no known way to reach κ = 1 *and* the exclusion of all exceptions via mollifiers.
 
-## Quellen
+## Sources
 - [More than 41% of the zeros of the zeta function are on the critical line (ResearchGate)](https://www.researchgate.net/publication/45902466_More_than_41_of_the_zeros_of_the_zeta_function_are_on_the_critical_line)
 - [Zeros on the Critical Line — E. Naslund (UBC)](https://personal.math.ubc.ca/~gerg/teaching/613-Winter2011/ZerosCriticalLine.pdf)
 - [On a choice of the mollified function in the Levinson-Conrey method (arXiv 1403.5786)](https://arxiv.org/pdf/1403.5786)

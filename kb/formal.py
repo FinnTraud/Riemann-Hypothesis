@@ -1,28 +1,28 @@
 """
-formal.py — Brücke zur formalen Verifikation (Lean 4 / mathlib).
+formal.py — Bridge to formal verification (Lean 4 / mathlib).
 
-Lean ist die einzige Schicht, in der ein Beweisschritt MASCHINELL geprüft wird
-(kein Halluzinationsrisiko). Dieses Modul:
-  - liefert die formale RH-Aussage (mathlib) + Setup-Anleitung,
-  - prüft Lean-Code, FALLS eine Lean-Toolchain (lean/lake) installiert ist,
-  - degradiert sonst ehrlich zu Anleitung statt Fake-Ergebnis.
+Lean is the only layer in which a proof step is checked BY MACHINE
+(no hallucination risk). This module:
+  - provides the formal RH statement (mathlib) + setup instructions,
+  - checks Lean code IF a Lean toolchain (lean/lake) is installed,
+  - otherwise degrades honestly to instructions instead of a fake result.
 """
 import os, shutil, subprocess, tempfile
 
 RH_STATEMENT_LEAN = r"""
--- Formale Aussage der Riemann-Vermutung (mathlib-nah, schematisch)
--- mathlib enthält `riemannZeta` und eine `RiemannHypothesis`-Formulierung.
+-- Formal statement of the Riemann Hypothesis (mathlib-style, schematic)
+-- mathlib contains `riemannZeta` and a `RiemannHypothesis` formulation.
 import Mathlib.NumberTheory.LSeries.RiemannZeta
 
 theorem riemann_hypothesis_statement :
     ∀ s : ℂ, riemannZeta s = 0 → s.re = 1 / 2 ∨ ∃ n : ℕ, s = -2 * (n + 1) := by
-  sorry  -- offen: vollständiger Beweis (Millennium-Problem)
+  sorry  -- open: full proof (Millennium Problem)
 """.strip()
 
 _ELAN_BIN = os.path.expanduser("~/.elan/bin")
 
 def _lean_path():
-    """lean-Binary finden (PATH oder ~/.elan/bin)."""
+    """Find the lean binary (PATH or ~/.elan/bin)."""
     p = shutil.which("lean")
     if p:
         return p
@@ -30,25 +30,25 @@ def _lean_path():
     return cand if os.path.exists(cand) else None
 
 def formal_statement():
-    """Gibt die formale RH-Aussage in Lean + Erläuterung + Projekt-Gerüst zurück."""
+    """Returns the formal RH statement in Lean + explanation + project scaffold."""
     scaffold = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lean")
     return {
         "lean": RH_STATEMENT_LEAN,
-        "explanation": ("Jede Nullstelle ist entweder kritisch (Re=1/2) oder trivial (-2,-4,…). "
-                        "'sorry' markiert die offene Stelle. In mathlib ist die RH als Statement "
-                        "vorhanden; der Beweis ist offen (siehe docs/37)."),
+        "explanation": ("Every zero is either critical (Re=1/2) or trivial (-2,-4,…). "
+                        "'sorry' marks the open spot. mathlib contains the RH as a statement; "
+                        "the proof is open (see docs/37)."),
         "project_scaffold": scaffold,
-        "scaffold_files": ["RH/SelfContained.lean (ohne mathlib, baut sofort)",
-                           "RH/Statement.lean (RH-Aussage, braucht mathlib)",
+        "scaffold_files": ["RH/SelfContained.lean (without mathlib, builds immediately)",
+                           "RH/Statement.lean (RH statement, needs mathlib)",
                            "lakefile.toml", "lean-toolchain", "README.md"],
         "setup": ["curl .../elan-init.sh | sh -s -- -y   (Lean 4 + elan)",
-                  "cd kb/lean && lean RH/SelfContained.lean   (sofortiger Test, kein mathlib)",
-                  "lake exe cache get && lake build   (volles Projekt mit mathlib)"],
+                  "cd kb/lean && lean RH/SelfContained.lean   (instant test, no mathlib)",
+                  "lake exe cache get && lake build   (full project with mathlib)"],
         "see": "docs/37_formalization_lean_proof_assistants.md, kb/lean/README.md",
     }
 
 def lean_status():
-    """Ehrlicher Toolchain-Status."""
+    """Honest toolchain status."""
     lean = _lean_path()
     elan = shutil.which("elan") or (os.path.join(_ELAN_BIN, "elan")
                                     if os.path.exists(os.path.join(_ELAN_BIN, "elan")) else None)
@@ -67,15 +67,15 @@ def lean_available():
     return st["toolchain_usable"]
 
 def lean_check(code):
-    """Prüft Lean-Code, falls Toolchain vorhanden. Sonst ehrliche Statusmeldung."""
+    """Checks Lean code if a toolchain is present. Otherwise an honest status message."""
     lean = _lean_path()
     if not lean_available():
         st = lean_status()
         return {"lean_available": False, "status": "skipped", "lean_status": st,
-                "message": ("Lean-Toolchain nicht nutzbar (Code NICHT geprüft). "
-                            + ("elan ist installiert, aber der Toolchain-Download ist blockiert. "
-                               if st["elan_installed"] else "Lean 4 ist nicht installiert. ")
-                            + "Lokal bauen: siehe kb/lean/README.md."),
+                "message": ("Lean toolchain not usable (code NOT checked). "
+                            + ("elan is installed, but the toolchain download is blocked. "
+                               if st["elan_installed"] else "Lean 4 is not installed. ")
+                            + "Build locally: see kb/lean/README.md."),
                 "code_received_chars": len(code)}
     try:
         with tempfile.NamedTemporaryFile("w", suffix=".lean", delete=False, encoding="utf-8") as f:

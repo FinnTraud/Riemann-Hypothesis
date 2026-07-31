@@ -1,22 +1,22 @@
-# Research Note: Báez-Duarte-Distanz d_N als RH-Kriterium
+# Research Note: Báez-Duarte distance d_N as an RH criterion
 
-**Datum:** 2026-06-30
-**Status:** Numerische Evidenz (kein Beweis — siehe docs/35)
-**Bezug:** docs/13 (Nyman-Beurling/Báez-Duarte), docs/45 (quantitativ), docs/06
+**Date:** 2026-06-30
+**Status:** Numerical evidence (not a proof — see docs/35)
+**References:** docs/13 (Nyman-Beurling/Báez-Duarte), docs/45 (quantitative), docs/06
 
-## Fragestellung
-Die RH ist äquivalent zu d_N → 0, wobei d_N der minimale L²(0,1)-Abstand der konstanten
-Funktion 1 zu Linearkombinationen der Bausteine g_n(x) = {1/(n x)} ist (n=1..N).
-Vermutung (BBLS 2000): (log N)·d_N² → Σ_ρ 1/|ρ|² = 2 + γ − log(4π) ≈ 0.046191.
+## Question
+The RH is equivalent to d_N → 0, where d_N is the minimal L²(0,1) distance of the constant
+function 1 to linear combinations of the building blocks g_n(x) = {1/(n x)} (n=1..N).
+Conjecture (BBLS 2000): (log N)·d_N² → Σ_ρ 1/|ρ|² = 2 + γ − log(4π) ≈ 0.046191.
 
-## Methode (selbst hergeleitet, nachprüfbar)
-- exakt: b_n = ∫₀¹ {1/(nx)} dx = (ln n + 1 − γ)/n  (Mellin-Herleitung)
-- G_mn = ∫₁^∞ {u/m}{u/n} u⁻² du, **stückweise exakt** integriert (Integrand zwischen
-  den Sprungstellen quadratisch) + exakter Periodenmittel-Schwanz μ/U₀.
-- d_N² = 1 − bᵀ G⁻¹ b (Lösung via least-squares, da G mit wachsendem N schlecht konditioniert).
-- **Selbstvalidierung:** b₁ berechnet = 0.422784, exakt (1−γ) = 0.422784 → Übereinstimmung.
+## Method (self-derived, verifiable)
+- exact: b_n = ∫₀¹ {1/(nx)} dx = (ln n + 1 − γ)/n  (Mellin derivation)
+- G_mn = ∫₁^∞ {u/m}{u/n} u⁻² du, integrated **piecewise exactly** (integrand quadratic
+  between the jump points) + exact period-mean tail μ/U₀.
+- d_N² = 1 − bᵀ G⁻¹ b (solved via least-squares, since G becomes ill-conditioned as N grows).
+- **Self-validation:** computed b₁ = 0.422784, exact (1−γ) = 0.422784 → agreement.
 
-## Ergebnis
+## Result
 | N | d_N | d_N² | (log N)·d_N² | cond(G) |
 |---|---|---|---|---|
 | 2 | 0.41604 | 0.173090 | 0.11998 | 1.43e+01 |
@@ -32,22 +32,22 @@ Vermutung (BBLS 2000): (log N)·d_N² → Σ_ρ 1/|ρ|² = 2 + γ − log(4π) �
 | 28 | 0.12188 | 0.014855 | 0.04950 | 1.87e+03 |
 | 32 | 0.11725 | 0.013747 | 0.04764 | 2.73e+03 |
 
-![d_N Konvergenz](dn_convergence.png)
+![d_N convergence](dn_convergence.png)
 
 ## Interpretation
-- **d_N fällt monoton** (0.42 → ~0.12) — konsistent mit RH (d_N → 0).
-- **(log N)·d_N² ≈ 0.048**, nahe der Vorhersage **0.0462** — die selbst hergeleitete
-  Formulierung trifft die richtige Konstante (starke Bestätigung der Korrektheit).
-- Restabweichung erklärt sich durch endliches N (bekannte langsam abklingende Korrekturterme)
-  und die berühmte **1/log N**-Konvergenz: selbst N=32 ist „klein".
-- cond(G) bleibt moderat (≤ ~2·10³), daher numerisch verlässlich in diesem N-Bereich.
+- **d_N decreases monotonically** (0.42 → ~0.12) — consistent with RH (d_N → 0).
+- **(log N)·d_N² ≈ 0.048**, close to the prediction **0.0462** — the self-derived
+  formulation hits the right constant (strong confirmation of its correctness).
+- The residual deviation is explained by finite N (known slowly decaying correction terms)
+  and the famous **1/log N** convergence: even N=32 is "small".
+- cond(G) stays moderate (≤ ~2·10³), so it is numerically reliable in this N range.
 
-## Grenzen / Ehrlichkeit
-Numerik ist EVIDENZ, kein Beweis (docs/35). Die 1/log N-Rate zeigt anschaulich, warum die RH
-so nicht „ausgerechnet" werden kann. Für größere N braucht es höhere Präzision (mpmath) wegen
-der schlechter werdenden Kondition von G.
+## Limitations / honesty
+Numerics are EVIDENCE, not proof (docs/35). The 1/log N rate vividly shows why the RH
+cannot be "computed out" this way. Larger N needs higher precision (mpmath) because of
+the worsening condition of G.
 
-## Nächste Schritte (für die Zusammenarbeit)
-- N erhöhen mit mpmath-Hochpräzision (cond(G) wächst ~exponentiell).
-- Vergleich mit der exakten Vasyunin-Cotangens-Formel für G_mn (Quelle gegenprüfen).
-- λ_n-Positivität (docs/14) als komplementäres Positivitäts-Kriterium.
+## Next steps (for the collaboration)
+- Increase N with mpmath high precision (cond(G) grows ~exponentially).
+- Compare with the exact Vasyunin cotangent formula for G_mn (cross-check the source).
+- λ_n positivity (docs/14) as a complementary positivity criterion.

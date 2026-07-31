@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-build_kb.py — Baut den kombinierten Wissensindex kb/index/kb.json aus:
-  - docs/*.md          (Frontmatter + Inhalt, gechunkt pro ##-Sektion)
-  - manifest.json      (Dokument-Metadaten -> Dokument-Knoten)
-  - kb/graph/nodes.json, edges.json, claims.json  (kuratierter Graph + Claims)
+build_kb.py — Builds the combined knowledge index kb/index/kb.json from:
+  - docs/*.md          (frontmatter + content, chunked per ## section)
+  - manifest.json      (document metadata -> document nodes)
+  - kb/graph/nodes.json, edges.json, claims.json  (curated graph + claims)
 
-Nur Python-Stdlib. Ausgabe ist ein einziges JSON, das von core.py geladen wird.
-Aufruf:  python3 kb/build_kb.py
+Python stdlib only. Output is a single JSON that is loaded by core.py.
+Usage:  python3 kb/build_kb.py
 """
 import os, re, json, glob, math, collections
 
@@ -38,9 +38,9 @@ def parse_frontmatter(text):
     return fm, body
 
 def chunk_by_section(body):
-    """Teilt den Body in Chunks pro ## Überschrift (H2)."""
+    """Splits the body into chunks per ## heading (H2)."""
     chunks = []
-    # alles vor dem ersten ## ist der 'intro'-Chunk
+    # everything before the first ## is the 'intro' chunk
     parts = re.split(r"\n(?=## )", body)
     for part in parts:
         h = re.match(r"##\s+(.+)", part)
@@ -52,7 +52,7 @@ def chunk_by_section(body):
     return chunks
 
 def main():
-    # 1) Dokument-Knoten aus manifest
+    # 1) Document nodes from manifest
     manifest_path = os.path.join(ROOT, "manifest.json")
     doc_nodes = {}
     if os.path.exists(manifest_path):
@@ -66,7 +66,7 @@ def main():
                 "file": d["file"], "summary": d.get("summary", ""),
             }
 
-    # 2) Chunks + BM25-Statistik aus den Markdown-Dokumenten
+    # 2) Chunks + BM25 statistics from the markdown documents
     chunks = []
     for path in sorted(glob.glob(os.path.join(DOCS, "*.md"))):
         fm, body = parse_frontmatter(open(path, encoding="utf-8").read())
@@ -82,7 +82,7 @@ def main():
                 "text": ch["text"], "tokens": toks,
             })
 
-    # BM25-Vorberechnung: df, idf, avgdl
+    # BM25 precomputation: df, idf, avgdl
     N = len(chunks)
     df = collections.Counter()
     for c in chunks:
@@ -90,13 +90,13 @@ def main():
             df[t] += 1
     idf = {t: math.log(1 + (N - n + 0.5) / (n + 0.5)) for t, n in df.items()}
     avgdl = sum(len(c["tokens"]) for c in chunks) / max(N, 1)
-    # pro Chunk Term-Frequenzen speichern (Tokens selbst nicht doppelt mitschreiben)
+    # store term frequencies per chunk (don't duplicate the tokens themselves)
     for c in chunks:
         c["tf"] = dict(collections.Counter(c["tokens"]))
         c["len"] = len(c["tokens"])
         del c["tokens"]
 
-    # 3) Konzept-Knoten + kuratierte Kanten + Claims
+    # 3) Concept nodes + curated edges + claims
     concept_nodes = {}
     nodes_file = os.path.join(KB, "graph", "nodes.json")
     if os.path.exists(nodes_file):
@@ -113,14 +113,14 @@ def main():
 
     nodes = {**doc_nodes, **concept_nodes}
 
-    # Validierung: alle Kantenenden existieren als Knoten
+    # Validation: all edge endpoints exist as nodes
     missing = set()
     for e in edges:
         for end in (e["from"], e["to"]):
             if end not in nodes:
                 missing.add(end)
     if missing:
-        print("WARN: Kanten verweisen auf unbekannte Knoten:", sorted(missing))
+        print("WARN: edges reference unknown nodes:", sorted(missing))
 
     kb = {
         "meta": {"chunks": N, "nodes": len(nodes), "edges": len(edges),

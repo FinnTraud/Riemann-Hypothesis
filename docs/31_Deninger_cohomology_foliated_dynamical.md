@@ -1,85 +1,85 @@
 ---
 id: doc-31
 number: 31
-title: "Deningers Kohomologie-Programm & dynamische Systeme auf gefolierten Räumen"
+title: "Deninger's Cohomology Program & Dynamical Systems on Foliated Spaces"
 category: solution-program
 status: open
 tags: [deninger, cohomology, foliated-spaces, dynamical-systems, regularized-determinant]
 source_file: 31_Deninger_cohomology_foliated_dynamical.md
-lang: de
+lang: en
 ---
 
-# Deningers Kohomologie-Programm & dynamische Systeme auf gefolierten Räumen
+# Deninger's Cohomology Program & Dynamical Systems on Foliated Spaces
 
-**Kategorie:** Aktives Lösungsprogramm (arithmetische Geometrie / Dynamik)
-**Autor / Jahre:** Christopher Deninger (ab frühen 1990ern); verwandt Flach–Morin, Leichtnam
-**Typ:** Konjekturales kohomologisches/dynamisches Programm zur RH
-**Status:** Offen; konjekturaler Rahmen, Schlüsselobjekte noch nicht konstruiert
+**Category:** Active solution program (arithmetic geometry / dynamics)
+**Author / years:** Christopher Deninger (from the early 1990s); related Flach–Morin, Leichtnam
+**Type:** Conjectural cohomological/dynamical program for the RH
+**Status:** Open; conjectural framework, key objects not yet constructed
 
-## Zusammenfassung
-Christopher Deninger schlug ein **kohomologisches Programm** vor, in dem Zetafunktionen als **regularisierte Determinanten** geometrischer/dynamischer Operatoren ausgedrückt werden. Ziel: die explizite Formel der Zahlentheorie (Dok. 02) als **Lefschetz-Spurformel** zu interpretieren und die RH als **spektrale Symmetriebedingung** — in direkter Analogie zum bewiesenen Weil/Deligne-Fall (Dok. 18).
+## Summary
+Christopher Deninger proposed a **cohomological program** in which zeta functions are expressed as **regularized determinants** of geometric/dynamical operators. Goal: to interpret the explicit formula of number theory (Doc. 02) as a **Lefschetz trace formula** and the RH as a **spectral symmetry condition** — in direct analogy with the proven Weil/Deligne case (Doc. 18).
 
-## Die Leitidee
-- Im Funktionenkörper-Fall ist ζ ein Quotient charakteristischer Polynome des Frobenius auf étaler Kohomologie; die RH ist eine Aussage über die Eigenwerte dieses Operators.
-- **Deningers Wunsch:** Finde für Spec(ℤ) (bzw. arithmetische Schemata) eine **Kohomologietheorie** mit einem "Frobenius-artigen" Fluss/Operator, sodass:
+## The guiding idea
+- In the function-field case, ζ is a quotient of characteristic polynomials of the Frobenius on étale cohomology; the RH is a statement about the eigenvalues of this operator.
+- **Deninger's wish:** find, for Spec(ℤ) (resp. arithmetic schemes), a **cohomology theory** with a "Frobenius-like" flow/operator such that:
 
 ```
 ζ(s) "=" det_∞( (s − Θ) / 2π | H^•_{?} )^{±1}
 ```
 
-  (regularisierte Determinante eines Operators Θ auf hypothetischen Kohomologiegruppen).
-- Die **nicht-trivialen Nullstellen** wären dann Eigenwerte von Θ auf H¹; die **RH = Selbstadjungiertheit / spektrale Symmetrie** von Θ (eine Hilbert–Pólya-Realisierung, Dok. 05).
+  (a regularized determinant of an operator Θ on hypothetical cohomology groups).
+- The **non-trivial zeros** would then be eigenvalues of Θ on H¹; the **RH = self-adjointness / spectral symmetry** of Θ (a Hilbert–Pólya realization, Doc. 05).
 
-## Dynamische Systeme auf gefolierten Räumen
-- Da die gesuchte Kohomologie für arithmetische Schemata (noch) nicht existiert, sucht Deninger nach **Modellen**: dynamische Systeme auf **gefolierten Mannigfaltigkeiten** (foliated spaces), deren **blattweise (leafwise) Kohomologie** mehrere der erwarteten Struktureigenschaften besitzt.
-- In diesen Modellen entsprechen:
-  - geschlossene Orbits ↔ Primzahlen,
-  - Längen der Orbits ↔ log p,
-  - die Lefschetz-Spurformel des Flusses ↔ Weils explizite Formel.
-- **Flach–Morin** und andere haben Deningers Vermutungen über **Weil-Arakelov-Kohomologie** präzisiert und teilweise formalisiert.
+## Dynamical systems on foliated spaces
+- Since the sought cohomology for arithmetic schemes does not (yet) exist, Deninger looks for **models**: dynamical systems on **foliated manifolds** (foliated spaces) whose **leafwise cohomology** has several of the expected structural properties.
+- In these models the following correspond:
+  - closed orbits ↔ primes,
+  - orbit lengths ↔ log p,
+  - the Lefschetz trace formula of the flow ↔ Weil's explicit formula.
+- **Flach–Morin** and others have made Deninger's conjectures about **Weil–Arakelov cohomology** precise and partially formalized them.
 
-## Bedeutung / Einordnung
-- Liefert eine **konzeptuelle Brücke** zwischen dem bewiesenen geometrischen Fall und der analytischen RH — und eine geometrische Erklärung, *warum* die RH wahr sein sollte (spektrale Symmetrie eines natürlichen Operators).
-- Eng verwandt und teils komplementär zu Connes' Adèle/𝔽₁-Programm (Dok. 10, 30): beide suchen die "fehlende Geometrie über ℤ", aber mit unterschiedlichen Werkzeugen (Dynamik/Foliation vs. nichtkommutative Geometrie/Topos).
-- **Status:** Programmatisch und konjektural — die zentrale Kohomologietheorie samt Operator ist nicht konstruiert. Kein Beweis, aber ein einflussreicher struktureller Kompass.
+## Significance / context
+- Provides a **conceptual bridge** between the proven geometric case and the analytic RH — and a geometric explanation of *why* the RH should be true (spectral symmetry of a natural operator).
+- Closely related and partly complementary to Connes' adele/𝔽₁ program (Doc. 10, 30): both seek the "missing geometry over ℤ", but with different tools (dynamics/foliation vs. noncommutative geometry/topos).
+- **Status:** programmatic and conjectural — the central cohomology theory together with the operator is not constructed. Not a proof, but an influential structural compass.
 
-## Mathematischer Kern (Formeln, Konstruktionen, Analogien)
+## Mathematical core (formulas, constructions, analogies)
 
-### Zeta als regularisierte Determinante
-Deningers Leitformel (konjektural) drückt die vollständige Zetafunktion als zeta-regularisierte Determinanten eines Flusserzeugers Θ auf hypothetischen Kohomologiegruppen H^i aus:
+### Zeta as a regularized determinant
+Deninger's guiding formula (conjectural) expresses the complete zeta function as zeta-regularized determinants of a flow generator Θ on hypothetical cohomology groups H^i:
 ```
 ξ(s) "="  ∏_{i=0}^{2}  det_∞( (s·Id − Θ) / 2π | H^i(X̄, ·) )^{(−1)^{i+1}}.
 ```
-Die regularisierte Determinante ist über die Spektral-Zeta definiert:
+The regularized determinant is defined via the spectral zeta:
 ```
-det_∞(A) = exp(−ζ_A'(0)),   ζ_A(z) = Σ_λ λ^{−z}  (λ Eigenwerte von A).
+det_∞(A) = exp(−ζ_A'(0)),   ζ_A(z) = Σ_λ λ^{−z}  (λ eigenvalues of A).
 ```
-Beispiel-Konsistenz (archimedischer Faktor):
+Consistency example (archimedean factor):
 ```
-det_∞( (s − Θ)/2π | H ) liefert  Γ_ℝ(s) = π^{−s/2}Γ(s/2)  für den ∞-Faktor.
+det_∞( (s − Θ)/2π | H ) yields  Γ_ℝ(s) = π^{−s/2}Γ(s/2)  for the ∞-factor.
 ```
 
-### Nullstellen = Eigenwerte (Hilbert–Pólya-Realisierung)
-Die nicht-trivialen Nullstellen ρ wären die Eigenwerte von Θ auf H¹:
+### Zeros = eigenvalues (Hilbert–Pólya realization)
+The non-trivial zeros ρ would be the eigenvalues of Θ on H¹:
 ```
-Spektrum(Θ | H¹) = { ρ : ξ(ρ) = 0 }.
+spectrum(Θ | H¹) = { ρ : ξ(ρ) = 0 }.
 ```
-RH ⟺ Θ hat (nach geeigneter Verschiebung um 1/2) **rein imaginäres** Spektrum, d. h. eine spektrale Symmetrie/Selbstadjungiertheit — eine geometrische Hilbert–Pólya-Aussage (Dok. 05).
+RH ⟺ Θ has (after a suitable shift by 1/2) a **purely imaginary** spectrum, i.e. a spectral symmetry/self-adjointness — a geometric Hilbert–Pólya statement (Doc. 05).
 
-### Lefschetz-Spurformel als explizite Formel
-Für den Fluss φ^t mit Erzeuger Θ gilt (konjektural) eine Lefschetz-Spurformel
+### Lefschetz trace formula as the explicit formula
+For the flow φ^t with generator Θ, a Lefschetz trace formula holds (conjecturally)
 ```
-Σ_i (−1)^i Tr(φ^{t*} | H^i)  =  Σ_{γ geschl. Orbit}  (Länge ℓ(γ)) Σ_k δ(t − k ℓ(γ)) / |det(1 − D φ)|,
+Σ_i (−1)^i Tr(φ^{t*} | H^i)  =  Σ_{γ closed orbit}  (length ℓ(γ)) Σ_k δ(t − k ℓ(γ)) / |det(1 − D φ)|,
 ```
-deren Auswertung **Weils explizite Formel** (Dok. 02) reproduziert: geschlossene Orbits ↔ Primzahlen, ℓ(γ) ↔ log p.
+whose evaluation reproduces **Weil's explicit formula** (Doc. 02): closed orbits ↔ primes, ℓ(γ) ↔ log p.
 
-### Modell: gefolierte Räume
-Da X für Spec(ℤ) fehlt, studiert Deninger **3-dimensionale gefolierte Mannigfaltigkeiten** (M, ℱ) mit einem Fluss transversal zur Blätterung. Die **reduzierte blattweise Kohomologie** H̄^•_ℱ trägt eine Θ-Wirkung mit den strukturellen Eigenschaften (Poincaré-Dualität, Lefschetz), die für den arithmetischen Fall gewünscht sind. Geschlossene Orbits des Flusses ↔ Primzahlen; ihre Längen ↔ log p.
+### Model: foliated spaces
+Since X for Spec(ℤ) is missing, Deninger studies **3-dimensional foliated manifolds** (M, ℱ) with a flow transverse to the foliation. The **reduced leafwise cohomology** H̄^•_ℱ carries a Θ-action with the structural properties (Poincaré duality, Lefschetz) desired for the arithmetic case. Closed orbits of the flow ↔ primes; their lengths ↔ log p.
 
 ### Status
-Die Kohomologietheorie H^i für arithmetische Schemata **existiert nicht** (Flach–Morin formalisieren Teile als Weil-Arakelov-Kohomologie). Die Formeln sind ein konjekturaler Kompass, kein Beweis — aber sie erklären *strukturell*, warum RH = spektrale Symmetrie gelten sollte.
+The cohomology theory H^i for arithmetic schemes **does not exist** (Flach–Morin formalize parts as Weil–Arakelov cohomology). The formulas are a conjectural compass, not a proof — but they explain *structurally* why RH = spectral symmetry should hold.
 
-## Quellen
+## Sources
 - [Arithmetic Geometry and Analysis on Foliated Spaces — C. Deninger (Arizona Winter School)](https://swc-math.github.io/dls/DLSDeninger.pdf)
 - [Analogies between analysis on foliated spaces and arithmetic geometry (arXiv 0709.2801)](https://arxiv.org/pdf/0709.2801)
 - [Deninger's conjectures and Weil-Arakelov cohomology — Flach & Morin](https://www.math.u-bordeaux.fr/~bmorin/Deninger-WA5.pdf)

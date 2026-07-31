@@ -1,53 +1,53 @@
 ---
 id: doc-26
 number: 26
-title: "John Nash (1959): gescheiterter Versuch"
+title: "John Nash (1959): Failed Attempt"
 category: failed-proof
 status: refuted
 tags: [nash, historical, failed]
 source_file: 26_Nash_failed_attempt.md
-lang: de
+lang: en
 ---
 
-# John Nash (1959): gescheiterter Versuch
+# John Nash (1959): Failed Attempt
 
-**Kategorie:** Gescheiterter Versuch (historisch)
-**Autor / Jahr:** John Forbes Nash Jr., um 1958–1959
-**Typ:** Nie vollendeter / nicht haltbarer Beweisversuch
-**Status:** ❌ Nie zu einem kohärenten Beweis gelangt
+**Category:** Failed attempt (historical)
+**Author / year:** John Forbes Nash Jr., around 1958–1959
+**Type:** Never-completed / untenable proof attempt
+**Status:** ❌ Never reached a coherent proof
 
-## Zusammenfassung
-John Nash (Nobelpreis Wirtschaft 1994 für Spieltheorie, Abel-Preis 2015 für nichtlineare PDE) arbeitete Ende der 1950er Jahre intensiv an der Riemann-Vermutung. Sein berühmt gewordener Versuch, einen Beweis öffentlich vorzustellen, scheiterte spektakulär — er fiel zeitlich mit dem Ausbruch seiner Schizophrenie zusammen.
+## Summary
+John Nash (Nobel Prize in Economics 1994 for game theory, Abel Prize 2015 for nonlinear PDE) worked intensively on the Riemann Hypothesis in the late 1950s. His now-famous attempt to present a proof publicly failed spectacularly — it coincided in time with the onset of his schizophrenia.
 
-## Was geschah
-- Nash kündigte an, einen Beweis der RH zu präsentieren (u. a. ein Vortrag an der Columbia University / im Umfeld des AMS, ~1959).
-- Der Vortrag war **inkohärent**: unzusammenhängende Aussagen, nicht zum Thema gehörende Mathematik. Fachkollegen erkannten, dass kein tragfähiger Beweis vorlag.
-- Kurz darauf verschlechterte sich Nashs Gesundheitszustand; im April 1959 wurde er hospitalisiert und mit **paranoider Schizophrenie** diagnostiziert.
+## What happened
+- Nash announced that he would present a proof of the RH (including a talk at Columbia University / in the AMS circle, ~1959).
+- The talk was **incoherent**: disconnected statements, mathematics unrelated to the topic. Colleagues recognized that no viable proof was present.
+- Shortly afterward Nash's health deteriorated; in April 1959 he was hospitalized and diagnosed with **paranoid schizophrenia**.
 
-## Einordnung
-- Nashs RH-Arbeit ergab **keinen verwertbaren mathematischen Beitrag** zur RH; sie ist vor allem biografisch/historisch bedeutsam (dramatisiert im Film *A Beautiful Mind*, 2001).
-- Illustriert die enorme psychische Belastung, die das Problem auf herausragende Köpfe ausüben kann.
-- **Wichtige methodische Lehre:** Selbst Mathematiker allerersten Ranges scheitern an der RH — die Schwierigkeit ist real und nicht durch reine Brillanz zu überwinden.
+## Assessment
+- Nash's RH work produced **no usable mathematical contribution** to the RH; it is significant mainly biographically/historically (dramatized in the film *A Beautiful Mind*, 2001).
+- It illustrates the enormous psychological strain the problem can place on outstanding minds.
+- **An important methodological lesson:** even first-rank mathematicians fail on the RH — the difficulty is real and cannot be overcome by brilliance alone.
 
-## Hinweis
-Diese Episode ist gut dokumentiert (Biografie *A Beautiful Mind* von Sylvia Nasar; PBS-Dokumentation *A Brilliant Madness*). Sie betrifft Nashs *Versuch*, nicht ein publiziertes fehlerhaftes Paper — im Unterschied etwa zu Atiyah (Dok. 25) oder den arXiv-Behauptungen (Dok. 27).
+## Note
+This episode is well documented (the biography *A Beautiful Mind* by Sylvia Nasar; the PBS documentary *A Brilliant Madness*). It concerns Nash's *attempt*, not a published erroneous paper — unlike, say, Atiyah (Doc. 25) or the arXiv claims (Doc. 27).
 
-## Mathematischer Kontext (was überliefert ist)
+## Mathematical context (what is on record)
 
-### Kein verwertbarer mathematischer Inhalt
-Nash hinterließ zur RH **keine** ausgearbeitete Methode, kein Manuskript mit prüfbaren Formeln und keinen Beweisansatz, der in die Fachliteratur eingegangen wäre. Der Columbia-Vortrag (~1959) war inhaltlich inkohärent; Zeugen (u. a. die spätere Schilderung in Nasars Biografie) berichten von zusammenhanglosen Aussagen ohne mathematischen Faden.
+### No usable mathematical content
+Nash left **no** worked-out method on the RH, no manuscript with checkable formulas, and no proof approach that entered the literature. The Columbia talk (~1959) was incoherent in content; witnesses (including the later account in Nasar's biography) report disconnected statements without a mathematical thread.
 
-### Spätere relevante Mathematik (Kontext, nicht RH-Beweis)
-Nashs *tatsächliche* mathematische Größe lag andernorts und ist wohldefiniert:
-- **Nash-Einbettungssatz** (jede Riemannsche Mannigfaltigkeit lässt sich isometrisch in einen ℝ^N einbetten),
-- **Nash–Moser-Iteration** und Regularität von Lösungen elliptischer/parabolischer PDE (De Giorgi–Nash–Moser-Theorem) — dafür 2015 der Abel-Preis,
-- **Nash-Gleichgewicht** (Nobelpreis Wirtschaft 1994).
-Diese Werkzeuge haben *keinen* etablierten Bezug zur RH; es gibt keine „Nash-Methode" für die Zetafunktion.
+### Later relevant mathematics (context, not an RH proof)
+Nash's *actual* mathematical greatness lay elsewhere and is well-defined:
+- **Nash embedding theorem** (every Riemannian manifold can be isometrically embedded into some ℝ^N),
+- **Nash–Moser iteration** and regularity of solutions of elliptic/parabolic PDE (De Giorgi–Nash–Moser theorem) — for which he received the Abel Prize in 2015,
+- **Nash equilibrium** (Nobel Prize in Economics 1994).
+These tools have *no* established connection to the RH; there is no "Nash method" for the zeta function.
 
-### Einordnung
-Historisch/biografisch bedeutsam als Mahnung über die Schwere des Problems; mathematisch trägt die Episode nichts zur Lösung bei. Im Unterschied zu Atiyah (Dok. 25, konkrete falsche Konstruktion) oder den arXiv-Behauptungen (Dok. 27, prüfbare fehlerhafte Argumente) gibt es bei Nash schlicht keinen zu analysierenden Beweistext.
+### Assessment
+Historically/biographically significant as a reminder of the difficulty of the problem; mathematically the episode contributes nothing to the solution. Unlike Atiyah (Doc. 25, a concrete false construction) or the arXiv claims (Doc. 27, checkable erroneous arguments), with Nash there is simply no proof text to analyze.
 
-## Quellen
+## Sources
 - [A Brilliant Madness — PBS American Experience](https://www.pbs.org/wgbh/americanexperience/films/nash/)
 - [John Nash and his Experiences with Schizophrenia](https://lmclark7.com/john-nash-documentary/)
 - [Riemann Hypothesis — Wolfram MathWorld (history)](https://mathworld.wolfram.com/RiemannHypothesis.html)

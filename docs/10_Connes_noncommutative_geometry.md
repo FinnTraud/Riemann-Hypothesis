@@ -1,72 +1,72 @@
 ---
 id: doc-10
 number: 10
-title: "Alain Connes: Spurformel & nichtkommutative Geometrie"
+title: "Alain Connes: Trace Formula & Noncommutative Geometry"
 category: spectral
 status: open
 tags: [connes, noncommutative-geometry, trace-formula, adele, weil-positivity]
 source_file: 10_Connes_noncommutative_geometry.md
-lang: de
+lang: en
 ---
 
-# Alain Connes: Spurformel & nichtkommutative Geometrie
+# Alain Connes: Trace Formula & Noncommutative Geometry
 
-**Kategorie:** Spektraler Ansatz / nichtkommutative Geometrie
-**Autor / Jahr:** Alain Connes (1996–1999; Überblick "An Essay on the RH" 2015); Connes–Consani (ab ~2016)
-**Typ:** Geometrisch-spektrales Reduktionsprogramm
-**Status:** Offen; RH auf Gültigkeit einer Spurformel reduziert, diese unbewiesen
+**Category:** Spectral approach / noncommutative geometry
+**Author / year:** Alain Connes (1996–1999; survey "An Essay on the RH" 2015); Connes–Consani (from ~2016)
+**Type:** Geometric-spectral reduction program
+**Status:** Open; RH reduced to the validity of a trace formula, which is unproven
 
-## Zusammenfassung
-Alain Connes entwickelte einen Ansatz, der die explizite Formel der Zahlentheorie (Primzahlen ↔ Nullstellen, Dok. 02) als **Spurformel auf dem nichtkommutativen Raum der Adèleklassen** interpretiert. In diesem Rahmen erscheinen die kritischen Nullstellen als **Absorptionsspektrum** eines natürlichen Operators. Connes zeigt: Die RH folgt aus der Gültigkeit einer bestimmten Spurformel-Identität (einer Weil-Positivität / Lefschetz-artigen Aussage) auf diesem Raum.
+## Summary
+Alain Connes developed an approach that interprets the explicit formula of number theory (primes ↔ zeros, Doc. 02) as a **trace formula on the noncommutative space of adele classes**. In this framework the critical zeros appear as the **absorption spectrum** of a natural operator. Connes shows: the RH follows from the validity of a certain trace-formula identity (a Weil positivity / Lefschetz-type statement) on this space.
 
-## Kernidee
-- Arbeitsobjekt: der **Adèleklassenraum** 𝔸_ℚ / ℚ* — ein "nichtkommutativer Raum" im Sinne der nichtkommutativen Geometrie.
-- Connes konstruiert eine **Spurformel**, die Weils explizite Formel reproduziert: Die *spektrale Seite* (Beiträge der Nullstellen von ζ und L-Funktionen) wird mit der *geometrischen Seite* (Beiträge der Stellen/Primzahlen von ℚ) gleichgesetzt.
-- **Spektrale Interpretation:** Die kritischen Nullstellen erscheinen als Absorptionsspektrum (fehlende Linien); *hypothetische* Nullstellen abseits der Geraden würden als **Resonanzen** auftreten, welche die Struktur der Spurformel zerstören.
-- **Reduktion:** RH ⟺ Gültigkeit der Spurformel / einer Positivitätsbedingung (Weil-Positivität, vgl. Dok. 14). Damit wird die RH zu einer präzisen, aber noch unbewiesenen geometrischen Aussage.
+## Core idea
+- Working object: the **adele-class space** 𝔸_ℚ / ℚ* — a "noncommutative space" in the sense of noncommutative geometry.
+- Connes constructs a **trace formula** that reproduces Weil's explicit formula: the *spectral side* (contributions of the zeros of ζ and L-functions) is set equal to the *geometric side* (contributions of the places/primes of ℚ).
+- **Spectral interpretation:** the critical zeros appear as an absorption spectrum (missing lines); *hypothetical* zeros off the line would appear as **resonances** that destroy the structure of the trace formula.
+- **Reduction:** RH ⟺ validity of the trace formula / a positivity condition (Weil positivity, cf. Doc. 14). Thus the RH becomes a precise but still unproven geometric statement.
 
-## Verbindung zu anderen Programmen
-- Analogon zur **Selberg-Spurformel** (Dok. 19): dort Eigenwerte des Laplace-Operators ↔ Längen geschlossener Geodäten; hier Nullstellen ↔ Primzahlen, aber im adelischen, nichtkommutativen Setting.
-- Inspiriert vom bewiesenen **Funktionenkörper-Fall** (Weil/Deligne, Dok. 18): Dort gelingt der Beweis über Geometrie (Schnitttheorie / Kohomologie). Connes' Programm sucht ein "Geometrie über ℚ"-Analogon.
-- Fortsetzung: **Connes–Consani** (Weil-Positivität, archimedische Stelle, 2021) und **Connes–Moscovici** Prolate-Operator (Dok. 11).
+## Connection to other programs
+- Analogue of the **Selberg trace formula** (Doc. 19): there, eigenvalues of the Laplace operator ↔ lengths of closed geodesics; here, zeros ↔ primes, but in the adelic, noncommutative setting.
+- Inspired by the proven **function-field case** (Weil/Deligne, Doc. 18): there the proof succeeds via geometry (intersection theory / cohomology). Connes' program seeks a "geometry over ℚ" analogue.
+- Continuation: **Connes–Consani** (Weil positivity, archimedean place, 2021) and **Connes–Moscovici** prolate operator (Doc. 11).
 
-## Bedeutung / Einordnung
-- Eines der tiefsten und am ernstesten verfolgten modernen RH-Programme.
-- Erfolg: präzise *Reduktion* der RH auf eine konkrete Spurformel/Positivität.
-- Offen: Die Gültigkeit ebendieser Spurformel/Positivität ist genauso schwer wie die RH selbst — der Kern ist unbewiesen (Stand 2026).
+## Significance / context
+- One of the deepest and most seriously pursued modern RH programs.
+- Success: a precise *reduction* of the RH to a concrete trace formula/positivity.
+- Open: the validity of this very trace formula/positivity is just as hard as the RH itself — the core is unproven (as of 2026).
 
-## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+## Mathematical core (formulas, theorems, proof sketches)
 
-### Adèle, Idèle, Adèleklassenraum
-Sei 𝔸_ℚ = ℝ × ∏'_p ℚ_p der Adèlering (eingeschränktes Produkt), 𝔸_ℚ* die Idèle. Connes betrachtet die Wirkung der Idèleklassengruppe C_ℚ = 𝔸_ℚ*/ℚ* auf dem **Adèleklassenraum** X = 𝔸_ℚ/ℚ*. Auf L²-Funktionen über X (mit Cutoff) wirkt die skalierende Wirkung von C_ℚ.
+### Adeles, ideles, adele-class space
+Let 𝔸_ℚ = ℝ × ∏'_p ℚ_p be the adele ring (restricted product), 𝔸_ℚ* the ideles. Connes considers the action of the idele-class group C_ℚ = 𝔸_ℚ*/ℚ* on the **adele-class space** X = 𝔸_ℚ/ℚ*. On L² functions over X (with a cutoff) the scaling action of C_ℚ acts.
 
-### Spektrale Realisierung als Absorptionsspektrum
-Connes konstruiert einen Hilbertraum H (Sobolev-Vervollständigung von Schwartz-Funktionen modulo der von der Theta/Poisson-Spur erzeugten Teilräume) und einen Operator D (Erzeuger der skalierenden Wirkung). Hauptsatz (informell):
+### Spectral realization as an absorption spectrum
+Connes constructs a Hilbert space H (Sobolev completion of Schwartz functions modulo the subspaces generated by the theta/Poisson trace) and an operator D (generator of the scaling action). Main theorem (informal):
 ```
-Spektrum von D  =  { γ : ζ(1/2 + iγ) = 0 }   (als Absorptionsspektrum)
+spectrum of D  =  { γ : ζ(1/2 + iγ) = 0 }   (as an absorption spectrum)
 ```
-Die kritischen Nullstellen erscheinen als *fehlende* Linien; Nullstellen mit Re ≠ 1/2 würden als **Resonanzen** außerhalb der reellen Achse auftreten.
+The critical zeros appear as *missing* lines; zeros with Re ≠ 1/2 would appear as **resonances** off the real axis.
 
-### Die Spurformel (Herzstück)
-Für eine Testfunktion h auf C_ℚ lautet Connes' Spurformel (global, Weil-Form):
+### The trace formula (heart of the matter)
+For a test function h on C_ℚ, Connes' trace formula reads (global, Weil form):
 ```
 Tr( R_Λ U(h) )  =  2 h(1) log'Λ  +  ĥ(0) + ĥ(1)  −  Σ_v  ∫'_{ℚ_v*}  h(u^{−1})/|1 − u|  d*u  +  o(1)
 ```
-- Linke Seite (spektral): Spur des regularisierten Operators ⇒ Σ_ρ ĥ(ρ) über die Nullstellen.
-- Rechte Seite (geometrisch): Summe über die Stellen v von ℚ (archimedisch + alle Primzahlen p), die **Weils Hauptwert-Integrale** sind — exakt **Weils explizite Formel** (Dok. 02/14).
+- Left side (spectral): trace of the regularized operator ⇒ Σ_ρ ĥ(ρ) over the zeros.
+- Right side (geometric): a sum over the places v of ℚ (archimedean + all primes p), which are **Weil's principal-value integrals** — exactly **Weil's explicit formula** (Doc. 02/14).
 
-**Reduktionssatz (Connes).** Die RH ist äquivalent zur **Positivität (Gültigkeit)** dieser Spurformel:
+**Reduction theorem (Connes).** The RH is equivalent to the **positivity (validity)** of this trace formula:
 ```
-RH  ⟺  Σ_v W_v(h ⋆ h*) ≥ 0  für alle Testfunktionen h   (Weil-Positivität, vgl. Dok. 14)
+RH  ⟺  Σ_v W_v(h ⋆ h*) ≥ 0  for all test functions h   (Weil positivity, cf. Doc. 14)
 ```
 
-### Weil-Positivität explizit
-Mit der Weil-Distribution W(h) = Σ_ρ ĥ(ρ) − ĥ(0) − ĥ(1) gilt: RH ⟺ W(h ⋆ h̄) ≥ 0 ∀h. Connes–Consani (2021) bewiesen einen Teil hiervon an der **archimedischen Stelle** (positiver Beitrag des reellen Faktors); die volle Positivität über alle Stellen bleibt offen — das ist die eigentliche Hürde.
+### Weil positivity explicitly
+With the Weil distribution W(h) = Σ_ρ ĥ(ρ) − ĥ(0) − ĥ(1): RH ⟺ W(h ⋆ h̄) ≥ 0 ∀h. Connes–Consani (2021) proved part of this at the **archimedean place** (positive contribution of the real factor); the full positivity over all places remains open — this is the actual hurdle.
 
-### Analogie zum bewiesenen Fall
-Im Funktionenkörper-Fall (Dok. 18) ist genau diese Positivität die **Riemann–Roch-/Schnitt-Positivität** auf C × C (Weils Beweis). Connes' Programm sucht das Analogon über Spec(ℤ) (vgl. 𝔽₁, Dok. 30).
+### Analogy with the proven case
+In the function-field case (Doc. 18) it is exactly this positivity that is the **Riemann–Roch / intersection positivity** on C × C (Weil's proof). Connes' program seeks the analogue over Spec(ℤ) (cf. 𝔽₁, Doc. 30).
 
-## Quellen
+## Sources
 - [Trace formula in noncommutative geometry and the zeros of the Riemann zeta function (arXiv math/9811068)](https://arxiv.org/abs/math/9811068)
 - [An essay on the Riemann Hypothesis — A. Connes (arXiv 1509.05576)](https://arxiv.org/pdf/1509.05576)
 - [A spectral interpretation for the zeros of the Riemann zeta function (arXiv math/0412277)](https://arxiv.org/pdf/math/0412277)

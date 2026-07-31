@@ -1,4 +1,4 @@
--- RH-Bibliothek: Sammeldatei.
--- SelfContained baut ohne mathlib; Statement benötigt mathlib.
+-- RH library: aggregate file.
+-- SelfContained builds without mathlib; Statement requires mathlib.
 import RH.SelfContained
--- import RH.Statement   -- aktivieren, sobald mathlib im Projekt verfügbar ist
+-- import RH.Statement   -- enable once mathlib is available in the project

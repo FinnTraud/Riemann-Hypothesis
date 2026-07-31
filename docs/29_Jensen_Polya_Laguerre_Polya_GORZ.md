@@ -1,94 +1,94 @@
 ---
 id: doc-29
 number: 29
-title: "Jensen–Pólya-Programm: Laguerre–Pólya-Klasse & Jensen-Polynome (Griffin–Ono–Rolen–Zagier 2019)"
+title: "The Jensen–Pólya Program: Laguerre–Pólya Class & Jensen Polynomials (Griffin–Ono–Rolen–Zagier 2019)"
 category: solution-program
 status: open
 tags: [jensen-polya, laguerre-polya, griffin-ono-rolen-zagier, turan-inequalities, hyperbolicity]
 source_file: 29_Jensen_Polya_Laguerre_Polya_GORZ.md
-lang: de
+lang: en
 ---
 
-# Jensen–Pólya-Programm: Laguerre–Pólya-Klasse & Jensen-Polynome (Griffin–Ono–Rolen–Zagier 2019)
+# The Jensen–Pólya Program: Laguerre–Pólya Class & Jensen Polynomials (Griffin–Ono–Rolen–Zagier 2019)
 
-**Kategorie:** Aktiver Lösungsansatz (äquivalente Reformulierung + Fortschritt)
-**Autoren / Jahre:** Pólya (1927), Jensen, Newman; Griffin, Ono, Rolen, Zagier (2019)
-**Typ:** Zur RH äquivalentes Kriterium + neuer Fortschritt
-**Status:** Äquivalenz bewiesen; GORZ bewiesen Hyperbolizität für Grad ≤ 8 und Dichte-1-Teilmenge; volle RH offen
+**Category:** Active solution approach (equivalent reformulation + progress)
+**Authors / years:** Pólya (1927), Jensen, Newman; Griffin, Ono, Rolen, Zagier (2019)
+**Type:** Criterion equivalent to the RH + new progress
+**Status:** Equivalence proven; GORZ proved hyperbolicity for degree ≤ 8 and a density-1 subset; full RH open
 
-## Zusammenfassung
-Die RH ist **äquivalent** dazu, dass die Riemann-ξ-Funktion zur **Laguerre–Pólya-Klasse** gehört (ganze Funktionen mit *nur reellen* Nullstellen). Dies ist wiederum äquivalent zur **Hyperbolizität (Reellwurzeligkeit) aller Jensen-Polynome**, die aus den Taylor-Koeffizienten von ξ gebildet werden. Griffin, Ono, Rolen und Zagier (2019) erzielten hier substanziellen Fortschritt — einer der greifbarsten modernen "Teil-Lösungswege".
+## Summary
+The RH is **equivalent** to the Riemann ξ-function belonging to the **Laguerre–Pólya class** (entire functions with *only real* zeros). This in turn is equivalent to the **hyperbolicity (real-rootedness) of all Jensen polynomials** formed from the Taylor coefficients of ξ. Griffin, Ono, Rolen, and Zagier (2019) achieved substantial progress here — one of the most tangible modern "partial solution routes".
 
-## Die Kette der Äquivalenzen
+## The chain of equivalences
 ```
-RH  ⟺  ξ ∈ Laguerre–Pólya-Klasse (nur reelle Nullstellen)
-    ⟺  alle Jensen-Polynome J_d^{(n)}(ξ) sind hyperbolisch (nur reelle Wurzeln)
-    ⟺  alle höheren Turán-/Laguerre-Ungleichungen für die (verschobenen) Taylor-Koeffizienten gelten
+RH  ⟺  ξ ∈ Laguerre–Pólya class (only real zeros)
+    ⟺  all Jensen polynomials J_d^{(n)}(ξ) are hyperbolic (only real roots)
+    ⟺  all higher Turán/Laguerre inequalities for the (shifted) Taylor coefficients hold
 ```
-- **Jensen-Polynome:** Aus den Maclaurin-Koeffizienten einer Funktion bildet man für jeden Grad d und Verschiebung n ein Polynom J_d^{(n)}. "Hyperbolisch" = alle Wurzeln reell.
-- **Turán-Ungleichungen:** konkrete (unendlich viele) polynomiale Ungleichungen an die Koeffizienten — eine sehr "explizite" Form der RH.
+- **Jensen polynomials:** from the Maclaurin coefficients of a function one forms, for each degree d and shift n, a polynomial J_d^{(n)}. "Hyperbolic" = all roots real.
+- **Turán inequalities:** concrete (infinitely many) polynomial inequalities on the coefficients — a very "explicit" form of the RH.
 
-## Das Resultat von Griffin–Ono–Rolen–Zagier (2019, PNAS / arXiv 1902.07321)
-- **Modellierung durch Hermite-Polynome:** Sie bewiesen einen allgemeinen Satz, wonach die Jensen-Polynome (geeignet skaliert) im Limes gegen **Hermite-Polynome** konvergieren — und Hermite-Polynome sind bekanntlich hyperbolisch.
-- **Konkrete Resultate für ξ:**
-  - Hyperbolizität für **alle Grade d ≤ 8** (zuvor nur d ≤ 3 bekannt).
-  - Hyperbolizität für eine **Dichte-1-Teilmenge** der Jensen-Polynome jedes Grades (asymptotisch fast alle).
-  - Erweiterung auf das Jensen–Pólya-Programm für allgemeine L-Funktionen (arXiv 1905.11269).
-- Nebenresultat: präzise asymptotische Formel für die zentralen Ableitungen von ζ; Bezug zum SYK-Modell der Physik.
+## The result of Griffin–Ono–Rolen–Zagier (2019, PNAS / arXiv 1902.07321)
+- **Modeling by Hermite polynomials:** they proved a general theorem that the Jensen polynomials (suitably scaled) converge in the limit to **Hermite polynomials** — and Hermite polynomials are known to be hyperbolic.
+- **Concrete results for ξ:**
+  - hyperbolicity for **all degrees d ≤ 8** (previously known only for d ≤ 3).
+  - hyperbolicity for a **density-1 subset** of the Jensen polynomials of each degree (asymptotically almost all).
+  - extension to the Jensen–Pólya program for general L-functions (arXiv 1905.11269).
+- Side result: a precise asymptotic formula for the central derivatives of ζ; connection to the SYK model of physics.
 
-## Kritische Einordnung (wichtig!)
-- Das Resultat beweist die RH **nicht**: Hyperbolizität "für alle d bis 8" und "für Dichte 1" ist weit von "für *alle* d und *alle* n" entfernt.
-- Es gibt explizite Skepsis: Das Paper **"Jensen polynomials are not a plausible route to proving the Riemann Hypothesis"** (arXiv 2008.07206) argumentiert, dass dieser Weg an einer fundamentalen Hürde scheitert — die Hermite-Approximation kontrolliert gerade *nicht* die für die volle RH entscheidenden Regime.
-- Dennoch: konkrete, prüfbare, aktiv beforschte Reformulierung mit echtem Fortschritt — relevant für die Wissensbasis.
+## Critical assessment (important!)
+- The result does **not** prove the RH: hyperbolicity "for all d up to 8" and "for density 1" is far from "for *all* d and *all* n".
+- There is explicit skepticism: the paper **"Jensen polynomials are not a plausible route to proving the Riemann Hypothesis"** (arXiv 2008.07206) argues that this route fails at a fundamental hurdle — the Hermite approximation precisely does *not* control the regimes decisive for the full RH.
+- Nonetheless: a concrete, checkable, actively researched reformulation with genuine progress — relevant for the knowledge base.
 
-## Verbindung zu anderen Dokumenten
-- Eng verwandt mit der **de-Bruijn–Newman-Konstante** (Dok. 23): Λ ≤ 0 ⟺ ξ ∈ Laguerre–Pólya. Pólyas Untersuchung von Fourier-Transformierten positiver Funktionen ist die gemeinsame Wurzel.
-- Positivitäts-/Reellwurzeligkeits-Leitmotiv wie bei Weil-Positivität (Dok. 14) und de Branges (Dok. 20).
+## Connection to other documents
+- Closely related to the **de Bruijn–Newman constant** (Doc. 23): Λ ≤ 0 ⟺ ξ ∈ Laguerre–Pólya. Pólya's study of Fourier transforms of positive functions is the common root.
+- Positivity/real-rootedness leitmotiv as in Weil positivity (Doc. 14) and de Branges (Doc. 20).
 
-## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+## Mathematical core (formulas, theorems, proof sketches)
 
-### Laguerre–Pólya-Klasse (LP)
-Eine ganze Funktion gehört zu LP, wenn sie lokal gleichmäßiger Limes reeller Polynome mit nur reellen Nullstellen ist. Charakterisierung (Hadamard-Produkt):
+### Laguerre–Pólya class (LP)
+An entire function belongs to LP if it is a locally uniform limit of real polynomials with only real zeros. Characterization (Hadamard product):
 ```
 f(x) = c x^m e^{−a x² + b x} ∏_k (1 − x/x_k) e^{x/x_k},   a ≥ 0, b,c,x_k ∈ ℝ,  Σ 1/x_k² < ∞.
 ```
-**Satz (Pólya).** RH ⟺ ξ(1/2 + iz) ∈ LP (als Funktion von z, nur reelle Nullstellen z = γ_n).
+**Theorem (Pólya).** RH ⟺ ξ(1/2 + iz) ∈ LP (as a function of z, only real zeros z = γ_n).
 
-### Jensen-Polynome
-Für eine reelle Folge (a(k)) (hier: Taylor-Koeffizienten, ξ(1/2+iz) = Σ a(k) z^{2k}/k! o. ä.) definiere
+### Jensen polynomials
+For a real sequence (a(k)) (here: Taylor coefficients, ξ(1/2+iz) = Σ a(k) z^{2k}/k! or similar) define
 ```
 J^{d,n}(X) = Σ_{j=0}^d binom(d,j) a(n+j) X^j.
 ```
-„Hyperbolisch" := nur reelle Wurzeln. **Satz:** f ∈ LP ⟺ alle J^{d,n} (d,n ≥ 0) sind hyperbolisch. Also:
+"Hyperbolic" := only real roots. **Theorem:** f ∈ LP ⟺ all J^{d,n} (d,n ≥ 0) are hyperbolic. Hence:
 ```
-RH  ⟺  J^{d,n} hyperbolisch für alle d, n  (für die ξ-Koeffizienten).
+RH  ⟺  J^{d,n} hyperbolic for all d, n  (for the ξ coefficients).
 ```
 
-### Höhere Turán-Ungleichungen (äquivalente konkrete Form)
-Hyperbolizität für kleine d entspricht expliziten Ungleichungen an die Koeffizienten:
+### Higher Turán inequalities (equivalent concrete form)
+Hyperbolicity for small d corresponds to explicit inequalities on the coefficients:
 ```
 d = 2 (Turán):     a(n)² − a(n−1) a(n+1) ≥ 0,
-d = 3 (höhere T.):  4(a_n² − a_{n−1}a_{n+1})(a_{n+1}² − a_n a_{n+2}) − (a_n a_{n+1} − a_{n−1}a_{n+2})² ≥ 0,
+d = 3 (higher T.):  4(a_n² − a_{n−1}a_{n+1})(a_{n+1}² − a_n a_{n+2}) − (a_n a_{n+1} − a_{n−1}a_{n+2})² ≥ 0,
 ```
-und so weiter für jedes d — eine Folge immer komplexerer, aber elementarer Polynom-Ungleichungen, deren *Gesamtheit* die RH ist.
+and so on for each d — a sequence of increasingly complex but elementary polynomial inequalities whose *totality* is the RH.
 
-### GORZ-Hauptsatz (2019): Hermite-Limes
-**Satz (Griffin–Ono–Rolen–Zagier).** Geeignet normiert (mit Verschiebung/Skalierung g(n), δ(n)) konvergieren die Jensen-Polynome gegen die **Hermite-Polynome** H_d:
+### GORZ main theorem (2019): Hermite limit
+**Theorem (Griffin–Ono–Rolen–Zagier).** Suitably normalized (with shift/scaling g(n), δ(n)), the Jensen polynomials converge to the **Hermite polynomials** H_d:
 ```
 lim_{n→∞}  ( δ(n)^{−d} J^{d,n}( δ(n) X − g(n) ) / a(n) )  =  H_d(X),
 ```
-gleichmäßig auf Kompakta. Da die H_d nur reelle Wurzeln haben und diese „stabil" sind, folgt:
-- **Hyperbolizität für jedes feste d und alle n ≥ N(d)** (also für eine Dichte-1-Teilmenge jeder Grades).
-- Für ξ explizit verifiziert: **alle d ≤ 8** vollständig hyperbolisch.
-Asymptotik der zentralen Ableitungen (Schlüssel-Lemma): a(n) bestimmt aus
+uniformly on compact sets. Since the H_d have only real roots and these are "stable", it follows:
+- **hyperbolicity for each fixed d and all n ≥ N(d)** (i.e. for a density-1 subset of each degree).
+- Explicitly verified for ξ: **all d ≤ 8** fully hyperbolic.
+Asymptotics of the central derivatives (key lemma): a(n) determined from
 ```
-a(n) ~ (Hauptterm via Sattelpunktmethode auf ∫ Φ(u) u^{2n} du), Φ wie in Dok. 23.
+a(n) ~ (main term via saddle-point method on ∫ Φ(u) u^{2n} du), Φ as in Doc. 23.
 ```
 
-### Kritik (arXiv 2008.07206)
-Die Hermite-Approximation kontrolliert nur das Regime n → ∞ bei **festem** d. Für die RH braucht man d und n *gemeinsam* groß (d ~ n). Genau dort versagt die Hermite-Kontrolle — daher „kein plausibler Weg zur vollen RH". Realistisch ist GORZ ein starkes Resultat über die *Verteilung* der Jensen-Wurzeln, nicht über alle simultan.
+### Criticism (arXiv 2008.07206)
+The Hermite approximation only controls the regime n → ∞ at **fixed** d. For the RH one needs d and n *jointly* large (d ~ n). Exactly there the Hermite control fails — hence "not a plausible route to the full RH". Realistically GORZ is a strong result about the *distribution* of the Jensen roots, not about all of them simultaneously.
 
-## Quellen
+## Sources
 - [Jensen polynomials for the Riemann zeta function and other sequences — PNAS (Griffin, Ono, Rolen, Zagier)](https://www.pnas.org/doi/10.1073/pnas.1902572116)
 - [Jensen polynomials for the Riemann zeta function and other sequences (arXiv 1902.07321)](https://arxiv.org/pdf/1902.07321)
 - [The Jensen-Pólya program for various L-functions (arXiv 1905.11269)](https://arxiv.org/abs/1905.11269)

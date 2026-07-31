@@ -1,89 +1,89 @@
 ---
 id: doc-14
 number: 14
-title: "Li-Kriterium, Bombieri–Lagarias & Weil-Positivität"
+title: "Li Criterion, Bombieri–Lagarias & Weil Positivity"
 category: criterion
 status: open
 tags: [li-criterion, bombieri-lagarias, weil-positivity, positivity]
 source_file: 14_Li_criterion_Bombieri_Lagarias_Weil_positivity.md
-lang: de
+lang: en
 ---
 
-# Li-Kriterium, Bombieri–Lagarias & Weil-Positivität
+# Li Criterion, Bombieri–Lagarias & Weil Positivity
 
-**Kategorie:** Äquivalentes Kriterium (Positivität)
-**Autoren / Jahre:** André Weil (1952), Xian-Jin Li (1997), Enrico Bombieri & Jeffrey Lagarias (1999)
-**Typ:** Zur RH äquivalente Positivitätsbedingungen
-**Status:** Äquivalenzen bewiesen; Positivität allgemein unbewiesen
+**Category:** Equivalent criterion (positivity)
+**Authors / years:** André Weil (1952), Xian-Jin Li (1997), Enrico Bombieri & Jeffrey Lagarias (1999)
+**Type:** Positivity conditions equivalent to the RH
+**Status:** Equivalences proven; positivity unproven in general
 
-## Zusammenfassung
-Eine Familie eng verwandter Kriterien formuliert die RH als **Positivitätsaussage**. Weils Kriterium nutzt die explizite Formel als quadratische Form; Lis Kriterium übersetzt die RH in die Nicht-Negativität einer expliziten Zahlenfolge λ_n; Bombieri–Lagarias zeigen, dass beide dasselbe bedeuten und geben eine arithmetische Formel.
+## Summary
+A family of closely related criteria formulates the RH as a **positivity statement**. Weil's criterion uses the explicit formula as a quadratic form; Li's criterion translates the RH into the non-negativity of an explicit number sequence λ_n; Bombieri–Lagarias show that the two mean the same thing and give an arithmetic formula.
 
-## Li-Kriterium (1997)
-- Definiere die **Li-Koeffizienten**:
+## Li criterion (1997)
+- Define the **Li coefficients**:
 
 ```
-λ_n = Σ_ρ [ 1 − (1 − 1/ρ)^n ]   (Summe über alle nicht-trivialen Nullstellen ρ)
+λ_n = Σ_ρ [ 1 − (1 − 1/ρ)^n ]   (sum over all non-trivial zeros ρ)
 ```
 
-- **Satz (Li):** Die RH ist äquivalent zu **λ_n ≥ 0 für alle n ≥ 1**.
-- Die λ_n lassen sich auch über logarithmische Ableitungen der ξ-Funktion an ihren Nullstellen ausdrücken und sind numerisch berechenbar; alle bisher berechneten Werte sind positiv (konsistent mit RH), ein allgemeiner Beweis der Positivität fehlt.
+- **Theorem (Li):** the RH is equivalent to **λ_n ≥ 0 for all n ≥ 1**.
+- The λ_n can also be expressed via logarithmic derivatives of the ξ-function at its zeros and are numerically computable; all values computed so far are positive (consistent with RH), but a general proof of positivity is missing.
 
 ## Bombieri–Lagarias (1999)
-- Verallgemeinerten das Li-Kriterium auf beliebige Multimengen komplexer Zahlen mit gewissen Eigenschaften.
-- Lieferten eine **arithmetische Formel** für die λ_n über die **Guinand–Weil-explizite Formel** und zeigten: Die Positivität der λ_n hat **dieselbe Bedeutung** wie Weils Positivitätskriterium.
+- Generalized the Li criterion to arbitrary multisets of complex numbers with certain properties.
+- Provided an **arithmetic formula** for the λ_n via the **Guinand–Weil explicit formula** and showed: the positivity of the λ_n has **the same meaning** as Weil's positivity criterion.
 
-## Weil-Positivität (Weils Kriterium, 1952)
-- Weils explizite Formel verbindet eine Summe über Nullstellen mit einer Summe über Primzahlen plus archimedischen Termen.
-- **Weils Kriterium:** Die RH gilt genau dann, wenn eine bestimmte zugehörige **quadratische Form positiv (semidefinit)** ist — die "Weil-Positivität".
-- Diese Positivität ist der analytische Kern auch von **Connes' Spurformel-Programm** (Dok. 10): Connes' Reduktion der RH läuft letztlich auf den Nachweis genau dieser Positivität hinaus (vgl. Connes–Consani "Weil positivity and trace formula", 2021).
+## Weil positivity (Weil's criterion, 1952)
+- Weil's explicit formula connects a sum over zeros with a sum over primes plus archimedean terms.
+- **Weil's criterion:** the RH holds if and only if a certain associated **quadratic form is positive (semidefinite)** — the "Weil positivity".
+- This positivity is also the analytic core of **Connes' trace-formula program** (Doc. 10): Connes' reduction of the RH ultimately amounts to establishing exactly this positivity (cf. Connes–Consani "Weil positivity and trace formula", 2021).
 
-## Bedeutung / Einordnung
-- Bündelt mehrere Programme (explizite Formel, Connes, de Branges) unter einem gemeinsamen **Positivitäts-Leitmotiv**.
-- Macht die RH zu einer konkreten, prüfbaren (numerisch stark gestützten) Ungleichungsaussage.
-- **Offen:** Der Nachweis der Positivität für *alle* n bzw. für die volle quadratische Form ist genauso schwer wie die RH selbst.
+## Significance / context
+- Bundles several programs (explicit formula, Connes, de Branges) under a common **positivity leitmotiv**.
+- Turns the RH into a concrete, checkable (strongly numerically supported) inequality statement.
+- **Open:** establishing the positivity for *all* n, resp. for the full quadratic form, is just as hard as the RH itself.
 
-## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+## Mathematical core (formulas, theorems, proof sketches)
 
-### Definition der Li-Koeffizienten
-Mit der vollständigen ξ-Funktion (ξ(s) = ½ s(s−1)π^{−s/2}Γ(s/2)ζ(s)) setze
+### Definition of the Li coefficients
+With the complete ξ-function (ξ(s) = ½ s(s−1)π^{−s/2}Γ(s/2)ζ(s)) set
 ```
 λ_n = (1/(n−1)!) d^n/ds^n [ s^{n−1} log ξ(s) ] |_{s=1}     (n ≥ 1).
 ```
-Äquivalente Summe über die Nullstellen (paarweise ρ, 1−ρ zusammengefasst):
+Equivalent sum over the zeros (with ρ, 1−ρ paired):
 ```
 λ_n = Σ_ρ [ 1 − (1 − 1/ρ)^n ].
 ```
 
-### Li-Kriterium (1997)
+### Li criterion (1997)
 ```
-RH  ⟺  λ_n ≥ 0   für alle n ≥ 1.
+RH  ⟺  λ_n ≥ 0   for all n ≥ 1.
 ```
-**Beweisidee:** Die Abbildung ρ ↦ 1/ρ schickt die kritische Gerade Re(s)=1/2 auf den Kreis |z − 1| = 1. Schreibe z = 1/ρ. Dann ist 1 − (1−1/ρ)^n = 1 − (1−z)^n. Man zeigt: Re(λ_n) ≥ 0 ∀n ⟺ alle ρ liegen in |1 − 1/ρ| ≤ 1 ⟺ Re(ρ) ≤ 1/2 — und mit der Funktionalgleichung (Symmetrie ρ ↔ 1−ρ) ⟺ Re(ρ) = 1/2. Die Positivität für alle n erzwingt also die kritische Gerade.
+**Proof idea:** the map ρ ↦ 1/ρ sends the critical line Re(s)=1/2 to the circle |z − 1| = 1. Write z = 1/ρ. Then 1 − (1−1/ρ)^n = 1 − (1−z)^n. One shows: Re(λ_n) ≥ 0 ∀n ⟺ all ρ lie in |1 − 1/ρ| ≤ 1 ⟺ Re(ρ) ≤ 1/2 — and with the functional equation (symmetry ρ ↔ 1−ρ) ⟺ Re(ρ) = 1/2. So positivity for all n forces the critical line.
 
-### Bombieri–Lagarias (1999): Verallgemeinerung
-Für eine beliebige Multimenge R = {ρ} komplexer Zahlen mit Σ (1+|ρ|)^{−2} < ∞ und Symmetrie ρ ↔ 1−ρ gilt:
+### Bombieri–Lagarias (1999): generalization
+For an arbitrary multiset R = {ρ} of complex numbers with Σ (1+|ρ|)^{−2} < ∞ and symmetry ρ ↔ 1−ρ:
 ```
 Re(ρ) ≤ 1/2  ∀ρ   ⟺   λ_n := Σ_ρ [1 − (1 − 1/ρ)^n] ≥ 0  ∀n ≥ 1.
 ```
-Plus arithmetische Formel via Guinand–Weil:
+Plus an arithmetic formula via Guinand–Weil:
 ```
-λ_n = Σ_{j=1}^n binom(n,j) (−1)^{j+1} ... = n(γ + log(4π))/2 − ... − Σ_{k} (arithm. Beiträge von Λ(m))
+λ_n = Σ_{j=1}^n binom(n,j) (−1)^{j+1} ... = n(γ + log(4π))/2 − ... − Σ_{k} (arithmetic contributions of Λ(m))
 ```
-(explizit: λ_n drückt sich durch von-Mangoldt-Λ und archimedische Γ-Terme aus).
+(explicitly: λ_n is expressed via von Mangoldt's Λ and archimedean Γ-terms).
 
-### Weils Positivitätskriterium (1952)
-Für eine Testfunktion g (gerade, glatt, kompakter Träger) mit ĝ(t)=∫ g(x)e^{ixt}dx definiere die **Weil-Funktional**
+### Weil's positivity criterion (1952)
+For a test function g (even, smooth, compactly supported) with ĝ(t)=∫ g(x)e^{ixt}dx, define the **Weil functional**
 ```
 W(g) = Σ_ρ ĝ(−i(ρ − 1/2))
-     = ĝ-Hauptterm(Pole)  −  Σ_{n≥1} Λ(n)/√n · g(log n)  −  (1/2π)∫ ĝ(t) [Γ'/Γ-Term] dt.
+     = ĝ-main term(poles)  −  Σ_{n≥1} Λ(n)/√n · g(log n)  −  (1/2π)∫ ĝ(t) [Γ'/Γ-term] dt.
 ```
-**Weil-Kriterium:** RH ⟺ W(g ⋆ ḡ*) ≥ 0 für alle solche g (positiv-semidefinite quadratische Form). Genau diese Form ist die spektrale Seite in Connes' Spurformel (Dok. 10).
+**Weil criterion:** RH ⟺ W(g ⋆ ḡ*) ≥ 0 for all such g (positive-semidefinite quadratic form). Exactly this form is the spectral side in Connes' trace formula (Doc. 10).
 
-### Numerik
-λ_1 = 1 + γ/2 − log(4π)/2 ≈ 0,0230957 > 0; alle bisher berechneten λ_n > 0 und wachsen ~ (n/2)(log n − 1 + γ − log 2π) unter RH.
+### Numerics
+λ_1 = 1 + γ/2 − log(4π)/2 ≈ 0.0230957 > 0; all λ_n computed so far are > 0 and grow ~ (n/2)(log n − 1 + γ − log 2π) under RH.
 
-## Quellen
+## Sources
 - [Complements to Li's Criterion for the Riemann Hypothesis — ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0022314X99923922)
 - [On the explicit formula in the theory of prime numbers (World Scientific)](https://www.worldscientific.com/doi/10.1142/S1793042112500327)
 - [An arithmetic interpretation of generalized Li's criterion (arXiv 1305.1421)](https://arxiv.org/pdf/1305.1421)

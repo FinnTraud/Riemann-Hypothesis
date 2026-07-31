@@ -7,7 +7,7 @@
     {
       "number": "00",
       "id": "doc-00",
-      "title": "Riemann Hypothesis — Dokumenten-Index (RAG Knowledge Base)",
+      "title": "Riemann Hypothesis — Document Index (RAG Knowledge Base)",
       "category": "index",
       "status": "reference",
       "tags": [
@@ -20,7 +20,7 @@
     {
       "number": "01",
       "id": "doc-01",
-      "title": "Riemanns Originalarbeit (1859) und die Riemann-Siegel-Formel",
+      "title": "Riemann's Original Paper (1859) and the Riemann–Siegel Formula",
       "category": "foundations",
       "status": "reference",
       "tags": [
@@ -31,12 +31,12 @@
         "xi-function"
       ],
       "file": "docs/01_Riemann_1859_original_paper.md",
-      "summary": "\"Ueber die Anzahl der Primzahlen unter einer gegebenen Grösse\" ist eine ca. 9-seitige Arbeit von Bernhard Riemann, veröffentlicht im November 1859 in den *Monatsberichten der Königlich Preußischen Akademie der Wissenschaften zu Berlin*. Es ist die einzige Arbeit Riemanns zur Zahlentheorie überhaupt "
+      "summary": "\"Ueber die Anzahl der Primzahlen unter einer gegebenen Grösse\" is an approximately 9-page paper by Bernhard Riemann, published in November 1859 in the *Monatsberichte der Königlich Preußischen Akademie der Wissenschaften zu Berlin*. It is Riemann's only paper on number theory at all "
     },
     {
       "number": "02",
       "id": "doc-02",
-      "title": "Riemann–von-Mangoldt-Formel und die explizite Formel",
+      "title": "The Riemann–von Mangoldt Formula and the Explicit Formula",
       "category": "foundations",
       "status": "reference",
       "tags": [
@@ -46,12 +46,12 @@
         "prime-counting"
       ],
       "file": "docs/02_Riemann_von_Mangoldt_formula_explicit_formula.md",
-      "summary": "Die Riemann–von-Mangoldt-Formel beschreibt die Verteilung der Nullstellen der Zetafunktion quantitativ. Die zugehörige *explizite Formel* macht die zentrale Idee der RH greifbar: Die nicht-trivialen Nullstellen kontrollieren direkt die Verteilung der Primzahlen. Von Mangoldt bewies 1895 (vollständig"
+      "summary": "The Riemann–von Mangoldt formula describes the distribution of the zeros of the zeta function quantitatively. The associated *explicit formula* makes the central idea of the RH tangible: the non-trivial zeros directly control the distribution of the primes. Von Mangoldt proved it in 1895 (fully"
     },
     {
       "number": "03",
       "id": "doc-03",
-      "title": "Hardy (1914): Unendlich viele Nullstellen auf der kritischen Geraden",
+      "title": "Hardy (1914): Infinitely Many Zeros on the Critical Line",
       "category": "partial-results",
       "status": "proven",
       "tags": [
@@ -61,12 +61,12 @@
         "theta-function"
       ],
       "file": "docs/03_Hardy_1914_infinitely_many_zeros.md",
-      "summary": "1914 bewies Godfrey Harold Hardy, dass **unendlich viele** nicht-triviale Nullstellen der Riemannschen Zetafunktion exakt auf der kritischen Geraden Re(s) = 1/2 liegen. Dies war das erste rigorose Resultat, das die kritische Gerade als Ort von (unendlich vielen) Nullstellen auszeichnete — ein erster"
+      "summary": "In 1914 Godfrey Harold Hardy proved that **infinitely many** non-trivial zeros of the Riemann zeta function lie exactly on the critical line Re(s) = 1/2. This was the first rigorous result to single out the critical line as the location of (infinitely many) zeros — a first"
     },
     {
       "number": "04",
       "id": "doc-04",
-      "title": "Levinson, Conrey & Co.: Positiver Anteil der Nullstellen auf der kritischen Geraden",
+      "title": "Levinson, Conrey & Co.: Positive Proportion of Zeros on the Critical Line",
       "category": "partial-results",
       "status": "proven",
       "tags": [
@@ -77,12 +77,12 @@
         "speiser"
       ],
       "file": "docs/04_Levinson_Conrey_positive_proportion.md",
-      "summary": "Eine Reihe von Arbeiten beweist, dass ein *positiver Bruchteil* aller nicht-trivialen Nullstellen auf der kritischen Geraden liegt — quantitativ deutlich mehr als Hardys \"unendlich viele\". Die Entwicklung der nachgewiesenen Untergrenze:"
+      "summary": "A series of papers proves that a *positive fraction* of all non-trivial zeros lie on the critical line — quantitatively much more than Hardy's \"infinitely many\". The evolution of the proven lower bound:"
     },
     {
       "number": "05",
       "id": "doc-05",
-      "title": "Die Hilbert–Pólya-Vermutung (spektraler Ansatz)",
+      "title": "The Hilbert–Pólya Conjecture (spectral approach)",
       "category": "spectral",
       "status": "open",
       "tags": [
@@ -91,12 +91,12 @@
         "spectral"
       ],
       "file": "docs/05_Hilbert_Polya_conjecture.md",
-      "summary": "Die Hilbert–Pólya-Vermutung besagt: Die Imaginärteile γ der nicht-trivialen Nullstellen ρ = 1/2 + iγ der Zetafunktion sind die **Eigenwerte eines selbstadjungierten (hermiteschen) Operators**. Da selbstadjungierte Operatoren stets *reelle* Eigenwerte besitzen, würde die Existenz eines solchen Operat"
+      "summary": "The Hilbert–Pólya conjecture states: the imaginary parts γ of the non-trivial zeros ρ = 1/2 + iγ of the zeta function are the **eigenvalues of a self-adjoint (Hermitian) operator**. Since self-adjoint operators always have *real* eigenvalues, the existence of such an operator would"
     },
     {
       "number": "06",
       "id": "doc-06",
-      "title": "Montgomery-Paarkorrelation & Random-Matrix-Theorie (GUE)",
+      "title": "Montgomery Pair Correlation & Random Matrix Theory (GUE)",
       "category": "spectral",
       "status": "open",
       "tags": [
@@ -107,12 +107,12 @@
         "odlyzko"
       ],
       "file": "docs/06_Montgomery_pair_correlation_RMT.md",
-      "summary": "1973 berechnete Hugh Montgomery die **Paarkorrelation** der Imaginärteile der nicht-trivialen ζ-Nullstellen. In einem berühmten Gespräch am Institute for Advanced Study erkannte der Physiker Freeman Dyson diese Formel sofort als die Paarkorrelationsfunktion der Eigenwerte großer zufälliger hermitesc"
+      "summary": "In 1973 Hugh Montgomery computed the **pair correlation** of the imaginary parts of the non-trivial ζ zeros. In a famous conversation at the Institute for Advanced Study, the physicist Freeman Dyson immediately recognized this formula as the pair-correlation function of the eigenvalues of large random Hermitian"
     },
     {
       "number": "07",
       "id": "doc-07",
-      "title": "Keating–Snaith: Momente der Zetafunktion via charakteristische Polynome (CUE)",
+      "title": "Keating–Snaith: Moments of the Zeta Function via Characteristic Polynomials (CUE)",
       "category": "spectral",
       "status": "open",
       "tags": [
@@ -123,12 +123,12 @@
         "barnes-G"
       ],
       "file": "docs/07_Keating_Snaith_moments.md",
-      "summary": "Keating und Snaith schlugen 2000 vor, die Riemannsche Zetafunktion auf der kritischen Geraden durch das **charakteristische Polynom einer zufälligen unitären Matrix** (Circular Unitary Ensemble, CUE) zu modellieren. Dieses Modell liefert präzise Vorhersagen für die **Momente** von ζ(1/2 + it) — ein "
+      "summary": "In 2000 Keating and Snaith proposed modeling the Riemann zeta function on the critical line by the **characteristic polynomial of a random unitary matrix** (Circular Unitary Ensemble, CUE). This model yields precise predictions for the **moments** of ζ(1/2 + it) — a "
     },
     {
       "number": "08",
       "id": "doc-08",
-      "title": "Berry–Keating H = xp Modell (Quantenchaos-Ansatz)",
+      "title": "The Berry–Keating H = xp Model (quantum-chaos approach)",
       "category": "spectral",
       "status": "open",
       "tags": [
@@ -138,12 +138,12 @@
         "semiclassical"
       ],
       "file": "docs/08_Berry_Keating_xp_model.md",
-      "summary": "Berry und Keating schlugen vor, dass die Riemann-Nullstellen die Energieniveaus (Eigenwerte) eines quantenmechanischen Operators sind, der aus der Quantisierung des klassischen Hamiltonians **H = xp** (Ort × Impuls) entsteht. Motiviert ist dies durch das **Quantenchaos**: In chaotischen Quantensyste"
+      "summary": "Berry and Keating proposed that the Riemann zeros are the energy levels (eigenvalues) of a quantum-mechanical operator arising from the quantization of the classical Hamiltonian **H = xp** (position × momentum). This is motivated by **quantum chaos**: in chaotic quantum systems"
     },
     {
       "number": "09",
       "id": "doc-09",
-      "title": "Bender–Brody–Müller (2017): PT-symmetrischer Hamiltonian für die Riemann-Nullstellen",
+      "title": "Bender–Brody–Müller (2017): PT-Symmetric Hamiltonian for the Riemann Zeros",
       "category": "spectral",
       "status": "open",
       "tags": [
@@ -152,12 +152,12 @@
         "hamiltonian"
       ],
       "file": "docs/09_Bender_Brody_Muller_2017_Hamiltonian.md",
-      "summary": "Bender, Brody und Müller konstruierten 2017 einen konkreten Hamiltonian-Operator H mit der Eigenschaft: Erfüllen seine Eigenfunktionen eine geeignete Randbedingung, so entsprechen die Eigenwerte exakt den nicht-trivialen Nullstellen der Zetafunktion. Die Arbeit erregte mediale Aufmerksamkeit (\"Physi"
+      "summary": "In 2017 Bender, Brody and Müller constructed a concrete Hamiltonian operator H with the property: if its eigenfunctions satisfy a suitable boundary condition, then the eigenvalues correspond exactly to the non-trivial zeros of the zeta function. The work drew media attention (\"Physi"
     },
     {
       "number": "10",
       "id": "doc-10",
-      "title": "Alain Connes: Spurformel & nichtkommutative Geometrie",
+      "title": "Alain Connes: Trace Formula & Noncommutative Geometry",
       "category": "spectral",
       "status": "open",
       "tags": [
@@ -168,12 +168,12 @@
         "weil-positivity"
       ],
       "file": "docs/10_Connes_noncommutative_geometry.md",
-      "summary": "Alain Connes entwickelte einen Ansatz, der die explizite Formel der Zahlentheorie (Primzahlen ↔ Nullstellen, Dok. 02) als **Spurformel auf dem nichtkommutativen Raum der Adèleklassen** interpretiert. In diesem Rahmen erscheinen die kritischen Nullstellen als **Absorptionsspektrum** eines natürlichen"
+      "summary": "Alain Connes developed an approach that interprets the explicit formula of number theory (primes ↔ zeros, Doc. 02) as a **trace formula on the noncommutative space of adele classes**. In this framework the critical zeros appear as the **absorption spectrum** of a natural"
     },
     {
       "number": "11",
       "id": "doc-11",
-      "title": "Connes–Moscovici: Prolate-Spheroidal-Operator und Zeta (2021–2022)",
+      "title": "Connes–Moscovici: Prolate Spheroidal Operator and Zeta (2021–2022)",
       "category": "spectral",
       "status": "open",
       "tags": [
@@ -182,12 +182,12 @@
         "operator"
       ],
       "file": "docs/11_Connes_Moscovici_prolate_spheroidal.md",
-      "summary": "Connes und Moscovici untersuchten ab 2021 das Spektrum des **Prolate-Spheroidal-Wellenoperators** (ein klassischer Differentialoperator aus der Signalverarbeitung / Bandbegrenzung, ursprünglich von Slepian, Landau, Pollak an den Bell Labs studiert) und zeigten, dass dessen Spektrum eng mit den **Qua"
+      "summary": "From 2021 Connes and Moscovici studied the spectrum of the **prolate spheroidal wave operator** (a classical differential operator from signal processing / band limiting, originally studied by Slepian, Landau, Pollak at Bell Labs) and showed that its spectrum is closely related to the **squa"
     },
     {
       "number": "12",
       "id": "doc-12",
-      "title": "Nullstellenfreie Regionen (klassischer analytischer Ansatz)",
+      "title": "Zero-Free Regions (classical analytic approach)",
       "category": "analytic",
       "status": "open",
       "tags": [
@@ -197,12 +197,12 @@
         "prime-number-theorem"
       ],
       "file": "docs/12_zero_free_regions.md",
-      "summary": "Statt die RH direkt zu beweisen, verfolgt ein Jahrhundert analytischer Arbeit das Ziel, die **Region des kritischen Streifens, die nachweislich frei von Nullstellen ist**, schrittweise zu vergrößern — den Streifen also \"von rechts\" Richtung kritische Gerade einzuengen. Jede Verbesserung liefert effe"
+      "summary": "Instead of proving the RH directly, a century of analytic work pursues the goal of gradually enlarging the **region of the critical strip that is provably free of zeros** — squeezing the strip \"from the right\" toward the critical line. Every improvement yields effe"
     },
     {
       "number": "13",
       "id": "doc-13",
-      "title": "Nyman–Beurling-Kriterium & Báez-Duarte-Verschärfung",
+      "title": "The Nyman–Beurling Criterion & the Báez-Duarte Sharpening",
       "category": "criterion",
       "status": "open",
       "tags": [
@@ -212,12 +212,12 @@
         "hilbert-space"
       ],
       "file": "docs/13_Nyman_Beurling_Baez_Duarte.md",
-      "summary": "Das Nyman–Beurling-Kriterium formuliert die RH als ein **Approximations-/Dichteproblem in einem Hilbertraum**: Die RH gilt genau dann, wenn ein bestimmter Funktionenraum dicht in L²(0,1) liegt. Báez-Duarte vereinfachte dies 2003 erheblich, indem er zeigte, dass nur **ganzzahlige** Dilatationen benöt"
+      "summary": "The Nyman–Beurling criterion formulates the RH as an **approximation/density problem in a Hilbert space**: the RH holds if and only if a certain function space is dense in L²(0,1). Báez-Duarte simplified this considerably in 2003 by showing that only **integer** dilations are needed"
     },
     {
       "number": "14",
       "id": "doc-14",
-      "title": "Li-Kriterium, Bombieri–Lagarias & Weil-Positivität",
+      "title": "Li Criterion, Bombieri–Lagarias & Weil Positivity",
       "category": "criterion",
       "status": "open",
       "tags": [
@@ -227,12 +227,12 @@
         "positivity"
       ],
       "file": "docs/14_Li_criterion_Bombieri_Lagarias_Weil_positivity.md",
-      "summary": "Eine Familie eng verwandter Kriterien formuliert die RH als **Positivitätsaussage**. Weils Kriterium nutzt die explizite Formel als quadratische Form; Lis Kriterium übersetzt die RH in die Nicht-Negativität einer expliziten Zahlenfolge λ_n; Bombieri–Lagarias zeigen, dass beide dasselbe bedeuten und "
+      "summary": "A family of closely related criteria formulates the RH as a **positivity statement**. Weil's criterion uses the explicit formula as a quadratic form; Li's criterion translates the RH into the non-negativity of an explicit number sequence λ_n; Bombieri–Lagarias show that the two mean the same thing and "
     },
     {
       "number": "15",
       "id": "doc-15",
-      "title": "Robins Ungleichung & Lagarias' elementares Kriterium (arithmetische Kriterien)",
+      "title": "Robin's Inequality & Lagarias' Elementary Criterion (arithmetic criteria)",
       "category": "criterion",
       "status": "open",
       "tags": [
@@ -242,12 +242,12 @@
         "elementary"
       ],
       "file": "docs/15_Robin_inequality.md",
-      "summary": "Bemerkenswert an diesen Kriterien ist, dass sie die RH **vollständig elementar** — ohne komplexe Analysis — als Ungleichung über die Teilersummenfunktion σ(n) ausdrücken. σ(n) = Σ_{d|n} d ist die Summe aller Teiler von n."
+      "summary": "What is remarkable about these criteria is that they express the RH **entirely elementarily** — without complex analysis — as an inequality on the sum-of-divisors function σ(n). σ(n) = Σ_{d|n} d is the sum of all divisors of n."
     },
     {
       "number": "16",
       "id": "doc-16",
-      "title": "Mertens-Funktion & Riesz-Kriterium (Möbius-basierte Kriterien)",
+      "title": "Mertens Function & Riesz Criterion (Möbius-based criteria)",
       "category": "criterion",
       "status": "open",
       "tags": [
@@ -257,12 +257,12 @@
         "mertens-conjecture-refuted"
       ],
       "file": "docs/16_Mertens_function_Riesz_criterion.md",
-      "summary": "Mehrere Kriterien drücken die RH über die **Möbius-Funktion** μ(n) und ihre Summatorik aus. Besonders lehrreich ist die **widerlegte Mertens-Vermutung**: Sie hätte die RH impliziert, ist aber falsch — eine Warnung vor zu starken hinreichenden Bedingungen."
+      "summary": "Several criteria express the RH via the **Möbius function** μ(n) and its summatory function. Especially instructive is the **refuted Mertens conjecture**: it would have implied the RH, but it is false — a warning against overly strong sufficient conditions."
     },
     {
       "number": "17",
       "id": "doc-17",
-      "title": "Lindelöf-Hypothese & Dichte-Hypothese",
+      "title": "Lindelöf Hypothesis & Density Hypothesis",
       "category": "analytic",
       "status": "open",
       "tags": [
@@ -272,12 +272,12 @@
         "mu-exponent"
       ],
       "file": "docs/17_Lindelof_density_hypothesis.md",
-      "summary": "Lindelöf- und Dichte-Hypothese sind **Konsequenzen** der RH, die formal schwächer, aber ebenfalls ungelöst sind. Sie bilden eine Hierarchie:"
+      "summary": "The Lindelöf and density hypotheses are **consequences** of the RH that are formally weaker but likewise unsolved. They form a hierarchy:"
     },
     {
       "number": "18",
       "id": "doc-18",
-      "title": "Weil-Vermutungen: RH über endlichen Körpern (Deligne) — BEWIESEN",
+      "title": "Weil Conjectures: RH over Finite Fields (Deligne) — PROVEN",
       "category": "proven-analogue",
       "status": "proven",
       "tags": [
@@ -288,12 +288,12 @@
         "etale-cohomology"
       ],
       "file": "docs/18_Weil_conjectures_function_fields_Deligne.md",
-      "summary": "Für **Kurven (und allgemeiner Varietäten) über endlichen Körpern** existiert ein exaktes Analogon der Riemann-Vermutung — und dieses ist **vollständig bewiesen**. Das ist der größte Triumph der \"RH-Familie\" und das wichtigste Vorbild/Leitlicht für Angriffe auf die klassische RH (insbesondere Connes'"
+      "summary": "For **curves (and more generally varieties) over finite fields** there exists an exact analogue of the Riemann Hypothesis — and it is **completely proven**. This is the greatest triumph of the \"RH family\" and the most important model/guiding light for attacks on the classical RH (in particular Connes'"
     },
     {
       "number": "19",
       "id": "doc-19",
-      "title": "Selberg-Spurformel & Selberg-Zetafunktion (RH-Analogon BEWIESEN)",
+      "title": "Selberg Trace Formula & Selberg Zeta Function (RH analogue PROVEN)",
       "category": "proven-analogue",
       "status": "proven",
       "tags": [
@@ -304,12 +304,12 @@
         "geodesics"
       ],
       "file": "docs/19_Selberg_trace_formula_zeta.md",
-      "summary": "Die **Selberg-Spurformel** (1956) verknüpft auf einer hyperbolischen Riemannschen Fläche die **Eigenwerte des Laplace-Operators** (spektrale Seite) mit den **Längen geschlossener Geodäten** (geometrische Seite). Die zugehörige **Selberg-Zetafunktion** erfüllt ein exaktes Analogon der Riemann-Vermutu"
+      "summary": "The **Selberg trace formula** (1956) links, on a hyperbolic Riemann surface, the **eigenvalues of the Laplace operator** (spectral side) with the **lengths of closed geodesics** (geometric side). The associated **Selberg zeta function** satisfies an exact analogue of the Riemann Hypothesis"
     },
     {
       "number": "20",
       "id": "doc-20",
-      "title": "Louis de Branges: Hilberträume ganzer Funktionen (mehrfach gescheiterte Beweise)",
+      "title": "Louis de Branges: Hilbert Spaces of Entire Functions (repeatedly failed proofs)",
       "category": "analytic",
       "status": "refuted",
       "tags": [
@@ -319,12 +319,12 @@
         "failed"
       ],
       "file": "docs/20_de_Branges_Hilbert_spaces.md",
-      "summary": "Louis de Branges (berühmt für seinen *korrekten* Beweis der Bieberbach-Vermutung 1984) entwickelte eine umfangreiche Theorie der **Hilberträume ganzer Funktionen** und schlug ab 1986 einen darauf basierenden Zugang zur (verallgemeinerten) RH vor. Über Jahrzehnte veröffentlichte er mehrere **Beweisbe"
+      "summary": "Louis de Branges (famous for his *correct* proof of the Bieberbach conjecture in 1984) developed an extensive theory of **Hilbert spaces of entire functions** and, from 1986, proposed an approach to the (generalized) RH based on it. Over decades he published several **proof at"
     },
     {
       "number": "21",
       "id": "doc-21",
-      "title": "Verallgemeinerte, Große Riemann-Vermutung & Selberg-Klasse",
+      "title": "Generalized, Grand Riemann Hypothesis & the Selberg Class",
       "category": "generalization",
       "status": "open",
       "tags": [
@@ -335,12 +335,12 @@
         "langlands"
       ],
       "file": "docs/21_GRH_Selberg_class_grand_RH.md",
-      "summary": "Die Riemann-Vermutung ist der Spezialfall einer ganzen Hierarchie von Vermutungen über die Nullstellen allgemeinerer \"zeta-/L-Funktionen\". Diese Verallgemeinerungen sind teils aus Anwendungssicht sogar wichtiger (z. B. die GRH in der algorithmischen Zahlentheorie)."
+      "summary": "The Riemann Hypothesis is the special case of a whole hierarchy of conjectures about the zeros of more general \"zeta/L-functions\". These generalizations are in some respects even more important from an applications standpoint (e.g. the GRH in algorithmic number theory)."
     },
     {
       "number": "22",
       "id": "doc-22",
-      "title": "Guth–Maynard (2024): Durchbruch bei Nullstellendichte-Abschätzungen",
+      "title": "Guth–Maynard (2024): Breakthrough in Zero-Density Estimates",
       "category": "breakthrough",
       "status": "proven",
       "tags": [
@@ -351,12 +351,12 @@
         "2024"
       ],
       "file": "docs/22_Guth_Maynard_2024.md",
-      "summary": "Larry Guth und James Maynard erzielten 2024 die **erste substanzielle Verbesserung seit über 80 Jahren** einer klassischen Nullstellendichte-Abschätzung von Ingham (1940). Terence Tao bezeichnete dies öffentlich als \"bemerkenswerten Durchbruch\". Es ist der bedeutendste *unbedingte* (RH-unabhängige) "
+      "summary": "In 2024 Larry Guth and James Maynard achieved the **first substantial improvement in over 80 years** of a classical zero-density estimate of Ingham (1940). Terence Tao publicly called this a \"remarkable breakthrough\". It is the most significant *unconditional* (RH-independent) "
     },
     {
       "number": "23",
       "id": "doc-23",
-      "title": "De-Bruijn–Newman-Konstante: Rodgers–Tao & Polymath15",
+      "title": "The De Bruijn–Newman Constant: Rodgers–Tao & Polymath15",
       "category": "breakthrough",
       "status": "open",
       "tags": [
@@ -366,12 +366,12 @@
         "lehmer-pairs"
       ],
       "file": "docs/23_de_Bruijn_Newman_constant_Polymath15.md",
-      "summary": "Die **De-Bruijn–Newman-Konstante Λ** quantifiziert, \"wie knapp\" die RH gilt. Es ist bekannt, dass die **RH äquivalent zu Λ ≤ 0** ist. Rodgers und Tao bewiesen 2018 die umgekehrte Schranke **Λ ≥ 0**. Zusammen heißt das: **Wenn die RH wahr ist, ist sie nur ganz knapp wahr** (Λ = 0 exakt). Das anschlie"
+      "summary": "The **De Bruijn–Newman constant Λ** quantifies \"how narrowly\" the RH holds. It is known that the **RH is equivalent to Λ ≤ 0**. In 2018 Rodgers and Tao proved the reverse bound **Λ ≥ 0**. Together this means: **if the RH is true, it is only just barely true** (Λ = 0 exactly). The subsequent"
     },
     {
       "number": "24",
       "id": "doc-24",
-      "title": "Numerische Verifikation der Riemann-Vermutung",
+      "title": "Numerical Verification of the Riemann Hypothesis",
       "category": "numerical",
       "status": "reference",
       "tags": [
@@ -383,12 +383,12 @@
         "verification"
       ],
       "file": "docs/24_computational_verification.md",
-      "summary": "Seit den ersten Handrechnungen (Riemann, Gram, Backlund, Hutchinson) wurde die RH numerisch für immer mehr Nullstellen verifiziert. Alle bislang berechneten nicht-trivialen Nullstellen liegen **exakt auf** der kritischen Geraden Re(s) = 1/2. Das ist starke Evidenz — aber **kein Beweis** (es könnte e"
+      "summary": "Since the first hand computations (Riemann, Gram, Backlund, Hutchinson) the RH has been numerically verified for ever more zeros. All non-trivial zeros computed so far lie **exactly on** the critical line Re(s) = 1/2. This is strong evidence — but **not a proof** (there could e"
     },
     {
       "number": "25",
       "id": "doc-25",
-      "title": "Michael Atiyah (2018): gescheiterter Beweisversuch (Todd-Funktion)",
+      "title": "Michael Atiyah (2018): Failed Proof Attempt (Todd Function)",
       "category": "failed-proof",
       "status": "refuted",
       "tags": [
@@ -399,12 +399,12 @@
         "failed"
       ],
       "file": "docs/25_Atiyah_2018_failed_proof.md",
-      "summary": "Sir Michael Atiyah (Fields-Medaille 1966, Abel-Preis 2004 — einer der bedeutendsten Mathematiker des 20. Jahrhunderts) kündigte im September 2018 einen \"einfachen Beweis\" der Riemann-Vermutung an und präsentierte ihn in einem 45-minütigen Vortrag am Heidelberg Laureate Forum. Der Beweis stützte sich"
+      "summary": "Sir Michael Atiyah (Fields Medal 1966, Abel Prize 2004 — one of the most important mathematicians of the 20th century) announced a \"simple proof\" of the Riemann Hypothesis in September 2018 and presented it in a 45-minute talk at the Heidelberg Laureate Forum. The proof relied on"
     },
     {
       "number": "26",
       "id": "doc-26",
-      "title": "John Nash (1959): gescheiterter Versuch",
+      "title": "John Nash (1959): Failed Attempt",
       "category": "failed-proof",
       "status": "refuted",
       "tags": [
@@ -413,12 +413,12 @@
         "failed"
       ],
       "file": "docs/26_Nash_failed_attempt.md",
-      "summary": "John Nash (Nobelpreis Wirtschaft 1994 für Spieltheorie, Abel-Preis 2015 für nichtlineare PDE) arbeitete Ende der 1950er Jahre intensiv an der Riemann-Vermutung. Sein berühmt gewordener Versuch, einen Beweis öffentlich vorzustellen, scheiterte spektakulär — er fiel zeitlich mit dem Ausbruch seiner Sc"
+      "summary": "John Nash (Nobel Prize in Economics 1994 for game theory, Abel Prize 2015 for nonlinear PDE) worked intensively on the Riemann Hypothesis in the late 1950s. His now-famous attempt to present a proof publicly failed spectacularly — it coincided in time with the onset of his sch"
     },
     {
       "number": "27",
       "id": "doc-27",
-      "title": "Weitere umstrittene, zurückgezogene & fehlerhafte Beweisbehauptungen",
+      "title": "Other Disputed, Retracted & Erroneous Proof Claims",
       "category": "failed-proof",
       "status": "refuted",
       "tags": [
@@ -428,12 +428,12 @@
         "crackpot"
       ],
       "file": "docs/27_other_disputed_claimed_proofs.md",
-      "summary": "Die Riemann-Vermutung zieht eine außergewöhnlich große Zahl an Beweis- (und Widerlegungs-)Behauptungen an — vom ernsthaften Forschungsprogramm bis zur offensichtlich fehlerhaften Einzelarbeit. **Stand Juni 2026 ist keine als gültig akzeptiert; die RH ist formal offen.** Dieses Dokument sammelt Muste"
+      "summary": "The Riemann Hypothesis attracts an unusually large number of proof (and disproof) claims — from serious research programs to obviously flawed one-off papers. **As of June 2026 none is accepted as valid; the RH is formally open.** This document collects patte"
     },
     {
       "number": "28",
       "id": "doc-28",
-      "title": "KI / Machine Learning und die Riemann-Vermutung",
+      "title": "AI / Machine Learning and the Riemann Hypothesis",
       "category": "ai-context",
       "status": "meta",
       "tags": [
@@ -444,12 +444,12 @@
         "hallucination"
       ],
       "file": "docs/28_AI_and_RH.md",
-      "summary": "Moderne KI- und Machine-Learning-Methoden (Klassifikatoren, neuronale Netze, LLM-gestützte Mustererkennung, automatisierte/formale Beweissysteme) werden zunehmend auf die numerische Untersuchung der ζ-Nullstellenverteilung angewandt. Sie liefern **empirische, falsifizierbarkeitsorientierte** Evidenz"
+      "summary": "Modern AI and machine-learning methods (classifiers, neural networks, LLM-assisted pattern recognition, automated/formal proof systems) are increasingly applied to the numerical study of the ζ-zero distribution. They provide **empirical, falsifiability-oriented** evidence"
     },
     {
       "number": "29",
       "id": "doc-29",
-      "title": "Jensen–Pólya-Programm: Laguerre–Pólya-Klasse & Jensen-Polynome (Griffin–Ono–Rolen–Zagier 2019)",
+      "title": "The Jensen–Pólya Program: Laguerre–Pólya Class & Jensen Polynomials (Griffin–Ono–Rolen–Zagier 2019)",
       "category": "solution-program",
       "status": "open",
       "tags": [
@@ -460,12 +460,12 @@
         "hyperbolicity"
       ],
       "file": "docs/29_Jensen_Polya_Laguerre_Polya_GORZ.md",
-      "summary": "Die RH ist **äquivalent** dazu, dass die Riemann-ξ-Funktion zur **Laguerre–Pólya-Klasse** gehört (ganze Funktionen mit *nur reellen* Nullstellen). Dies ist wiederum äquivalent zur **Hyperbolizität (Reellwurzeligkeit) aller Jensen-Polynome**, die aus den Taylor-Koeffizienten von ξ gebildet werden. Gr"
+      "summary": "The RH is **equivalent** to the Riemann ξ-function belonging to the **Laguerre–Pólya class** (entire functions with *only real* zeros). This in turn is equivalent to the **hyperbolicity (real-rootedness) of all Jensen polynomials** formed from the Taylor coefficients of ξ. Gr"
     },
     {
       "number": "30",
       "id": "doc-30",
-      "title": "Der Körper mit einem Element (𝔽₁) & Connes–Consani arithmetic site",
+      "title": "The Field with One Element (𝔽₁) & the Connes–Consani Arithmetic Site",
       "category": "solution-program",
       "status": "open",
       "tags": [
@@ -476,12 +476,12 @@
         "bost-connes"
       ],
       "file": "docs/30_F1_field_one_element_arithmetic_site.md",
-      "summary": "Das wohl ambitionierteste strukturelle Programm: die RH zu beweisen, indem man **Weils/Delignes Beweis über endlichen Körpern** (Dok. 18) auf die klassische Situation über ℤ überträgt. Dazu bräuchte man eine \"Geometrie über dem **Körper mit einem Element 𝔽₁**\" — ein hypothetisches Objekt, über dem S"
+      "summary": "Probably the most ambitious structural program: to prove the RH by transferring **Weil's/Deligne's proof over finite fields** (Doc. 18) to the classical situation over ℤ. This would require a \"geometry over the **field with one element 𝔽₁**\" — a hypothetical object over which S"
     },
     {
       "number": "31",
       "id": "doc-31",
-      "title": "Deningers Kohomologie-Programm & dynamische Systeme auf gefolierten Räumen",
+      "title": "Deninger's Cohomology Program & Dynamical Systems on Foliated Spaces",
       "category": "solution-program",
       "status": "open",
       "tags": [
@@ -492,12 +492,12 @@
         "regularized-determinant"
       ],
       "file": "docs/31_Deninger_cohomology_foliated_dynamical.md",
-      "summary": "Christopher Deninger schlug ein **kohomologisches Programm** vor, in dem Zetafunktionen als **regularisierte Determinanten** geometrischer/dynamischer Operatoren ausgedrückt werden. Ziel: die explizite Formel der Zahlentheorie (Dok. 02) als **Lefschetz-Spurformel** zu interpretieren und die RH als *"
+      "summary": "Christopher Deninger proposed a **cohomological program** in which zeta functions are expressed as **regularized determinants** of geometric/dynamical operators. Goal: to interpret the explicit formula of number theory (Doc. 02) as a **Lefschetz trace formula** and the RH as *"
     },
     {
       "number": "32",
       "id": "doc-32",
-      "title": "Landau–Siegel-Nullstellen (Ausnahme-Nullstellen) & Yitang Zhang (2022)",
+      "title": "Landau–Siegel Zeros (Exceptional Zeros) & Yitang Zhang (2022)",
       "category": "solution-program",
       "status": "open",
       "tags": [
@@ -508,12 +508,12 @@
         "2022"
       ],
       "file": "docs/32_Landau_Siegel_zeros_Zhang.md",
-      "summary": "Eine **Landau–Siegel-Nullstelle** (Ausnahme-Nullstelle) ist eine hypothetische reelle Nullstelle einer Dirichlet-L-Funktion *sehr nahe* bei s = 1 — ein potenzielles Gegenbeispiel zur Generalisierten Riemann-Vermutung (GRH, Dok. 21). Ihre **Nicht-Existenz** zu beweisen, ist ein zentrales Teilziel auf"
+      "summary": "A **Landau–Siegel zero** (exceptional zero) is a hypothetical real zero of a Dirichlet L-function *very close* to s = 1 — a potential counterexample to the Generalized Riemann Hypothesis (GRH, Doc. 21). Proving their **non-existence** is a central sub-goal on"
     },
     {
       "number": "33",
       "id": "doc-33",
-      "title": "Statistische Mechanik & Lee–Yang-Analogie (Newman)",
+      "title": "Statistical Mechanics & the Lee–Yang Analogy (Newman)",
       "category": "solution-program",
       "status": "open",
       "tags": [
@@ -524,12 +524,12 @@
         "heat-flow"
       ],
       "file": "docs/33_statistical_mechanics_Lee_Yang.md",
-      "summary": "Es gibt eine tiefe Analogie zwischen der RH (Reellwurzeligkeit der ξ-Funktion) und dem **Lee–Yang-Theorem** der statistischen Mechanik (Nullstellen von Zustandssummen liegen auf einem Kreis/einer Geraden). Charles Newman entwickelte daraus einen statistisch-mechanischen Blick, der direkt zur **de-Br"
+      "summary": "There is a deep analogy between the RH (real-rootedness of the ξ-function) and the **Lee–Yang theorem** of statistical mechanics (zeros of partition functions lie on a circle/line). Charles Newman developed from this a statistical-mechanical view that leads directly to the **de Br"
     },
     {
       "number": "34",
       "id": "doc-34",
-      "title": "Bost–Connes-System (Quantenstatistik mit ζ als Zustandssumme)",
+      "title": "The Bost–Connes System (quantum statistics with ζ as the partition function)",
       "category": "spectral",
       "status": "proven",
       "tags": [
@@ -540,12 +540,12 @@
         "quantum-statistical"
       ],
       "file": "docs/34_Bost_Connes_system.md",
-      "summary": "Das Bost–Connes-System ist ein **quantenstatistisches dynamisches System**, dessen **Zustandssumme (partition function) exakt die Riemannsche ζ-Funktion** ist und dessen Symmetrien die **abelsche Galoisgruppe** Gal(ℚ^ab/ℚ) realisieren. Es verbindet Quantenstatistik, Klassenkörpertheorie und die ζ-Fu"
+      "summary": "The Bost–Connes system is a **quantum-statistical dynamical system** whose **partition function is exactly the Riemann ζ-function** and whose symmetries realize the **abelian Galois group** Gal(ℚ^ab/ℚ). It connects quantum statistics, class field theory, and the ζ-fu"
     },
     {
       "number": "35",
       "id": "doc-35",
-      "title": "Obstruktionen & Barrieren: Warum naive Ansätze scheitern MÜSSEN",
+      "title": "Obstructions & Barriers: Why Naive Approaches MUST Fail",
       "category": "obstruction",
       "status": "meta",
       "tags": [
@@ -557,12 +557,12 @@
         "checklist"
       ],
       "file": "docs/35_obstructions_barriers.md",
-      "summary": "Dieses Dokument sammelt die **bekannten Gründe, warum ganze Klassen von Beweisansätzen nicht funktionieren können**. Für einen RH-Assistenten ist das die wichtigste „Schutzschicht\": Es erlaubt, vorgeschlagene Beweisideen sofort gegen bekannte Obstruktionen zu testen und Sackgassen zu erkennen."
+      "summary": "This document collects the **known reasons why entire classes of proof approaches cannot work**. For an RH assistant this is the most important \"protective layer\": it makes it possible to test proposed proof ideas immediately against known obstructions and to recognize dead ends."
     },
     {
       "number": "36",
       "id": "doc-36",
-      "title": "Konsequenzen der Riemann-Vermutung (was folgt, wenn sie wahr ist)",
+      "title": "Consequences of the Riemann Hypothesis (what follows if it is true)",
       "category": "context",
       "status": "reference",
       "tags": [
@@ -573,12 +573,12 @@
         "GRH-applications"
       ],
       "file": "docs/36_consequences_of_RH.md",
-      "summary": "Hunderte Sätze sind „bedingt unter RH\" bewiesen — sie würden sofort unbedingt gelten, sobald die RH bewiesen ist. Diese Liste zeigt, *warum* die RH so zentral ist, und liefert einem RH-Assistenten den Anwendungs-/Konsequenzkontext. Manche Folgerungen brauchen die **GRH** (Dok. 21), nicht nur die kla"
+      "summary": "Hundreds of theorems are proved \"conditionally under RH\" — they would immediately hold unconditionally as soon as the RH is proved. This list shows *why* the RH is so central, and gives an RH assistant the application/consequence context. Some corollaries need the **GRH** (Doc. 21), not just the cla"
     },
     {
       "number": "37",
       "id": "doc-37",
-      "title": "Formalisierung: Lean, mathlib & Proof Assistants (Verifikations-Infrastruktur)",
+      "title": "Formalization: Lean, mathlib & Proof Assistants (verification infrastructure)",
       "category": "verification",
       "status": "reference",
       "tags": [
@@ -589,12 +589,12 @@
         "prime-number-theorem"
       ],
       "file": "docs/37_formalization_lean_proof_assistants.md",
-      "summary": "Proof Assistants (Lean 4 / mathlib, Coq, Isabelle) erlauben **maschinell geprüfte** Beweise, bei denen jeder Schritt gegen die Axiome verifiziert wird — keine Lücken, keine Halluzination. Für einen „bulletproof\" RH-Server ist das die Brücke zwischen KI-generierten Ideen (Dok. 28) und zertifizierter "
+      "summary": "Proof assistants (Lean 4 / mathlib, Coq, Isabelle) allow **machine-checked** proofs in which every step is verified against the axioms — no gaps, no hallucination. For a \"bulletproof\" RH server this is the bridge between AI-generated ideas (Doc. 28) and certified "
     },
     {
       "number": "38",
       "id": "doc-38",
-      "title": "Bombieris offizielle Clay-Problemstellung (Millennium-Problem)",
+      "title": "Bombieri's Official Clay Problem Statement (Millennium Problem)",
       "category": "reference",
       "status": "reference",
       "tags": [
@@ -604,12 +604,12 @@
         "official-statement"
       ],
       "file": "docs/38_Bombieri_official_problem_statement.md",
-      "summary": "Enrico Bombieri verfasste die **offizielle Problembeschreibung** der Riemann-Vermutung für die Millennium-Preisprobleme des Clay Mathematics Institute (2000). Sie ist die autoritative Referenz für die exakte Formulierung, den Kontext und die akzeptierten äquivalenten Fassungen."
+      "summary": "Enrico Bombieri wrote the **official problem description** of the Riemann Hypothesis for the Millennium Prize Problems of the Clay Mathematics Institute (2000). It is the authoritative reference for the exact formulation, the context, and the accepted equivalent versions."
     },
     {
       "number": "39",
       "id": "doc-39",
-      "title": "Cramér-Modell & probabilistische Heuristiken der Primzahlen",
+      "title": "The Cramér Model & Probabilistic Heuristics of the Primes",
       "category": "heuristic",
       "status": "open",
       "tags": [
@@ -619,12 +619,12 @@
         "maier-theorem"
       ],
       "file": "docs/39_Cramer_probabilistic_model.md",
-      "summary": "Das Cramér-Modell behandelt die Primzahlen als **Zufallsfolge** und liefert Vorhersagen über Primzahllücken, die mit der RH-Welt verträglich, aber unabhängig davon sind. Es ist die wichtigste *probabilistische Intuition* hinter Vermutungen über die Feinverteilung der Primzahlen und erklärt, warum di"
+      "summary": "The Cramér model treats the primes as a **random sequence** and yields predictions about prime gaps that are compatible with the RH world but independent of it. It is the most important *probabilistic intuition* behind conjectures about the fine distribution of the primes and explains why the"
     },
     {
       "number": "40",
       "id": "doc-40",
-      "title": "Glossar & Notation (Begriffe, Symbole, Definitionen)",
+      "title": "Glossary & Notation (terms, symbols, definitions)",
       "category": "glossary",
       "status": "reference",
       "tags": [
@@ -633,12 +633,12 @@
         "definitions"
       ],
       "file": "docs/40_glossary_notation.md",
-      "summary": "Nutzerfragen enthalten oft *Begriffe* statt Namen („Was ist die kritische Gerade?\", „Was bedeutet GUE?\"). Dieses Glossar erhöht die Retrieval-Trefferquote und verlinkt zu den vertiefenden Dokumenten."
+      "summary": "User questions often contain *terms* rather than names (\"What is the critical line?\", \"What does GUE mean?\"). This glossary increases the retrieval hit rate and links to the more detailed documents."
     },
     {
       "number": "41",
       "id": "doc-41",
-      "title": "Synthese: Querschnittsthemen & was ein erfolgreicher Beweis leisten muss",
+      "title": "Synthesis: Cross-Cutting Themes & What a Successful Proof Must Achieve",
       "category": "synthesis",
       "status": "meta",
       "tags": [
@@ -650,12 +650,12 @@
         "evaluation"
       ],
       "file": "docs/41_synthesis_what_a_proof_needs.md",
-      "summary": "Dieses Dokument verdichtet die 40 Einzeldokumente zu **Mustern**: Was haben alle ernsthaften Ansätze gemeinsam? Welche notwendigen Bedingungen muss ein gültiger Beweis erfüllen? Es ist die strategische „Landkarte\" für einen RH-Assistenten."
+      "summary": "This document condenses the 40 individual documents into **patterns**: what do all serious approaches have in common? Which necessary conditions must a valid proof satisfy? It is the strategic \"map\" for an RH assistant."
     },
     {
       "number": "42",
       "id": "doc-42",
-      "title": "Zeittafel & kanonische Leseliste",
+      "title": "Timeline & Canonical Reading List",
       "category": "reference",
       "status": "reference",
       "tags": [
@@ -670,7 +670,7 @@
     {
       "number": "43",
       "id": "doc-43",
-      "title": "Epstein-Zetafunktionen & Selberg-Klassen-Rigidität: Welche Eigenschaft erzwingt die kritische Gerade?",
+      "title": "Epstein Zeta Functions & Selberg-Class Rigidity: Which Property Forces the Critical Line?",
       "category": "obstruction",
       "status": "meta",
       "tags": [
@@ -681,12 +681,12 @@
         "kaczorowski-perelli"
       ],
       "file": "docs/43_Epstein_zeta_Selberg_class_rigidity.md",
-      "summary": "Dies ist das **wichtigste „bulletproof\"-Dokument** zusammen mit Dok. 35: Es beantwortet die Frage, **welche** Eigenschaften die Nullstellen tatsächlich auf die kritische Gerade zwingen — durch Funktionen, die *fast* wie ζ aussehen, aber die RH verletzen. Ergänzt Dok. 35 (Davenport–Heilbronn) um die "
+      "summary": "This is the **most important \"bulletproof\" document** together with Doc. 35: it answers the question of **which** properties actually force the zeros onto the critical line — via functions that look *almost* like ζ but violate the RH. It complements Doc. 35 (Davenport–Heilbronn) with the "
     },
     {
       "number": "44",
       "id": "doc-44",
-      "title": "Lapidus: Fraktale Saiten, inverses Spektralproblem & Spektraloperator",
+      "title": "Lapidus: Fractal Strings, Inverse Spectral Problem & Spectral Operator",
       "category": "solution-program",
       "status": "open",
       "tags": [
@@ -697,12 +697,12 @@
         "complex-dimensions"
       ],
       "file": "docs/44_Lapidus_fractal_strings_spectral_operator.md",
-      "summary": "Lapidus und Maier reformulierten die RH als ein **inverses Spektralproblem für fraktale Saiten**: „Kann man die Form einer fraktalen Saite hören?\" Die Antwort ist genau dann für *alle* Dimensionen außer dem „Mittelfraktal\" D = 1/2 positiv, **wenn die RH wahr ist**. Später fasste Lapidus dies in eine"
+      "summary": "Lapidus and Maier reformulated the RH as an **inverse spectral problem for fractal strings**: \"Can one hear the shape of a fractal string?\" The answer is positive for *all* dimensions except the \"middle fractal\" D = 1/2 exactly **if the RH is true**. Later Lapidus cast this into a"
     },
     {
       "number": "45",
       "id": "doc-45",
-      "title": "Weitere äquivalente Kriterien (Volchkov, Sekatskii, Redheffer, Salem, BBLS-quantitativ)",
+      "title": "Further Equivalent Criteria (Volchkov, Sekatskii, Redheffer, Salem, BBLS quantitative)",
       "category": "criterion",
       "status": "open",
       "tags": [
@@ -713,12 +713,12 @@
         "baez-duarte-quantitative"
       ],
       "file": "docs/45_further_equivalent_criteria.md",
-      "summary": "Sammlung weiterer zur RH äquivalenter Kriterien, die nicht in den Hauptdokumenten 13–16 stehen. Sie liefern alternative analytische, integrale und matrixbasierte „Angriffsflächen\"."
+      "summary": "A collection of further criteria equivalent to the RH that are not in the main documents 13–16. They provide alternative analytic, integral, and matrix-based \"attack surfaces\"."
     },
     {
       "number": "46",
       "id": "doc-46",
-      "title": "Voronin-Universalität (Meta-Obstruktion gegen „weiche' Beweise)",
+      "title": "Voronin Universality (meta-obstruction against 'soft' proofs)",
       "category": "obstruction",
       "status": "meta",
       "tags": [
@@ -728,12 +728,12 @@
         "value-distribution"
       ],
       "file": "docs/46_Voronin_universality.md",
-      "summary": "Voronins Universalitätssatz besagt, dass die Riemann-ζ-Funktion in einem präzisen Sinn **jede** nullstellenfreie holomorphe Funktion beliebig genau approximieren kann. Das hat eine wichtige **negative** Konsequenz für Beweisversuche: ζ verhält sich auf dem rechten Teil des kritischen Streifens „maxi"
+      "summary": "Voronin's universality theorem states that the Riemann ζ-function can, in a precise sense, approximate **every** zero-free holomorphic function arbitrarily closely. This has an important **negative** consequence for proof attempts: ζ behaves on the right part of the critical strip \"maxi"
     },
     {
       "number": "47",
       "id": "doc-47",
-      "title": "Physik-Schicht: Primon-Gas, Schumayer–Hutchinson, Sierra-Modelle & Quantengraphen",
+      "title": "Physics Layer: Primon Gas, Schumayer–Hutchinson, Sierra Models & Quantum Graphs",
       "category": "spectral",
       "status": "open",
       "tags": [
@@ -745,12 +745,12 @@
         "physics"
       ],
       "file": "docs/47_physics_layer_primon_gas_quantum_graphs.md",
-      "summary": "Konsolidiert die physikalische Modellierungsebene rund um die Riemann-Nullstellen, die über Berry–Keating (Dok. 08) und Bender–Brody–Müller (Dok. 09) hinausgeht: das **Primon-Gas** (ζ als Zustandssumme freier Bosonen), Sierras explizite Hamilton-Modelle und **Quantengraphen**, deren Spektren die Nul"
+      "summary": "Consolidates the physical modeling layer around the Riemann zeros that goes beyond Berry–Keating (Doc. 08) and Bender–Brody–Müller (Doc. 09): the **primon gas** (ζ as the partition function of free bosons), Sierra's explicit Hamiltonian models, and **quantum graphs** whose spectra the zer"
     },
     {
       "number": "48",
       "id": "doc-48",
-      "title": "Weitere algebraische/spektrale Programme: Meyer (Distributionen) & Kurokawa (absolute Zeta)",
+      "title": "Further Algebraic/Spectral Programs: Meyer (Distributions) & Kurokawa (Absolute Zeta)",
       "category": "solution-program",
       "status": "open",
       "tags": [
@@ -762,12 +762,12 @@
         "F1"
       ],
       "file": "docs/48_Meyer_Kurokawa_algebraic_programs.md",
-      "summary": "Zwei weitere ernstzunehmende Programme neben Connes (Dok. 10), 𝔽₁ (Dok. 30) und Deninger (Dok. 31): **Meyers** funktionalanalytische, distributionelle Spektralrealisierung der Nullstellen und **Kurokawas** „absolute\" Zetafunktionen mit multiplikativer (Tensor-)Struktur über 𝔽₁."
+      "summary": "Two further serious programs alongside Connes (Doc. 10), 𝔽₁ (Doc. 30) and Deninger (Doc. 31): **Meyer's** functional-analytic, distributional spectral realization of the zeros and **Kurokawa's** \"absolute\" zeta functions with multiplicative (tensor) structure over 𝔽₁."
     },
     {
       "number": "49",
       "id": "doc-49",
-      "title": "Live-Front der analytischen Zahlentheorie (2019–2026)",
+      "title": "Live Frontier of Analytic Number Theory (2019–2026)",
       "category": "frontier",
       "status": "open",
       "tags": [
@@ -779,12 +779,12 @@
         "active"
       ],
       "file": "docs/49_live_analytic_frontier.md",
-      "summary": "Dokumentiert die *lebendige* Front, an der tatsächlich unbedingte Fortschritte erzielt werden — jenseits des Guth–Maynard-Durchbruchs (Dok. 22). Für einen RH-Assistenten ist dies der „Newsfeed\": wo sich messbar etwas bewegt."
+      "summary": "Documents the *living* frontier at which unconditional progress is actually being made — beyond the Guth–Maynard breakthrough (Doc. 22). For an RH assistant this is the \"newsfeed\": where something is measurably moving."
     },
     {
       "number": "50",
       "id": "doc-50",
-      "title": "Denkprotokoll: strukturiert-analytisches Arbeiten an der RH",
+      "title": "Reasoning Protocol: structured, analytical work on the RH",
       "category": "meta",
       "status": "meta",
       "tags": [
@@ -796,12 +796,12 @@
         "structured-thinking"
       ],
       "file": "docs/50_reasoning_protocol.md",
-      "summary": "Dieses Dokument zwingt den KI-Assistenten zu **strukturiertem, analytischem, verifizierbarem** Denken statt zu plausibel klingender Prosa. Es ist als System-Prompt-Grundlage und als Rückgabe des Tools `reasoning_scaffold` gedacht."
+      "summary": "This document forces the AI assistant into **structured, analytical, verifiable** reasoning instead of plausible-sounding prose. It is intended as a system-prompt basis and as the return value of the `reasoning_scaffold` tool."
     },
     {
       "number": "51",
       "id": "doc-51",
-      "title": "Kollaborations-Leitfaden: sinnvoll mit einer Fachperson an der RH arbeiten",
+      "title": "Collaboration Brief: working meaningfully with a specialist on the RH",
       "category": "meta",
       "status": "meta",
       "tags": [

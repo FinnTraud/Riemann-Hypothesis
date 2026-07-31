@@ -1,59 +1,59 @@
-# RH Knowledge Base — Anleitung für MCP-Server / RAG-Ingestion
+# RH Knowledge Base — guide for MCP server / RAG ingestion
 
-Diese Wissensbasis ist eine kuratierte, quellenbelegte Sammlung zu **allen ernstzunehmenden Ansätzen, Kriterien, gescheiterten Beweisen und Obstruktionen** rund um die Riemann-Vermutung (RH). Sie ist für die Einbettung in einen Vektor-/MCP-Server optimiert.
+This knowledge base is a curated, source-cited collection covering **all serious approaches, criteria, failed proofs, and obstructions** around the Riemann Hypothesis (RH). It is optimized for embedding into a vector/MCP server.
 
-## Aufbau
+## Structure
 
 ```
-Riemann_Hypothesis_Proof_Approaches.md   # Gesamtüberblick (eine Datei, EN)
+Riemann_Hypothesis_Proof_Approaches.md   # overall survey (one file, EN)
 docs/
-  00_INDEX.md                            # Inhaltsverzeichnis + Kategorien
-  01..49_*.md                            # je 1 Thema pro Datei (DE), mit YAML-Frontmatter
-README_RAG.md                            # diese Datei
-manifest.json                            # maschinenlesbares Verzeichnis (generiert)
+  00_INDEX.md                            # table of contents + categories
+  01..49_*.md                            # 1 topic per file (EN), with YAML frontmatter
+README_RAG.md                            # this file
+manifest.json                            # machine-readable index (generated)
 ```
 
-- **50 Dokumente** (00–49). Jedes ist ein eigenständiger, abrufbarer Chunk.
-- Jede Datei hat **YAML-Frontmatter** (id, number, title, category, status, tags, source_file, lang).
-- Jedes Inhaltsdokument folgt demselben Schema: `Metadaten → Zusammenfassung → Mathematischer Kern (Formeln/Sätze/Beweisskizzen) → Bedeutung/Einordnung → Quellen`.
+- **50 documents** (00–49). Each is a self-contained, retrievable chunk.
+- Every file has **YAML frontmatter** (id, number, title, category, status, tags, source_file, lang).
+- Every content document follows the same schema: `metadata → summary → mathematical core (formulas/theorems/proof sketches) → significance/context → sources`.
 
-## Frontmatter-Felder
+## Frontmatter fields
 
-| Feld | Bedeutung | Werte |
+| Field | Meaning | Values |
 |---|---|---|
-| `status` | Reifegrad | `proven` (bewiesen), `open` (offen), `refuted` (widerlegt/gescheitert), `reference` (Faktenreferenz), `meta` (Methodik/Obstruktion) |
-| `category` | Themengruppe | foundations, partial-results, spectral, analytic, criterion, proven-analogue, generalization, breakthrough, numerical, failed-proof, ai-context, solution-program, obstruction, synthesis, glossary, frontier, heuristic, verification, context, reference, index |
-| `tags` | Stichworte | Liste (z. B. `euler-product`, `GUE`, `weil-positivity`) |
-| `number` | Dateinummer | `00`–`49` |
+| `status` | Maturity | `proven`, `open`, `refuted` (refuted/failed), `reference` (factual reference), `meta` (methodology/obstruction) |
+| `category` | Topic group | foundations, partial-results, spectral, analytic, criterion, proven-analogue, generalization, breakthrough, numerical, failed-proof, ai-context, solution-program, obstruction, synthesis, glossary, frontier, heuristic, verification, context, reference, index |
+| `tags` | Keywords | list (e.g. `euler-product`, `GUE`, `weil-positivity`) |
+| `number` | File number | `00`–`49` |
 
-## Empfohlene Chunking-Strategie
+## Recommended chunking strategy
 
-1. **Pro `##`-Sektion chunken** (nicht pro Datei) — die Dokumente sind mit klaren `##`-Überschriften strukturiert. Ideale Chunk-Größe ist eine Sektion (Zusammenfassung / Mathematischer Kern / Bedeutung / Quellen).
-2. **Frontmatter als Metadaten-Filter** in den Vektorstore übernehmen (status, category, tags) — erlaubt gefilterte Retrieval-Queries, z. B. „nur `status:open` + `category:solution-program`".
-3. **Kontext-Präfix:** Jedem Chunk den `title` + `number` voranstellen (z. B. „[Doc 10 — Connes NCG] …"), damit Embeddings den Kontext behalten.
-4. **Formeln beibehalten:** Code-Blöcke (``` … ```) enthalten die Mathematik — nicht entfernen; sie sind wesentlicher Retrieval-Inhalt.
+1. **Chunk per `##` section** (not per file) — the documents are structured with clear `##` headings. The ideal chunk size is one section (summary / mathematical core / significance / sources).
+2. **Use the frontmatter as metadata filters** in the vector store (status, category, tags) — this allows filtered retrieval queries, e.g. "only `status:open` + `category:solution-program`".
+3. **Context prefix:** prepend the `title` + `number` to each chunk (e.g. "[Doc 10 — Connes NCG] …") so the embeddings retain context.
+4. **Keep the formulas:** code blocks (``` … ```) contain the mathematics — do not remove them; they are essential retrieval content.
 
-## Empfohlene Retrieval-Hinweise (System-Prompt für den RH-Assistenten)
+## Recommended retrieval guidance (system prompt for the RH assistant)
 
-> Beim Beantworten von RH-Fragen: (a) zuerst `40_glossary_notation.md` für Begriffe; (b) für „könnte das ein Beweis sein?"-Fragen IMMER `35_obstructions_barriers.md` + `43_Epstein_zeta_Selberg_class_rigidity.md` + `41_synthesis_what_a_proof_needs.md` heranziehen und die Anti-Crackpot-Checkliste anwenden; (c) `status:refuted`-Dokumente als Warnbeispiele nutzen; (d) niemals numerische Evidenz als Beweis akzeptieren (siehe Mertens/Skewes in Doc 35).
+> When answering RH questions: (a) first consult `40_glossary_notation.md` for terms; (b) for "could this be a proof?" questions, ALWAYS pull in `35_obstructions_barriers.md` + `43_Epstein_zeta_Selberg_class_rigidity.md` + `41_synthesis_what_a_proof_needs.md` and apply the anti-crackpot checklist; (c) use `status:refuted` documents as cautionary examples; (d) never accept numerical evidence as proof (see Mertens/Skewes in Doc 35).
 
-## „Bulletproof"-Kerndokumente (für Beweis-Bewertung)
+## "Bulletproof" core documents (for proof evaluation)
 
-- `35_obstructions_barriers.md` — warum naive Ansätze scheitern + Checkliste
-- `43_Epstein_zeta_Selberg_class_rigidity.md` — welche Eigenschaft die kritische Gerade erzwingt (Euler-Produkt!)
-- `46_Voronin_universality.md` — warum „weiche" funktionentheoretische Beweise nicht gehen
-- `41_synthesis_what_a_proof_needs.md` — notwendige Bedingungen + Bewertungsraster
-- `37_formalization_lean_proof_assistants.md` — formale Verifikation als finaler Filter
+- `35_obstructions_barriers.md` — why naive approaches fail + checklist
+- `43_Epstein_zeta_Selberg_class_rigidity.md` — which property forces the critical line (the Euler product!)
+- `46_Voronin_universality.md` — why "soft" function-theoretic proofs don't work
+- `41_synthesis_what_a_proof_needs.md` — necessary conditions + evaluation grid
+- `37_formalization_lean_proof_assistants.md` — formal verification as a final filter
 
-## Status-Legende für Nutzer
+## Status legend for users
 
-- ✅ `proven` — etablierter Satz (z. B. RH über endlichen Körpern, Hardy, Guth–Maynard-Dichte)
-- ⏳ `open` — aktiver, unbewiesener Ansatz/Kriterium
-- ❌ `refuted` — gescheitert/widerlegt (de Branges, Atiyah, Mertens-Vermutung)
-- 📖 `reference` / 🧭 `meta` — Fakten- bzw. Methodik-/Obstruktionsdokumente
+- ✅ `proven` — established theorem (e.g. RH over finite fields, Hardy, Guth–Maynard density)
+- ⏳ `open` — active, unproven approach/criterion
+- ❌ `refuted` — failed/refuted (de Branges, Atiyah, Mertens conjecture)
+- 📖 `reference` / 🧭 `meta` — factual resp. methodology/obstruction documents
 
-## Aktualisierung
-Die „Live-Front" (`49_live_analytic_frontier.md`) und numerische Schranken (`24`) veralten am schnellsten. Empfehlung: arXiv-Feeds zu *zero-density estimate*, *subconvexity*, *moments of zeta*, *de Bruijn–Newman* periodisch nachziehen. Stand der Sammlung: Juni 2026.
+## Updating
+The "live frontier" (`49_live_analytic_frontier.md`) and numerical bounds (`24`) become outdated fastest. Recommendation: periodically follow arXiv feeds on *zero-density estimate*, *subconvexity*, *moments of zeta*, *de Bruijn–Newman*. State of the collection: June 2026.
 
-## Lizenz / Herkunft
-Inhalte zusammengetragen via agentischer Web-Recherche aus öffentlichen Quellen (arXiv, AMS, Wikipedia, Universitätsseiten, Clay/AIM). Jede Datei listet ihre Quellen am Ende. Bei den jüngsten Preprints (2024–2026) vor Zitation in formalen Arbeiten Quelle gegenprüfen.
+## License / provenance
+Content gathered via agentic web research from public sources (arXiv, AMS, Wikipedia, university pages, Clay/AIM). Each file lists its sources at the end. For the most recent preprints (2024–2026), cross-check the source before citing in formal work.

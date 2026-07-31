@@ -1,84 +1,84 @@
 ---
 id: doc-32
 number: 32
-title: "Landau–Siegel-Nullstellen (Ausnahme-Nullstellen) & Yitang Zhang (2022)"
+title: "Landau–Siegel Zeros (Exceptional Zeros) & Yitang Zhang (2022)"
 category: solution-program
 status: open
 tags: [landau-siegel, exceptional-zeros, yitang-zhang, GRH, 2022]
 source_file: 32_Landau_Siegel_zeros_Zhang.md
-lang: de
+lang: en
 ---
 
-# Landau–Siegel-Nullstellen (Ausnahme-Nullstellen) & Yitang Zhang (2022)
+# Landau–Siegel Zeros (Exceptional Zeros) & Yitang Zhang (2022)
 
-**Kategorie:** RH-nahes Lösungsfeld (Ausnahme-Nullstellen / GRH)
-**Autoren / Jahre:** Landau, Siegel (1930er); Yitang Zhang (2022)
-**Typ:** Angriff auf potenzielle Gegenbeispiele zur (G)RH
-**Status:** Existenz der Landau–Siegel-Nullstellen offen; Zhang liefert starke (effektive) Schranke
+**Category:** RH-adjacent solution field (exceptional zeros / GRH)
+**Authors / years:** Landau, Siegel (1930s); Yitang Zhang (2022)
+**Type:** Attack on potential counterexamples to the (G)RH
+**Status:** Existence of Landau–Siegel zeros open; Zhang provides a strong (effective) bound
 
-## Zusammenfassung
-Eine **Landau–Siegel-Nullstelle** (Ausnahme-Nullstelle) ist eine hypothetische reelle Nullstelle einer Dirichlet-L-Funktion *sehr nahe* bei s = 1 — ein potenzielles Gegenbeispiel zur Generalisierten Riemann-Vermutung (GRH, Dok. 21). Ihre **Nicht-Existenz** zu beweisen, ist ein zentrales Teilziel auf dem Weg zur GRH/RH. Yitang Zhang (berühmt für die beschränkten Primzahllücken 2013) legte 2022 ein vielbeachtetes Preprint vor, das die Frage substanziell vorantreibt.
+## Summary
+A **Landau–Siegel zero** (exceptional zero) is a hypothetical real zero of a Dirichlet L-function *very close* to s = 1 — a potential counterexample to the Generalized Riemann Hypothesis (GRH, Doc. 21). Proving their **non-existence** is a central sub-goal on the way to the GRH/RH. Yitang Zhang (famous for the bounded prime gaps of 2013) presented a much-noticed preprint in 2022 that substantially advances the question.
 
-## Was ist eine Landau–Siegel-Nullstelle?
-- Für einen reellen primitiven Charakter χ mod D könnte L(s, χ) eine reelle Nullstelle β sehr nahe bei 1 haben (β = 1 − ε mit winzigem ε).
-- Eine solche Nullstelle widerspräche der GRH (die β = 1/2 verlangt) und würde die klassische nullstellenfreie Region (Dok. 12) "durchbrechen".
-- Siegels Satz schließt sie aus, aber **ineffektiv** (die Konstante ist nicht berechenbar) — ein berüchtigtes Ärgernis der analytischen Zahlentheorie.
-- Äquivalent: Eine Landau–Siegel-Nullstelle existiert genau dann (asymptotisch), wenn L(1, χ) "zu klein" ist.
+## What is a Landau–Siegel zero?
+- For a real primitive character χ mod D, L(s, χ) could have a real zero β very close to 1 (β = 1 − ε with tiny ε).
+- Such a zero would contradict the GRH (which requires β = 1/2) and would "break through" the classical zero-free region (Doc. 12).
+- Siegel's theorem excludes them, but **ineffectively** (the constant is not computable) — a notorious annoyance of analytic number theory.
+- Equivalently: a Landau–Siegel zero exists exactly when (asymptotically) L(1, χ) is "too small".
 
 ## Yitang Zhang (2022): "Discrete mean estimates and the Landau–Siegel zero"
-- **Resultat:** Für reelle primitive χ mod D gilt L(1, χ) ≫ (log D)^{−2022}, mit **absoluter, effektiv berechenbarer** impliziter Konstante.
-- **Methode:** Die untere Schranke für L(1, χ) wird mit der Verteilung der Nullstellen einer **Familie** von Dirichlet-L-Funktionen in einem bestimmten Bereich verknüpft (Abstände aufeinanderfolgender Nullstellen). Auswertung gewisser **diskreter Mittelwerte vom Large-Sieve-Typ** erzeugt einen Widerspruch, falls L(1, χ) zu klein wäre.
-- Das ~150-seitige Preprint (arXiv 2211.02515) wurde intensiv geprüft; es liefert kein vollständiges Ausschließen der Ausnahme-Nullstelle, aber eine wesentlich stärkere effektive Kontrolle als zuvor.
+- **Result:** for real primitive χ mod D, L(1, χ) ≫ (log D)^{−2022}, with an **absolute, effectively computable** implied constant.
+- **Method:** the lower bound for L(1, χ) is linked to the distribution of the zeros of a **family** of Dirichlet L-functions in a certain region (spacings of consecutive zeros). Evaluating certain **discrete mean values of large-sieve type** produces a contradiction if L(1, χ) were too small.
+- The ~150-page preprint (arXiv 2211.02515) was intensively examined; it does not provide a complete exclusion of the exceptional zero, but a substantially stronger effective control than before.
 
-## Bedeutung / Einordnung
-- Landau–Siegel-Nullstellen sind die **konkretesten potenziellen Gegenbeispiele** im (G)RH-Umfeld; ihr Ausschluss ist ein realistisches Etappenziel mit enormen Konsequenzen (Klassenzahlen, Primzahlen in Progressionen, Twin-Prime-Heuristiken).
-- Paradoxerweise hätte sogar die *Existenz* einer Siegel-Nullstelle starke (teils GRH-artige) Konsequenzen ("illusory world") — ein vieluntersuchtes Phänomen.
-- Verbindet sich mit Dichte-/nullstellenfreien Abschätzungen (Dok. 12, 17) und der GRH (Dok. 21).
+## Significance / context
+- Landau–Siegel zeros are the **most concrete potential counterexamples** in the (G)RH area; their exclusion is a realistic milestone with enormous consequences (class numbers, primes in progressions, twin-prime heuristics).
+- Paradoxically, even the *existence* of a Siegel zero would have strong (partly GRH-like) consequences ("illusory world") — a much-studied phenomenon.
+- Connects with density/zero-free estimates (Doc. 12, 17) and the GRH (Doc. 21).
 
-## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+## Mathematical core (formulas, theorems, proof sketches)
 
-### Definition der Ausnahme-Nullstelle
-Für χ reeller primitiver Charakter mod D besagt die klassische nullstellenfreie Region (Page/Landau): L(s,χ) ≠ 0 in
+### Definition of the exceptional zero
+For χ a real primitive character mod D, the classical zero-free region (Page/Landau) states: L(s,χ) ≠ 0 in
 ```
 σ > 1 − c/log(D(|t|+2)),
 ```
-**außer** möglicherweise einer einzigen reellen, einfachen **Siegel-Nullstelle** β mit
+**except** possibly for a single real, simple **Siegel zero** β with
 ```
 β > 1 − c/log D.
 ```
 
-### Äquivalenz Siegel-Nullstelle ⟺ kleines L(1,χ)
-Über die Klassenzahlformel / Mittelwertbeziehung gilt:
+### Equivalence Siegel zero ⟺ small L(1,χ)
+Via the class number formula / mean-value relationship:
 ```
-β nahe 1   ⟺   L(1, χ) klein,   genauer  1 − β  ≍  L(1,χ)/log D.
+β near 1   ⟺   L(1, χ) small,   more precisely  1 − β  ≍  L(1,χ)/log D.
 ```
-Eine untere Schranke für L(1,χ) hält β von 1 fern.
+A lower bound for L(1,χ) keeps β away from 1.
 
-### Siegels (ineffektiver) Satz vs. effektive Schranken
+### Siegel's (ineffective) theorem vs. effective bounds
 ```
-Siegel (1935):  L(1,χ) ≫_ε D^{−ε}   — aber die Konstante ist NICHT berechenbar.
-Klassisch effektiv (Goldfeld–Gross–Zagier-Umfeld):  L(1,χ) ≫ (log D)^{−1}·(...)  nur unter Zusatzannahmen.
+Siegel (1935):  L(1,χ) ≫_ε D^{−ε}   — but the constant is NOT computable.
+Classically effective (Goldfeld–Gross–Zagier area):  L(1,χ) ≫ (log D)^{−1}·(...)  only under additional assumptions.
 ```
 
-### Yitang Zhang (2022) — das Resultat
+### Yitang Zhang (2022) — the result
 ```
-L(1, χ) ≫ (log D)^{−2022},   mit absoluter, EFFEKTIV berechenbarer Konstante.
+L(1, χ) ≫ (log D)^{−2022},   with an absolute, EFFECTIVELY computable constant.
 ```
-Äquivalent: jede Siegel-Nullstelle erfüllt 1 − β ≫ (log D)^{−2023} (effektiv).
+Equivalently: every Siegel zero satisfies 1 − β ≫ (log D)^{−2023} (effectively).
 
-### Beweisstrategie (Skizze)
-1. Verknüpfe die untere Schranke für L(1,χ) mit der **Verteilung der Nullstellen** einer Familie von Dirichlet-L-Funktionen L(s, ψ) in einem Bereich nahe s = 1; eine Siegel-Nullstelle erzwingt anomale Nullstellen-Cluster (Deuring–Heilbronn-Phänomen: eine Ausnahme-Nullstelle stößt andere Nullstellen weg).
-2. Werte **diskrete Mittelwerte vom Large-Sieve-Typ** aus:
+### Proof strategy (sketch)
+1. Link the lower bound for L(1,χ) with the **distribution of the zeros** of a family of Dirichlet L-functions L(s, ψ) in a region near s = 1; a Siegel zero forces anomalous zero clusters (Deuring–Heilbronn phenomenon: an exceptional zero repels other zeros).
+2. Evaluate **discrete mean values of large-sieve type**:
 ```
 Σ_{ψ mod Q}^* | Σ_{n ~ N} a_n ψ(n) |²  ≪  (Q + N) Σ |a_n|²,
 ```
-über geeignete Familien und Gewichte (Zhang konstruiert spezielle Mollifier/Gewichte a_n).
-3. Wäre L(1,χ) zu klein, so ergäben sich aus 1.+2. zwei unvereinbare Schätzungen desselben diskreten Mittels ⇒ **Widerspruch**.
+over suitable families and weights (Zhang constructs special mollifiers/weights a_n).
+3. If L(1,χ) were too small, then 1.+2. would give two incompatible estimates of the same discrete mean ⇒ **contradiction**.
 
-### Bedeutung der Formeln
-Die effektive Schranke ist schwächer als „keine Siegel-Nullstelle" (das wäre 1−β ≫ 1/log D), aber stärker und effektiv gegenüber Siegel. Ausschluss der Siegel-Nullstelle hätte u. a. zur Folge: GRH-artige Schranken für kleinste Primzahlen in Progressionen, Klassenzahl-1-Probleme, Twin-Prime-Konstanten.
+### Meaning of the formulas
+The effective bound is weaker than "no Siegel zero" (which would be 1−β ≫ 1/log D), but stronger and effective compared with Siegel. Excluding the Siegel zero would imply, among other things: GRH-like bounds for the least prime in progressions, class-number-1 problems, twin-prime constants.
 
-## Quellen
+## Sources
 - [Discrete mean estimates and the Landau-Siegel zero — Y. Zhang (arXiv 2211.02515)](https://arxiv.org/abs/2211.02515)
 - [Discrete mean estimates and the Landau-Siegel zero (PDF)](https://arxiv.org/pdf/2211.02515)
 - [Landau–Siegel zero — Wikipedia](https://en.wikipedia.org/wiki/Landau%E2%80%93Siegel_zero)

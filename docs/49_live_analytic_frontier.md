@@ -1,60 +1,60 @@
 ---
 id: doc-49
 number: 49
-title: "Live-Front der analytischen Zahlentheorie (2019–2026)"
+title: "Live Frontier of Analytic Number Theory (2019–2026)"
 category: frontier
 status: open
 tags: [zero-density, tao-program, nelson-subconvexity, harper-moments, 2024, active]
 source_file: 49_live_analytic_frontier.md
-lang: de
+lang: en
 ---
 
-# Live-Front der analytischen Zahlentheorie (2019–2026)
+# Live Frontier of Analytic Number Theory (2019–2026)
 
-**Kategorie:** Aktuelle Forschungsfront (unbedingte Fortschritte)
-**Autoren / Jahre:** Guth–Maynard (2024); Tao (zero-density program, 2024); Nelson (Subkonvexität, 2021); Harper, Radziwiłł–Soundararajan (Momente, 2018–2022)
-**Typ:** Aktive, inkrementelle Fortschritte (kein RH-Beweis)
-**Status:** Laufend; unbedingte Resultate im RH-Umfeld
+**Category:** Current research frontier (unconditional advances)
+**Authors / years:** Guth–Maynard (2024); Tao (zero-density program, 2024); Nelson (subconvexity, 2021); Harper, Radziwiłł–Soundararajan (moments, 2018–2022)
+**Type:** Active, incremental advances (not an RH proof)
+**Status:** Ongoing; unconditional results in the RH area
 
-## Zusammenfassung
-Dokumentiert die *lebendige* Front, an der tatsächlich unbedingte Fortschritte erzielt werden — jenseits des Guth–Maynard-Durchbruchs (Dok. 22). Für einen RH-Assistenten ist dies der „Newsfeed": wo sich messbar etwas bewegt.
+## Summary
+Documents the *living* frontier at which unconditional progress is actually being made — beyond the Guth–Maynard breakthrough (Doc. 22). For an RH assistant this is the "newsfeed": where something is measurably moving.
 
-## Mathematischer Kern (Resultate, Formeln)
+## Mathematical core (results, formulas)
 
-### Explizite & log-freie Nullstellendichte-Abschätzungen (2023–2025)
-Eine Welle expliziter Verschärfungen der Ingham/Inghamschen Form:
+### Explicit & log-free zero-density estimates (2023–2025)
+A wave of explicit sharpenings of the Ingham form:
 ```
-N(σ, T) ≤ A · T^{B(1−σ)} (log T)^C   (log-frei: C = 0),
+N(σ, T) ≤ A · T^{B(1−σ)} (log T)^C   (log-free: C = 0),
 ```
-mit konkreten Konstanten A, B (z. B. arXiv 2405.12545, 2507.15184, 2311.05136). Anwendung: explizite Primzahlschranken, Primzahlen in kurzen Intervallen — alles **unbedingt**.
+with concrete constants A, B (e.g. arXiv 2405.12545, 2507.15184, 2311.05136). Application: explicit prime bounds, primes in short intervals — all **unconditional**.
 
-### Taos „outsourced" Zero-Density-Programm (2024)
-Tao systematisierte die Reduktion von Nullstellendichte-Schranken auf **Großwert-Abschätzungen von Dirichlet-Polynomen** und lagerte Teile an Computeralgebra / verteilte Verifikation aus. Verbindet Guth–Maynard-Decoupling (Dok. 22) mit einem reproduzierbaren Schätz-Framework.
+### Tao's "outsourced" zero-density program (2024)
+Tao systematized the reduction of zero-density bounds to **large-value estimates of Dirichlet polynomials** and outsourced parts to computer algebra / distributed verification. Connects Guth–Maynard decoupling (Doc. 22) with a reproducible estimation framework.
 
-### Nelson: GL(n)-Subkonvexität (2021)
-Paul Nelson bewies allgemeine **subkonvexe Schranken** für GL(n)-L-Funktionen (mit Venkatesh' Methoden / Orbit-Integralen):
+### Nelson: GL(n) subconvexity (2021)
+Paul Nelson proved general **subconvex bounds** for GL(n) L-functions (with Venkatesh's methods / orbit integrals):
 ```
 L(1/2, π) ≪ C(π)^{1/4 − δ}   (δ > 0),
 ```
-wo C(π) der analytische Leiter ist. Subkonvexität ist die unbedingte Annäherung an die Lindelöf-Hypothese (Dok. 17) in hoher Allgemeinheit.
+where C(π) is the analytic conductor. Subconvexity is the unconditional approach to the Lindelöf hypothesis (Doc. 17) in high generality.
 
-### Harper & scharfe Momentschranken (2018–2022)
-- **Harper (2019):** „better than squareroot cancellation" für zufällige multiplikative Funktionen; präzises Verständnis kleiner Momente (k < 1).
-- **Radziwiłł–Soundararajan / Heap–Radziwiłł–Soundararajan:** scharfe (bedingte und teils unbedingte) obere/untere Schranken
+### Harper & sharp moment bounds (2018–2022)
+- **Harper (2019):** "better than squareroot cancellation" for random multiplicative functions; a precise understanding of small moments (k < 1).
+- **Radziwiłł–Soundararajan / Heap–Radziwiłł–Soundararajan:** sharp (conditional and partly unconditional) upper/lower bounds
 ```
 M_k(T) = (1/T)∫_0^T |ζ(1/2+it)|^{2k} dt  ≍  T (log T)^{k²},
 ```
-in Übereinstimmung mit Keating–Snaith (Dok. 07). Stützt das Random-Matrix-Bild quantitativ.
+in agreement with Keating–Snaith (Doc. 07). Supports the random-matrix picture quantitatively.
 
-### Transfer Subkonvexität ↔ Momente (2022)
-Funktionalanalytische Implikationen zwischen Subkonvexitätsschranken und Momenten im rechten Teil des kritischen Streifens (arXiv 2212.04421) — verbindet Dok. 07 und Dok. 17.
+### Transfer subconvexity ↔ moments (2022)
+Functional-analytic implications between subconvexity bounds and moments in the right part of the critical strip (arXiv 2212.04421) — connects Doc. 07 and Doc. 17.
 
-## Bedeutung / Einordnung
-- Hier passiert der **reale, überprüfbare Fortschritt** — meist unbedingt und damit dauerhaft.
-- Keiner dieser Schritte beweist die RH; zusammen verengen sie aber die „Lücke" (Dichte, Subkonvexität, Momente) und liefern unbedingte zahlentheoretische Anwendungen.
-- Ideal als regelmäßig zu aktualisierender Teil des MCP-Servers (arXiv-Feeds zu „zero-density estimate", „subconvexity", „moments of zeta").
+## Significance / context
+- Here the **real, checkable progress** happens — mostly unconditional and thus permanent.
+- None of these steps proves the RH; but together they narrow the "gap" (density, subconvexity, moments) and yield unconditional number-theoretic applications.
+- Ideal as a regularly updated part of the MCP server (arXiv feeds on "zero-density estimate", "subconvexity", "moments of zeta").
 
-## Quellen
+## Sources
 - [Terence Tao — zero-density program (Blog, 2024)](https://terrytao.wordpress.com/2024/07/07/)
 - [An explicit log-free zero density estimate for the Riemann zeta-function (arXiv 2405.12545)](https://arxiv.org/pdf/2405.12545)
 - [Implications between subconvexity and moments (arXiv 2212.04421)](https://arxiv.org/pdf/2212.04421)

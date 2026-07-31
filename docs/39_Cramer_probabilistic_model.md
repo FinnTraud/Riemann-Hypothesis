@@ -1,50 +1,50 @@
 ---
 id: doc-39
 number: 39
-title: "Cramér-Modell & probabilistische Heuristiken der Primzahlen"
+title: "The Cramér Model & Probabilistic Heuristics of the Primes"
 category: heuristic
 status: open
 tags: [cramer-model, probabilistic, prime-gaps, maier-theorem]
 source_file: 39_Cramer_probabilistic_model.md
-lang: de
+lang: en
 ---
 
-# Cramér-Modell & probabilistische Heuristiken der Primzahlen
+# The Cramér Model & Probabilistic Heuristics of the Primes
 
-**Kategorie:** Heuristik / probabilistisches Modell
-**Autoren / Jahre:** Harald Cramér (1936); Verfeinerungen Granville, Maier
-**Typ:** Heuristisches Modell (kein Beweisansatz, aber Intuitionsquelle)
-**Status:** Heuristik; teils im Detail korrigiert (Maier)
+**Category:** Heuristic / probabilistic model
+**Authors / years:** Harald Cramér (1936); refinements Granville, Maier
+**Type:** Heuristic model (not a proof approach, but a source of intuition)
+**Status:** Heuristic; partly corrected in detail (Maier)
 
-## Zusammenfassung
-Das Cramér-Modell behandelt die Primzahlen als **Zufallsfolge** und liefert Vorhersagen über Primzahllücken, die mit der RH-Welt verträglich, aber unabhängig davon sind. Es ist die wichtigste *probabilistische Intuition* hinter Vermutungen über die Feinverteilung der Primzahlen und erklärt, warum die Nullstellenstatistik (GUE, Dok. 06) als „Zufälligkeit mit Abstoßung" erscheint.
+## Summary
+The Cramér model treats the primes as a **random sequence** and yields predictions about prime gaps that are compatible with the RH world but independent of it. It is the most important *probabilistic intuition* behind conjectures about the fine distribution of the primes and explains why the zero statistics (GUE, Doc. 06) appear as "randomness with repulsion".
 
-## Mathematischer Kern (Formeln & Vermutungen)
+## Mathematical core (formulas & conjectures)
 
-### Das Modell
-Modelliere „n ist prim" als unabhängige Ereignisse mit Wahrscheinlichkeit 1/log n (motiviert vom Primzahlsatz). Erwartete Anzahl Primzahlen bis x: ∫_2^x dt/log t = Li(x). ✓
+### The model
+Model "n is prime" as independent events with probability 1/log n (motivated by the prime number theorem). Expected number of primes up to x: ∫_2^x dt/log t = Li(x). ✓
 
-### Cramér-Vermutung (Primzahllücken)
+### Cramér conjecture (prime gaps)
 ```
 limsup_{n→∞} (p_{n+1} − p_n) / (log p_n)²  =  1.
 ```
-D. h. maximale Lücken wachsen wie (log p)². **Wichtig:** Diese Vorhersage ist *stärker* als alles, was aus RH folgt — RH liefert nur O(√p log p) (Dok. 36). Das Modell geht also über die RH hinaus.
+I.e. maximal gaps grow like (log p)². **Important:** this prediction is *stronger* than anything that follows from RH — RH gives only O(√p log p) (Doc. 36). So the model goes beyond the RH.
 
-### Granville-Korrektur
-Das naive Modell ignoriert die Multiplikativität (kleine Primteiler). Granville korrigierte den Faktor; vermutet wird heute
+### Granville correction
+The naive model ignores multiplicativity (small prime divisors). Granville corrected the factor; today one conjectures
 ```
-limsup (p_{n+1} − p_n)/(log p_n)²  ≥  2 e^{−γ} ≈ 1,1229.
+limsup (p_{n+1} − p_n)/(log p_n)²  ≥  2 e^{−γ} ≈ 1.1229.
 ```
 
-### Maiers Satz (das Modell ist nicht exakt)
-**Satz (Maier 1985).** Das Cramér-Modell sagt für Primzahlen in *sehr kurzen* Intervallen [x, x + (log x)^λ] eine asymptotische Gleichverteilung voraus — dies ist **falsch**. Die tatsächliche Anzahl schwankt um einen Faktor, der nicht gegen 1 geht. ⇒ Probabilistische Modelle sind Heuristik, kein Ersatz für analytische Beweise.
+### Maier's theorem (the model is not exact)
+**Theorem (Maier 1985).** The Cramér model predicts an asymptotic equidistribution of primes in *very short* intervals [x, x + (log x)^λ] — this is **false**. The actual count fluctuates by a factor that does not tend to 1. ⇒ probabilistic models are heuristics, not a substitute for analytic proofs.
 
-## Bedeutung / Einordnung
-- Liefert die **Intuition**, warum die ζ-Nullstellen sich wie ein „Zufallssystem mit Niveau-Abstoßung" (GUE, Dok. 06) verhalten — Primzahlen ≈ zufällig, Nullstellen ≈ Fourier-dual dazu.
-- **Warnung (für „bulletproof"):** Maiers Satz zeigt, dass plausible probabilistische Heuristiken im Detail *falsch* sein können — analog zur Mertens-Warnung (Dok. 16, 35). Ein Beweis darf sich nie auf das Modell stützen.
-- Kein Lösungsansatz für die RH, aber unverzichtbarer Kontext für die Interpretation der Statistik.
+## Significance / context
+- Provides the **intuition** for why the ζ zeros behave like a "random system with level repulsion" (GUE, Doc. 06) — primes ≈ random, zeros ≈ their Fourier dual.
+- **Warning (for "bulletproof"):** Maier's theorem shows that plausible probabilistic heuristics can be *false* in detail — analogous to the Mertens warning (Doc. 16, 35). A proof may never rely on the model.
+- Not a solution approach for the RH, but indispensable context for interpreting the statistics.
 
-## Quellen
+## Sources
 - [Cramér's conjecture — Wikipedia](https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_conjecture)
 - [Harald Cramér and the distribution of prime numbers — A. Granville](https://dms.umontreal.ca/~andrew/PDF/cramer.pdf)
 - [Beyond the Riemann hypothesis — primes and smooth numbers (Oxford)](https://www.maths.ox.ac.uk/node/65844)

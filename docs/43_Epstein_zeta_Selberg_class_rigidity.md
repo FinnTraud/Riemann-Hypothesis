@@ -1,59 +1,59 @@
 ---
 id: doc-43
 number: 43
-title: "Epstein-Zetafunktionen & Selberg-Klassen-Rigidität: Welche Eigenschaft erzwingt die kritische Gerade?"
+title: "Epstein Zeta Functions & Selberg-Class Rigidity: Which Property Forces the Critical Line?"
 category: obstruction
 status: meta
 tags: [epstein-zeta, selberg-class-rigidity, davenport-heilbronn, euler-product, kaczorowski-perelli]
 source_file: 43_Epstein_zeta_Selberg_class_rigidity.md
-lang: de
+lang: en
 ---
 
-# Epstein-Zetafunktionen & Selberg-Klassen-Rigidität: Welche Eigenschaft erzwingt die kritische Gerade?
+# Epstein Zeta Functions & Selberg-Class Rigidity: Which Property Forces the Critical Line?
 
-**Kategorie:** Meta / Obstruktion (Tier-1 für „bulletproof")
-**Autoren / Jahre:** Davenport–Heilbronn (1936); Epstein; Voronin; Kaczorowski–Perelli (Selberg-Klassen-Klassifikation, 1999–2011)
-**Typ:** Diskriminierende Gegenbeispiele + Strukturtheorie
-**Status:** Etablierte Negativ-/Rigiditätsresultate
+**Category:** Meta / obstruction (Tier-1 for "bulletproof")
+**Authors / years:** Davenport–Heilbronn (1936); Epstein; Voronin; Kaczorowski–Perelli (Selberg-class classification, 1999–2011)
+**Type:** Discriminating counterexamples + structure theory
+**Status:** Established negative/rigidity results
 
-## Zusammenfassung
-Dies ist das **wichtigste „bulletproof"-Dokument** zusammen mit Dok. 35: Es beantwortet die Frage, **welche** Eigenschaften die Nullstellen tatsächlich auf die kritische Gerade zwingen — durch Funktionen, die *fast* wie ζ aussehen, aber die RH verletzen. Ergänzt Dok. 35 (Davenport–Heilbronn) um die **Epstein-Zetafunktionen** und die **Rigidität der Selberg-Klasse vom Grad 1**.
+## Summary
+This is the **most important "bulletproof" document** together with Doc. 35: it answers the question of **which** properties actually force the zeros onto the critical line — via functions that look *almost* like ζ but violate the RH. It complements Doc. 35 (Davenport–Heilbronn) with the **Epstein zeta functions** and the **rigidity of the degree-1 Selberg class**.
 
-## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+## Mathematical core (formulas, theorems, proof sketches)
 
-### Epstein-Zetafunktion
-Für eine positiv-definite quadratische Form Q(m,n) = am² + bmn + cn² (Diskriminante d = b²−4ac < 0):
+### Epstein zeta function
+For a positive-definite quadratic form Q(m,n) = am² + bmn + cn² (discriminant d = b²−4ac < 0):
 ```
 ζ_Q(s) = Σ_{(m,n) ≠ (0,0)} Q(m,n)^{−s}   (Re s > 1).
 ```
-ζ_Q besitzt eine **analytische Fortsetzung** und eine **Funktionalegleichung** vom Riemann-Typ (Re s ↔ 1−s, via Theta-Transformation) — also dieselben „weichen" Eigenschaften wie ζ.
+ζ_Q has an **analytic continuation** and a **functional equation** of Riemann type (Re s ↔ 1−s, via theta transformation) — i.e. the same "soft" properties as ζ.
 
-### Das Gegenbeispiel
-**Satz (Davenport–Heilbronn 1936 für die zugehörige Dirichlet-Reihe; Epstein-Fall).** Wenn die **Klassenzahl h(d) > 1** ist (die quadratische Form nicht allein in ihrer Geschlechterklasse liegt), dann hat ζ_Q **unendlich viele Nullstellen mit Re(s) > 1/2** — die RH-Analogie ist FALSCH. Dennoch hat ζ_Q auch einen positiven Anteil (sogar unendlich viele) Nullstellen *auf* der Geraden.
+### The counterexample
+**Theorem (Davenport–Heilbronn 1936 for the associated Dirichlet series; Epstein case).** If the **class number h(d) > 1** (the quadratic form does not lie alone in its genus class), then ζ_Q has **infinitely many zeros with Re(s) > 1/2** — the RH analogy is FALSE. Nonetheless ζ_Q also has a positive proportion (indeed infinitely many) of zeros *on* the line.
 
-### Warum: das fehlende Euler-Produkt
-ζ_Q ist eine **Linearkombination** von Hecke-L-Funktionen zu Idealklassencharakteren:
+### Why: the missing Euler product
+ζ_Q is a **linear combination** of Hecke L-functions for ideal-class characters:
 ```
 ζ_Q(s) = (1/w) Σ_{χ} χ̄(class(Q)) L(s, χ),
 ```
-und diese Summe besitzt **kein Euler-Produkt** (die einzelnen L(s,χ) schon, ihre Linearkombination nicht). Genau das fehlende Euler-Produkt erlaubt Nullstellen abseits der Geraden (vgl. Dok. 35).
+and this sum has **no Euler product** (the individual L(s,χ) do, their linear combination does not). Exactly the missing Euler product allows zeros off the line (cf. Doc. 35).
 
-### Selberg-Klassen-Rigidität (was RH erzwingt)
-Die **Selberg-Klasse 𝒮** (Dok. 21) verlangt zusätzlich zu Funktionalgleichung + Fortsetzung ein **Euler-Produkt** und die **Ramanujan-Bedingung**. Klassifikationssätze (Conrey–Ghosh; Kaczorowski–Perelli):
+### Selberg-class rigidity (what forces the RH)
+The **Selberg class 𝒮** (Doc. 21) requires, in addition to functional equation + continuation, an **Euler product** and the **Ramanujan condition**. Classification theorems (Conrey–Ghosh; Kaczorowski–Perelli):
 ```
-- Es gibt keine Funktionen in 𝒮 vom Grad 0 < d < 1.
-- Grad d = 1 in 𝒮  ⟹  F(s) = ζ(s)  oder  F(s) = L(s + iθ, χ)  (verschobene Dirichlet-L-Funktion).
+- There are no functions in 𝒮 of degree 0 < d < 1.
+- Degree d = 1 in 𝒮  ⟹  F(s) = ζ(s)  or  F(s) = L(s + iθ, χ)  (shifted Dirichlet L-function).
 ```
-**Konsequenz (Rigidität):** Funktionen vom Grad 1 *mit* Euler-Produkt und Ramanujan-Bedingung sind im Wesentlichen ζ und Dirichlet-L — und für genau diese wird die RH erwartet. Davenport–Heilbronn (Grad 1, **ohne** Euler-Produkt) und Epstein (h>1, **ohne** Euler-Produkt) fallen heraus.
+**Consequence (rigidity):** functions of degree 1 *with* an Euler product and the Ramanujan condition are essentially ζ and Dirichlet L — and for exactly these the RH is expected. Davenport–Heilbronn (degree 1, **without** Euler product) and Epstein (h>1, **without** Euler product) drop out.
 
-### Die präzise Lehre für einen Beweis
-> Off-Line-Nullstellen werden möglich, sobald das Euler-Produkt fehlt. **Ein gültiger RH-Beweis muss die Multiplikativität (Euler-Produkt) + Ramanujan-Schranke an einer Stelle nutzen, an der Davenport–Heilbronn/Epstein sie verletzen.** Jeder Beweis, der diese Eigenschaften nicht unterscheidet, ist falsch.
+### The precise lesson for a proof
+> Off-line zeros become possible as soon as the Euler product is missing. **A valid RH proof must use the multiplicativity (Euler product) + Ramanujan bound at a point where Davenport–Heilbronn/Epstein violate them.** Any proof that does not distinguish these properties is wrong.
 
-## Verbindung
-- Verschärft Dok. 35 (Obstruktionen) und Dok. 21 (Selberg-Klasse).
-- Erklärt, warum Connes (Dok. 10) das Euler-Produkt adelisch (Stelle für Stelle) einbaut und warum Scattering-/Spektral­modelle für Davenport–Heilbronn gar nicht erst definierbar sind.
+## Connection
+- Sharpens Doc. 35 (obstructions) and Doc. 21 (Selberg class).
+- Explains why Connes (Doc. 10) builds the Euler product in adelically (place by place) and why scattering/spectral models are not even definable for Davenport–Heilbronn.
 
-## Quellen
+## Sources
 - [Zeros of the Davenport-Heilbronn Counterexample (AMS Math. Comp.)](https://www.ams.org/journals/mcom/2007-76-260/S0025-5718-07-01999-0/S0025-5718-07-01999-0.pdf)
 - [Positive proportion of zeros of Epstein zeta on the critical line (arXiv 2411.18492)](https://arxiv.org/pdf/2411.18492)
 - [On the Selberg class / converse theorems (arXiv 1605.02354)](https://arxiv.org/pdf/1605.02354)

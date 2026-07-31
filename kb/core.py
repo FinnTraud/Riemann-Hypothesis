@@ -1,15 +1,15 @@
 """
-core.py — Gemeinsame Abfragelogik über den gebauten Index (kb/index/kb.json).
-Genutzt von query.py (CLI) und server.py (MCP). Nur Python-Stdlib.
+core.py — Shared query logic over the built index (kb/index/kb.json).
+Used by query.py (CLI) and server.py (MCP). Python stdlib only.
 
-Funktionen:
-  search(query, k, status, category)      -> Hybrid-BM25-Treffer (+ Graph-Nachbarn)
-  get_document(node_id)                    -> volles Markdown + Metadaten
-  graph_neighbors(node_id, rel)            -> typisierte Nachbarn
-  find_path(a, b, max_depth)               -> kürzester Beziehungspfad
-  list_by_status(status)                   -> Dokumente/Claims nach Status
-  get_claim(query)                         -> passende atomare Claims (mit Status)
-  evaluate_proof_idea(text)                -> Obstruktions-Checkliste (Doc 35/41/43/46)
+Functions:
+  search(query, k, status, category)      -> hybrid BM25 hits (+ graph neighbors)
+  get_document(node_id)                    -> full markdown + metadata
+  graph_neighbors(node_id, rel)            -> typed neighbors
+  find_path(a, b, max_depth)               -> shortest relation path
+  list_by_status(status)                   -> documents/claims by status
+  get_claim(query)                         -> matching atomic claims (with status)
+  evaluate_proof_idea(text)                -> obstruction checklist (Doc 35/41/43/46)
 """
 import os, re, json, math, collections
 
@@ -22,17 +22,17 @@ def kb():
     global _KB
     if _KB is None:
         if not os.path.exists(KB_JSON):
-            raise RuntimeError("Index fehlt. Erst 'python3 kb/build_kb.py' ausführen.")
+            raise RuntimeError("Index missing. Run 'python3 kb/build_kb.py' first.")
         _KB = json.load(open(KB_JSON, encoding="utf-8"))
     return _KB
 
 def _tok(s):
     return [w.lower() for w in WORD.findall(s)]
 
-# ---------- Hybrid-Retrieval (BM25 + Semantik + Graph-Expansion) ----------
+# ---------- Hybrid retrieval (BM25 + semantics + graph expansion) ----------
 def search(query, k=6, status=None, category=None, expand_graph=True, semantic=True, alpha=0.6):
-    """Hybrid: alpha·BM25 + (1-alpha)·Semantik (Embeddings/TF-IDF), dann Graph-Expansion.
-    semantic=False schaltet rein lexikalisch (BM25). alpha gewichtet BM25 vs. Semantik."""
+    """Hybrid: alpha·BM25 + (1-alpha)·semantics (embeddings/TF-IDF), then graph expansion.
+    semantic=False switches to purely lexical (BM25). alpha weights BM25 vs. semantics."""
     K = kb(); idf = K["idf"]; avgdl = K["avgdl"]; b, k1 = 0.75, 1.5
     q = _tok(query)
     bm25 = {}
@@ -46,7 +46,7 @@ def search(query, k=6, status=None, category=None, expand_graph=True, semantic=T
                 s += idf.get(t, 0.0) * (f*(k1+1)) / (f + k1*(1 - b + b*c["len"]/avgdl))
         if s > 0:
             bm25[c["cid"]] = s
-    # semantische Scores (optional)
+    # semantic scores (optional)
     sem = {}
     backend = None
     if semantic:
@@ -56,7 +56,7 @@ def search(query, k=6, status=None, category=None, expand_graph=True, semantic=T
             sem = embed.semantic_scores(query)
         except Exception:
             sem = {}
-    # Normalisieren und blenden
+    # normalize and blend
     def _norm(d):
         if not d: return {}
         mx = max(d.values()) or 1.0
@@ -99,10 +99,10 @@ def _snippet(text, n=320):
     t = re.sub(r"\s+", " ", text).strip()
     return t[:n] + ("…" if len(t) > n else "")
 
-# ---------- Dokumente ----------
+# ---------- Documents ----------
 def get_document(node_id):
     K = kb(); n = K["nodes"].get(node_id)
-    if not n: return {"error": f"unbekannter Knoten: {node_id}"}
+    if not n: return {"error": f"unknown node: {node_id}"}
     out = dict(n)
     if n.get("type") == "document" and n.get("file"):
         p = os.path.join(ROOT, n["file"])
@@ -118,7 +118,7 @@ def _edges_of(nid):
 def graph_neighbors(node_id, rel=None):
     K = kb()
     if node_id not in K["nodes"]:
-        return {"error": f"unbekannter Knoten: {node_id}"}
+        return {"error": f"unknown node: {node_id}"}
     out = []
     for e in _edges_of(node_id):
         if rel and e["type"] != rel: continue
@@ -134,7 +134,7 @@ def graph_neighbors(node_id, rel=None):
 def find_path(a, b, max_depth=5):
     K = kb()
     if a not in K["nodes"] or b not in K["nodes"]:
-        return {"error": "unbekannter Knoten"}
+        return {"error": "unknown node"}
     adj = collections.defaultdict(list)
     for e in K["edges"]:
         adj[e["from"]].append((e["to"], e["type"], "→"))
@@ -154,7 +154,7 @@ def find_path(a, b, max_depth=5):
             if nxt in seen: continue
             seen.add(nxt)
             q.append(path + [(nxt, typ, d)])
-    return {"path": None, "note": f"kein Pfad ≤{max_depth} Schritte"}
+    return {"path": None, "note": f"no path ≤{max_depth} steps"}
 
 # ---------- Status / Claims ----------
 def list_by_status(status):
@@ -175,32 +175,32 @@ def get_claim(query):
     scored.sort(key=lambda x: -x[0])
     return {"query": query, "claims": [c for _, c in scored[:8]]}
 
-# ---------- Beweis-Idee gegen Obstruktionen prüfen ----------
+# ---------- Check a proof idea against known obstructions ----------
 _CHECKS = [
     ("euler_product",
-     "Nutzt die Idee das Euler-Produkt / die Multiplikativität wesentlich?",
-     ["euler", "produkt", "product", "prime", "primzahl", "multiplikativ", "p^"],
-     "Wenn NEIN: vermutlich falsch — Davenport–Heilbronn/Epstein (Doc 35/43) haben dieselben weichen Eigenschaften, aber Off-Line-Nullstellen.",
+     "Does the idea make essential use of the Euler product / multiplicativity?",
+     ["euler", "product", "prime", "multiplicative", "p^"],
+     "If NO: probably wrong — Davenport–Heilbronn/Epstein (Doc 35/43) share the same soft properties but have off-line zeros.",
      "doc-43"),
     ("positivity_proved",
-     "Wird eine Positivität (Li/Weil/de Branges) bewiesen statt angenommen?",
-     ["positiv", "positivity", "nichtnegativ", "λ_n", "lambda", "quadratische form"],
-     "Wenn Positivität nur ANGENOMMEN wird: zirkulär (Conrey–Li widerlegten genau das bei de Branges, Doc 20).",
+     "Is a positivity (Li/Weil/de Branges) proved rather than assumed?",
+     ["positive", "positivity", "nonnegative", "λ_n", "lambda", "quadratic form"],
+     "If positivity is only ASSUMED: circular (Conrey–Li refuted exactly that for de Branges, Doc 20).",
      "doc-14"),
     ("operator_canonical",
-     "Stammt ein etwaiger Operator KANONISCH aus der Arithmetik?",
-     ["operator", "selbstadjung", "self-adjoint", "spektrum", "eigenwert", "hamilton"],
-     "Ein ad-hoc-Operator mit Spektrum {γ_n} ist zirkulär (Lücke bei Bender–Brody–Müller, Doc 09).",
+     "Does any operator arise CANONICALLY from arithmetic?",
+     ["operator", "self-adjoint", "selfadjoint", "spectrum", "eigenvalue", "hamiltonian"],
+     "An ad-hoc operator with spectrum {γ_n} is circular (gap in Bender–Brody–Müller, Doc 09).",
      "doc-05"),
     ("not_only_numeric",
-     "Beruht die Idee NICHT nur auf endlicher Numerik?",
-     ["numerisch", "numerical", "computed", "verifiziert bis", "10^"],
-     "Endliche Numerik beweist nichts: Mertens-Vermutung (bis 10^14 ok, dennoch falsch) und Skewes (Doc 35).",
+     "Does the idea rest on more than just finite numerics?",
+     ["numeric", "numerical", "computed", "verified up to", "10^"],
+     "Finite numerics prove nothing: Mertens conjecture (OK up to 10^14, yet false) and Skewes (Doc 35).",
      "doc-35"),
     ("not_soft_function_theory",
-     "Vermeidet die Idee rein 'weiche' Funktionentheorie rechts von Re=1/2?",
-     ["wachstum", "growth", "approximation", "stetig", "holomorph", "betrag"],
-     "Voronin-Universalität (Doc 46): ζ approximiert dort jede nullstellenfreie Funktion ⇒ weiche Argumente können die Nullstellenlage nicht festlegen.",
+     "Does the idea avoid purely 'soft' function theory to the right of Re=1/2?",
+     ["growth", "approximation", "continuous", "holomorphic", "modulus", "magnitude"],
+     "Voronin universality (Doc 46): ζ approximates every zero-free function there ⇒ soft arguments cannot pin down the location of the zeros.",
      "doc-46"),
 ]
 def evaluate_proof_idea(text):
@@ -211,15 +211,15 @@ def evaluate_proof_idea(text):
         results.append({
             "check": key, "question": question,
             "signal_found": present,
-            "verdict": "ok-Signal vorhanden" if present else "FEHLT — prüfen",
+            "verdict": "ok-signal present" if present else "MISSING — check",
             "warning_if_missing": None if present else warning,
             "see": ref,
         })
     flags = [r for r in results if not r["signal_found"]]
-    summary = ("Mehrere Obstruktions-Signale fehlen — mit hoher Wahrscheinlichkeit "
-               "kein gültiger Beweis." if len(flags) >= 2 else
-               "Grundsignale vorhanden — dennoch streng gegen Doc 35/41/43/46 prüfen "
-               "und idealerweise in Lean (Doc 37) verifizieren.")
+    summary = ("Several obstruction signals are missing — most likely "
+               "not a valid proof." if len(flags) >= 2 else
+               "Basic signals present — still check rigorously against Doc 35/41/43/46 "
+               "and ideally verify in Lean (Doc 37).")
     return {"idea": text[:500], "checklist": results,
             "missing_count": len(flags), "summary": summary,
             "always_see": ["doc-35", "doc-41", "doc-43", "doc-46", "doc-37"]}
@@ -229,41 +229,41 @@ def stats():
     by_status = collections.Counter(n.get("status") for n in K["nodes"].values() if n.get("type") == "document")
     return {"meta": K["meta"], "documents_by_status": dict(by_status)}
 
-# ---------- Strukturiertes Denkprotokoll ----------
+# ---------- Structured reasoning protocol ----------
 def reasoning_scaffold(task=""):
-    """Gibt das 7-Schritte-Protokoll (docs/50) zurück, auf die Aufgabe zugeschnitten:
-    erzwingt Klassifikation, Annahmen, Status-Trennung, Obstruktions-Check, Experiment."""
+    """Returns the 7-step protocol (docs/50), tailored to the task:
+    enforces classification, assumptions, status separation, obstruction check, experiment."""
     t = (task or "").lower()
-    is_proof = any(w in t for w in ["beweis", "proof", "zeige", "prove", "folgt", "impl"])
+    is_proof = any(w in t for w in ["proof", "prove", "show", "follows", "impl"])
     steps = [
-        {"step": 1, "name": "Frage präzisieren",
-         "do": "Behauptung formal notieren (ζ, ξ, ρ=β+iγ). RH/GRH/Kriterium/Teilresultat?",
+        {"step": 1, "name": "Make the question precise",
+         "do": "Note the claim formally (ζ, ξ, ρ=β+iγ). RH/GRH/criterion/partial result?",
          "tools": ["get_claim", "search"]},
-        {"step": 2, "name": "Leitmotiv klassifizieren",
-         "do": "Positivität(A)/Spektral(B)/Geometrie(C)? Verwandte Ansätze finden.",
+        {"step": 2, "name": "Classify the leitmotiv",
+         "do": "Positivity(A)/spectral(B)/geometry(C)? Find related approaches.",
          "tools": ["graph_neighbors", "find_path"]},
-        {"step": 3, "name": "Annahmen explizit",
-         "do": "Voraussetzungen markieren; jede selbst auf Status prüfen.",
+        {"step": 3, "name": "Make assumptions explicit",
+         "do": "Mark prerequisites; check the status of each one.",
          "tools": ["get_claim"]},
-        {"step": 4, "name": "Status trennen",
-         "do": "[BEWIESEN]/[OFFEN]/[EVIDENZ]/[HEURISTIK]. Widerlegtes nie als Baustein.",
+        {"step": 4, "name": "Separate status",
+         "do": "[PROVEN]/[OPEN]/[EVIDENCE]/[HEURISTIC]. Never use refuted results as a building block.",
          "tools": ["list_by_status"]},
-        {"step": 5, "name": "Obstruktions-Check",
-         "do": "Euler-Produkt? Positivität bewiesen? Operator kanonisch? nur Numerik? Voronin?",
+        {"step": 5, "name": "Obstruction check",
+         "do": "Euler product? Positivity proved? Operator canonical? only numerics? Voronin?",
          "tools": ["evaluate_proof_idea", "get_document(doc-35)", "get_document(doc-43)"]},
-        {"step": 6, "name": "Experiment/Verifikation",
-         "do": "Numerisch testen, falsifizierbar formulieren, ggf. Lean-formalisierbar.",
+        {"step": 6, "name": "Experiment/verification",
+         "do": "Test numerically, state falsifiably, formalize in Lean if possible.",
          "tools": ["compute_first_zeros", "compute_li_coefficient", "compute_count_zeros", "plot_*"]},
-        {"step": 7, "name": "Ehrliches Fazit",
-         "do": "gesichert / offen / nächster prüfbarer Schritt. Keine Überverkäufe.",
+        {"step": 7, "name": "Honest conclusion",
+         "do": "established / open / next testable step. No overselling.",
          "tools": []},
     ]
-    note = ("BEWEIS-MODUS: Schritt 5 ist PFLICHT; ohne bestandenen Obstruktions-Check "
-            "nicht von 'Beweis' sprechen."
+    note = ("PROOF MODE: step 5 is MANDATORY; do not speak of a 'proof' "
+            "without a passed obstruction check."
             if is_proof else
-            "Analyse-Modus: dennoch Status sauber trennen und Tool-Belege liefern.")
+            "Analysis mode: still separate status cleanly and provide tool-backed evidence.")
     return {"task": task, "protocol": steps, "mode_note": note,
-            "answer_template": ("FRAGE(formal) / KLASSE / ANNAHMEN[Status] / "
-                                "ANALYSE[BEWIESEN|OFFEN|EVIDENZ] / OBSTRUKTIONS-CHECK / "
-                                "EXPERIMENT / FAZIT"),
+            "answer_template": ("QUESTION(formal) / CLASS / ASSUMPTIONS[status] / "
+                                "ANALYSIS[PROVEN|OPEN|EVIDENCE] / OBSTRUCTION CHECK / "
+                                "EXPERIMENT / CONCLUSION"),
             "see": "docs/50_reasoning_protocol.md"}

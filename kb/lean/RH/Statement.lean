@@ -1,23 +1,23 @@
 /-
-Statement.lean — Formale Aussage der Riemann-Vermutung (benötigt mathlib).
-Baut erst nach `lake build` mit verfügbarem mathlib-Cache.
+Statement.lean — Formal statement of the Riemann Hypothesis (requires mathlib).
+Builds only after `lake build` with an available mathlib cache.
 
-Strategie für echten Fortschritt (mit Professor):
-  1. Diese Aussage als `sorry` formalisieren (steht).
-  2. Ein ZUR RH ÄQUIVALENTES Kriterium formalisieren (z. B. Λ ≤ 0, docs/23;
-     oder Li-Positivität, docs/14) und die Äquivalenz beweisen.
-  3. Bewiesene Teilresultate (Hardy docs/03, de-Bruijn–Newman Λ≥0 docs/23) formal nachziehen.
+Strategy for real progress (with a professor):
+  1. Formalize this statement as `sorry` (done).
+  2. Formalize a criterion EQUIVALENT to the RH (e.g. Λ ≤ 0, docs/23;
+     or Li positivity, docs/14) and prove the equivalence.
+  3. Formally reproduce proven partial results (Hardy docs/03, de-Bruijn–Newman Λ≥0 docs/23).
 -/
 import Mathlib.NumberTheory.LSeries.RiemannZeta
 
 open Complex
 
-/-- Riemann-Vermutung: jede Nullstelle von ζ ist trivial (negative gerade ganze Zahl)
-    oder liegt auf der kritischen Geraden Re(s) = 1/2. -/
+/-- Riemann Hypothesis: every zero of ζ is trivial (a negative even integer)
+    or lies on the critical line Re(s) = 1/2. -/
 theorem riemann_hypothesis :
     ∀ s : ℂ, riemannZeta s = 0 →
       s.re = 1 / 2 ∨ ∃ n : ℕ, s = -2 * (n + 1) := by
-  sorry  -- OFFEN (Millennium-Problem). Siehe docs/41 für die Beweis-Leitmotive.
+  sorry  -- OPEN (Millennium Problem). See docs/41 for the proof leitmotivs.
 
-/-- Äquivalente Formulierung über die vervollständigte ξ-Funktion (Skizze/Platzhalter). -/
+/-- Equivalent formulation via the completed ξ-function (sketch/placeholder). -/
 -- theorem rh_via_xi : (∀ s, riemannXi s = 0 → s.re = 1/2) ↔ riemann_hypothesis := …

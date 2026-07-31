@@ -1,71 +1,71 @@
 ---
 id: doc-36
 number: 36
-title: "Konsequenzen der Riemann-Vermutung (was folgt, wenn sie wahr ist)"
+title: "Consequences of the Riemann Hypothesis (what follows if it is true)"
 category: context
 status: reference
 tags: [consequences, prime-gaps, miller-rabin, class-numbers, GRH-applications]
 source_file: 36_consequences_of_RH.md
-lang: de
+lang: en
 ---
 
-# Konsequenzen der Riemann-Vermutung (was folgt, wenn sie wahr ist)
+# Consequences of the Riemann Hypothesis (what follows if it is true)
 
-**Kategorie:** Kontext / Implikationen
-**Typ:** Übersicht der Folgerungen
-**Status:** Bedingte Sätze (gelten unter RH / GRH)
+**Category:** Context / implications
+**Type:** Overview of the corollaries
+**Status:** Conditional theorems (hold under RH / GRH)
 
-## Zusammenfassung
-Hunderte Sätze sind „bedingt unter RH" bewiesen — sie würden sofort unbedingt gelten, sobald die RH bewiesen ist. Diese Liste zeigt, *warum* die RH so zentral ist, und liefert einem RH-Assistenten den Anwendungs-/Konsequenzkontext. Manche Folgerungen brauchen die **GRH** (Dok. 21), nicht nur die klassische RH — das ist jeweils vermerkt.
+## Summary
+Hundreds of theorems are proved "conditionally under RH" — they would immediately hold unconditionally as soon as the RH is proved. This list shows *why* the RH is so central, and gives an RH assistant the application/consequence context. Some corollaries need the **GRH** (Doc. 21), not just the classical RH — this is noted in each case.
 
-## Mathematischer Kern (Formeln & Sätze)
+## Mathematical core (formulas & theorems)
 
-### Primzahlverteilung (RH)
+### Prime distribution (RH)
 ```
-π(x) = Li(x) + O(√x log x)        (Koch 1901; bestmöglicher Fehlerterm)
+π(x) = Li(x) + O(√x log x)        (Koch 1901; best possible error term)
 ψ(x) = x + O(√x log²x)
-|π(x) − Li(x)| < (1/8π) √x log x   für x ≥ 2657 (Schoenfeld, explizit unter RH)
+|π(x) − Li(x)| < (1/8π) √x log x   for x ≥ 2657 (Schoenfeld, explicit under RH)
 ```
 
-### Primzahllücken (RH)
+### Prime gaps (RH)
 ```
 p_{n+1} − p_n = O(√(p_n) log p_n).
 ```
-(Cramér unter RH; unbedingt ist man weit davon entfernt. Beachte: die *Cramér-Vermutung* p_{n+1}−p_n = O(log²p_n) ist stärker und folgt NICHT aus RH, Dok. 39.)
+(Cramér under RH; unconditionally one is far from this. Note: the *Cramér conjecture* p_{n+1}−p_n = O(log²p_n) is stronger and does NOT follow from RH, Doc. 39.)
 
-### Mertens- / Möbius-Summen (RH)
+### Mertens / Möbius sums (RH)
 ```
 M(x) = Σ_{n≤x} μ(n) = O(x^{1/2+ε}),   Σ_{n≤x} μ(n)/n = O(x^{−1/2+ε}).
 ```
 
-### Miller–Rabin / Primzahltests (GRH)
-Unter GRH ist der **deterministische** Miller-Test in Polynomzeit korrekt: Eine zusammengesetzte Zahl n besitzt einen Zeugen a ≤ 2(log n)². (Unbedingt liefert erst AKS 2002 deterministisch polynomiell — aber langsamer.)
+### Miller–Rabin / primality tests (GRH)
+Under GRH the **deterministic** Miller test is correct in polynomial time: a composite number n has a witness a ≤ 2(log n)². (Unconditionally, only AKS 2002 gives deterministic polynomial time — but slower.)
 
-### Kleinste quadratische Nicht-Reste / Klassenzahlen (GRH)
+### Least quadratic non-residues / class numbers (GRH)
 ```
-Kleinster quadratischer Nichtrest mod p  ≪ (log p)²   (Ankeny, unter GRH).
-Effektive untere Schranken für Klassenzahlen h(−d) (keine Siegel-Nullstelle, Dok. 32).
-```
-
-### Goldbach & additive Probleme
-- Die **ternäre** Goldbach-Vermutung (jede ungerade Zahl > 5 ist Summe dreier Primzahlen) wurde 2013 von **Helfgott unbedingt** bewiesen — gestützt auf rigorose RH-Verifikation in endlicher Höhe (Platt, Dok. 24). Frühe Beweise (Hardy–Littlewood) waren bedingt unter GRH.
-
-### Lindelöf & Momente (RH ⇒)
-```
-ζ(1/2 + it) = O(t^ε)   (Lindelöf, Dok. 17).
+Least quadratic non-residue mod p  ≪ (log p)²   (Ankeny, under GRH).
+Effective lower bounds for class numbers h(−d) (no Siegel zero, Doc. 32).
 ```
 
-### Wachstum von ζ und 1/ζ auf der 1-Linie (RH)
+### Goldbach & additive problems
+- The **ternary** Goldbach conjecture (every odd number > 5 is a sum of three primes) was proved **unconditionally by Helfgott** in 2013 — supported by rigorous RH verification up to a finite height (Platt, Doc. 24). Early proofs (Hardy–Littlewood) were conditional on GRH.
+
+### Lindelöf & moments (RH ⇒)
 ```
-1/ζ(1+it) = O(log log t),   |ζ(1+it)| ≍ log log t   (scharfe Konstanten unter RH; Littlewood).
+ζ(1/2 + it) = O(t^ε)   (Lindelöf, Doc. 17).
 ```
 
-## Bedeutung / Einordnung
-- Die RH ist ein **„Master-Schlüssel"**: ein Beweis würde Hunderte bedingter Resultate auf einen Schlag unbedingt machen.
-- Viele praktische/algorithmische Konsequenzen brauchen die **GRH** (Dirichlet-L), nicht nur die klassische RH.
-- Umgekehrt zeigt die Liste, *warum* ein Beweis so wertvoll (und gesucht) ist.
+### Growth of ζ and 1/ζ on the 1-line (RH)
+```
+1/ζ(1+it) = O(log log t),   |ζ(1+it)| ≍ log log t   (sharp constants under RH; Littlewood).
+```
 
-## Quellen
+## Significance / context
+- The RH is a **"master key"**: a proof would make hundreds of conditional results unconditional at a stroke.
+- Many practical/algorithmic consequences need the **GRH** (Dirichlet L), not just the classical RH.
+- Conversely, the list shows *why* a proof is so valuable (and sought after).
+
+## Sources
 - [Riemann hypothesis — Wikipedia (Consequences)](https://en.wikipedia.org/wiki/Riemann_hypothesis)
 - [The Riemann Hypothesis — E. Bombieri (Clay)](https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf)
 - [Generalized Riemann hypothesis — Wikipedia (Consequences)](https://en.wikipedia.org/wiki/Generalized_Riemann_hypothesis)

@@ -1,49 +1,49 @@
 ---
 id: doc-47
 number: 47
-title: "Physik-Schicht: Primon-Gas, Schumayer–Hutchinson, Sierra-Modelle & Quantengraphen"
+title: "Physics Layer: Primon Gas, Schumayer–Hutchinson, Sierra Models & Quantum Graphs"
 category: spectral
 status: open
 tags: [primon-gas, riemann-gas, schumayer-hutchinson, sierra, quantum-graphs, physics]
 source_file: 47_physics_layer_primon_gas_quantum_graphs.md
-lang: de
+lang: en
 ---
 
-# Physik-Schicht: Primon-Gas, Schumayer–Hutchinson, Sierra-Modelle & Quantengraphen
+# Physics Layer: Primon Gas, Schumayer–Hutchinson, Sierra Models & Quantum Graphs
 
-**Kategorie:** Spektraler Ansatz / mathematische Physik (Konsolidierung)
-**Autoren / Jahre:** Julia (primon gas, 1990); Spector; Schumayer–Hutchinson (Survey, RMP 2011); Sierra (Rindler–Dirac, 2008); Diverse (Quantengraphen, 2013)
-**Typ:** Physikalische Modelle/Realisierungsversuche (Hilbert–Pólya-Umfeld)
-**Status:** Heuristisch/modellhaft; kein RH-Beweis
+**Category:** Spectral approach / mathematical physics (consolidation)
+**Authors / years:** Julia (primon gas, 1990); Spector; Schumayer–Hutchinson (survey, RMP 2011); Sierra (Rindler–Dirac, 2008); various (quantum graphs, 2013)
+**Type:** Physical models / realization attempts (Hilbert–Pólya area)
+**Status:** Heuristic/model-based; not an RH proof
 
-## Zusammenfassung
-Konsolidiert die physikalische Modellierungsebene rund um die Riemann-Nullstellen, die über Berry–Keating (Dok. 08) und Bender–Brody–Müller (Dok. 09) hinausgeht: das **Primon-Gas** (ζ als Zustandssumme freier Bosonen), Sierras explizite Hamilton-Modelle und **Quantengraphen**, deren Spektren die Nullstellen nachbilden. Hauptreferenz ist der RMP-Survey von Schumayer–Hutchinson.
+## Summary
+Consolidates the physical modeling layer around the Riemann zeros that goes beyond Berry–Keating (Doc. 08) and Bender–Brody–Müller (Doc. 09): the **primon gas** (ζ as the partition function of free bosons), Sierra's explicit Hamiltonian models, and **quantum graphs** whose spectra reproduce the zeros. The main reference is the RMP survey by Schumayer–Hutchinson.
 
-## Mathematischer Kern (Formeln, Modelle)
+## Mathematical core (formulas, models)
 
-### Primon-Gas / „Riemann-Gas" (Julia)
-Freie Bosonen, deren Einteilchen-Energieniveaus die **logarithmierten Primzahlen** sind: ε_p = log p. Ein Zustand = Multiset von „Primonen"; eine ganze Zahl n = ∏ p^{k_p} hat Energie E_n = Σ k_p log p = log n. Zustandssumme bei inverser Temperatur β:
+### Primon gas / "Riemann gas" (Julia)
+Free bosons whose single-particle energy levels are the **logarithms of the primes**: ε_p = log p. A state = a multiset of "primons"; an integer n = ∏ p^{k_p} has energy E_n = Σ k_p log p = log n. Partition function at inverse temperature β:
 ```
-Z(β) = Σ_{Zustände} e^{−βE} = Σ_{n=1}^∞ n^{−β} = ζ(β).
+Z(β) = Σ_{states} e^{−βE} = Σ_{n=1}^∞ n^{−β} = ζ(β).
 ```
-- **Hagedorn-Temperatur:** Der Pol bei β = 1 ist eine Hagedorn-artige Divergenz (Phasenübergang) — dies ist die elementare Statistik-Mechanik hinter dem Bost–Connes-System (Dok. 34).
-- **Fermionisches Primon-Gas:** Pauli-Prinzip (jede Primzahl höchstens einmal) ⇒ quadratfreie Zahlen, und die Zustandssumme involviert ζ(β)/ζ(2β) bzw. die Möbius-Funktion μ(n) (Vorzeichen = Fermion-Parität). Verknüpft mit Mertens (Dok. 16).
+- **Hagedorn temperature:** the pole at β = 1 is a Hagedorn-like divergence (phase transition) — this is the elementary statistical mechanics behind the Bost–Connes system (Doc. 34).
+- **Fermionic primon gas:** the Pauli principle (each prime at most once) ⇒ squarefree numbers, and the partition function involves ζ(β)/ζ(2β) resp. the Möbius function μ(n) (the sign = fermion parity). Connected to Mertens (Doc. 16).
 
-### Schumayer–Hutchinson-Survey (RMP 2011)
-„Physics of the Riemann Hypothesis" — die kanonische Übersicht aller physikalischen Zugänge: Quantenchaos, xp-Modelle, Zufallsmatrizen, Primon-Gas, Spektralstatistik, Quantengraphen. Empfohlene physik-seitige Hauptreferenz.
+### Schumayer–Hutchinson survey (RMP 2011)
+"Physics of the Riemann Hypothesis" — the canonical overview of all physical approaches: quantum chaos, xp models, random matrices, primon gas, spectral statistics, quantum graphs. The recommended main reference on the physics side.
 
-### Sierra: Rindler–Dirac-Modell („Riemann magneton of the primes", 2008)
-Ein relativistisches Dirac-Teilchen in **Rindler-Koordinaten** (gleichmäßig beschleunigter Beobachter) mit δ-Potentialen, die auf **quadratfreien Zahlen** lokalisiert sind. Die Streuphasen reproduzieren — über eine Quantisierungsbedingung — die geglättete Nullstellendichte. Konkretere Realisierung der xp-Idee (Dok. 08) mit eingebauter Primzahlstruktur.
+### Sierra: Rindler–Dirac model ("Riemann magneton of the primes", 2008)
+A relativistic Dirac particle in **Rindler coordinates** (uniformly accelerated observer) with δ-potentials localized on **squarefree numbers**. The scattering phases reproduce — via a quantization condition — the smoothed zero density. A more concrete realization of the xp idea (Doc. 08) with a built-in prime structure.
 
-### Quantengraphen
-Metrische Graphen mit Kantenlängen ∝ log p; das Spektrum des Laplace-Operators auf dem Graphen (mit Kirchhoff-Randbedingungen) wird so getunt, dass die Eigenwerte die γ_n approximieren. Die **Bahnsummen-(trace)-Formel** des Graphen ahmt die explizite Formel nach (geschlossene Wege ↔ Primzahlprodukte).
+### Quantum graphs
+Metric graphs with edge lengths ∝ log p; the spectrum of the Laplace operator on the graph (with Kirchhoff boundary conditions) is tuned so that the eigenvalues approximate the γ_n. The graph's **orbit-sum (trace) formula** mimics the explicit formula (closed paths ↔ products of primes).
 
-## Bedeutung / Einordnung
-- Liefert physikalische **Intuition** und konkrete (wenn auch approximative) Spektral-Realisierungen im Hilbert–Pólya-Geist (Dok. 05).
-- **Gemeinsame Grenze:** Alle reproduzieren die *geglättete* Dichte oder approximieren γ_n; keine liefert die exakten Nullstellen als Spektrum eines kanonischen selbstadjungierten Operators (vgl. Obstruktion Dok. 35, Punkt 5).
-- Das Primon-Gas erdet das Bost–Connes-System (Dok. 34) physikalisch.
+## Significance / context
+- Provides physical **intuition** and concrete (albeit approximate) spectral realizations in the Hilbert–Pólya spirit (Doc. 05).
+- **Common limit:** all reproduce the *smoothed* density or approximate the γ_n; none yields the exact zeros as the spectrum of a canonical self-adjoint operator (cf. obstruction Doc. 35, point 5).
+- The primon gas grounds the Bost–Connes system (Doc. 34) physically.
 
-## Quellen
+## Sources
 - [Physics of the Riemann Hypothesis — Schumayer & Hutchinson, Rev. Mod. Phys. 83, 307 (2011) (ar5iv)](https://ar5iv.labs.arxiv.org/html/1101.3116)
 - [The Riemann Magneton of the Primes — Sierra (arXiv math-ph/0404031)](https://arxiv.org/pdf/math-ph/0404031)
 - [Quantum graphs and the Riemann zeros (arXiv 1307.6055)](https://arxiv.org/pdf/1307.6055)

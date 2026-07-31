@@ -1,69 +1,69 @@
 ---
 id: doc-03
 number: 03
-title: "Hardy (1914): Unendlich viele Nullstellen auf der kritischen Geraden"
+title: "Hardy (1914): Infinitely Many Zeros on the Critical Line"
 category: partial-results
 status: proven
 tags: [hardy, critical-line, Z-function, theta-function]
 source_file: 03_Hardy_1914_infinitely_many_zeros.md
-lang: de
+lang: en
 ---
 
-# Hardy (1914): Unendlich viele Nullstellen auf der kritischen Geraden
+# Hardy (1914): Infinitely Many Zeros on the Critical Line
 
-**Kategorie:** Partielles Resultat
-**Autor / Jahr:** G. H. Hardy, 1914 (Erweiterungen: Hardy–Littlewood 1921, Selberg 1942)
-**Typ:** Bewiesenes Teilresultat zur RH
-**Status:** Bewiesen (echtes Theorem, nicht die volle RH)
+**Category:** Partial result
+**Author / year:** G. H. Hardy, 1914 (extensions: Hardy–Littlewood 1921, Selberg 1942)
+**Type:** Proven partial result on the RH
+**Status:** Proven (a genuine theorem, not the full RH)
 
-## Zusammenfassung
-1914 bewies Godfrey Harold Hardy, dass **unendlich viele** nicht-triviale Nullstellen der Riemannschen Zetafunktion exakt auf der kritischen Geraden Re(s) = 1/2 liegen. Dies war das erste rigorose Resultat, das die kritische Gerade als Ort von (unendlich vielen) Nullstellen auszeichnete — ein erster Schritt Richtung RH, aber weit von der vollen Aussage (*alle* Nullstellen) entfernt.
+## Summary
+In 1914 Godfrey Harold Hardy proved that **infinitely many** non-trivial zeros of the Riemann zeta function lie exactly on the critical line Re(s) = 1/2. This was the first rigorous result to single out the critical line as the location of (infinitely many) zeros — a first step toward the RH, but far from the full statement (*all* zeros).
 
-## Kernidee
-- Hardy betrachtet die reellwertige **Hardysche Z-Funktion** Z(t), die so konstruiert ist, dass |Z(t)| = |ζ(1/2 + it)| und Z(t) reell ist. Nullstellen von Z(t) auf der reellen t-Achse entsprechen genau Nullstellen von ζ auf der kritischen Geraden.
-- Mit Hilfe der **Transformationsformel der Jacobischen Theta-Funktion** zeigt Hardy, dass Z(t) unendlich oft das Vorzeichen wechselt → unendlich viele reelle Nullstellen → unendlich viele ζ-Nullstellen auf Re(s) = 1/2.
+## Core idea
+- Hardy considers the real-valued **Hardy Z-function** Z(t), constructed so that |Z(t)| = |ζ(1/2 + it)| and Z(t) is real. Zeros of Z(t) on the real t-axis correspond exactly to zeros of ζ on the critical line.
+- Using the **transformation formula of the Jacobi theta function**, Hardy shows that Z(t) changes sign infinitely often → infinitely many real zeros → infinitely many ζ zeros on Re(s) = 1/2.
 
-## Spätere Verschärfungen
-- **Hardy–Littlewood (1921):** Mindestens K·T Nullstellen auf der kritischen Geraden bis zur Höhe T (K > 0 konstant) — d. h. ein *positiver linearer* Anteil der erwarteten Zahl.
-- **Selberg (1942):** Verbesserung auf K·T·log T, also einen *positiven Bruchteil aller* N(T) ≈ (T/2π)log T Nullstellen. Selbergs Methode (Mollifier) wurde später von Levinson und Conrey weiterentwickelt (siehe Dok. 04).
+## Later sharpenings
+- **Hardy–Littlewood (1921):** at least K·T zeros on the critical line up to height T (K > 0 constant) — i.e. a *positive linear* fraction of the expected number.
+- **Selberg (1942):** improvement to K·T·log T, i.e. a *positive fraction of all* N(T) ≈ (T/2π)log T zeros. Selberg's method (mollifier) was later developed further by Levinson and Conrey (see Doc. 04).
 
-## Bedeutung / Einordnung
-- Erstes hartes Indiz für die Richtigkeit der RH.
-- Liefert die Z-Funktion, die zum zentralen Werkzeug numerischer Verifikation wurde (Vorzeichenwechsel von Z(t) lokalisieren Nullstellen — Grundlage von Turing-Methode, Odlyzko etc., Dok. 24).
-- Wichtig: "Unendlich viele auf der Geraden" schließt nicht aus, dass *auch* unendlich viele abseits liegen könnten — genau diese Lücke schließen erst die Anteilsresultate (Dok. 04) teilweise, die volle RH bleibt offen.
+## Significance / context
+- First hard indication of the correctness of the RH.
+- Provides the Z-function, which became the central tool of numerical verification (sign changes of Z(t) localize zeros — the basis of the Turing method, Odlyzko, etc., Doc. 24).
+- Important: "infinitely many on the line" does not rule out that *also* infinitely many might lie off it — exactly this gap is only partially closed by the proportion results (Doc. 04); the full RH remains open.
 
-## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+## Mathematical core (formulas, theorems, proof sketches)
 
-### Die Hardysche Z-Funktion
-Definiere die Riemann-Siegel-Theta-Funktion und Z(t):
+### The Hardy Z-function
+Define the Riemann–Siegel theta function and Z(t):
 ```
 θ(t) = arg Γ(1/4 + it/2) − (t/2) log π,    Z(t) = e^{iθ(t)} ζ(1/2 + it)
 ```
-**Eigenschaften:** Z(t) ist reellwertig für reelles t, und |Z(t)| = |ζ(1/2 + it)|. Daher gilt: Z(t₀) = 0 ⟺ ζ hat eine Nullstelle bei 1/2 + it₀ auf der kritischen Geraden. Vorzeichenwechsel von Z ⇒ Nullstelle auf der Geraden.
+**Properties:** Z(t) is real-valued for real t, and |Z(t)| = |ζ(1/2 + it)|. Therefore: Z(t₀) = 0 ⟺ ζ has a zero at 1/2 + it₀ on the critical line. A sign change of Z ⇒ a zero on the line.
 
-### Hardys Satz und Beweisidee (1914)
-**Satz (Hardy).** Z(t) besitzt unendlich viele reelle Nullstellen; also liegen unendlich viele Nullstellen von ζ auf Re(s) = 1/2.
+### Hardy's theorem and proof idea (1914)
+**Theorem (Hardy).** Z(t) has infinitely many real zeros; hence infinitely many zeros of ζ lie on Re(s) = 1/2.
 
-**Beweisskizze (Momentenmethode mit Theta-Transformation).** Hardy betrachtet Integrale von Z(t) gegen Testkerne und nutzt die Funktionalgleichung der Jacobi-Theta-Funktion
+**Proof sketch (moment method with theta transformation).** Hardy considers integrals of Z(t) against test kernels and uses the functional equation of the Jacobi theta function
 ```
 ϑ(x) = Σ_{n=−∞}^∞ e^{−πn²x},    ϑ(1/x) = √x · ϑ(x).
 ```
-Aus der Mellin-Darstellung von ξ gewinnt er, dass gewisse Mittel von Z(t) nicht für alle großen T dasselbe Vorzeichen behalten können: Wäre Z(t) ab einem Punkt vorzeichenfest, so widerspräche das asymptotische Verhalten der Integrale
+From the Mellin representation of ξ he deduces that certain means of Z(t) cannot keep the same sign for all large T: if Z(t) were of fixed sign beyond some point, the asymptotic behavior of the integrals
 ```
 ∫_0^T Z(t) t^{2k} dt
 ```
-(für geeignete k, ausgewertet über die Theta-Transformation an der Stelle, die der kritischen Geraden entspricht) der Annahme. Genauer zeigt Hardy, dass das Verhalten nahe x = 1 der Theta-Funktion erzwingt, dass Z unendlich oft das Vorzeichen wechselt.
+(for suitable k, evaluated via the theta transformation at the point corresponding to the critical line) would contradict the assumption. More precisely, Hardy shows that the behavior of the theta function near x = 1 forces Z to change sign infinitely often.
 
-### Quantitative Verschärfungen (mit Formeln)
-Sei N₀(T) die Anzahl der Nullstellen *auf* der kritischen Geraden bis Höhe T, N(T) die Gesamtzahl (Dok. 02).
-- **Hardy–Littlewood (1921):** N₀(T) > c·T für ein c > 0.
-- **Selberg (1942):** N₀(T) > c·T log T, also N₀(T) > c·N(T) (positiver Bruchteil), via Mollifier-Mittel ∫ |ζ(1/2+it) M(1/2+it)|² dt mit Dirichlet-Polynom M.
-- **Anteil κ := liminf N₀(T)/N(T):** Levinson κ ≥ 1/3, Conrey κ ≥ 2/5, heute κ > 0,41 (Dok. 04).
+### Quantitative sharpenings (with formulas)
+Let N₀(T) be the number of zeros *on* the critical line up to height T, and N(T) the total number (Doc. 02).
+- **Hardy–Littlewood (1921):** N₀(T) > c·T for some c > 0.
+- **Selberg (1942):** N₀(T) > c·T log T, i.e. N₀(T) > c·N(T) (positive fraction), via the mollifier mean ∫ |ζ(1/2+it) M(1/2+it)|² dt with a Dirichlet polynomial M.
+- **Proportion κ := liminf N₀(T)/N(T):** Levinson κ ≥ 1/3, Conrey κ ≥ 2/5, today κ > 0.41 (Doc. 04).
 
-### Speiser-Äquivalenz (Hintergrund der Mollifier-Methode)
-**Satz (Speiser 1934).** RH ⟺ ζ'(s) ≠ 0 für 0 < Re(s) < 1/2. Die Levinson-Methode zählt Nullstellen von ζ'·(Mollifier) und überträgt sie via dieser Äquivalenz auf ζ.
+### Speiser equivalence (background of the mollifier method)
+**Theorem (Speiser 1934).** RH ⟺ ζ'(s) ≠ 0 for 0 < Re(s) < 1/2. The Levinson method counts zeros of ζ'·(mollifier) and transfers them via this equivalence to ζ.
 
-## Quellen
+## Sources
 - [Hardy's function Z(t) — results and problems (arXiv 1601.06512)](https://arxiv.org/pdf/1601.06512)
 - [A note on Hardy's theorem (HAL)](https://hal.science/hal-01425570v1/document)
 - [The Riemann zeta function and its zeros — Russian Math Surveys](https://www.mathnet.ru/php/getFT.phtml?jrnid=rm&paperid=2762&what=fullteng)

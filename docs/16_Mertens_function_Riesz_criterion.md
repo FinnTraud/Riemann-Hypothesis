@@ -1,83 +1,83 @@
 ---
 id: doc-16
 number: 16
-title: "Mertens-Funktion & Riesz-Kriterium (Möbius-basierte Kriterien)"
+title: "Mertens Function & Riesz Criterion (Möbius-based criteria)"
 category: criterion
 status: open
 tags: [mertens, mobius, riesz, mertens-conjecture-refuted]
 source_file: 16_Mertens_function_Riesz_criterion.md
-lang: de
+lang: en
 ---
 
-# Mertens-Funktion & Riesz-Kriterium (Möbius-basierte Kriterien)
+# Mertens Function & Riesz Criterion (Möbius-based criteria)
 
-**Kategorie:** Äquivalentes Kriterium (Möbius-/Summatorik)
-**Autoren / Jahre:** Riesz (1916); Mertens-Zusammenhang klassisch; Mertens-Vermutung widerlegt von Odlyzko & te Riele (1985)
-**Typ:** Zur RH äquivalente Aussagen + lehrreiches Gegenbeispiel
-**Status:** Äquivalenzen bewiesen; stärkere Mertens-Vermutung WIDERLEGT
+**Category:** Equivalent criterion (Möbius / summatory)
+**Authors / years:** Riesz (1916); Mertens connection classical; Mertens conjecture refuted by Odlyzko & te Riele (1985)
+**Type:** Statements equivalent to the RH + an instructive counterexample
+**Status:** Equivalences proven; the stronger Mertens conjecture REFUTED
 
-## Zusammenfassung
-Mehrere Kriterien drücken die RH über die **Möbius-Funktion** μ(n) und ihre Summatorik aus. Besonders lehrreich ist die **widerlegte Mertens-Vermutung**: Sie hätte die RH impliziert, ist aber falsch — eine Warnung vor zu starken hinreichenden Bedingungen.
+## Summary
+Several criteria express the RH via the **Möbius function** μ(n) and its summatory function. Especially instructive is the **refuted Mertens conjecture**: it would have implied the RH, but it is false — a warning against overly strong sufficient conditions.
 
-## Mertens-Funktion-Kriterium
-- Sei M(x) = Σ_{n≤x} μ(n) die summatorische Möbius-(Mertens-)Funktion.
-- **RH-äquivalent:** Für jedes ε > 0 gilt M(x) / x^{1/2 + ε} → 0 für x → ∞. (D. h. M(x) = O(x^{1/2+ε}).)
-- Das spiegelt 1/ζ(s) = Σ μ(n)/n^s wider: Die Wachstumsordnung von M(x) ist direkt an die Lage der Nullstellen gekoppelt.
+## Mertens-function criterion
+- Let M(x) = Σ_{n≤x} μ(n) be the summatory Möbius (Mertens) function.
+- **RH-equivalent:** for every ε > 0, M(x) / x^{1/2 + ε} → 0 as x → ∞. (I.e. M(x) = O(x^{1/2+ε}).)
+- This reflects 1/ζ(s) = Σ μ(n)/n^s: the growth order of M(x) is directly tied to the location of the zeros.
 
-## Die widerlegte Mertens-Vermutung (wichtige Lehre)
-- **Mertens-Vermutung:** |M(n)| < √n für alle n. Wäre sie wahr, würde daraus die RH folgen (sie ist *stärker* als RH).
-- **Widerlegung:** Andrew Odlyzko und Herman te Riele bewiesen 1985, dass die Mertens-Vermutung **falsch** ist (limsup M(x)/√x > 1, liminf < −1) — ohne ein explizites Gegenbeispiel n anzugeben (das kleinste bekannte Gegenbeispiel liegt extrem hoch, jenseits 10^16, vermutlich um 10^{30}+).
-- **Lehre:** Eine plausible, numerisch lange gestützte "Verstärkung" der RH kann falsch sein. Numerische Evidenz bis zu großen Schranken beweist nichts — relevant auch für die kritische Einordnung von KI-/Datengetriebenen RH-"Bestätigungen" (vgl. Dok. 28).
+## The refuted Mertens conjecture (an important lesson)
+- **Mertens conjecture:** |M(n)| < √n for all n. If it were true, the RH would follow (it is *stronger* than RH).
+- **Refutation:** Andrew Odlyzko and Herman te Riele proved in 1985 that the Mertens conjecture is **false** (limsup M(x)/√x > 1, liminf < −1) — without giving an explicit counterexample n (the smallest known counterexample is extremely high, beyond 10^16, presumably around 10^{30}+).
+- **Lesson:** a plausible "strengthening" of the RH, long supported numerically, can be false. Numerical evidence up to large bounds proves nothing — also relevant to the critical assessment of AI/data-driven RH "confirmations" (cf. Doc. 28).
 
-## Riesz-Kriterium (1916)
-- Marcel Riesz gab ein zur RH äquivalentes Kriterium über das Wachstum einer mit der Möbius-Funktion gebildeten unendlichen Reihe (Riesz-Funktion). Verwandt sind das **Hardy–Littlewood-Kriterium** und neuere **Riesz-Typ-Kriterien für die Selberg-Klasse** (Dok. 21).
+## Riesz criterion (1916)
+- Marcel Riesz gave a criterion equivalent to the RH via the growth of an infinite series formed with the Möbius function (the Riesz function). Related are the **Hardy–Littlewood criterion** and newer **Riesz-type criteria for the Selberg class** (Doc. 21).
 
-## Bedeutung / Einordnung
-- Verknüpft die RH mit der "Zufälligkeit" der Vorzeichen von μ(n) (multiplikative Struktur der ganzen Zahlen).
-- Die widerlegte Mertens-Vermutung ist eines der wichtigsten **mahnenden Gegenbeispiele** in der RH-Geschichte.
+## Significance / context
+- Links the RH with the "randomness" of the signs of μ(n) (the multiplicative structure of the integers).
+- The refuted Mertens conjecture is one of the most important **cautionary counterexamples** in the history of the RH.
 
-## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+## Mathematical core (formulas, theorems, proof sketches)
 
-### Möbius-Funktion und 1/ζ
+### Möbius function and 1/ζ
 ```
-1/ζ(s) = Σ_{n=1}^∞ μ(n)/n^s   (Re s > 1),   μ(n) = (−1)^{#Primfaktoren} falls quadratfrei, sonst 0.
+1/ζ(s) = Σ_{n=1}^∞ μ(n)/n^s   (Re s > 1),   μ(n) = (−1)^{#prime factors} if squarefree, else 0.
 ```
-Mit Perron/Mellin folgt für M(x) = Σ_{n≤x} μ(n) die Darstellung über die Nullstellen von ζ:
+With Perron/Mellin, for M(x) = Σ_{n≤x} μ(n) one obtains the representation via the zeros of ζ:
 ```
 M(x) ≈ Σ_ρ x^ρ/(ρ ζ'(ρ)) − 2 + Σ ...
 ```
 
-### Mertens-Kriterium
+### Mertens criterion
 ```
-RH  ⟺  M(x) = O(x^{1/2 + ε})  für jedes ε > 0.
+RH  ⟺  M(x) = O(x^{1/2 + ε})  for every ε > 0.
 ```
-**Beweis:** Aus M(x) = O(x^{Θ+ε}) folgt durch abelsche Summation, dass 1/ζ(s) für Re(s) > Θ analytisch (nullstellenfrei) ist, also Θ ≥ sup_ρ Re(ρ). Umgekehrt liefert RH (sup Re ρ = 1/2) per Konturverschiebung M(x) ≪ x^{1/2+ε}.
+**Proof:** from M(x) = O(x^{Θ+ε}), Abel summation shows that 1/ζ(s) is analytic (zero-free) for Re(s) > Θ, so Θ ≥ sup_ρ Re(ρ). Conversely, RH (sup Re ρ = 1/2) gives, by contour shifting, M(x) ≪ x^{1/2+ε}.
 
-### Mertens-Vermutung und ihre Widerlegung
-**Vermutung (stärker als RH):** |M(x)| < √x ∀x ≥ 1, d. h. m(x) := M(x)/√x ∈ (−1, 1).
-**Satz (Odlyzko–te Riele 1985):**
+### Mertens conjecture and its refutation
+**Conjecture (stronger than RH):** |M(x)| < √x ∀x ≥ 1, i.e. m(x) := M(x)/√x ∈ (−1, 1).
+**Theorem (Odlyzko–te Riele 1985):**
 ```
-limsup_{x→∞} M(x)/√x  >  1,06     und     liminf_{x→∞} M(x)/√x  <  −1,009.
+limsup_{x→∞} M(x)/√x  >  1.06     and     liminf_{x→∞} M(x)/√x  <  −1.009.
 ```
-**Beweisidee:** Numerische Auswertung der ersten ~2000 Nullstellen γ_n und der Summe Σ 2 Re( x^{iγ}/(½+iγ)ζ'(ρ) )·x^{−... } mittels eines Diophantischen Approximationsarguments (LLL-Gitterreduktion), um eine Resonanz vieler Terme zu erzwingen, die m(x) über 1 treibt. Kein explizites Gegenbeispiel x, aber Existenznachweis. **Lehre:** RH bleibt wahr-vermutet, aber die *stärkere* Schranke |M|<√x ist falsch — numerische Evidenz bis 10^{14} hätte getäuscht.
+**Proof idea:** numerical evaluation of the first ~2000 zeros γ_n and of the sum Σ 2 Re( x^{iγ}/(½+iγ)ζ'(ρ) )·x^{−... } using a Diophantine-approximation argument (LLL lattice reduction) to force a resonance of many terms that drives m(x) above 1. No explicit counterexample x, but an existence proof. **Lesson:** the RH remains conjectured true, but the *stronger* bound |M|<√x is false — numerical evidence up to 10^{14} would have deceived.
 
-### Riesz-Kriterium (1916)
-Die Riesz-Funktion
+### Riesz criterion (1916)
+The Riesz function
 ```
 P(x) = Σ_{k=1}^∞ (−1)^{k+1} x^k / ((k−1)! ζ(2k))
 ```
-erfüllt:
+satisfies:
 ```
-RH  ⟺  P(x) = O(x^{1/4 + ε})   für jedes ε > 0   (x → ∞).
+RH  ⟺  P(x) = O(x^{1/4 + ε})   for every ε > 0   (x → ∞).
 ```
-(Mellin-Transformierte von P involviert Γ(s)/ζ(2s); die Lage der Nullstellen von ζ(2s) bei Re = 1/4 liefert den Exponenten.)
+(The Mellin transform of P involves Γ(s)/ζ(2s); the location of the zeros of ζ(2s) at Re = 1/4 yields the exponent.)
 
-### Hardy–Littlewood-Kriterium (verwandt)
+### Hardy–Littlewood criterion (related)
 ```
 RH  ⟺  Σ_{n=1}^∞ (−x)^n/(n! ζ(2n+1)) = O(x^{−1/4})   (x → ∞).
 ```
 
-## Quellen
+## Sources
 - [Criteria equivalent to the Riemann Hypothesis (arXiv 0808.0640)](https://arxiv.org/pdf/0808.0640)
 - [Riemann's Hypothesis and the Mertens Function (Galetto)](https://empslocal.ex.ac.uk/people/staff/mrwatkin/zeta/galetto_RH_Mertens.pdf)
 - [Riemann hypothesis — Wikipedia (Mertens function)](https://en.wikipedia.org/wiki/Riemann_hypothesis)

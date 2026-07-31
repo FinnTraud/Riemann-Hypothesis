@@ -1,78 +1,78 @@
 ---
 id: doc-13
 number: 13
-title: "Nyman–Beurling-Kriterium & Báez-Duarte-Verschärfung"
+title: "The Nyman–Beurling Criterion & the Báez-Duarte Sharpening"
 category: criterion
 status: open
 tags: [nyman-beurling, baez-duarte, density, hilbert-space]
 source_file: 13_Nyman_Beurling_Baez_Duarte.md
-lang: de
+lang: en
 ---
 
-# Nyman–Beurling-Kriterium & Báez-Duarte-Verschärfung
+# The Nyman–Beurling Criterion & the Báez-Duarte Sharpening
 
-**Kategorie:** Äquivalentes Kriterium (funktionalanalytisch)
-**Autoren / Jahre:** Arne Beurling & Bertil Nyman (1950–1955), Luis Báez-Duarte (2003)
-**Typ:** Zur RH äquivalente Umformulierung
-**Status:** Äquivalenz bewiesen; die geforderte Dichte ist unbewiesen
+**Category:** Equivalent criterion (functional-analytic)
+**Authors / years:** Arne Beurling & Bertil Nyman (1950–1955), Luis Báez-Duarte (2003)
+**Type:** Reformulation equivalent to the RH
+**Status:** Equivalence proven; the required density is unproven
 
-## Zusammenfassung
-Das Nyman–Beurling-Kriterium formuliert die RH als ein **Approximations-/Dichteproblem in einem Hilbertraum**: Die RH gilt genau dann, wenn ein bestimmter Funktionenraum dicht in L²(0,1) liegt. Báez-Duarte vereinfachte dies 2003 erheblich, indem er zeigte, dass nur **ganzzahlige** Dilatationen benötigt werden.
+## Summary
+The Nyman–Beurling criterion formulates the RH as an **approximation/density problem in a Hilbert space**: the RH holds if and only if a certain function space is dense in L²(0,1). Báez-Duarte simplified this considerably in 2003 by showing that only **integer** dilations are needed.
 
-## Das Kriterium
-- Betrachte den Raum der quadratintegrierbaren Funktionen auf (0,∞) bzw. L²(0,1).
-- **Nyman–Beurling (1955):** Die RH ist äquivalent dazu, dass sich die charakteristische Funktion des Intervalls (0,1] im quadratischen Mittel durch Linearkombinationen der **Dilatationen der Bruchteilfunktion** {θ/x} (θ ∈ (0,1)) approximieren lässt — d. h. dieser Funktionenraum ist dicht.
-- Anders gesagt: RH ⟺ ein bestimmter Vektor liegt im Abschluss der linearen Hülle abzählbar vieler anderer Vektoren ("zyklischer Vektor").
+## The criterion
+- Consider the space of square-integrable functions on (0,∞) resp. L²(0,1).
+- **Nyman–Beurling (1955):** the RH is equivalent to the characteristic function of the interval (0,1] being approximable in quadratic mean by linear combinations of the **dilations of the fractional-part function** {θ/x} (θ ∈ (0,1)) — i.e. this function space is dense.
+- In other words: RH ⟺ a certain vector lies in the closure of the linear span of countably many other vectors ("cyclic vector").
 
-## Báez-Duartes Verschärfung (2003)
-- Es genügt, die Dilatationen auf **positive ganze Zahlen** a = 1, 2, 3, … zu beschränken (statt aller reellen θ).
-- Damit wird die RH äquivalent zur Approximierbarkeit von χ_{(0,1]} durch Linearkombinationen der {1/(a·x)} mit a ∈ ℕ — eine deutliche Reduktion der Komplexität.
-- Es existieren **probabilistische Verallgemeinerungen** (zufällige Dilatationsfaktoren), die neue Kriterien liefern und teils mit dem starken Báez-Duarte-Kriterium überlappen.
+## Báez-Duarte's sharpening (2003)
+- It suffices to restrict the dilations to **positive integers** a = 1, 2, 3, … (instead of all real θ).
+- This makes the RH equivalent to the approximability of χ_{(0,1]} by linear combinations of the {1/(a·x)} with a ∈ ℕ — a significant reduction in complexity.
+- There exist **probabilistic generalizations** (random dilation factors) that yield new criteria and partly overlap with the strong Báez-Duarte criterion.
 
-## Bedeutung / Einordnung
-- Übersetzt die RH vollständig in die Sprache der **Funktionalanalysis / Approximationstheorie / Operatortheorie** (Dichte, zyklische Vektoren).
-- Numerisch: Partialsummen der Approximation konvergieren, aber **extrem langsam** — kein praktischer Beweisweg, und die nötige Dichte ist bis heute unbewiesen.
-- Verwandt mit dem Hilbertraum-Zugang von de Branges (Dok. 20) und der Weil-Positivität (Dok. 14).
+## Significance / context
+- Translates the RH entirely into the language of **functional analysis / approximation theory / operator theory** (density, cyclic vectors).
+- Numerically: the partial sums of the approximation converge, but **extremely slowly** — no practical proof route, and the required density is unproven to this day.
+- Related to the Hilbert-space approach of de Branges (Doc. 20) and Weil positivity (Doc. 14).
 
-## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+## Mathematical core (formulas, theorems, proof sketches)
 
-### Die Funktionen und der Raum
-Sei {x} = x − ⌊x⌋ der Bruchteil, ρ(x) = {1/x} für x ∈ (0,1). Für θ ∈ (0,1) definiere die Dilatation
+### The functions and the space
+Let {x} = x − ⌊x⌋ be the fractional part, ρ(x) = {1/x} for x ∈ (0,1). For θ ∈ (0,1) define the dilation
 ```
 f_θ(x) = { θ/x } = ρ_θ(x),   x ∈ (0,1).
 ```
-Sei 𝒩 = abgeschlossene lineare Hülle (in L²(0,1)) der { f_θ : 0 < θ < 1 }.
+Let 𝒩 = closed linear span (in L²(0,1)) of { f_θ : 0 < θ < 1 }.
 
-### Nyman–Beurling-Satz (1955)
+### Nyman–Beurling theorem (1955)
 ```
-RH  ⟺  𝟙_{(0,1)} ∈ 𝒩      (die konstante Funktion 1 liegt im Abschluss von 𝒩)
+RH  ⟺  𝟙_{(0,1)} ∈ 𝒩      (the constant function 1 lies in the closure of 𝒩)
 ⟺  inf_{c_k, θ_k, N}  ‖ 1 − Σ_{k=1}^N c_k f_{θ_k} ‖_{L²(0,1)} = 0.
 ```
-**Beweisidee:** Mellin-Transformation. Für g ∈ L²(0,1) ist Ĝ(s) = ∫_0^1 g(x) x^{s−1} dx. Die Dilatationen f_θ erzeugen via der Identität ∫_0^1 {θ/x} x^{s−1} dx = −(θ^s/s)·ζ(s)/(s−1)-artiger Faktoren einen Raum, dessen Orthogonalkomplement genau dann trivial ist, wenn ζ(s) keine Nullstellen mit Re(s) > 1/2 hat (Beurlings Theorem über invariante Teilräume / die Lage der Nullstellen von ζ als „innere Funktion").
+**Proof idea:** Mellin transform. For g ∈ L²(0,1), Ĝ(s) = ∫_0^1 g(x) x^{s−1} dx. The dilations f_θ generate, via the identity ∫_0^1 {θ/x} x^{s−1} dx = −(θ^s/s)·ζ(s)/(s−1)-type factors, a space whose orthogonal complement is trivial exactly when ζ(s) has no zeros with Re(s) > 1/2 (Beurling's theorem on invariant subspaces / the location of the zeros of ζ as an "inner function").
 
-### Báez-Duarte-Verschärfung (2003)
-Beschränke θ auf die Kehrwerte ganzer Zahlen, θ = 1/k. Mit
+### Báez-Duarte sharpening (2003)
+Restrict θ to the reciprocals of integers, θ = 1/k. With
 ```
-A_N(x) = Σ_{k=1}^N c_k {k x}   (geeignete Koeffizienten c_k)
+A_N(x) = Σ_{k=1}^N c_k {k x}   (suitable coefficients c_k)
 ```
-gilt:
+one has:
 ```
 RH  ⟺  d_N := inf_{c} ‖ 1 − Σ_{k=1}^N c_k ρ_{1/k} ‖²_{L²}  →  0   (N → ∞).
 ```
-Báez-Duarte–Balazard–Landreau–Saias zeigten zudem die **quantitative** Vermutung:
+Báez-Duarte–Balazard–Landreau–Saias also showed the **quantitative** conjecture:
 ```
 d_N  ~  (Σ_ρ 1/|ρ|²) / log N   ≈  C / log N,
 ```
-d. h. die Konvergenzrate ist (unter RH, mit einfachen Nullstellen) ∝ 1/log N — extrem langsam.
+i.e. the convergence rate is (under RH, with simple zeros) ∝ 1/log N — extremely slow.
 
-### Distanz-Formel über die Nullstellen
-Die optimale Approximationsdistanz hat eine Darstellung über die nicht-trivialen Nullstellen:
+### Distance formula via the zeros
+The optimal approximation distance has a representation via the non-trivial zeros:
 ```
-liminf_{N→∞} (log N) · d_N  ≥  Σ_ρ m_ρ²/|ρ|²    (m_ρ = Vielfachheit),
+liminf_{N→∞} (log N) · d_N  ≥  Σ_ρ m_ρ²/|ρ|²    (m_ρ = multiplicity),
 ```
-was den direkten Bezug Distanz ↔ Nullstellenlage herstellt.
+which establishes the direct link distance ↔ location of the zeros.
 
-## Quellen
+## Sources
 - [A general strong Nyman-Beurling Criterion for the Riemann Hypothesis (arXiv math/0505453)](https://arxiv.org/pdf/math/0505453)
 - [New versions of the Nyman-Beurling criterion for the Riemann hypothesis — Báez-Duarte (Wiley)](https://onlinelibrary.wiley.com/doi/pdf/10.1155/S0161171202013248)
 - [A strengthening of the Nyman-Beurling criterion for the Riemann hypothesis (arXiv math/0202141)](https://arxiv.org/pdf/math/0202141)

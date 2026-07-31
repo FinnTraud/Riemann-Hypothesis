@@ -1,80 +1,80 @@
 ---
 id: doc-30
 number: 30
-title: "Der Körper mit einem Element (𝔽₁) & Connes–Consani arithmetic site"
+title: "The Field with One Element (𝔽₁) & the Connes–Consani Arithmetic Site"
 category: solution-program
 status: open
 tags: [field-one-element, F1, connes-consani, arithmetic-site, bost-connes]
 source_file: 30_F1_field_one_element_arithmetic_site.md
-lang: de
+lang: en
 ---
 
-# Der Körper mit einem Element (𝔽₁) & Connes–Consani arithmetic site
+# The Field with One Element (𝔽₁) & the Connes–Consani Arithmetic Site
 
-**Kategorie:** Aktives Lösungsprogramm (arithmetische Geometrie)
-**Autoren / Jahre:** Tits (1956, Ursprungsidee); Kurokawa, Deninger, Manin (frühe 1990er); Connes & Consani (ab ~2009)
-**Typ:** Strategisches geometrisches Programm zur RH
-**Status:** Offen; Grundlagen im Aufbau, RH-Reduktion nicht abgeschlossen
+**Category:** Active solution program (arithmetic geometry)
+**Authors / years:** Tits (1956, original idea); Kurokawa, Deninger, Manin (early 1990s); Connes & Consani (from ~2009)
+**Type:** Strategic geometric program for the RH
+**Status:** Open; foundations under construction, RH reduction not completed
 
-## Zusammenfassung
-Das wohl ambitionierteste strukturelle Programm: die RH zu beweisen, indem man **Weils/Delignes Beweis über endlichen Körpern** (Dok. 18) auf die klassische Situation über ℤ überträgt. Dazu bräuchte man eine "Geometrie über dem **Körper mit einem Element 𝔽₁**" — ein hypothetisches Objekt, über dem Spec(ℤ) wie eine "Kurve" aussähe, sodass die geometrischen Positivitäts-/Schnittargumente von Weil greifen würden.
+## Summary
+Probably the most ambitious structural program: to prove the RH by transferring **Weil's/Deligne's proof over finite fields** (Doc. 18) to the classical situation over ℤ. This would require a "geometry over the **field with one element 𝔽₁**" — a hypothetical object over which Spec(ℤ) would look like a "curve", so that Weil's geometric positivity/intersection arguments would apply.
 
-## Die Leitidee
-- **Beobachtung (Weil/Deligne, Dok. 18):** Für Kurven über 𝔽_q ist die RH bewiesen — der Schlüssel ist Geometrie (Schnitttheorie auf C × C, étale Kohomologie, Frobenius-Operator mit Eigenwerten vom Betrag q^{1/2}).
-- **Wunsch:** Spec(ℤ) als "Kurve über 𝔽₁" auffassen und ein Produkt "Spec(ℤ) ×_{𝔽₁} Spec(ℤ)" bilden, auf dem ein Frobenius-artiger Operator wirkt, dessen "Eigenwerte" die ζ-Nullstellen sind. Die RH würde dann aus einer **Positivität der Schnittform** (analog Weils Beweis) folgen.
-- 𝔽₁ ist kein echter Körper; gesucht ist ein erweiterter geometrischer Rahmen (Monoidschemata, Λ-Ringe, Segal Γ-Ringe, Topos-Theorie), in dem dies Sinn ergibt.
+## The guiding idea
+- **Observation (Weil/Deligne, Doc. 18):** for curves over 𝔽_q the RH is proven — the key is geometry (intersection theory on C × C, étale cohomology, a Frobenius operator with eigenvalues of absolute value q^{1/2}).
+- **Wish:** view Spec(ℤ) as a "curve over 𝔽₁" and form a product "Spec(ℤ) ×_{𝔽₁} Spec(ℤ)" on which a Frobenius-like operator acts, whose "eigenvalues" are the ζ zeros. The RH would then follow from a **positivity of the intersection form** (analogous to Weil's proof).
+- 𝔽₁ is not a genuine field; what is sought is an extended geometric framework (monoid schemes, Λ-rings, Segal Γ-rings, topos theory) in which this makes sense.
 
-## Connes–Consani: der "arithmetic site"
-- Connes und Consani konstruierten einen **"arithmetic site"** (einen Topos mit Strukturgarbe), dessen Punkte über einer geeigneten Halbring-Struktur (ℝ_max etc.) eng mit dem **Adèleklassenraum** (Dok. 10) zusammenhängen.
-- Dies verbindet das 𝔽₁-Programm mit Connes' nichtkommutativer Geometrie und Spurformel: Ziel ist eine geometrische Realisierung der expliziten Formel als **Lefschetz-Spurformel** und der RH als Positivität.
-- Verwandte Bausteine: tropische Geometrie, Λ-Ringe, **Bost–Connes-System** (quantenstatistisches System mit Galois-Symmetrie, das die Riemann-ζ als Zustandssumme hat).
+## Connes–Consani: the "arithmetic site"
+- Connes and Consani constructed an **"arithmetic site"** (a topos with a structure sheaf) whose points over a suitable semiring structure (ℝ_max etc.) are closely related to the **adele-class space** (Doc. 10).
+- This connects the 𝔽₁ program with Connes' noncommutative geometry and trace formula: the goal is a geometric realization of the explicit formula as a **Lefschetz trace formula** and of the RH as positivity.
+- Related building blocks: tropical geometry, Λ-rings, the **Bost–Connes system** (a quantum-statistical system with Galois symmetry that has the Riemann ζ as its partition function).
 
-## Bedeutung / Einordnung
-- Adressiert direkt die **eigentliche Lücke**: Warum funktioniert der Beweis über 𝔽_q, aber nicht über ℤ? Antwort soll die fehlende Geometrie liefern.
-- Hochstrukturell, von führenden Mathematikern (Connes, Consani, Manin) getragen.
-- **Status:** Die nötigen geometrischen Objekte (𝔽₁-Geometrie, das "richtige" Produkt, die Kohomologie) existieren noch nicht in der Form, die einen RH-Beweis trägt. Es ist ein langfristiges Fundament-Programm, kein kurz bevorstehender Beweis.
+## Significance / context
+- Directly addresses the **actual gap**: why does the proof work over 𝔽_q but not over ℤ? The answer is supposed to be provided by the missing geometry.
+- Highly structural, carried by leading mathematicians (Connes, Consani, Manin).
+- **Status:** the required geometric objects (𝔽₁ geometry, the "right" product, the cohomology) do not yet exist in the form that would support an RH proof. It is a long-term foundational program, not an imminent proof.
 
-## Verbindung zu anderen Dokumenten
-- Direkte Fortsetzung von Dok. 18 (Weil/Deligne) und Dok. 10/11 (Connes, Prolate-Operator).
-- Teilt das Positivitäts-Leitmotiv mit Dok. 14 (Weil-Positivität).
-- Parallel zu Deningers Kohomologie-Programm (Dok. 31).
+## Connection to other documents
+- A direct continuation of Doc. 18 (Weil/Deligne) and Doc. 10/11 (Connes, prolate operator).
+- Shares the positivity leitmotiv with Doc. 14 (Weil positivity).
+- Parallel to Deninger's cohomology program (Doc. 31).
 
-## Mathematischer Kern (Formeln, Konstruktionen, Analogien)
+## Mathematical core (formulas, constructions, analogies)
 
-### Die Ziel-Analogie (Weil-Beweis übertragen)
-Im Funktionenkörper-Fall (Dok. 18) ist
+### The target analogy (transferring Weil's proof)
+In the function-field case (Doc. 18),
 ```
 ζ_C(s) = det(1 − q^{−s} F* | H¹) / [ det(1 − q^{−s}F*|H⁰) det(1 − q^{−s}F*|H²) ],
 ```
-und RH ⟺ Frobenius-Eigenwerte |α_i| = q^{1/2}. **Wunsch über ℤ:** finde Raum „Spec(ℤ) ×_{𝔽₁} Spec(ℤ)" mit Frobenius-artigem Fluss, sodass
+and RH ⟺ Frobenius eigenvalues |α_i| = q^{1/2}. **Wish over ℤ:** find a space "Spec(ℤ) ×_{𝔽₁} Spec(ℤ)" with a Frobenius-like flow such that
 ```
 ζ(s) "=" det_∞( (s − Θ)/2π | H¹ ) / [ (s/2π)(s−1 .../2π) ]
 ```
-und die γ_n = Eigenwerte von Θ reell sind (Positivität analog Weils Schnittform).
+and the γ_n = eigenvalues of Θ are real (positivity analogous to Weil's intersection form).
 
-### Monoid-/𝔽₁-Geometrie
-𝔽₁ ist kein Körper; Modelle ersetzen Ringe durch **kommutative Monoide** (Deitmar) oder **Λ-Ringe** / **Blueprints** (Lorscheid). Beispiel: Spec(𝔽₁) hat einen Punkt; 𝔾_m über 𝔽₁ ist das Monoid ℤ; „𝔽_{1^n}" entspricht der zyklischen Gruppe μ_n. Tits' Ursprung: #G(𝔽_q) → #(Weyl-Gruppe) für q → 1 (z. B. #GL_n(𝔽_q)/(q−1)^n → n! = #S_n).
+### Monoid / 𝔽₁ geometry
+𝔽₁ is not a field; models replace rings by **commutative monoids** (Deitmar) or **Λ-rings** / **blueprints** (Lorscheid). Example: Spec(𝔽₁) has one point; 𝔾_m over 𝔽₁ is the monoid ℤ; "𝔽_{1^n}" corresponds to the cyclic group μ_n. Tits' origin: #G(𝔽_q) → #(Weyl group) as q → 1 (e.g. #GL_n(𝔽_q)/(q−1)^n → n! = #S_n).
 
 ### Connes–Consani arithmetic site
-Der **arithmetic site** ist das Paar (Topos, Strukturgarbe):
+The **arithmetic site** is the pair (topos, structure sheaf):
 ```
-( N̂^× = Topos der ℕ^×-Mengen,  Strukturgarbe ℤ_max = (ℤ ∪ {−∞}, max, +) ).
+( N̂^× = topos of ℕ^×-sets,  structure sheaf ℤ_max = (ℤ ∪ {−∞}, max, +) ).
 ```
-Seine Punkte über dem Halbring ℝ_+^{max} sind die **Adèleklassen** 𝔸_ℚ/ℚ* aus Connes' Spurformel (Dok. 10). Der Frobenius wird durch die Wirkung von ℝ_+^× (Skalierung) realisiert; die explizite Formel erscheint als Lefschetz-Spurformel über diesem Situs.
+Its points over the semiring ℝ_+^{max} are the **adele classes** 𝔸_ℚ/ℚ* from Connes' trace formula (Doc. 10). The Frobenius is realized by the action of ℝ_+^× (scaling); the explicit formula appears as a Lefschetz trace formula over this site.
 
-### Bost–Connes-System (Quantenstatistik mit ζ)
-Ein C*-dynamisches System (A, σ_t) mit Hamilton-Erzeuger H, dessen **Zustandssumme** genau ζ ist:
+### Bost–Connes system (quantum statistics with ζ)
+A C*-dynamical system (A, σ_t) with Hamiltonian generator H whose **partition function** is exactly ζ:
 ```
 Z(β) = Tr(e^{−βH}) = Σ_{n=1}^∞ n^{−β} = ζ(β),
 ```
-mit einer Galois-Wirkung von Gal(ℚ^{ab}/ℚ) auf den KMS-Zuständen (Phasenübergang bei β = 1). Verbindet Klassenkörpertheorie, Quantenstatistik und ζ — Teil des 𝔽₁-Programms.
+with a Galois action of Gal(ℚ^{ab}/ℚ) on the KMS states (phase transition at β = 1). Connects class field theory, quantum statistics, and ζ — part of the 𝔽₁ program.
 
-### Status der Formeln
-Die Determinante det_∞ (zeta-regularisiert) und die benötigte H¹-Kohomologie über ℤ sind **konjektural** — die rechte Seite der „Wunschgleichung" ist nicht als wohldefiniertes geometrisches Objekt konstruiert. Daher: starkes strukturelles Programm, kein Beweis.
+### Status of the formulas
+The determinant det_∞ (zeta-regularized) and the required H¹ cohomology over ℤ are **conjectural** — the right-hand side of the "wish equation" is not constructed as a well-defined geometric object. Hence: a strong structural program, not a proof.
 
-## Quellen
+## Sources
 - [Field with one element — Wikipedia](https://en.wikipedia.org/wiki/Field_with_one_element)
 - [nLab: field with one element](https://ncatlab.org/nlab/show/field+with+one+element)
 - [An arithmetic site of Connes-Consani type for imaginary quadratic fields with class number 1 (arXiv 1703.10521)](https://arxiv.org/pdf/1703.10521)
 - [Segal's Gamma rings and universal arithmetic — Connes–Consani (arXiv 2004.08879)](https://arxiv.org/pdf/2004.08879)
-- [The Riemann Hypothesis: Arithmetic and Geometry — J. Lagarias (Übersicht)](https://websites.umich.edu/~lagarias//doc/mt-holyoke-rev.pdf)
+- [The Riemann Hypothesis: Arithmetic and Geometry — J. Lagarias (overview)](https://websites.umich.edu/~lagarias//doc/mt-holyoke-rev.pdf)

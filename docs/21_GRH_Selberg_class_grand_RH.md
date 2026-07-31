@@ -1,89 +1,89 @@
 ---
 id: doc-21
 number: 21
-title: "Verallgemeinerte, Große Riemann-Vermutung & Selberg-Klasse"
+title: "Generalized, Grand Riemann Hypothesis & the Selberg Class"
 category: generalization
 status: open
 tags: [GRH, selberg-class, grand-RH, automorphic-L-functions, langlands]
 source_file: 21_GRH_Selberg_class_grand_RH.md
-lang: de
+lang: en
 ---
 
-# Verallgemeinerte, Große Riemann-Vermutung & Selberg-Klasse
+# Generalized, Grand Riemann Hypothesis & the Selberg Class
 
-**Kategorie:** Verallgemeinerungen
-**Autoren / Jahre:** Dirichlet/Hecke (L-Funktionen), Atle Selberg (Selberg-Klasse, 1989/1992), Langlands (automorphe L-Funktionen)
-**Typ:** Verallgemeinerte Vermutungen
-**Status:** Alle offen; klassische RH ist Spezialfall
+**Category:** Generalizations
+**Authors / years:** Dirichlet/Hecke (L-functions), Atle Selberg (Selberg class, 1989/1992), Langlands (automorphic L-functions)
+**Type:** Generalized conjectures
+**Status:** All open; the classical RH is a special case
 
-## Zusammenfassung
-Die Riemann-Vermutung ist der Spezialfall einer ganzen Hierarchie von Vermutungen über die Nullstellen allgemeinerer "zeta-/L-Funktionen". Diese Verallgemeinerungen sind teils aus Anwendungssicht sogar wichtiger (z. B. die GRH in der algorithmischen Zahlentheorie).
+## Summary
+The Riemann Hypothesis is the special case of a whole hierarchy of conjectures about the zeros of more general "zeta/L-functions". These generalizations are in some respects even more important from an applications standpoint (e.g. the GRH in algorithmic number theory).
 
-## Verallgemeinerte Riemann-Vermutung (GRH)
-- Erweitert die RH auf **Dirichlet-L-Funktionen** L(s, χ) zu Dirichlet-Charakteren χ.
-- **Aussage:** Alle nicht-trivialen Nullstellen *jeder* Dirichlet-L-Funktion haben Realteil 1/2.
-- **Anwendungen:** Unter GRH folgen u. a. Schranken für die kleinste quadratische Nicht-Reste, deterministische Primzahltests (Miller-Test), Resultate über Primzahlen in arithmetischen Progressionen.
+## Generalized Riemann Hypothesis (GRH)
+- Extends the RH to **Dirichlet L-functions** L(s, χ) for Dirichlet characters χ.
+- **Statement:** all non-trivial zeros of *every* Dirichlet L-function have real part 1/2.
+- **Applications:** under GRH follow, among others, bounds for the least quadratic non-residue, deterministic primality tests (Miller test), results on primes in arithmetic progressions.
 
-## Selberg-Klasse (1989/1992)
-- Selbergs **axiomatischer** Zugang: Statt einzelner Funktionen definiert man eine **Klasse** von Dirichlet-Reihen über charakterisierende Eigenschaften (Euler-Produkt, analytische Fortsetzung, Funktionalgleichung, Ramanujan-Bedingung).
-- Für alle Funktionen dieser Klasse wird ein RH-Analogon erwartet ("RH für die Selberg-Klasse").
-- Es existieren Riesz-Typ- und Li-Typ-Kriterien speziell für die Selberg-Klasse (vgl. Dok. 14, 16).
+## Selberg class (1989/1992)
+- Selberg's **axiomatic** approach: instead of individual functions one defines a **class** of Dirichlet series via characterizing properties (Euler product, analytic continuation, functional equation, Ramanujan condition).
+- For all functions of this class an RH analogue is expected ("RH for the Selberg class").
+- There exist Riesz-type and Li-type criteria specifically for the Selberg class (cf. Doc. 14, 16).
 
-## Große Riemann-Vermutung (Grand RH, GRH)
-- **Allgemeinste Fassung:** Alle nicht-trivialen Nullstellen *aller* **automorphen L-Funktionen** (Mellin-Transformierte von Hecke-Eigenformen etc.) liegen auf der kritischen Geraden.
-- Verallgemeinert sowohl die klassische RH als auch die GRH für Dirichlet-L-Funktionen.
+## Grand Riemann Hypothesis (Grand RH, GRH)
+- **Most general version:** all non-trivial zeros of *all* **automorphic L-functions** (Mellin transforms of Hecke eigenforms, etc.) lie on the critical line.
+- Generalizes both the classical RH and the GRH for Dirichlet L-functions.
 
-## Zusammenhang / offenes Strukturproblem
-- Es wird vermutet, dass die **Selberg-Klasse = Klasse der automorphen L-Funktionen** ist — dann wären "RH für Selberg-Klasse" und "Große RH" äquivalent. Diese Gleichheit ist selbst ein wichtiges offenes Problem und Teil des **Langlands-Programms**.
+## Connection / open structural problem
+- It is conjectured that the **Selberg class = the class of automorphic L-functions** — in which case "RH for the Selberg class" and "Grand RH" would be equivalent. This equality is itself an important open problem and part of the **Langlands program**.
 
-## Bedeutung / Einordnung
-- Zeigt, dass die RH kein Einzelphänomen ist, sondern Teil eines universellen Musters über eine ganze Welt von L-Funktionen.
-- Random-Matrix-Statistik (Katz–Sarnak) sagt für *Familien* von L-Funktionen unterschiedliche Symmetrietypen (unitär, symplektisch, orthogonal) voraus — starke struktur­übergreifende Evidenz.
-- Praktisch: Viele zahlentheoretische/algorithmische Resultate hängen an GRH, nicht nur an der klassischen RH.
+## Significance / context
+- Shows that the RH is not an isolated phenomenon but part of a universal pattern across a whole world of L-functions.
+- Random-matrix statistics (Katz–Sarnak) predict different symmetry types (unitary, symplectic, orthogonal) for *families* of L-functions — strong cross-structural evidence.
+- Practically: many number-theoretic/algorithmic results depend on GRH, not just on the classical RH.
 
-## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+## Mathematical core (formulas, theorems, proof sketches)
 
-### Dirichlet-L-Funktionen (GRH)
-Für einen Dirichlet-Charakter χ mod q:
+### Dirichlet L-functions (GRH)
+For a Dirichlet character χ mod q:
 ```
 L(s, χ) = Σ_{n=1}^∞ χ(n)/n^s = ∏_p (1 − χ(p) p^{−s})^{−1}   (Re s > 1).
 ```
-**GRH:** Alle nicht-trivialen Nullstellen von L(s,χ) (für jedes primitive χ) haben Re(s) = 1/2.
+**GRH:** all non-trivial zeros of L(s,χ) (for every primitive χ) have Re(s) = 1/2.
 
-### Axiome der Selberg-Klasse 𝒮
-Eine Dirichlet-Reihe F(s) = Σ a_n n^{−s} gehört zu 𝒮, falls:
-1. **Ramanujan-Bedingung:** a_n ≪_ε n^ε.
-2. **Analytische Fortsetzung:** (s−1)^m F(s) ganz für ein m ≥ 0.
-3. **Funktionalgleichung:** Φ(s) = Q^s ∏_j Γ(λ_j s + μ_j) F(s) erfüllt Φ(s) = ω Φ̄(1 − s̄), |ω| = 1.
-4. **Euler-Produkt:** log F(s) = Σ_n b_n n^{−s} mit b_n = 0 außer für Primzahlpotenzen, b_n ≪ n^θ (θ < 1/2).
-Definierende Invarianten: **Grad** d_F = 2 Σ_j λ_j (vermutet stets ∈ ℤ_{≥0}); Beispiele: ζ (Grad 1), L(s,χ) (Grad 1), automorphe L (Grad n).
+### Axioms of the Selberg class 𝒮
+A Dirichlet series F(s) = Σ a_n n^{−s} belongs to 𝒮 if:
+1. **Ramanujan condition:** a_n ≪_ε n^ε.
+2. **Analytic continuation:** (s−1)^m F(s) entire for some m ≥ 0.
+3. **Functional equation:** Φ(s) = Q^s ∏_j Γ(λ_j s + μ_j) F(s) satisfies Φ(s) = ω Φ̄(1 − s̄), |ω| = 1.
+4. **Euler product:** log F(s) = Σ_n b_n n^{−s} with b_n = 0 except for prime powers, b_n ≪ n^θ (θ < 1/2).
+Defining invariants: **degree** d_F = 2 Σ_j λ_j (conjectured always ∈ ℤ_{≥0}); examples: ζ (degree 1), L(s,χ) (degree 1), automorphic L (degree n).
 
-### RH für die Selberg-Klasse
+### RH for the Selberg class
 ```
-Für alle F ∈ 𝒮 liegen alle nicht-trivialen Nullstellen auf Re(s) = 1/2.
+For all F ∈ 𝒮, all non-trivial zeros lie on Re(s) = 1/2.
 ```
 
-### Automorphe L-Funktionen (Große RH)
-Für eine automorphe Darstellung π von GL_n(𝔸_ℚ):
+### Automorphic L-functions (Grand RH)
+For an automorphic representation π of GL_n(𝔸_ℚ):
 ```
 L(s, π) = ∏_p ∏_{i=1}^n (1 − α_{i,p} p^{−s})^{−1}.
 ```
-**Große RH:** alle nicht-trivialen Nullstellen von L(s,π) auf Re(s) = 1/2 (für alle π).
+**Grand RH:** all non-trivial zeros of L(s,π) on Re(s) = 1/2 (for all π).
 
-### Strukturhierarchie & offene Identität
+### Structural hierarchy & open identity
 ```
-{Dirichlet/Hecke-L} ⊂ {automorphe L-Funktionen} ⊆? Selberg-Klasse 𝒮.
+{Dirichlet/Hecke-L} ⊂ {automorphic L-functions} ⊆? Selberg class 𝒮.
 ```
-Vermutung (Teil des Langlands-Programms): 𝒮 = {automorphe L-Funktionen}. Bekannt: Elemente von 𝒮 vom Grad 0 sind konstant 1; Grad zwischen 0 und 1 existiert nicht (Conrey–Ghosh / Kaczorowski–Perelli-Klassifikation der niedrigen Grade).
+Conjecture (part of the Langlands program): 𝒮 = {automorphic L-functions}. Known: elements of 𝒮 of degree 0 are the constant 1; degree strictly between 0 and 1 does not exist (Conrey–Ghosh / Kaczorowski–Perelli classification of low degrees).
 
-### Katz–Sarnak-Symmetrietypen (Random-Matrix, Dok. 06/07)
-Familien von L-Funktionen zeigen je nach Symmetrie verschiedene Niedrig-Nullstellen-Statistiken:
+### Katz–Sarnak symmetry types (random matrix, Doc. 06/07)
+Families of L-functions show different low-zero statistics according to their symmetry:
 ```
-unitär (U)  →  ζ, Dirichlet-L;   symplektisch (USp)  →  quadratische L;   orthogonal (O)  →  elliptische Kurven-L.
+unitary (U)  →  ζ, Dirichlet-L;   symplectic (USp)  →  quadratic L;   orthogonal (O)  →  elliptic-curve L.
 ```
-Diese strukturübergreifende Universalität ist starke Evidenz für die Große RH.
+This cross-structural universality is strong evidence for the Grand RH.
 
-## Quellen
+## Sources
 - [Generalized Riemann hypothesis — Wikipedia](https://en.wikipedia.org/wiki/Generalized_Riemann_hypothesis)
 - [Grand Riemann hypothesis — Wikipedia](https://en.wikipedia.org/wiki/Grand_Riemann_hypothesis)
 - [On relations equivalent to the generalized Riemann hypothesis for the Selberg class (arXiv 1511.04603)](https://arxiv.org/pdf/1511.04603)

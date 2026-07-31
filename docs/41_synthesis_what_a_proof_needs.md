@@ -1,75 +1,75 @@
 ---
 id: doc-41
 number: 41
-title: "Synthese: Querschnittsthemen & was ein erfolgreicher Beweis leisten muss"
+title: "Synthesis: Cross-Cutting Themes & What a Successful Proof Must Achieve"
 category: synthesis
 status: meta
 tags: [synthesis, positivity, spectral, geometry, necessary-conditions, evaluation]
 source_file: 41_synthesis_what_a_proof_needs.md
-lang: de
+lang: en
 ---
 
-# Synthese: Querschnittsthemen & was ein erfolgreicher Beweis leisten muss
+# Synthesis: Cross-Cutting Themes & What a Successful Proof Must Achieve
 
-**Kategorie:** Meta / Synthese (Kern-Dokument für „bulletproof")
-**Typ:** Querschnittsanalyse aller Ansätze
-**Status:** Analytische Zusammenfassung
+**Category:** Meta / synthesis (core document for "bulletproof")
+**Type:** Cross-cutting analysis of all approaches
+**Status:** Analytical summary
 
-## Zweck
-Dieses Dokument verdichtet die 40 Einzeldokumente zu **Mustern**: Was haben alle ernsthaften Ansätze gemeinsam? Welche notwendigen Bedingungen muss ein gültiger Beweis erfüllen? Es ist die strategische „Landkarte" für einen RH-Assistenten.
+## Purpose
+This document condenses the 40 individual documents into **patterns**: what do all serious approaches have in common? Which necessary conditions must a valid proof satisfy? It is the strategic "map" for an RH assistant.
 
-## 1. Drei wiederkehrende Leitmotive
-Praktisch jeder ernsthafte Ansatz lässt sich einem (oder mehreren) dieser Motive zuordnen:
+## 1. Three recurring leitmotivs
+Practically every serious approach can be assigned to one (or more) of these motifs:
 
-### (A) Positivität / Reellwurzeligkeit
-RH als Aussage, dass eine **quadratische Form positiv** bzw. eine Funktion **nur reelle Nullstellen** hat.
-- Weil-Positivität W(g⋆ḡ) ≥ 0 (Dok. 14) · Li-Koeffizienten λ_n ≥ 0 (Dok. 14) · de Branges (Dok. 20) · Laguerre–Pólya / Jensen (Dok. 29) · Lee–Yang/Newman (Dok. 33) · de-Bruijn–Newman Λ ≤ 0 (Dok. 23).
-- **Gemeinsame Hürde:** Die Positivität wird auf RH *reduziert*, aber nicht *bewiesen* — und darf nicht zirkulär angenommen werden (Dok. 35, Punkt 3).
+### (A) Positivity / real-rootedness
+RH as the statement that a **quadratic form is positive** resp. a function has **only real zeros**.
+- Weil positivity W(g⋆ḡ) ≥ 0 (Doc. 14) · Li coefficients λ_n ≥ 0 (Doc. 14) · de Branges (Doc. 20) · Laguerre–Pólya / Jensen (Doc. 29) · Lee–Yang/Newman (Doc. 33) · de Bruijn–Newman Λ ≤ 0 (Doc. 23).
+- **Common hurdle:** positivity is *reduced* to RH but not *proven* — and must not be assumed circularly (Doc. 35, point 3).
 
-### (B) Spektrale Interpretation (Hilbert–Pólya)
-Nullstellen = Eigenwerte eines selbstadjungierten / kanonischen Operators.
-- Hilbert–Pólya (Dok. 05) · Berry–Keating (Dok. 08) · Bender–Brody–Müller (Dok. 09) · Connes-Spurformel (Dok. 10) · Prolate-Operator (Dok. 11) · Selberg (Dok. 19, bewiesenes Modell) · Deninger (Dok. 31) · Bost–Connes (Dok. 34).
-- **Gemeinsame Hürde:** Der Operator muss *kanonisch aus der Arithmetik* stammen; ein erfundener Operator ist zirkulär (Dok. 35, Punkt 5).
+### (B) Spectral interpretation (Hilbert–Pólya)
+Zeros = eigenvalues of a self-adjoint / canonical operator.
+- Hilbert–Pólya (Doc. 05) · Berry–Keating (Doc. 08) · Bender–Brody–Müller (Doc. 09) · Connes trace formula (Doc. 10) · prolate operator (Doc. 11) · Selberg (Doc. 19, proven model) · Deninger (Doc. 31) · Bost–Connes (Doc. 34).
+- **Common hurdle:** the operator must arise *canonically from arithmetic*; an invented operator is circular (Doc. 35, point 5).
 
-### (C) Geometrie / Übertragung des Funktionenkörper-Falls
-RH über 𝔽_q ist bewiesen (Weil/Deligne, Dok. 18) durch Geometrie + Positivität der Schnittform. Übertragung auf ℤ:
-- 𝔽₁-Geometrie / arithmetic site (Dok. 30) · Deninger-Kohomologie (Dok. 31) · Connes-Adèle (Dok. 10).
-- **Gemeinsame Hürde:** Die nötige Geometrie/Kohomologie über Spec(ℤ) existiert noch nicht.
+### (C) Geometry / transferring the function-field case
+RH over 𝔽_q is proven (Weil/Deligne, Doc. 18) via geometry + positivity of the intersection form. Transfer to ℤ:
+- 𝔽₁ geometry / arithmetic site (Doc. 30) · Deninger cohomology (Doc. 31) · Connes adeles (Doc. 10).
+- **Common hurdle:** the required geometry/cohomology over Spec(ℤ) does not yet exist.
 
-## 2. Notwendige Bedingungen für JEDEN gültigen Beweis
-Aus den Obstruktionen (Dok. 35) destilliert:
+## 2. Necessary conditions for EVERY valid proof
+Distilled from the obstructions (Doc. 35):
 
-1. **Euler-Produkt wesentlich nutzen.** Davenport–Heilbronn (Dok. 35) zeigt: Funktionalgleichung + Fortsetzung + Wachstum reichen NICHT. Die Multiplikativität/Primzahlstruktur muss eingehen.
-2. **Zwischen „mit/ohne Euler-Produkt" unterscheiden.** Das Argument darf nicht für die Davenport–Heilbronn-Funktion gelten.
-3. **Positivität wirklich beweisen, nicht annehmen.** (Conrey–Li widerlegten de Branges' Annahme, Dok. 20.)
-4. **Keine reine Numerik.** Mertens/Skewes (Dok. 35) zeigen: endliche Evidenz kann täuschen.
-5. **Konvergenzfragen der Nullstellensumme respektieren.** Σ_ρ ist nur bedingt konvergent (Dok. 27).
-6. **Paritätsbarriere umgehen.** Reine Siebmethoden reichen nicht (Dok. 35, Punkt 3).
+1. **Use the Euler product essentially.** Davenport–Heilbronn (Doc. 35) shows: functional equation + continuation + growth do NOT suffice. The multiplicativity/prime structure must enter.
+2. **Distinguish "with/without Euler product".** The argument must not apply to the Davenport–Heilbronn function.
+3. **Actually prove positivity, do not assume it.** (Conrey–Li refuted de Branges' assumption, Doc. 20.)
+4. **No pure numerics.** Mertens/Skewes (Doc. 35) show: finite evidence can deceive.
+5. **Respect the convergence questions of the zero sum.** Σ_ρ is only conditionally convergent (Doc. 27).
+6. **Circumvent the parity barrier.** Pure sieve methods do not suffice (Doc. 35, point 3).
 
-## 3. Warum die drei Motive zusammenhängen
-- Die **explizite Formel** (Dok. 02) ist der gemeinsame Kern: Sie verbindet Nullstellen (spektral) mit Primzahlen (Euler-Produkt) und wird in (B)/(C) als **Spurformel** gelesen, in (A) als **quadratische Form** (Weil-Positivität).
-- Im bewiesenen Fall (Dok. 18, 19) fallen alle drei zusammen: Selberg-Spurformel (B) = explizite Formel, Schnitt-Positivität (A) = Weils Beweis, Geometrie (C) = die Kurve. **Das ist die Blaupause** — gesucht ist ihre Realisierung über ℤ.
+## 3. Why the three motifs are connected
+- The **explicit formula** (Doc. 02) is the common core: it links zeros (spectral) with primes (Euler product) and is read in (B)/(C) as a **trace formula**, in (A) as a **quadratic form** (Weil positivity).
+- In the proven case (Doc. 18, 19) all three coincide: Selberg trace formula (B) = explicit formula, intersection positivity (A) = Weil's proof, geometry (C) = the curve. **This is the blueprint** — what is sought is its realization over ℤ.
 
-## 4. Realistische Etappenziele (was Fortschritt wäre)
-- Positiver Anteil → 50 %+ → 100 % auf der Geraden (Dok. 04) — aber Anteil-Methoden allein reichen nicht.
-- Exponentenverbesserung in N(σ,T) (Guth–Maynard, Dok. 22) → Richtung Dichte-Hypothese (Dok. 17).
-- Ausschluss von Landau–Siegel-Nullstellen (Dok. 32) für GRH.
-- Λ ≤ 0 (de-Bruijn–Newman, Dok. 23) — aktuell 0 ≤ Λ ≤ 0,22.
-- Kanonische Konstruktion des Hilbert–Pólya-Operators / der Weil-Positivität (Dok. 10, 31) — der „große" Weg.
+## 4. Realistic milestones (what would be progress)
+- Positive proportion → 50%+ → 100% on the line (Doc. 04) — but proportion methods alone do not suffice.
+- Exponent improvement in N(σ,T) (Guth–Maynard, Doc. 22) → toward the density hypothesis (Doc. 17).
+- Exclusion of Landau–Siegel zeros (Doc. 32) for the GRH.
+- Λ ≤ 0 (de Bruijn–Newman, Doc. 23) — currently 0 ≤ Λ ≤ 0.22.
+- Canonical construction of the Hilbert–Pólya operator / Weil positivity (Doc. 10, 31) — the "grand" route.
 
-## 5. Bewertungsraster für eine vorgeschlagene Beweisidee
-| Frage | Falls problematisch → |
+## 5. Evaluation grid for a proposed proof idea
+| Question | If problematic → |
 |---|---|
-| Nutzt es das Euler-Produkt wesentlich? | Nein → wahrscheinlich falsch (Dok. 35) |
-| Gilt es auch für Davenport–Heilbronn? | Ja → falsch |
-| Positivität bewiesen oder angenommen? | Angenommen → zirkulär |
-| Operator kanonisch aus Arithmetik? | Nein → zirkulär/leer |
-| Nur endliche Numerik? | Ja → kein Beweis |
-| In Lean verifizierbar? (Dok. 37) | Nein → mit Vorsicht behandeln |
+| Does it use the Euler product essentially? | No → probably wrong (Doc. 35) |
+| Does it also apply to Davenport–Heilbronn? | Yes → wrong |
+| Positivity proven or assumed? | Assumed → circular |
+| Operator canonical from arithmetic? | No → circular/empty |
+| Only finite numerics? | Yes → not a proof |
+| Verifiable in Lean? (Doc. 37) | No → treat with caution |
 
-## Quellen (Synthese aus)
+## Sources (synthesized from)
 - [The Riemann Hypothesis — E. Bombieri (Clay)](https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf)
 - [On some reasons for doubting the Riemann hypothesis — Ivić (arXiv math/0311162)](https://arxiv.org/pdf/math/0311162)
 - [The Riemann Hypothesis over Finite Fields — J. Milne](https://www.jmilne.org/math/xnotes/pRH.html)
 - [An essay on the Riemann Hypothesis — A. Connes (arXiv 1509.05576)](https://arxiv.org/pdf/1509.05576)
-- (sowie die Dokumente 01–40 dieser Wissensbasis)
+- (as well as documents 01–40 of this knowledge base)

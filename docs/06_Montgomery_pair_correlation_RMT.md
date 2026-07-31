@@ -1,78 +1,78 @@
 ---
 id: doc-06
 number: 06
-title: "Montgomery-Paarkorrelation & Random-Matrix-Theorie (GUE)"
+title: "Montgomery Pair Correlation & Random Matrix Theory (GUE)"
 category: spectral
 status: open
 tags: [montgomery, pair-correlation, GUE, random-matrix, odlyzko]
 source_file: 06_Montgomery_pair_correlation_RMT.md
-lang: de
+lang: en
 ---
 
-# Montgomery-Paarkorrelation & Random-Matrix-Theorie (GUE)
+# Montgomery Pair Correlation & Random Matrix Theory (GUE)
 
-**Kategorie:** Spektraler Ansatz / statistische Evidenz
-**Autoren / Jahr:** Hugh Montgomery (1973), Freeman Dyson (1972/73), Andrew Odlyzko (1980er, numerisch)
-**Typ:** Statistische Vermutung & numerische Evidenz
-**Status:** Vermutung (teils bedingt bewiesen unter RH); starke numerische Bestätigung
+**Category:** Spectral approach / statistical evidence
+**Authors / year:** Hugh Montgomery (1973), Freeman Dyson (1972/73), Andrew Odlyzko (1980s, numerical)
+**Type:** Statistical conjecture & numerical evidence
+**Status:** Conjecture (partly conditionally proven under RH); strong numerical confirmation
 
-## Zusammenfassung
-1973 berechnete Hugh Montgomery die **Paarkorrelation** der Imaginärteile der nicht-trivialen ζ-Nullstellen. In einem berühmten Gespräch am Institute for Advanced Study erkannte der Physiker Freeman Dyson diese Formel sofort als die Paarkorrelationsfunktion der Eigenwerte großer zufälliger hermitescher Matrizen aus dem **Gaussian Unitary Ensemble (GUE)**. Diese unerwartete Brücke zwischen Zahlentheorie und Quantenphysik gilt als eine der wichtigsten Stützen des Hilbert–Pólya-Programms.
+## Summary
+In 1973 Hugh Montgomery computed the **pair correlation** of the imaginary parts of the non-trivial ζ zeros. In a famous conversation at the Institute for Advanced Study, the physicist Freeman Dyson immediately recognized this formula as the pair-correlation function of the eigenvalues of large random Hermitian matrices from the **Gaussian Unitary Ensemble (GUE)**. This unexpected bridge between number theory and quantum physics is regarded as one of the most important supports of the Hilbert–Pólya program.
 
-## Kernidee / die Formel
-- Montgomery zeigte (unter Annahme der RH) für die normierten Nullstellenabstände eine Paarkorrelationsfunktion der Form:
+## Core idea / the formula
+- Montgomery showed (assuming the RH) that the normalized zero spacings have a pair-correlation function of the form:
 
 ```
 R₂(u) = 1 − (sin(πu)/(πu))² + δ(u)
 ```
 
-- Genau diese Funktion beschreibt die Eigenwert-Paarkorrelation im GUE der Zufallsmatrixtheorie.
-- Interpretation: Die Nullstellen "stoßen sich ab" (level repulsion) wie Energieniveaus eines quantenchaotischen Systems — sie sind *nicht* wie zufällige unabhängige Punkte (Poisson) verteilt.
+- This is exactly the function that describes the eigenvalue pair correlation in the GUE of random matrix theory.
+- Interpretation: the zeros "repel each other" (level repulsion) like the energy levels of a quantum-chaotic system — they are *not* distributed like random independent points (Poisson).
 
-## Numerische Bestätigung (Odlyzko)
-- Andrew Odlyzko berechnete in den 1980er Jahren Millionen von Nullstellen in extrem großen Höhen (z. B. nahe der 10²⁰-ten Nullstelle) und verglich Abstandsstatistiken mit den GUE-Vorhersagen.
-- Die Übereinstimmung ist verblüffend präzise — bekannt als **Montgomery–Odlyzko-Gesetz**. Sie erstreckt sich auf höhere Korrelationen und ganze Familien von L-Funktionen (Katz–Sarnak-Philosophie).
+## Numerical confirmation (Odlyzko)
+- In the 1980s Andrew Odlyzko computed millions of zeros at extremely large heights (e.g. near the 10²⁰-th zero) and compared spacing statistics with the GUE predictions.
+- The agreement is astonishingly precise — known as the **Montgomery–Odlyzko law**. It extends to higher correlations and whole families of L-functions (Katz–Sarnak philosophy).
 
-## Bedeutung / Einordnung
-- Stärkste *statistische* Evidenz für die Existenz eines selbstadjungierten "Hilbert–Pólya-Operators" mit chaotischer Dynamik (GUE-Universalitätsklasse).
-- Inspirierte die quantenchaotischen Modelle (Berry–Keating, Dok. 08) und die Momentvermutungen (Keating–Snaith, Dok. 07).
-- **Wichtige Einschränkung:** Statistische Mimikry ist *kein Beweis* der RH — sie zeigt nur, dass die Nullstellen sich *verhalten*, als kämen sie von einem solchen Operator; der Operator selbst fehlt.
+## Significance / context
+- The strongest *statistical* evidence for the existence of a self-adjoint "Hilbert–Pólya operator" with chaotic dynamics (GUE universality class).
+- Inspired the quantum-chaotic models (Berry–Keating, Doc. 08) and the moment conjectures (Keating–Snaith, Doc. 07).
+- **Important caveat:** statistical mimicry is *not a proof* of the RH — it only shows that the zeros *behave* as if they came from such an operator; the operator itself is missing.
 
-## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+## Mathematical core (formulas, theorems, proof sketches)
 
-### Normierung der Nullstellen
-Wegen Dichte (1/2π)log(T/2π) (Dok. 02) skaliert man die Imaginärteile γ auf mittleren Abstand 1:
+### Normalization of the zeros
+Because of the density (1/2π)log(T/2π) (Doc. 02), one rescales the imaginary parts γ to mean spacing 1:
 ```
 γ̃ = γ · (1/2π) log(γ/2π)
 ```
 
-### Montgomerys Funktion und Resultat (1973)
-Definiere für α ∈ ℝ die Paarkorrelationssumme (bis Höhe T, unter RH):
+### Montgomery's function and result (1973)
+Define for α ∈ ℝ the pair-correlation sum (up to height T, under RH):
 ```
 F(α, T) = (Σ_{0<γ,γ'≤T} T^{iα(γ−γ')} w(γ−γ')) / (Σ_{0<γ≤T} 1),   w(u) = 4/(4+u²)
 ```
-**Montgomerys Satz (bedingt unter RH).** Für |α| ≤ 1 gilt
+**Montgomery's theorem (conditional on RH).** For |α| ≤ 1,
 ```
-F(α, T) ~ |α| + T^{−2|α|} log T   (T → ∞), gleichmäßig auf kompakten Teilmengen von (0,1).
+F(α, T) ~ |α| + T^{−2|α|} log T   (T → ∞), uniformly on compact subsets of (0,1).
 ```
-**Montgomerys Vermutung:** Für |α| ≥ 1 ist F(α, T) ~ 1. Durch Fourier-Inversion folgt für jede geeignete Testfunktion r:
+**Montgomery's conjecture:** For |α| ≥ 1, F(α, T) ~ 1. By Fourier inversion it follows for every suitable test function r:
 ```
 Σ_{γ≠γ'} r((γ̃ − γ̃')) ~ ∫ r(u) [ 1 − (sin(πu)/(πu))² ] du
 ```
 
-### Die Paarkorrelationsfunktion (GUE-Kern)
+### The pair-correlation function (GUE kernel)
 ```
 R₂(u) = 1 − ( sin(πu)/(πu) )² + δ(u)
 ```
-Das ist **exakt** der Zwei-Punkt-Korrelationskern des Gaussian Unitary Ensemble (GUE): Für Hermitesche Zufallsmatrizen ist die n-Punkt-Korrelation det[ K(x_i,x_j) ] mit dem **Sinus-Kern** K(x,y) = sin(π(x−y))/(π(x−y)). Daher „Niveau-Abstoßung": R₂(u) → 0 wie (πu)²/3 für u → 0 (vgl. Poisson: R₂ ≡ 1, keine Abstoßung).
+This is **exactly** the two-point correlation kernel of the Gaussian Unitary Ensemble (GUE): for Hermitian random matrices the n-point correlation is det[ K(x_i,x_j) ] with the **sine kernel** K(x,y) = sin(π(x−y))/(π(x−y)). Hence "level repulsion": R₂(u) → 0 like (πu)²/3 as u → 0 (cf. Poisson: R₂ ≡ 1, no repulsion).
 
-### Dyson-Erkennung & numerische Bestätigung
-Dyson identifizierte 1 − (sin πu/πu)² sofort als GUE-Kern. Odlyzko verifizierte numerisch die **Nächste-Nachbar-Abstandsverteilung** p(s) (Wigner-Surmise-artig, p(s) ≈ (32/π²)s² e^{−4s²/π}) und höhere Korrelationen für Millionen Nullstellen nahe der 10²⁰-ten — Übereinstimmung auf mehrere Dezimalstellen.
+### Dyson recognition & numerical confirmation
+In 1972/73 Dyson immediately identified 1 − (sin πu/πu)² as the GUE kernel. Odlyzko numerically verified the **nearest-neighbor spacing distribution** p(s) (Wigner-surmise-like, p(s) ≈ (32/π²)s² e^{−4s²/π}) and higher correlations for millions of zeros near the 10²⁰-th — agreement to several decimal places.
 
-### Grenze als Beweis
-F(α,T) ist nur für |α| ≤ 1 *unbedingt unter RH* bekannt; der Bereich |α| ≥ 1 (Montgomerys Vermutung) ist offen. Selbst vollständig bewiesen wäre es Statistik, kein Operator ⇒ kein RH-Beweis.
+### Limit as a proof
+F(α,T) is only known *unconditionally under RH* for |α| ≤ 1; the range |α| ≥ 1 (Montgomery's conjecture) is open. Even if fully proven, it would be statistics, not an operator ⇒ no RH proof.
 
-## Quellen
+## Sources
 - [Montgomery's pair correlation conjecture — Wikipedia](https://en.wikipedia.org/wiki/Montgomery's_pair_correlation_conjecture)
 - [Montgomery's Pair Correlation Conjecture — Wolfram MathWorld](https://mathworld.wolfram.com/MontgomerysPairCorrelationConjecture.html)
 - [Pair Correlation Conjecture for the Zeros of the Riemann Zeta-function I (arXiv 2503.15449)](https://arxiv.org/abs/2503.15449)

@@ -1,68 +1,68 @@
 ---
 id: doc-35
 number: 35
-title: "Obstruktionen & Barrieren: Warum naive Ansätze scheitern MÜSSEN"
+title: "Obstructions & Barriers: Why Naive Approaches MUST Fail"
 category: obstruction
 status: meta
 tags: [obstructions, davenport-heilbronn, parity-problem, mertens-warning, skewes, checklist]
 source_file: 35_obstructions_barriers.md
-lang: de
+lang: en
 ---
 
-# Obstruktionen & Barrieren: Warum naive Ansätze scheitern MÜSSEN
+# Obstructions & Barriers: Why Naive Approaches MUST Fail
 
-**Kategorie:** Meta / Negativresultate (entscheidend für „bulletproof")
-**Autoren / Jahre:** Davenport–Heilbronn (1936); Bombieri; Ivić („Reasons for doubting", 2003); diverse
-**Typ:** Bekannte Hindernisse, die jeder Beweisversuch überwinden muss
-**Status:** Etablierte Negativresultate / Warnschilder
+**Category:** Meta / negative results (crucial for "bulletproof")
+**Authors / years:** Davenport–Heilbronn (1936); Bombieri; Ivić ("Reasons for doubting", 2003); various
+**Type:** Known obstacles that every proof attempt must overcome
+**Status:** Established negative results / warning signs
 
-## Zusammenfassung
-Dieses Dokument sammelt die **bekannten Gründe, warum ganze Klassen von Beweisansätzen nicht funktionieren können**. Für einen RH-Assistenten ist das die wichtigste „Schutzschicht": Es erlaubt, vorgeschlagene Beweisideen sofort gegen bekannte Obstruktionen zu testen und Sackgassen zu erkennen.
+## Summary
+This document collects the **known reasons why entire classes of proof approaches cannot work**. For an RH assistant this is the most important "protective layer": it makes it possible to test proposed proof ideas immediately against known obstructions and to recognize dead ends.
 
-## 1. Die Davenport–Heilbronn-Funktion — der „fast-ζ"-Gegenbeweis
-**Fakt (Davenport–Heilbronn 1936).** Es gibt eine Dirichlet-Reihe f(s), die
-- eine **Funktionalgleichung** vom ζ-Typ erfüllt (s ↔ 1−s),
-- eine analytische Fortsetzung besitzt,
-- **unendlich viele Nullstellen auf** der kritischen Geraden hat,
-- aber **auch Nullstellen ABSEITS** der Geraden (sogar im Bereich Re(s) > 1) besitzt — das RH-Analogon ist also FALSCH.
+## 1. The Davenport–Heilbronn function — the "almost-ζ" counterexample
+**Fact (Davenport–Heilbronn 1936).** There is a Dirichlet series f(s) that
+- satisfies a **functional equation** of ζ type (s ↔ 1−s),
+- has an analytic continuation,
+- has **infinitely many zeros on** the critical line,
+- but **also has zeros OFF** the line (even in the region Re(s) > 1) — so the RH analogue is FALSE.
 
-### Konstruktion (Formel)
-Mit einem nicht-prinzipalen Charakter mod 5 und einer Phase ξ wählt man
+### Construction (formula)
+With a non-principal character mod 5 and a phase ξ, one takes
 ```
 f(s) = (1 − i τ)/2 · L(s, χ) + (1 + i τ)/2 · L(s, χ̄),   τ = (√(10 − 2√5) − 2)/(√5 − 1),
 ```
-eine Linearkombination zweier Dirichlet-L-Funktionen mit gemeinsamer Funktionalgleichung.
+a linear combination of two Dirichlet L-functions with a common functional equation.
 
-### Die entscheidende Lehre: Euler-Produkt ist unverzichtbar
-f(s) hat **kein Euler-Produkt** (die Linearkombination zweier L-Funktionen ist nicht mehr multiplikativ). **Konsequenz:**
-> Jeder RH-Beweis, der nur Funktionalgleichung + analytische Fortsetzung + Wachstumsverhalten benutzt, MUSS scheitern — denn f hätte dieselben Eigenschaften, verletzt aber die RH. Ein gültiger Beweis muss das **Euler-Produkt** (Multiplikativität / Primzahlstruktur) WESENTLICH verwenden.
+### The decisive lesson: the Euler product is indispensable
+f(s) has **no Euler product** (the linear combination of two L-functions is no longer multiplicative). **Consequence:**
+> Every RH proof that uses only functional equation + analytic continuation + growth behavior MUST fail — because f would have the same properties but violates the RH. A valid proof must use the **Euler product** (multiplicativity / prime structure) ESSENTIALLY.
 
-Dies ist die schärfste bekannte Obstruktion. Sie disqualifiziert sofort viele „elementare" und rein funktionentheoretische Beweisversuche (vgl. Dok. 27).
+This is the sharpest known obstruction. It immediately disqualifies many "elementary" and purely function-theoretic proof attempts (cf. Doc. 27).
 
-## 2. Die Selberg-Klasse-Schranke
-In der Selberg-Klasse (Dok. 21) wird die RH nur für Funktionen **mit Euler-Produkt** erwartet. Funktionen mit Grad 1 ohne Euler-Produkt (wie Davenport–Heilbronn) sind Gegenbeispiele. ⇒ Jeder Beweis muss zwischen „mit" und „ohne" Euler-Produkt unterscheiden können.
+## 2. The Selberg-class bound
+In the Selberg class (Doc. 21), the RH is expected only for functions **with an Euler product**. Functions of degree 1 without an Euler product (like Davenport–Heilbronn) are counterexamples. ⇒ every proof must be able to distinguish "with" from "without" an Euler product.
 
-## 3. Das Paritätsproblem (Sieb-Methoden)
-Klassische Siebmethoden (Brun, Selberg) können **prinzipiell** nicht zwischen Zahlen mit gerader und ungerader Anzahl von Primfaktoren unterscheiden (Paritätsbarriere, Selberg). Da die Möbius-Funktion μ(n) = (−1)^{Ω(n)} genau diese Parität misst und 1/ζ = Σ μ(n)/n^s, können reine Siebargumente die für die RH nötige Kontrolle über M(x) (Dok. 16) nicht liefern.
+## 3. The parity problem (sieve methods)
+Classical sieve methods (Brun, Selberg) can **in principle** not distinguish between numbers with an even and an odd number of prime factors (the parity barrier, Selberg). Since the Möbius function μ(n) = (−1)^{Ω(n)} measures exactly this parity and 1/ζ = Σ μ(n)/n^s, pure sieve arguments cannot provide the control over M(x) (Doc. 16) needed for the RH.
 
-## 4. Gründe zum Zweifeln (Ivić 2003) — Vorsicht vor „zu schöner" Evidenz
-- **Mertens-Vermutung widerlegt** (Dok. 16): |M(x)| < √x scheint bis 10^{14} zu gelten, ist aber falsch. Numerik täuscht.
-- **Skewes-Zahl:** π(x) < Li(x) gilt für alle berechenbaren x, kehrt sich aber bei ~10^{316} um (Littlewood: unendlich oft beide Vorzeichen). ⇒ „Computergestützte Bestätigung bis 10^{N}" beweist nichts.
-- **S(T)-Wachstum:** Der Argumentterm S(T) (Dok. 02) ist im Mittel klein, wird aber (unter RH) unbeschränkt — sehr hohe Nullstellen könnten unerwartetes Verhalten zeigen, das bei heutigen Höhen unsichtbar ist.
-- Sehr nahe Nullstellenpaare (**Lehmer-Paare**, Dok. 23) zeigen, dass die RH (falls wahr) nur „knapp" gilt — keine komfortable Marge.
+## 4. Reasons for doubting (Ivić 2003) — beware of "too beautiful" evidence
+- **Mertens conjecture refuted** (Doc. 16): |M(x)| < √x seems to hold up to 10^{14}, but is false. Numerics deceive.
+- **Skewes number:** π(x) < Li(x) holds for all computable x, but reverses at ~10^{316} (Littlewood: both signs infinitely often). ⇒ "computer confirmation up to 10^{N}" proves nothing.
+- **S(T) growth:** the argument term S(T) (Doc. 02) is small on average but (under RH) becomes unbounded — very high zeros could show unexpected behavior invisible at today's heights.
+- Very close zero pairs (**Lehmer pairs**, Doc. 23) show that the RH (if true) holds only "narrowly" — no comfortable margin.
 
-## 5. Warum spektrale Ansätze nicht „geschenkt" sind
-- Ein Hilbert–Pólya-Operator (Dok. 05) muss **kanonisch aus der Arithmetik** kommen; ein ad-hoc-Operator mit Spektrum {γ_n} zu „erfinden" beweist nichts (man kann zu jeder reellen Folge einen selbstadjungierten Operator angeben — zirkulär, wenn man die Realität schon annimmt). Genau das ist die Lücke bei Bender–Brody–Müller (Dok. 09).
-- Connes' Programm umgeht dies, indem die Positivität *unabhängig* gezeigt werden müsste — und genau das ist offen (Dok. 10).
+## 5. Why spectral approaches are not "free"
+- A Hilbert–Pólya operator (Doc. 05) must arise **canonically from arithmetic**; to "invent" an ad-hoc operator with spectrum {γ_n} proves nothing (one can produce a self-adjoint operator for any real sequence — circular if one already assumes reality). This is exactly the gap in Bender–Brody–Müller (Doc. 09).
+- Connes' program circumvents this by requiring the positivity to be shown *independently* — and exactly that is open (Doc. 10).
 
-## Checkliste für vorgeschlagene Beweise (Anti-Crackpot-Filter)
-1. **Nutzt der Beweis das Euler-Produkt wesentlich?** Falls nein → fast sicher falsch (Davenport–Heilbronn).
-2. **Würde dasselbe Argument für eine L-Funktion ohne Euler-Produkt gelten?** Falls ja → falsch.
-3. **Wird Positivität (Li/Weil/de Branges) angenommen oder bewiesen?** Annahme → zirkulär (Dok. 14, 20).
-4. **Beruht die Evidenz nur auf endlicher Numerik?** → kein Beweis (Mertens, Skewes).
-5. **Vertauscht der Beweis Limes/Summe über die nicht absolut konvergente Nullstellensumme?** → Fehler (Dok. 27).
+## Checklist for proposed proofs (anti-crackpot filter)
+1. **Does the proof use the Euler product essentially?** If no → almost certainly wrong (Davenport–Heilbronn).
+2. **Would the same argument apply to an L-function without an Euler product?** If yes → wrong.
+3. **Is positivity (Li/Weil/de Branges) assumed or proven?** Assumed → circular (Doc. 14, 20).
+4. **Does the evidence rest only on finite numerics?** → not a proof (Mertens, Skewes).
+5. **Does the proof interchange limit/sum over the non-absolutely-convergent zero sum?** → error (Doc. 27).
 
-## Quellen
+## Sources
 - [Zeros of the Davenport-Heilbronn Counterexample (AMS Math. Comp.)](https://www.ams.org/journals/mcom/2007-76-260/S0025-5718-07-01999-0/S0025-5718-07-01999-0.pdf)
 - [On some reasons for doubting the Riemann hypothesis — A. Ivić (arXiv math/0311162)](https://arxiv.org/pdf/math/0311162)
 - [On Davenport and Heilbronn-Type of Functions (arXiv 1602.06328)](https://arxiv.org/abs/1602.06328)

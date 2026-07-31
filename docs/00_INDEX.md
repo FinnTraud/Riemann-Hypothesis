@@ -1,97 +1,97 @@
 ---
 id: doc-00
 number: 00
-title: "Riemann Hypothesis — Dokumenten-Index (RAG Knowledge Base)"
+title: "Riemann Hypothesis — Document Index (RAG Knowledge Base)"
 category: index
 status: reference
 tags: [index, overview]
 source_file: 00_INDEX.md
-lang: de
+lang: en
 ---
 
-# Riemann Hypothesis — Dokumenten-Index (RAG Knowledge Base)
+# Riemann Hypothesis — Document Index (RAG Knowledge Base)
 
-> Diese Wissensbasis enthält je ein eigenständiges Dokument pro Paper, Beweisansatz, Kriterium, gescheitertem Beweis oder Meilenstein rund um die Riemann-Vermutung (Riemann Hypothesis, RH). Jede Datei ist als unabhängig abrufbarer Chunk für Vektordatenbank / RAG konzipiert: einheitliche Struktur (Metadaten → Zusammenfassung → Kernidee → Status → Bedeutung → Quellen). Stand: Juni 2026.
+> This knowledge base contains one self-contained document per paper, proof approach, criterion, failed proof, or milestone around the Riemann Hypothesis (RH). Each file is designed as an independently retrievable chunk for a vector database / RAG: uniform structure (metadata → summary → core idea → status → significance → sources). As of: June 2026.
 
-## Kategorien und Dokumente
+## Categories and documents
 
-### A. Fundamente
-- `01_Riemann_1859_original_paper.md` — Riemanns Originalarbeit 1859, Funktionalgleichung, Riemann-Siegel-Formel
-- `02_Riemann_von_Mangoldt_formula_explicit_formula.md` — Nullstellen-Zählformel N(T) und explizite Formel (Primzahlen ↔ Nullstellen)
+### A. Foundations
+- `01_Riemann_1859_original_paper.md` — Riemann's original 1859 paper, functional equation, Riemann–Siegel formula
+- `02_Riemann_von_Mangoldt_formula_explicit_formula.md` — zero-counting formula N(T) and explicit formula (primes ↔ zeros)
 
-### B. Partielle Resultate (Nullstellen auf der kritischen Geraden)
-- `03_Hardy_1914_infinitely_many_zeros.md` — Hardy: unendlich viele Nullstellen auf der kritischen Geraden
-- `04_Levinson_Conrey_positive_proportion.md` — Levinson (1/3), Conrey (2/5), >41 % positiver Anteil
+### B. Partial results (zeros on the critical line)
+- `03_Hardy_1914_infinitely_many_zeros.md` — Hardy: infinitely many zeros on the critical line
+- `04_Levinson_Conrey_positive_proportion.md` — Levinson (1/3), Conrey (2/5), >41% positive proportion
 
-### C. Spektrale Ansätze / Hilbert–Pólya-Programm
-- `05_Hilbert_Polya_conjecture.md` — Hilbert–Pólya-Vermutung (selbstadjungierter Operator)
-- `06_Montgomery_pair_correlation_RMT.md` — Montgomery-Paarkorrelation & Zufallsmatrizen (GUE)
-- `07_Keating_Snaith_moments.md` — Keating–Snaith: Momente via charakteristische Polynome (CUE)
-- `08_Berry_Keating_xp_model.md` — Berry–Keating H = xp Quantenchaos-Modell
-- `09_Bender_Brody_Muller_2017_Hamiltonian.md` — Bender–Brody–Müller PT-symmetrischer Hamiltonian (2017)
-- `10_Connes_noncommutative_geometry.md` — Connes: Spurformel & nichtkommutative Geometrie
-- `11_Connes_Moscovici_prolate_spheroidal.md` — Connes–Moscovici: Prolate-Spheroidal-Operator (2021–2022)
+### C. Spectral approaches / Hilbert–Pólya program
+- `05_Hilbert_Polya_conjecture.md` — Hilbert–Pólya conjecture (self-adjoint operator)
+- `06_Montgomery_pair_correlation_RMT.md` — Montgomery pair correlation & random matrices (GUE)
+- `07_Keating_Snaith_moments.md` — Keating–Snaith: moments via characteristic polynomials (CUE)
+- `08_Berry_Keating_xp_model.md` — Berry–Keating H = xp quantum-chaos model
+- `09_Bender_Brody_Muller_2017_Hamiltonian.md` — Bender–Brody–Müller PT-symmetric Hamiltonian (2017)
+- `10_Connes_noncommutative_geometry.md` — Connes: trace formula & noncommutative geometry
+- `11_Connes_Moscovici_prolate_spheroidal.md` — Connes–Moscovici: prolate spheroidal operator (2021–2022)
 
-### D. Analytische Ansätze & äquivalente Kriterien
-- `12_zero_free_regions.md` — Nullstellenfreie Regionen (de la Vallée Poussin → Vinogradov–Korobov)
-- `13_Nyman_Beurling_Baez_Duarte.md` — Nyman–Beurling-Kriterium & Báez-Duarte-Verschärfung
-- `14_Li_criterion_Bombieri_Lagarias_Weil_positivity.md` — Li-Kriterium, Bombieri–Lagarias, Weil-Positivität
-- `15_Robin_inequality.md` — Robins Ungleichung (arithmetisches Kriterium)
-- `16_Mertens_function_Riesz_criterion.md` — Mertens-Funktion & Riesz-Kriterium (Möbius)
-- `17_Lindelof_density_hypothesis.md` — Lindelöf-Hypothese & Dichte-Hypothese
+### D. Analytic approaches & equivalent criteria
+- `12_zero_free_regions.md` — zero-free regions (de la Vallée Poussin → Vinogradov–Korobov)
+- `13_Nyman_Beurling_Baez_Duarte.md` — Nyman–Beurling criterion & Báez-Duarte sharpening
+- `14_Li_criterion_Bombieri_Lagarias_Weil_positivity.md` — Li criterion, Bombieri–Lagarias, Weil positivity
+- `15_Robin_inequality.md` — Robin's inequality (arithmetic criterion)
+- `16_Mertens_function_Riesz_criterion.md` — Mertens function & Riesz criterion (Möbius)
+- `17_Lindelof_density_hypothesis.md` — Lindelöf hypothesis & density hypothesis
 
-### E. Bewiesene Analoga (algebraisch/geometrisch)
-- `18_Weil_conjectures_function_fields_Deligne.md` — Weil-Vermutungen, RH über endlichen Körpern (Deligne, BEWIESEN)
-- `19_Selberg_trace_formula_zeta.md` — Selberg-Spurformel & Selberg-Zetafunktion (RH-Analogon BEWIESEN)
+### E. Proven analogues (algebraic/geometric)
+- `18_Weil_conjectures_function_fields_Deligne.md` — Weil conjectures, RH over finite fields (Deligne, PROVEN)
+- `19_Selberg_trace_formula_zeta.md` — Selberg trace formula & Selberg zeta function (RH analogue PROVEN)
 
 ### F. de Branges
-- `20_de_Branges_Hilbert_spaces.md` — de Branges: Hilberträume ganzer Funktionen (mehrfach gescheiterte Beweise)
+- `20_de_Branges_Hilbert_spaces.md` — de Branges: Hilbert spaces of entire functions (repeatedly failed proofs)
 
-### G. Verallgemeinerungen
-- `21_GRH_Selberg_class_grand_RH.md` — Verallgemeinerte / Große Riemann-Vermutung, Selberg-Klasse
+### G. Generalizations
+- `21_GRH_Selberg_class_grand_RH.md` — Generalized / Grand Riemann Hypothesis, Selberg class
 
-### H. Aktuelle Durchbrüche
-- `22_Guth_Maynard_2024.md` — Guth–Maynard Nullstellendichte-Durchbruch (2024)
-- `23_de_Bruijn_Newman_constant_Polymath15.md` — De-Bruijn–Newman-Konstante, Rodgers–Tao, Polymath15
+### H. Recent breakthroughs
+- `22_Guth_Maynard_2024.md` — Guth–Maynard zero-density breakthrough (2024)
+- `23_de_Bruijn_Newman_constant_Polymath15.md` — de Bruijn–Newman constant, Rodgers–Tao, Polymath15
 
-### I. Numerische Verifikation
-- `24_computational_verification.md` — Odlyzko, Platt (rigoros), ZetaGrid, Gourdon–Demichel
+### I. Numerical verification
+- `24_computational_verification.md` — Odlyzko, Platt (rigorous), ZetaGrid, Gourdon–Demichel
 
-### J. Gescheiterte / umstrittene Beweise
-- `25_Atiyah_2018_failed_proof.md` — Atiyahs Beweisversuch 2018 (Todd-Funktion)
-- `26_Nash_failed_attempt.md` — John Nashs Versuch (1959)
-- `27_other_disputed_claimed_proofs.md` — Weitere zurückgezogene/fehlerhafte Behauptungen
+### J. Failed / disputed proofs
+- `25_Atiyah_2018_failed_proof.md` — Atiyah's 2018 proof attempt (Todd function)
+- `26_Nash_failed_attempt.md` — John Nash's attempt (1959)
+- `27_other_disputed_claimed_proofs.md` — Further retracted/erroneous claims
 
-### K. KI-Kontext
-- `28_AI_and_RH.md` — KI/Machine Learning und die Riemann-Vermutung (Studienarbeits-Kontext)
+### K. AI context
+- `28_AI_and_RH.md` — AI/machine learning and the Riemann Hypothesis (student-paper context)
 
-### L. Weitere aktive Lösungsprogramme (potenziell beweisrelevant)
-- `29_Jensen_Polya_Laguerre_Polya_GORZ.md` — Jensen–Pólya-Programm, Laguerre–Pólya-Klasse, Griffin–Ono–Rolen–Zagier (2019)
-- `30_F1_field_one_element_arithmetic_site.md` — Körper mit einem Element 𝔽₁, Connes–Consani arithmetic site
-- `31_Deninger_cohomology_foliated_dynamical.md` — Deningers Kohomologie-Programm & dynamische Systeme auf gefolierten Räumen
-- `32_Landau_Siegel_zeros_Zhang.md` — Landau–Siegel-(Ausnahme-)Nullstellen & Yitang Zhang (2022)
-- `33_statistical_mechanics_Lee_Yang.md` — Statistische Mechanik & Lee–Yang-Analogie (Newman)
-- `34_Bost_Connes_system.md` — Bost–Connes-Quantenstatistik (ζ als Zustandssumme)
+### L. Further active solution programs (potentially proof-relevant)
+- `29_Jensen_Polya_Laguerre_Polya_GORZ.md` — Jensen–Pólya program, Laguerre–Pólya class, Griffin–Ono–Rolen–Zagier (2019)
+- `30_F1_field_one_element_arithmetic_site.md` — field with one element 𝔽₁, Connes–Consani arithmetic site
+- `31_Deninger_cohomology_foliated_dynamical.md` — Deninger's cohomology program & dynamical systems on foliated spaces
+- `32_Landau_Siegel_zeros_Zhang.md` — Landau–Siegel (exceptional) zeros & Yitang Zhang (2022)
+- `33_statistical_mechanics_Lee_Yang.md` — statistical mechanics & the Lee–Yang analogy (Newman)
+- `34_Bost_Connes_system.md` — Bost–Connes quantum statistics (ζ as the partition function)
 
-### M. Meta / „Bulletproof"-Schicht (Obstruktionen, Synthese, Verifikation)
-- `35_obstructions_barriers.md` — **Warum naive Ansätze scheitern MÜSSEN** (Davenport–Heilbronn, Parität, Mertens/Skewes-Warnungen) + Anti-Crackpot-Checkliste
-- `36_consequences_of_RH.md` — Was aus der RH folgt (Primzahlen, Miller–Rabin, Klassenzahlen …)
-- `37_formalization_lean_proof_assistants.md` — Lean/mathlib-Formalisierung als Verifikations-Gateway
-- `38_Bombieri_official_problem_statement.md` — Offizielle Clay-Problemstellung (autoritative Referenz)
-- `39_Cramer_probabilistic_model.md` — Cramér-Modell & probabilistische Heuristiken (inkl. Maier-Warnung)
-- `40_glossary_notation.md` — Glossar & Notation (verbessert Retrieval)
-- `41_synthesis_what_a_proof_needs.md` — **Synthese: Querschnittsmotive & notwendige Bedingungen für einen gültigen Beweis**
-- `42_timeline_and_reading_list.md` — Zeittafel & kanonische Leseliste (Titchmarsh, Iwaniec–Kowalski, Conrey, AIM, LMFDB)
-- `43_Epstein_zeta_Selberg_class_rigidity.md` — **Epstein-Zeta & Selberg-Klassen-Rigidität: welche Eigenschaft die Gerade erzwingt** (Tier-1-Obstruktion)
-- `44_Lapidus_fractal_strings_spectral_operator.md` — Lapidus: fraktale Saiten, inverses Spektralproblem (D=1/2), Spektraloperator
-- `45_further_equivalent_criteria.md` — Volchkov, Sekatskii, Redheffer-Matrix, Salem, BBLS-quantitativ
-- `46_Voronin_universality.md` — Voronin-Universalität (Meta-Obstruktion gegen „weiche" Beweise)
-- `47_physics_layer_primon_gas_quantum_graphs.md` — Primon-Gas, Schumayer–Hutchinson, Sierra Rindler–Dirac, Quantengraphen
-- `48_Meyer_Kurokawa_algebraic_programs.md` — Meyer (Distributionen), Kurokawa (absolute Zeta)
-- `49_live_analytic_frontier.md` — Live-Front 2019–2026: explizite/log-freie Dichte, Tao-Programm, Nelson-Subkonvexität, Harper-Momente
+### M. Meta / "bulletproof" layer (obstructions, synthesis, verification)
+- `35_obstructions_barriers.md` — **Why naive approaches MUST fail** (Davenport–Heilbronn, parity, Mertens/Skewes warnings) + anti-crackpot checklist
+- `36_consequences_of_RH.md` — What follows from the RH (primes, Miller–Rabin, class numbers …)
+- `37_formalization_lean_proof_assistants.md` — Lean/mathlib formalization as a verification gateway
+- `38_Bombieri_official_problem_statement.md` — Official Clay problem statement (authoritative reference)
+- `39_Cramer_probabilistic_model.md` — Cramér model & probabilistic heuristics (incl. Maier warning)
+- `40_glossary_notation.md` — Glossary & notation (improves retrieval)
+- `41_synthesis_what_a_proof_needs.md` — **Synthesis: cross-cutting motifs & necessary conditions for a valid proof**
+- `42_timeline_and_reading_list.md` — Timeline & canonical reading list (Titchmarsh, Iwaniec–Kowalski, Conrey, AIM, LMFDB)
+- `43_Epstein_zeta_Selberg_class_rigidity.md` — **Epstein zeta & Selberg-class rigidity: which property forces the line** (Tier-1 obstruction)
+- `44_Lapidus_fractal_strings_spectral_operator.md` — Lapidus: fractal strings, inverse spectral problem (D=1/2), spectral operator
+- `45_further_equivalent_criteria.md` — Volchkov, Sekatskii, Redheffer matrix, Salem, BBLS quantitative
+- `46_Voronin_universality.md` — Voronin universality (meta-obstruction against "soft" proofs)
+- `47_physics_layer_primon_gas_quantum_graphs.md` — Primon gas, Schumayer–Hutchinson, Sierra Rindler–Dirac, quantum graphs
+- `48_Meyer_Kurokawa_algebraic_programs.md` — Meyer (distributions), Kurokawa (absolute zeta)
+- `49_live_analytic_frontier.md` — Live frontier 2019–2026: explicit/log-free density, Tao program, Nelson subconvexity, Harper moments
 
-## Quellen-Verifikation / Recherche
-Diese Wissensbasis wurde durch einen 5-Schritt-Recherche-Agenten auf Vollständigkeit geprüft (Stand Juni 2026); die Dokumente 43–49 schließen die dabei identifizierten Lücken. Hinweise zur Nutzung im Vektor-/MCP-Server: siehe `README_RAG.md`.
+## Source verification / research
+This knowledge base was checked for completeness by a 5-step research agent (as of June 2026); documents 43–49 close the gaps identified in the process. Notes on use in a vector/MCP server: see `README_RAG.md`.
 
-## Übergeordnete Übersichtsdatei
-Die Datei `../Riemann_Hypothesis_Proof_Approaches.md` (eine Ebene höher) enthält die zusammenfassende Gesamtübersicht aller Ansätze in einem Dokument.
+## Overarching survey file
+The file `../Riemann_Hypothesis_Proof_Approaches.md` (one level up) contains the summarizing overall survey of all approaches in a single document.

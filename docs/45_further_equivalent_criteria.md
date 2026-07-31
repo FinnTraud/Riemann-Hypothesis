@@ -1,70 +1,70 @@
 ---
 id: doc-45
 number: 45
-title: "Weitere äquivalente Kriterien (Volchkov, Sekatskii, Redheffer, Salem, BBLS-quantitativ)"
+title: "Further Equivalent Criteria (Volchkov, Sekatskii, Redheffer, Salem, BBLS quantitative)"
 category: criterion
 status: open
 tags: [volchkov, sekatskii, redheffer-matrix, salem, baez-duarte-quantitative]
 source_file: 45_further_equivalent_criteria.md
-lang: de
+lang: en
 ---
 
-# Weitere äquivalente Kriterien (Volchkov, Sekatskii, Redheffer, Salem, BBLS-quantitativ)
+# Further Equivalent Criteria (Volchkov, Sekatskii, Redheffer, Salem, BBLS quantitative)
 
-**Kategorie:** Äquivalente Kriterien (Ergänzung zu Dok. 13–16)
-**Autoren / Jahre:** Salem (1953), Redheffer (1977), Volchkov (1995), Báez-Duarte–Balazard–Landreau–Saias (2000), Sekatskii–Beltraminelli–Merlini (2009–2012)
-**Typ:** Zur RH äquivalente Aussagen
-**Status:** Äquivalenzen bewiesen; jeweils unbewiesen für ζ
+**Category:** Equivalent criteria (supplement to Doc. 13–16)
+**Authors / years:** Salem (1953), Redheffer (1977), Volchkov (1995), Báez-Duarte–Balazard–Landreau–Saias (2000), Sekatskii–Beltraminelli–Merlini (2009–2012)
+**Type:** Statements equivalent to the RH
+**Status:** Equivalences proven; each unproven for ζ
 
-## Zusammenfassung
-Sammlung weiterer zur RH äquivalenter Kriterien, die nicht in den Hauptdokumenten 13–16 stehen. Sie liefern alternative analytische, integrale und matrixbasierte „Angriffsflächen".
+## Summary
+A collection of further criteria equivalent to the RH that are not in the main documents 13–16. They provide alternative analytic, integral, and matrix-based "attack surfaces".
 
-## Mathematischer Kern (Formeln, Sätze)
+## Mathematical core (formulas, theorems)
 
-### Volchkov-Kriterium (1995) — Integral über log ζ
+### Volchkov criterion (1995) — integral of log ζ
 ```
 RH  ⟺  ∫_0^∞ (1 − 12t²)/(1 + 4t²)³ · log|ζ(1/2 + it)| dt  =  π(3 − γ)/32,
 ```
-γ = Euler–Mascheroni-Konstante. Äquivalent über das Argument:
+γ = Euler–Mascheroni constant. Equivalently, via the argument:
 ```
 RH  ⟺  ∫_0^∞ [ 2t · arg ζ(1/2 + it) / (1/4 + t²)² ] dt = π(γ − 3).
 ```
-Eine *Gleichheit* (nicht nur Ungleichung), die exakt dann gilt, wenn keine Nullstelle den Streifen rechts von 1/2 hat. Beweis via Argumentprinzip / generalisierter Littlewood-Satz angewandt auf log ζ.
+An *equality* (not just an inequality) that holds exactly when no zero lies in the strip to the right of 1/2. Proof via the argument principle / generalized Littlewood theorem applied to log ζ.
 
-### Sekatskii–Beltraminelli–Merlini (2009–2012) — Familie von log-ζ-Gleichheiten
-Verallgemeinern Volchkov: Mittels des **generalisierten Littlewood-Satzes** (Konturintegral von log ζ gegen eine analytische Funktion g) erhält man eine ganze **Familie** von Gleichheiten der Form
+### Sekatskii–Beltraminelli–Merlini (2009–2012) — a family of log-ζ equalities
+Generalize Volchkov: by means of the **generalized Littlewood theorem** (contour integral of log ζ against an analytic function g) one obtains a whole **family** of equalities of the form
 ```
-RH  ⟺  ∫ (Gewicht_g(t)) log|ζ(1/2+it)| dt = (explizite Konstante),
+RH  ⟺  ∫ (weight_g(t)) log|ζ(1/2+it)| dt = (explicit constant),
 ```
-parametrisiert durch g. Jede ist einzeln RH-äquivalent; liefert unendlich viele integrale Tests.
+parametrized by g. Each is individually RH-equivalent; provides infinitely many integral tests.
 
-### Redheffer-Matrix-Kriterium (1977)
-Definiere die n×n-Matrix R_n mit
+### Redheffer matrix criterion (1977)
+Define the n×n matrix R_n with
 ```
-(R_n)_{ij} = 1  falls j = 1  oder  i | j,   sonst 0.
+(R_n)_{ij} = 1  if j = 1  or  i | j,   else 0.
 ```
-Dann gilt det(R_n) = M(n) (Mertens-Funktion, Dok. 16!). Daher:
+Then det(R_n) = M(n) (the Mertens function, Doc. 16!). Therefore:
 ```
-RH  ⟺  det(R_n) = O(n^{1/2 + ε})   für jedes ε > 0.
+RH  ⟺  det(R_n) = O(n^{1/2 + ε})   for every ε > 0.
 ```
-R_n hat n−1 Eigenwerte nahe 1 plus wenige große; die Determinante als Mertens-Summe verbindet Lineare Algebra/Graphentheorie mit der RH.
+R_n has n−1 eigenvalues near 1 plus a few large ones; the determinant as a Mertens sum connects linear algebra/graph theory with the RH.
 
-### Salem-Kriterium (1953)
-Über eine Integralgleichung vom Wiener–Tauberischen Typ: die Nicht-Verschwindung einer bestimmten Integraltransformierten (Faltungskern e^{σx}/(e^{e^x}+1)-artig) ist äquivalent zu ζ(σ+it) ≠ 0 auf einer vertikalen Geraden. Verbindet RH mit Vollständigkeit/Dichte (verwandt Nyman–Beurling, Dok. 13).
+### Salem criterion (1953)
+Via an integral equation of Wiener–Tauberian type: the non-vanishing of a certain integral transform (convolution kernel of the form e^{σx}/(e^{e^x}+1)) is equivalent to ζ(σ+it) ≠ 0 on a vertical line. Connects the RH with completeness/density (related to Nyman–Beurling, Doc. 13).
 
-### BBLS — quantitative Nyman–Beurling-Distanz (2000)
-Mit d_N² = inf_{Polynom-Koeff.} ‖1 − Σ_{k≤N} c_k ρ_{1/k}‖²_{L²(0,1)} (vgl. Dok. 13):
+### BBLS — quantitative Nyman–Beurling distance (2000)
+With d_N² = inf_{polynomial coeffs} ‖1 − Σ_{k≤N} c_k ρ_{1/k}‖²_{L²(0,1)} (cf. Doc. 13):
 ```
-RH  ⟺  d_N → 0,   und unter RH (einfache Nullstellen):  d_N² ~ (2 + γ − log 4π)/log N.
+RH  ⟺  d_N → 0,   and under RH (simple zeros):  d_N² ~ (2 + γ − log 4π)/log N.
 ```
-Die explizite Konstante (2+γ−log 4π) macht dies zum **konkretesten numerischen Zielwert** für einen approximationstheoretischen Angriff; die Auswertung läuft über eine arithmetische Gram-Matrix (Vasyunin).
+The explicit constant (2+γ−log 4π) makes this the **most concrete numerical target value** for an approximation-theoretic attack; the evaluation runs via an arithmetic Gram matrix (Vasyunin).
 
-## Bedeutung / Einordnung
-- Erweitern das Arsenal äquivalenter Formulierungen (Integral-, Matrix-, Approximationsform).
-- Redheffer verbindet direkt zur Mertens-Funktion (Dok. 16); Volchkov/Sekatskii bieten *Gleichheiten* (sensible Tests); BBLS gibt eine berechenbare Zielkonstante.
-- **Offen:** Jede ist genauso schwer wie die RH selbst — sie verschieben das Problem, lösen es nicht.
+## Significance / context
+- Extend the arsenal of equivalent formulations (integral, matrix, approximation form).
+- Redheffer connects directly to the Mertens function (Doc. 16); Volchkov/Sekatskii offer *equalities* (sensitive tests); BBLS gives a computable target constant.
+- **Open:** each is just as hard as the RH itself — they shift the problem, they do not solve it.
 
-## Quellen
+## Sources
 - [On an equality equivalent to the Riemann hypothesis — Volchkov (Semantic Scholar)](https://www.semanticscholar.org/paper/On-an-equality-equivalent-to-the-Riemann-hypothesis-Volchkov/280edbe8824496a1dfb254fdbd41a2f215a26887)
 - [Equalities involving integrals of the logarithm of the Riemann ζ equivalent to RH — Sekatskii et al. (arXiv 0806.1596)](https://arxiv.org/pdf/0806.1596)
 - [The Riemann Hypothesis — AIM (Redheffer, Salem, Volchkov criteria)](https://www.aimath.org/WWN/rh/rh.pdf)

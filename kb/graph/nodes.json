@@ -1,13 +1,13 @@
 {
-  "_comment": "Abstrakte Konzept-Knoten (zusätzlich zu den Dokument-Knoten, die build_kb.py aus manifest.json erzeugt). type=concept. Dokument-Knoten haben type=document.",
+  "_comment": "Abstract concept nodes (in addition to the document nodes that build_kb.py generates from manifest.json). type=concept. Document nodes have type=document.",
   "concepts": [
-    {"id": "concept-RH", "label": "Riemann-Vermutung (RH)", "type": "concept", "summary": "Alle nicht-trivialen Nullstellen von ζ haben Re(s)=1/2."},
-    {"id": "concept-GRH", "label": "Verallgemeinerte/Große RH", "type": "concept", "summary": "RH für alle Dirichlet- bzw. automorphen L-Funktionen."},
-    {"id": "concept-euler-product", "label": "Euler-Produkt (Multiplikativität)", "type": "concept", "summary": "ζ(s)=∏(1-p^-s)^-1; kodiert Primzahlstruktur. Schlüsseleigenschaft, ohne die Off-Line-Nullstellen möglich sind."},
-    {"id": "concept-positivity", "label": "Positivität / Reellwurzeligkeit", "type": "motif", "summary": "RH als positive quadratische Form bzw. nur-reelle-Nullstellen-Aussage (Weil, Li, de Branges, Jensen, Lee-Yang, dBN)."},
-    {"id": "concept-hilbert-polya", "label": "Hilbert–Pólya / spektrale Interpretation", "type": "motif", "summary": "Nullstellen = Eigenwerte eines selbstadjungierten/kanonischen Operators."},
-    {"id": "concept-geometry-transfer", "label": "Geometrie-Transfer (Funktionenkörper→ℤ)", "type": "motif", "summary": "Übertragung von Weils/Delignes bewiesenem RH-Analogon über 𝔽_q auf Spec(ℤ)."},
-    {"id": "concept-explicit-formula", "label": "Explizite Formel (Primzahlen↔Nullstellen)", "type": "concept", "summary": "Weil/von-Mangoldt: verbindet Σ über Nullstellen mit Σ über Primzahlen; gemeinsamer Kern aller Spurformel-/Positivitätsansätze."},
-    {"id": "concept-critical-line", "label": "Kritische Gerade Re(s)=1/2", "type": "concept", "summary": "Vermuteter Ort aller nicht-trivialen Nullstellen."}
+    {"id": "concept-RH", "label": "Riemann Hypothesis (RH)", "type": "concept", "summary": "All non-trivial zeros of ζ have Re(s)=1/2."},
+    {"id": "concept-GRH", "label": "Generalized/Grand RH", "type": "concept", "summary": "RH for all Dirichlet resp. automorphic L-functions."},
+    {"id": "concept-euler-product", "label": "Euler product (multiplicativity)", "type": "concept", "summary": "ζ(s)=∏(1-p^-s)^-1; encodes the prime structure. Key property without which off-line zeros are possible."},
+    {"id": "concept-positivity", "label": "Positivity / real-rootedness", "type": "motif", "summary": "RH as a positive quadratic form resp. a real-only-zeros statement (Weil, Li, de Branges, Jensen, Lee-Yang, dBN)."},
+    {"id": "concept-hilbert-polya", "label": "Hilbert–Pólya / spectral interpretation", "type": "motif", "summary": "Zeros = eigenvalues of a self-adjoint/canonical operator."},
+    {"id": "concept-geometry-transfer", "label": "Geometry transfer (function fields→ℤ)", "type": "motif", "summary": "Transferring Weil's/Deligne's proven RH analogue over 𝔽_q to Spec(ℤ)."},
+    {"id": "concept-explicit-formula", "label": "Explicit formula (primes↔zeros)", "type": "concept", "summary": "Weil/von Mangoldt: links Σ over zeros with Σ over primes; the common core of all trace-formula/positivity approaches."},
+    {"id": "concept-critical-line", "label": "Critical line Re(s)=1/2", "type": "concept", "summary": "Conjectured location of all non-trivial zeros."}
   ]
 }

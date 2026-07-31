@@ -1,79 +1,79 @@
 ---
 id: doc-28
 number: 28
-title: "KI / Machine Learning und die Riemann-Vermutung"
+title: "AI / Machine Learning and the Riemann Hypothesis"
 category: ai-context
 status: meta
 tags: [AI, machine-learning, LLM, formal-verification, hallucination]
 source_file: 28_AI_and_RH.md
-lang: de
+lang: en
 ---
 
-# KI / Machine Learning und die Riemann-Vermutung
+# AI / Machine Learning and the Riemann Hypothesis
 
-**Kategorie:** KI-Kontext / Methodenkritik
-**Zeitraum:** Schwerpunkt 2024–2026
-**Typ:** Empirische, datengetriebene (Nicht-Beweis-)Ansätze + kritische Einordnung
-**Status:** Explizit KEINE formalen Beweise; exploratorisch/heuristisch
+**Category:** AI context / methodological critique
+**Period:** focus 2024–2026
+**Type:** Empirical, data-driven (non-proof) approaches + critical assessment
+**Status:** Explicitly NO formal proofs; exploratory/heuristic
 
-## Zusammenfassung
-Moderne KI- und Machine-Learning-Methoden (Klassifikatoren, neuronale Netze, LLM-gestützte Mustererkennung, automatisierte/formale Beweissysteme) werden zunehmend auf die numerische Untersuchung der ζ-Nullstellenverteilung angewandt. Sie liefern **empirische, falsifizierbarkeitsorientierte** Evidenz — aber **keinen formalen Beweis**. Leitfrage (nach Terence Tao): *"Will AI Prove the Riemann Hypothesis Without Understanding It?"*
+## Summary
+Modern AI and machine-learning methods (classifiers, neural networks, LLM-assisted pattern recognition, automated/formal proof systems) are increasingly applied to the numerical study of the ζ-zero distribution. They provide **empirical, falsifiability-oriented** evidence — but **no formal proof**. Guiding question (after Terence Tao): *"Will AI Prove the Riemann Hypothesis Without Understanding It?"*
 
-## Arten von KI-Ansätzen zur RH
-1. **Datengetriebene Klassifikation / Explainability (2025):** ML-Modelle werden auf berechneten Nullstellen trainiert; man sucht diskriminative statistische Signale, die On-Line- von hypothetischem Off-Line-Verhalten unterscheiden. Befund: stabile erklärende Signale ausschließlich entlang der kritischen Geraden (konsistent mit RH). Ausdrücklich als *Nicht-Beweis* gerahmt.
-2. **Generative / Kontradiktions-Tests:** Modelle prüfen, ob sich gegenbeispielartige Muster erzeugen lassen (Falsifikationsversuch).
-3. **Formale/verifizierte Beweissysteme:** Projekte zur maschinellen Verifikation (Lean, Coq) und KI-gestützten Beweissuche — Ziel: korrekte, mechanisch geprüfte Beweise *ohne* Halluzination.
+## Types of AI approaches to the RH
+1. **Data-driven classification / explainability (2025):** ML models are trained on computed zeros; one looks for discriminative statistical signals that distinguish on-line from hypothetical off-line behavior. Finding: stable explanatory signals exclusively along the critical line (consistent with RH). Explicitly framed as a *non-proof*.
+2. **Generative / contradiction tests:** models check whether counterexample-like patterns can be generated (falsification attempt).
+3. **Formal/verified proof systems:** projects for machine verification (Lean, Coq) and AI-assisted proof search — goal: correct, mechanically checked proofs *without* hallucination.
 
-## Wo KI in der Mathematik bereits Erfolge hatte (zur Einordnung)
-- **Erdős-Einheitsabstands-Problem (1946):** KI-/LLM-gestützt ein jahrzehntealtes Problem signifikant vorangebracht — gefeiert als bedeutender Beweis mittels Sprach-KI.
-- **KI korrigierte Mathematiker:** Fälle, in denen KI zeigte, dass etablierte Annahmen falsch waren.
-- Diese Erfolge betreffen *spezifische, gut abgegrenzte* Probleme — **nicht** offene Millennium-Probleme wie die RH.
+## Where AI has already succeeded in mathematics (for context)
+- **Erdős unit-distance problem (1946):** significantly advanced with AI/LLM assistance — celebrated as an important proof via language AI.
+- **AI corrected mathematicians:** cases where AI showed that established assumptions were wrong.
+- These successes concern *specific, well-delineated* problems — **not** open Millennium Problems like the RH.
 
-## Wo es schiefging (Mahnungen)
-- **Navier-Stokes-Fehlclaim:** OpenAI-Forscher verkündeten einen "Mathedurchbruch" (Millennium-Problem), der sich als **falsch** erwies — öffentlich kritisiert. Zeigt: KI-"Durchbrüche" bei Millennium-Problemen ohne strenge Peer Review führen zu Fehlbehauptungen.
-- **KI scheitert an Spitzenforscher-Aufgaben:** Studien dokumentieren systematisches Versagen aktueller KI an schwierigen mathematischen Problemen.
-- **Goldbach-Analogie:** Argument ("AI Cannot Prove Goldbach's Conjecture ... the Wrong Kind of Smart") — für offene zahlentheoretische Vermutungen fehlt KI nicht Rechenleistung, sondern die *Art strukturellen Verständnisses*, die ein gültiger Beweis verlangt. Überträgt sich direkt auf die RH.
+## Where it went wrong (cautionary cases)
+- **Navier-Stokes false claim:** OpenAI researchers announced a "math breakthrough" (a Millennium Problem) that turned out to be **false** — publicly criticized. Shows: AI "breakthroughs" on Millennium Problems without rigorous peer review lead to false claims.
+- **AI fails at top-researcher problems:** studies document systematic failure of current AI on hard mathematical problems.
+- **Goldbach analogy:** the argument ("AI Cannot Prove Goldbach's Conjecture ... the Wrong Kind of Smart") — for open number-theoretic conjectures, AI lacks not compute power but the *kind of structural understanding* that a valid proof requires. This transfers directly to the RH.
 
-## Kritische Würdigung (Kernpunkte)
-- **Numerik ≠ Beweis:** Endliche/statistische Evidenz beweist die RH nie (unendlich viele Nullstellen). Die **widerlegte Mertens-Vermutung** (Dok. 16) zeigt, dass scheinbar robuste numerische Muster bei ~10^30 versagen können.
-- **Halluzinationsrisiko bei LLMs:** generative Modelle können plausibel klingende, aber falsche "Beweise" erzeugen — daher der Trend zu formal verifizierten Systemen.
-- **Mensch-Maschine-Kollaboration funktioniert** dort, wo Maschinen Suchräume erschöpfen und Menschen/Verifizierer die Korrektheit garantieren (vgl. Polymath15, Dok. 23).
-- **Selbstregulierung der Community:** Mathematiker-Leitlinien zum verantwortungsvollen KI-Einsatz entstehen bereits.
+## Critical appraisal (key points)
+- **Numerics ≠ proof:** finite/statistical evidence never proves the RH (infinitely many zeros). The **refuted Mertens conjecture** (Doc. 16) shows that seemingly robust numerical patterns can fail at ~10^30.
+- **Hallucination risk with LLMs:** generative models can produce plausible-sounding but false "proofs" — hence the trend toward formally verified systems.
+- **Human–machine collaboration works** where machines exhaust search spaces and humans/verifiers guarantee correctness (cf. Polymath15, Doc. 23).
+- **Self-regulation of the community:** guidelines for the responsible use of AI in mathematics are already emerging.
 
-## Bedeutung / Einordnung
-- KI ist (Stand 2026) ein **Werkzeug zur Exploration, Mustererkennung und Verifikation** — kein eigenständiger Erzeuger akzeptierter RH-Beweise.
-- Sinnvolle Rollen: Generierung von Vermutungen, Lokalisierung vielversprechender Strukturen, formale Verifikation menschlicher Beweise, numerische Großrechnungen.
-- Offene Frage (Tao): Ob KI je einen RH-Beweis "ohne Verständnis" liefern könnte — und ob ein solcher von der Community als Erkenntnis akzeptiert würde.
+## Significance / context
+- AI is (as of 2026) a **tool for exploration, pattern recognition, and verification** — not an independent producer of accepted RH proofs.
+- Sensible roles: generating conjectures, locating promising structures, formally verifying human proofs, large-scale numerical computation.
+- Open question (Tao): whether AI could ever deliver an RH proof "without understanding" — and whether such a proof would be accepted by the community as insight.
 
-## Mathematischer/Methodischer Kern (woran KI arbeitet, formal)
+## Mathematical/methodological core (what AI works on, formally)
 
-### Was die ML-Modelle konkret als Daten nutzen
-- **Normierte Nullstellenabstände** δ_n = (γ_{n+1} − γ_n)·(1/2π)log(γ_n/2π) (vgl. Dok. 06): Eingabe für Klassifikatoren, die GUE- vs. Nicht-GUE-Statistik unterscheiden.
-- **Werte von Z(t)** / ζ(1/2+it) (Dok. 03/24) als Zeitreihe: Mustererkennung für Vorzeichenwechsel.
-- **Li-Koeffizienten λ_n** / Turán-Ausdrücke (Dok. 14/29): Positivitäts-Checks als Features.
+### What the ML models concretely use as data
+- **Normalized zero spacings** δ_n = (γ_{n+1} − γ_n)·(1/2π)log(γ_n/2π) (cf. Doc. 06): input for classifiers that distinguish GUE vs. non-GUE statistics.
+- **Values of Z(t)** / ζ(1/2+it) (Doc. 03/24) as a time series: pattern recognition for sign changes.
+- **Li coefficients λ_n** / Turán expressions (Doc. 14/29): positivity checks as features.
 
-### Formales Lernproblem (Beispiel Klassifikation)
-Trainiere f_θ: (Feature-Vektor aus {γ_n}) → {„on-line", „off-line"}. Befund (MDPI 2025): diskriminative Signale treten **nur** entlang Re=1/2 stabil auf; Kontradiktions-Tests finden kein Off-Line-Muster. **Aber:** Das ist Induktion über endliche Stichproben — kein Allquantor-Beweis ∀ρ.
+### Formal learning problem (classification example)
+Train f_θ: (feature vector from {γ_n}) → {"on-line", "off-line"}. Finding (MDPI 2025): discriminative signals appear stably **only** along Re=1/2; contradiction tests find no off-line pattern. **But:** this is induction over finite samples — not a universally-quantified proof ∀ρ.
 
-### Warum KI hier prinzipiell an eine Wand stößt
-- **Endlichkeit:** Jedes ML-Modell sieht endlich viele Nullstellen; die RH ist eine Aussage über ∞ viele. Die widerlegte Mertens-Vermutung (Dok. 16) zeigt formal: M(x)/√x < 1 gilt bis ~10^{14}, ist aber falsch (Odlyzko–te Riele: limsup > 1,06). Ein Klassifikator hätte „Mertens wahr" gelernt.
-- **Halluzination bei LLM:** Ein generativer „Beweis" ist ein Sample aus p_θ(Text); Korrektheit ist *nicht* Teil der Zielfunktion. Daher Trend zu **formaler Verifikation** (Lean/mathlib, Coq): Dort wird jeder Schritt gegen Axiome geprüft, p(Beweis korrekt) = 1 per Konstruktion.
+### Why AI hits a wall here in principle
+- **Finiteness:** every ML model sees finitely many zeros; the RH is a statement about ∞ many. The refuted Mertens conjecture (Doc. 16) shows formally: M(x)/√x < 1 holds up to ~10^{14} but is false (Odlyzko–te Riele: limsup > 1.06). A classifier would have learned "Mertens true".
+- **Hallucination with LLMs:** a generative "proof" is a sample from p_θ(text); correctness is *not* part of the objective. Hence the trend toward **formal verification** (Lean/mathlib, Coq): there every step is checked against axioms, p(proof correct) = 1 by construction.
 
-### Sinnvolle, formal saubere KI-Rollen
-1. **Vermutungsgenerierung** (z. B. Muster in λ_n, Momentkonstanten g_k, Dok. 07/14).
-2. **Beweissuche + formale Verifikation** (Mensch/Maschine-Hybrid, wie Polymath15, Dok. 23, wo Computer Lehmer-Paar-Schranken rigoros prüften).
-3. **Numerische Großrechnung** (Dok. 24) — aber Verifikation per Intervallarithmetik, nicht per neuronalem Netz.
+### Sensible, formally sound AI roles
+1. **Conjecture generation** (e.g. patterns in λ_n, moment constants g_k, Doc. 07/14).
+2. **Proof search + formal verification** (human/machine hybrid, like Polymath15, Doc. 23, where computers rigorously checked Lehmer-pair bounds).
+3. **Large-scale numerical computation** (Doc. 24) — but verification via interval arithmetic, not via a neural network.
 
-### Erfolgs- vs. Fehlbeispiele (formal eingeordnet)
-- **Erdős-Einheitsabstandsproblem:** kombinatorisch-endliches Problem ⇒ KI-gestützte Konstruktion verifizierbar. RH ist *nicht* von diesem Typ.
-- **Navier-Stokes-Fehlclaim:** zeigt, dass ein KI-„Beweis" eines Millennium-Problems ohne Peer Review/formale Prüfung scheitert — exakt das Risiko bei einem KI-„RH-Beweis".
+### Success vs. failure examples (formally categorized)
+- **Erdős unit-distance problem:** a combinatorial-finite problem ⇒ AI-assisted construction is verifiable. The RH is *not* of this type.
+- **Navier-Stokes false claim:** shows that an AI "proof" of a Millennium Problem fails without peer review / formal checking — exactly the risk with an AI "RH proof".
 
-## Quellen
+## Sources
 - [Will AI Prove the Riemann Hypothesis Without Understanding It? — Terence Tao (YouTube)](https://youtu.be/PU1LMVGcyXA?si=RcL7JrKpHE5izoso)
 - [Empirical Investigation of the Riemann Hypothesis Using Machine Learning (MDPI Mathematics 2025)](https://www.mdpi.com/2227-7390/13/17/2824)
-- [Kein Platz für Halluzinationen: KI-Start-up will korrekte Mathebeweise garantieren — The Decoder](https://the-decoder.de/kein-platz-fuer-halluzinationen-ki-start-up-will-korrekte-mathebeweise-garantieren/)
-- [Kreativer Lösungsweg: KI löst 60 Jahre altes Erdős-Problem — Heise](https://www.heise.de/news/Kreativer-Loesungsweg-KI-loest-60-Jahre-altes-Erd-s-Problem-11275796.html)
-- [OpenAI-Forscher verkünden falschen Mathedurchbruch — MSN/Der Standard](https://www.msn.com/de-ch/nachrichten/other/open-ai-forscher-verk%C3%BCnden-falschen-mathedurchbruch-und-ernten-spott/ar-AA1OSsBR)
+- [No room for hallucinations: AI startup wants to guarantee correct math proofs — The Decoder](https://the-decoder.de/kein-platz-fuer-halluzinationen-ki-start-up-will-korrekte-mathebeweise-garantieren/)
+- [A creative solution: AI solves a 60-year-old Erdős problem — Heise](https://www.heise.de/news/Kreativer-Loesungsweg-KI-loest-60-Jahre-altes-Erd-s-Problem-11275796.html)
+- [OpenAI researchers announce a false math breakthrough — MSN/Der Standard](https://www.msn.com/de-ch/nachrichten/other/open-ai-forscher-verk%C3%BCnden-falschen-mathedurchbruch-und-ernten-spott/ar-AA1OSsBR)
 - [AI Cannot Prove Goldbach's Conjecture — Towards AI](https://pub.towardsai.net/ai-cannot-prove-goldbachs-conjecture-115bca355678)
-- [Leitlinien: Mathematiker wollen Einsatz von KI eindämmen — Spektrum](https://www.spektrum.de/news/leitlinien-mathematiker-wollen-einsatz-von-ki-in-ihrem-fach-eindaemmen/2327655)
-- [Terence Tao: "Beweise sind nicht mehr das Wichtigste in der Mathematik" — Der Standard](https://www.derstandard.de/story/3000000320851/terence-tao-beweise-sind-nicht-mehr-das-wichtigste-in-der-mathematik)
+- [Guidelines: mathematicians want to curb the use of AI — Spektrum](https://www.spektrum.de/news/leitlinien-mathematiker-wollen-einsatz-von-ki-in-ihrem-fach-eindaemmen/2327655)
+- [Terence Tao: "Proofs are no longer the most important thing in mathematics" — Der Standard](https://www.derstandard.de/story/3000000320851/terence-tao-beweise-sind-nicht-mehr-das-wichtigste-in-der-mathematik)

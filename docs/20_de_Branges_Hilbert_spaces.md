@@ -1,69 +1,69 @@
 ---
 id: doc-20
 number: 20
-title: "Louis de Branges: Hilberträume ganzer Funktionen (mehrfach gescheiterte Beweise)"
+title: "Louis de Branges: Hilbert Spaces of Entire Functions (repeatedly failed proofs)"
 category: analytic
 status: refuted
 tags: [de-branges, hilbert-spaces-entire-functions, conrey-li, failed]
 source_file: 20_de_Branges_Hilbert_spaces.md
-lang: de
+lang: en
 ---
 
-# Louis de Branges: Hilberträume ganzer Funktionen (mehrfach gescheiterte Beweise)
+# Louis de Branges: Hilbert Spaces of Entire Functions (repeatedly failed proofs)
 
-**Kategorie:** Analytischer Ansatz / prominenter gescheiterter Beweis
-**Autor / Jahre:** Louis de Branges (Theorie ab ~1959; RH-Ansatz ab 1986; Beweisbehauptungen u. a. 2004, 2009, 2014, 2017)
-**Typ:** Funktionalanalytischer Ansatz + wiederholt fehlerhafte Beweisbehauptungen
-**Status:** ❌ Alle Beweisbehauptungen mit Lücken/Fehlern; Ansatz als solcher offen
+**Category:** Analytic approach / prominent failed proof
+**Author / years:** Louis de Branges (theory from ~1959; RH approach from 1986; proof claims including 2004, 2009, 2014, 2017)
+**Type:** Functional-analytic approach + repeatedly erroneous proof claims
+**Status:** ❌ All proof claims with gaps/errors; the approach as such open
 
-## Zusammenfassung
-Louis de Branges (berühmt für seinen *korrekten* Beweis der Bieberbach-Vermutung 1984) entwickelte eine umfangreiche Theorie der **Hilberträume ganzer Funktionen** und schlug ab 1986 einen darauf basierenden Zugang zur (verallgemeinerten) RH vor. Über Jahrzehnte veröffentlichte er mehrere **Beweisbehauptungen**, die jedoch alle als **lückenhaft oder fehlerhaft** befunden wurden. Es ist der prominenteste Fall eines technisch ernsthaften, vielfach überarbeiteten — aber nicht akzeptierten — RH-Beweisversuchs.
+## Summary
+Louis de Branges (famous for his *correct* proof of the Bieberbach conjecture in 1984) developed an extensive theory of **Hilbert spaces of entire functions** and, from 1986, proposed an approach to the (generalized) RH based on it. Over decades he published several **proof claims**, all of which were found to be **incomplete or erroneous**. It is the most prominent case of a technically serious, repeatedly revised — but not accepted — RH proof attempt.
 
-## Kernidee des Ansatzes
-- De Branges' Theorie (Ende 1950er/1960er) verallgemeinert den Teil der Fourier-Analysis um Fourier-Transformation und Plancherel-Formel auf **Hilberträume, deren Elemente ganze Funktionen sind**.
-- Wurzeln im Ansatz von **Stieltjes**, die RH zu beweisen; Übergang zu unendlich vielen Dimensionen über die **Hermite-Klasse** ganzer Funktionen (Grenzwerte von Polynomen mit nullstellenfreier Halbebene).
-- **RH-Strategie (1986):** Eine **Positivitätsbedingung** auf bestimmten **gewichteten Hardy-Räumen** / Stieltjes-Räumen ganzer Funktionen ("Riemann-Hypothese für Hilberträume ganzer Funktionen") würde — angewandt auf den zur Euler-Zetafunktion gehörenden Raum — die (verallgemeinerte) RH implizieren. Die analytische Gewichtsfunktion darf in einer größeren Halbebene keine Nullstellen haben.
+## Core idea of the approach
+- De Branges' theory (late 1950s/1960s) generalizes the part of Fourier analysis around the Fourier transform and Plancherel formula to **Hilbert spaces whose elements are entire functions**.
+- Roots in **Stieltjes'** approach to proving the RH; passage to infinitely many dimensions via the **Hermite class** of entire functions (limits of polynomials with a zero-free half-plane).
+- **RH strategy (1986):** a **positivity condition** on certain **weighted Hardy spaces** / Stieltjes spaces of entire functions ("Riemann Hypothesis for Hilbert spaces of entire functions") would — applied to the space associated with the Euler zeta function — imply the (generalized) RH. The analytic weight function must have no zeros in a larger half-plane.
 
-## Warum die Beweise scheiterten
-- Mehrere veröffentlichte Versionen ("A Proof of the Riemann Hypothesis", Purdue-Preprints, u. a. 2004, 2009, 2014, 2017) wurden von der Fachwelt geprüft.
-- **Typische Probleme:** Die geforderte Positivitätsbedingung wurde nicht wirklich etabliert; der konkret konstruierte Raum erfüllt die benötigten Axiome nicht; Gegenbeispiele (Conrey–Li, 2000) zeigten, dass die hinreichenden Bedingungen in der vorgeschlagenen Form für ζ **nicht** gelten, sodass der Ansatz in dieser Fassung die RH nicht liefern kann.
-- **Conrey & Li (2000)** publizierten eine einflussreiche Kritik ("A note on some positivity conditions related to zeta and L-functions"), die zeigte, dass de Branges' Positivitätskriterien nicht auf die Zetafunktion anwendbar sind.
+## Why the proofs failed
+- Several published versions ("A Proof of the Riemann Hypothesis", Purdue preprints, including 2004, 2009, 2014, 2017) were examined by the community.
+- **Typical problems:** the required positivity condition was not really established; the concretely constructed space does not satisfy the needed axioms; counterexamples (Conrey–Li, 2000) showed that the sufficient conditions in the proposed form do **not** hold for ζ, so the approach in this form cannot yield the RH.
+- **Conrey & Li (2000)** published an influential critique ("A note on some positivity conditions related to zeta and L-functions") showing that de Branges' positivity criteria are not applicable to the zeta function.
 
-## Bedeutung / Einordnung
-- Lehrbeispiel: Auch ein hochrangiger Mathematiker mit echtem früheren Großerfolg kann an der RH wiederholt scheitern — die Mathematik-Community verifiziert streng.
-- Die zugrunde liegende **Theorie der Hilberträume ganzer Funktionen** ist eigenständig wertvoll und korrekt; nur die *Anwendung* auf die RH gelang nicht.
-- Verwandt mit anderen Positivitäts-/Hilbertraum-Kriterien (Nyman–Beurling Dok. 13, Weil-Positivität Dok. 14).
+## Significance / context
+- A cautionary example: even a high-ranking mathematician with a genuine earlier major success can repeatedly fail on the RH — the mathematics community verifies rigorously.
+- The underlying **theory of Hilbert spaces of entire functions** is valuable and correct in its own right; only its *application* to the RH did not succeed.
+- Related to other positivity/Hilbert-space criteria (Nyman–Beurling Doc. 13, Weil positivity Doc. 14).
 
-## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+## Mathematical core (formulas, theorems, proof sketches)
 
-### de-Branges-Räume H(E)
-Ausgangspunkt ist eine **Hermite–Biehler-Funktion** E(z): ganz, mit |E(z̄)| < |E(z)| für Im(z) > 0 (alle Nullstellen in der unteren Halbebene). Der zugehörige Raum:
+### de Branges spaces H(E)
+The starting point is a **Hermite–Biehler function** E(z): entire, with |E(z̄)| < |E(z)| for Im(z) > 0 (all zeros in the lower half-plane). The associated space:
 ```
-H(E) = { f ganz : ‖f‖² = ∫_{−∞}^∞ |f(x)/E(x)|² dx < ∞,  und f/E, f*/E ∈ H²(obere Halbebene) }
+H(E) = { f entire : ‖f‖² = ∫_{−∞}^∞ |f(x)/E(x)|² dx < ∞,  and f/E, f*/E ∈ H²(upper half-plane) }
 ```
-H(E) ist ein **reproduzierender Kern-Hilbertraum** mit Kern
+H(E) is a **reproducing-kernel Hilbert space** with kernel
 ```
 K(w, z) = ( E(z) E*(w̄) − E*(z) E(w̄) ) / ( 2πi (w̄ − z) ).
 ```
 
-### Struktursatz & Schrumpfungsbedingung
-De Branges' Strukturtheorie ordnet einer Kette ineinander geschachtelter Räume H(E_a) eine **Phasenfunktion** φ(x) zu (E(x) = |E(x)| e^{−iφ(x)}), mit φ'(x) > 0. Die Zugehörigkeit von Funktionen zu solchen Ketten wird durch Monotonie-/Positivitätsbedingungen geregelt.
+### Structure theorem & shrinking condition
+De Branges' structure theory associates to a chain of nested spaces H(E_a) a **phase function** φ(x) (E(x) = |E(x)| e^{−iφ(x)}), with φ'(x) > 0. Membership of functions in such chains is governed by monotonicity/positivity conditions.
 
-### Anwendung auf ζ: die ξ-Funktion als E
-Man möchte E so wählen, dass die zur ξ-Funktion gehörige Struktur entsteht. Schreibe ξ(1/2 + iz) als Funktion mit reellen Nullstellen (genau dann, wenn RH gilt). De Branges' **Positivitätskriterium** (vereinfacht): Wenn für die zugehörige Gewichtsfunktion W(z) (analytisch, nullstellenfrei in einer Halbebene) gilt
+### Application to ζ: the ξ-function as E
+One wants to choose E so that the structure associated with the ξ-function arises. Write ξ(1/2 + iz) as a function with real zeros (which holds exactly when RH holds). De Branges' **positivity criterion** (simplified): if for the associated weight function W(z) (analytic, zero-free in a half-plane)
 ```
-(de-Branges-Bedingung)   ∫ |f(x)|² / W(x) dx ≥ 0  bzw. die Phasen-Monotonie  φ'(x) ≥ 0
+(de Branges condition)   ∫ |f(x)|² / W(x) dx ≥ 0  resp. the phase monotonicity  φ'(x) ≥ 0
 ```
-für alle f des Raumes, dann liegen die Nullstellen von ξ auf der reellen Achse ⇒ RH.
+holds for all f of the space, then the zeros of ξ lie on the real axis ⇒ RH.
 
-### Warum es für ζ scheitert — Conrey–Li (2000)
-Conrey und Li zeigten **konkret**, dass die von de Branges geforderte Positivitäts-/Strukturbedingung für die Euler-ζ-Funktion **verletzt** ist: Sie konstruierten explizite Gegenbeispiele zu den hinreichenden Bedingungen, indem sie zeigten, dass eine gewisse, von de Branges als positiv-definit angenommene Funktion (im Zusammenhang mit der ζ zugeordneten E) bei numerischer/analytischer Prüfung **negative** Werte annimmt. Damit ist der Ansatz in der vorgeschlagenen Form nicht auf ζ anwendbar — die wiederholten Beweisversuche (2004–2017) umgehen diese Obstruktion nicht.
+### Why it fails for ζ — Conrey–Li (2000)
+Conrey and Li showed **concretely** that the positivity/structure condition required by de Branges is **violated** for the Euler ζ-function: they constructed explicit counterexamples to the sufficient conditions by showing that a certain function assumed by de Branges to be positive-definite (in connection with the E associated to ζ) takes **negative** values under numerical/analytic examination. Thus the approach in the proposed form is not applicable to ζ — the repeated proof attempts (2004–2017) do not circumvent this obstruction.
 
-### Bezug zu anderen Positivitätskriterien
-Die de-Branges-Bedingung ist eng verwandt mit Weil-Positivität (Dok. 14) und Nyman–Beurling (Dok. 13) — alle verlangen die Positivität einer quadratischen Form / Reellwurzeligkeit; alle stoßen an dieselbe ungelöste Kernhürde.
+### Relation to other positivity criteria
+The de Branges condition is closely related to Weil positivity (Doc. 14) and Nyman–Beurling (Doc. 13) — all require the positivity of a quadratic form / real-rootedness; all run into the same unsolved core hurdle.
 
-## Quellen
+## Sources
 - [The Riemann hypothesis for Hilbert spaces of entire functions — de Branges (Purdue)](https://www.math.purdue.edu/~branges/riemann-hilbert.pdf)
 - [A Proof of the Riemann Hypothesis — de Branges (2017 draft, Purdue)](https://www.math.purdue.edu/~branges/proof-riemann-2017-04.pdf)
 - [The Strange Case of Louis de Branges — Karl Sabbagh, London Review of Books](https://www.lrb.co.uk/the-paper/v26/n14/karl-sabbagh/the-strange-case-of-louis-de-branges)
-- [The early historical roots of Lee-Yang theorem (arXiv 1410.6450, Kontext Hermite-Klasse)](https://arxiv.org/pdf/1410.6450)
+- [The early historical roots of Lee-Yang theorem (arXiv 1410.6450, context Hermite class)](https://arxiv.org/pdf/1410.6450)

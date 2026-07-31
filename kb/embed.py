@@ -1,12 +1,12 @@
 """
-embed.py — Semantische Such-Schicht (ergänzt BM25 in core.search).
+embed.py — Semantic search layer (complements BM25 in core.search).
 
-Strategie (automatisch, mit sauberem Fallback):
-  1. Wenn `sentence-transformers` installiert ist -> echte neuronale Embeddings.
-  2. Sonst -> TF-IDF-Cosinus über die bereits gebauten Chunks (numpy, KEIN Download).
+Strategy (automatic, with clean fallback):
+  1. If `sentence-transformers` is installed -> real neural embeddings.
+  2. Otherwise -> TF-IDF cosine over the already-built chunks (numpy, NO download).
 
-So funktioniert semantische Suche sofort und wird automatisch besser, sobald ein
-Embedding-Modell installiert wird. Genutzt von core.search (Hybrid: α·BM25 + (1-α)·cos).
+This way semantic search works immediately and automatically improves as soon as an
+embedding model is installed. Used by core.search (hybrid: α·BM25 + (1-α)·cos).
 """
 import os, re, json, math
 
@@ -24,7 +24,7 @@ def _tok(s):
 def _load_kb():
     return json.load(open(KB_JSON, encoding="utf-8"))
 
-# ---------- Backend-Wahl ----------
+# ---------- Backend selection ----------
 def init():
     if _STATE["ready"]:
         return _STATE["backend"]
@@ -38,7 +38,7 @@ def init():
     _STATE["ready"] = True
     return _STATE["backend"]
 
-# ---------- TF-IDF-Fallback (kein Download) ----------
+# ---------- TF-IDF fallback (no download) ----------
 def _init_tfidf():
     import numpy as np
     K = _load_kb()
@@ -78,7 +78,7 @@ def _scores_tfidf(query):
     sims = _TFIDF["vecs"] @ q
     return {cid: float(s) for cid, s in zip(_TFIDF["cids"], sims)}
 
-# ---------- Neuronale Embeddings (falls installiert) ----------
+# ---------- Neural embeddings (if installed) ----------
 def _init_st():
     import numpy as np
     from sentence_transformers import SentenceTransformer
@@ -98,9 +98,9 @@ def _scores_st(query):
     sims = _ST["emb"] @ np.asarray(q, dtype="float32")
     return {cid: float(s) for cid, s in zip(_ST["cids"], sims)}
 
-# ---------- öffentliche API ----------
+# ---------- public API ----------
 def semantic_scores(query):
-    """cid -> Cosinus-Ähnlichkeit (0..1). Backend automatisch."""
+    """cid -> cosine similarity (0..1). Backend chosen automatically."""
     backend = init()
     return _scores_st(query) if backend == "sentence-transformers" else _scores_tfidf(query)
 

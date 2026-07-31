@@ -1,66 +1,66 @@
 ---
 id: doc-09
 number: 09
-title: "Bender–Brody–Müller (2017): PT-symmetrischer Hamiltonian für die Riemann-Nullstellen"
+title: "Bender–Brody–Müller (2017): PT-Symmetric Hamiltonian for the Riemann Zeros"
 category: spectral
 status: open
 tags: [bender-brody-muller, PT-symmetry, hamiltonian]
 source_file: 09_Bender_Brody_Muller_2017_Hamiltonian.md
-lang: de
+lang: en
 ---
 
-# Bender–Brody–Müller (2017): PT-symmetrischer Hamiltonian für die Riemann-Nullstellen
+# Bender–Brody–Müller (2017): PT-Symmetric Hamiltonian for the Riemann Zeros
 
-**Kategorie:** Spektraler Ansatz / Quantenphysik
-**Autoren / Jahr:** Carl M. Bender, Dorje C. Brody, Markus P. Müller; *Physical Review Letters* 118, 130201 (30. März 2017)
-**Typ:** Operator-Konstruktion (Hilbert–Pólya-Kandidat)
-**Status:** Unvollständig; Selbstadjungiertheit nicht bewiesen, von Kritikern angezweifelt
+**Category:** Spectral approach / quantum physics
+**Authors / year:** Carl M. Bender, Dorje C. Brody, Markus P. Müller; *Physical Review Letters* 118, 130201 (30 March 2017)
+**Type:** Operator construction (Hilbert–Pólya candidate)
+**Status:** Incomplete; self-adjointness not proven, doubted by critics
 
-## Zusammenfassung
-Bender, Brody und Müller konstruierten 2017 einen konkreten Hamiltonian-Operator H mit der Eigenschaft: Erfüllen seine Eigenfunktionen eine geeignete Randbedingung, so entsprechen die Eigenwerte exakt den nicht-trivialen Nullstellen der Zetafunktion. Die Arbeit erregte mediale Aufmerksamkeit ("Physiker greifen die Riemann-Vermutung an"), blieb aber lückenhaft.
+## Summary
+In 2017 Bender, Brody and Müller constructed a concrete Hamiltonian operator H with the property: if its eigenfunctions satisfy a suitable boundary condition, then the eigenvalues correspond exactly to the non-trivial zeros of the zeta function. The work drew media attention ("Physicists attack the Riemann Hypothesis"), but remained incomplete.
 
-## Kernidee
-- Der Operator ist eine **Verallgemeinerung des Berry–Keating xp-Operators** (Dok. 08).
-- Konstruktion so, dass die Eigenwerte E_n mit den Nullstellen z_n via **z_n = ½(1 − i·E_n)** zusammenhängen. Sind alle E_n reell, so haben alle z_n Realteil 1/2 → RH.
-- **PT-Symmetrie statt klassischer Hermitezität:** H selbst ist nicht hermitesch im üblichen Sinn, aber **iH ist PT-symmetrisch**. Wäre diese PT-Symmetrie *maximal gebrochen*, so wären alle Eigenwerte reell.
+## Core idea
+- The operator is a **generalization of the Berry–Keating xp operator** (Doc. 08).
+- Constructed so that the eigenvalues E_n are related to the zeros z_n via **z_n = ½(1 − i·E_n)**. If all E_n are real, then all z_n have real part 1/2 → RH.
+- **PT symmetry instead of classical Hermiticity:** H itself is not Hermitian in the usual sense, but **iH is PT-symmetric**. If this PT symmetry were *maximally broken*, then all eigenvalues would be real.
 
-## Die entscheidende Lücke
-- Die Autoren formulierten selbst die Bedingung: **Lässt sich rigoros zeigen, dass H (in einem geeigneten Sinn) selbstadjungiert ist bzw. die PT-Symmetrie maximal gebrochen ist, so folgt die RH.**
-- Genau dieser Schritt wurde **nicht** bewiesen. Die Reduktion verlagert die RH lediglich in eine ebenso schwierige spektraltheoretische Aussage.
-- **Kritik:** Mehrere Kommentare (u. a. arXiv 1704.02644) wiesen auf Probleme bei der Wohldefiniertheit / Selbstadjungiertheit und der Behandlung der Randbedingungen hin. Der Zusammenhang reproduziert zudem im Wesentlichen die bekannte explizite Formel / funktionalanalytische Struktur, ohne neue Kontrolle über die Nullstellen zu liefern.
+## The decisive gap
+- The authors themselves stated the condition: **if one can rigorously show that H is (in a suitable sense) self-adjoint, resp. that the PT symmetry is maximally broken, then the RH follows.**
+- Exactly this step was **not** proven. The reduction merely shifts the RH into an equally difficult spectral-theoretic statement.
+- **Criticism:** several comments (including arXiv 1704.02644) pointed to problems with well-definedness / self-adjointness and the treatment of the boundary conditions. Moreover, the relation essentially reproduces the known explicit formula / functional-analytic structure without providing new control over the zeros.
 
-## Bedeutung / Einordnung
-- Sauberster moderner *expliziter* Hilbert–Pólya-Operatorkandidat — aber mit derselben fundamentalen Lücke wie alle Vorgänger: Die *Realität des Spektrums* ist die eigentliche Frage und bleibt unbewiesen.
-- Belebte die Diskussion über PT-symmetrische (nicht-hermitesche) Quantenmechanik im RH-Kontext neu.
-- **Kein Beweis der RH.**
+## Significance / context
+- The cleanest modern *explicit* Hilbert–Pólya operator candidate — but with the same fundamental gap as all its predecessors: the *reality of the spectrum* is the actual question and remains unproven.
+- Revived the discussion of PT-symmetric (non-Hermitian) quantum mechanics in the RH context.
+- **Not a proof of the RH.**
 
-## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+## Mathematical core (formulas, theorems, proof sketches)
 
-### Der konstruierte Operator
-Bender–Brody–Müller definieren auf einem geeigneten Hilbertraum (Eigenfunktionen mit Randbedingung) den Operator
+### The constructed operator
+On a suitable Hilbert space (eigenfunctions with a boundary condition), Bender–Brody–Müller define the operator
 ```
 Ĥ = (1/(1 − e^{−i p̂})) ( x̂ p̂ + p̂ x̂ ) (1 − e^{−i p̂})
 ```
-mit x̂ = i d/dx (bzw. kanonisch [x̂, p̂] = i). Das ist eine Konjugation des symmetrisierten Berry–Keating-Operators (x̂p̂ + p̂x̂)/2 mit dem nicht-unitären Operator (1 − e^{−ip̂}).
+with x̂ = i d/dx (resp. canonically [x̂, p̂] = i). This is a conjugation of the symmetrized Berry–Keating operator (x̂p̂ + p̂x̂)/2 by the non-unitary operator (1 − e^{−ip̂}).
 
-### Behauptete Eigenwert-Beziehung
-Erfüllen die Eigenfunktionen ψ die Randbedingung ψ(0) = 0, so behaupten die Autoren: die Eigenwerte E_n liefern die nicht-trivialen Nullstellen via
+### Claimed eigenvalue relation
+If the eigenfunctions ψ satisfy the boundary condition ψ(0) = 0, the authors claim: the eigenvalues E_n yield the non-trivial zeros via
 ```
-z_n = 1/2 + i·(... )   ⇔   die Sekulärgleichung wird zu  ζ(1/2 + i E_n …) = 0,
+z_n = 1/2 + i·(... )   ⇔   the secular equation becomes  ζ(1/2 + i E_n …) = 0,
 ```
-genauer in der Formulierung E_n ↔ z_n durch z_n = ½(1 − i E_n). Sind alle E_n reell ⇒ Re(z_n) = 1/2 ⇒ RH.
+more precisely in the formulation E_n ↔ z_n via z_n = ½(1 − i E_n). If all E_n are real ⇒ Re(z_n) = 1/2 ⇒ RH.
 
-### PT-Symmetrie statt Hermitezität
-Ĥ ist nicht hermitesch, aber es gilt
+### PT symmetry instead of Hermiticity
+Ĥ is not Hermitian, but
 ```
 (PT) (i Ĥ) (PT)^{−1} = i Ĥ
 ```
-mit Parität P: x ↦ −x und Zeitumkehr T: i ↦ −i. **Schlüsselsatz der PT-Theorie:** Ist die PT-Symmetrie ungebrochen (alle Eigenzustände PT-invariant), so ist das Spektrum reell. Die Autoren benötigen, dass die PT-Symmetrie **maximal gebrochen** auf dem relevanten Teilraum so wirkt, dass dennoch Realität folgt.
+holds with parity P: x ↦ −x and time reversal T: i ↦ −i. **Key theorem of PT theory:** if the PT symmetry is unbroken (all eigenstates PT-invariant), then the spectrum is real. The authors need the PT symmetry to act, when **maximally broken** on the relevant subspace, in such a way that reality still follows.
 
-### Die Lücke (präzise)
-Es fehlt der Beweis, dass Ĥ (bzw. die zugehörige Bilinearform) auf dem konstruierten Definitionsbereich tatsächlich **selbstadjungiert** (bzw. die PT-Symmetrie im nötigen Sinn ungebrochen) ist. Ohne diesen Schritt ist die Realität der E_n nicht gesichert. Zudem zeigt die Konjugation mit (1 − e^{−ip̂}) formal nur, dass die *Sekulärfunktion* mit ζ verwandt ist — die eigentliche Schwierigkeit (Lage der Nullstellen) wird reproduziert, nicht gelöst. Kommentar arXiv 1704.02644 weist auf Wohldefiniertheits-/Domänenprobleme hin.
+### The gap (precisely)
+What is missing is the proof that Ĥ (resp. the associated bilinear form) is actually **self-adjoint** on the constructed domain (resp. that the PT symmetry is unbroken in the required sense). Without this step the reality of the E_n is not secured. Moreover, the conjugation by (1 − e^{−ip̂}) formally only shows that the *secular function* is related to ζ — the actual difficulty (location of the zeros) is reproduced, not solved. Comment arXiv 1704.02644 points to well-definedness/domain problems.
 
-## Quellen
+## Sources
 - [Hamiltonian for the Zeros of the Riemann Zeta Function — Phys. Rev. Lett. 118, 130201](https://link.aps.org/doi/10.1103/PhysRevLett.118.130201)
 - [Hamiltonian for the zeros of the Riemann zeta function (arXiv 1608.03679)](https://arxiv.org/abs/1608.03679)
 - [Comment on "Hamiltonian for the Zeros of the Riemann Zeta Function" (arXiv 1704.02644)](https://arxiv.org/pdf/1704.02644)

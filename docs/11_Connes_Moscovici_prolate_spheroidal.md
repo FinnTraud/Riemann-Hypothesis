@@ -1,61 +1,61 @@
 ---
 id: doc-11
 number: 11
-title: "Connes–Moscovici: Prolate-Spheroidal-Operator und Zeta (2021–2022)"
+title: "Connes–Moscovici: Prolate Spheroidal Operator and Zeta (2021–2022)"
 category: spectral
 status: open
 tags: [connes-moscovici, prolate-spheroidal, operator]
 source_file: 11_Connes_Moscovici_prolate_spheroidal.md
-lang: de
+lang: en
 ---
 
-# Connes–Moscovici: Prolate-Spheroidal-Operator und Zeta (2021–2022)
+# Connes–Moscovici: Prolate Spheroidal Operator and Zeta (2021–2022)
 
-**Kategorie:** Spektraler Ansatz / nichtkommutative Geometrie (jüngste Entwicklung)
-**Autoren / Jahr:** Alain Connes & Henri Moscovici (2021–2022); verwandt: Connes–Consani "Spectral triples and ζ-cycles" (2021)
-**Typ:** Konkrete (approximative) Hilbert–Pólya-Operator-Realisierung
-**Status:** Aktive Forschung; "annähernde" Operator-Lösung, kein vollständiger RH-Beweis
+**Category:** Spectral approach / noncommutative geometry (most recent development)
+**Authors / year:** Alain Connes & Henri Moscovici (2021–2022); related: Connes–Consani "Spectral triples and ζ-cycles" (2021)
+**Type:** Concrete (approximate) Hilbert–Pólya operator realization
+**Status:** Active research; an "approximate" operator solution, not a complete RH proof
 
-## Zusammenfassung
-Connes und Moscovici untersuchten ab 2021 das Spektrum des **Prolate-Spheroidal-Wellenoperators** (ein klassischer Differentialoperator aus der Signalverarbeitung / Bandbegrenzung, ursprünglich von Slepian, Landau, Pollak an den Bell Labs studiert) und zeigten, dass dessen Spektrum eng mit den **Quadraten der Riemann-Nullstellen** zusammenhängt. Sie beschreiben dies als eine **konkrete, annähernde Realisierung der Hilbert–Pólya-Vermutung**.
+## Summary
+From 2021 Connes and Moscovici studied the spectrum of the **prolate spheroidal wave operator** (a classical differential operator from signal processing / band limiting, originally studied by Slepian, Landau, Pollak at Bell Labs) and showed that its spectrum is closely related to the **squares of the Riemann zeros**. They describe this as a **concrete, approximate realization of the Hilbert–Pólya conjecture**.
 
-## Kernidee
-- Der **Prolate-Operator** ist ein expliziter, gut studierter selbstadjungierter Differentialoperator zweiter Ordnung.
-- Schränkt man ihn auf das Komplement eines endlichen Intervalls ein, so besitzt er **negative Eigenwerte**, deren Ultraviolett-Verhalten (asymptotisches Wachstum) genau dem der **Quadrate der ζ-Nullstellen** entspricht.
-- Auf einem größeren Definitionsbereich eindeutig selbstadjungiert fortgesetzt, sind die Eigenwerte asymptotisch ähnlich zu den Quadraten der Nullstellen; eine geeignete "Quadratwurzel" dieses Operators liefert damit einen Operator, der die Hilbert–Pólya-Vermutung **näherungsweise** löst.
-- Eingebettet in das **semilokale Spurformel-Framework** von Connes (Dok. 10): ein semilokales Analogon des Prolate-Wellenoperators integriert zwei jüngere Entdeckungen zur spektralen Realisierung der Nullstellen.
+## Core idea
+- The **prolate operator** is an explicit, well-studied self-adjoint second-order differential operator.
+- Restricted to the complement of a finite interval, it has **negative eigenvalues** whose ultraviolet behavior (asymptotic growth) exactly matches that of the **squares of the ζ zeros**.
+- Uniquely extended to be self-adjoint on a larger domain, the eigenvalues are asymptotically similar to the squares of the zeros; a suitable "square root" of this operator thus yields an operator that solves the Hilbert–Pólya conjecture **approximately**.
+- Embedded in Connes' **semilocal trace-formula framework** (Doc. 10): a semilocal analogue of the prolate wave operator integrates two recent discoveries on the spectral realization of the zeros.
 
-## Bedeutung / Einordnung
-- Erstmals ein **klassischer, explizit bekannter** Operator (kein ad-hoc konstruierter), dessen Spektrum strukturell die Nullstellen widerspiegelt — methodisch bemerkenswert.
-- Verbindet Signalverarbeitung / Spektraltheorie / nichtkommutative Geometrie / Zahlentheorie.
-- **Einschränkung:** Die Übereinstimmung ist asymptotisch/approximativ ("ultraviolettes Verhalten", "annähernde Lösung"). Eine *exakte* spektrale Realisierung *aller* Nullstellen samt Beweis der RH ist damit **nicht** erreicht.
+## Significance / context
+- For the first time a **classical, explicitly known** operator (not an ad-hoc construction) whose spectrum structurally reflects the zeros — methodologically remarkable.
+- Connects signal processing / spectral theory / noncommutative geometry / number theory.
+- **Caveat:** the agreement is asymptotic/approximate ("ultraviolet behavior", "approximate solution"). An *exact* spectral realization of *all* zeros together with a proof of the RH is thus **not** achieved.
 
-## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+## Mathematical core (formulas, theorems, proof sketches)
 
-### Der Prolate-Wellenoperator
-Klassischer Slepian–Landau–Pollak-Operator auf L²(−1,1), kommutierend mit der bandbegrenzten Fourier-Projektion:
+### The prolate wave operator
+Classical Slepian–Landau–Pollak operator on L²(−1,1), commuting with the band-limited Fourier projection:
 ```
 (W_λ f)(x) = d/dx [ (1 − x²) df/dx ] + λ² x² f
 ```
-W_λ ist selbstadjungiert mit diskretem Spektrum; seine Eigenfunktionen sind die **prolaten Sphäroidwellenfunktionen** (PSWF). Connes–Moscovici untersuchen die Einschränkung auf das **Komplement** eines Intervalls.
+W_λ is self-adjoint with a discrete spectrum; its eigenfunctions are the **prolate spheroidal wave functions** (PSWF). Connes–Moscovici study the restriction to the **complement** of an interval.
 
-### Schlüsselresultat (asymptotisches Spektrum)
-Für die selbstadjungierte Fortsetzung des auf das Außenintervall eingeschränkten Operators gilt: die negativen Eigenwerte −E_n erfüllen asymptotisch (Ultraviolett-Verhalten)
+### Key result (asymptotic spectrum)
+For the self-adjoint extension of the operator restricted to the outer interval, the negative eigenvalues −E_n satisfy asymptotically (ultraviolet behavior)
 ```
-E_n  ~  (γ_n / 2)²   bzw.   die Zählfunktion der E_n  ≈  Zählfunktion der  γ_n²
+E_n  ~  (γ_n / 2)²   resp.   the counting function of the E_n  ≈  counting function of the  γ_n²
 ```
-wobei γ_n die Imaginärteile der nicht-trivialen Nullstellen sind. D. h.: das Spektrum reproduziert die **Quadrate der Riemann-Nullstellen**.
+where γ_n are the imaginary parts of the non-trivial zeros. That is: the spectrum reproduces the **squares of the Riemann zeros**.
 
-### Quadratwurzel ⇒ approximative Hilbert–Pólya-Lösung
-Definiert man (heuristisch) den Operator √(Prolate) auf dem passenden Teilraum, so hat dieser Eigenwerte ≈ γ_n/2 — ein konkreter selbstadjungierter Operator, dessen Spektrum die γ_n *approximiert*. Wegen Selbstadjungiertheit sind diese reell (das war stets das Ziel, Dok. 05). Daher: „konkrete annähernde Realisierung der Hilbert–Pólya-Vermutung".
+### Square root ⇒ approximate Hilbert–Pólya solution
+If one defines (heuristically) the operator √(prolate) on the appropriate subspace, it has eigenvalues ≈ γ_n/2 — a concrete self-adjoint operator whose spectrum *approximates* the γ_n. By self-adjointness these are real (which was always the goal, Doc. 05). Hence "concrete approximate realization of the Hilbert–Pólya conjecture".
 
-### Einbettung in die semilokale Spurformel
-Connes setzt dies in das **semilokale** Framework (endlich viele Stellen S = {∞, p_1, …, p_k}): ein semilokaler Prolate-Operator W_S, dessen Spurformel die explizite Formel über S realisiert (vgl. Dok. 10). Die zu erreichende Aussage bleibt die globale Positivität.
+### Embedding in the semilocal trace formula
+Connes places this in the **semilocal** framework (finitely many places S = {∞, p_1, …, p_k}): a semilocal prolate operator W_S whose trace formula realizes the explicit formula over S (cf. Doc. 10). The statement to be reached remains global positivity.
 
-### Warum nur approximativ
-Die Übereinstimmung E_n ~ (γ_n/2)² ist **asymptotisch** (führende Ordnung im UV); die exakte Identität des Spektrums mit allen γ_n — und damit RH — ist nicht etabliert. Korrekturterme und die Niederenergie-Region sind nicht kontrolliert.
+### Why only approximate
+The agreement E_n ~ (γ_n/2)² is **asymptotic** (leading order in the UV); the exact identity of the spectrum with all γ_n — and thus RH — is not established. Correction terms and the low-energy region are not controlled.
 
-## Quellen
+## Sources
 - [Prolate spheroidal operator and Zeta — Connes & Moscovici (arXiv 2112.05500)](https://arxiv.org/pdf/2112.05500)
 - [Prolate operator and Riemann Zeta — Connes (PNAS)](https://alainconnes.org/wp-content/uploads/PNAS_030322.pdf)
 - [Prolate spheroidal functions and zeta — Alain Connes (Blog)](https://alainconnes.org/2021/12/prolate-spheroidal-functions-and-zeta/)

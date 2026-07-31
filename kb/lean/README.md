@@ -1,38 +1,38 @@
-# Lean 4 Projekt — formale Verifikation (RH)
+# Lean 4 project — formal verification (RH)
 
-Diese Schicht ist die **einzige ohne Halluzinationsrisiko**: Lean prüft jeden Beweisschritt
-maschinell gegen die Axiome.
+This layer is the **only one without hallucination risk**: Lean checks every proof step
+by machine against the axioms.
 
-## Lokal bauen (dort, wo Netzwerkzugriff erlaubt ist)
+## Build locally (where network access is allowed)
 ```bash
-# Lean 4 + elan installieren:
+# Install Lean 4 + elan:
 curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y
 source ~/.elan/env
 
-# Selbst-enthaltenen Teil prüfen (KEIN mathlib nötig, baut sofort):
+# Check the self-contained part (NO mathlib needed, builds immediately):
 cd kb/lean
-lean RH/SelfContained.lean        # verifiziert 1+1=2, Spiegelungs-Lemma etc.
+lean RH/SelfContained.lean        # verifies 1+1=2, the reflection lemma, etc.
 
-# Volles Projekt mit mathlib (großer Download/Cache beim ersten Mal):
-lake exe cache get                # mathlib-Cache holen
-lake build                        # baut RH.lean inkl. Statement.lean
+# Full project with mathlib (large download/cache on the first run):
+lake exe cache get                # fetch the mathlib cache
+lake build                        # builds RH.lean including Statement.lean
 ```
 
-> Hinweis: In manchen Sandboxes ist der Toolchain-/mathlib-Download geblockt (HTTP 403).
-> Dann lokal bei dir / beim Professor bauen.
+> Note: in some sandboxes the toolchain/mathlib download is blocked (HTTP 403).
+> In that case build locally on your machine / the professor's machine.
 
-## Dateien
-- `RH/SelfContained.lean` — echte, maschinell geprüfte Beweise OHNE mathlib (Pipeline-Test).
-- `RH/Statement.lean` — formale RH-Aussage mit `sorry` (benötigt mathlib, `riemannZeta`).
-- `RH.lean` — Sammeldatei.
-- `lakefile.toml`, `lean-toolchain` — Projektkonfiguration.
+## Files
+- `RH/SelfContained.lean` — real, machine-checked proofs WITHOUT mathlib (pipeline test).
+- `RH/Statement.lean` — formal RH statement with `sorry` (requires mathlib, `riemannZeta`).
+- `RH.lean` — aggregate file.
+- `lakefile.toml`, `lean-toolchain` — project configuration.
 
-## Realistischer Beitrag (mit Professor)
-1. Ein **zur RH äquivalentes Kriterium** formalisieren (Λ≤0 docs/23, Li-Positivität docs/14)
-   und die Äquivalenz beweisen.
-2. **Bewiesene Teilresultate** formal nachziehen (Hardy docs/03, Rodgers–Tao Λ≥0 docs/23).
-3. Jeder solche Schritt ist **verifizierter, publizierbarer** Fortschritt — anders als
-   informelle „Beweise" (siehe docs/27, docs/35).
+## Realistic contribution (with a professor)
+1. Formalize a **criterion equivalent to the RH** (Λ≤0 docs/23, Li positivity docs/14)
+   and prove the equivalence.
+2. Formally reproduce **proven partial results** (Hardy docs/03, Rodgers–Tao Λ≥0 docs/23).
+3. Every such step is **verified, publishable** progress — unlike
+   informal "proofs" (see docs/27, docs/35).
 
-Anbindung an den MCP-Server: `formal_statement` (Aussage + Setup) und `lean_check` (prüft
-Lean-Code, falls Toolchain vorhanden).
+Connection to the MCP server: `formal_statement` (statement + setup) and `lean_check` (checks
+Lean code if a toolchain is present).

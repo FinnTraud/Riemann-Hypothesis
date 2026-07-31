@@ -1,107 +1,107 @@
 ---
 id: doc-02
 number: 02
-title: "Riemann–von-Mangoldt-Formel und die explizite Formel"
+title: "The Riemann–von Mangoldt Formula and the Explicit Formula"
 category: foundations
 status: reference
 tags: [explicit-formula, von-mangoldt, counting-function, prime-counting]
 source_file: 02_Riemann_von_Mangoldt_formula_explicit_formula.md
-lang: de
+lang: en
 ---
 
-# Riemann–von-Mangoldt-Formel und die explizite Formel
+# The Riemann–von Mangoldt Formula and the Explicit Formula
 
-**Kategorie:** Fundament
-**Autoren / Jahr:** B. Riemann (1859, formuliert), Hans von Mangoldt (1895/1905, bewiesen)
-**Typ:** Strukturelles Werkzeug (Nullstellenzählung & Primzahl-Nullstellen-Brücke)
-**Status:** Bewiesen; zentrale Infrastruktur für RH-Forschung
+**Category:** Foundation
+**Authors / year:** B. Riemann (1859, formulated), Hans von Mangoldt (1895/1905, proved)
+**Type:** Structural tool (zero counting & prime–zero bridge)
+**Status:** Proven; central infrastructure for RH research
 
-## Zusammenfassung
-Die Riemann–von-Mangoldt-Formel beschreibt die Verteilung der Nullstellen der Zetafunktion quantitativ. Die zugehörige *explizite Formel* macht die zentrale Idee der RH greifbar: Die nicht-trivialen Nullstellen kontrollieren direkt die Verteilung der Primzahlen. Von Mangoldt bewies 1895 (vollständig 1905) die von Riemann 1859 angegebene Formel.
+## Summary
+The Riemann–von Mangoldt formula describes the distribution of the zeros of the zeta function quantitatively. The associated *explicit formula* makes the central idea of the RH tangible: the non-trivial zeros directly control the distribution of the primes. Von Mangoldt proved in 1895 (fully in 1905) the formula given by Riemann in 1859.
 
-## Die Zählformel N(T)
-Die Anzahl N(T) der nicht-trivialen Nullstellen mit Imaginärteil in (0, T] erfüllt:
+## The counting formula N(T)
+The number N(T) of non-trivial zeros with imaginary part in (0, T] satisfies:
 
 ```
 N(T) = (T/2π) · log(T/2π) − (T/2π) + 7/8 + S(T) + (1/π)·δ(T)
 ```
 
-- Der glatte Hauptterm wächst wie (T/2π)·log(T/2π) → die Nullstellen werden mit zunehmender Höhe dichter.
-- **S(T)** ist ein Fluktuationsterm (Argument von ζ entlang der Geraden); sein Verhalten ist eng mit der RH verknüpft.
-- **Backlund** gab eine explizite Fehlerschranke: |N(T) − Hauptterm| < 0,137·log(T) + 0,443·log(log T) + 4,350 für T > 2.
+- The smooth main term grows like (T/2π)·log(T/2π) → the zeros become denser with increasing height.
+- **S(T)** is a fluctuation term (the argument of ζ along the line); its behavior is closely tied to the RH.
+- **Backlund** gave an explicit error bound: |N(T) − main term| < 0.137·log(T) + 0.443·log(log T) + 4.350 for T > 2.
 
-## Die explizite Formel (Primzahlen ↔ Nullstellen)
-Mit der Chebyshev-Funktion ψ(x) = Σ_{n≤x} Λ(n) (von-Mangoldt-Funktion Λ) gilt:
+## The explicit formula (primes ↔ zeros)
+With the Chebyshev function ψ(x) = Σ_{n≤x} Λ(n) (von Mangoldt function Λ) one has:
 
 ```
 ψ(x) = x − Σ_ρ (x^ρ / ρ) − log(2π) − (1/2)·log(1 − x^(−2))
 ```
 
-- Die Summe läuft über **alle nicht-trivialen Nullstellen ρ**.
-- Jede Nullstelle ρ = β + iγ liefert einen oszillierenden Term der Größenordnung x^β. **Genau hier wird die RH bedeutsam:** Liegt jede Nullstelle bei β = 1/2, sind alle Fehlerterme von der Ordnung √x — die kleinstmögliche, "regulärste" Primzahlverteilung (vgl. Koch-Kriterium: π(x) = Li(x) + O(√x·log x)).
-- Eine Nullstelle abseits von Re=1/2 würde einen größeren Fehlerterm (x^β mit β > 1/2) erzwingen — die RH ist also exakt die Aussage maximaler Regularität der Primzahlverteilung.
+- The sum runs over **all non-trivial zeros ρ**.
+- Each zero ρ = β + iγ contributes an oscillating term of order x^β. **This is exactly where the RH becomes significant:** if every zero lies at β = 1/2, then all error terms are of order √x — the smallest possible, "most regular" prime distribution (cf. Koch criterion: π(x) = Li(x) + O(√x·log x)).
+- A zero off Re=1/2 would force a larger error term (x^β with β > 1/2) — so the RH is exactly the statement of maximal regularity of the prime distribution.
 
-## Bedeutung
-- Liefert das präzise Bindeglied "Nullstellenlage ⇒ Primzahl-Fehlerterm" und damit die eigentliche Motivation der RH.
-- Grundlage für nullstellenfreie Regionen (Dok. 12), Dichte-Hypothese (Dok. 17) und alle Spurformel-Ansätze (Connes, Selberg, Dok. 10/19), die die explizite Formel als "Spur" reinterpretieren.
+## Significance
+- Provides the precise link "location of zeros ⇒ prime error term" and thereby the real motivation of the RH.
+- Basis for zero-free regions (Doc. 12), the density hypothesis (Doc. 17), and all trace-formula approaches (Connes, Selberg, Doc. 10/19) that reinterpret the explicit formula as a "trace".
 
-## Mathematischer Kern (Formeln, Sätze, Beweisskizzen)
+## Mathematical core (formulas, theorems, proof sketches)
 
-### Herleitung der Zählformel N(T) (Argumentprinzip)
-N(T) zählt Nullstellen im Rechteck 0 < Im(s) < T des kritischen Streifens. Per Argumentprinzip:
+### Derivation of the counting formula N(T) (argument principle)
+N(T) counts zeros in the rectangle 0 < Im(s) < T of the critical strip. By the argument principle:
 ```
 N(T) = (1/2π) ∮_∂R d arg ξ(s)
 ```
-Auswertung der Beiträge entlang des Randrechtecks (mit ξ(s) = (1/2)s(s−1)π^{−s/2}Γ(s/2)ζ(s)). Der glatte Teil stammt aus der Stirling-Asymptotik von Γ:
+Evaluating the contributions along the boundary rectangle (with ξ(s) = (1/2)s(s−1)π^{−s/2}Γ(s/2)ζ(s)). The smooth part comes from the Stirling asymptotics of Γ:
 ```
 N(T) = (T/2π) log(T/2π) − T/2π + 7/8 + S(T) + O(1/T)
 ```
-mit dem **Argumentterm** S(T) = (1/π) arg ζ(1/2 + iT) (entlang horizontaler Linie stetig fortgesetzt). Bekannt ist S(T) = O(log T) unbedingt; unter RH sogar S(T) = O(log T / log log T).
+with the **argument term** S(T) = (1/π) arg ζ(1/2 + iT) (continuously extended along a horizontal line). It is known that S(T) = O(log T) unconditionally; under RH even S(T) = O(log T / log log T).
 
-### Mittlere Nullstellendichte
-Differenzieren des Hauptterms ergibt die lokale Dichte der Imaginärteile:
+### Mean zero density
+Differentiating the main term gives the local density of the imaginary parts:
 ```
 dN/dT ≈ (1/2π) log(T/2π)
 ```
-d. h. mittlerer Abstand benachbarter Nullstellen auf Höhe T ist ≈ 2π/log(T/2π) → 0. (Grundlage für die Normierung in der Paarkorrelation, Dok. 06.)
+i.e. the mean spacing of neighboring zeros at height T is ≈ 2π/log(T/2π) → 0. (Basis for the normalization in the pair correlation, Doc. 06.)
 
-### Herleitung der expliziten Formel (Perron + Residuen)
-Ausgangspunkt: logarithmische Ableitung des Eulerprodukts,
+### Derivation of the explicit formula (Perron + residues)
+Starting point: the logarithmic derivative of the Euler product,
 ```
-−ζ'(s)/ζ(s) = Σ_{n=1}^∞ Λ(n) n^{−s},   Λ(n) = log p falls n = p^k, sonst 0.
+−ζ'(s)/ζ(s) = Σ_{n=1}^∞ Λ(n) n^{−s},   Λ(n) = log p if n = p^k, else 0.
 ```
-Perron-Formel für ψ(x) = Σ_{n≤x} Λ(n):
+Perron formula for ψ(x) = Σ_{n≤x} Λ(n):
 ```
 ψ(x) = (1/2πi) ∫_{c−i∞}^{c+i∞} (−ζ'(s)/ζ(s)) x^s/s ds   (c > 1)
 ```
-Verschiebt man die Kontur nach links und sammelt die **Residuen**, so trägt bei:
-- Pol von ζ bei s = 1 (Residuum von −ζ'/ζ · x^s/s ist x) → Hauptterm **x**;
-- jede nicht-triviale Nullstelle ρ (Pol von ζ'/ζ) → Term **−x^ρ/ρ**;
-- Pol bei s = 0 → −log(2π);
-- triviale Nullstellen s = −2n → +(1/2) log(1 − x^{−2}).
-Ergebnis (von-Mangoldt):
+Shifting the contour to the left and collecting the **residues** contributes:
+- pole of ζ at s = 1 (residue of −ζ'/ζ · x^s/s is x) → main term **x**;
+- each non-trivial zero ρ (pole of ζ'/ζ) → term **−x^ρ/ρ**;
+- pole at s = 0 → −log(2π);
+- trivial zeros s = −2n → +(1/2) log(1 − x^{−2}).
+Result (von Mangoldt):
 ```
 ψ(x) = x − Σ_ρ x^ρ/ρ − log(2π) − (1/2) log(1 − x^{−2})
 ```
 
-### Warum RH ⟺ optimaler Fehlerterm
-Schreibe ρ = β + iγ. Dann |x^ρ/ρ| = x^β/|ρ|. Die Summe über Nullstellen liefert
+### Why RH ⟺ optimal error term
+Write ρ = β + iγ. Then |x^ρ/ρ| = x^β/|ρ|. The sum over zeros yields
 ```
 ψ(x) − x = − Σ_ρ x^ρ/ρ = O(x^{Θ} (log x)²),   Θ = sup_ρ β.
 ```
-Unter RH ist Θ = 1/2, also ψ(x) = x + O(√x (log x)²), äquivalent zu **π(x) = Li(x) + O(√x log x)** (Koch 1901). Eine Nullstelle mit β > 1/2 würde den Exponenten Θ und damit den Fehler vergrößern. Somit:
+Under RH, Θ = 1/2, so ψ(x) = x + O(√x (log x)²), equivalent to **π(x) = Li(x) + O(√x log x)** (Koch 1901). A zero with β > 1/2 would increase the exponent Θ and thus the error. Hence:
 ```
 RH  ⟺  ψ(x) − x = O(x^{1/2+ε})  ⟺  π(x) − Li(x) = O(x^{1/2+ε})
 ```
 
-### Weils explizite Formel (allgemeine Form, Dualität Primzahlen ↔ Nullstellen)
-Für eine geeignete Testfunktion g mit Fourier-Transformierter h:
+### Weil's explicit formula (general form, prime ↔ zero duality)
+For a suitable test function g with Fourier transform h:
 ```
-Σ_ρ h(γ) = (1/2π)∫ h(r)[ψ-Term] dr − Σ_{n} Λ(n)/√n · g(log n) + (archimedischer Term)
+Σ_ρ h(γ) = (1/2π)∫ h(r)[ψ-term] dr − Σ_{n} Λ(n)/√n · g(log n) + (archimedean term)
 ```
-Diese Identität ist der Angelpunkt der Spurformel-Ansätze (Connes, Dok. 10) und der Positivitätskriterien (Weil/Li, Dok. 14).
+This identity is the pivot of the trace-formula approaches (Connes, Doc. 10) and the positivity criteria (Weil/Li, Doc. 14).
 
-## Quellen
+## Sources
 - [Riemann–von Mangoldt formula — Wikipedia](https://en.wikipedia.org/wiki/Riemann%E2%80%93von_Mangoldt_formula)
 - [The Explicit Formula in simple terms (arXiv math/9810169)](https://arxiv.org/pdf/math/9810169)
 - [Sketch of the Riemann-von Mangoldt explicit formula — Reed College](https://people.reed.edu/~jerry/361/lectures/rvm.pdf)

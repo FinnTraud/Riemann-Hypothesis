@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-query.py — CLI zum Testen des Wissensgraph-RAG (ohne MCP, nur Stdlib).
+query.py — CLI for testing the knowledge-graph RAG (no MCP, stdlib only).
 
-Beispiele:
-  python3 kb/query.py search "spektraler Operator Nullstellen" -k 5
+Examples:
+  python3 kb/query.py search "spectral operator zeros" -k 5
   python3 kb/query.py neighbors concept-hilbert-polya
   python3 kb/query.py path doc-19 concept-RH
   python3 kb/query.py status refuted
   python3 kb/query.py claim "Mertens"
-  python3 kb/query.py evaluate "Ich nutze die Funktionalgleichung und Wachstum von zeta"
+  python3 kb/query.py evaluate "I use the functional equation and growth of zeta"
   python3 kb/query.py stats
 """
 import sys, json, argparse
