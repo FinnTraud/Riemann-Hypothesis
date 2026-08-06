@@ -1,8 +1,8 @@
 {
   "name": "Riemann Hypothesis Knowledge Base",
   "version": "1.0",
-  "updated": "2026-06",
-  "count": 52,
+  "updated": "2026-08",
+  "count": 55,
   "documents": [
     {
       "number": "00",
@@ -814,6 +814,80 @@
       ],
       "file": "docs/51_collaboration_brief.md",
       "summary": ""
+    },
+    {
+      "number": "52",
+      "id": "doc-52",
+      "title": "Abgeschnittene Weil-Quadratform & Zeta-Spektraltripel (Connes–van Suijlekom, Connes–Consani–Moscovici, 2025–2026)",
+      "category": "spectral",
+      "status": "open",
+      "tags": [
+        "connes",
+        "van-suijlekom",
+        "consani",
+        "moscovici",
+        "weil-positivity",
+        "spectral-triple",
+        "toeplitz",
+        "caratheodory-fejer",
+        "galerkin",
+        "truncation",
+        "hilbert-polya",
+        "2025",
+        "2026",
+        "active"
+      ],
+      "file": "docs/52_Connes_truncated_Weil_spectral_realization.md",
+      "summary": "Die konkreteste Fassung des Hilbert-Polya-Programms seit Jahrzehnten: Die Weilsche Quadratform wird im Ort und in der Arithmetik (nur Primzahlen p <= x) abgeschnitten; die entstehende endliche Galerkin-Matrix hat einen Grundzustand, dessen Fourier-Nullstellen BEWEISBAR auf der kritischen Geraden liegen. Numerisch approximieren sie die echten Zeta-Nullstellen extrem genau (Fehler bis 1.5e-168). Offen bleibt genau die Konvergenz fuer Cutoff -> unendlich."
+    },
+    {
+      "number": "53",
+      "id": "doc-53",
+      "title": "Paarkorrelation ohne RH & die Alternative Hypothese (Goldston, Lee, Schettler, Suriajaya, Baluyot, Turnage-Butterbaugh, 2025–2026)",
+      "category": "partial-results",
+      "status": "open",
+      "tags": [
+        "pair-correlation",
+        "montgomery",
+        "alternative-hypothesis",
+        "simple-zeros",
+        "critical-line",
+        "gallagher-mueller",
+        "essential-simplicity",
+        "goldston",
+        "suriajaya",
+        "2025",
+        "2026",
+        "active"
+      ],
+      "file": "docs/53_pair_correlation_alternative_hypothesis.md",
+      "summary": "Montgomerys Paarkorrelation war seit 1973 an die RH gekoppelt. 2025/26 wird gezeigt, dass die Methode von Gallagher-Mueller die RH gar nicht benoetigt: Die Paarkorrelationsvermutung allein impliziert, dass asymptotisch 100 % der Nullstellen einfach UND auf der kritischen Geraden liegen. Auch die Alternative Hypothese liefert dasselbe Ergebnis und ist damit kein Schlupfloch."
+    },
+    {
+      "number": "54",
+      "id": "doc-54",
+      "title": "Maschinengestützte Zahlentheorie: ANTEDB, systematische Exponenten-Optimierung und formalisierter Primzahlsatz (2025–2026)",
+      "category": "meta",
+      "status": "reference",
+      "tags": [
+        "antedb",
+        "tao",
+        "trudgian",
+        "yang",
+        "exponent-pairs",
+        "zero-density",
+        "additive-energy",
+        "lean",
+        "mathlib",
+        "autoformalization",
+        "gauss",
+        "kontorovich",
+        "reproducibility",
+        "2025",
+        "2026"
+      ],
+      "file": "docs/54_machine_assisted_number_theory_ANTEDB_Lean.md",
+      "summary": "Nicht die RH hat sich bewegt, sondern die Arbeitsweise: ANTEDB macht die Exponenten-Landschaft der analytischen Zahlentheorie zu einer systematisch optimierbaren Datenbank (Tao-Trudgian-Yang 2025); der starke Primzahlsatz ist in Lean 4 formalisiert; Reproduzierbarkeitspakete mit Intervall-Zertifikaten werden zur Norm. Methodischer, kein inhaltlicher RH-Fortschritt."
     }
   ]
 }

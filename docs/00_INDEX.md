@@ -11,7 +11,7 @@ lang: de
 
 # Riemann Hypothesis — Dokumenten-Index (RAG Knowledge Base)
 
-> Diese Wissensbasis enthält je ein eigenständiges Dokument pro Paper, Beweisansatz, Kriterium, gescheitertem Beweis oder Meilenstein rund um die Riemann-Vermutung (Riemann Hypothesis, RH). Jede Datei ist als unabhängig abrufbarer Chunk für Vektordatenbank / RAG konzipiert: einheitliche Struktur (Metadaten → Zusammenfassung → Kernidee → Status → Bedeutung → Quellen). Stand: Juni 2026.
+> Diese Wissensbasis enthält je ein eigenständiges Dokument pro Paper, Beweisansatz, Kriterium, gescheitertem Beweis oder Meilenstein rund um die Riemann-Vermutung (Riemann Hypothesis, RH). Jede Datei ist als unabhängig abrufbarer Chunk für Vektordatenbank / RAG konzipiert: einheitliche Struktur (Metadaten → Zusammenfassung → Kernidee → Status → Bedeutung → Quellen). Stand: August 2026 (55 Dokumente, 00–54).
 
 ## Kategorien und Dokumente
 
@@ -90,8 +90,17 @@ lang: de
 - `48_Meyer_Kurokawa_algebraic_programs.md` — Meyer (Distributionen), Kurokawa (absolute Zeta)
 - `49_live_analytic_frontier.md` — Live-Front 2019–2026: explizite/log-freie Dichte, Tao-Programm, Nelson-Subkonvexität, Harper-Momente
 
+### N. Arbeitsweise & Kollaboration
+- `50_reasoning_protocol.md` — Denkprotokoll: 7 Schritte, Tool-Forcing, Statustrennung, Anti-Crackpot-Gate
+- `51_collaboration_brief.md` — Kollaborations-Leitfaden: realistische Teilprojekte mit einer Fachperson
+
+### O. Aktuelle Front 2025–2026 (Recherche-Update August 2026)
+- `52_Connes_truncated_Weil_spectral_realization.md` — **Abgeschnittene Weil-Quadratform & Zeta-Spektraltripel** (Connes–van Suijlekom, Connes–Consani–Moscovici, Connes' „Brief an Riemann", Suzuki): endliche Galerkin-Matrizen, bewiesene Nullstellenlage pro Cutoff, offener Konvergenzschritt
+- `53_pair_correlation_alternative_hypothesis.md` — **Paarkorrelation ohne RH & die Alternative Hypothese** (Goldston u. a.): PCC allein ⇒ 100 % einfache Nullstellen auf der kritischen Geraden
+- `54_machine_assisted_number_theory_ANTEDB_Lean.md` — ANTEDB & systematische Exponenten-Optimierung (Tao–Trudgian–Yang), formalisierter starker Primzahlsatz in Lean 4, Intervall-Zertifikate
+
 ## Quellen-Verifikation / Recherche
-Diese Wissensbasis wurde durch einen 5-Schritt-Recherche-Agenten auf Vollständigkeit geprüft (Stand Juni 2026); die Dokumente 43–49 schließen die dabei identifizierten Lücken. Hinweise zur Nutzung im Vektor-/MCP-Server: siehe `README_RAG.md`.
+Diese Wissensbasis wurde durch einen 5-Schritt-Recherche-Agenten auf Vollständigkeit geprüft (Stand Juni 2026); die Dokumente 43–49 schließen die dabei identifizierten Lücken. Ein Literatur-Update im August 2026 ergänzte die Dokumente 52–54 um die Front 2025–2026. Hinweise zur Nutzung im Vektor-/MCP-Server: siehe `README_RAG.md`.
 
 ## Übergeordnete Übersichtsdatei
 Die Datei `../Riemann_Hypothesis_Proof_Approaches.md` (eine Ebene höher) enthält die zusammenfassende Gesamtübersicht aller Ansätze in einem Dokument.

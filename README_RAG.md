@@ -8,12 +8,12 @@ Diese Wissensbasis ist eine kuratierte, quellenbelegte Sammlung zu **allen ernst
 Riemann_Hypothesis_Proof_Approaches.md   # Gesamtüberblick (eine Datei, EN)
 docs/
   00_INDEX.md                            # Inhaltsverzeichnis + Kategorien
-  01..49_*.md                            # je 1 Thema pro Datei (DE), mit YAML-Frontmatter
+  01..54_*.md                            # je 1 Thema pro Datei (DE), mit YAML-Frontmatter
 README_RAG.md                            # diese Datei
 manifest.json                            # maschinenlesbares Verzeichnis (generiert)
 ```
 
-- **50 Dokumente** (00–49). Jedes ist ein eigenständiger, abrufbarer Chunk.
+- **55 Dokumente** (00–54). Jedes ist ein eigenständiger, abrufbarer Chunk.
 - Jede Datei hat **YAML-Frontmatter** (id, number, title, category, status, tags, source_file, lang).
 - Jedes Inhaltsdokument folgt demselben Schema: `Metadaten → Zusammenfassung → Mathematischer Kern (Formeln/Sätze/Beweisskizzen) → Bedeutung/Einordnung → Quellen`.
 

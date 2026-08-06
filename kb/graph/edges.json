@@ -1,95 +1,629 @@
 {
   "_comment": "Kuratierte typisierte Relationen. from/to = Knoten-IDs (doc-NN aus manifest, oder concept-*). type ∈ {equivalent_to, implies, reduces_to, refuted_by, special_case_of, generalizes, obstruction_for, evidence_for, models, blueprint_for, uses, partial_result_for, weaker_than, attempts_transfer_of, instance_of}. note = kurze Begründung.",
   "edges": [
-    {"from": "concept-explicit-formula", "to": "doc-02", "type": "instance_of", "note": "Doc 02 stellt die explizite Formel dar."},
-    {"from": "doc-03", "to": "concept-RH", "type": "partial_result_for", "note": "Hardy: unendlich viele Nullstellen auf der Geraden."},
-    {"from": "doc-04", "to": "concept-RH", "type": "partial_result_for", "note": "Levinson/Conrey: >41% auf der Geraden."},
-    {"from": "doc-04", "to": "doc-03", "type": "generalizes", "note": "Quantifiziert Hardys Resultat (positiver Anteil)."},
-
-    {"from": "doc-13", "to": "concept-RH", "type": "equivalent_to", "note": "Nyman-Beurling/Báez-Duarte: Dichte ⟺ RH."},
-    {"from": "doc-14", "to": "concept-RH", "type": "equivalent_to", "note": "Li-Koeffizienten λ_n≥0 ⟺ RH."},
-    {"from": "doc-15", "to": "concept-RH", "type": "equivalent_to", "note": "Robin/Lagarias-Ungleichung ⟺ RH."},
-    {"from": "doc-16", "to": "concept-RH", "type": "equivalent_to", "note": "Mertens-Kriterium M(x)=O(x^{1/2+ε}) ⟺ RH (NICHT die widerlegte Mertens-Vermutung)."},
-    {"from": "doc-23", "to": "concept-RH", "type": "equivalent_to", "note": "de-Bruijn–Newman: Λ≤0 ⟺ RH."},
-    {"from": "doc-29", "to": "concept-RH", "type": "equivalent_to", "note": "ξ∈Laguerre-Pólya / Jensen-Hyperbolizität ⟺ RH."},
-    {"from": "doc-44", "to": "concept-RH", "type": "equivalent_to", "note": "Lapidus: inverses Spektralproblem für alle D≠1/2 ⟺ RH."},
-    {"from": "doc-45", "to": "concept-RH", "type": "equivalent_to", "note": "Volchkov/Sekatskii/Redheffer/Salem/BBLS-Kriterien ⟺ RH."},
-    {"from": "doc-38", "to": "concept-RH", "type": "instance_of", "note": "Offizielle Clay-Problemstellung der RH."},
-
-    {"from": "doc-16", "to": "doc-45", "type": "equivalent_to", "note": "Redheffer-Matrix det(R_n)=M(n) verbindet Mertens und Matrix-Kriterium."},
-    {"from": "doc-14", "to": "doc-13", "type": "uses", "note": "Beide Positivitäts-/Dichtekriterien, gemeinsames Leitmotiv."},
-
-    {"from": "concept-RH", "to": "doc-17", "type": "implies", "note": "RH ⇒ Lindelöf-Hypothese."},
-    {"from": "doc-17", "to": "concept-RH", "type": "weaker_than", "note": "Lindelöf ist schwächer; Rückrichtung unbekannt."},
-    {"from": "doc-12", "to": "concept-RH", "type": "weaker_than", "note": "Nullstellenfreie Region ist weit schwächer als RH."},
-    {"from": "doc-22", "to": "doc-17", "type": "uses", "note": "Guth–Maynard verbessert Dichte-Abschätzungen Richtung Dichte-Hypothese."},
-    {"from": "doc-49", "to": "doc-22", "type": "evidence_for", "note": "Live-Front: explizite Dichte, Subkonvexität, Momente."},
-    {"from": "doc-49", "to": "doc-17", "type": "evidence_for", "note": "Subkonvexität nähert Lindelöf an."},
-    {"from": "doc-49", "to": "doc-07", "type": "evidence_for", "note": "Harper/Radziwiłł–Soundararajan: scharfe Momentschranken stützen Keating-Snaith."},
-
-    {"from": "concept-RH", "to": "concept-GRH", "type": "special_case_of", "note": "RH ist der Spezialfall ζ der GRH."},
-    {"from": "doc-21", "to": "concept-GRH", "type": "instance_of", "note": "GRH/Selberg-Klasse/Große RH."},
-    {"from": "doc-32", "to": "concept-GRH", "type": "partial_result_for", "note": "Zhang: Landau-Siegel-Nullstellen (Ausnahmen zur GRH) eingeschränkt."},
-
-    {"from": "doc-05", "to": "concept-hilbert-polya", "type": "instance_of", "note": "Hilbert–Pólya-Vermutung selbst."},
-    {"from": "doc-08", "to": "concept-hilbert-polya", "type": "models", "note": "Berry–Keating xp-Modell (nur geglättete Dichte)."},
-    {"from": "doc-09", "to": "concept-hilbert-polya", "type": "models", "note": "Bender–Brody–Müller PT-Hamiltonian (Selbstadjungiertheit unbewiesen)."},
-    {"from": "doc-10", "to": "concept-hilbert-polya", "type": "models", "note": "Connes: spektrale Realisierung als Absorptionsspektrum."},
-    {"from": "doc-11", "to": "concept-hilbert-polya", "type": "models", "note": "Prolate-Operator: approximative HP-Realisierung."},
-    {"from": "doc-34", "to": "concept-hilbert-polya", "type": "uses", "note": "Bost–Connes: Operator mit Spektrum {log n} (geometrische Seite)."},
-    {"from": "doc-44", "to": "concept-hilbert-polya", "type": "models", "note": "Lapidus-Spektraloperator ζ(∂)."},
-    {"from": "doc-47", "to": "concept-hilbert-polya", "type": "models", "note": "Primon-Gas/Sierra/Quantengraphen."},
-    {"from": "doc-31", "to": "concept-hilbert-polya", "type": "models", "note": "Deninger: Frobenius-artiger Operator auf hypothetischer Kohomologie."},
-    {"from": "doc-48", "to": "concept-hilbert-polya", "type": "models", "note": "Meyer: distributionelle Spektralrealisierung."},
-    {"from": "doc-19", "to": "concept-hilbert-polya", "type": "blueprint_for", "note": "Selberg: BEWIESENES Modell (Laplace selbstadjungiert ⇒ RH-Analogon)."},
-    {"from": "doc-06", "to": "concept-hilbert-polya", "type": "evidence_for", "note": "Montgomery-GUE: statistische Evidenz für chaotischen selbstadj. Operator."},
-    {"from": "doc-07", "to": "concept-hilbert-polya", "type": "evidence_for", "note": "Keating-Snaith-Momente stützen das Random-Matrix-Bild."},
-
-    {"from": "doc-18", "to": "concept-geometry-transfer", "type": "blueprint_for", "note": "Weil/Deligne: BEWIESENES RH-Analogon über 𝔽_q — die Blaupause."},
-    {"from": "doc-30", "to": "concept-geometry-transfer", "type": "attempts_transfer_of", "note": "𝔽₁/arithmetic site: Weil-Beweis auf ℤ übertragen."},
-    {"from": "doc-31", "to": "concept-geometry-transfer", "type": "attempts_transfer_of", "note": "Deninger-Kohomologie."},
-    {"from": "doc-10", "to": "concept-geometry-transfer", "type": "attempts_transfer_of", "note": "Connes adelische Spurformel."},
-    {"from": "doc-48", "to": "concept-geometry-transfer", "type": "attempts_transfer_of", "note": "Kurokawa absolute Zeta/Tensorprodukte."},
-    {"from": "doc-30", "to": "doc-34", "type": "uses", "note": "Bost–Connes liefert Galois-/Frobenius-Symmetrie fürs 𝔽₁-Programm."},
-
-    {"from": "doc-14", "to": "concept-positivity", "type": "instance_of", "note": "Weil-/Li-Positivität."},
-    {"from": "doc-20", "to": "concept-positivity", "type": "instance_of", "note": "de Branges: Positivitätsbedingung (für ζ widerlegt)."},
-    {"from": "doc-29", "to": "concept-positivity", "type": "instance_of", "note": "Jensen/Laguerre-Pólya-Reellwurzeligkeit."},
-    {"from": "doc-23", "to": "concept-positivity", "type": "instance_of", "note": "de-Bruijn–Newman Λ≤0."},
-    {"from": "doc-33", "to": "concept-positivity", "type": "instance_of", "note": "Lee-Yang/Newman: Positivität erzwingt reelle Nullstellen."},
-    {"from": "doc-10", "to": "concept-positivity", "type": "reduces_to", "note": "Connes reduziert RH auf Weil-Positivität."},
-    {"from": "doc-33", "to": "doc-23", "type": "uses", "note": "Statistische Mechanik liefert Werkzeuge für die dBN-Konstante."},
-    {"from": "doc-29", "to": "doc-23", "type": "uses", "note": "Laguerre-Pólya ⟺ Λ≤0; gemeinsame Pólya-Wurzel."},
-
-    {"from": "concept-explicit-formula", "to": "concept-positivity", "type": "uses", "note": "Explizite Formel als quadratische Form ⇒ Weil-Positivität."},
-    {"from": "concept-explicit-formula", "to": "concept-hilbert-polya", "type": "uses", "note": "Explizite Formel als Spurformel ⇒ spektrale Interpretation."},
-
-    {"from": "doc-20", "to": "doc-20", "type": "refuted_by", "note": "Conrey–Li (2000): de Branges' Positivitätsbedingung für ζ verletzt."},
-
-    {"from": "doc-35", "to": "concept-euler-product", "type": "evidence_for", "note": "Davenport–Heilbronn: ohne Euler-Produkt Off-Line-Nullstellen ⇒ Euler-Produkt nötig."},
-    {"from": "doc-43", "to": "concept-euler-product", "type": "evidence_for", "note": "Epstein-Zeta + Selberg-Klassen-Rigidität: Euler-Produkt+Ramanujan erzwingen die Gerade."},
-    {"from": "doc-35", "to": "concept-RH", "type": "obstruction_for", "note": "Sammlung der Barrieren (Parität, Mertens/Skewes-Warnung)."},
-    {"from": "doc-43", "to": "concept-RH", "type": "obstruction_for", "note": "Welche Eigenschaft die Gerade erzwingt; schließt 'weiche' Beweise aus."},
-    {"from": "doc-46", "to": "concept-RH", "type": "obstruction_for", "note": "Voronin-Universalität: 'weiche' funktionentheoretische Beweise unmöglich."},
-    {"from": "doc-43", "to": "doc-21", "type": "uses", "note": "Selberg-Klassen-Klassifikation (Kaczorowski–Perelli)."},
-    {"from": "doc-46", "to": "concept-RH", "type": "equivalent_to", "note": "Bagchi: starke Rekurrenz von ζ ⟺ RH (Universalitäts-Kriterium)."},
-
-    {"from": "doc-16", "to": "doc-35", "type": "evidence_for", "note": "Widerlegte Mertens-Vermutung: numerische Evidenz täuscht (Warnung)."},
-    {"from": "doc-39", "to": "doc-35", "type": "evidence_for", "note": "Maier-Satz: probabilistisches Modell im Detail falsch (Warnung)."},
-
-    {"from": "doc-25", "to": "concept-RH", "type": "refuted_by", "note": "Atiyah 2018: gescheitert (Liouville-Verletzung)."},
-    {"from": "doc-26", "to": "concept-RH", "type": "refuted_by", "note": "Nash: nie kohärenter Beweis."},
-    {"from": "doc-27", "to": "concept-RH", "type": "refuted_by", "note": "Diverse zurückgezogene/fehlerhafte Behauptungen."},
-
-    {"from": "doc-41", "to": "concept-RH", "type": "uses", "note": "Synthese: notwendige Bedingungen + Bewertungsraster für Beweise."},
-    {"from": "doc-37", "to": "concept-RH", "type": "uses", "note": "Lean/Formalisierung als Verifikations-Gateway."},
-    {"from": "doc-24", "to": "concept-RH", "type": "evidence_for", "note": "Numerische Verifikation (>10^13 Nullstellen) — Evidenz, kein Beweis."},
-    {"from": "doc-36", "to": "concept-RH", "type": "uses", "note": "Konsequenzen der RH (Anwendungskontext)."},
-
-    {"from": "doc-01", "to": "concept-critical-line", "type": "instance_of", "note": "Riemann 1859: Funktionalgleichung erzeugt Symmetrie um Re=1/2."},
-    {"from": "doc-02", "to": "doc-01", "type": "uses", "note": "Explizite Formel baut auf Funktionalgleichung/ξ auf."},
-    {"from": "doc-19", "to": "concept-explicit-formula", "type": "blueprint_for", "note": "Selberg-Spurformel = Analogon der expliziten Formel."},
-    {"from": "doc-10", "to": "concept-explicit-formula", "type": "uses", "note": "Connes-Spurformel reproduziert die explizite Formel."},
-    {"from": "doc-31", "to": "concept-explicit-formula", "type": "uses", "note": "Lefschetz-Spurformel = explizite Formel."}
+    {
+      "from": "concept-explicit-formula",
+      "to": "doc-02",
+      "type": "instance_of",
+      "note": "Doc 02 stellt die explizite Formel dar."
+    },
+    {
+      "from": "doc-03",
+      "to": "concept-RH",
+      "type": "partial_result_for",
+      "note": "Hardy: unendlich viele Nullstellen auf der Geraden."
+    },
+    {
+      "from": "doc-04",
+      "to": "concept-RH",
+      "type": "partial_result_for",
+      "note": "Levinson/Conrey: >41% auf der Geraden."
+    },
+    {
+      "from": "doc-04",
+      "to": "doc-03",
+      "type": "generalizes",
+      "note": "Quantifiziert Hardys Resultat (positiver Anteil)."
+    },
+    {
+      "from": "doc-13",
+      "to": "concept-RH",
+      "type": "equivalent_to",
+      "note": "Nyman-Beurling/Báez-Duarte: Dichte ⟺ RH."
+    },
+    {
+      "from": "doc-14",
+      "to": "concept-RH",
+      "type": "equivalent_to",
+      "note": "Li-Koeffizienten λ_n≥0 ⟺ RH."
+    },
+    {
+      "from": "doc-15",
+      "to": "concept-RH",
+      "type": "equivalent_to",
+      "note": "Robin/Lagarias-Ungleichung ⟺ RH."
+    },
+    {
+      "from": "doc-16",
+      "to": "concept-RH",
+      "type": "equivalent_to",
+      "note": "Mertens-Kriterium M(x)=O(x^{1/2+ε}) ⟺ RH (NICHT die widerlegte Mertens-Vermutung)."
+    },
+    {
+      "from": "doc-23",
+      "to": "concept-RH",
+      "type": "equivalent_to",
+      "note": "de-Bruijn–Newman: Λ≤0 ⟺ RH."
+    },
+    {
+      "from": "doc-29",
+      "to": "concept-RH",
+      "type": "equivalent_to",
+      "note": "ξ∈Laguerre-Pólya / Jensen-Hyperbolizität ⟺ RH."
+    },
+    {
+      "from": "doc-44",
+      "to": "concept-RH",
+      "type": "equivalent_to",
+      "note": "Lapidus: inverses Spektralproblem für alle D≠1/2 ⟺ RH."
+    },
+    {
+      "from": "doc-45",
+      "to": "concept-RH",
+      "type": "equivalent_to",
+      "note": "Volchkov/Sekatskii/Redheffer/Salem/BBLS-Kriterien ⟺ RH."
+    },
+    {
+      "from": "doc-38",
+      "to": "concept-RH",
+      "type": "instance_of",
+      "note": "Offizielle Clay-Problemstellung der RH."
+    },
+    {
+      "from": "doc-16",
+      "to": "doc-45",
+      "type": "equivalent_to",
+      "note": "Redheffer-Matrix det(R_n)=M(n) verbindet Mertens und Matrix-Kriterium."
+    },
+    {
+      "from": "doc-14",
+      "to": "doc-13",
+      "type": "uses",
+      "note": "Beide Positivitäts-/Dichtekriterien, gemeinsames Leitmotiv."
+    },
+    {
+      "from": "concept-RH",
+      "to": "doc-17",
+      "type": "implies",
+      "note": "RH ⇒ Lindelöf-Hypothese."
+    },
+    {
+      "from": "doc-17",
+      "to": "concept-RH",
+      "type": "weaker_than",
+      "note": "Lindelöf ist schwächer; Rückrichtung unbekannt."
+    },
+    {
+      "from": "doc-12",
+      "to": "concept-RH",
+      "type": "weaker_than",
+      "note": "Nullstellenfreie Region ist weit schwächer als RH."
+    },
+    {
+      "from": "doc-22",
+      "to": "doc-17",
+      "type": "uses",
+      "note": "Guth–Maynard verbessert Dichte-Abschätzungen Richtung Dichte-Hypothese."
+    },
+    {
+      "from": "doc-49",
+      "to": "doc-22",
+      "type": "evidence_for",
+      "note": "Live-Front: explizite Dichte, Subkonvexität, Momente."
+    },
+    {
+      "from": "doc-49",
+      "to": "doc-17",
+      "type": "evidence_for",
+      "note": "Subkonvexität nähert Lindelöf an."
+    },
+    {
+      "from": "doc-49",
+      "to": "doc-07",
+      "type": "evidence_for",
+      "note": "Harper/Radziwiłł–Soundararajan: scharfe Momentschranken stützen Keating-Snaith."
+    },
+    {
+      "from": "concept-RH",
+      "to": "concept-GRH",
+      "type": "special_case_of",
+      "note": "RH ist der Spezialfall ζ der GRH."
+    },
+    {
+      "from": "doc-21",
+      "to": "concept-GRH",
+      "type": "instance_of",
+      "note": "GRH/Selberg-Klasse/Große RH."
+    },
+    {
+      "from": "doc-32",
+      "to": "concept-GRH",
+      "type": "partial_result_for",
+      "note": "Zhang: Landau-Siegel-Nullstellen (Ausnahmen zur GRH) eingeschränkt."
+    },
+    {
+      "from": "doc-05",
+      "to": "concept-hilbert-polya",
+      "type": "instance_of",
+      "note": "Hilbert–Pólya-Vermutung selbst."
+    },
+    {
+      "from": "doc-08",
+      "to": "concept-hilbert-polya",
+      "type": "models",
+      "note": "Berry–Keating xp-Modell (nur geglättete Dichte)."
+    },
+    {
+      "from": "doc-09",
+      "to": "concept-hilbert-polya",
+      "type": "models",
+      "note": "Bender–Brody–Müller PT-Hamiltonian (Selbstadjungiertheit unbewiesen)."
+    },
+    {
+      "from": "doc-10",
+      "to": "concept-hilbert-polya",
+      "type": "models",
+      "note": "Connes: spektrale Realisierung als Absorptionsspektrum."
+    },
+    {
+      "from": "doc-11",
+      "to": "concept-hilbert-polya",
+      "type": "models",
+      "note": "Prolate-Operator: approximative HP-Realisierung."
+    },
+    {
+      "from": "doc-34",
+      "to": "concept-hilbert-polya",
+      "type": "uses",
+      "note": "Bost–Connes: Operator mit Spektrum {log n} (geometrische Seite)."
+    },
+    {
+      "from": "doc-44",
+      "to": "concept-hilbert-polya",
+      "type": "models",
+      "note": "Lapidus-Spektraloperator ζ(∂)."
+    },
+    {
+      "from": "doc-47",
+      "to": "concept-hilbert-polya",
+      "type": "models",
+      "note": "Primon-Gas/Sierra/Quantengraphen."
+    },
+    {
+      "from": "doc-31",
+      "to": "concept-hilbert-polya",
+      "type": "models",
+      "note": "Deninger: Frobenius-artiger Operator auf hypothetischer Kohomologie."
+    },
+    {
+      "from": "doc-48",
+      "to": "concept-hilbert-polya",
+      "type": "models",
+      "note": "Meyer: distributionelle Spektralrealisierung."
+    },
+    {
+      "from": "doc-19",
+      "to": "concept-hilbert-polya",
+      "type": "blueprint_for",
+      "note": "Selberg: BEWIESENES Modell (Laplace selbstadjungiert ⇒ RH-Analogon)."
+    },
+    {
+      "from": "doc-06",
+      "to": "concept-hilbert-polya",
+      "type": "evidence_for",
+      "note": "Montgomery-GUE: statistische Evidenz für chaotischen selbstadj. Operator."
+    },
+    {
+      "from": "doc-07",
+      "to": "concept-hilbert-polya",
+      "type": "evidence_for",
+      "note": "Keating-Snaith-Momente stützen das Random-Matrix-Bild."
+    },
+    {
+      "from": "doc-18",
+      "to": "concept-geometry-transfer",
+      "type": "blueprint_for",
+      "note": "Weil/Deligne: BEWIESENES RH-Analogon über 𝔽_q — die Blaupause."
+    },
+    {
+      "from": "doc-30",
+      "to": "concept-geometry-transfer",
+      "type": "attempts_transfer_of",
+      "note": "𝔽₁/arithmetic site: Weil-Beweis auf ℤ übertragen."
+    },
+    {
+      "from": "doc-31",
+      "to": "concept-geometry-transfer",
+      "type": "attempts_transfer_of",
+      "note": "Deninger-Kohomologie."
+    },
+    {
+      "from": "doc-10",
+      "to": "concept-geometry-transfer",
+      "type": "attempts_transfer_of",
+      "note": "Connes adelische Spurformel."
+    },
+    {
+      "from": "doc-48",
+      "to": "concept-geometry-transfer",
+      "type": "attempts_transfer_of",
+      "note": "Kurokawa absolute Zeta/Tensorprodukte."
+    },
+    {
+      "from": "doc-30",
+      "to": "doc-34",
+      "type": "uses",
+      "note": "Bost–Connes liefert Galois-/Frobenius-Symmetrie fürs 𝔽₁-Programm."
+    },
+    {
+      "from": "doc-14",
+      "to": "concept-positivity",
+      "type": "instance_of",
+      "note": "Weil-/Li-Positivität."
+    },
+    {
+      "from": "doc-20",
+      "to": "concept-positivity",
+      "type": "instance_of",
+      "note": "de Branges: Positivitätsbedingung (für ζ widerlegt)."
+    },
+    {
+      "from": "doc-29",
+      "to": "concept-positivity",
+      "type": "instance_of",
+      "note": "Jensen/Laguerre-Pólya-Reellwurzeligkeit."
+    },
+    {
+      "from": "doc-23",
+      "to": "concept-positivity",
+      "type": "instance_of",
+      "note": "de-Bruijn–Newman Λ≤0."
+    },
+    {
+      "from": "doc-33",
+      "to": "concept-positivity",
+      "type": "instance_of",
+      "note": "Lee-Yang/Newman: Positivität erzwingt reelle Nullstellen."
+    },
+    {
+      "from": "doc-10",
+      "to": "concept-positivity",
+      "type": "reduces_to",
+      "note": "Connes reduziert RH auf Weil-Positivität."
+    },
+    {
+      "from": "doc-33",
+      "to": "doc-23",
+      "type": "uses",
+      "note": "Statistische Mechanik liefert Werkzeuge für die dBN-Konstante."
+    },
+    {
+      "from": "doc-29",
+      "to": "doc-23",
+      "type": "uses",
+      "note": "Laguerre-Pólya ⟺ Λ≤0; gemeinsame Pólya-Wurzel."
+    },
+    {
+      "from": "concept-explicit-formula",
+      "to": "concept-positivity",
+      "type": "uses",
+      "note": "Explizite Formel als quadratische Form ⇒ Weil-Positivität."
+    },
+    {
+      "from": "concept-explicit-formula",
+      "to": "concept-hilbert-polya",
+      "type": "uses",
+      "note": "Explizite Formel als Spurformel ⇒ spektrale Interpretation."
+    },
+    {
+      "from": "doc-20",
+      "to": "doc-20",
+      "type": "refuted_by",
+      "note": "Conrey–Li (2000): de Branges' Positivitätsbedingung für ζ verletzt."
+    },
+    {
+      "from": "doc-35",
+      "to": "concept-euler-product",
+      "type": "evidence_for",
+      "note": "Davenport–Heilbronn: ohne Euler-Produkt Off-Line-Nullstellen ⇒ Euler-Produkt nötig."
+    },
+    {
+      "from": "doc-43",
+      "to": "concept-euler-product",
+      "type": "evidence_for",
+      "note": "Epstein-Zeta + Selberg-Klassen-Rigidität: Euler-Produkt+Ramanujan erzwingen die Gerade."
+    },
+    {
+      "from": "doc-35",
+      "to": "concept-RH",
+      "type": "obstruction_for",
+      "note": "Sammlung der Barrieren (Parität, Mertens/Skewes-Warnung)."
+    },
+    {
+      "from": "doc-43",
+      "to": "concept-RH",
+      "type": "obstruction_for",
+      "note": "Welche Eigenschaft die Gerade erzwingt; schließt 'weiche' Beweise aus."
+    },
+    {
+      "from": "doc-46",
+      "to": "concept-RH",
+      "type": "obstruction_for",
+      "note": "Voronin-Universalität: 'weiche' funktionentheoretische Beweise unmöglich."
+    },
+    {
+      "from": "doc-43",
+      "to": "doc-21",
+      "type": "uses",
+      "note": "Selberg-Klassen-Klassifikation (Kaczorowski–Perelli)."
+    },
+    {
+      "from": "doc-46",
+      "to": "concept-RH",
+      "type": "equivalent_to",
+      "note": "Bagchi: starke Rekurrenz von ζ ⟺ RH (Universalitäts-Kriterium)."
+    },
+    {
+      "from": "doc-16",
+      "to": "doc-35",
+      "type": "evidence_for",
+      "note": "Widerlegte Mertens-Vermutung: numerische Evidenz täuscht (Warnung)."
+    },
+    {
+      "from": "doc-39",
+      "to": "doc-35",
+      "type": "evidence_for",
+      "note": "Maier-Satz: probabilistisches Modell im Detail falsch (Warnung)."
+    },
+    {
+      "from": "doc-25",
+      "to": "concept-RH",
+      "type": "refuted_by",
+      "note": "Atiyah 2018: gescheitert (Liouville-Verletzung)."
+    },
+    {
+      "from": "doc-26",
+      "to": "concept-RH",
+      "type": "refuted_by",
+      "note": "Nash: nie kohärenter Beweis."
+    },
+    {
+      "from": "doc-27",
+      "to": "concept-RH",
+      "type": "refuted_by",
+      "note": "Diverse zurückgezogene/fehlerhafte Behauptungen."
+    },
+    {
+      "from": "doc-41",
+      "to": "concept-RH",
+      "type": "uses",
+      "note": "Synthese: notwendige Bedingungen + Bewertungsraster für Beweise."
+    },
+    {
+      "from": "doc-37",
+      "to": "concept-RH",
+      "type": "uses",
+      "note": "Lean/Formalisierung als Verifikations-Gateway."
+    },
+    {
+      "from": "doc-24",
+      "to": "concept-RH",
+      "type": "evidence_for",
+      "note": "Numerische Verifikation (>10^13 Nullstellen) — Evidenz, kein Beweis."
+    },
+    {
+      "from": "doc-36",
+      "to": "concept-RH",
+      "type": "uses",
+      "note": "Konsequenzen der RH (Anwendungskontext)."
+    },
+    {
+      "from": "doc-01",
+      "to": "concept-critical-line",
+      "type": "instance_of",
+      "note": "Riemann 1859: Funktionalgleichung erzeugt Symmetrie um Re=1/2."
+    },
+    {
+      "from": "doc-02",
+      "to": "doc-01",
+      "type": "uses",
+      "note": "Explizite Formel baut auf Funktionalgleichung/ξ auf."
+    },
+    {
+      "from": "doc-19",
+      "to": "concept-explicit-formula",
+      "type": "blueprint_for",
+      "note": "Selberg-Spurformel = Analogon der expliziten Formel."
+    },
+    {
+      "from": "doc-10",
+      "to": "concept-explicit-formula",
+      "type": "uses",
+      "note": "Connes-Spurformel reproduziert die explizite Formel."
+    },
+    {
+      "from": "doc-31",
+      "to": "concept-explicit-formula",
+      "type": "uses",
+      "note": "Lefschetz-Spurformel = explizite Formel."
+    },
+    {
+      "from": "concept-truncated-weil",
+      "to": "doc-52",
+      "type": "instance_of",
+      "note": "Dok. 52 stellt die abgeschnittene Weil-Quadratform dar."
+    },
+    {
+      "from": "doc-52",
+      "to": "concept-hilbert-polya",
+      "type": "models",
+      "note": "Endlich-dimensionale, rechenbare Realisierung des Hilbert-Polya-Programms."
+    },
+    {
+      "from": "doc-52",
+      "to": "doc-14",
+      "type": "uses",
+      "note": "Baut direkt auf Weil-Positivitaet / der Weilschen Quadratform auf."
+    },
+    {
+      "from": "doc-52",
+      "to": "doc-02",
+      "type": "uses",
+      "note": "Guinand-Weil-Testfunktionen kommen aus der expliziten Formel."
+    },
+    {
+      "from": "doc-52",
+      "to": "doc-11",
+      "type": "uses",
+      "note": "Setzt die Connes-Moscovici-Linie (prolate spheroidal, Skalierungsoperator) fort."
+    },
+    {
+      "from": "doc-52",
+      "to": "doc-10",
+      "type": "uses",
+      "note": "Rahmen der nichtkommutativen Geometrie von Connes."
+    },
+    {
+      "from": "doc-52",
+      "to": "concept-positivity",
+      "type": "uses",
+      "note": "Positivitaet (Caratheodory-Fejer / PSD-Toeplitz) erzwingt die Nullstellenlage."
+    },
+    {
+      "from": "doc-52",
+      "to": "concept-euler-product",
+      "type": "uses",
+      "note": "Nur Euler-Faktoren p <= x gehen in die Konstruktion ein - der arithmetische Input."
+    },
+    {
+      "from": "doc-52",
+      "to": "concept-critical-line",
+      "type": "evidence_for",
+      "note": "Nullstellen des Grundzustands liegen fuer jeden endlichen Cutoff auf Re(s)=1/2."
+    },
+    {
+      "from": "doc-52",
+      "to": "concept-RH",
+      "type": "blueprint_for",
+      "note": "Programm fuer einen RH-Beweis; es fehlt der Konvergenzschritt Cutoff -> unendlich."
+    },
+    {
+      "from": "doc-43",
+      "to": "doc-52",
+      "type": "obstruction_for",
+      "note": "Epstein/Selberg-Rigiditaet verlangt echten Euler-Produkt-Input - Dok. 52 liefert ihn, besteht die Pruefung also."
+    },
+    {
+      "from": "doc-46",
+      "to": "doc-52",
+      "type": "obstruction_for",
+      "note": "Voronin-Universalitaet schliesst 'weiche' Argumente aus; Dok. 52 arbeitet ueber Positivitaet, nicht ueber Nullstellenformeln."
+    },
+    {
+      "from": "doc-24",
+      "to": "doc-52",
+      "type": "evidence_for",
+      "note": "Hochpraezise Nullstellendaten sind der Massstab fuer die Genauigkeitsangaben."
+    },
+    {
+      "from": "concept-pair-correlation",
+      "to": "doc-06",
+      "type": "instance_of",
+      "note": "Dok. 06 fuehrt Montgomerys Paarkorrelation ein."
+    },
+    {
+      "from": "concept-pair-correlation",
+      "to": "doc-53",
+      "type": "instance_of",
+      "note": "Dok. 53 behandelt die Paarkorrelation ohne RH-Annahme."
+    },
+    {
+      "from": "concept-alternative-hypothesis",
+      "to": "doc-53",
+      "type": "instance_of",
+      "note": "Dok. 53 formuliert und verschaerft die Alternative Hypothese."
+    },
+    {
+      "from": "doc-53",
+      "to": "doc-06",
+      "type": "generalizes",
+      "note": "Nimmt die RH-Annahme aus der Gallagher-Mueller-Methode heraus."
+    },
+    {
+      "from": "doc-53",
+      "to": "concept-critical-line",
+      "type": "partial_result_for",
+      "note": "PCC (ohne RH) impliziert 100 % einfache Nullstellen auf der kritischen Geraden."
+    },
+    {
+      "from": "doc-53",
+      "to": "doc-04",
+      "type": "weaker_than",
+      "note": "Die 100-%-Aussagen sind bedingt; unbedingt sind bislang nur ~41 % (Conrey)."
+    },
+    {
+      "from": "concept-alternative-hypothesis",
+      "to": "doc-32",
+      "type": "models",
+      "note": "Landau-Siegel-Ausnahmenullstellen erzwingen AH-artige Starrheit im Abstandsspektrum."
+    },
+    {
+      "from": "doc-53",
+      "to": "doc-07",
+      "type": "uses",
+      "note": "Teilt den Random-Matrix-Rahmen mit Keating-Snaith."
+    },
+    {
+      "from": "concept-formal-verification",
+      "to": "doc-54",
+      "type": "instance_of",
+      "note": "Dok. 54 beschreibt ANTEDB, Lean-PNT und Zertifikate."
+    },
+    {
+      "from": "doc-54",
+      "to": "doc-37",
+      "type": "evidence_for",
+      "note": "Der formalisierte starke Primzahlsatz zeigt, dass Lean analytische Zahlentheorie traegt."
+    },
+    {
+      "from": "doc-54",
+      "to": "doc-49",
+      "type": "uses",
+      "note": "Systematisiert und verschaerft die Resultate der Live-Front."
+    },
+    {
+      "from": "doc-54",
+      "to": "doc-22",
+      "type": "uses",
+      "note": "Additive Energie der Nullstellen ist die Guth-Maynard-Zwischengroesse."
+    },
+    {
+      "from": "doc-54",
+      "to": "doc-24",
+      "type": "uses",
+      "note": "Rigorose Verifikationsstandards (Platt, Intervall-Zertifikate)."
+    },
+    {
+      "from": "doc-54",
+      "to": "doc-28",
+      "type": "evidence_for",
+      "note": "Autoformalisierung als konkreter KI-Beitrag im RH-Umfeld."
+    },
+    {
+      "from": "concept-formal-verification",
+      "to": "doc-52",
+      "type": "uses",
+      "note": "Die Weil-Form-Numerik wird mit Reproduzierbarkeitspaketen und Intervall-Zertifikaten geliefert."
+    }
   ]
 }
