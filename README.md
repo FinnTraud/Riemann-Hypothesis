@@ -4,7 +4,7 @@ Ein vollständiges Werkzeug, um die **Riemann-Vermutung (RH)** zu verstehen, zu
 visualisieren, Ansätze auszuprobieren und mit einer KI strukturiert-analytisch zu
 untersuchen. Drei Teile:
 
-1. **Wissensbasis** (`docs/`, 51 Dokumente) — jeder Ansatz, jedes Kriterium, jeder
+1. **Wissensbasis** (`docs/`, 55 Dokumente) — jeder Ansatz, jedes Kriterium, jeder
    gescheiterte Beweis und jede Obstruktion, jeweils mit **mathematischem Kern**
    (Formeln, Sätze, Beweisskizzen) und Quellen.
 2. **Wissensgraph + RAG** (`kb/`) — Dokumente + Konzepte + atomare *Claims* mit Status,

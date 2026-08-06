@@ -1,35 +1,325 @@
 {
   "_comment": "Atomare mathematische Aussagen mit Status. status ∈ {proven, open, refuted}. kind ∈ {equivalence, theorem, conjecture, bound, counterexample}. doc = zugehöriges Dokument. Diese Schicht erlaubt dem Assistenten, NIE eine widerlegte Aussage als wahr auszugeben.",
   "claims": [
-    {"id": "claim-rh", "statement": "Alle nicht-trivialen Nullstellen von ζ(s) haben Re(s)=1/2.", "status": "open", "kind": "conjecture", "doc": "doc-38", "source": "Clay/Bombieri 2000"},
-    {"id": "claim-rh-fq", "statement": "Das RH-Analogon für Kurven über endlichen Körpern (|α_i|=q^{1/2}) ist wahr.", "status": "proven", "kind": "theorem", "doc": "doc-18", "source": "Weil 1948 (Kurven), Deligne 1974 (allgemein)"},
-    {"id": "claim-koch", "statement": "RH ⟺ π(x)=Li(x)+O(√x·log x).", "status": "proven", "kind": "equivalence", "doc": "doc-02", "source": "von Koch 1901"},
-    {"id": "claim-mertens-criterion", "statement": "RH ⟺ M(x)=O(x^{1/2+ε}) für jedes ε>0.", "status": "proven", "kind": "equivalence", "doc": "doc-16", "source": "klassisch"},
-    {"id": "claim-mertens-conjecture", "statement": "|M(x)| < √x für alle x (Mertens-Vermutung, STÄRKER als RH).", "status": "refuted", "kind": "counterexample", "doc": "doc-16", "source": "Odlyzko–te Riele 1985: limsup M(x)/√x > 1.06"},
-    {"id": "claim-robin", "statement": "RH ⟺ σ(n) < e^γ·n·log log n für alle n>5040.", "status": "proven", "kind": "equivalence", "doc": "doc-15", "source": "Robin 1984"},
-    {"id": "claim-li", "statement": "RH ⟺ λ_n ≥ 0 für alle n≥1 (Li-Koeffizienten).", "status": "proven", "kind": "equivalence", "doc": "doc-14", "source": "Li 1997"},
-    {"id": "claim-weil-positivity", "statement": "RH ⟺ Weil-Funktional W(g⋆ḡ) ≥ 0 für alle Testfunktionen g.", "status": "proven", "kind": "equivalence", "doc": "doc-14", "source": "Weil 1952"},
-    {"id": "claim-nyman-beurling", "statement": "RH ⟺ χ_{(0,1]} liegt im L²-Abschluss der Dilatationen von {1/x} (Báez-Duarte: ganzzahlig).", "status": "proven", "kind": "equivalence", "doc": "doc-13", "source": "Beurling 1955, Báez-Duarte 2003"},
-    {"id": "claim-jensen-lp", "statement": "RH ⟺ ξ ∈ Laguerre–Pólya-Klasse ⟺ alle Jensen-Polynome hyperbolisch.", "status": "proven", "kind": "equivalence", "doc": "doc-29", "source": "Pólya 1927; GORZ 2019 (Teilfortschritt d≤8)"},
-    {"id": "claim-dbn-equiv", "statement": "RH ⟺ Λ ≤ 0 (de-Bruijn–Newman-Konstante).", "status": "proven", "kind": "equivalence", "doc": "doc-23", "source": "de Bruijn/Newman"},
-    {"id": "claim-dbn-lower", "statement": "Λ ≥ 0 (die RH ist, falls wahr, nur knapp wahr).", "status": "proven", "kind": "theorem", "doc": "doc-23", "source": "Rodgers–Tao 2018"},
-    {"id": "claim-dbn-upper", "statement": "Λ ≤ 0.22.", "status": "proven", "kind": "bound", "doc": "doc-23", "source": "Polymath15 2019"},
-    {"id": "claim-lapidus", "statement": "RH ⟺ inverses Spektralproblem für fraktale Saiten gilt für alle D∈(0,1)\\{1/2}.", "status": "proven", "kind": "equivalence", "doc": "doc-44", "source": "Lapidus–Maier 1995"},
-    {"id": "claim-volchkov", "statement": "RH ⟺ ∫₀^∞ (1−12t²)/(1+4t²)³·log|ζ(1/2+it)| dt = π(3−γ)/32.", "status": "proven", "kind": "equivalence", "doc": "doc-45", "source": "Volchkov 1995"},
-    {"id": "claim-redheffer", "statement": "RH ⟺ det(R_n)=O(n^{1/2+ε}), wobei det(R_n)=M(n).", "status": "proven", "kind": "equivalence", "doc": "doc-45", "source": "Redheffer 1977"},
-    {"id": "claim-hardy", "statement": "Unendlich viele Nullstellen liegen auf der kritischen Geraden.", "status": "proven", "kind": "theorem", "doc": "doc-03", "source": "Hardy 1914"},
-    {"id": "claim-proportion", "statement": "Über 41% aller nicht-trivialen Nullstellen liegen auf der kritischen Geraden.", "status": "proven", "kind": "theorem", "doc": "doc-04", "source": "Levinson 1/3, Conrey 2/5, später >0.41"},
-    {"id": "claim-montgomery", "statement": "Paarkorrelation der Nullstellen = GUE-Kern 1−(sin πu/πu)² (unter RH, |α|≤1).", "status": "open", "kind": "conjecture", "doc": "doc-06", "source": "Montgomery 1973 (bedingt/teilbewiesen)"},
-    {"id": "claim-guth-maynard", "statement": "N(3/4,T) ≪ T^{13/25+o(1)} (Verbesserung von Inghams 3/5).", "status": "proven", "kind": "bound", "doc": "doc-22", "source": "Guth–Maynard 2024"},
-    {"id": "claim-zhang", "statement": "L(1,χ) ≫ (log D)^{-2022}, effektiv (Landau-Siegel-Nullstellen eingeschränkt).", "status": "proven", "kind": "bound", "doc": "doc-32", "source": "Zhang 2022"},
-    {"id": "claim-dh", "statement": "Die Davenport–Heilbronn-Funktion (ζ-artig, OHNE Euler-Produkt) hat Nullstellen abseits Re=1/2.", "status": "proven", "kind": "counterexample", "doc": "doc-35", "source": "Davenport–Heilbronn 1936"},
-    {"id": "claim-epstein", "statement": "Epstein-Zeta mit Klassenzahl>1 hat unendlich viele Nullstellen mit Re>1/2.", "status": "proven", "kind": "counterexample", "doc": "doc-43", "source": "Davenport–Heilbronn; Voronin"},
-    {"id": "claim-selberg-rigidity", "statement": "Grad-1-Elemente der Selberg-Klasse (mit Euler-Produkt+Ramanujan) sind genau ζ und verschobene Dirichlet-L.", "status": "proven", "kind": "theorem", "doc": "doc-43", "source": "Kaczorowski–Perelli"},
-    {"id": "claim-voronin", "statement": "ζ approximiert universell jede nullstellenfreie holomorphe Funktion (Voronin-Universalität).", "status": "proven", "kind": "theorem", "doc": "doc-46", "source": "Voronin 1975"},
-    {"id": "claim-debranges", "statement": "de Branges' Positivitätsbedingung impliziert RH und gilt für ζ.", "status": "refuted", "kind": "counterexample", "doc": "doc-20", "source": "Conrey–Li 2000: für ζ verletzt"},
-    {"id": "claim-atiyah", "statement": "Atiyahs Todd-Funktions-Beweis (2018) ist gültig.", "status": "refuted", "kind": "counterexample", "doc": "doc-25", "source": "Community 2018: Liouville-Verletzung, unveröffentlichte Grundlage"},
-    {"id": "claim-numerical", "statement": "Die ersten >10^13 Nullstellen liegen alle auf der kritischen Geraden.", "status": "proven", "kind": "theorem", "doc": "doc-24", "source": "Gourdon–Demichel 2004; Platt rigoros bis 3.06·10^10"},
-    {"id": "claim-selberg-zeta", "statement": "Das RH-Analogon für die Selberg-Zetafunktion ist wahr (Laplace selbstadjungiert).", "status": "proven", "kind": "theorem", "doc": "doc-19", "source": "Selberg 1956"},
-    {"id": "claim-lindelof", "statement": "RH ⟹ Lindelöf-Hypothese ζ(1/2+it)=O(t^ε); Rückrichtung unbekannt.", "status": "open", "kind": "theorem", "doc": "doc-17", "source": "klassisch; LH selbst offen"}
+    {
+      "id": "claim-rh",
+      "statement": "Alle nicht-trivialen Nullstellen von ζ(s) haben Re(s)=1/2.",
+      "status": "open",
+      "kind": "conjecture",
+      "doc": "doc-38",
+      "source": "Clay/Bombieri 2000"
+    },
+    {
+      "id": "claim-rh-fq",
+      "statement": "Das RH-Analogon für Kurven über endlichen Körpern (|α_i|=q^{1/2}) ist wahr.",
+      "status": "proven",
+      "kind": "theorem",
+      "doc": "doc-18",
+      "source": "Weil 1948 (Kurven), Deligne 1974 (allgemein)"
+    },
+    {
+      "id": "claim-koch",
+      "statement": "RH ⟺ π(x)=Li(x)+O(√x·log x).",
+      "status": "proven",
+      "kind": "equivalence",
+      "doc": "doc-02",
+      "source": "von Koch 1901"
+    },
+    {
+      "id": "claim-mertens-criterion",
+      "statement": "RH ⟺ M(x)=O(x^{1/2+ε}) für jedes ε>0.",
+      "status": "proven",
+      "kind": "equivalence",
+      "doc": "doc-16",
+      "source": "klassisch"
+    },
+    {
+      "id": "claim-mertens-conjecture",
+      "statement": "|M(x)| < √x für alle x (Mertens-Vermutung, STÄRKER als RH).",
+      "status": "refuted",
+      "kind": "counterexample",
+      "doc": "doc-16",
+      "source": "Odlyzko–te Riele 1985: limsup M(x)/√x > 1.06"
+    },
+    {
+      "id": "claim-robin",
+      "statement": "RH ⟺ σ(n) < e^γ·n·log log n für alle n>5040.",
+      "status": "proven",
+      "kind": "equivalence",
+      "doc": "doc-15",
+      "source": "Robin 1984"
+    },
+    {
+      "id": "claim-li",
+      "statement": "RH ⟺ λ_n ≥ 0 für alle n≥1 (Li-Koeffizienten).",
+      "status": "proven",
+      "kind": "equivalence",
+      "doc": "doc-14",
+      "source": "Li 1997"
+    },
+    {
+      "id": "claim-weil-positivity",
+      "statement": "RH ⟺ Weil-Funktional W(g⋆ḡ) ≥ 0 für alle Testfunktionen g.",
+      "status": "proven",
+      "kind": "equivalence",
+      "doc": "doc-14",
+      "source": "Weil 1952"
+    },
+    {
+      "id": "claim-nyman-beurling",
+      "statement": "RH ⟺ χ_{(0,1]} liegt im L²-Abschluss der Dilatationen von {1/x} (Báez-Duarte: ganzzahlig).",
+      "status": "proven",
+      "kind": "equivalence",
+      "doc": "doc-13",
+      "source": "Beurling 1955, Báez-Duarte 2003"
+    },
+    {
+      "id": "claim-jensen-lp",
+      "statement": "RH ⟺ ξ ∈ Laguerre–Pólya-Klasse ⟺ alle Jensen-Polynome hyperbolisch.",
+      "status": "proven",
+      "kind": "equivalence",
+      "doc": "doc-29",
+      "source": "Pólya 1927; GORZ 2019 (Teilfortschritt d≤8)"
+    },
+    {
+      "id": "claim-dbn-equiv",
+      "statement": "RH ⟺ Λ ≤ 0 (de-Bruijn–Newman-Konstante).",
+      "status": "proven",
+      "kind": "equivalence",
+      "doc": "doc-23",
+      "source": "de Bruijn/Newman"
+    },
+    {
+      "id": "claim-dbn-lower",
+      "statement": "Λ ≥ 0 (die RH ist, falls wahr, nur knapp wahr).",
+      "status": "proven",
+      "kind": "theorem",
+      "doc": "doc-23",
+      "source": "Rodgers–Tao 2018"
+    },
+    {
+      "id": "claim-dbn-upper",
+      "statement": "Λ ≤ 0.22.",
+      "status": "proven",
+      "kind": "bound",
+      "doc": "doc-23",
+      "source": "Polymath15 2019"
+    },
+    {
+      "id": "claim-lapidus",
+      "statement": "RH ⟺ inverses Spektralproblem für fraktale Saiten gilt für alle D∈(0,1)\\{1/2}.",
+      "status": "proven",
+      "kind": "equivalence",
+      "doc": "doc-44",
+      "source": "Lapidus–Maier 1995"
+    },
+    {
+      "id": "claim-volchkov",
+      "statement": "RH ⟺ ∫₀^∞ (1−12t²)/(1+4t²)³·log|ζ(1/2+it)| dt = π(3−γ)/32.",
+      "status": "proven",
+      "kind": "equivalence",
+      "doc": "doc-45",
+      "source": "Volchkov 1995"
+    },
+    {
+      "id": "claim-redheffer",
+      "statement": "RH ⟺ det(R_n)=O(n^{1/2+ε}), wobei det(R_n)=M(n).",
+      "status": "proven",
+      "kind": "equivalence",
+      "doc": "doc-45",
+      "source": "Redheffer 1977"
+    },
+    {
+      "id": "claim-hardy",
+      "statement": "Unendlich viele Nullstellen liegen auf der kritischen Geraden.",
+      "status": "proven",
+      "kind": "theorem",
+      "doc": "doc-03",
+      "source": "Hardy 1914"
+    },
+    {
+      "id": "claim-proportion",
+      "statement": "Über 41% aller nicht-trivialen Nullstellen liegen auf der kritischen Geraden.",
+      "status": "proven",
+      "kind": "theorem",
+      "doc": "doc-04",
+      "source": "Levinson 1/3, Conrey 2/5, später >0.41"
+    },
+    {
+      "id": "claim-montgomery",
+      "statement": "Paarkorrelation der Nullstellen = GUE-Kern 1−(sin πu/πu)² (unter RH, |α|≤1).",
+      "status": "open",
+      "kind": "conjecture",
+      "doc": "doc-06",
+      "source": "Montgomery 1973 (bedingt/teilbewiesen)"
+    },
+    {
+      "id": "claim-guth-maynard",
+      "statement": "N(3/4,T) ≪ T^{13/25+o(1)} (Verbesserung von Inghams 3/5).",
+      "status": "proven",
+      "kind": "bound",
+      "doc": "doc-22",
+      "source": "Guth–Maynard 2024"
+    },
+    {
+      "id": "claim-zhang",
+      "statement": "L(1,χ) ≫ (log D)^{-2022}, effektiv (Landau-Siegel-Nullstellen eingeschränkt).",
+      "status": "proven",
+      "kind": "bound",
+      "doc": "doc-32",
+      "source": "Zhang 2022"
+    },
+    {
+      "id": "claim-dh",
+      "statement": "Die Davenport–Heilbronn-Funktion (ζ-artig, OHNE Euler-Produkt) hat Nullstellen abseits Re=1/2.",
+      "status": "proven",
+      "kind": "counterexample",
+      "doc": "doc-35",
+      "source": "Davenport–Heilbronn 1936"
+    },
+    {
+      "id": "claim-epstein",
+      "statement": "Epstein-Zeta mit Klassenzahl>1 hat unendlich viele Nullstellen mit Re>1/2.",
+      "status": "proven",
+      "kind": "counterexample",
+      "doc": "doc-43",
+      "source": "Davenport–Heilbronn; Voronin"
+    },
+    {
+      "id": "claim-selberg-rigidity",
+      "statement": "Grad-1-Elemente der Selberg-Klasse (mit Euler-Produkt+Ramanujan) sind genau ζ und verschobene Dirichlet-L.",
+      "status": "proven",
+      "kind": "theorem",
+      "doc": "doc-43",
+      "source": "Kaczorowski–Perelli"
+    },
+    {
+      "id": "claim-voronin",
+      "statement": "ζ approximiert universell jede nullstellenfreie holomorphe Funktion (Voronin-Universalität).",
+      "status": "proven",
+      "kind": "theorem",
+      "doc": "doc-46",
+      "source": "Voronin 1975"
+    },
+    {
+      "id": "claim-debranges",
+      "statement": "de Branges' Positivitätsbedingung impliziert RH und gilt für ζ.",
+      "status": "refuted",
+      "kind": "counterexample",
+      "doc": "doc-20",
+      "source": "Conrey–Li 2000: für ζ verletzt"
+    },
+    {
+      "id": "claim-atiyah",
+      "statement": "Atiyahs Todd-Funktions-Beweis (2018) ist gültig.",
+      "status": "refuted",
+      "kind": "counterexample",
+      "doc": "doc-25",
+      "source": "Community 2018: Liouville-Verletzung, unveröffentlichte Grundlage"
+    },
+    {
+      "id": "claim-numerical",
+      "statement": "Die ersten >10^13 Nullstellen liegen alle auf der kritischen Geraden.",
+      "status": "proven",
+      "kind": "theorem",
+      "doc": "doc-24",
+      "source": "Gourdon–Demichel 2004; Platt rigoros bis 3.06·10^10"
+    },
+    {
+      "id": "claim-selberg-zeta",
+      "statement": "Das RH-Analogon für die Selberg-Zetafunktion ist wahr (Laplace selbstadjungiert).",
+      "status": "proven",
+      "kind": "theorem",
+      "doc": "doc-19",
+      "source": "Selberg 1956"
+    },
+    {
+      "id": "claim-lindelof",
+      "statement": "RH ⟹ Lindelöf-Hypothese ζ(1/2+it)=O(t^ε); Rückrichtung unbekannt.",
+      "status": "open",
+      "kind": "theorem",
+      "doc": "doc-17",
+      "source": "klassisch; LH selbst offen"
+    },
+    {
+      "id": "claim-cvs-groundstate",
+      "statement": "Definiert eine Quadratform mit Schwartz-Kern auf L^2([-L/2,L/2]) einen nach unten beschraenkten selbstadjungierten Operator, dessen kleinster Spektralwert ein einfacher, isolierter Eigenwert mit gerader Eigenfunktion xi ist, so liegen alle Nullstellen der Fourier-Transformierten xi^ auf der reellen Achse (entspricht Re(s)=1/2).",
+      "status": "proven",
+      "kind": "theorem",
+      "doc": "doc-52",
+      "source": "Connes-van Suijlekom, arXiv:2511.23257 (2025)"
+    },
+    {
+      "id": "claim-caratheodory-fejer",
+      "statement": "Ist T eine hermitesche, positiv semidefinite Toeplitz-Matrix in M_n(C) vom Rang n-1 und xi in ker T, so hat P(z) = sum_j xi_j z^j alle Nullstellen auf dem Einheitskreis.",
+      "status": "proven",
+      "kind": "theorem",
+      "doc": "doc-52",
+      "source": "Caratheodory-Fejer 1911; C*-Fassung in arXiv:2511.23257"
+    },
+    {
+      "id": "claim-truncated-weil-convergence",
+      "statement": "Die Nullstellen der Grundzustaende der abgeschnittenen Weil-Quadratform konvergieren fuer Cutoff c -> unendlich gegen die nicht-trivialen Nullstellen von zeta. (Zusammen mit claim-cvs-groundstate wuerde dies die RH liefern.)",
+      "status": "open",
+      "kind": "conjecture",
+      "doc": "doc-52",
+      "source": "Connes-van Suijlekom 2025; Connes 2026 (arXiv:2602.04022)"
+    },
+    {
+      "id": "claim-ccm-numerics",
+      "statement": "Die Spektren der Zeta-Spektraltripel bzw. der abgeschnittenen Weil-Form approximieren die untersten Nullstellen von zeta(1/2+is); mit Primzahlen p<13 werden Fehler um 2.6e-55 erreicht, ueber 15 Cutoffs faellt der Fehler der ersten Nullstelle monoton auf ca. 1.5e-168.",
+      "status": "proven",
+      "kind": "bound",
+      "doc": "doc-52",
+      "source": "Connes-Consani-Moscovici arXiv:2511.22755; Connes arXiv:2602.04022; arXiv:2605.20224 (numerische Beobachtung, kein Konvergenzbeweis)"
+    },
+    {
+      "id": "claim-pcc-simple-critical",
+      "statement": "Montgomerys Paarkorrelationsvermutung (PCC) impliziert - OHNE Annahme der RH -, dass asymptotisch 100 % der nicht-trivialen Nullstellen einfach sind und auf der kritischen Geraden liegen.",
+      "status": "proven",
+      "kind": "theorem",
+      "doc": "doc-53",
+      "source": "Goldston-Lee-Schettler-Suriajaya, arXiv:2503.15449 (2025)"
+    },
+    {
+      "id": "claim-ah-pcc-simple-critical",
+      "statement": "Auch die aus einer passend formulierten Alternativen Hypothese folgende Paarkorrelationsvermutung impliziert, dass asymptotisch 100 % der Nullstellen einfach und auf der kritischen Geraden liegen.",
+      "status": "proven",
+      "kind": "theorem",
+      "doc": "doc-53",
+      "source": "Goldston-Lee-Schettler-Suriajaya, arXiv:2507.06823 (2025)"
+    },
+    {
+      "id": "claim-ah-essential-simplicity",
+      "statement": "Eine verschaerfte Form der Alternativen Hypothese impliziert die Essential Simplicity Hypothesis; unter RH+AH ergeben sich Schranken an die Dichte moeglicher mehrfacher Nullstellen.",
+      "status": "proven",
+      "kind": "theorem",
+      "doc": "doc-53",
+      "source": "Baluyot-Goldston-Suriajaya-Turnage-Butterbaugh, arXiv:2508.10857 (2025)"
+    },
+    {
+      "id": "claim-alternative-hypothesis",
+      "statement": "Die normierten Abstaende aufeinanderfolgender Nullstellen konzentrieren sich asymptotisch auf Vielfache des halben mittleren Abstands (Alternative Hypothese). Unvereinbar mit GUE, bis heute nicht ausgeschlossen.",
+      "status": "open",
+      "kind": "conjecture",
+      "doc": "doc-53",
+      "source": "Baluyot 2016; vgl. Landau-Siegel-Szenarien (Dok. 32)"
+    },
+    {
+      "id": "claim-lean-pnt",
+      "statement": "Der starke Primzahlsatz (mit Fehlerterm) ist in Lean 4 vollstaendig formalisiert (ca. 25 000 Zeilen, 1000+ Saetze/Definitionen).",
+      "status": "proven",
+      "kind": "theorem",
+      "doc": "doc-54",
+      "source": "PrimeNumberTheoremAnd (Kontorovich-Tao, ab 2024); Abschluss durch Math Inc. 'Gauss', September 2025"
+    },
+    {
+      "id": "claim-antedb",
+      "statement": "Systematische Optimierung ueber die Analytic Number Theory Exponent Database (ANTEDB) liefert vier neue Exponentenpaare sowie neue Nullstellendichte- und additive-Energie-Abschaetzungen fuer zeta - unbedingt.",
+      "status": "proven",
+      "kind": "bound",
+      "doc": "doc-54",
+      "source": "Tao-Trudgian-Yang, arXiv:2501.16779 (2025)"
+    }
   ]
 }
