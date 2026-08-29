@@ -1,0 +1,5 @@
+# Obsidian: lokaler Workspace-/Cache-Zustand (nicht versionieren)
+obsidian/.obsidian/workspace.json
+obsidian/.obsidian/workspace-mobile.json
+obsidian/.obsidian/cache/
+.trash/

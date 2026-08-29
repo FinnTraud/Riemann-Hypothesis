@@ -2,7 +2,7 @@
 
 Ein vollständiges Werkzeug, um die **Riemann-Vermutung (RH)** zu verstehen, zu
 visualisieren, Ansätze auszuprobieren und mit einer KI strukturiert-analytisch zu
-untersuchen. Drei Teile:
+untersuchen. Vier Teile:
 
 1. **Wissensbasis** (`docs/`, 55 Dokumente) — jeder Ansatz, jedes Kriterium, jeder
    gescheiterte Beweis und jede Obstruktion, jeweils mit **mathematischem Kern**
@@ -11,6 +11,8 @@ untersuchen. Drei Teile:
    verbunden durch typisierte Relationen; hybride Suche; als **MCP-Server** mit Tools.
 3. **Rechnen & Visualisieren** (`kb/compute.py`, `kb/visualize.py`) — echte ζ-/Nullstellen-
    Berechnungen (mpmath) und Grafiken (matplotlib).
+4. **Obsidian-Wissensnetz** (`obsidian/`) — derselbe Graph als begehbarer Vault: jede
+   Notiz ein Ansatz, jede Kante ein [[Wikilink]], sichtbar in Obsidians Graph-Ansicht.
 
 > **Ehrlich vorab:** Dieses Repo *beweist die RH nicht* und kann das auch nicht — niemand
 > kann das bisher. Es ist ein **Forschungs-, Lern- und Verifikationsinstrument**, das
@@ -60,9 +62,25 @@ Erzwungen durch Design (Details: `docs/50_reasoning_protocol.md`):
 - **Anti-Crackpot-Gate** — `evaluate_proof_idea` prüft jede Beweisidee gegen die bekannten
   Obstruktionen (Euler-Produkt nötig, Positivität nicht annehmen, kein „weicher" Beweis …).
 
+## Wissensnetz in Obsidian (visuell)
+```bash
+python3 kb/build_obsidian.py      # baut/aktualisiert obsidian/
+```
+Dann in Obsidian *Ordner als Vault öffnen* → `obsidian/` wählen, Notiz
+**`Riemann-Wissensnetz`** öffnen und die Graph-Ansicht starten (`Strg/Cmd + G`).
+
+Der Vault enthält **126 Notizen**: 55 Dokument-Notizen (voller Text), 12 Konzepte/Motive,
+40 Claims mit Status, 15 Themen-Karten (MOC) und eine Relations-Legende — verbunden durch
+~1300 Links. Die Verknüpfungen stammen aus zwei Quellen:
+- **kuratierte Relationen** aus `kb/graph/edges.json`, typisiert und richtungsbehaftet
+  (`equivalent_to`, `uses`, `obstruction_for`, `refuted_by`, `models`, …);
+- **Querverweise im Fließtext** („Dok. 05", `docs/35`), die automatisch zu Wikilinks werden.
+Kategorien sind in der Graph-Ansicht farbig gruppiert; Filter wie `tag:#status/open` oder
+`path:Dokumente` blenden Teilnetze ein und aus. Details: `obsidian/README.md`.
+
 ## Verzeichnis
 ```
-docs/                 51 Wissensdokumente (00_INDEX.md = Einstieg)
+docs/                 55 Wissensdokumente (00_INDEX.md = Einstieg)
 manifest.json         maschinenlesbares Verzeichnis
 README_RAG.md         Ingestion-/Chunking-Hinweise für Vektor-/MCP-Server
 kb/
@@ -75,8 +93,10 @@ kb/
   experiment.py       reproduzierbares Experiment-Logbuch -> kb/experiments/
   formal.py           Lean/mathlib-Brücke (formale Verifikation)
   demo.py             geführte Tour
+  build_obsidian.py   erzeugt den Obsidian-Vault obsidian/
   graph/              kuratierte Knoten/Kanten/Claims
   README.md           Architektur & Tool-Referenz
+obsidian/             Obsidian-Vault (Dokumente/, Konzepte/, Claims/, Karten/)
 Riemann_Hypothesis_Proof_Approaches.md   Gesamtüberblick (eine Datei, EN)
 ```
 
