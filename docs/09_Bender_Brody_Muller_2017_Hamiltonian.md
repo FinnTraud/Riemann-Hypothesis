@@ -65,3 +65,33 @@ Es fehlt der Beweis, dass Ĥ (bzw. die zugehörige Bilinearform) auf dem konstru
 - [Hamiltonian for the zeros of the Riemann zeta function (arXiv 1608.03679)](https://arxiv.org/abs/1608.03679)
 - [Comment on "Hamiltonian for the Zeros of the Riemann Zeta Function" (arXiv 1704.02644)](https://arxiv.org/pdf/1704.02644)
 - [Physicists Attack Math's $1,000,000 Question — Quanta Magazine](https://www.quantamagazine.org/quantum-physicists-attack-the-riemann-hypothesis-20170404/)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_physical|Physikalische Modelle]]
+
+| Achse | Wert |
+|---|---|
+| Familie | physical |
+| Implikation | `conditional` |
+| Euler-Produkt | `none` |
+| Positivität | `assumes` |
+| Strenge | `refuted` · Evidenz `weak` |
+| Testbar / formalisierbar | `low` / `low` |
+
+**Offener Kernschritt:** Der behauptete Similaritätstransformations-Schritt setzt die Realität des Spektrums voraus - zirkulär.
+
+**Hebel (was er liefern würde):** Zeigt anschaulich, wie ein Operator-Ansatz genau scheitert.
+
+**Typische Fehlermodi:** [[F3_non-canonical-operator|F3 Operator ad hoc konstruiert (nicht kanonisch aus der Arithmetik)]] · [[F4_no-selfadjoint-realization|F4 Keine rigorose selbstadjungierte Realisierung (Definitionsbereich fehlt)]] · [[F1_no-euler-product|F1 Euler-Produkt nicht wesentlich benutzt]]
+
+**Vergleichbar mit:** [[08_Berry_Keating_xp_model|Berry–Keating H = xp Modell (Quantenchaos-Ansatz)]] · [[20_de_Branges_Hilbert_spaces|Louis de Branges: Hilberträume ganzer Funktionen (mehrfach gescheiterte Beweise)]] · [[05_Hilbert_Polya_conjecture|Die Hilbert–Pólya-Vermutung (spektraler Ansatz)]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-09 doc-08 doc-20 doc-05`
+
+**Ausgehende Beziehungen**
+- *modelliert* (`models`) → [[concept_hilbert-polya|Hilbert–Pólya / spektrale Interpretation]] — Bender–Brody–Müller PT-Hamiltonian (Selbstadjungiertheit unbewiesen).
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

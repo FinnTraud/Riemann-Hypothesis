@@ -64,3 +64,15 @@ Strukturell ein Positivitäts-/Reellwurzeligkeits-Ansatz wie viele (Dok. 14, 20)
 - [Riemann hypothesis, the fine structure constant, and the Todd function — John D. Cook](https://www.johndcook.com/blog/2018/09/24/riemann-hypothesis-the-fine-structure-constant-and-the-todd-function/)
 - [Atiyah's RH lecture preprint (mirror, El País)](https://ep00.epimg.net/descargables/2018/09/25/b133e2bf9a3e7bb55f5fae26dcf9b8c0.pdf)
 - [Riemann hypothesis, fine structure constant, Todd function — Hacker News discussion](https://news.ycombinator.com/item?id=18059880)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Ausgehende Beziehungen**
+- *widerlegt durch* (`refuted_by`) → [[concept_RH|Riemann-Vermutung (RH)]] — Atiyah 2018: gescheitert (Liouville-Verletzung).
+
+**Thematisch benachbart (gemeinsame Tags):** [[26_Nash_failed_attempt|John Nash (1959): gescheiterter Versuch]] · [[20_de_Branges_Hilbert_spaces|Louis de Branges: Hilberträume ganzer Funktionen (mehrfach gescheiterte Beweise)]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

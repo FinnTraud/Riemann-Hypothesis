@@ -88,3 +88,19 @@ Diese strukturübergreifende Universalität ist starke Evidenz für die Große R
 - [Grand Riemann hypothesis — Wikipedia](https://en.wikipedia.org/wiki/Grand_Riemann_hypothesis)
 - [On relations equivalent to the generalized Riemann hypothesis for the Selberg class (arXiv 1511.04603)](https://arxiv.org/pdf/1511.04603)
 - [Equivalent criteria for the Riemann hypothesis for a general class of L-functions (arXiv 2409.17708)](https://arxiv.org/pdf/2409.17708)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Ausgehende Beziehungen**
+- *ist Instanz von* (`instance_of`) → [[concept_GRH|Verallgemeinerte/Große RH]] — GRH/Selberg-Klasse/Große RH.
+
+**Eingehende Beziehungen**
+- *benutzt* (`uses`) → [[43_Epstein_zeta_Selberg_class_rigidity|43 — Epstein-Zetafunktionen & Selberg-Klassen-Rigidität: Welche Eigenschaft erzwingt die kritische Gerade?]] — Selberg-Klassen-Klassifikation (Kaczorowski–Perelli).
+- *benutzt* (`uses`) → [[59_Langlands_functoriality_automorphic|59 — Langlands-Funktorialität & automorphe L-Funktionen: Weg zur GRH?]] — Selberg-Klasse als axiomatische Schattenversion der automorphen Welt.
+
+**Thematisch benachbart (gemeinsame Tags):** [[59_Langlands_functoriality_automorphic|Langlands-Funktorialität & automorphe L-Funktionen: Weg zur GRH?]] · [[32_Landau_Siegel_zeros_Zhang|Landau–Siegel-Nullstellen (Ausnahme-Nullstellen) & Yitang Zhang (2022)]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

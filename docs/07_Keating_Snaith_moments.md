@@ -85,3 +85,40 @@ Momentschranken ⇒ untere Schranken für N₀(T)/N(T) (Anteil auf der Geraden, 
 - [Moments of the Riemann Zeta Function and Log-Correlated Random Variables (Oxford)](https://ora.ox.ac.uk/objects/uuid:9bbc320c-9738-43ef-b0f0-f18bf4b7c0d6/files/dh415pb096)
 - [On moments of the derivative of CUE characteristic polynomials and the Riemann zeta function (arXiv 2409.03687)](https://arxiv.org/html/2409.03687)
 - [Freezing transition and moments of moments of the Riemann zeta function (Oxford QJM)](https://academic.oup.com/qjmath/article/75/4/1481/7925234)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_probabilistic|Probabilistische Modelle & Statistik]]
+
+| Achse | Wert |
+|---|---|
+| Familie | probabilistic |
+| Implikation | `model` |
+| Euler-Produkt | `essential` |
+| Positivität | `n/a` |
+| Strenge | `heuristic` · Evidenz `strong` |
+| Testbar / formalisierbar | `high` / `low` |
+
+**Offener Kernschritt:** Momente 2k für k>2 sind offen; Splitting-Vermutung unbewiesen.
+
+**Hebel (was er liefern würde):** Quantitativ scharfe Vorhersagen - starker Konsistenztest.
+
+**Typische Fehlermodi:** [[F14_model-without-implication|F14 Modell ohne Implikationspfeil]]
+
+**Vergleichbar mit:** [[63_hybrid_Euler_Hadamard_product|Hybrides Euler–Hadamard-Produkt (Gonek–Hughes–Keating)]] · [[64_extreme_values_FHK_multiplicative_chaos|Extremwerte von ζ: Fyodorov–Hiary–Keating & multiplikatives Chaos]] · [[06_Montgomery_pair_correlation_RMT|Montgomery-Paarkorrelation & Random-Matrix-Theorie (GUE)]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-07 doc-63 doc-64 doc-06`
+
+**Ausgehende Beziehungen**
+- *ist Evidenz für* (`evidence_for`) → [[concept_hilbert-polya|Hilbert–Pólya / spektrale Interpretation]] — Keating-Snaith-Momente stützen das Random-Matrix-Bild.
+
+**Eingehende Beziehungen**
+- *ist Evidenz für* (`evidence_for`) → [[49_live_analytic_frontier|49 — Live-Front der analytischen Zahlentheorie (2019–2026)]] — Harper/Radziwiłł–Soundararajan: scharfe Momentschranken stützen Keating-Snaith.
+- *benutzt* (`uses`) → [[53_pair_correlation_alternative_hypothesis|53 — Paarkorrelation ohne RH & die Alternative Hypothese (Goldston, Lee, Schettler, Suriajaya, Baluyot, Turnage-Butterbaugh, 2025–2026)]] — Teilt den Random-Matrix-Rahmen mit Keating-Snaith.
+- *reduziert sich auf* (`reduces_to`) → [[63_hybrid_Euler_Hadamard_product|63 — Hybrides Euler–Hadamard-Produkt (Gonek–Hughes–Keating)]] — Strukturelle Begründung der Keating–Snaith-Vorhersage.
+
+**Thematisch benachbart (gemeinsame Tags):** [[63_hybrid_Euler_Hadamard_product|Hybrides Euler–Hadamard-Produkt (Gonek–Hughes–Keating)]] · [[06_Montgomery_pair_correlation_RMT|Montgomery-Paarkorrelation & Random-Matrix-Theorie (GUE)]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

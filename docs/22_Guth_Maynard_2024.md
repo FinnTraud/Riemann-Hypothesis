@@ -69,3 +69,39 @@ Bessere N(σ,T)-Schranken ⇒ asymptotische Primzahlzählung in kürzeren Interv
 - [The Riemann Hypothesis ... Is a Step Closer to Being Solved — Scientific American](https://www.scientificamerican.com/article/the-riemann-hypothesis-the-biggest-problem-in-mathematics-is-a-step-closer/)
 - [New Horizons in Riemann Zeta Function Analysis: From Guth-Maynard Estimates ... (ResearchGate)](https://www.researchgate.net/publication/398421128_NEW_HORIZONS_IN_RIEMANN_ZETA_FUNCTION_ANALYSIS_FROM_GUTH-MAYNARD_ESTIMATES_TO_THE_GADU-IOMM_OPERATORIAL_PARADIGM)
 - [The Riemann Hypothesis: Past, Present and a Letter Through Time (arXiv 2602.04022)](https://arxiv.org/abs/2602.04022)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_analytic|Analytische Ansätze]]
+
+| Achse | Wert |
+|---|---|
+| Familie | analytic |
+| Implikation | `partial` |
+| Euler-Produkt | `essential` |
+| Positivität | `n/a` |
+| Strenge | `theorem` · Evidenz `n/a` |
+| Testbar / formalisierbar | `medium` / `low` |
+
+**Offener Kernschritt:** Verbesserte Exponenten bleiben weit von der Dichtehypothese entfernt.
+
+**Hebel (was er liefern würde):** Erster Fortschritt bei Ingham-Schranken seit 1940 - Methode neu.
+
+**Typische Fehlermodi:** [[F13_error-term-ceiling|F13 Strukturelle Decke des Fehlerterms]]
+
+**Vergleichbar mit:** [[04_Levinson_Conrey_positive_proportion|Levinson, Conrey & Co.: Positiver Anteil der Nullstellen auf der kritischen Geraden]] · [[03_Hardy_1914_infinitely_many_zeros|Hardy (1914): Unendlich viele Nullstellen auf der kritischen Geraden]] · [[12_zero_free_regions|Nullstellenfreie Regionen (klassischer analytischer Ansatz)]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-22 doc-04 doc-03 doc-12`
+
+**Ausgehende Beziehungen**
+- *benutzt* (`uses`) → [[17_Lindelof_density_hypothesis|17 — Lindelöf-Hypothese & Dichte-Hypothese]] — Guth–Maynard verbessert Dichte-Abschätzungen Richtung Dichte-Hypothese.
+
+**Eingehende Beziehungen**
+- *ist Evidenz für* (`evidence_for`) → [[49_live_analytic_frontier|49 — Live-Front der analytischen Zahlentheorie (2019–2026)]] — Live-Front: explizite Dichte, Subkonvexität, Momente.
+- *benutzt* (`uses`) → [[54_machine_assisted_number_theory_ANTEDB_Lean|54 — Maschinengestützte Zahlentheorie: ANTEDB, systematische Exponenten-Optimierung und formalisierter Primzahlsatz (2025–2026)]] — Additive Energie der Nullstellen ist die Guth-Maynard-Zwischengroesse.
+
+**Thematisch benachbart (gemeinsame Tags):** [[49_live_analytic_frontier|Live-Front der analytischen Zahlentheorie (2019–2026)]] · [[54_machine_assisted_number_theory_ANTEDB_Lean|Maschinengestützte Zahlentheorie: ANTEDB, systematische Exponenten-Optimierung und formalisierter Primzahlsatz (2025–2026)]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

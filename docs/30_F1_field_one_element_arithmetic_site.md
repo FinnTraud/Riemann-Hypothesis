@@ -78,3 +78,39 @@ Die Determinante det_∞ (zeta-regularisiert) und die benötigte H¹-Kohomologie
 - [An arithmetic site of Connes-Consani type for imaginary quadratic fields with class number 1 (arXiv 1703.10521)](https://arxiv.org/pdf/1703.10521)
 - [Segal's Gamma rings and universal arithmetic — Connes–Consani (arXiv 2004.08879)](https://arxiv.org/pdf/2004.08879)
 - [The Riemann Hypothesis: Arithmetic and Geometry — J. Lagarias (Übersicht)](https://websites.umich.edu/~lagarias//doc/mt-holyoke-rev.pdf)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_algebraic_geometric|Algebraisch-geometrische Ansätze]]
+
+| Achse | Wert |
+|---|---|
+| Familie | algebraic-geometric |
+| Implikation | `conditional` |
+| Euler-Produkt | `essential` |
+| Positivität | `must-prove` |
+| Strenge | `program` · Evidenz `medium` |
+| Testbar / formalisierbar | `low` / `low` |
+
+**Offener Kernschritt:** Spec ℤ ×_𝔽₁ Spec ℤ als geometrisches Objekt konstruieren und Weil-Positivität darauf beweisen.
+
+**Hebel (was er liefern würde):** Würde Weils Beweis wörtlich übertragbar machen.
+
+**Typische Fehlermodi:** [[F10_analogy-transfer-gap|F10 Analogie ohne Trägerobjekt (Geometrie-Transfer)]] · [[F2_positivity-assumed|F2 Positivität angenommen statt bewiesen]]
+
+**Vergleichbar mit:** [[31_Deninger_cohomology_foliated_dynamical|Deningers Kohomologie-Programm & dynamische Systeme auf gefolierten Räumen]] · [[10_Connes_noncommutative_geometry|Alain Connes: Spurformel & nichtkommutative Geometrie]] · [[59_Langlands_functoriality_automorphic|Langlands-Funktorialität & automorphe L-Funktionen: Weg zur GRH?]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-30 doc-31 doc-10 doc-59`
+
+**Ausgehende Beziehungen**
+- *versucht Transfer von* (`attempts_transfer_of`) → [[concept_geometry-transfer|Geometrie-Transfer (Funktionenkörper→ℤ)]] — 𝔽₁/arithmetic site: Weil-Beweis auf ℤ übertragen.
+- *benutzt* (`uses`) → [[34_Bost_Connes_system|34 — Bost–Connes-System (Quantenstatistik mit ζ als Zustandssumme)]] — Bost–Connes liefert Galois-/Frobenius-Symmetrie fürs 𝔽₁-Programm.
+
+**Eingehende Beziehungen**
+- *reduziert sich auf* (`reduces_to`) → [[61_Arakelov_geometry_SpecZ_compactification|61 — Arakelov-Geometrie & die Kompaktifizierung von Spec ℤ]] — Für die fehlende zweite Dimension braucht man Spec ℤ ×_{𝔽₁} Spec ℤ.
+
+**Thematisch benachbart (gemeinsame Tags):** [[48_Meyer_Kurokawa_algebraic_programs|Weitere algebraische/spektrale Programme: Meyer (Distributionen) & Kurokawa (absolute Zeta)]] · [[34_Bost_Connes_system|Bost–Connes-System (Quantenstatistik mit ζ als Zustandssumme)]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

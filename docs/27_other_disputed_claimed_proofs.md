@@ -75,3 +75,13 @@ Ein Millennium-Beweis wird erst nach Publikation in einer angesehenen Zeitschrif
 - [Note on a proposed proof of the Riemann Hypothesis by Jin Gyu Lee (arXiv 1305.4614)](https://arxiv.org/pdf/1305.4614)
 - [Pseudodifferential arithmetic and a failed attempt on the Riemann hypothesis (arXiv 2202.11652)](https://arxiv.org/pdf/2202.11652)
 - [Millennium Prize Problems — Wikipedia](https://en.wikipedia.org/wiki/Millennium_Prize_Problems)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Ausgehende Beziehungen**
+- *widerlegt durch* (`refuted_by`) → [[concept_RH|Riemann-Vermutung (RH)]] — Diverse zurückgezogene/fehlerhafte Behauptungen.
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

@@ -78,3 +78,41 @@ F(α,T) ist nur für |α| ≤ 1 *unbedingt unter RH* bekannt; der Bereich |α| �
 - [Pair Correlation Conjecture for the Zeros of the Riemann Zeta-function I (arXiv 2503.15449)](https://arxiv.org/abs/2503.15449)
 - [Correlations of eigenvalues and Riemann zeros (arXiv 0803.2795)](https://arxiv.org/pdf/0803.2795)
 - [Andrew Odlyzko: Papers on Zeros of the Riemann Zeta Function](https://www-users.cse.umn.edu/~odlyzko/doc/zeta.html)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_probabilistic|Probabilistische Modelle & Statistik]]
+
+| Achse | Wert |
+|---|---|
+| Familie | probabilistic |
+| Implikation | `model` |
+| Euler-Produkt | `essential` |
+| Positivität | `n/a` |
+| Strenge | `theorem` · Evidenz `strong` |
+| Testbar / formalisierbar | `high` / `low` |
+
+**Offener Kernschritt:** Trägerbedingung |u|<1 aufheben - erfordert Primzahl-Korrelationen (Hardy-Littlewood).
+
+**Hebel (was er liefern würde):** Stärkste Evidenz für spektrale Herkunft der Nullstellen.
+
+**Typische Fehlermodi:** [[F14_model-without-implication|F14 Modell ohne Implikationspfeil]] · [[F13_error-term-ceiling|F13 Strukturelle Decke des Fehlerterms]]
+
+**Vergleichbar mit:** [[65_higher_correlations_Rudnick_Sarnak|Höhere Korrelationen: Hejhal, Rudnick–Sarnak & die GUE-Hypothese]] · [[63_hybrid_Euler_Hadamard_product|Hybrides Euler–Hadamard-Produkt (Gonek–Hughes–Keating)]] · [[64_extreme_values_FHK_multiplicative_chaos|Extremwerte von ζ: Fyodorov–Hiary–Keating & multiplikatives Chaos]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-06 doc-65 doc-63 doc-64`
+
+**Ausgehende Beziehungen**
+- *ist Evidenz für* (`evidence_for`) → [[concept_hilbert-polya|Hilbert–Pólya / spektrale Interpretation]] — Montgomery-GUE: statistische Evidenz für chaotischen selbstadj. Operator.
+
+**Eingehende Beziehungen**
+- *ist Instanz von* (`instance_of`) → [[concept_pair-correlation|Paarkorrelation der Nullstellen (Montgomery F(alpha,T))]] — Dok. 06 fuehrt Montgomerys Paarkorrelation ein.
+- *verallgemeinert* (`generalizes`) → [[53_pair_correlation_alternative_hypothesis|53 — Paarkorrelation ohne RH & die Alternative Hypothese (Goldston, Lee, Schettler, Suriajaya, Baluyot, Turnage-Butterbaugh, 2025–2026)]] — Nimmt die RH-Annahme aus der Gallagher-Mueller-Methode heraus.
+- *modelliert* (`models`) → [[63_hybrid_Euler_Hadamard_product|63 — Hybrides Euler–Hadamard-Produkt (Gonek–Hughes–Keating)]] — Trennt arithmetischen von spektralem Anteil der Statistik.
+- *verallgemeinert* (`generalizes`) → [[65_higher_correlations_Rudnick_Sarnak|65 — Höhere Korrelationen: Hejhal, Rudnick–Sarnak & die GUE-Hypothese]] — n-Level-Korrelationen verallgemeinern Montgomerys Paarkorrelation.
+
+**Thematisch benachbart (gemeinsame Tags):** [[53_pair_correlation_alternative_hypothesis|Paarkorrelation ohne RH & die Alternative Hypothese (Goldston, Lee, Schettler, Suriajaya, Baluyot, Turnage-Butterbaugh, 2025–2026)]] · [[65_higher_correlations_Rudnick_Sarnak|Höhere Korrelationen: Hejhal, Rudnick–Sarnak & die GUE-Hypothese]] · [[63_hybrid_Euler_Hadamard_product|Hybrides Euler–Hadamard-Produkt (Gonek–Hughes–Keating)]] · [[24_computational_verification|Numerische Verifikation der Riemann-Vermutung]] · [[07_Keating_Snaith_moments|Keating–Snaith: Momente der Zetafunktion via charakteristische Polynome (CUE)]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

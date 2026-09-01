@@ -82,3 +82,41 @@ RH  ⟺  Σ_{n=1}^∞ (−x)^n/(n! ζ(2n+1)) = O(x^{−1/4})   (x → ∞).
 - [Riemann's Hypothesis and the Mertens Function (Galetto)](https://empslocal.ex.ac.uk/people/staff/mrwatkin/zeta/galetto_RH_Mertens.pdf)
 - [Riemann hypothesis — Wikipedia (Mertens function)](https://en.wikipedia.org/wiki/Riemann_hypothesis)
 - [Riesz type criteria for L-functions in the Selberg class (arXiv 2211.02954)](https://arxiv.org/pdf/2211.02954)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_criterion|Äquivalente Kriterien]]
+
+| Achse | Wert |
+|---|---|
+| Familie | criterion |
+| Implikation | `equivalent` |
+| Euler-Produkt | `essential` |
+| Positivität | `n/a` |
+| Strenge | `theorem` · Evidenz `weak` |
+| Testbar / formalisierbar | `high` / `medium` |
+
+**Offener Kernschritt:** M(x) << x^(1/2+eps) - blockiert durch die Paritätsbarriere; Mertens-Vermutung ist widerlegt.
+
+**Hebel (was er liefern würde):** Direkteste Verbindung zwischen Möbius-Zufälligkeit und RH.
+
+**Typische Fehlermodi:** [[F8_parity-barrier|F8 Paritätsbarriere (Sieb-/Multiplikativitätsmethoden)]] · [[F11_criterion-restates|F11 Äquivalenz ohne neuen Zugriff]] · [[F6_numerics-as-proof|F6 Endliche Numerik als Beweis behandelt]]
+
+**Vergleichbar mit:** [[15_Robin_inequality|Robins Ungleichung & Lagarias' elementares Kriterium (arithmetische Kriterien)]] · [[13_Nyman_Beurling_Baez_Duarte|Nyman–Beurling-Kriterium & Báez-Duarte-Verschärfung]] · [[14_Li_criterion_Bombieri_Lagarias_Weil_positivity|Li-Kriterium, Bombieri–Lagarias & Weil-Positivität]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-16 doc-15 doc-13 doc-14`
+
+**Ausgehende Beziehungen**
+- *ist äquivalent zu* (`equivalent_to`) → [[concept_RH|Riemann-Vermutung (RH)]] — Mertens-Kriterium M(x)=O(x^{1/2+ε}) ⟺ RH (NICHT die widerlegte Mertens-Vermutung).
+- *ist äquivalent zu* (`equivalent_to`) → [[45_further_equivalent_criteria|45 — Weitere äquivalente Kriterien (Volchkov, Sekatskii, Redheffer, Salem, BBLS-quantitativ)]] — Redheffer-Matrix det(R_n)=M(n) verbindet Mertens und Matrix-Kriterium.
+- *ist Evidenz für* (`evidence_for`) → [[35_obstructions_barriers|35 — Obstruktionen & Barrieren: Warum naive Ansätze scheitern MÜSSEN]] — Widerlegte Mertens-Vermutung: numerische Evidenz täuscht (Warnung).
+
+**Eingehende Beziehungen**
+- *ist Evidenz für* (`evidence_for`) → [[58_Mobius_randomness_Chowla_Sarnak|58 — Möbius-Zufälligkeit: Chowla-Vermutung, Sarnak-Disjunktheit & die Paritätsbarriere]] — Stützt die Heuristik hinter M(x)=O(x^{1/2+ε}), liefert sie aber nicht.
+- *benutzt* (`uses`) → [[67_what_if_RH_is_false|67 — Was wäre, wenn die RH falsch ist? Θ, Oszillationen & numerische Signaturen]] — Mertens-Widerlegung als Kalibrierung der Numerik.
+
+**Thematisch benachbart (gemeinsame Tags):** [[58_Mobius_randomness_Chowla_Sarnak|Möbius-Zufälligkeit: Chowla-Vermutung, Sarnak-Disjunktheit & die Paritätsbarriere]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

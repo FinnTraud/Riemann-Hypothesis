@@ -68,3 +68,35 @@ Eine dazu äquivalente, operatorfreie Fassung (Dok. 29): RH ⟺ ξ liegt in der 
 - [The Riemann zeros as spectrum and the Riemann hypothesis (arXiv 1601.01797)](https://arxiv.org/pdf/1601.01797)
 - [On Hilbert-Polya conjecture: Hermitian operator naturally associated to L-functions (arXiv 1105.1500)](https://arxiv.org/pdf/1105.1500)
 - [The Hilbert-Pólya Conjecture and the Prolate Spheroidal Operator (TU Delft)](https://repository.tudelft.nl/file/File_a03b023e-2ba7-45fb-bde9-6fcc7a53d306)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_spectral|Spektrale Ansätze]]
+
+| Achse | Wert |
+|---|---|
+| Familie | spectral |
+| Implikation | `conditional` |
+| Euler-Produkt | `partial` |
+| Positivität | `must-prove` |
+| Strenge | `program` · Evidenz `strong` |
+| Testbar / formalisierbar | `low` / `low` |
+
+**Offener Kernschritt:** Einen kanonisch aus der Arithmetik stammenden Operator konstruieren, dessen Selbstadjungiertheit unabhängig beweisbar ist.
+
+**Hebel (was er liefern würde):** Würde RH sofort liefern; erklärt die GUE-Statistik.
+
+**Typische Fehlermodi:** [[F3_non-canonical-operator|F3 Operator ad hoc konstruiert (nicht kanonisch aus der Arithmetik)]] · [[F4_no-selfadjoint-realization|F4 Keine rigorose selbstadjungierte Realisierung (Definitionsbereich fehlt)]]
+
+**Vergleichbar mit:** [[08_Berry_Keating_xp_model|Berry–Keating H = xp Modell (Quantenchaos-Ansatz)]] · [[10_Connes_noncommutative_geometry|Alain Connes: Spurformel & nichtkommutative Geometrie]] · [[48_Meyer_Kurokawa_algebraic_programs|Weitere algebraische/spektrale Programme: Meyer (Distributionen) & Kurokawa (absolute Zeta)]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-05 doc-08 doc-10 doc-48`
+
+**Ausgehende Beziehungen**
+- *ist Instanz von* (`instance_of`) → [[concept_hilbert-polya|Hilbert–Pólya / spektrale Interpretation]] — Hilbert–Pólya-Vermutung selbst.
+
+**Thematisch benachbart (gemeinsame Tags):** [[52_Connes_truncated_Weil_spectral_realization|Abgeschnittene Weil-Quadratform & Zeta-Spektraltripel (Connes–van Suijlekom, Connes–Consani–Moscovici, 2025–2026)]] · [[41_synthesis_what_a_proof_needs|Synthese: Querschnittsthemen & was ein erfolgreicher Beweis leisten muss]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

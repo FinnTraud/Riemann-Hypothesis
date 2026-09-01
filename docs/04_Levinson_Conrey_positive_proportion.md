@@ -74,3 +74,40 @@ Die Mollifier-Länge θ ist durch die verfügbaren Mittelwertsätze (zweite/vier
 - [Zeros on the Critical Line — E. Naslund (UBC)](https://personal.math.ubc.ca/~gerg/teaching/613-Winter2011/ZerosCriticalLine.pdf)
 - [On a choice of the mollified function in the Levinson-Conrey method (arXiv 1403.5786)](https://arxiv.org/pdf/1403.5786)
 - [Riemann hypothesis — Wikipedia](https://en.wikipedia.org/wiki/Riemann_hypothesis)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_analytic|Analytische Ansätze]]
+
+| Achse | Wert |
+|---|---|
+| Familie | analytic |
+| Implikation | `partial` |
+| Euler-Produkt | `essential` |
+| Positivität | `n/a` |
+| Strenge | `theorem` · Evidenz `n/a` |
+| Testbar / formalisierbar | `medium` / `medium` |
+
+**Offener Kernschritt:** Mollifier-Länge θ < 4/7; Anteil 1 braucht Momente, die ohne RH unbekannt sind.
+
+**Hebel (was er liefern würde):** Der einzige quantitative Fortschritt Richtung 'alle Nullstellen'.
+
+**Typische Fehlermodi:** [[F13_error-term-ceiling|F13 Strukturelle Decke des Fehlerterms]]
+
+**Vergleichbar mit:** [[12_zero_free_regions|Nullstellenfreie Regionen (klassischer analytischer Ansatz)]] · [[22_Guth_Maynard_2024|Guth–Maynard (2024): Durchbruch bei Nullstellendichte-Abschätzungen]] · [[03_Hardy_1914_infinitely_many_zeros|Hardy (1914): Unendlich viele Nullstellen auf der kritischen Geraden]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-04 doc-12 doc-22 doc-03`
+
+**Ausgehende Beziehungen**
+- *ist Teilresultat für* (`partial_result_for`) → [[concept_RH|Riemann-Vermutung (RH)]] — Levinson/Conrey: >41% auf der Geraden.
+- *verallgemeinert* (`generalizes`) → [[03_Hardy_1914_infinitely_many_zeros|03 — Hardy (1914): Unendlich viele Nullstellen auf der kritischen Geraden]] — Quantifiziert Hardys Resultat (positiver Anteil).
+
+**Eingehende Beziehungen**
+- *ist schwächer als* (`weaker_than`) → [[53_pair_correlation_alternative_hypothesis|53 — Paarkorrelation ohne RH & die Alternative Hypothese (Goldston, Lee, Schettler, Suriajaya, Baluyot, Turnage-Butterbaugh, 2025–2026)]] — Die 100-%-Aussagen sind bedingt; unbedingt sind bislang nur ~41 % (Conrey).
+- *ist Blaupause für* (`blueprint_for`) → [[55_Speiser_zeros_of_zeta_prime|55 — Speisers Satz & die Nullstellen von ζ′ (die Maschine hinter Levinson)]] — Speiser/Levinson–Montgomery ist die technische Grundlage von Levinsons Mollifier-Methode.
+
+**Thematisch benachbart (gemeinsame Tags):** [[55_Speiser_zeros_of_zeta_prime|Speisers Satz & die Nullstellen von ζ′ (die Maschine hinter Levinson)]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

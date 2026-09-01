@@ -1,8 +1,8 @@
 {
   "name": "Riemann Hypothesis Knowledge Base",
   "version": "1.0",
-  "updated": "2026-08",
-  "count": 55,
+  "updated": "2026-09",
+  "count": 71,
   "documents": [
     {
       "number": "00",
@@ -888,6 +888,291 @@
       ],
       "file": "docs/54_machine_assisted_number_theory_ANTEDB_Lean.md",
       "summary": "Nicht die RH hat sich bewegt, sondern die Arbeitsweise: ANTEDB macht die Exponenten-Landschaft der analytischen Zahlentheorie zu einer systematisch optimierbaren Datenbank (Tao-Trudgian-Yang 2025); der starke Primzahlsatz ist in Lean 4 formalisiert; Reproduzierbarkeitspakete mit Intervall-Zertifikaten werden zur Norm. Methodischer, kein inhaltlicher RH-Fortschritt."
+    },
+    {
+      "number": "55",
+      "id": "doc-55",
+      "title": "Speisers Satz & die Nullstellen von ζ′ (die Maschine hinter Levinson)",
+      "category": "criterion",
+      "status": "proven",
+      "tags": [
+        "speiser",
+        "derivative",
+        "levinson-montgomery",
+        "mollifier",
+        "critical-line",
+        "equivalent-criterion"
+      ],
+      "file": "docs/55_Speiser_zeros_of_zeta_prime.md",
+      "summary": "Speiser bewies 1934 eine überraschende Umformulierung: Die RH ist äquivalent dazu, dass ζ′(s) im Streifen 0 < Re(s) < 1/2 keine Nullstellen hat. Statt über die Nullstellen von ζ zu reden, redet man über die Nullstellen der Ableitung — und die liegen (unter RH) alle rechts der kritischen Geraden. Lev"
+    },
+    {
+      "number": "56",
+      "id": "doc-56",
+      "title": "Turáns Potenzsummen-Programm & die Partialsummen von ζ (widerlegter Ansatz)",
+      "category": "failed-proof",
+      "status": "refuted",
+      "tags": [
+        "turan",
+        "power-sums",
+        "partial-sums",
+        "montgomery-1983",
+        "dirichlet-polynomial",
+        "failed-approach"
+      ],
+      "file": "docs/56_Turan_power_sums_partial_sums.md",
+      "summary": "Turán versuchte, die RH auf eine scheinbar viel einfachere Frage zurückzuführen: das Nullstellenverhalten der endlichen Partialsummen  ζ_N(s) = Σ_{n=1}^{N} n^{−s}.  Er bewies: Wären diese Partialsummen für alle großen N in der Halbebene Re(s) > 1 nullstellenfrei, so folgte die RH (bzw. eine quasi-RH"
+    },
+    {
+      "number": "57",
+      "id": "doc-57",
+      "title": "Beurlingsche verallgemeinerte Primzahlen: Euler-Produkt allein genügt nicht",
+      "category": "obstruction",
+      "status": "proven",
+      "tags": [
+        "beurling",
+        "generalized-primes",
+        "diamond-montgomery-vorhauer",
+        "axioms",
+        "obstruction",
+        "euler-product"
+      ],
+      "file": "docs/57_Beurling_generalized_primes.md",
+      "summary": "Die Davenport–Heilbronn-Funktion (Dok. 35) zeigt: *Funktionalgleichung ohne Euler-Produkt genügt nicht.* Die Beurlingschen verallgemeinerten Primzahlsysteme zeigen die komplementäre Aussage: *Euler-Produkt ohne die additive Struktur der ganzen Zahlen genügt ebenfalls nicht.* Zusammen bilden die beid"
+    },
+    {
+      "number": "58",
+      "id": "doc-58",
+      "title": "Möbius-Zufälligkeit: Chowla-Vermutung, Sarnak-Disjunktheit & die Paritätsbarriere",
+      "category": "solution-program",
+      "status": "open",
+      "tags": [
+        "mobius",
+        "chowla",
+        "sarnak",
+        "parity",
+        "liouville",
+        "tao",
+        "entropy",
+        "randomness"
+      ],
+      "file": "docs/58_Mobius_randomness_Chowla_Sarnak.md",
+      "summary": "Die RH ist äquivalent zu einer Abschätzung der Mertens-Funktion: M(x) = Σ_{n≤x} μ(n) = O(x^{1/2+ε}) (Dok. 16). Das legt nahe, μ(n) als „Zufallsvorzeichen\" zu behandeln. Die Chowla-Vermutung und die Sarnak-Vermutung machen diese Zufälligkeit präzise — und die letzten zehn Jahre haben dort echte Durch"
+    },
+    {
+      "number": "59",
+      "id": "doc-59",
+      "title": "Langlands-Funktorialität & automorphe L-Funktionen: Weg zur GRH?",
+      "category": "solution-program",
+      "status": "open",
+      "tags": [
+        "langlands",
+        "functoriality",
+        "automorphic",
+        "ramanujan-petersson",
+        "converse-theorem",
+        "GRH",
+        "selberg-class"
+      ],
+      "file": "docs/59_Langlands_functoriality_automorphic.md",
+      "summary": "Das Langlands-Programm ordnet jeder automorphen Darstellung π einer reduktiven Gruppe eine L-Funktion L(s, π) zu und postuliert Funktorialität: L-Funktionen von Galoisdarstellungen sind automorph. Die GRH (Dok. 21) ist die Aussage, dass alle diese L-Funktionen ihre nicht-trivialen Nullstellen auf Re"
+    },
+    {
+      "number": "60",
+      "id": "doc-60",
+      "title": "Grothendiecks Standardvermutungen & Motive: die Herkunft der Positivität",
+      "category": "solution-program",
+      "status": "open",
+      "tags": [
+        "grothendieck",
+        "standard-conjectures",
+        "motives",
+        "hodge-index",
+        "weil-positivity",
+        "castelnuovo-severi",
+        "intersection-theory"
+      ],
+      "file": "docs/60_standard_conjectures_motives_positivity.md",
+      "summary": "Im bewiesenen Fall — RH für Kurven über endlichen Körpern (Dok. 18) — kommt die Aussage |α_i| = q^{1/2} nicht aus Analysis, sondern aus einer Positivitätsaussage der Schnitttheorie: dem Hodge-Index-Satz bzw. der Castelnuovo–Severi-Ungleichung auf der Fläche C × C. Dieses Dokument isoliert genau dies"
+    },
+    {
+      "number": "61",
+      "id": "doc-61",
+      "title": "Arakelov-Geometrie & die Kompaktifizierung von Spec ℤ",
+      "category": "solution-program",
+      "status": "open",
+      "tags": [
+        "arakelov",
+        "arithmetic-surface",
+        "hodge-index",
+        "faltings",
+        "hriljac",
+        "spec-z",
+        "archimedean-place",
+        "soule"
+      ],
+      "file": "docs/61_Arakelov_geometry_SpecZ_compactification.md",
+      "summary": "Arakelov-Geometrie behandelt Spec ℤ als „Kurve\", die man durch Hinzunahme der archimedischen Stelle ∞ kompaktifiziert: Primzahlen sind die endlichen Punkte, die reelle Einbettung liefert den Punkt im Unendlichen, und hermitesche Metriken auf Vektorbündeln ersetzen dort die fehlende Faser. Damit exis"
+    },
+    {
+      "number": "62",
+      "id": "doc-62",
+      "title": "Tates These & adelische Analysis: warum die Funktionalgleichung „billig\\\" ist",
+      "category": "foundations",
+      "status": "proven",
+      "tags": [
+        "tate-thesis",
+        "adeles",
+        "poisson-summation",
+        "functional-equation",
+        "idele",
+        "weil",
+        "fourier-analysis"
+      ],
+      "file": "docs/62_Tate_thesis_adelic_analysis.md",
+      "summary": "Tate zeigte, dass die analytische Fortsetzung und die Funktionalgleichung von ζ (und aller Hecke-L-Funktionen) eine einzige Zeile sind: die Poisson-Summationsformel auf den Adelen 𝔸_ℚ, angewandt auf eine Schwartz–Bruhat-Funktion. Für das RH-Netzwerk hat das zwei Konsequenzen: (a) alle spektralen Pro"
+    },
+    {
+      "number": "63",
+      "id": "doc-63",
+      "title": "Hybrides Euler–Hadamard-Produkt (Gonek–Hughes–Keating)",
+      "category": "heuristic",
+      "status": "open",
+      "tags": [
+        "gonek-hughes-keating",
+        "hybrid-model",
+        "moments",
+        "splitting-conjecture",
+        "arithmetic-factor",
+        "random-matrix"
+      ],
+      "file": "docs/63_hybrid_Euler_Hadamard_product.md",
+      "summary": "Warum sagt Zufallsmatrixtheorie (Dok. 06/07) die Statistik der ζ-Nullstellen so gut voraus — und warum reicht sie trotzdem nicht? Das hybride Euler–Hadamard-Produkt beantwortet beides: Es zerlegt ζ beweisbar in ein kurzes Euler-Produkt über Primzahlen p ≤ X und ein Hadamard-artiges Produkt über die "
+    },
+    {
+      "number": "64",
+      "id": "doc-64",
+      "title": "Extremwerte von ζ: Fyodorov–Hiary–Keating & multiplikatives Chaos",
+      "category": "frontier",
+      "status": "open",
+      "tags": [
+        "extreme-values",
+        "fyodorov-hiary-keating",
+        "multiplicative-chaos",
+        "branching-random-walk",
+        "lindelof",
+        "resonance-method",
+        "bondarenko-seip"
+      ],
+      "file": "docs/64_extreme_values_FHK_multiplicative_chaos.md",
+      "summary": "Wie groß wird |ζ(1/2+it)|? Diese Frage verbindet die Lindelöf-Hypothese (Dok. 17), die Momentenvermutungen (Dok. 07, 63) und moderne Wahrscheinlichkeitstheorie (verzweigende Irrfahrten, multiplikatives Chaos). Fyodorov, Hiary und Keating sagten 2012 aus einer Analogie zu logarithmisch korrelierten Z"
+    },
+    {
+      "number": "65",
+      "id": "doc-65",
+      "title": "Höhere Korrelationen: Hejhal, Rudnick–Sarnak & die GUE-Hypothese",
+      "category": "partial-results",
+      "status": "proven",
+      "tags": [
+        "n-level-correlation",
+        "rudnick-sarnak",
+        "hejhal",
+        "GUE",
+        "katz-sarnak",
+        "symmetry-types",
+        "restricted-support"
+      ],
+      "file": "docs/65_higher_correlations_Rudnick_Sarnak.md",
+      "summary": "Montgomerys Paarkorrelation (Dok. 06) ist der Anfang, nicht das Ende: Rudnick und Sarnak bewiesen 1996, dass alle n-Level-Korrelationen der Nullstellen jeder cuspidalen automorphen L-Funktion mit dem GUE-Ensemble übereinstimmen — allerdings nur für Testfunktionen, deren Fouriertransformierte einen e"
+    },
+    {
+      "number": "66",
+      "id": "doc-66",
+      "title": "Bagchis Satz: RH als starke Rekurrenz (Universalität als Kriterium)",
+      "category": "criterion",
+      "status": "proven",
+      "tags": [
+        "bagchi",
+        "strong-recurrence",
+        "universality",
+        "voronin",
+        "almost-periodicity",
+        "ergodic",
+        "equivalent-criterion"
+      ],
+      "file": "docs/66_Bagchi_strong_recurrence.md",
+      "summary": "Voronins Universalitätssatz (Dok. 46) besagt: ζ approximiert im Streifen 1/2 < σ < 1 jede nullstellenfreie holomorphe Funktion beliebig gut. Bagchi bemerkte: Wendet man das auf ζ selbst an, entsteht ein RH-Kriterium. Die RH ist genau dann wahr, wenn ζ sich selbst „mit positiver Dichte an Zeitverschi"
+    },
+    {
+      "number": "67",
+      "id": "doc-67",
+      "title": "Was wäre, wenn die RH falsch ist? Θ, Oszillationen & numerische Signaturen",
+      "category": "synthesis",
+      "status": "meta",
+      "tags": [
+        "rh-false",
+        "supremum-theta",
+        "littlewood",
+        "skewes",
+        "robin",
+        "lehmer",
+        "falsification",
+        "de-bruijn-newman"
+      ],
+      "file": "docs/67_what_if_RH_is_false.md",
+      "summary": "Fast die gesamte Literatur fragt „Wie beweist man die RH?\". Dieses Dokument fragt das Gegenteil: Angenommen, es gäbe eine Nullstelle mit Re(ρ) ≠ 1/2 — was folgte daraus, und woran könnte man es merken? Das ist aus drei Gründen wichtig: (1) es macht die RH falsifizierbar und damit wissenschaftlich sa"
+    },
+    {
+      "number": "68",
+      "id": "doc-68",
+      "title": "Anatomie des Scheiterns: Taxonomie der Fehlermodi F1–F15",
+      "category": "obstruction",
+      "status": "meta",
+      "tags": [
+        "failure-modes",
+        "taxonomy",
+        "obstructions",
+        "anti-crackpot",
+        "diagnosis",
+        "meta"
+      ],
+      "file": "docs/68_failure_anatomy.md",
+      "summary": ""
+    },
+    {
+      "number": "69",
+      "id": "doc-69",
+      "title": "Vergleichsmatrix der Ansätze: Achsen, Lesarten, Auswahlhilfe",
+      "category": "synthesis",
+      "status": "meta",
+      "tags": [
+        "comparison",
+        "matrix",
+        "axes",
+        "decision-support",
+        "meta",
+        "synthesis"
+      ],
+      "file": "docs/69_comparison_matrix.md",
+      "summary": ""
+    },
+    {
+      "number": "70",
+      "id": "doc-70",
+      "title": "Obsidian-Netzwerk: Aufbau, Linktypen, Graph-Ansicht & Dataview",
+      "category": "context",
+      "status": "meta",
+      "tags": [
+        "obsidian",
+        "network",
+        "wikilinks",
+        "graph-view",
+        "dataview",
+        "moc",
+        "workflow"
+      ],
+      "file": "docs/70_obsidian_network_guide.md",
+      "summary": ""
     }
   ]
 }

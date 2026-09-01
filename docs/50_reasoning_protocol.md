@@ -84,3 +84,15 @@ FAZIT: gesichert / offen / nächster prüfbarer Schritt
 - docs/41 (Synthese & Bewertungsraster), docs/35 & 43 & 46 (Obstruktionen), docs/37 (Formalisierung).
 - Methodik angelehnt an Pólyas „How to Solve It", experimentelle Mathematik (Borwein) und
   formale Verifikation (Lean/mathlib).
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Eingehende Beziehungen**
+- *benutzt* (`uses`) → [[70_obsidian_network_guide|70 — Obsidian-Netzwerk: Aufbau, Linktypen, Graph-Ansicht & Dataview]] — Netzwerk ist die Datenbasis des Denkprotokolls.
+
+**Thematisch benachbart (gemeinsame Tags):** [[24_computational_verification|Numerische Verifikation der Riemann-Vermutung]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

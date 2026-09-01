@@ -59,3 +59,20 @@ Funktionalanalytische Implikationen zwischen Subkonvexitätsschranken und Moment
 - [An explicit log-free zero density estimate for the Riemann zeta-function (arXiv 2405.12545)](https://arxiv.org/pdf/2405.12545)
 - [Implications between subconvexity and moments (arXiv 2212.04421)](https://arxiv.org/pdf/2212.04421)
 - [P. Nelson — Bounds for standard L-functions (subconvexity for GL(n), arXiv 2109.15230)](https://arxiv.org/abs/2109.15230)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Ausgehende Beziehungen**
+- *ist Evidenz für* (`evidence_for`) → [[22_Guth_Maynard_2024|22 — Guth–Maynard (2024): Durchbruch bei Nullstellendichte-Abschätzungen]] — Live-Front: explizite Dichte, Subkonvexität, Momente.
+- *ist Evidenz für* (`evidence_for`) → [[17_Lindelof_density_hypothesis|17 — Lindelöf-Hypothese & Dichte-Hypothese]] — Subkonvexität nähert Lindelöf an.
+- *ist Evidenz für* (`evidence_for`) → [[07_Keating_Snaith_moments|07 — Keating–Snaith: Momente der Zetafunktion via charakteristische Polynome (CUE)]] — Harper/Radziwiłł–Soundararajan: scharfe Momentschranken stützen Keating-Snaith.
+
+**Eingehende Beziehungen**
+- *benutzt* (`uses`) → [[54_machine_assisted_number_theory_ANTEDB_Lean|54 — Maschinengestützte Zahlentheorie: ANTEDB, systematische Exponenten-Optimierung und formalisierter Primzahlsatz (2025–2026)]] — Systematisiert und verschaerft die Resultate der Live-Front.
+
+**Thematisch benachbart (gemeinsame Tags):** [[22_Guth_Maynard_2024|Guth–Maynard (2024): Durchbruch bei Nullstellendichte-Abschätzungen]] · [[54_machine_assisted_number_theory_ANTEDB_Lean|Maschinengestützte Zahlentheorie: ANTEDB, systematische Exponenten-Optimierung und formalisierter Primzahlsatz (2025–2026)]] · [[53_pair_correlation_alternative_hypothesis|Paarkorrelation ohne RH & die Alternative Hypothese (Goldston, Lee, Schettler, Suriajaya, Baluyot, Turnage-Butterbaugh, 2025–2026)]] · [[52_Connes_truncated_Weil_spectral_realization|Abgeschnittene Weil-Quadratform & Zeta-Spektraltripel (Connes–van Suijlekom, Connes–Consani–Moscovici, 2025–2026)]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

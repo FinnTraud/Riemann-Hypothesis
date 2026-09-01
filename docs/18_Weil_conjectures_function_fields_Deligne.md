@@ -80,3 +80,38 @@ Es fehlt für Spec(ℤ) das „×_{𝔽₁} "-Produkt, die Frobenius-Wirkung und
 - [The Riemann Hypothesis over Finite Fields — J. Milne](https://www.jmilne.org/math/xnotes/pRH.html)
 - [Weil conjectures — Wikipedia](https://en.wikipedia.org/wiki/Weil_conjectures)
 - [Deligne's proof of the Weil conjectures — E. Kowalski's blog](https://blogs.ethz.ch/kowalski/2008/03/15/delignes-proof-of-the-weil-conjectures/)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_algebraic_geometric|Algebraisch-geometrische Ansätze]]
+
+| Achse | Wert |
+|---|---|
+| Familie | algebraic-geometric |
+| Implikation | `partial` |
+| Euler-Produkt | `essential` |
+| Positivität | `proves` |
+| Strenge | `theorem` · Evidenz `n/a` |
+| Testbar / formalisierbar | `low` / `low` |
+
+**Offener Kernschritt:** Transfer nach Z: es fehlen Fläche, Frobenius und Polarisierung.
+
+**Hebel (was er liefern würde):** Der einzige vollständig bewiesene RH-Fall - Blaupause für alles Weitere.
+
+**Typische Fehlermodi:** [[F10_analogy-transfer-gap|F10 Analogie ohne Trägerobjekt (Geometrie-Transfer)]]
+
+**Vergleichbar mit:** [[60_standard_conjectures_motives_positivity|Grothendiecks Standardvermutungen & Motive: die Herkunft der Positivität]] · [[19_Selberg_trace_formula_zeta|Selberg-Spurformel & Selberg-Zetafunktion (RH-Analogon BEWIESEN)]] · [[61_Arakelov_geometry_SpecZ_compactification|Arakelov-Geometrie & die Kompaktifizierung von Spec ℤ]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-18 doc-60 doc-19 doc-61`
+
+**Ausgehende Beziehungen**
+- *ist Blaupause für* (`blueprint_for`) → [[concept_geometry-transfer|Geometrie-Transfer (Funktionenkörper→ℤ)]] — Weil/Deligne: BEWIESENES RH-Analogon über 𝔽_q — die Blaupause.
+
+**Eingehende Beziehungen**
+- *benutzt* (`uses`) → [[59_Langlands_functoriality_automorphic|59 — Langlands-Funktorialität & automorphe L-Funktionen: Weg zur GRH?]] — Ramanujan–Petersson (lokales RH-Analogon) folgt aus Deligne/Weil.
+- *reduziert sich auf* (`reduces_to`) → [[60_standard_conjectures_motives_positivity|60 — Grothendiecks Standardvermutungen & Motive: die Herkunft der Positivität]] — Isoliert den Schritt in Weils Beweis, der die kritische Gerade erzwingt.
+- *benutzt* (`uses`) → [[65_higher_correlations_Rudnick_Sarnak|65 — Höhere Korrelationen: Hejhal, Rudnick–Sarnak & die GUE-Hypothese]] — Katz–Sarnak: im Funktionenkörperfall ist die Symmetrie ein Satz.
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

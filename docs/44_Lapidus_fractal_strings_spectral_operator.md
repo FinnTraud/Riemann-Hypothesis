@@ -66,3 +66,34 @@ Dies ordnet sich in das Hilbert–Pólya-Bild ein (Dok. 05): „komplexe Dimensi
 - [Riemann Zeroes and Phase Transitions via the Spectral Operator on Fractal Strings (arXiv 1203.4828)](https://arxiv.org/abs/1203.4828v2)
 - [The Sound of Fractal Strings and the Riemann Hypothesis (arXiv 1505.01548)](https://arxiv.org/pdf/1505.01548)
 - [Towards a fractal cohomology: Spectra of Pólya–Hilbert operators, regularized determinants and Riemann zeros (arXiv 1705.06222)](https://arxiv.org/pdf/1705.06222)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_spectral|Spektrale Ansätze]]
+
+| Achse | Wert |
+|---|---|
+| Familie | spectral |
+| Implikation | `equivalent` |
+| Euler-Produkt | `partial` |
+| Positivität | `n/a` |
+| Strenge | `theorem` · Evidenz `medium` |
+| Testbar / formalisierbar | `medium` / `low` |
+
+**Offener Kernschritt:** Quasi-Invertierbarkeit des Spektraloperators für alle c ungleich 1/2 zeigen.
+
+**Hebel (was er liefern würde):** Bewiesene Äquivalenz in geometrischer Sprache - unterrepräsentiert.
+
+**Typische Fehlermodi:** [[F11_criterion-restates|F11 Äquivalenz ohne neuen Zugriff]] · [[F9_truncation-limit-gap|F9 Abgeschnittenes Modell bewiesen, Limes offen]]
+
+**Vergleichbar mit:** [[13_Nyman_Beurling_Baez_Duarte|Nyman–Beurling-Kriterium & Báez-Duarte-Verschärfung]] · [[15_Robin_inequality|Robins Ungleichung & Lagarias' elementares Kriterium (arithmetische Kriterien)]] · [[55_Speiser_zeros_of_zeta_prime|Speisers Satz & die Nullstellen von ζ′ (die Maschine hinter Levinson)]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-44 doc-13 doc-15 doc-55`
+
+**Ausgehende Beziehungen**
+- *ist äquivalent zu* (`equivalent_to`) → [[concept_RH|Riemann-Vermutung (RH)]] — Lapidus: inverses Spektralproblem für alle D≠1/2 ⟺ RH.
+- *modelliert* (`models`) → [[concept_hilbert-polya|Hilbert–Pólya / spektrale Interpretation]] — Lapidus-Spektraloperator ζ(∂).
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

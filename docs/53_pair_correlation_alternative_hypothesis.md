@@ -126,3 +126,43 @@ präzise als offene Aufgabe formuliert.
 - [Baluyot, Goldston, Suriajaya, Turnage-Butterbaugh — *The Alternative Hypothesis for Zeros of the Riemann Zeta-Function* (arXiv:2508.10857)](https://arxiv.org/abs/2508.10857)
 - [Goldston, Suriajaya — *Zeta Zeros on the Critical Line* (arXiv:2511.20059)](https://arxiv.org/abs/2511.20059)
 - [Montgomery — *The pair correlation of zeros of the zeta function* (1973)](https://public.websites.umich.edu/~hlm/paircor1.pdf)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_probabilistic|Probabilistische Modelle & Statistik]]
+
+| Achse | Wert |
+|---|---|
+| Familie | probabilistic |
+| Implikation | `partial` |
+| Euler-Produkt | `essential` |
+| Positivität | `n/a` |
+| Strenge | `theorem` · Evidenz `medium` |
+| Testbar / formalisierbar | `high` / `low` |
+
+**Offener Kernschritt:** AH ausschließen - mit heutiger Trägerbedingung nicht möglich.
+
+**Hebel (was er liefern würde):** PCC allein liefert 100% einfache Nullstellen auf der Geraden.
+
+**Typische Fehlermodi:** [[F14_model-without-implication|F14 Modell ohne Implikationspfeil]] · [[F13_error-term-ceiling|F13 Strukturelle Decke des Fehlerterms]]
+
+**Vergleichbar mit:** [[58_Mobius_randomness_Chowla_Sarnak|Möbius-Zufälligkeit: Chowla-Vermutung, Sarnak-Disjunktheit & die Paritätsbarriere]] · [[06_Montgomery_pair_correlation_RMT|Montgomery-Paarkorrelation & Random-Matrix-Theorie (GUE)]] · [[65_higher_correlations_Rudnick_Sarnak|Höhere Korrelationen: Hejhal, Rudnick–Sarnak & die GUE-Hypothese]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-53 doc-58 doc-06 doc-65`
+
+**Ausgehende Beziehungen**
+- *verallgemeinert* (`generalizes`) → [[06_Montgomery_pair_correlation_RMT|06 — Montgomery-Paarkorrelation & Random-Matrix-Theorie (GUE)]] — Nimmt die RH-Annahme aus der Gallagher-Mueller-Methode heraus.
+- *ist Teilresultat für* (`partial_result_for`) → [[concept_critical-line|Kritische Gerade Re(s)=1/2]] — PCC (ohne RH) impliziert 100 % einfache Nullstellen auf der kritischen Geraden.
+- *ist schwächer als* (`weaker_than`) → [[04_Levinson_Conrey_positive_proportion|04 — Levinson, Conrey & Co.: Positiver Anteil der Nullstellen auf der kritischen Geraden]] — Die 100-%-Aussagen sind bedingt; unbedingt sind bislang nur ~41 % (Conrey).
+- *benutzt* (`uses`) → [[07_Keating_Snaith_moments|07 — Keating–Snaith: Momente der Zetafunktion via charakteristische Polynome (CUE)]] — Teilt den Random-Matrix-Rahmen mit Keating-Snaith.
+
+**Eingehende Beziehungen**
+- *ist Instanz von* (`instance_of`) → [[concept_pair-correlation|Paarkorrelation der Nullstellen (Montgomery F(alpha,T))]] — Dok. 53 behandelt die Paarkorrelation ohne RH-Annahme.
+- *ist Instanz von* (`instance_of`) → [[concept_alternative-hypothesis|Alternative Hypothese (AH)]] — Dok. 53 formuliert und verschaerft die Alternative Hypothese.
+- *ist Obstruktion für* (`obstruction_for`) → [[65_higher_correlations_Rudnick_Sarnak|65 — Höhere Korrelationen: Hejhal, Rudnick–Sarnak & die GUE-Hypothese]] — Trägerbedingung erklärt, warum die Alternative Hypothese nicht auszuschließen ist.
+
+**Thematisch benachbart (gemeinsame Tags):** [[52_Connes_truncated_Weil_spectral_realization|Abgeschnittene Weil-Quadratform & Zeta-Spektraltripel (Connes–van Suijlekom, Connes–Consani–Moscovici, 2025–2026)]] · [[54_machine_assisted_number_theory_ANTEDB_Lean|Maschinengestützte Zahlentheorie: ANTEDB, systematische Exponenten-Optimierung und formalisierter Primzahlsatz (2025–2026)]] · [[06_Montgomery_pair_correlation_RMT|Montgomery-Paarkorrelation & Random-Matrix-Theorie (GUE)]] · [[55_Speiser_zeros_of_zeta_prime|Speisers Satz & die Nullstellen von ζ′ (die Maschine hinter Levinson)]] · [[49_live_analytic_frontier|Live-Front der analytischen Zahlentheorie (2019–2026)]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

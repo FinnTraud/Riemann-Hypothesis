@@ -83,3 +83,36 @@ Für eine geeignete Testfunktion h (gerade, holomorph im Streifen) mit Fourier-T
 - [The Selberg trace formula and the Riemann zeta function — Hejhal (Experts@Minnesota)](https://experts.umn.edu/en/publications/the-selberg-trace-formula-and-the-riemann-zeta-function)
 - [Selberg trace formula and zeta functions — M. Watkins](https://empslocal.ex.ac.uk/people/staff/mrwatkin/zeta/physics4.htm)
 - [Riemann hypothesis — Wikipedia (Selberg zeta)](https://en.wikipedia.org/wiki/Riemann_hypothesis)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_spectral|Spektrale Ansätze]]
+
+| Achse | Wert |
+|---|---|
+| Familie | spectral |
+| Implikation | `partial` |
+| Euler-Produkt | `essential` |
+| Positivität | `proves` |
+| Strenge | `theorem` · Evidenz `n/a` |
+| Testbar / formalisierbar | `medium` / `low` |
+
+**Offener Kernschritt:** Für ζ fehlt der Raum (Geodäten <-> Primzahlen ist Analogie, kein Objekt).
+
+**Hebel (was er liefern würde):** Zweites bewiesenes Analogon - und zwar ein spektrales.
+
+**Typische Fehlermodi:** [[F10_analogy-transfer-gap|F10 Analogie ohne Trägerobjekt (Geometrie-Transfer)]]
+
+**Vergleichbar mit:** [[18_Weil_conjectures_function_fields_Deligne|Weil-Vermutungen: RH über endlichen Körpern (Deligne) — BEWIESEN]] · [[60_standard_conjectures_motives_positivity|Grothendiecks Standardvermutungen & Motive: die Herkunft der Positivität]] · [[22_Guth_Maynard_2024|Guth–Maynard (2024): Durchbruch bei Nullstellendichte-Abschätzungen]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-19 doc-18 doc-60 doc-22`
+
+**Ausgehende Beziehungen**
+- *ist Blaupause für* (`blueprint_for`) → [[concept_hilbert-polya|Hilbert–Pólya / spektrale Interpretation]] — Selberg: BEWIESENES Modell (Laplace selbstadjungiert ⇒ RH-Analogon).
+- *ist Blaupause für* (`blueprint_for`) → [[concept_explicit-formula|Explizite Formel (Primzahlen↔Nullstellen)]] — Selberg-Spurformel = Analogon der expliziten Formel.
+
+**Thematisch benachbart (gemeinsame Tags):** [[10_Connes_noncommutative_geometry|Alain Connes: Spurformel & nichtkommutative Geometrie]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

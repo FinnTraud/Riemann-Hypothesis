@@ -68,3 +68,38 @@ Sei N₀(T) die Anzahl der Nullstellen *auf* der kritischen Geraden bis Höhe T,
 - [A note on Hardy's theorem (HAL)](https://hal.science/hal-01425570v1/document)
 - [The Riemann zeta function and its zeros — Russian Math Surveys](https://www.mathnet.ru/php/getFT.phtml?jrnid=rm&paperid=2762&what=fullteng)
 - [Almost all of the nontrivial zeros of the Riemann zeta-function (arXiv 2205.09042)](https://arxiv.org/pdf/2205.09042)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_analytic|Analytische Ansätze]]
+
+| Achse | Wert |
+|---|---|
+| Familie | analytic |
+| Implikation | `partial` |
+| Euler-Produkt | `partial` |
+| Positivität | `n/a` |
+| Strenge | `theorem` · Evidenz `n/a` |
+| Testbar / formalisierbar | `medium` / `high` |
+
+**Offener Kernschritt:** Von 'unendlich viele' zu 'alle' - der Sprung ist qualitativ, nicht quantitativ.
+
+**Hebel (was er liefern würde):** Erster Beweis, dass die Gerade überhaupt ausgezeichnet ist.
+
+**Typische Fehlermodi:** [[F13_error-term-ceiling|F13 Strukturelle Decke des Fehlerterms]]
+
+**Vergleichbar mit:** [[04_Levinson_Conrey_positive_proportion|Levinson, Conrey & Co.: Positiver Anteil der Nullstellen auf der kritischen Geraden]] · [[22_Guth_Maynard_2024|Guth–Maynard (2024): Durchbruch bei Nullstellendichte-Abschätzungen]] · [[12_zero_free_regions|Nullstellenfreie Regionen (klassischer analytischer Ansatz)]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-03 doc-04 doc-22 doc-12`
+
+**Ausgehende Beziehungen**
+- *ist Teilresultat für* (`partial_result_for`) → [[concept_RH|Riemann-Vermutung (RH)]] — Hardy: unendlich viele Nullstellen auf der Geraden.
+
+**Eingehende Beziehungen**
+- *verallgemeinert* (`generalizes`) → [[04_Levinson_Conrey_positive_proportion|04 — Levinson, Conrey & Co.: Positiver Anteil der Nullstellen auf der kritischen Geraden]] — Quantifiziert Hardys Resultat (positiver Anteil).
+
+**Thematisch benachbart (gemeinsame Tags):** [[55_Speiser_zeros_of_zeta_prime|Speisers Satz & die Nullstellen von ζ′ (die Maschine hinter Levinson)]] · [[53_pair_correlation_alternative_hypothesis|Paarkorrelation ohne RH & die Alternative Hypothese (Goldston, Lee, Schettler, Suriajaya, Baluyot, Turnage-Butterbaugh, 2025–2026)]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

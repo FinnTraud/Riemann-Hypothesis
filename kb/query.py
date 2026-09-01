@@ -10,6 +10,14 @@ Beispiele:
   python3 kb/query.py claim "Mertens"
   python3 kb/query.py evaluate "Ich nutze die Funktionalgleichung und Wachstum von zeta"
   python3 kb/query.py stats
+
+Vergleich & Fehleranalyse (siehe auch: python3 kb/compare.py):
+  python3 kb/query.py compare doc-10 doc-31
+  python3 kb/query.py bridge doc-52 doc-56
+  python3 kb/query.py profile doc-13
+  python3 kb/query.py failures                 # woran Ansätze am häufigsten scheitern
+  python3 kb/query.py mode F9
+  python3 kb/query.py diagnose "Ich konstruiere einen Operator mit den Nullstellen als Spektrum"
 """
 import sys, json, argparse
 import core
@@ -33,7 +41,26 @@ def main():
     vr = sub.add_parser("verify"); vr.add_argument("start", type=int); vr.add_argument("end", type=int)
     li = sub.add_parser("li"); li.add_argument("n", type=int)
     sub.add_parser("stats")
+    cp = sub.add_parser("compare"); cp.add_argument("keys", nargs="+")
+    br = sub.add_parser("bridge"); br.add_argument("a"); br.add_argument("b")
+    pr = sub.add_parser("profile"); pr.add_argument("key")
+    sub.add_parser("failures")
+    md = sub.add_parser("mode"); md.add_argument("mode_id")
+    dg = sub.add_parser("diagnose"); dg.add_argument("text")
+    la = sub.add_parser("approaches"); la.add_argument("filters", nargs="*",
+        help="z. B. family=spectral equivalence=conditional failure_mode=F9")
     a = p.parse_args()
+
+    if a.cmd in ("compare", "bridge", "profile", "failures", "mode", "diagnose", "approaches"):
+        import compare
+        if a.cmd == "compare":    show(compare.compare_approaches(a.keys)); return
+        if a.cmd == "bridge":     show(compare.bridge(a.a, a.b)); return
+        if a.cmd == "profile":    show(compare.approach_profile(a.key)); return
+        if a.cmd == "failures":   show(compare.failure_statistics()); return
+        if a.cmd == "mode":       show(compare.failure_mode(a.mode_id)); return
+        if a.cmd == "diagnose":   show(compare.diagnose(a.text)); return
+        if a.cmd == "approaches":
+            show(compare.list_approaches(**dict(f.split("=", 1) for f in a.filters))); return
 
     if a.cmd in ("zero", "verify", "li"):
         import compute

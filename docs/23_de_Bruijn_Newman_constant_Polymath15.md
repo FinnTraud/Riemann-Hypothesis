@@ -79,3 +79,43 @@ Ergebnis: **0 ≤ Λ ≤ 0,22**.
 - [The de Bruijn–Newman constant is non-negative — Forum of Mathematics, Pi (Cambridge)](https://www.cambridge.org/core/journals/forum-of-mathematics-pi/article/de-bruijnnewman-constant-is-nonnegative/D4B85BA067E2D5A71D87E4FFB0D21E46)
 - [De Bruijn-Newman constant — Polymath Wiki](https://michaelnielsen.org/polymath/index.php?title=De_Bruijn-Newman_constant)
 - [de Bruijn–Newman constant — Wikipedia](https://en.wikipedia.org/wiki/De_Bruijn%E2%80%93Newman_constant)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_analytic|Analytische Ansätze]]
+
+| Achse | Wert |
+|---|---|
+| Familie | analytic |
+| Implikation | `conditional` |
+| Euler-Produkt | `essential` |
+| Positivität | `must-prove` |
+| Strenge | `theorem` · Evidenz `strong` |
+| Testbar / formalisierbar | `high` / `medium` |
+
+**Offener Kernschritt:** Lambda <= 0 zeigen (Lambda >= 0 ist bewiesen); Lambda = 0 wäre äquivalent zur RH.
+
+**Hebel (was er liefern würde):** Ein einziger reeller Parameter kodiert die RH - ideal für Numerik.
+
+**Typische Fehlermodi:** [[F9_truncation-limit-gap|F9 Abgeschnittenes Modell bewiesen, Limes offen]]
+
+**Vergleichbar mit:** [[52_Connes_truncated_Weil_spectral_realization|Abgeschnittene Weil-Quadratform & Zeta-Spektraltripel (Connes–van Suijlekom, Connes–Consani–Moscovici, 2025–2026)]] · [[12_zero_free_regions|Nullstellenfreie Regionen (klassischer analytischer Ansatz)]] · [[56_Turan_power_sums_partial_sums|Turáns Potenzsummen-Programm & die Partialsummen von ζ (widerlegter Ansatz)]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-23 doc-52 doc-12 doc-56`
+
+**Ausgehende Beziehungen**
+- *ist äquivalent zu* (`equivalent_to`) → [[concept_RH|Riemann-Vermutung (RH)]] — de-Bruijn–Newman: Λ≤0 ⟺ RH.
+- *ist Instanz von* (`instance_of`) → [[concept_positivity|Positivität / Reellwurzeligkeit]] — de-Bruijn–Newman Λ≤0.
+
+**Eingehende Beziehungen**
+- *benutzt* (`uses`) → [[33_statistical_mechanics_Lee_Yang|33 — Statistische Mechanik & Lee–Yang-Analogie (Newman)]] — Statistische Mechanik liefert Werkzeuge für die dBN-Konstante.
+- *benutzt* (`uses`) → [[29_Jensen_Polya_Laguerre_Polya_GORZ|29 — Jensen–Pólya-Programm: Laguerre–Pólya-Klasse & Jensen-Polynome (Griffin–Ono–Rolen–Zagier 2019)]] — Laguerre-Pólya ⟺ Λ≤0; gemeinsame Pólya-Wurzel.
+- *benutzt* (`uses`) → [[55_Speiser_zeros_of_zeta_prime|55 — Speisers Satz & die Nullstellen von ζ′ (die Maschine hinter Levinson)]] — Lehmer-Paare erzwingen ζ′-Nullstellen sehr nahe an der Geraden.
+- *ist Evidenz für* (`evidence_for`) → [[64_extreme_values_FHK_multiplicative_chaos|64 — Extremwerte von ζ: Fyodorov–Hiary–Keating & multiplikatives Chaos]] — Extremwerte und Lehmer-Paare messen beide, wie 'knapp' die RH gilt.
+- *benutzt* (`uses`) → [[67_what_if_RH_is_false|67 — Was wäre, wenn die RH falsch ist? Θ, Oszillationen & numerische Signaturen]] — Λ>0 wäre äquivalent zu 'RH falsch'.
+
+**Thematisch benachbart (gemeinsame Tags):** [[67_what_if_RH_is_false|Was wäre, wenn die RH falsch ist? Θ, Oszillationen & numerische Signaturen]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

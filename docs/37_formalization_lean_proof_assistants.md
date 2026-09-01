@@ -50,3 +50,38 @@ theorem RiemannHypothesis :
 - [A Formal Proof of the Irrationality of ζ(3) in Lean 4 (arXiv 2503.07625)](https://arxiv.org/pdf/2503.07625)
 - [Lean4 — Terence Tao (Blog, PrimeNumberTheorem+)](https://terrytao.wordpress.com/tag/lean4/)
 - [Formalizing zeta and L-functions in Lean — Annales (afm.episciences.org)](https://afm.episciences.org/15954)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_computational|Rechnerische & formale Verifikation]]
+
+| Achse | Wert |
+|---|---|
+| Familie | computational |
+| Implikation | `none` |
+| Euler-Produkt | `partial` |
+| Positivität | `n/a` |
+| Strenge | `theorem` · Evidenz `n/a` |
+| Testbar / formalisierbar | `high` / `high` |
+
+**Offener Kernschritt:** Kein RH-Beweis - aber der einzige Filter ohne Halluzinationsrisiko für Teilresultate.
+
+**Hebel (was er liefern würde):** Macht Teilfortschritte maschinenprüfbar und publizierbar.
+
+**Typische Fehlermodi:** [[F15_verification-collapse|F15 Zusammenbruch in der Verifikation]]
+
+**Vergleichbar mit:** [[15_Robin_inequality|Robins Ungleichung & Lagarias' elementares Kriterium (arithmetische Kriterien)]] · [[24_computational_verification|Numerische Verifikation der Riemann-Vermutung]] · [[55_Speiser_zeros_of_zeta_prime|Speisers Satz & die Nullstellen von ζ′ (die Maschine hinter Levinson)]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-37 doc-15 doc-24 doc-55`
+
+**Ausgehende Beziehungen**
+- *benutzt* (`uses`) → [[concept_RH|Riemann-Vermutung (RH)]] — Lean/Formalisierung als Verifikations-Gateway.
+
+**Eingehende Beziehungen**
+- *ist Evidenz für* (`evidence_for`) → [[54_machine_assisted_number_theory_ANTEDB_Lean|54 — Maschinengestützte Zahlentheorie: ANTEDB, systematische Exponenten-Optimierung und formalisierter Primzahlsatz (2025–2026)]] — Der formalisierte starke Primzahlsatz zeigt, dass Lean analytische Zahlentheorie traegt.
+
+**Thematisch benachbart (gemeinsame Tags):** [[54_machine_assisted_number_theory_ANTEDB_Lean|Maschinengestützte Zahlentheorie: ANTEDB, systematische Exponenten-Optimierung und formalisierter Primzahlsatz (2025–2026)]] · [[51_collaboration_brief|Kollaborations-Leitfaden: sinnvoll mit einer Fachperson an der RH arbeiten]] · [[12_zero_free_regions|Nullstellenfreie Regionen (klassischer analytischer Ansatz)]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

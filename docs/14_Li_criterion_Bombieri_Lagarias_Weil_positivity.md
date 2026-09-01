@@ -88,3 +88,41 @@ W(g) = Σ_ρ ĝ(−i(ρ − 1/2))
 - [On the explicit formula in the theory of prime numbers (World Scientific)](https://www.worldscientific.com/doi/10.1142/S1793042112500327)
 - [An arithmetic interpretation of generalized Li's criterion (arXiv 1305.1421)](https://arxiv.org/pdf/1305.1421)
 - [Li coefficients as norms of functions in a model space (arXiv 2301.05779)](https://arxiv.org/pdf/2301.05779)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_criterion|Äquivalente Kriterien]]
+
+| Achse | Wert |
+|---|---|
+| Familie | criterion |
+| Implikation | `equivalent` |
+| Euler-Produkt | `essential` |
+| Positivität | `must-prove` |
+| Strenge | `theorem` · Evidenz `medium` |
+| Testbar / formalisierbar | `high` / `medium` |
+
+**Offener Kernschritt:** λ_n >= 0 für alle n zeigen, ohne die Nullstellenlage zu benutzen.
+
+**Hebel (was er liefern würde):** Verbindet Numerik (λ_n berechenbar) mit der Positivitätsfrage.
+
+**Typische Fehlermodi:** [[F2_positivity-assumed|F2 Positivität angenommen statt bewiesen]] · [[F11_criterion-restates|F11 Äquivalenz ohne neuen Zugriff]]
+
+**Vergleichbar mit:** [[13_Nyman_Beurling_Baez_Duarte|Nyman–Beurling-Kriterium & Báez-Duarte-Verschärfung]] · [[16_Mertens_function_Riesz_criterion|Mertens-Funktion & Riesz-Kriterium (Möbius-basierte Kriterien)]] · [[29_Jensen_Polya_Laguerre_Polya_GORZ|Jensen–Pólya-Programm: Laguerre–Pólya-Klasse & Jensen-Polynome (Griffin–Ono–Rolen–Zagier 2019)]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-14 doc-13 doc-16 doc-29`
+
+**Ausgehende Beziehungen**
+- *ist äquivalent zu* (`equivalent_to`) → [[concept_RH|Riemann-Vermutung (RH)]] — Li-Koeffizienten λ_n≥0 ⟺ RH.
+- *benutzt* (`uses`) → [[13_Nyman_Beurling_Baez_Duarte|13 — Nyman–Beurling-Kriterium & Báez-Duarte-Verschärfung]] — Beide Positivitäts-/Dichtekriterien, gemeinsames Leitmotiv.
+- *ist Instanz von* (`instance_of`) → [[concept_positivity|Positivität / Reellwurzeligkeit]] — Weil-/Li-Positivität.
+
+**Eingehende Beziehungen**
+- *benutzt* (`uses`) → [[52_Connes_truncated_Weil_spectral_realization|52 — Abgeschnittene Weil-Quadratform & Zeta-Spektraltripel (Connes–van Suijlekom, Connes–Consani–Moscovici, 2025–2026)]] — Baut direkt auf Weil-Positivitaet / der Weilschen Quadratform auf.
+- *ist Blaupause für* (`blueprint_for`) → [[60_standard_conjectures_motives_positivity|60 — Grothendiecks Standardvermutungen & Motive: die Herkunft der Positivität]] — Weil-Positivität ist im geometrischen Fall der Hodge-Index-Satz.
+
+**Thematisch benachbart (gemeinsame Tags):** [[60_standard_conjectures_motives_positivity|Grothendiecks Standardvermutungen & Motive: die Herkunft der Positivität]] · [[52_Connes_truncated_Weil_spectral_realization|Abgeschnittene Weil-Quadratform & Zeta-Spektraltripel (Connes–van Suijlekom, Connes–Consani–Moscovici, 2025–2026)]] · [[41_synthesis_what_a_proof_needs|Synthese: Querschnittsthemen & was ein erfolgreicher Beweis leisten muss]] · [[10_Connes_noncommutative_geometry|Alain Connes: Spurformel & nichtkommutative Geometrie]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

@@ -75,6 +75,71 @@ def reasoning_scaffold(task: str = "") -> dict:
     erzwingt Klassifikation, Annahmen, Status-Trennung, Obstruktions-Check, Experiment."""
     return core.reasoning_scaffold(task)
 
+# ---------------- Vergleich & Fehleranalyse (kb/compare.py) ----------------
+try:
+    import compare as _cmp
+    _CMP = True
+except Exception:
+    _CMP = False
+
+if _CMP:
+    @mcp.tool()
+    def list_approaches(family: str = "", status: str = "", equivalence: str = "",
+                        euler_product: str = "", positivity: str = "", rigor: str = "",
+                        testable: str = "", formalizable: str = "",
+                        failure_mode: str = "") -> dict:
+        """Filtert die 45 profilierten RH-Ansätze über die Vergleichsachsen (docs/69).
+        family: spectral|analytic|algebraic-geometric|probabilistic|physical|criterion|computational;
+        equivalence: equivalent|conditional|partial|model|none (nur die ersten beiden haben einen
+        Implikationspfeil zur RH); euler_product: essential|partial|none (none ⇒ Fehlermodus F1);
+        positivity: proves|assumes|must-prove|n/a; failure_mode: z. B. 'F9'."""
+        return _cmp.list_approaches(
+            family=family or None, status=status or None, equivalence=equivalence or None,
+            euler_product=euler_product or None, positivity=positivity or None,
+            rigor=rigor or None, testable=testable or None,
+            formalizable=formalizable or None, failure_mode=failure_mode or None)
+
+    @mcp.tool()
+    def approach_profile(key: str) -> dict:
+        """Vollständiges Profil eines Ansatzes (app-ID, 'doc-10' oder Titelfragment):
+        Achsen, offener Kernschritt, Hebel und die typischen Fehlermodi mit Prüffragen."""
+        return _cmp.approach_profile(key)
+
+    @mcp.tool()
+    def compare_approaches(keys: list, axes: list = None) -> dict:
+        """Stellt 2+ Ansätze achsenweise gegenüber und trennt Gemeinsames von Trennendem.
+        Gemeinsame Fehlermodi ⇒ gleiche Blockade; disjunkte ⇒ komplementär (docs/69)."""
+        return _cmp.compare_approaches(keys, axes)
+
+    @mcp.tool()
+    def bridge_approaches(a: str, b: str, max_depth: int = 5) -> dict:
+        """Verknüpft zwei Ansätze: gemeinsame Achsen, gemeinsame Fehlermodi, gemeinsame
+        Graph-Nachbarn und der kürzeste typisierte Beziehungspfad im Wissensgraphen."""
+        return _cmp.bridge(a, b, max_depth)
+
+    @mcp.tool()
+    def failure_statistics() -> dict:
+        """Woran scheitern RH-Ansätze am häufigsten? Aggregiert über alle Profile:
+        Rangliste der Fehlermodi, Verteilung nach Tier und nach Ansatz-Familie (docs/68)."""
+        return _cmp.failure_statistics()
+
+    @mcp.tool()
+    def failure_mode(mode_id: str) -> dict:
+        """Ein Fehlermodus (F1..F15 oder Slug) im Detail: Beschreibung, Prüffrage,
+        historische Fälle und alle davon betroffenen Ansätze (docs/68)."""
+        return _cmp.failure_mode(mode_id)
+
+    @mcp.tool()
+    def list_failure_modes() -> dict:
+        """Die vollständige Taxonomie der Fehlermodi F1–F15 mit Tier-Erklärung (docs/68)."""
+        return _cmp.failure_modes()
+
+    @mcp.tool()
+    def diagnose_idea(idea: str) -> dict:
+        """Prüft eine Beweisidee gegen ALLE 15 Fehlermodi und liefert die Prüffragen,
+        die beantwortet werden MÜSSEN. Ergänzt evaluate_proof_idea um die Diagnose-Ebene."""
+        return _cmp.diagnose(idea)
+
 # ---------------- Numerische & grafische Tools (mpmath / matplotlib) ----------------
 try:
     import compute as _cp

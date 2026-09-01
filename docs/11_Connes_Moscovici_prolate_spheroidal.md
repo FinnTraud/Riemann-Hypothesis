@@ -61,3 +61,36 @@ Die Übereinstimmung E_n ~ (γ_n/2)² ist **asymptotisch** (führende Ordnung im
 - [Prolate spheroidal functions and zeta — Alain Connes (Blog)](https://alainconnes.org/2021/12/prolate-spheroidal-functions-and-zeta/)
 - [Zeta cycles — Connes–Consani (arXiv 2106.01715)](https://alainconnes.org/wp-content/uploads/zeta-cycles-3.pdf)
 - [The Hilbert-Pólya Conjecture and the Prolate Spheroidal Operator (TU Delft thesis)](https://repository.tudelft.nl/file/File_a03b023e-2ba7-45fb-bde9-6fcc7a53d306)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_spectral|Spektrale Ansätze]]
+
+| Achse | Wert |
+|---|---|
+| Familie | spectral |
+| Implikation | `partial` |
+| Euler-Produkt | `essential` |
+| Positivität | `must-prove` |
+| Strenge | `program` · Evidenz `medium` |
+| Testbar / formalisierbar | `medium` / `low` |
+
+**Offener Kernschritt:** Vom abgeschnittenen (skalierungsinvarianten) Modell zum unbeschränkten Limes.
+
+**Hebel (was er liefern würde):** Konkreter, numerisch zugänglicher Operator mit Bezug zu ζ.
+
+**Typische Fehlermodi:** [[F9_truncation-limit-gap|F9 Abgeschnittenes Modell bewiesen, Limes offen]] · [[F2_positivity-assumed|F2 Positivität angenommen statt bewiesen]]
+
+**Vergleichbar mit:** [[10_Connes_noncommutative_geometry|Alain Connes: Spurformel & nichtkommutative Geometrie]] · [[30_F1_field_one_element_arithmetic_site|Der Körper mit einem Element (𝔽₁) & Connes–Consani arithmetic site]] · [[31_Deninger_cohomology_foliated_dynamical|Deningers Kohomologie-Programm & dynamische Systeme auf gefolierten Räumen]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-11 doc-10 doc-30 doc-31`
+
+**Ausgehende Beziehungen**
+- *modelliert* (`models`) → [[concept_hilbert-polya|Hilbert–Pólya / spektrale Interpretation]] — Prolate-Operator: approximative HP-Realisierung.
+
+**Eingehende Beziehungen**
+- *benutzt* (`uses`) → [[52_Connes_truncated_Weil_spectral_realization|52 — Abgeschnittene Weil-Quadratform & Zeta-Spektraltripel (Connes–van Suijlekom, Connes–Consani–Moscovici, 2025–2026)]] — Setzt die Connes-Moscovici-Linie (prolate spheroidal, Skalierungsoperator) fort.
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

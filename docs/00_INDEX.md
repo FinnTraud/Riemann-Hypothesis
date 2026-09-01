@@ -11,7 +11,7 @@ lang: de
 
 # Riemann Hypothesis — Dokumenten-Index (RAG Knowledge Base)
 
-> Diese Wissensbasis enthält je ein eigenständiges Dokument pro Paper, Beweisansatz, Kriterium, gescheitertem Beweis oder Meilenstein rund um die Riemann-Vermutung (Riemann Hypothesis, RH). Jede Datei ist als unabhängig abrufbarer Chunk für Vektordatenbank / RAG konzipiert: einheitliche Struktur (Metadaten → Zusammenfassung → Kernidee → Status → Bedeutung → Quellen). Stand: August 2026 (55 Dokumente, 00–54).
+> Diese Wissensbasis enthält je ein eigenständiges Dokument pro Paper, Beweisansatz, Kriterium, gescheitertem Beweis oder Meilenstein rund um die Riemann-Vermutung (Riemann Hypothesis, RH). Jede Datei ist als unabhängig abrufbarer Chunk für Vektordatenbank / RAG konzipiert: einheitliche Struktur (Metadaten → Zusammenfassung → Kernidee → Status → Bedeutung → Quellen). Stand: September 2026 (71 Dokumente, 00–70) plus eine generierte Navigationsebene (MOCs, Konzept-Hubs, Fehlermodi) für die Obsidian-Graph-Ansicht.
 
 ## Kategorien und Dokumente
 
@@ -99,8 +99,43 @@ lang: de
 - `53_pair_correlation_alternative_hypothesis.md` — **Paarkorrelation ohne RH & die Alternative Hypothese** (Goldston u. a.): PCC allein ⇒ 100 % einfache Nullstellen auf der kritischen Geraden
 - `54_machine_assisted_number_theory_ANTEDB_Lean.md` — ANTEDB & systematische Exponenten-Optimierung (Tao–Trudgian–Yang), formalisierter starker Primzahlsatz in Lean 4, Intervall-Zertifikate
 
+### P. Ergänzende Ansätze & Strukturdiagnosen (Recherche-Update September 2026)
+- `55_Speiser_zeros_of_zeta_prime.md` — Speisers Satz: RH ⟺ ζ′ nullstellenfrei links der Geraden (der Motor hinter Levinson)
+- `56_Turan_power_sums_partial_sums.md` — **Turáns Partialsummen-Programm (widerlegt)**: Montgomery 1983 — der Präzedenzfall für gescheiterte Grenzübergänge
+- `57_Beurling_generalized_primes.md` — **Beurling-Systeme (Tier-1-Obstruktion)**: Euler-Produkt allein genügt nicht — die zweite Säule neben Davenport–Heilbronn
+- `58_Mobius_randomness_Chowla_Sarnak.md` — Möbius-Zufälligkeit: Chowla, Sarnak-Disjunktheit & warum die Paritätsbarriere den Weg blockiert
+- `59_Langlands_functoriality_automorphic.md` — Langlands-Funktorialität: was sie für die GRH leistet — und was nicht
+- `60_standard_conjectures_motives_positivity.md` — **Grothendiecks Standardvermutungen**: woher die Positivität im bewiesenen Fall kommt (Hodge-Index)
+- `61_Arakelov_geometry_SpecZ_compactification.md` — Arakelov-Geometrie & Kompaktifizierung von Spec ℤ: die beste Infrastruktur — und ihre drei Lücken
+- `62_Tate_thesis_adelic_analysis.md` — **Tates These**: warum die Funktionalgleichung „billig" ist (gemeinsame Sprache aller spektralen Programme)
+- `63_hybrid_Euler_Hadamard_product.md` — Hybrides Euler–Hadamard-Produkt (Gonek–Hughes–Keating): die Nahtstelle Arithmetik ↔ Zufallsmatrix
+- `64_extreme_values_FHK_multiplicative_chaos.md` — Extremwerte von ζ: Fyodorov–Hiary–Keating, multiplikatives Chaos, Ω-Resultate
+- `65_higher_correlations_Rudnick_Sarnak.md` — Höhere Korrelationen (Hejhal, Rudnick–Sarnak, Katz–Sarnak) und die Trägerbedingung
+- `66_Bagchi_strong_recurrence.md` — Bagchis Satz: RH als starke Rekurrenz (Universalität als Kriterium)
+- `67_what_if_RH_is_false.md` — **Was wäre, wenn die RH falsch ist?** Θ, Konsequenzen, numerische Signaturen, Falsifikationstests
+
+### Q. Vergleichs- & Diagnose-Schicht (Netzwerk)
+- `68_failure_anatomy.md` — **Anatomie des Scheiterns**: Taxonomie F1–F15 + Statistik, woran Ansätze tatsächlich scheitern
+- `69_comparison_matrix.md` — **Vergleichsmatrix** aller Ansätze entlang fester Achsen + sechs Lesarten
+- `70_obsidian_network_guide.md` — Obsidian-Netzwerk: Knotentypen, Linktypen, Graph-Ansicht, Dataview
+
+### Generierte Navigationsebene (nur für Obsidian, nicht im RAG-Index)
+- `moc/` — Maps of Content pro Ansatz-Familie + `MOC_00_Hub.md` (Einstieg für die Graph-Ansicht)
+- `concepts/` — Konzept-Hubs (Euler-Produkt, Positivität, Adele, Paritätsbarriere, …)
+- `fehlermodi/` — je ein Knoten pro Fehlermodus F1–F15 mit allen betroffenen Ansätzen
+
+> Alles unter `moc/`, `concepts/`, `fehlermodi/` sowie die Blöcke `## 🔗 Vernetzung` werden von
+> `python3 kb/build_obsidian.py` aus `kb/graph/*.json` erzeugt — nicht von Hand bearbeiten.
+
 ## Quellen-Verifikation / Recherche
-Diese Wissensbasis wurde durch einen 5-Schritt-Recherche-Agenten auf Vollständigkeit geprüft (Stand Juni 2026); die Dokumente 43–49 schließen die dabei identifizierten Lücken. Ein Literatur-Update im August 2026 ergänzte die Dokumente 52–54 um die Front 2025–2026. Hinweise zur Nutzung im Vektor-/MCP-Server: siehe `README_RAG.md`.
+Diese Wissensbasis wurde durch einen 5-Schritt-Recherche-Agenten auf Vollständigkeit geprüft (Stand Juni 2026); die Dokumente 43–49 schließen die dabei identifizierten Lücken. Ein Literatur-Update im August 2026 ergänzte die Dokumente 52–54 um die Front 2025–2026. Im September 2026 kamen die Dokumente 55–67 (fehlende Ansätze und Strukturdiagnosen) sowie die Vergleichs- und Diagnose-Schicht 68–70 hinzu. Hinweise zur Nutzung im Vektor-/MCP-Server: siehe `README_RAG.md`.
 
 ## Übergeordnete Übersichtsdatei
 Die Datei `../Riemann_Hypothesis_Proof_Approaches.md` (eine Ebene höher) enthält die zusammenfassende Gesamtübersicht aller Ansätze in einem Dokument.
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

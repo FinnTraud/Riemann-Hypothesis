@@ -67,3 +67,26 @@ Klassische Siebmethoden (Brun, Selberg) können **prinzipiell** nicht zwischen Z
 - [On some reasons for doubting the Riemann hypothesis — A. Ivić (arXiv math/0311162)](https://arxiv.org/pdf/math/0311162)
 - [On Davenport and Heilbronn-Type of Functions (arXiv 1602.06328)](https://arxiv.org/abs/1602.06328)
 - [The Riemann Hypothesis — E. Bombieri (Clay official problem description)](https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Ausgehende Beziehungen**
+- *ist Evidenz für* (`evidence_for`) → [[concept_euler-product|Euler-Produkt (Multiplikativität)]] — Davenport–Heilbronn: ohne Euler-Produkt Off-Line-Nullstellen ⇒ Euler-Produkt nötig.
+- *ist Obstruktion für* (`obstruction_for`) → [[concept_RH|Riemann-Vermutung (RH)]] — Sammlung der Barrieren (Parität, Mertens/Skewes-Warnung).
+
+**Eingehende Beziehungen**
+- *ist Evidenz für* (`evidence_for`) → [[16_Mertens_function_Riesz_criterion|16 — Mertens-Funktion & Riesz-Kriterium (Möbius-basierte Kriterien)]] — Widerlegte Mertens-Vermutung: numerische Evidenz täuscht (Warnung).
+- *ist Evidenz für* (`evidence_for`) → [[39_Cramer_probabilistic_model|39 — Cramér-Modell & probabilistische Heuristiken der Primzahlen]] — Maier-Satz: probabilistisches Modell im Detail falsch (Warnung).
+- *widerlegt durch* (`refuted_by`) → [[56_Turan_power_sums_partial_sums|56 — Turáns Potenzsummen-Programm & die Partialsummen von ζ (widerlegter Ansatz)]] — Montgomery 1983: ζ_N hat Nullstellen rechts von Re=1 — Prämisse falsch.
+- *verallgemeinert* (`generalizes`) → [[57_Beurling_generalized_primes|57 — Beurlingsche verallgemeinerte Primzahlen: Euler-Produkt allein genügt nicht]] — Zweite Säule neben Davenport–Heilbronn: auch Multiplikativität allein genügt nicht.
+- *benutzt* (`uses`) → [[58_Mobius_randomness_Chowla_Sarnak|58 — Möbius-Zufälligkeit: Chowla-Vermutung, Sarnak-Disjunktheit & die Paritätsbarriere]] — Paritätsproblem (Selberg) als strukturelle Grenze.
+- *ist Evidenz für* (`evidence_for`) → [[62_Tate_thesis_adelic_analysis|62 — Tates These & adelische Analysis: warum die Funktionalgleichung „billig\" ist]] — Erklärt begrifflich, warum die Funktionalgleichung allein nichts erzwingt.
+- *ist Evidenz für* (`evidence_for`) → [[66_Bagchi_strong_recurrence|66 — Bagchis Satz: RH als starke Rekurrenz (Universalität als Kriterium)]] — Schärfste Formulierung, warum weiche Funktionentheorie nicht reicht.
+- *verallgemeinert* (`generalizes`) → [[68_failure_anatomy|68 — Anatomie des Scheiterns: Taxonomie der Fehlermodi F1–F15]] — Diagnose-Ebene über den Obstruktionen.
+
+**Thematisch benachbart (gemeinsame Tags):** [[68_failure_anatomy|Anatomie des Scheiterns: Taxonomie der Fehlermodi F1–F15]] · [[67_what_if_RH_is_false|Was wäre, wenn die RH falsch ist? Θ, Oszillationen & numerische Signaturen]] · [[43_Epstein_zeta_Selberg_class_rigidity|Epstein-Zetafunktionen & Selberg-Klassen-Rigidität: Welche Eigenschaft erzwingt die kritische Gerade?]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

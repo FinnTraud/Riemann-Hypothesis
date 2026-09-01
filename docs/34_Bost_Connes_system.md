@@ -53,3 +53,39 @@ Für einen Zahlkörper K liefert das Connes–Marcolli-System die **Dedekind-Zet
 - [The dynamical system problem studied by Bost–Connes — AIM](https://aimath.org/WWN/rh/articles/html/101a/)
 - [Bost–Connes Systems in Arithmetic and Quantum Theory — Emergent Mind](https://www.emergentmind.com/topics/bost-connes-systems)
 - [Dedekind Zeta Functions and Quantum Statistical Mechanics (ESI preprint 617)](https://www.esi.ac.at/preprints/esi617.pdf)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_spectral|Spektrale Ansätze]]
+
+| Achse | Wert |
+|---|---|
+| Familie | spectral |
+| Implikation | `model` |
+| Euler-Produkt | `essential` |
+| Positivität | `n/a` |
+| Strenge | `theorem` · Evidenz `medium` |
+| Testbar / formalisierbar | `low` / `low` |
+
+**Offener Kernschritt:** Der Phasenübergang kodiert die Klassenkörpertheorie, nicht die Nullstellenlage.
+
+**Hebel (was er liefern würde):** ζ als Zustandssumme - konzeptuell schönste Realisierung.
+
+**Typische Fehlermodi:** [[F14_model-without-implication|F14 Modell ohne Implikationspfeil]] · [[F10_analogy-transfer-gap|F10 Analogie ohne Trägerobjekt (Geometrie-Transfer)]]
+
+**Vergleichbar mit:** [[53_pair_correlation_alternative_hypothesis|Paarkorrelation ohne RH & die Alternative Hypothese (Goldston, Lee, Schettler, Suriajaya, Baluyot, Turnage-Butterbaugh, 2025–2026)]] · [[58_Mobius_randomness_Chowla_Sarnak|Möbius-Zufälligkeit: Chowla-Vermutung, Sarnak-Disjunktheit & die Paritätsbarriere]] · [[59_Langlands_functoriality_automorphic|Langlands-Funktorialität & automorphe L-Funktionen: Weg zur GRH?]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-34 doc-53 doc-58 doc-59`
+
+**Ausgehende Beziehungen**
+- *benutzt* (`uses`) → [[concept_hilbert-polya|Hilbert–Pólya / spektrale Interpretation]] — Bost–Connes: Operator mit Spektrum {log n} (geometrische Seite).
+
+**Eingehende Beziehungen**
+- *benutzt* (`uses`) → [[30_F1_field_one_element_arithmetic_site|30 — Der Körper mit einem Element (𝔽₁) & Connes–Consani arithmetic site]] — Bost–Connes liefert Galois-/Frobenius-Symmetrie fürs 𝔽₁-Programm.
+- *ist Blaupause für* (`blueprint_for`) → [[62_Tate_thesis_adelic_analysis|62 — Tates These & adelische Analysis: warum die Funktionalgleichung „billig\" ist]] — Bost–Connes lebt auf demselben adelischen Objekt.
+
+**Thematisch benachbart (gemeinsame Tags):** [[30_F1_field_one_element_arithmetic_site|Der Körper mit einem Element (𝔽₁) & Connes–Consani arithmetic site]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

@@ -4,12 +4,17 @@ Ein vollständiges Werkzeug, um die **Riemann-Vermutung (RH)** zu verstehen, zu
 visualisieren, Ansätze auszuprobieren und mit einer KI strukturiert-analytisch zu
 untersuchen. Drei Teile:
 
-1. **Wissensbasis** (`docs/`, 55 Dokumente) — jeder Ansatz, jedes Kriterium, jeder
+1. **Wissensbasis** (`docs/`, 71 Dokumente) — jeder Ansatz, jedes Kriterium, jeder
    gescheiterte Beweis und jede Obstruktion, jeweils mit **mathematischem Kern**
    (Formeln, Sätze, Beweisskizzen) und Quellen.
 2. **Wissensgraph + RAG** (`kb/`) — Dokumente + Konzepte + atomare *Claims* mit Status,
    verbunden durch typisierte Relationen; hybride Suche; als **MCP-Server** mit Tools.
-3. **Rechnen & Visualisieren** (`kb/compute.py`, `kb/visualize.py`) — echte ζ-/Nullstellen-
+3. **Vergleich & Fehleranalyse** (`kb/compare.py`) — 45 Ansätze als strukturierte Profile
+   entlang fester Achsen, plus eine Taxonomie von 15 **Fehlermodi**: woran Ansätze
+   tatsächlich scheitern, wer an derselben Blockade hängt, was noch offen ist.
+4. **Obsidian-Netzwerk** (`kb/build_obsidian.py`) — erzeugt Wikilinks, Konzept-Hubs,
+   Fehlermodus-Knoten und Maps of Content, damit die Graph-Ansicht die Struktur zeigt.
+5. **Rechnen & Visualisieren** (`kb/compute.py`, `kb/visualize.py`) — echte ζ-/Nullstellen-
    Berechnungen (mpmath) und Grafiken (matplotlib).
 
 > **Ehrlich vorab:** Dieses Repo *beweist die RH nicht* und kann das auch nicht — niemand
@@ -41,14 +46,37 @@ python3 kb/query.py zero 1            # 1. Nullstelle: γ = 14.1347…
 python3 kb/query.py scaffold "Ich will die RH beweisen"
 ```
 
+## Ansätze vergleichen & Scheitern verstehen (neu)
+```bash
+python3 kb/query.py failures                       # woran scheitern Ansätze am häufigsten?
+python3 kb/query.py compare doc-10 doc-31          # Connes vs. Deninger, achsenweise
+python3 kb/query.py bridge doc-52 doc-56           # gemeinsame Blockade sichtbar machen
+python3 kb/query.py profile doc-13                 # Profil: offener Schritt, Hebel, Fehlermodi
+python3 kb/query.py mode F9                        # wen trifft dieser Fehlermodus noch?
+python3 kb/query.py approaches equivalence=conditional testable=high
+python3 kb/query.py diagnose "Ich baue einen Operator mit den Nullstellen als Spektrum"
+```
+Lesart und Hintergrund: `docs/68_failure_anatomy.md` (Taxonomie F1–F15) und
+`docs/69_comparison_matrix.md` (Achsen + Matrix).
+
+## Als Obsidian-Vault
+Ordner in Obsidian öffnen, dann einmal:
+```bash
+python3 kb/build_obsidian.py
+```
+Das erzeugt in jedem Dokument einen Block `## 🔗 Vernetzung` (typisierte Wikilinks, Profil,
+Fehlermodi, „vergleichbar mit") sowie die Navigationsebene `docs/moc/`, `docs/concepts/`
+und `docs/fehlermodi/`. Einstieg für die Graph-Ansicht: `docs/moc/MOC_00_Hub.md`.
+Empfohlene Graph-Gruppen und Dataview-Abfragen: `docs/70_obsidian_network_guide.md`.
+
 ## Als KI-Werkzeug (MCP-Server)
 ```bash
 pip install "mcp[cli]"
 python3 kb/server.py
 ```
-Der Server stellt **~26 Tools** bereit: Suche/Graph/Claims, Denkprotokoll,
-Obstruktions-Prüfung, ζ-/Nullstellen-Rechnen, Plots, Experiment-Logbuch und ein
-Lean-Verifikations-Tool. Registrierung & System-Prompt: `kb/README.md`.
+Der Server stellt **~34 Tools** bereit: Suche/Graph/Claims, Denkprotokoll,
+Obstruktions-Prüfung, **Ansatz-Vergleich & Fehlerdiagnose**, ζ-/Nullstellen-Rechnen, Plots,
+Experiment-Logbuch und ein Lean-Verifikations-Tool. Registrierung & System-Prompt: `kb/README.md`.
 
 ## Wie die KI strukturiert-analytisch denkt
 Erzwungen durch Design (Details: `docs/50_reasoning_protocol.md`):
@@ -62,7 +90,8 @@ Erzwungen durch Design (Details: `docs/50_reasoning_protocol.md`):
 
 ## Verzeichnis
 ```
-docs/                 51 Wissensdokumente (00_INDEX.md = Einstieg)
+docs/                 71 Wissensdokumente (00_INDEX.md = Einstieg)
+  moc/ concepts/ fehlermodi/   generierte Obsidian-Navigationsebene
 manifest.json         maschinenlesbares Verzeichnis
 README_RAG.md         Ingestion-/Chunking-Hinweise für Vektor-/MCP-Server
 kb/
@@ -75,7 +104,9 @@ kb/
   experiment.py       reproduzierbares Experiment-Logbuch -> kb/experiments/
   formal.py           Lean/mathlib-Brücke (formale Verifikation)
   demo.py             geführte Tour
-  graph/              kuratierte Knoten/Kanten/Claims
+  compare.py          Ansatz-Vergleich + Fehlermodus-Analyse (Stdlib)
+  build_obsidian.py   erzeugt die Obsidian-Netzwerkschicht (Wikilinks, Hubs, MOCs)
+  graph/              kuratierte Knoten/Kanten/Claims/Ansatzprofile/Fehlermodi
   README.md           Architektur & Tool-Referenz
 Riemann_Hypothesis_Proof_Approaches.md   Gesamtüberblick (eine Datei, EN)
 ```

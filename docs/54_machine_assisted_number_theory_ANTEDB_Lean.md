@@ -114,3 +114,22 @@ Das ist der Standard, an dem sich auch die Experimente in `kb/research/` messen 
 - [Math, Inc. — *Introducing Gauss, an agent for autoformalization*](https://www.math.inc/gauss)
 - [Kontorovich, Tao — PrimeNumberTheoremAnd (Lean-Projekt)](https://leanprover-community.github.io/papers.html)
 - [Groskin — Reproduzierbarkeitspaket zur abgeschnittenen Weil-Form (arXiv:2607.02828)](https://arxiv.org/abs/2607.02828)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Ausgehende Beziehungen**
+- *ist Evidenz für* (`evidence_for`) → [[37_formalization_lean_proof_assistants|37 — Formalisierung: Lean, mathlib & Proof Assistants (Verifikations-Infrastruktur)]] — Der formalisierte starke Primzahlsatz zeigt, dass Lean analytische Zahlentheorie traegt.
+- *benutzt* (`uses`) → [[49_live_analytic_frontier|49 — Live-Front der analytischen Zahlentheorie (2019–2026)]] — Systematisiert und verschaerft die Resultate der Live-Front.
+- *benutzt* (`uses`) → [[22_Guth_Maynard_2024|22 — Guth–Maynard (2024): Durchbruch bei Nullstellendichte-Abschätzungen]] — Additive Energie der Nullstellen ist die Guth-Maynard-Zwischengroesse.
+- *benutzt* (`uses`) → [[24_computational_verification|24 — Numerische Verifikation der Riemann-Vermutung]] — Rigorose Verifikationsstandards (Platt, Intervall-Zertifikate).
+- *ist Evidenz für* (`evidence_for`) → [[28_AI_and_RH|28 — KI / Machine Learning und die Riemann-Vermutung]] — Autoformalisierung als konkreter KI-Beitrag im RH-Umfeld.
+
+**Eingehende Beziehungen**
+- *ist Instanz von* (`instance_of`) → [[concept_formal-verification|Formale Verifikation / maschinengestuetzte Mathematik]] — Dok. 54 beschreibt ANTEDB, Lean-PNT und Zertifikate.
+
+**Thematisch benachbart (gemeinsame Tags):** [[53_pair_correlation_alternative_hypothesis|Paarkorrelation ohne RH & die Alternative Hypothese (Goldston, Lee, Schettler, Suriajaya, Baluyot, Turnage-Butterbaugh, 2025–2026)]] · [[52_Connes_truncated_Weil_spectral_realization|Abgeschnittene Weil-Quadratform & Zeta-Spektraltripel (Connes–van Suijlekom, Connes–Consani–Moscovici, 2025–2026)]] · [[37_formalization_lean_proof_assistants|Formalisierung: Lean, mathlib & Proof Assistants (Verifikations-Infrastruktur)]] · [[58_Mobius_randomness_Chowla_Sarnak|Möbius-Zufälligkeit: Chowla-Vermutung, Sarnak-Disjunktheit & die Paritätsbarriere]] · [[49_live_analytic_frontier|Live-Front der analytischen Zahlentheorie (2019–2026)]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

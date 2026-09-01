@@ -67,3 +67,39 @@ Die de-Branges-Bedingung ist eng verwandt mit Weil-Positivität (Dok. 14) und Ny
 - [A Proof of the Riemann Hypothesis — de Branges (2017 draft, Purdue)](https://www.math.purdue.edu/~branges/proof-riemann-2017-04.pdf)
 - [The Strange Case of Louis de Branges — Karl Sabbagh, London Review of Books](https://www.lrb.co.uk/the-paper/v26/n14/karl-sabbagh/the-strange-case-of-louis-de-branges)
 - [The early historical roots of Lee-Yang theorem (arXiv 1410.6450, Kontext Hermite-Klasse)](https://arxiv.org/pdf/1410.6450)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_criterion|Äquivalente Kriterien]]
+
+| Achse | Wert |
+|---|---|
+| Familie | criterion |
+| Implikation | `conditional` |
+| Euler-Produkt | `none` |
+| Positivität | `assumes` |
+| Strenge | `refuted` · Evidenz `weak` |
+| Testbar / formalisierbar | `low` / `low` |
+
+**Offener Kernschritt:** Die benutzte Positivitätsbedingung ist für ζ nachweislich verletzt (Conrey-Li-Gegenbeispiel).
+
+**Hebel (was er liefern würde):** Der Apparat selbst ist korrekt und wertvoll - nur der RH-Schluss nicht.
+
+**Typische Fehlermodi:** [[F2_positivity-assumed|F2 Positivität angenommen statt bewiesen]] · [[F1_no-euler-product|F1 Euler-Produkt nicht wesentlich benutzt]] · [[F15_verification-collapse|F15 Zusammenbruch in der Verifikation]]
+
+**Vergleichbar mit:** [[09_Bender_Brody_Muller_2017_Hamiltonian|Bender–Brody–Müller (2017): PT-symmetrischer Hamiltonian für die Riemann-Nullstellen]] · [[08_Berry_Keating_xp_model|Berry–Keating H = xp Modell (Quantenchaos-Ansatz)]] · [[56_Turan_power_sums_partial_sums|Turáns Potenzsummen-Programm & die Partialsummen von ζ (widerlegter Ansatz)]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-20 doc-09 doc-08 doc-56`
+
+**Ausgehende Beziehungen**
+- *ist Instanz von* (`instance_of`) → [[concept_positivity|Positivität / Reellwurzeligkeit]] — de Branges: Positivitätsbedingung (für ζ widerlegt).
+- *widerlegt durch* (`refuted_by`) → [[20_de_Branges_Hilbert_spaces|20 — Louis de Branges: Hilberträume ganzer Funktionen (mehrfach gescheiterte Beweise)]] — Conrey–Li (2000): de Branges' Positivitätsbedingung für ζ verletzt.
+
+**Eingehende Beziehungen**
+- *widerlegt durch* (`refuted_by`) → [[20_de_Branges_Hilbert_spaces|20 — Louis de Branges: Hilberträume ganzer Funktionen (mehrfach gescheiterte Beweise)]] — Conrey–Li (2000): de Branges' Positivitätsbedingung für ζ verletzt.
+
+**Thematisch benachbart (gemeinsame Tags):** [[26_Nash_failed_attempt|John Nash (1959): gescheiterter Versuch]] · [[25_Atiyah_2018_failed_proof|Michael Atiyah (2018): gescheiterter Beweisversuch (Todd-Funktion)]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

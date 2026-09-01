@@ -8,12 +8,20 @@ Diese Wissensbasis ist eine kuratierte, quellenbelegte Sammlung zu **allen ernst
 Riemann_Hypothesis_Proof_Approaches.md   # Gesamtüberblick (eine Datei, EN)
 docs/
   00_INDEX.md                            # Inhaltsverzeichnis + Kategorien
-  01..54_*.md                            # je 1 Thema pro Datei (DE), mit YAML-Frontmatter
+  01..70_*.md                            # je 1 Thema pro Datei (DE), mit YAML-Frontmatter
+  moc/ concepts/ fehlermodi/             # generierte Obsidian-Navigation (NICHT ingestieren)
 README_RAG.md                            # diese Datei
 manifest.json                            # maschinenlesbares Verzeichnis (generiert)
 ```
 
-- **55 Dokumente** (00–54). Jedes ist ein eigenständiger, abrufbarer Chunk.
+- **71 Dokumente** (00–70). Jedes ist ein eigenständiger, abrufbarer Chunk.
+- Am Ende jedes Dokuments steht ein generierter Block `## 🔗 Vernetzung`
+  (zwischen `<!-- AUTO:VERNETZUNG START -->` / `END`). **Empfehlung für die Ingestion:
+  diesen Block überspringen** — er ist Navigationsmaterial für Obsidian und dupliziert
+  Informationen, die als Graph (`kb/graph/edges.json`) bereits strukturiert vorliegen.
+- Die Ordner `docs/moc/`, `docs/concepts/`, `docs/fehlermodi/` sind vollständig generiert
+  und gehören **nicht** in den Vektorindex (`kb/build_kb.py` überspringt sie automatisch,
+  da nur `docs/*.md` gelesen wird).
 - Jede Datei hat **YAML-Frontmatter** (id, number, title, category, status, tags, source_file, lang).
 - Jedes Inhaltsdokument folgt demselben Schema: `Metadaten → Zusammenfassung → Mathematischer Kern (Formeln/Sätze/Beweisskizzen) → Bedeutung/Einordnung → Quellen`.
 
@@ -24,7 +32,7 @@ manifest.json                            # maschinenlesbares Verzeichnis (generi
 | `status` | Reifegrad | `proven` (bewiesen), `open` (offen), `refuted` (widerlegt/gescheitert), `reference` (Faktenreferenz), `meta` (Methodik/Obstruktion) |
 | `category` | Themengruppe | foundations, partial-results, spectral, analytic, criterion, proven-analogue, generalization, breakthrough, numerical, failed-proof, ai-context, solution-program, obstruction, synthesis, glossary, frontier, heuristic, verification, context, reference, index |
 | `tags` | Stichworte | Liste (z. B. `euler-product`, `GUE`, `weil-positivity`) |
-| `number` | Dateinummer | `00`–`49` |
+| `number` | Dateinummer | `00`–`70` |
 
 ## Empfohlene Chunking-Strategie
 
@@ -35,11 +43,14 @@ manifest.json                            # maschinenlesbares Verzeichnis (generi
 
 ## Empfohlene Retrieval-Hinweise (System-Prompt für den RH-Assistenten)
 
-> Beim Beantworten von RH-Fragen: (a) zuerst `40_glossary_notation.md` für Begriffe; (b) für „könnte das ein Beweis sein?"-Fragen IMMER `35_obstructions_barriers.md` + `43_Epstein_zeta_Selberg_class_rigidity.md` + `41_synthesis_what_a_proof_needs.md` heranziehen und die Anti-Crackpot-Checkliste anwenden; (c) `status:refuted`-Dokumente als Warnbeispiele nutzen; (d) niemals numerische Evidenz als Beweis akzeptieren (siehe Mertens/Skewes in Doc 35).
+> Beim Beantworten von RH-Fragen: (a) zuerst `40_glossary_notation.md` für Begriffe; (b) für „könnte das ein Beweis sein?"-Fragen IMMER `35_obstructions_barriers.md` + `43_Epstein_zeta_Selberg_class_rigidity.md` + `41_synthesis_what_a_proof_needs.md` + `68_failure_anatomy.md` heranziehen, die Anti-Crackpot-Checkliste anwenden und zusätzlich `diagnose_idea` (Fehlermodi F1–F15) aufrufen; (c) `status:refuted`-Dokumente als Warnbeispiele nutzen; (d) niemals numerische Evidenz als Beweis akzeptieren (siehe Mertens/Skewes in Doc 35).
 
 ## „Bulletproof"-Kerndokumente (für Beweis-Bewertung)
 
 - `35_obstructions_barriers.md` — warum naive Ansätze scheitern + Checkliste
+- `68_failure_anatomy.md` — Taxonomie der Fehlermodi F1–F15 + Statistik (Diagnose-Ebene)
+- `57_Beurling_generalized_primes.md` — zweite Tier-1-Obstruktion: Euler-Produkt allein genügt nicht
+- `69_comparison_matrix.md` — Achsen-Vergleich aller Ansätze (Implikationspfeil? Euler-Produkt? Positivität?)
 - `43_Epstein_zeta_Selberg_class_rigidity.md` — welche Eigenschaft die kritische Gerade erzwingt (Euler-Produkt!)
 - `46_Voronin_universality.md` — warum „weiche" funktionentheoretische Beweise nicht gehen
 - `41_synthesis_what_a_proof_needs.md` — notwendige Bedingungen + Bewertungsraster
@@ -53,7 +64,17 @@ manifest.json                            # maschinenlesbares Verzeichnis (generi
 - 📖 `reference` / 🧭 `meta` — Fakten- bzw. Methodik-/Obstruktionsdokumente
 
 ## Aktualisierung
-Die „Live-Front" (`49_live_analytic_frontier.md`) und numerische Schranken (`24`) veralten am schnellsten. Empfehlung: arXiv-Feeds zu *zero-density estimate*, *subconvexity*, *moments of zeta*, *de Bruijn–Newman* periodisch nachziehen. Stand der Sammlung: Juni 2026.
+Die „Live-Front" (`49_live_analytic_frontier.md`) und numerische Schranken (`24`) veralten am schnellsten. Empfehlung: arXiv-Feeds zu *zero-density estimate*, *subconvexity*, *moments of zeta*, *de Bruijn–Newman* periodisch nachziehen. Stand der Sammlung: September 2026.
+
+## Strukturierte Zusatzschichten (jenseits des Fließtexts)
+
+| Datei | Inhalt | Nutzung |
+|---|---|---|
+| `kb/graph/nodes.json` | 18 Konzept-Knoten | Graph-Expansion im Retrieval |
+| `kb/graph/edges.json` | 171 typisierte Relationen mit Begründung | „wie hängt A mit B zusammen?" |
+| `kb/graph/claims.json` | 63 atomare Aussagen mit Status | verhindert, dass Widerlegtes als wahr gilt |
+| `kb/graph/approaches.json` | 45 Ansatzprofile entlang 8 Vergleichsachsen | Vergleich, Filterung, Priorisierung |
+| `kb/graph/failure_modes.json` | 15 Fehlermodi mit Prüffragen | Diagnose statt Meinung |
 
 ## Lizenz / Herkunft
 Inhalte zusammengetragen via agentischer Web-Recherche aus öffentlichen Quellen (arXiv, AMS, Wikipedia, Universitätsseiten, Clay/AIM). Jede Datei listet ihre Quellen am Ende. Bei den jüngsten Preprints (2024–2026) vor Zitation in formalen Arbeiten Quelle gegenprüfen.

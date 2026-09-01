@@ -83,3 +83,38 @@ Unter RH wäre der Fehler O(√x log²x) — exponentiell besser. Das illustrier
 - [Explicit bounds on ζ(s) in the critical strip and a zero-free region (arXiv 2301.03165)](https://arxiv.org/pdf/2301.03165)
 - [Zero-free regions inspired by work of Heath-Brown (arXiv 2603.21490)](https://arxiv.org/html/2603.21490)
 - [Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function (arXiv 1410.3926)](https://arxiv.org/pdf/1410.3926)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_analytic|Analytische Ansätze]]
+
+| Achse | Wert |
+|---|---|
+| Familie | analytic |
+| Implikation | `partial` |
+| Euler-Produkt | `essential` |
+| Positivität | `n/a` |
+| Strenge | `theorem` · Evidenz `n/a` |
+| Testbar / formalisierbar | `high` / `medium` |
+
+**Offener Kernschritt:** Vinogradov-Korobov-Region ist seit 1958 nicht substanziell verbessert; jede Verbesserung Richtung fester Streifen wäre ein Durchbruch.
+
+**Hebel (was er liefern würde):** Einzige Methode, die Nullstellen wirklich ausschließt - nur eben nicht genug.
+
+**Typische Fehlermodi:** [[F13_error-term-ceiling|F13 Strukturelle Decke des Fehlerterms]] · [[F12_ineffective-nonuniform|F12 Ineffektive oder nicht gleichmäßige Konstanten]]
+
+**Vergleichbar mit:** [[04_Levinson_Conrey_positive_proportion|Levinson, Conrey & Co.: Positiver Anteil der Nullstellen auf der kritischen Geraden]] · [[22_Guth_Maynard_2024|Guth–Maynard (2024): Durchbruch bei Nullstellendichte-Abschätzungen]] · [[03_Hardy_1914_infinitely_many_zeros|Hardy (1914): Unendlich viele Nullstellen auf der kritischen Geraden]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-12 doc-04 doc-22 doc-03`
+
+**Ausgehende Beziehungen**
+- *ist schwächer als* (`weaker_than`) → [[concept_RH|Riemann-Vermutung (RH)]] — Nullstellenfreie Region ist weit schwächer als RH.
+
+**Eingehende Beziehungen**
+- *ist Obstruktion für* (`obstruction_for`) → [[57_Beurling_generalized_primes|57 — Beurlingsche verallgemeinerte Primzahlen: Euler-Produkt allein genügt nicht]] — Zeigt: die klassische nullstellenfreie Region ist im Beurling-Rahmen optimal.
+
+**Thematisch benachbart (gemeinsame Tags):** [[37_formalization_lean_proof_assistants|Formalisierung: Lean, mathlib & Proof Assistants (Verifikations-Infrastruktur)]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

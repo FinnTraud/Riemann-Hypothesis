@@ -48,3 +48,13 @@ Metrische Graphen mit Kantenlängen ∝ log p; das Spektrum des Laplace-Operator
 - [The Riemann Magneton of the Primes — Sierra (arXiv math-ph/0404031)](https://arxiv.org/pdf/math-ph/0404031)
 - [Quantum graphs and the Riemann zeros (arXiv 1307.6055)](https://arxiv.org/pdf/1307.6055)
 - [Riemann zeros as quantized energies of scattering with impurities (arXiv 2307.01254)](https://arxiv.org/pdf/2307.01254)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Ausgehende Beziehungen**
+- *modelliert* (`models`) → [[concept_hilbert-polya|Hilbert–Pólya / spektrale Interpretation]] — Primon-Gas/Sierra/Quantengraphen.
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

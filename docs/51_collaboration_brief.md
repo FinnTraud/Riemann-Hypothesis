@@ -76,3 +76,15 @@ Beispiele:
 ## Quellen / Bezug
 docs/41 (Synthese), docs/35/43/46 (Obstruktionen), docs/37 (Lean), docs/06/14/23 (Experimentfelder),
 docs/50 (Denkprotokoll).
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Eingehende Beziehungen**
+- *ist Blaupause für* (`blueprint_for`) → [[69_comparison_matrix|69 — Vergleichsmatrix der Ansätze: Achsen, Lesarten, Auswahlhilfe]] — Liefert die realistische Projektliste (testable=high).
+
+**Thematisch benachbart (gemeinsame Tags):** [[37_formalization_lean_proof_assistants|Formalisierung: Lean, mathlib & Proof Assistants (Verifikations-Infrastruktur)]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

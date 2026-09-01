@@ -152,3 +152,51 @@ Tier-1-Obstruktion, hat aber eine klar benennbare offene Stelle.
 - [Suzuki — *Weil's quadratic form via the screw function* (arXiv:2606.09096)](https://arxiv.org/abs/2606.09096)
 - [*A Numerical Realization of Suzuki's Weil-Quadratic-Form Operator* (arXiv:2607.24830)](https://arxiv.org/abs/2607.24830)
 - [Connes — Publikationsseite](https://alainconnes.org/publications/)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_spectral|Spektrale Ansätze]]
+
+| Achse | Wert |
+|---|---|
+| Familie | spectral |
+| Implikation | `conditional` |
+| Euler-Produkt | `essential` |
+| Positivität | `must-prove` |
+| Strenge | `theorem` · Evidenz `strong` |
+| Testbar / formalisierbar | `high` / `medium` |
+
+**Offener Kernschritt:** Gleichmäßiger Grenzübergang Cutoff -> unendlich (Turáns Partialsummen sind die Warnung).
+
+**Hebel (was er liefern würde):** Pro Cutoff beweisbare Nullstellenlage + endliche Matrizen = numerisch angreifbar.
+
+**Typische Fehlermodi:** [[F9_truncation-limit-gap|F9 Abgeschnittenes Modell bewiesen, Limes offen]] · [[F2_positivity-assumed|F2 Positivität angenommen statt bewiesen]]
+
+**Vergleichbar mit:** [[23_de_Bruijn_Newman_constant_Polymath15|De-Bruijn–Newman-Konstante: Rodgers–Tao & Polymath15]] · [[10_Connes_noncommutative_geometry|Alain Connes: Spurformel & nichtkommutative Geometrie]] · [[14_Li_criterion_Bombieri_Lagarias_Weil_positivity|Li-Kriterium, Bombieri–Lagarias & Weil-Positivität]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-52 doc-23 doc-10 doc-14`
+
+**Ausgehende Beziehungen**
+- *modelliert* (`models`) → [[concept_hilbert-polya|Hilbert–Pólya / spektrale Interpretation]] — Endlich-dimensionale, rechenbare Realisierung des Hilbert-Polya-Programms.
+- *benutzt* (`uses`) → [[14_Li_criterion_Bombieri_Lagarias_Weil_positivity|14 — Li-Kriterium, Bombieri–Lagarias & Weil-Positivität]] — Baut direkt auf Weil-Positivitaet / der Weilschen Quadratform auf.
+- *benutzt* (`uses`) → [[02_Riemann_von_Mangoldt_formula_explicit_formula|02 — Riemann–von-Mangoldt-Formel und die explizite Formel]] — Guinand-Weil-Testfunktionen kommen aus der expliziten Formel.
+- *benutzt* (`uses`) → [[11_Connes_Moscovici_prolate_spheroidal|11 — Connes–Moscovici: Prolate-Spheroidal-Operator und Zeta (2021–2022)]] — Setzt die Connes-Moscovici-Linie (prolate spheroidal, Skalierungsoperator) fort.
+- *benutzt* (`uses`) → [[10_Connes_noncommutative_geometry|10 — Alain Connes: Spurformel & nichtkommutative Geometrie]] — Rahmen der nichtkommutativen Geometrie von Connes.
+- *benutzt* (`uses`) → [[concept_positivity|Positivität / Reellwurzeligkeit]] — Positivitaet (Caratheodory-Fejer / PSD-Toeplitz) erzwingt die Nullstellenlage.
+- *benutzt* (`uses`) → [[concept_euler-product|Euler-Produkt (Multiplikativität)]] — Nur Euler-Faktoren p <= x gehen in die Konstruktion ein - der arithmetische Input.
+- *ist Evidenz für* (`evidence_for`) → [[concept_critical-line|Kritische Gerade Re(s)=1/2]] — Nullstellen des Grundzustands liegen fuer jeden endlichen Cutoff auf Re(s)=1/2.
+- *ist Blaupause für* (`blueprint_for`) → [[concept_RH|Riemann-Vermutung (RH)]] — Programm fuer einen RH-Beweis; es fehlt der Konvergenzschritt Cutoff -> unendlich.
+
+**Eingehende Beziehungen**
+- *ist Instanz von* (`instance_of`) → [[concept_truncated-weil|Abgeschnittene Weil-Quadratform (Galerkin-Truncation)]] — Dok. 52 stellt die abgeschnittene Weil-Quadratform dar.
+- *ist Obstruktion für* (`obstruction_for`) → [[43_Epstein_zeta_Selberg_class_rigidity|43 — Epstein-Zetafunktionen & Selberg-Klassen-Rigidität: Welche Eigenschaft erzwingt die kritische Gerade?]] — Epstein/Selberg-Rigiditaet verlangt echten Euler-Produkt-Input - Dok. 52 liefert ihn, besteht die Pruefung also.
+- *ist Obstruktion für* (`obstruction_for`) → [[46_Voronin_universality|46 — Voronin-Universalität (Meta-Obstruktion gegen „weiche' Beweise)]] — Voronin-Universalitaet schliesst 'weiche' Argumente aus; Dok. 52 arbeitet ueber Positivitaet, nicht ueber Nullstellenformeln.
+- *ist Evidenz für* (`evidence_for`) → [[24_computational_verification|24 — Numerische Verifikation der Riemann-Vermutung]] — Hochpraezise Nullstellendaten sind der Massstab fuer die Genauigkeitsangaben.
+- *benutzt* (`uses`) → [[concept_formal-verification|Formale Verifikation / maschinengestuetzte Mathematik]] — Die Weil-Form-Numerik wird mit Reproduzierbarkeitspaketen und Intervall-Zertifikaten geliefert.
+- *ist Obstruktion für* (`obstruction_for`) → [[56_Turan_power_sums_partial_sums|56 — Turáns Potenzsummen-Programm & die Partialsummen von ζ (widerlegter Ansatz)]] — Warnung für alle Galerkin-/Cutoff-Programme: der Limes kann scheitern.
+
+**Thematisch benachbart (gemeinsame Tags):** [[53_pair_correlation_alternative_hypothesis|Paarkorrelation ohne RH & die Alternative Hypothese (Goldston, Lee, Schettler, Suriajaya, Baluyot, Turnage-Butterbaugh, 2025–2026)]] · [[54_machine_assisted_number_theory_ANTEDB_Lean|Maschinengestützte Zahlentheorie: ANTEDB, systematische Exponenten-Optimierung und formalisierter Primzahlsatz (2025–2026)]] · [[10_Connes_noncommutative_geometry|Alain Connes: Spurformel & nichtkommutative Geometrie]] · [[60_standard_conjectures_motives_positivity|Grothendiecks Standardvermutungen & Motive: die Herkunft der Positivität]] · [[49_live_analytic_frontier|Live-Front der analytischen Zahlentheorie (2019–2026)]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

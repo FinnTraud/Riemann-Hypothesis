@@ -58,3 +58,18 @@ Die **Selberg-Klasse 𝒮** (Dok. 21) verlangt zusätzlich zu Funktionalgleichun
 - [Positive proportion of zeros of Epstein zeta on the critical line (arXiv 2411.18492)](https://arxiv.org/pdf/2411.18492)
 - [On the Selberg class / converse theorems (arXiv 1605.02354)](https://arxiv.org/pdf/1605.02354)
 - [On some reasons for doubting the Riemann hypothesis — Ivić (arXiv math/0311162)](https://arxiv.org/pdf/math/0311162)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Ausgehende Beziehungen**
+- *ist Evidenz für* (`evidence_for`) → [[concept_euler-product|Euler-Produkt (Multiplikativität)]] — Epstein-Zeta + Selberg-Klassen-Rigidität: Euler-Produkt+Ramanujan erzwingen die Gerade.
+- *ist Obstruktion für* (`obstruction_for`) → [[concept_RH|Riemann-Vermutung (RH)]] — Welche Eigenschaft die Gerade erzwingt; schließt 'weiche' Beweise aus.
+- *benutzt* (`uses`) → [[21_GRH_Selberg_class_grand_RH|21 — Verallgemeinerte, Große Riemann-Vermutung & Selberg-Klasse]] — Selberg-Klassen-Klassifikation (Kaczorowski–Perelli).
+- *ist Obstruktion für* (`obstruction_for`) → [[52_Connes_truncated_Weil_spectral_realization|52 — Abgeschnittene Weil-Quadratform & Zeta-Spektraltripel (Connes–van Suijlekom, Connes–Consani–Moscovici, 2025–2026)]] — Epstein/Selberg-Rigiditaet verlangt echten Euler-Produkt-Input - Dok. 52 liefert ihn, besteht die Pruefung also.
+
+**Thematisch benachbart (gemeinsame Tags):** [[57_Beurling_generalized_primes|Beurlingsche verallgemeinerte Primzahlen: Euler-Produkt allein genügt nicht]] · [[35_obstructions_barriers|Obstruktionen & Barrieren: Warum naive Ansätze scheitern MÜSSEN]] · [[01_Riemann_1859_original_paper|Riemanns Originalarbeit (1859) und die Riemann-Siegel-Formel]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

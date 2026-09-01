@@ -87,3 +87,40 @@ Alle gefundenen Nullstellen: einfach und exakt auf Re(s) = 1/2.
 - [Wedeniwski/ZetaGrid — GitHub](https://github.com/Wedeniwski/ZetaGrid)
 - [Computation of zeros of the Zeta function — X. Gourdon & P. Sebah](http://numbers.computation.free.fr/Constants/Miscellaneous/zetazeroscompute.html)
 - [Riemann Zeta Function Zeros — Wolfram MathWorld](https://mathworld.wolfram.com/RiemannZetaFunctionZeros.html)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_computational|Rechnerische & formale Verifikation]]
+
+| Achse | Wert |
+|---|---|
+| Familie | computational |
+| Implikation | `none` |
+| Euler-Produkt | `partial` |
+| Positivität | `n/a` |
+| Strenge | `theorem` · Evidenz `strong` |
+| Testbar / formalisierbar | `high` / `medium` |
+
+**Offener Kernschritt:** Prinzipiell keiner - Verifikation kann RH nie beweisen, nur widerlegen.
+
+**Hebel (was er liefern würde):** Kann die RH falsifizieren; liefert die Daten für alle Statistik-Tests.
+
+**Typische Fehlermodi:** [[F6_numerics-as-proof|F6 Endliche Numerik als Beweis behandelt]]
+
+**Vergleichbar mit:** [[37_formalization_lean_proof_assistants|Formalisierung: Lean, mathlib & Proof Assistants (Verifikations-Infrastruktur)]] · [[15_Robin_inequality|Robins Ungleichung & Lagarias' elementares Kriterium (arithmetische Kriterien)]] · [[16_Mertens_function_Riesz_criterion|Mertens-Funktion & Riesz-Kriterium (Möbius-basierte Kriterien)]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-24 doc-37 doc-15 doc-16`
+
+**Ausgehende Beziehungen**
+- *ist Evidenz für* (`evidence_for`) → [[concept_RH|Riemann-Vermutung (RH)]] — Numerische Verifikation (>10^13 Nullstellen) — Evidenz, kein Beweis.
+- *ist Evidenz für* (`evidence_for`) → [[52_Connes_truncated_Weil_spectral_realization|52 — Abgeschnittene Weil-Quadratform & Zeta-Spektraltripel (Connes–van Suijlekom, Connes–Consani–Moscovici, 2025–2026)]] — Hochpraezise Nullstellendaten sind der Massstab fuer die Genauigkeitsangaben.
+
+**Eingehende Beziehungen**
+- *benutzt* (`uses`) → [[54_machine_assisted_number_theory_ANTEDB_Lean|54 — Maschinengestützte Zahlentheorie: ANTEDB, systematische Exponenten-Optimierung und formalisierter Primzahlsatz (2025–2026)]] — Rigorose Verifikationsstandards (Platt, Intervall-Zertifikate).
+- *ist Obstruktion für* (`obstruction_for`) → [[67_what_if_RH_is_false|67 — Was wäre, wenn die RH falsch ist? Θ, Oszillationen & numerische Signaturen]] — Verifikation bis 3·10^12 schließt eine Ausnahme nicht aus.
+
+**Thematisch benachbart (gemeinsame Tags):** [[50_reasoning_protocol|Denkprotokoll: strukturiert-analytisches Arbeiten an der RH]] · [[06_Montgomery_pair_correlation_RMT|Montgomery-Paarkorrelation & Random-Matrix-Theorie (GUE)]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

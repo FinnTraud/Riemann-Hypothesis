@@ -71,3 +71,43 @@ Im Funktionenkörper-Fall (Dok. 18) ist genau diese Positivität die **Riemann�
 - [An essay on the Riemann Hypothesis — A. Connes (arXiv 1509.05576)](https://arxiv.org/pdf/1509.05576)
 - [A spectral interpretation for the zeros of the Riemann zeta function (arXiv math/0412277)](https://arxiv.org/pdf/math/0412277)
 - [What is new with Connes' approach to the Riemann hypothesis? — Khalkhali](https://www.math.uwo.ca/faculty/khalkhali/files/TehProg.pdf)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_spectral|Spektrale Ansätze]]
+
+| Achse | Wert |
+|---|---|
+| Familie | spectral |
+| Implikation | `conditional` |
+| Euler-Produkt | `essential` |
+| Positivität | `must-prove` |
+| Strenge | `program` · Evidenz `strong` |
+| Testbar / formalisierbar | `low` / `low` |
+
+**Offener Kernschritt:** Weil-Positivität des Spurterms unabhängig beweisen - im geometrischen Fall ist das der Hodge-Index-Satz, über Z fehlt die Fläche.
+
+**Hebel (was er liefern würde):** Explizite Formel wird zur Spurformel; RH = Positivität.
+
+**Typische Fehlermodi:** [[F2_positivity-assumed|F2 Positivität angenommen statt bewiesen]] · [[F10_analogy-transfer-gap|F10 Analogie ohne Trägerobjekt (Geometrie-Transfer)]]
+
+**Vergleichbar mit:** [[30_F1_field_one_element_arithmetic_site|Der Körper mit einem Element (𝔽₁) & Connes–Consani arithmetic site]] · [[31_Deninger_cohomology_foliated_dynamical|Deningers Kohomologie-Programm & dynamische Systeme auf gefolierten Räumen]] · [[48_Meyer_Kurokawa_algebraic_programs|Weitere algebraische/spektrale Programme: Meyer (Distributionen) & Kurokawa (absolute Zeta)]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-10 doc-30 doc-31 doc-48`
+
+**Ausgehende Beziehungen**
+- *modelliert* (`models`) → [[concept_hilbert-polya|Hilbert–Pólya / spektrale Interpretation]] — Connes: spektrale Realisierung als Absorptionsspektrum.
+- *versucht Transfer von* (`attempts_transfer_of`) → [[concept_geometry-transfer|Geometrie-Transfer (Funktionenkörper→ℤ)]] — Connes adelische Spurformel.
+- *reduziert sich auf* (`reduces_to`) → [[concept_positivity|Positivität / Reellwurzeligkeit]] — Connes reduziert RH auf Weil-Positivität.
+- *benutzt* (`uses`) → [[concept_explicit-formula|Explizite Formel (Primzahlen↔Nullstellen)]] — Connes-Spurformel reproduziert die explizite Formel.
+
+**Eingehende Beziehungen**
+- *benutzt* (`uses`) → [[52_Connes_truncated_Weil_spectral_realization|52 — Abgeschnittene Weil-Quadratform & Zeta-Spektraltripel (Connes–van Suijlekom, Connes–Consani–Moscovici, 2025–2026)]] — Rahmen der nichtkommutativen Geometrie von Connes.
+- *ist Blaupause für* (`blueprint_for`) → [[60_standard_conjectures_motives_positivity|60 — Grothendiecks Standardvermutungen & Motive: die Herkunft der Positivität]] — Sagt, woher die von Connes benötigte Positivität kommen müsste.
+- *ist Blaupause für* (`blueprint_for`) → [[62_Tate_thesis_adelic_analysis|62 — Tates These & adelische Analysis: warum die Funktionalgleichung „billig\" ist]] — Connes' Spurformel ist die spektrale Fortsetzung von Tates Bild.
+
+**Thematisch benachbart (gemeinsame Tags):** [[52_Connes_truncated_Weil_spectral_realization|Abgeschnittene Weil-Quadratform & Zeta-Spektraltripel (Connes–van Suijlekom, Connes–Consani–Moscovici, 2025–2026)]] · [[60_standard_conjectures_motives_positivity|Grothendiecks Standardvermutungen & Motive: die Herkunft der Positivität]] · [[19_Selberg_trace_formula_zeta|Selberg-Spurformel & Selberg-Zetafunktion (RH-Analogon BEWIESEN)]] · [[14_Li_criterion_Bombieri_Lagarias_Weil_positivity|Li-Kriterium, Bombieri–Lagarias & Weil-Positivität]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

@@ -69,3 +69,16 @@ Die explizite Konstante (2+γ−log 4π) macht dies zum **konkretesten numerisch
 - [Equalities involving integrals of the logarithm of the Riemann ζ equivalent to RH — Sekatskii et al. (arXiv 0806.1596)](https://arxiv.org/pdf/0806.1596)
 - [The Riemann Hypothesis — AIM (Redheffer, Salem, Volchkov criteria)](https://www.aimath.org/WWN/rh/rh.pdf)
 - [A strengthening of the Nyman-Beurling criterion — Báez-Duarte et al. (arXiv math/0202141)](https://arxiv.org/pdf/math/0202141)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Ausgehende Beziehungen**
+- *ist äquivalent zu* (`equivalent_to`) → [[concept_RH|Riemann-Vermutung (RH)]] — Volchkov/Sekatskii/Redheffer/Salem/BBLS-Kriterien ⟺ RH.
+
+**Eingehende Beziehungen**
+- *ist äquivalent zu* (`equivalent_to`) → [[16_Mertens_function_Riesz_criterion|16 — Mertens-Funktion & Riesz-Kriterium (Möbius-basierte Kriterien)]] — Redheffer-Matrix det(R_n)=M(n) verbindet Mertens und Matrix-Kriterium.
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

@@ -1,0 +1,170 @@
+{
+  "_comment": "Taxonomie der Fehlermodi: woran RH-Beweisansätze scheitern. id=F1..F15. 'tier': 1 = fatal (widerlegt die Idee sofort), 2 = blockierend (offener Kernschritt), 3 = strukturell (Ansatz kann prinzipiell nicht implizieren). 'diagnostic' = Prüffrage für evaluate_proof_idea. Prosa: docs/68.",
+  "modes": [
+    {
+      "id": "F1",
+      "slug": "no-euler-product",
+      "label": "Euler-Produkt nicht wesentlich benutzt",
+      "tier": 1,
+      "short": "Das Argument benutzt nur Funktionalgleichung, Fortsetzung und Wachstum.",
+      "description": "Davenport-Heilbronn: es gibt Dirichlet-Reihen mit Funktionalgleichung, Fortsetzung, unendlich vielen Nullstellen auf der Geraden UND Nullstellen abseits davon. Jedes Argument, das diese Funktion nicht unterscheiden kann, ist falsch.",
+      "diagnostic": "Würde derselbe Beweis für die Davenport-Heilbronn-Funktion durchgehen?",
+      "cases": ["doc-27", "doc-56"],
+      "docs": ["doc-35", "doc-43", "doc-62"]
+    },
+    {
+      "id": "F2",
+      "slug": "positivity-assumed",
+      "label": "Positivität angenommen statt bewiesen",
+      "tier": 2,
+      "short": "Weil-/Li-/de-Branges-Positivität wird vorausgesetzt oder aus einer äquivalenten Annahme gezogen.",
+      "description": "RH ist zu mehreren Positivitätsaussagen äquivalent. Wer die Positivität aus einer Struktur ableitet, die selbst RH voraussetzt (oder aus der 'Erwartung' der Spektralität), argumentiert zirkulär. Im bewiesenen Fall stammt die Positivität aus dem Hodge-Index-Satz - also aus Geometrie mit Polarisierung.",
+      "diagnostic": "Woher genau kommt das Vorzeichen? Gibt es eine polarisierte Geometrie, die es erzwingt?",
+      "cases": ["doc-20", "doc-25"],
+      "docs": ["doc-14", "doc-60", "doc-10"]
+    },
+    {
+      "id": "F3",
+      "slug": "non-canonical-operator",
+      "label": "Operator ad hoc konstruiert (nicht kanonisch aus der Arithmetik)",
+      "tier": 2,
+      "short": "Ein Operator wird so gebaut, dass sein Spektrum die Nullstellen sind.",
+      "description": "Zu jeder reellen Folge existiert ein selbstadjungierter Operator mit dieser Folge als Spektrum. Hilbert-Pólya verlangt daher, dass der Operator kanonisch aus der Arithmetik kommt UND seine Selbstadjungiertheit unabhängig von der Nullstellenlage beweisbar ist.",
+      "diagnostic": "Wird die Realität des Spektrums benutzt, um die Selbstadjungiertheit zu begründen - oder umgekehrt?",
+      "cases": ["doc-09"],
+      "docs": ["doc-05", "doc-35"]
+    },
+    {
+      "id": "F4",
+      "slug": "no-selfadjoint-realization",
+      "label": "Keine rigorose selbstadjungierte Realisierung (Definitionsbereich fehlt)",
+      "tier": 2,
+      "short": "Der Operator ist formal, aber ohne Definitionsbereich / Randbedingungen / diskretes Spektrum.",
+      "description": "H = xp ist formal selbstadjungiert, hat aber auf L^2(R) rein kontinuierliches Spektrum. Ein diskretes Spektrum entsteht erst durch Regularisierung (Randbedingungen, Kompaktifizierung, Abschneidung) - und genau diese Wahl ist bisher nicht kanonisch.",
+      "diagnostic": "Auf welchem Hilbertraum, mit welchem Definitionsbereich, ist der Operator wesentlich selbstadjungiert und hat diskretes Spektrum?",
+      "cases": ["doc-08", "doc-09"],
+      "docs": ["doc-05", "doc-11", "doc-47"]
+    },
+    {
+      "id": "F5",
+      "slug": "limit-interchange",
+      "label": "Unerlaubte Vertauschung von Limes/Summe/Integral",
+      "tier": 1,
+      "short": "Bedingt konvergente Nullstellensummen oder Konturen werden frei umgeordnet.",
+      "description": "Die Summe über Nullstellen in der expliziten Formel konvergiert nur bedingt und symmetrisch gepaart. Umordnen, gliedweises Abschätzen oder Vertauschen mit Limites ist der häufigste technische Fehler in falschen Beweisen.",
+      "diagnostic": "Ist jede Vertauschung durch dominierte Konvergenz / gleichmäßige Konvergenz gerechtfertigt?",
+      "cases": ["doc-26", "doc-27"],
+      "docs": ["doc-02", "doc-27"]
+    },
+    {
+      "id": "F6",
+      "slug": "numerics-as-proof",
+      "label": "Endliche Numerik als Beweis behandelt",
+      "tier": 1,
+      "short": "Verifikation bis Höhe T wird als Beweis oder als starke Extrapolation gewertet.",
+      "description": "Mertens-Vermutung galt bis 10^14 und ist falsch; Skewes-Zahl ~10^316. Die RH-Verifikation bis 3*10^12 ist Evidenz, kein Argument.",
+      "diagnostic": "Existiert ein Argument, das ohne die numerische Tabelle auskommt?",
+      "cases": ["doc-16", "doc-24"],
+      "docs": ["doc-35", "doc-67"]
+    },
+    {
+      "id": "F7",
+      "slug": "soft-function-theory",
+      "label": "Weiche Funktionentheorie (zu allgemein)",
+      "tier": 1,
+      "short": "Das Argument benutzt nur allgemeine Eigenschaften holomorpher/ganzer Funktionen.",
+      "description": "Voronin-Universalität: ζ approximiert im Streifen jede nullstellenfreie holomorphe Funktion. Eine Eigenschaft, die aus weicher Funktionentheorie folgt, gilt für sehr viele Funktionen und kann die kritische Gerade nicht auszeichnen.",
+      "diagnostic": "Würde das Argument auch für Hurwitz-ζ mit transzendentem Parameter gelten?",
+      "cases": ["doc-27"],
+      "docs": ["doc-46", "doc-66"]
+    },
+    {
+      "id": "F8",
+      "slug": "parity-barrier",
+      "label": "Paritätsbarriere (Sieb-/Multiplikativitätsmethoden)",
+      "tier": 3,
+      "short": "Sieb- und Korrelationsmethoden können die Möbius-Parität nicht auflösen.",
+      "description": "Selbergs Paritätsproblem: Siebe unterscheiden nicht zwischen gerader und ungerader Anzahl von Primfaktoren. μ(n) misst genau diese Parität; die für RH nötige Einzelsummen-Schranke M(x) << x^(1/2+eps) liegt jenseits dessen, was gemittelte Resultate liefern.",
+      "diagnostic": "Beruht das Argument auf Sieben oder auf gemittelten Korrelationen? Dann kann es die Einzelsumme nicht erreichen.",
+      "cases": ["doc-58"],
+      "docs": ["doc-35", "doc-16", "doc-58"]
+    },
+    {
+      "id": "F9",
+      "slug": "truncation-limit-gap",
+      "label": "Abgeschnittenes Modell bewiesen, Limes offen",
+      "tier": 2,
+      "short": "Für jeden Cutoff N gilt die Aussage; der gleichmäßige Grenzübergang N -> unendlich fehlt.",
+      "description": "Galerkin-/Abschneide-Approximationen liefern endliche Matrizen mit beweisbarer Eigenwertlage, aber ohne gleichmäßige Kontrolle beim Limes. Turáns Partialsummen sind der Präzedenzfall, in dem der Limes nachweislich NICHT vererbt.",
+      "diagnostic": "Gibt es eine gleichmäßige, von N unabhängige Schranke - oder nur punktweise Resultate pro N?",
+      "cases": ["doc-56"],
+      "docs": ["doc-52", "doc-44", "doc-56"]
+    },
+    {
+      "id": "F10",
+      "slug": "analogy-transfer-gap",
+      "label": "Analogie ohne Trägerobjekt (Geometrie-Transfer)",
+      "tier": 2,
+      "short": "Die Konstruktion existiert im Funktionenkörperfall, das entsprechende Objekt über Z fehlt.",
+      "description": "Weils Beweis lebt auf der Fläche C × C mit Frobenius und Schnittform. Ueber Z fehlen: die zweite Dimension (Produkt über einer absoluten Basis), ein Frobenius und eine polarisierte Schnitttheorie in der richtigen Dimension.",
+      "diagnostic": "Welche Fläche, welcher Frobenius, welche Polarisierung? Wenn eines fehlt, ist das Argument leer.",
+      "cases": ["doc-30", "doc-31", "doc-61"],
+      "docs": ["doc-18", "doc-60", "doc-61", "doc-30"]
+    },
+    {
+      "id": "F11",
+      "slug": "criterion-restates",
+      "label": "Äquivalenz ohne neuen Zugriff",
+      "tier": 3,
+      "short": "Ein bewiesenes Kriterium formuliert die RH um, ohne neue Angriffsfläche zu schaffen.",
+      "description": "Nyman-Beurling, Robin, Li, Riesz, Speiser, Bagchi sind bewiesene Äquivalenzen. Keine davon ist bisher unabhängig zugänglich; jede Abschätzung, die man dort braucht, ist genauso schwer wie die RH. Ausnahme: Speiser, aus dem via Levinson quantitativer Fortschritt floss.",
+      "diagnostic": "Kann man die neue Seite der Äquivalenz mit Methoden angreifen, die auf ζ nicht anwendbar wären?",
+      "cases": ["doc-13", "doc-15", "doc-16"],
+      "docs": ["doc-45", "doc-41"]
+    },
+    {
+      "id": "F12",
+      "slug": "ineffective-nonuniform",
+      "label": "Ineffektive oder nicht gleichmäßige Konstanten",
+      "tier": 2,
+      "short": "Schranken sind nicht explizit oder nicht gleichmäßig in Höhe/Führer.",
+      "description": "Siegels Satz ist ineffektiv; Landau-Siegel-Nullstellen sind genau deshalb hartnäckig. Explizite, gleichmäßige Versionen sind eigene Forschungsprogramme (ANTEDB, log-freie Dichte).",
+      "diagnostic": "Sind alle Konstanten explizit und gleichmäßig in T und im Führer q?",
+      "cases": ["doc-32"],
+      "docs": ["doc-32", "doc-54", "doc-49"]
+    },
+    {
+      "id": "F13",
+      "slug": "error-term-ceiling",
+      "label": "Strukturelle Decke des Fehlerterms",
+      "tier": 3,
+      "short": "Die Methode ist an einen Mittelwertsatz gebunden, der bei σ=1/2 sein Limit erreicht.",
+      "description": "Mollifier-Länge, Momentenkenntnis und Dichteexponenten begrenzen, welchen Anteil man erreicht. Levinsons Methode ist bei ca. 41 Prozent gedeckelt, nicht 'noch nicht optimiert'. Ein Anteil 1 braucht Momente, die man ohne RH nicht kennt.",
+      "diagnostic": "Welcher Mittelwertsatz begrenzt die Methode, und was wäre nötig, um 100 Prozent zu erreichen?",
+      "cases": ["doc-04", "doc-22"],
+      "docs": ["doc-04", "doc-55", "doc-17"]
+    },
+    {
+      "id": "F14",
+      "slug": "model-without-implication",
+      "label": "Modell ohne Implikationspfeil",
+      "tier": 3,
+      "short": "Ein prädiktives Modell (RMT, Cramer, Chaos) beschreibt, erzwingt aber nichts.",
+      "description": "GUE-Statistik, Cramer-Modell, hybrides Euler-Hadamard-Produkt und FHK sind mit RH konsistent und würden durch eine Ausnahmenullstelle in führender Ordnung kaum gestört. Maiers Satz zeigt zudem, dass das naive Modell falsche Vorhersagen macht.",
+      "diagnostic": "Was am Modell würde brechen, wenn eine Nullstelle abseits der Geraden läge? Wenn nichts: kein Beweisweg.",
+      "cases": ["doc-06", "doc-39"],
+      "docs": ["doc-39", "doc-63", "doc-64", "doc-65"]
+    },
+    {
+      "id": "F15",
+      "slug": "verification-collapse",
+      "label": "Zusammenbruch in der Verifikation",
+      "tier": 1,
+      "short": "Angekündigter Beweis hält der Prüfung nicht stand.",
+      "description": "de Branges (mehrfach), Atiyah 2018, diverse Preprints. Charakteristisch: zentrale Lemmas ohne Beweis, undefinierte Objekte, kein reproduzierbarer Rechenweg, keine Vorlage bei Fachleuten vor Ankündigung.",
+      "diagnostic": "Ist jeder Schritt maschinen- oder fachprüfbar? Gibt es ein Minimalbeispiel, an dem das Argument scheitern müsste, wenn es falsch wäre?",
+      "cases": ["doc-20", "doc-25", "doc-26", "doc-27"],
+      "docs": ["doc-27", "doc-37", "doc-54"]
+    }
+  ]
+}

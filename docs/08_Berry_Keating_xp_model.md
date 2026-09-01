@@ -77,3 +77,33 @@ Connes' adelische Version (Dok. 10) liefert statt eines diskreten Emissionsspekt
 - [General covariant xp models and the Riemann zeros (arXiv 1110.3203)](https://arxiv.org/pdf/1110.3203)
 - [H = xp with interaction and the Riemann zeros (arXiv math-ph/0702034)](https://arxiv.org/pdf/math-ph/0702034)
 - [Landau levels and Riemann zeros (arXiv 0805.4079)](https://arxiv.org/pdf/0805.4079)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_physical|Physikalische Modelle]]
+
+| Achse | Wert |
+|---|---|
+| Familie | physical |
+| Implikation | `conditional` |
+| Euler-Produkt | `none` |
+| Positivität | `must-prove` |
+| Strenge | `heuristic` · Evidenz `medium` |
+| Testbar / formalisierbar | `low` / `low` |
+
+**Offener Kernschritt:** Regularisierung von xp zu einem Operator mit diskretem Spektrum und korrekter Zählfunktion; Primzahlen tauchen nur als periodische Orbits 'per Hand' auf.
+
+**Hebel (was er liefern würde):** Semiklassische Zählfunktion reproduziert N(T) exakt.
+
+**Typische Fehlermodi:** [[F4_no-selfadjoint-realization|F4 Keine rigorose selbstadjungierte Realisierung (Definitionsbereich fehlt)]] · [[F3_non-canonical-operator|F3 Operator ad hoc konstruiert (nicht kanonisch aus der Arithmetik)]] · [[F1_no-euler-product|F1 Euler-Produkt nicht wesentlich benutzt]]
+
+**Vergleichbar mit:** [[09_Bender_Brody_Muller_2017_Hamiltonian|Bender–Brody–Müller (2017): PT-symmetrischer Hamiltonian für die Riemann-Nullstellen]] · [[05_Hilbert_Polya_conjecture|Die Hilbert–Pólya-Vermutung (spektraler Ansatz)]] · [[33_statistical_mechanics_Lee_Yang|Statistische Mechanik & Lee–Yang-Analogie (Newman)]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-08 doc-09 doc-05 doc-33`
+
+**Ausgehende Beziehungen**
+- *modelliert* (`models`) → [[concept_hilbert-polya|Hilbert–Pólya / spektrale Interpretation]] — Berry–Keating xp-Modell (nur geglättete Dichte).
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

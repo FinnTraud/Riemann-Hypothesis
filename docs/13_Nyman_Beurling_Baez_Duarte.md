@@ -77,3 +77,36 @@ was den direkten Bezug Distanz ↔ Nullstellenlage herstellt.
 - [New versions of the Nyman-Beurling criterion for the Riemann hypothesis — Báez-Duarte (Wiley)](https://onlinelibrary.wiley.com/doi/pdf/10.1155/S0161171202013248)
 - [A strengthening of the Nyman-Beurling criterion for the Riemann hypothesis (arXiv math/0202141)](https://arxiv.org/pdf/math/0202141)
 - [On probabilistic generalizations of the Nyman-Beurling criterion (arXiv 1805.06733)](https://arxiv.org/pdf/1805.06733)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_criterion|Äquivalente Kriterien]]
+
+| Achse | Wert |
+|---|---|
+| Familie | criterion |
+| Implikation | `equivalent` |
+| Euler-Produkt | `partial` |
+| Positivität | `n/a` |
+| Strenge | `theorem` · Evidenz `medium` |
+| Testbar / formalisierbar | `high` / `medium` |
+
+**Offener Kernschritt:** Approximationsgrad d_N -> 0 beweisen; bekannte untere Schranken sind vom richtigen Typ, obere fehlen.
+
+**Hebel (was er liefern würde):** Sehr konkretes, numerisch messbares Kriterium (d_N).
+
+**Typische Fehlermodi:** [[F11_criterion-restates|F11 Äquivalenz ohne neuen Zugriff]]
+
+**Vergleichbar mit:** [[15_Robin_inequality|Robins Ungleichung & Lagarias' elementares Kriterium (arithmetische Kriterien)]] · [[55_Speiser_zeros_of_zeta_prime|Speisers Satz & die Nullstellen von ζ′ (die Maschine hinter Levinson)]] · [[14_Li_criterion_Bombieri_Lagarias_Weil_positivity|Li-Kriterium, Bombieri–Lagarias & Weil-Positivität]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-13 doc-15 doc-55 doc-14`
+
+**Ausgehende Beziehungen**
+- *ist äquivalent zu* (`equivalent_to`) → [[concept_RH|Riemann-Vermutung (RH)]] — Nyman-Beurling/Báez-Duarte: Dichte ⟺ RH.
+
+**Eingehende Beziehungen**
+- *benutzt* (`uses`) → [[14_Li_criterion_Bombieri_Lagarias_Weil_positivity|14 — Li-Kriterium, Bombieri–Lagarias & Weil-Positivität]] — Beide Positivitäts-/Dichtekriterien, gemeinsames Leitmotiv.
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

@@ -78,3 +78,38 @@ mit Gleichheit nur bei n = 1. **Herleitung:** Da H_n = log n + γ + O(1/n) und e
 - [Robin's Inequality & the Riemann Hypothesis — Emergent Mind](https://www.emergentmind.com/topics/robin-s-inequality)
 - [Criteria equivalent to the Riemann Hypothesis (arXiv 0808.0640)](https://arxiv.org/pdf/0808.0640)
 - [Riemann hypothesis — Wikipedia (Abschnitt: Consequences and equivalents)](https://en.wikipedia.org/wiki/Riemann_hypothesis)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_criterion|Äquivalente Kriterien]]
+
+| Achse | Wert |
+|---|---|
+| Familie | criterion |
+| Implikation | `equivalent` |
+| Euler-Produkt | `partial` |
+| Positivität | `n/a` |
+| Strenge | `theorem` · Evidenz `medium` |
+| Testbar / formalisierbar | `high` / `high` |
+
+**Offener Kernschritt:** Kein Zugang zu σ(n) jenseits von Extremalzahlen; Kriterium ist so hart wie RH.
+
+**Hebel (was er liefern würde):** Völlig elementare Formulierung - didaktisch und formalisierbar.
+
+**Typische Fehlermodi:** [[F11_criterion-restates|F11 Äquivalenz ohne neuen Zugriff]] · [[F6_numerics-as-proof|F6 Endliche Numerik als Beweis behandelt]]
+
+**Vergleichbar mit:** [[55_Speiser_zeros_of_zeta_prime|Speisers Satz & die Nullstellen von ζ′ (die Maschine hinter Levinson)]] · [[13_Nyman_Beurling_Baez_Duarte|Nyman–Beurling-Kriterium & Báez-Duarte-Verschärfung]] · [[16_Mertens_function_Riesz_criterion|Mertens-Funktion & Riesz-Kriterium (Möbius-basierte Kriterien)]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-15 doc-55 doc-13 doc-16`
+
+**Ausgehende Beziehungen**
+- *ist äquivalent zu* (`equivalent_to`) → [[concept_RH|Riemann-Vermutung (RH)]] — Robin/Lagarias-Ungleichung ⟺ RH.
+
+**Eingehende Beziehungen**
+- *benutzt* (`uses`) → [[67_what_if_RH_is_false|67 — Was wäre, wenn die RH falsch ist? Θ, Oszillationen & numerische Signaturen]] — Robin: RH falsch ⇒ unendlich viele Ausnahmen.
+
+**Thematisch benachbart (gemeinsame Tags):** [[67_what_if_RH_is_false|Was wäre, wenn die RH falsch ist? Θ, Oszillationen & numerische Signaturen]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

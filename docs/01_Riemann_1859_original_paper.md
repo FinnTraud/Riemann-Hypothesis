@@ -89,3 +89,18 @@ mit Riemann-Siegel-Theta θ(t) = arg Γ(1/4 + it/2) − (t/2) log π und einem a
 - [On a Fair Copy of Riemann's 1859 Publication Created by Alfred Clebsch (arXiv 1512.02976)](https://arxiv.org/pdf/1512.02976)
 - [On Riemann's Nachlass for Analytic Number Theory: A translation of Siegel's Über (arXiv 1810.05198)](https://arxiv.org/pdf/1810.05198)
 - [A computational history of prime numbers and Riemann zeros (arXiv 1810.05244)](https://arxiv.org/pdf/1810.05244)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Ausgehende Beziehungen**
+- *ist Instanz von* (`instance_of`) → [[concept_critical-line|Kritische Gerade Re(s)=1/2]] — Riemann 1859: Funktionalgleichung erzeugt Symmetrie um Re=1/2.
+
+**Eingehende Beziehungen**
+- *benutzt* (`uses`) → [[02_Riemann_von_Mangoldt_formula_explicit_formula|02 — Riemann–von-Mangoldt-Formel und die explizite Formel]] — Explizite Formel baut auf Funktionalgleichung/ξ auf.
+
+**Thematisch benachbart (gemeinsame Tags):** [[62_Tate_thesis_adelic_analysis|Tates These & adelische Analysis: warum die Funktionalgleichung „billig\" ist]] · [[57_Beurling_generalized_primes|Beurlingsche verallgemeinerte Primzahlen: Euler-Produkt allein genügt nicht]] · [[43_Epstein_zeta_Selberg_class_rigidity|Epstein-Zetafunktionen & Selberg-Klassen-Rigidität: Welche Eigenschaft erzwingt die kritische Gerade?]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

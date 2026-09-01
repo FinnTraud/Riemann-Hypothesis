@@ -94,3 +94,35 @@ Die Hermite-Approximation kontrolliert nur das Regime n → ∞ bei **festem** d
 - [The Jensen-Pólya program for various L-functions (arXiv 1905.11269)](https://arxiv.org/abs/1905.11269)
 - [Jensen polynomials are not a plausible route to proving the Riemann Hypothesis (arXiv 2008.07206)](https://arxiv.org/pdf/2008.07206)
 - [On a new class of Laguerre-Pólya type functions with applications in number theory (arXiv 2108.01827)](https://ar5iv.labs.arxiv.org/html/2108.01827)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_analytic|Analytische Ansätze]]
+
+| Achse | Wert |
+|---|---|
+| Familie | analytic |
+| Implikation | `equivalent` |
+| Euler-Produkt | `partial` |
+| Positivität | `must-prove` |
+| Strenge | `theorem` · Evidenz `medium` |
+| Testbar / formalisierbar | `high` / `medium` |
+
+**Offener Kernschritt:** Hyperbolizität der Jensen-Polynome für ALLE Grade d bei festem n (bewiesen: jedes feste d für große n).
+
+**Hebel (was er liefern würde):** Ein bewiesener Teilfortschritt (GORZ 2019) mit klarer Fortsetzungsrichtung.
+
+**Typische Fehlermodi:** [[F11_criterion-restates|F11 Äquivalenz ohne neuen Zugriff]] · [[F13_error-term-ceiling|F13 Strukturelle Decke des Fehlerterms]]
+
+**Vergleichbar mit:** [[55_Speiser_zeros_of_zeta_prime|Speisers Satz & die Nullstellen von ζ′ (die Maschine hinter Levinson)]] · [[13_Nyman_Beurling_Baez_Duarte|Nyman–Beurling-Kriterium & Báez-Duarte-Verschärfung]] · [[14_Li_criterion_Bombieri_Lagarias_Weil_positivity|Li-Kriterium, Bombieri–Lagarias & Weil-Positivität]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-29 doc-55 doc-13 doc-14`
+
+**Ausgehende Beziehungen**
+- *ist äquivalent zu* (`equivalent_to`) → [[concept_RH|Riemann-Vermutung (RH)]] — ξ∈Laguerre-Pólya / Jensen-Hyperbolizität ⟺ RH.
+- *ist Instanz von* (`instance_of`) → [[concept_positivity|Positivität / Reellwurzeligkeit]] — Jensen/Laguerre-Pólya-Reellwurzeligkeit.
+- *benutzt* (`uses`) → [[23_de_Bruijn_Newman_constant_Polymath15|23 — De-Bruijn–Newman-Konstante: Rodgers–Tao & Polymath15]] — Laguerre-Pólya ⟺ Λ≤0; gemeinsame Pólya-Wurzel.
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

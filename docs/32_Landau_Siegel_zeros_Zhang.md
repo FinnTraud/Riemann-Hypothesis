@@ -83,3 +83,39 @@ Die effektive Schranke ist schwächer als „keine Siegel-Nullstelle" (das wäre
 - [Discrete mean estimates and the Landau-Siegel zero (PDF)](https://arxiv.org/pdf/2211.02515)
 - [Landau–Siegel zero — Wikipedia](https://en.wikipedia.org/wiki/Landau%E2%80%93Siegel_zero)
 - [Generalized Riemann hypothesis — Wikipedia](https://en.wikipedia.org/wiki/Generalized_Riemann_hypothesis)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_analytic|Analytische Ansätze]]
+
+| Achse | Wert |
+|---|---|
+| Familie | analytic |
+| Implikation | `partial` |
+| Euler-Produkt | `essential` |
+| Positivität | `n/a` |
+| Strenge | `theorem` · Evidenz `medium` |
+| Testbar / formalisierbar | `low` / `low` |
+
+**Offener Kernschritt:** Ausschluss reeller Ausnahmennullstellen; Siegels Satz bleibt ineffektiv.
+
+**Hebel (was er liefern würde):** Wichtig für GRH-Anwendungen; Fortschritt ist quantifizierbar.
+
+**Typische Fehlermodi:** [[F12_ineffective-nonuniform|F12 Ineffektive oder nicht gleichmäßige Konstanten]]
+
+**Vergleichbar mit:** [[17_Lindelof_density_hypothesis|Lindelöf-Hypothese & Dichte-Hypothese]] · [[34_Bost_Connes_system|Bost–Connes-System (Quantenstatistik mit ζ als Zustandssumme)]] · [[53_pair_correlation_alternative_hypothesis|Paarkorrelation ohne RH & die Alternative Hypothese (Goldston, Lee, Schettler, Suriajaya, Baluyot, Turnage-Butterbaugh, 2025–2026)]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-32 doc-17 doc-34 doc-53`
+
+**Ausgehende Beziehungen**
+- *ist Teilresultat für* (`partial_result_for`) → [[concept_GRH|Verallgemeinerte/Große RH]] — Zhang: Landau-Siegel-Nullstellen (Ausnahmen zur GRH) eingeschränkt.
+
+**Eingehende Beziehungen**
+- *modelliert* (`models`) → [[concept_alternative-hypothesis|Alternative Hypothese (AH)]] — Landau-Siegel-Ausnahmenullstellen erzwingen AH-artige Starrheit im Abstandsspektrum.
+- *ist Obstruktion für* (`obstruction_for`) → [[59_Langlands_functoriality_automorphic|59 — Langlands-Funktorialität & automorphe L-Funktionen: Weg zur GRH?]] — Landau–Siegel-Nullstellen bleiben mit voller Funktorialität verträglich.
+
+**Thematisch benachbart (gemeinsame Tags):** [[59_Langlands_functoriality_automorphic|Langlands-Funktorialität & automorphe L-Funktionen: Weg zur GRH?]] · [[21_GRH_Selberg_class_grand_RH|Verallgemeinerte, Große Riemann-Vermutung & Selberg-Klasse]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

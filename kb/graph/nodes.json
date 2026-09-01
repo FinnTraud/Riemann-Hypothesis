@@ -72,6 +72,42 @@
       "label": "Formale Verifikation / maschinengestuetzte Mathematik",
       "type": "concept",
       "summary": "Lean/mathlib-Formalisierung, Exponenten-Datenbanken (ANTEDB) und Intervall-Zertifikate als Pruefschicht fuer Resultate im RH-Umfeld."
+    },
+    {
+      "id": "concept-adeles",
+      "label": "Adelische Analysis (Tate/Poisson)",
+      "type": "concept",
+      "summary": "Harmonische Analysis auf 𝔸_ℚ: liefert Euler-Produkt und Funktionalgleichung 'gratis' — gemeinsame Sprache aller spektralen Programme."
+    },
+    {
+      "id": "concept-parity",
+      "label": "Paritätsbarriere (Möbius/Sieb)",
+      "type": "concept",
+      "summary": "Siebe und gemittelte Korrelationen können die Parität von Ω(n) nicht auflösen — blockiert alle μ-basierten Zugänge zur Einzelsummen-Schranke."
+    },
+    {
+      "id": "concept-moments",
+      "label": "Momente & Zufallsmatrix-Modelle",
+      "type": "concept",
+      "summary": "Momente von ζ auf der kritischen Geraden, Keating–Snaith-Vorhersage, arithmetischer Faktor a_k × RMT-Faktor g_k."
+    },
+    {
+      "id": "concept-intersection-positivity",
+      "label": "Schnittform-Positivität (Hodge-Index)",
+      "type": "concept",
+      "summary": "Im bewiesenen Fall erzeugt die Definitheit einer Schnittform die kritische Gerade — die einzige bekannte Herkunft echter Positivität."
+    },
+    {
+      "id": "concept-failure-modes",
+      "label": "Fehlermodi (Scheiterns-Taxonomie)",
+      "type": "concept",
+      "summary": "F1–F15: klassifiziert, an welcher Stelle ein Ansatz bricht (fatal / blockierend / strukturell). Daten: kb/graph/failure_modes.json."
+    },
+    {
+      "id": "concept-truncation-limit",
+      "label": "Abschneidung & Grenzübergang",
+      "type": "concept",
+      "summary": "Endliche Modelle (Galerkin, Partialsummen) sind beweisbar — der gleichmäßige Limes ist der offene Schritt und kann scheitern (Turán)."
     }
   ]
 }

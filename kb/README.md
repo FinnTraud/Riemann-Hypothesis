@@ -1,7 +1,7 @@
 # RH Knowledge-Graph-RAG — MCP-Server
 
-Hybrider **Wissensgraph + Retrieval**-Server über die 50 RH-Dokumente in `../docs/`.
-Drei Schichten machen ihn „bulletproof":
+Hybrider **Wissensgraph + Retrieval**-Server über die 71 RH-Dokumente in `../docs/`.
+Vier Schichten machen ihn „bulletproof":
 
 1. **Wissensgraph** — Dokumente + Konzepte + atomare *Claims* als Knoten, typisierte
    Relationen als Kanten (`equivalent_to`, `implies`, `reduces_to`, `refuted_by`,
@@ -12,12 +12,17 @@ Drei Schichten machen ihn „bulletproof":
    wahr behandeln.
 3. **Hybrid-Retrieval** — BM25 (lexikalisch, trifft Mathe-Symbole/Namen) + Graph-Expansion
    (Treffer wird um äquivalente/widerlegende Nachbarn ergänzt). Embeddings optional nachrüstbar.
+4. **Vergleichs- & Diagnose-Schicht** (`compare.py`) — 45 Ansatzprofile entlang 8 Achsen und
+   15 **Fehlermodi** (F1–F15). Beantwortet: *Wer hat überhaupt einen Implikationspfeil zur RH?
+   Wer scheitert am selben Punkt? Woran scheitern Ansätze am häufigsten?*
 
 ## Dateien
 ```
 kb/
   build_kb.py          # baut kb/index/kb.json aus docs/ + manifest.json + graph/
   core.py              # gemeinsame Abfragelogik (Stdlib)
+  compare.py           # Ansatz-Vergleich + Fehlermodus-Analyse (Stdlib)
+  build_obsidian.py    # erzeugt die Obsidian-Netzwerkschicht in docs/
   query.py             # CLI zum Testen (Stdlib, keine Installation)
   server.py            # MCP-Server (FastMCP) — exponiert die Tools
   requirements.txt
@@ -25,6 +30,8 @@ kb/
     nodes.json         # kuratierte Konzept-Knoten
     edges.json         # kuratierte typisierte Relationen (das intellektuelle Herzstück)
     claims.json        # atomare Aussagen mit Status
+    approaches.json    # 45 Ansatzprofile (Achsen, offener Schritt, Hebel, Fehlermodi)
+    failure_modes.json # Taxonomie F1–F15 mit Prüffragen und historischen Fällen
   index/
     kb.json            # GENERIERT von build_kb.py
 ```
@@ -72,6 +79,17 @@ Registrierung in einem MCP-Client (Beispiel `claude_desktop_config.json` / `.mcp
 | `reasoning_scaffold(task)` | 7-Schritte-Denkprotokoll (Doc 50) |
 | `kb_stats()` | Kennzahlen |
 
+### Vergleich & Fehleranalyse (docs/68, docs/69)
+| Tool | Zweck |
+|---|---|
+| `list_approaches(...)` | Ansätze über die Achsen filtern (z. B. `equivalence=conditional`) |
+| `approach_profile(key)` | Profil: Achsen, offener Kernschritt, Hebel, Fehlermodi |
+| `compare_approaches([keys])` | Achsenweise Gegenüberstellung, Gemeinsames vs. Trennendes |
+| `bridge_approaches(a,b)` | Verknüpfung: gemeinsame Fehlermodi + Graphpfad + gemeinsame Nachbarn |
+| `failure_statistics()` | **Woran scheitern Ansätze am häufigsten?** (aggregiert) |
+| `failure_mode(id)` / `list_failure_modes()` | Ein Fehlermodus im Detail / ganze Taxonomie |
+| `diagnose_idea(idea)` | Beweisidee gegen alle 15 Fehlermodi prüfen (Prüffragen) |
+
 ### Rechnen & Visualisieren (mpmath / matplotlib)
 | Tool | Zweck |
 |---|---|
@@ -101,6 +119,10 @@ vs. GUE), schreibt Ergebnis ins Logbuch.
 > (refuted ⇒ nie als wahr ausgeben). Bei „ist das ein Beweis?"-Fragen IMMER
 > `evaluate_proof_idea` + `get_document('doc-35')` + `get_document('doc-43')` nutzen.
 > Antworten mit `search` belegen und Graph-Nachbarn (Äquivalenzen/Widerlegungen) erwähnen.
+> Bei Vergleichsfragen („welcher Ansatz ist vielversprechender?") NICHT ranken, sondern
+> `compare_approaches` bzw. `bridge_approaches` aufrufen und achsenweise antworten —
+> insbesondere die Achse `equivalence` (hat der Ansatz überhaupt einen Implikationspfeil?).
+> Bei „warum ist das noch nicht gelöst?" `failure_statistics()` + `docs/68` heranziehen.
 
 ## Relationstypen im Graphen
 `equivalent_to, implies, reduces_to, special_case_of, generalizes, partial_result_for,

@@ -106,3 +106,17 @@ Diese Identität ist der Angelpunkt der Spurformel-Ansätze (Connes, Dok. 10) un
 - [The Explicit Formula in simple terms (arXiv math/9810169)](https://arxiv.org/pdf/math/9810169)
 - [Sketch of the Riemann-von Mangoldt explicit formula — Reed College](https://people.reed.edu/~jerry/361/lectures/rvm.pdf)
 - [On the error term in the explicit formula of Riemann–von Mangoldt (arXiv 2111.10001)](https://arxiv.org/pdf/2111.10001)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Ausgehende Beziehungen**
+- *benutzt* (`uses`) → [[01_Riemann_1859_original_paper|01 — Riemanns Originalarbeit (1859) und die Riemann-Siegel-Formel]] — Explizite Formel baut auf Funktionalgleichung/ξ auf.
+
+**Eingehende Beziehungen**
+- *ist Instanz von* (`instance_of`) → [[concept_explicit-formula|Explizite Formel (Primzahlen↔Nullstellen)]] — Doc 02 stellt die explizite Formel dar.
+- *benutzt* (`uses`) → [[52_Connes_truncated_Weil_spectral_realization|52 — Abgeschnittene Weil-Quadratform & Zeta-Spektraltripel (Connes–van Suijlekom, Connes–Consani–Moscovici, 2025–2026)]] — Guinand-Weil-Testfunktionen kommen aus der expliziten Formel.
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

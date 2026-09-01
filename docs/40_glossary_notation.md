@@ -67,3 +67,10 @@ Nutzerfragen enthalten oft *Begriffe* statt Namen („Was ist die kritische Gera
 - **Große RH:** RH für alle automorphen L-Funktionen. → Dok. 21
 - **Selberg-Klasse:** axiomatische L-Funktionen-Klasse. → Dok. 21
 - **RH über 𝔽_q:** RH-Analogon für Kurven über endlichen Körpern (BEWIESEN). → Dok. 18
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

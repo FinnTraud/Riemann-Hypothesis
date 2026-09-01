@@ -85,3 +85,38 @@ Die Kohomologietheorie H^i für arithmetische Schemata **existiert nicht** (Flac
 - [Deninger's conjectures and Weil-Arakelov cohomology — Flach & Morin](https://www.math.u-bordeaux.fr/~bmorin/Deninger-WA5.pdf)
 - [Dynamical systems for arithmetic schemes — Deninger (ResearchGate)](https://www.researchgate.net/publication/381101198_Dynamical_systems_for_arithmetic_schemes)
 - [The Riemann Hypothesis: Arithmetic and Geometry — J. Lagarias](https://websites.umich.edu/~lagarias//doc/mt-holyoke-rev.pdf)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_algebraic_geometric|Algebraisch-geometrische Ansätze]]
+
+| Achse | Wert |
+|---|---|
+| Familie | algebraic-geometric |
+| Implikation | `conditional` |
+| Euler-Produkt | `essential` |
+| Positivität | `must-prove` |
+| Strenge | `program` · Evidenz `medium` |
+| Testbar / formalisierbar | `low` / `low` |
+
+**Offener Kernschritt:** Den dynamischen Raum mit R-Fluss tatsächlich konstruieren (bisher nur axiomatisch gefordert).
+
+**Hebel (was er liefern würde):** Formal perfekte Uebersetzung: Nullstellen = Eigenwerte des Flusses.
+
+**Typische Fehlermodi:** [[F10_analogy-transfer-gap|F10 Analogie ohne Trägerobjekt (Geometrie-Transfer)]] · [[F2_positivity-assumed|F2 Positivität angenommen statt bewiesen]]
+
+**Vergleichbar mit:** [[30_F1_field_one_element_arithmetic_site|Der Körper mit einem Element (𝔽₁) & Connes–Consani arithmetic site]] · [[10_Connes_noncommutative_geometry|Alain Connes: Spurformel & nichtkommutative Geometrie]] · [[59_Langlands_functoriality_automorphic|Langlands-Funktorialität & automorphe L-Funktionen: Weg zur GRH?]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-31 doc-30 doc-10 doc-59`
+
+**Ausgehende Beziehungen**
+- *modelliert* (`models`) → [[concept_hilbert-polya|Hilbert–Pólya / spektrale Interpretation]] — Deninger: Frobenius-artiger Operator auf hypothetischer Kohomologie.
+- *versucht Transfer von* (`attempts_transfer_of`) → [[concept_geometry-transfer|Geometrie-Transfer (Funktionenkörper→ℤ)]] — Deninger-Kohomologie.
+- *benutzt* (`uses`) → [[concept_explicit-formula|Explizite Formel (Primzahlen↔Nullstellen)]] — Lefschetz-Spurformel = explizite Formel.
+
+**Eingehende Beziehungen**
+- *benutzt* (`uses`) → [[61_Arakelov_geometry_SpecZ_compactification|61 — Arakelov-Geometrie & die Kompaktifizierung von Spec ℤ]] — Deningers Fluss ersetzt den fehlenden Frobenius.
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

@@ -74,3 +74,10 @@ lang: de
 ### Daten / Numerik
 - [A. Odlyzko — Tables of zeros of ζ](https://www-users.cse.umn.edu/~odlyzko/zeta_tables/index.html)
 - [LMFDB — L-functions and Modular Forms Database](https://www.lmfdb.org/)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

@@ -90,3 +90,41 @@ Für Primzahlen in kurzen Intervallen [x, x+x^θ] genügt eine hinreichend stark
 - [An explicit log-free zero density estimate for the Riemann zeta-function (arXiv 2405.12545)](https://arxiv.org/pdf/2405.12545)
 - [Explicit zero density for the Riemann zeta function (arXiv 2101.12263)](https://arxiv.org/pdf/2101.12263)
 - [An explicit form of Ingham's zero density estimate (arXiv 2507.15184)](https://arxiv.org/pdf/2507.15184)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_analytic|Analytische Ansätze]]
+
+| Achse | Wert |
+|---|---|
+| Familie | analytic |
+| Implikation | `partial` |
+| Euler-Produkt | `essential` |
+| Positivität | `n/a` |
+| Strenge | `theorem` · Evidenz `medium` |
+| Testbar / formalisierbar | `medium` / `medium` |
+
+**Offener Kernschritt:** Lindelöf folgt aus RH, impliziert sie aber nicht; selbst Lindelöf ist offen.
+
+**Hebel (was er liefern würde):** Realistisches Zwischenziel mit messbarem Fortschritt (Exponenten).
+
+**Typische Fehlermodi:** [[F13_error-term-ceiling|F13 Strukturelle Decke des Fehlerterms]]
+
+**Vergleichbar mit:** [[04_Levinson_Conrey_positive_proportion|Levinson, Conrey & Co.: Positiver Anteil der Nullstellen auf der kritischen Geraden]] · [[12_zero_free_regions|Nullstellenfreie Regionen (klassischer analytischer Ansatz)]] · [[22_Guth_Maynard_2024|Guth–Maynard (2024): Durchbruch bei Nullstellendichte-Abschätzungen]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-17 doc-04 doc-12 doc-22`
+
+**Ausgehende Beziehungen**
+- *ist schwächer als* (`weaker_than`) → [[concept_RH|Riemann-Vermutung (RH)]] — Lindelöf ist schwächer; Rückrichtung unbekannt.
+
+**Eingehende Beziehungen**
+- *impliziert* (`implies`) → [[concept_RH|Riemann-Vermutung (RH)]] — RH ⇒ Lindelöf-Hypothese.
+- *benutzt* (`uses`) → [[22_Guth_Maynard_2024|22 — Guth–Maynard (2024): Durchbruch bei Nullstellendichte-Abschätzungen]] — Guth–Maynard verbessert Dichte-Abschätzungen Richtung Dichte-Hypothese.
+- *ist Evidenz für* (`evidence_for`) → [[49_live_analytic_frontier|49 — Live-Front der analytischen Zahlentheorie (2019–2026)]] — Subkonvexität nähert Lindelöf an.
+- *ist Evidenz für* (`evidence_for`) → [[64_extreme_values_FHK_multiplicative_chaos|64 — Extremwerte von ζ: Fyodorov–Hiary–Keating & multiplikatives Chaos]] — Extremwert-Schranken kalibrieren Lindelöf.
+
+**Thematisch benachbart (gemeinsame Tags):** [[64_extreme_values_FHK_multiplicative_chaos|Extremwerte von ζ: Fyodorov–Hiary–Keating & multiplikatives Chaos]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

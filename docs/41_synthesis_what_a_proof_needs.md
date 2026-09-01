@@ -73,3 +73,19 @@ Aus den Obstruktionen (Dok. 35) destilliert:
 - [The Riemann Hypothesis over Finite Fields — J. Milne](https://www.jmilne.org/math/xnotes/pRH.html)
 - [An essay on the Riemann Hypothesis — A. Connes (arXiv 1509.05576)](https://arxiv.org/pdf/1509.05576)
 - (sowie die Dokumente 01–40 dieser Wissensbasis)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Ausgehende Beziehungen**
+- *benutzt* (`uses`) → [[concept_RH|Riemann-Vermutung (RH)]] — Synthese: notwendige Bedingungen + Bewertungsraster für Beweise.
+
+**Eingehende Beziehungen**
+- *benutzt* (`uses`) → [[68_failure_anatomy|68 — Anatomie des Scheiterns: Taxonomie der Fehlermodi F1–F15]] — Ergänzt das Bewertungsraster um Fehlermodi.
+- *verallgemeinert* (`generalizes`) → [[69_comparison_matrix|69 — Vergleichsmatrix der Ansätze: Achsen, Lesarten, Auswahlhilfe]] — Achsenbasierter Vergleich statt Einzelbewertung.
+
+**Thematisch benachbart (gemeinsame Tags):** [[69_comparison_matrix|Vergleichsmatrix der Ansätze: Achsen, Lesarten, Auswahlhilfe]] · [[14_Li_criterion_Bombieri_Lagarias_Weil_positivity|Li-Kriterium, Bombieri–Lagarias & Weil-Positivität]] · [[05_Hilbert_Polya_conjecture|Die Hilbert–Pólya-Vermutung (spektraler Ansatz)]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

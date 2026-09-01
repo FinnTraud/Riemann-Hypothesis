@@ -46,3 +46,39 @@ motiviert vom Wunsch, „Spec(ℤ) ×_{𝔽₁} Spec(ℤ)" zetafunktional zu rea
 - [R. Meyer — On a representation of the idele class group related to primes and zeros of L-functions (Duke Math. J. 2005 / arXiv math/0311468)](https://arxiv.org/abs/math/0311468)
 - [A spectral interpretation for the zeros of the Riemann zeta function (arXiv math/0412277)](https://arxiv.org/pdf/math/0412277)
 - [N. Kurokawa — Absolute tensor products / absolute zeta functions (Übersicht in: Deninger-Programm-Literatur)](https://arxiv.org/pdf/math/0505354)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_spectral|Spektrale Ansätze]]
+
+| Achse | Wert |
+|---|---|
+| Familie | spectral |
+| Implikation | `partial` |
+| Euler-Produkt | `essential` |
+| Positivität | `must-prove` |
+| Strenge | `program` · Evidenz `weak` |
+| Testbar / formalisierbar | `low` / `low` |
+
+**Offener Kernschritt:** Meyers Spektralrealisierung existiert OHNE RH - genau deshalb erzwingt sie die Lage nicht.
+
+**Hebel (was er liefern würde):** Zeigt präzise, was eine Spektralrealisierung leisten muss (und was nicht reicht).
+
+**Typische Fehlermodi:** [[F3_non-canonical-operator|F3 Operator ad hoc konstruiert (nicht kanonisch aus der Arithmetik)]] · [[F10_analogy-transfer-gap|F10 Analogie ohne Trägerobjekt (Geometrie-Transfer)]]
+
+**Vergleichbar mit:** [[10_Connes_noncommutative_geometry|Alain Connes: Spurformel & nichtkommutative Geometrie]] · [[05_Hilbert_Polya_conjecture|Die Hilbert–Pólya-Vermutung (spektraler Ansatz)]] · [[30_F1_field_one_element_arithmetic_site|Der Körper mit einem Element (𝔽₁) & Connes–Consani arithmetic site]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-48 doc-10 doc-05 doc-30`
+
+**Ausgehende Beziehungen**
+- *modelliert* (`models`) → [[concept_hilbert-polya|Hilbert–Pólya / spektrale Interpretation]] — Meyer: distributionelle Spektralrealisierung.
+- *versucht Transfer von* (`attempts_transfer_of`) → [[concept_geometry-transfer|Geometrie-Transfer (Funktionenkörper→ℤ)]] — Kurokawa absolute Zeta/Tensorprodukte.
+
+**Eingehende Beziehungen**
+- *ist Blaupause für* (`blueprint_for`) → [[62_Tate_thesis_adelic_analysis|62 — Tates These & adelische Analysis: warum die Funktionalgleichung „billig\" ist]] — Meyers Distributionenansatz setzt Tates Rahmen fort.
+
+**Thematisch benachbart (gemeinsame Tags):** [[30_F1_field_one_element_arithmetic_site|Der Körper mit einem Element (𝔽₁) & Connes–Consani arithmetic site]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

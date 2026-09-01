@@ -51,3 +51,15 @@ Historisch/biografisch bedeutsam als Mahnung über die Schwere des Problems; mat
 - [A Brilliant Madness — PBS American Experience](https://www.pbs.org/wgbh/americanexperience/films/nash/)
 - [John Nash and his Experiences with Schizophrenia](https://lmclark7.com/john-nash-documentary/)
 - [Riemann Hypothesis — Wolfram MathWorld (history)](https://mathworld.wolfram.com/RiemannHypothesis.html)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Ausgehende Beziehungen**
+- *widerlegt durch* (`refuted_by`) → [[concept_RH|Riemann-Vermutung (RH)]] — Nash: nie kohärenter Beweis.
+
+**Thematisch benachbart (gemeinsame Tags):** [[25_Atiyah_2018_failed_proof|Michael Atiyah (2018): gescheiterter Beweisversuch (Todd-Funktion)]] · [[20_de_Branges_Hilbert_spaces|Louis de Branges: Hilberträume ganzer Funktionen (mehrfach gescheiterte Beweise)]]
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->

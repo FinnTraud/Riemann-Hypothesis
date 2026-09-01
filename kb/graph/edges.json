@@ -624,6 +624,408 @@
       "to": "doc-52",
       "type": "uses",
       "note": "Die Weil-Form-Numerik wird mit Reproduzierbarkeitspaketen und Intervall-Zertifikaten geliefert."
+    },
+    {
+      "from": "doc-55",
+      "to": "concept-RH",
+      "type": "equivalent_to",
+      "note": "Speiser: RH ⟺ ζ′ hat keine Nullstellen in 0<Re(s)<1/2."
+    },
+    {
+      "from": "doc-55",
+      "to": "doc-04",
+      "type": "blueprint_for",
+      "note": "Speiser/Levinson–Montgomery ist die technische Grundlage von Levinsons Mollifier-Methode."
+    },
+    {
+      "from": "doc-55",
+      "to": "doc-23",
+      "type": "uses",
+      "note": "Lehmer-Paare erzwingen ζ′-Nullstellen sehr nahe an der Geraden."
+    },
+    {
+      "from": "doc-55",
+      "to": "concept-critical-line",
+      "type": "instance_of",
+      "note": "Charakterisierung der Geraden über die Ableitung."
+    },
+    {
+      "from": "doc-56",
+      "to": "concept-RH",
+      "type": "attempts_transfer_of",
+      "note": "Reduktion der RH auf Nullstellenfreiheit der Partialsummen ζ_N."
+    },
+    {
+      "from": "doc-56",
+      "to": "doc-35",
+      "type": "refuted_by",
+      "note": "Montgomery 1983: ζ_N hat Nullstellen rechts von Re=1 — Prämisse falsch."
+    },
+    {
+      "from": "doc-56",
+      "to": "concept-truncation-limit",
+      "type": "instance_of",
+      "note": "Kanonischer Fall, in dem das abgeschnittene Modell NICHTS vererbt."
+    },
+    {
+      "from": "doc-56",
+      "to": "doc-52",
+      "type": "obstruction_for",
+      "note": "Warnung für alle Galerkin-/Cutoff-Programme: der Limes kann scheitern."
+    },
+    {
+      "from": "doc-57",
+      "to": "concept-euler-product",
+      "type": "instance_of",
+      "note": "Beurling-Systeme haben ein Euler-Produkt per Konstruktion."
+    },
+    {
+      "from": "doc-57",
+      "to": "concept-RH",
+      "type": "obstruction_for",
+      "note": "Euler-Produkt + gute Dichte reichen nicht: DMV-System verletzt das RH-Analogon."
+    },
+    {
+      "from": "doc-57",
+      "to": "doc-35",
+      "type": "generalizes",
+      "note": "Zweite Säule neben Davenport–Heilbronn: auch Multiplikativität allein genügt nicht."
+    },
+    {
+      "from": "doc-57",
+      "to": "doc-12",
+      "type": "obstruction_for",
+      "note": "Zeigt: die klassische nullstellenfreie Region ist im Beurling-Rahmen optimal."
+    },
+    {
+      "from": "doc-57",
+      "to": "doc-62",
+      "type": "weaker_than",
+      "note": "Beurling-Systemen fehlt die additive Struktur (Poisson-Summation)."
+    },
+    {
+      "from": "doc-58",
+      "to": "concept-parity",
+      "type": "instance_of",
+      "note": "Chowla/Sarnak präzisieren die Zufälligkeit von μ — und stoßen an die Paritätsbarriere."
+    },
+    {
+      "from": "doc-58",
+      "to": "doc-16",
+      "type": "evidence_for",
+      "note": "Stützt die Heuristik hinter M(x)=O(x^{1/2+ε}), liefert sie aber nicht."
+    },
+    {
+      "from": "doc-58",
+      "to": "doc-35",
+      "type": "uses",
+      "note": "Paritätsproblem (Selberg) als strukturelle Grenze."
+    },
+    {
+      "from": "doc-58",
+      "to": "doc-39",
+      "type": "models",
+      "note": "Alternatives, präziseres Zufälligkeitsmodell gegenüber Cramér."
+    },
+    {
+      "from": "doc-59",
+      "to": "concept-GRH",
+      "type": "partial_result_for",
+      "note": "Organisiert die Familie aller L-Funktionen, für die GRH behauptet wird."
+    },
+    {
+      "from": "doc-59",
+      "to": "doc-21",
+      "type": "uses",
+      "note": "Selberg-Klasse als axiomatische Schattenversion der automorphen Welt."
+    },
+    {
+      "from": "doc-59",
+      "to": "doc-18",
+      "type": "uses",
+      "note": "Ramanujan–Petersson (lokales RH-Analogon) folgt aus Deligne/Weil."
+    },
+    {
+      "from": "doc-59",
+      "to": "doc-32",
+      "type": "obstruction_for",
+      "note": "Landau–Siegel-Nullstellen bleiben mit voller Funktorialität verträglich."
+    },
+    {
+      "from": "doc-60",
+      "to": "concept-intersection-positivity",
+      "type": "instance_of",
+      "note": "Hodge-Standardvermutung = Positivität der Schnittform."
+    },
+    {
+      "from": "doc-60",
+      "to": "doc-18",
+      "type": "reduces_to",
+      "note": "Isoliert den Schritt in Weils Beweis, der die kritische Gerade erzwingt."
+    },
+    {
+      "from": "doc-60",
+      "to": "doc-14",
+      "type": "blueprint_for",
+      "note": "Weil-Positivität ist im geometrischen Fall der Hodge-Index-Satz."
+    },
+    {
+      "from": "doc-60",
+      "to": "doc-10",
+      "type": "blueprint_for",
+      "note": "Sagt, woher die von Connes benötigte Positivität kommen müsste."
+    },
+    {
+      "from": "doc-60",
+      "to": "concept-geometry-transfer",
+      "type": "instance_of",
+      "note": "Diagnose des fehlenden Trägerobjekts über ℤ."
+    },
+    {
+      "from": "doc-61",
+      "to": "concept-geometry-transfer",
+      "type": "instance_of",
+      "note": "Beste bestehende Infrastruktur für den Geometrie-Transfer."
+    },
+    {
+      "from": "doc-61",
+      "to": "doc-60",
+      "type": "uses",
+      "note": "Arithmetischer Hodge-Index-Satz (Faltings–Hriljac) als Gegenstück zur Standardvermutung."
+    },
+    {
+      "from": "doc-61",
+      "to": "doc-30",
+      "type": "reduces_to",
+      "note": "Für die fehlende zweite Dimension braucht man Spec ℤ ×_{𝔽₁} Spec ℤ."
+    },
+    {
+      "from": "doc-61",
+      "to": "doc-31",
+      "type": "uses",
+      "note": "Deningers Fluss ersetzt den fehlenden Frobenius."
+    },
+    {
+      "from": "doc-62",
+      "to": "concept-adeles",
+      "type": "instance_of",
+      "note": "Tates These ist die Konstruktion des adelischen Rahmens."
+    },
+    {
+      "from": "doc-62",
+      "to": "concept-explicit-formula",
+      "type": "uses",
+      "note": "Poisson-Summation ⇒ Funktionalgleichung; explizite Formel als adelische Spur."
+    },
+    {
+      "from": "doc-62",
+      "to": "doc-10",
+      "type": "blueprint_for",
+      "note": "Connes' Spurformel ist die spektrale Fortsetzung von Tates Bild."
+    },
+    {
+      "from": "doc-62",
+      "to": "doc-34",
+      "type": "blueprint_for",
+      "note": "Bost–Connes lebt auf demselben adelischen Objekt."
+    },
+    {
+      "from": "doc-62",
+      "to": "doc-48",
+      "type": "blueprint_for",
+      "note": "Meyers Distributionenansatz setzt Tates Rahmen fort."
+    },
+    {
+      "from": "doc-62",
+      "to": "doc-35",
+      "type": "evidence_for",
+      "note": "Erklärt begrifflich, warum die Funktionalgleichung allein nichts erzwingt."
+    },
+    {
+      "from": "doc-63",
+      "to": "concept-moments",
+      "type": "instance_of",
+      "note": "Erklärt die Faktorisierung a_k·g_k der Momentenvermutung."
+    },
+    {
+      "from": "doc-63",
+      "to": "doc-07",
+      "type": "reduces_to",
+      "note": "Strukturelle Begründung der Keating–Snaith-Vorhersage."
+    },
+    {
+      "from": "doc-63",
+      "to": "doc-06",
+      "type": "models",
+      "note": "Trennt arithmetischen von spektralem Anteil der Statistik."
+    },
+    {
+      "from": "doc-63",
+      "to": "concept-euler-product",
+      "type": "uses",
+      "note": "Kurzes Euler-Produkt P_X als arithmetischer Faktor."
+    },
+    {
+      "from": "doc-64",
+      "to": "doc-17",
+      "type": "evidence_for",
+      "note": "Extremwert-Schranken kalibrieren Lindelöf."
+    },
+    {
+      "from": "doc-64",
+      "to": "doc-63",
+      "type": "uses",
+      "note": "Zerlegung in Primzahl- und Nullstellenanteil ist der technische Kern."
+    },
+    {
+      "from": "doc-64",
+      "to": "concept-moments",
+      "type": "instance_of",
+      "note": "Momente und Maxima sind zwei Seiten derselben Statistik."
+    },
+    {
+      "from": "doc-64",
+      "to": "doc-23",
+      "type": "evidence_for",
+      "note": "Extremwerte und Lehmer-Paare messen beide, wie 'knapp' die RH gilt."
+    },
+    {
+      "from": "doc-65",
+      "to": "doc-06",
+      "type": "generalizes",
+      "note": "n-Level-Korrelationen verallgemeinern Montgomerys Paarkorrelation."
+    },
+    {
+      "from": "doc-65",
+      "to": "concept-pair-correlation",
+      "type": "instance_of",
+      "note": "Bewiesene GUE-Übereinstimmung im eingeschränkten Trägerbereich."
+    },
+    {
+      "from": "doc-65",
+      "to": "doc-53",
+      "type": "obstruction_for",
+      "note": "Trägerbedingung erklärt, warum die Alternative Hypothese nicht auszuschließen ist."
+    },
+    {
+      "from": "doc-65",
+      "to": "concept-explicit-formula",
+      "type": "uses",
+      "note": "Übersetzt Nullstellenkorrelationen in Primzahlsummen."
+    },
+    {
+      "from": "doc-65",
+      "to": "doc-18",
+      "type": "uses",
+      "note": "Katz–Sarnak: im Funktionenkörperfall ist die Symmetrie ein Satz."
+    },
+    {
+      "from": "doc-66",
+      "to": "concept-RH",
+      "type": "equivalent_to",
+      "note": "RH ⟺ starke Rekurrenz von ζ im Streifen 1/2<σ<1."
+    },
+    {
+      "from": "doc-66",
+      "to": "doc-46",
+      "type": "uses",
+      "note": "Beruht direkt auf Voronin-Universalität."
+    },
+    {
+      "from": "doc-66",
+      "to": "doc-35",
+      "type": "evidence_for",
+      "note": "Schärfste Formulierung, warum weiche Funktionentheorie nicht reicht."
+    },
+    {
+      "from": "doc-67",
+      "to": "concept-RH",
+      "type": "models",
+      "note": "Systematische Gegenprobe: Konsequenzen und numerische Signaturen von Θ>1/2."
+    },
+    {
+      "from": "doc-67",
+      "to": "doc-23",
+      "type": "uses",
+      "note": "Λ>0 wäre äquivalent zu 'RH falsch'."
+    },
+    {
+      "from": "doc-67",
+      "to": "doc-16",
+      "type": "uses",
+      "note": "Mertens-Widerlegung als Kalibrierung der Numerik."
+    },
+    {
+      "from": "doc-67",
+      "to": "doc-24",
+      "type": "obstruction_for",
+      "note": "Verifikation bis 3·10^12 schließt eine Ausnahme nicht aus."
+    },
+    {
+      "from": "doc-67",
+      "to": "doc-15",
+      "type": "uses",
+      "note": "Robin: RH falsch ⇒ unendlich viele Ausnahmen."
+    },
+    {
+      "from": "doc-68",
+      "to": "concept-failure-modes",
+      "type": "instance_of",
+      "note": "Prosa-Ebene der Taxonomie F1–F15."
+    },
+    {
+      "from": "doc-68",
+      "to": "doc-35",
+      "type": "generalizes",
+      "note": "Diagnose-Ebene über den Obstruktionen."
+    },
+    {
+      "from": "doc-68",
+      "to": "doc-41",
+      "type": "uses",
+      "note": "Ergänzt das Bewertungsraster um Fehlermodi."
+    },
+    {
+      "from": "doc-68",
+      "to": "doc-69",
+      "type": "uses",
+      "note": "Fehlermodi sind eine Spalte der Vergleichsmatrix."
+    },
+    {
+      "from": "doc-69",
+      "to": "concept-failure-modes",
+      "type": "uses",
+      "note": "Verknüpft Ansätze über gemeinsame Fehlermodi."
+    },
+    {
+      "from": "doc-69",
+      "to": "doc-41",
+      "type": "generalizes",
+      "note": "Achsenbasierter Vergleich statt Einzelbewertung."
+    },
+    {
+      "from": "doc-69",
+      "to": "doc-51",
+      "type": "blueprint_for",
+      "note": "Liefert die realistische Projektliste (testable=high)."
+    },
+    {
+      "from": "doc-70",
+      "to": "doc-50",
+      "type": "uses",
+      "note": "Netzwerk ist die Datenbasis des Denkprotokolls."
+    },
+    {
+      "from": "doc-70",
+      "to": "doc-69",
+      "type": "uses",
+      "note": "Erklärt, wie Vergleich und Matrix erzeugt werden."
+    },
+    {
+      "from": "doc-70",
+      "to": "doc-68",
+      "type": "uses",
+      "note": "Erklärt die Fehlermodus-Notizen im Graphen."
     }
   ]
 }

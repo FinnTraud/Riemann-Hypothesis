@@ -69,3 +69,34 @@ Zwei Nullstellen γ_n, γ_{n+1} mit Abstand ≪ Mittelwert bilden ein **Lehmer-P
 - [Schoenberg's Theory of Totally Positive Functions and the Riemann Zeta Function (arXiv 2007.12889)](https://arxiv.org/pdf/2007.12889)
 - [Lehmer pairs of zeros, the de Bruijn-Newman constant Λ, and the Riemann Hypothesis (ResearchGate)](https://www.researchgate.net/publication/226697760_Lehmer_pairs_of_zeros_the_de_Bruijn-Newman_constant_L_and_the_Riemann_Hypothesis)
 - [The early historical roots of Lee-Yang theorem (arXiv 1410.6450)](https://arxiv.org/pdf/1410.6450)
+
+<!-- AUTO:VERNETZUNG START (kb/build_obsidian.py) -->
+## 🔗 Vernetzung
+> Automatisch erzeugt aus `kb/graph/*.json` durch `python3 kb/build_obsidian.py`. Inhaltliche Änderungen bitte in den Graph-Dateien vornehmen, nicht hier.
+
+**Karte:** [[MOC_physical|Physikalische Modelle]]
+
+| Achse | Wert |
+|---|---|
+| Familie | physical |
+| Implikation | `model` |
+| Euler-Produkt | `partial` |
+| Positivität | `must-prove` |
+| Strenge | `heuristic` · Evidenz `medium` |
+| Testbar / formalisierbar | `medium` / `low` |
+
+**Offener Kernschritt:** Ein Modell finden, dessen Lee-Yang-Kreis genau die kritische Gerade ist - bisher nur Analogie.
+
+**Hebel (was er liefern würde):** Erklärt, warum Positivität und Nullstellenlage zusammenhängen.
+
+**Typische Fehlermodi:** [[F14_model-without-implication|F14 Modell ohne Implikationspfeil]] · [[F1_no-euler-product|F1 Euler-Produkt nicht wesentlich benutzt]]
+
+**Vergleichbar mit:** [[08_Berry_Keating_xp_model|Berry–Keating H = xp Modell (Quantenchaos-Ansatz)]] · [[07_Keating_Snaith_moments|Keating–Snaith: Momente der Zetafunktion via charakteristische Polynome (CUE)]] · [[34_Bost_Connes_system|Bost–Connes-System (Quantenstatistik mit ζ als Zustandssumme)]]
+> Vergleich abrufen: `python3 kb/compare.py compare doc-33 doc-08 doc-07 doc-34`
+
+**Ausgehende Beziehungen**
+- *ist Instanz von* (`instance_of`) → [[concept_positivity|Positivität / Reellwurzeligkeit]] — Lee-Yang/Newman: Positivität erzwingt reelle Nullstellen.
+- *benutzt* (`uses`) → [[23_de_Bruijn_Newman_constant_Polymath15|23 — De-Bruijn–Newman-Konstante: Rodgers–Tao & Polymath15]] — Statistische Mechanik liefert Werkzeuge für die dBN-Konstante.
+
+**Navigation:** [[00_INDEX|Index]] · [[MOC_00_Hub|Netzwerk-Hub]] · [[68_failure_anatomy|Fehler-Anatomie]] · [[69_comparison_matrix|Vergleichsmatrix]]
+<!-- AUTO:VERNETZUNG END -->
