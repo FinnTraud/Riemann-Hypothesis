@@ -1,0 +1,68 @@
+{
+  "zeta": {
+    "test": "T3 Nullstellen abseits der kritischen Geraden",
+    "funktion": "zeta",
+    "rh_verletzung_nachgewiesen": false,
+    "gefunden": [
+      {
+        "nullstelle": "(0.5 + 114.320220915453j)",
+        "Re": "0.5",
+        "Im": "114.320220915453",
+        "abstand_zur_kritischen_geraden": "0.0",
+        "residuum_|f|": "9.05e-22",
+        "abseits": false
+      },
+      {
+        "nullstelle": "(0.5 + 176.44143429771j)",
+        "Re": "0.5",
+        "Im": "176.44143429771",
+        "abstand_zur_kritischen_geraden": "0.0",
+        "residuum_|f|": "4.7e-20",
+        "abseits": false
+      }
+    ],
+    "trennt_zeta_von_dh": true,
+    "lehre": "DH verletzt die RH nicht knapp, sondern deutlich (Re bis ~0.81 statt 0.5)."
+  },
+  "dh": {
+    "test": "T3 Nullstellen abseits der kritischen Geraden",
+    "funktion": "dh",
+    "rh_verletzung_nachgewiesen": true,
+    "gefunden": [
+      {
+        "nullstelle": "(0.808517182456637 + 85.6993484853776j)",
+        "Re": "0.808517182456637",
+        "Im": "85.6993484853776",
+        "abstand_zur_kritischen_geraden": "0.308517",
+        "residuum_|f|": "3.07e-20",
+        "abseits": true
+      },
+      {
+        "nullstelle": "(0.650830080609737 + 114.163342730757j)",
+        "Re": "0.650830080609737",
+        "Im": "114.163342730757",
+        "abstand_zur_kritischen_geraden": "0.15083",
+        "residuum_|f|": "1.39e-20",
+        "abseits": true
+      },
+      {
+        "nullstelle": "(0.574356050450806 + 166.479305913168j)",
+        "Re": "0.574356050450806",
+        "Im": "166.479305913168",
+        "abstand_zur_kritischen_geraden": "0.0743561",
+        "residuum_|f|": "1.17e-20",
+        "abseits": true
+      },
+      {
+        "nullstelle": "(0.72425769462681 + 176.702461242856j)",
+        "Re": "0.72425769462681",
+        "Im": "176.702461242856",
+        "abstand_zur_kritischen_geraden": "0.224258",
+        "residuum_|f|": "6.21e-20",
+        "abseits": true
+      }
+    ],
+    "trennt_zeta_von_dh": true,
+    "lehre": "DH verletzt die RH nicht knapp, sondern deutlich (Re bis ~0.81 statt 0.5)."
+  }
+}

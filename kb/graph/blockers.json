@@ -1,0 +1,252 @@
+{
+  "_comment": "Blocker-Taxonomie: die wiederkehrenden Scheiternsgruende. Waehrend edges.json Ansatz->Ansatz verbindet, verbindet diese Datei Ansatz->HUERDE. Ein Blocker ist kein Ereignis in der Geschichte eines Ansatzes, sondern ein struktureller Grund, der bei vielen Ansaetzen identisch auftritt. Felder: id, name, kurz, tier (1=harte Obstruktion mit Gegenbeispiel, 2=strukturelle Luecke ohne bekannten Ausweg, 3=Methodengrenze/Warnung), beschreibung, betrifft (doc-IDs), fluchtbedingung (was ein Ansatz zeigen muesste, um den Blocker zu ueberwinden), orakel_test (Test in kb/counterexample.py, der den Blocker operationalisiert, sonst null), quelle_docs.",
+  "version": "1.0",
+  "blockers": [
+    {
+      "id": "blk-positivity-circular",
+      "name": "Zirkuläre Positivität",
+      "kurz": "Die RH wird auf eine Positivitätsaussage reduziert, die selbst nur als äquivalent, nie unabhängig bewiesen ist.",
+      "tier": 2,
+      "beschreibung": "Der mit Abstand häufigste Blocker. Ein Ansatz zeigt: RH ⟺ (quadratische Form ≥ 0) bzw. (Funktion hat nur reelle Nullstellen). Das ist ein echter Erkenntnisgewinn über die STRUKTUR der Aussage, aber kein Fortschritt in der Beweisstärke: die Positivität ist genau so schwer wie die RH. Ein Beweis entsteht erst, wenn die Positivität aus einer unabhängigen Quelle folgt (Schnitttheorie, Spektralsatz, Darstellungstheorie) — nicht aus der Nullstellenlage, die man beweisen will.",
+      "betrifft": [
+        "doc-13",
+        "doc-14",
+        "doc-20",
+        "doc-23",
+        "doc-29",
+        "doc-33",
+        "doc-10",
+        "doc-52",
+        "doc-45"
+      ],
+      "fluchtbedingung": "Die Positivität muss aus einer Struktur folgen, die unabhängig von der Nullstellenlage definiert ist. Im bewiesenen Fall 𝔽_q (doc-18) leistet das die Schnittform auf der Fläche C×C — dort ist Positivität ein Satz der Geometrie, nicht eine Umformulierung des Ziels.",
+      "orakel_test": null,
+      "quelle_docs": [
+        "doc-35",
+        "doc-41"
+      ]
+    },
+    {
+      "id": "blk-noncanonical-operator",
+      "name": "Nicht-kanonischer Operator",
+      "kurz": "Ein Hilbert–Pólya-Operator wird konstruiert, um das richtige Spektrum zu haben, statt aus der Arithmetik zu entstehen.",
+      "tier": 2,
+      "beschreibung": "Zu jeder reellen Folge existiert ein selbstadjungierter Operator mit genau dieser Folge als Spektrum. Wer also einen Operator angibt, dessen Eigenwerte die γ_n sind, hat nichts gezeigt — er hat die Realität der γ_n bereits vorausgesetzt. Der Blocker greift immer dann, wenn der Operator nicht mit einer unabhängig definierten Spurformel geliefert wird, die die Primzahlterme der expliziten Formel reproduziert.",
+      "betrifft": [
+        "doc-05",
+        "doc-08",
+        "doc-09",
+        "doc-47",
+        "doc-11"
+      ],
+      "fluchtbedingung": "Der Operator muss auf einem arithmetisch definierten Raum leben (Adele, arithmetic site, gefolierter Raum) UND eine Spurformel erfüllen, deren geometrische Seite die Primzahlterme der expliziten Formel liefert. Selbstadjungiertheit muss auf einem konkret angegebenen Definitionsbereich bewiesen sein, nicht behauptet.",
+      "orakel_test": null,
+      "quelle_docs": [
+        "doc-35",
+        "doc-41",
+        "doc-05"
+      ]
+    },
+    {
+      "id": "blk-missing-base-geometry",
+      "name": "Fehlende Geometrie über Spec(ℤ)",
+      "kurz": "Der bewiesene Funktionenkörperfall braucht eine Fläche C×_𝔽 C; das Analogon Spec(ℤ)×_{𝔽₁}Spec(ℤ) existiert nicht.",
+      "tier": 2,
+      "beschreibung": "Weil/Deligne beweisen die RH über 𝔽_q mit Geometrie: Kohomologie, Lefschetz-Fixpunktformel, Positivität der Schnittform auf einer Fläche über einer Basis. Über ℤ fehlt die Basis — es gibt kein Objekt, über dem Spec(ℤ) eine 'Kurve' wäre. Alle Transferprogramme (𝔽₁, Deninger, arithmetic site) arbeiten an genau diesem einen fehlenden Objekt.",
+      "betrifft": [
+        "doc-30",
+        "doc-31",
+        "doc-10",
+        "doc-48",
+        "doc-34"
+      ],
+      "fluchtbedingung": "Konstruktion einer Kohomologietheorie über Spec(ℤ) mit (a) Lefschetz-Formel, die die explizite Formel reproduziert, (b) Poincaré-Dualität, (c) einem Positivitäts-/Index-Satz (Hodge-Index-Analogon). Alle drei, nicht nur (a).",
+      "orakel_test": null,
+      "quelle_docs": [
+        "doc-18",
+        "doc-41",
+        "doc-30"
+      ]
+    },
+    {
+      "id": "blk-limit-interchange",
+      "name": "Konvergenz- / Grenzübergangslücke",
+      "kurz": "Für jede endliche Abschneidung bewiesen — der Grenzübergang ist offen.",
+      "tier": 2,
+      "beschreibung": "Ein technisch eigener Blocker, der oft mit blk-positivity-circular verwechselt wird. Hier ist die Aussage für jeden Cutoff Λ (bzw. jedes N, jedes d) ein Satz; was fehlt, ist gleichmäßige Kontrolle beim Grenzübergang. Das ist qualitativ anders als eine bloße Äquivalenz: es gibt eine Folge bewiesener Aussagen, die auf das Ziel zuläuft, und die verbleibende Lücke ist eine Kompaktheits- bzw. Gleichmäßigkeitsaussage. Deshalb liefern Ansätze mit diesem Blocker die ehrlichsten Near-Miss-Kandidaten (siehe docs/58).",
+      "betrifft": [
+        "doc-52",
+        "doc-11",
+        "doc-44",
+        "doc-13",
+        "doc-29"
+      ],
+      "fluchtbedingung": "Eine von Λ (bzw. N, d) UNABHÄNGIGE Schranke — Kompaktheit, gleichgradige Stetigkeit oder eine explizite Fehlerabschätzung, die den Grenzübergang erlaubt.",
+      "orakel_test": null,
+      "quelle_docs": [
+        "doc-52",
+        "doc-29",
+        "doc-13"
+      ]
+    },
+    {
+      "id": "blk-parity",
+      "name": "Paritätsbarriere",
+      "kurz": "Siebmethoden können gerade und ungerade Primfaktorzahl prinzipiell nicht trennen — genau das misst μ(n).",
+      "tier": 1,
+      "beschreibung": "Selbergs Paritätsproblem ist ein bewiesenes Negativresultat über die Reichweite von Siebmethoden. Da 1/ζ(s) = Σ μ(n) n^{-s} und μ(n) = (−1)^{Ω(n)} genau die Parität misst, kann kein reines Siebargument die für M(x) nötige Kontrolle liefern. Tier 1, weil es dazu explizite Konstruktionen gibt (Siebgrenzen-Beispiele), nicht nur Erfahrungswerte.",
+      "betrifft": [
+        "doc-16",
+        "doc-32",
+        "doc-12"
+      ],
+      "fluchtbedingung": "Ein bilinearer Input (Typ-II-Summen), ein Spektralinput (automorphe Formen) oder eine andere Quelle von Kancellation, die nicht aus dem Sieb selbst kommt.",
+      "orakel_test": null,
+      "quelle_docs": [
+        "doc-35"
+      ]
+    },
+    {
+      "id": "blk-euler-blindness",
+      "name": "Euler-Blindheit",
+      "kurz": "Das Argument benutzt nur Funktionalgleichung, Fortsetzung und Wachstum — es würde für Davenport–Heilbronn genauso gelten und ist damit falsch.",
+      "tier": 1,
+      "beschreibung": "Die härteste bekannte Obstruktion, weil sie ein explizites GEGENBEISPIEL hat. Die Davenport–Heilbronn-Funktion hat Funktionalgleichung vom ζ-Typ, analytische Fortsetzung, reelle Dirichlet-Koeffizienten und ζ-artiges Wachstum — und Nullstellen abseits der kritischen Geraden. Jeder Beweis, der nur diese Eigenschaften nutzt, ist damit widerlegt, bevor man ihn liest. Dieser Blocker ist als einziger MASCHINELL PRÜFBAR: kb/counterexample.py lässt das Argument gegen DH laufen.",
+      "betrifft": [
+        "doc-27",
+        "doc-25",
+        "doc-46",
+        "doc-43"
+      ],
+      "fluchtbedingung": "Mindestens ein Beweisschritt muss eine Eigenschaft benutzen, die für Davenport–Heilbronn NACHWEISLICH FALSCH ist — praktisch immer: Multiplikativität der Koeffizienten / Euler-Produkt.",
+      "orakel_test": "T2_euler_produkt",
+      "quelle_docs": [
+        "doc-35",
+        "doc-43"
+      ]
+    },
+    {
+      "id": "blk-finite-evidence",
+      "name": "Numerische Extrapolation",
+      "kurz": "Aus endlicher Rechnung wird auf asymptotisches Verhalten geschlossen — die RH-Landschaft hat dafür berüchtigte Gegenbeispiele.",
+      "tier": 3,
+      "beschreibung": "Kein Hindernis für einen Beweis, sondern eine Fehlerquelle bei der Bewertung von Evidenz. Die Mertens-Vermutung galt bis 10^14 und ist falsch. π(x) < Li(x) gilt für jedes berechenbare x und kehrt sich bei ~10^316 um. S(T) ist im Mittel klein, unter RH aber unbeschränkt. Numerik ist im RH-Kontext systematisch irreführend, weil die relevanten Effekte mit log log x skalieren.",
+      "betrifft": [
+        "doc-24",
+        "doc-16",
+        "doc-39",
+        "doc-06",
+        "doc-23"
+      ],
+      "fluchtbedingung": "Nicht überwindbar, nur vermeidbar: Numerik darf Hypothesen erzeugen und widerlegen, aber nie stützen. Ein rigoroses Intervall-Zertifikat (doc-54) ist etwas anderes als eine Stichprobe.",
+      "orakel_test": "T5_rechts_von_1",
+      "quelle_docs": [
+        "doc-35",
+        "doc-24"
+      ]
+    },
+    {
+      "id": "blk-softness",
+      "name": "Weichheitsbarriere (Voronin)",
+      "kurz": "ζ approximiert im kritischen Streifen JEDE nullstellenfreie analytische Funktion — 'weiche' Argumente können deshalb nicht greifen.",
+      "tier": 1,
+      "beschreibung": "Voronins Universalitätssatz ist eine Meta-Obstruktion: im Streifen 1/2 < Re s < 1 kommt ζ jeder vorgegebenen nullstellenfreien holomorphen Funktion beliebig nahe. Ein Beweis, der nur allgemeine funktionentheoretische Eigenschaften (Wachstum, Normalität, Approximationsverhalten) benutzt, kann die kritische Gerade daher nicht auszeichnen — ζ verhält sich dort lokal wie 'alles Mögliche'. Nur RIGIDE, globale und arithmetische Eigenschaften können die Gerade erzwingen.",
+      "betrifft": [
+        "doc-46",
+        "doc-27",
+        "doc-43"
+      ],
+      "fluchtbedingung": "Das Argument muss eine globale Rigiditätseigenschaft benutzen (Euler-Produkt, Grad in der Selberg-Klasse, Spurformel), die durch lokale Approximation nicht sichtbar ist.",
+      "orakel_test": null,
+      "quelle_docs": [
+        "doc-46",
+        "doc-43"
+      ]
+    },
+    {
+      "id": "blk-proportion-ceiling",
+      "name": "Anteils-Decke der Mollifier-Methoden",
+      "kurz": "Levinson/Conrey-Technik liefert einen positiven Anteil, ist aber strukturell weit unter 100 % gedeckelt.",
+      "tier": 2,
+      "beschreibung": "Die Mollifier-Methode zeigt, dass ein positiver Anteil der Nullstellen auf der Geraden liegt (Levinson 1/3, Conrey 2/5, heute >41 %). Die Schranke wächst seit 50 Jahren in Zehntelprozentschritten. Der Grund ist strukturell: die Länge des Mollifiers ist durch die verfügbaren Momentenschätzungen begrenzt, und selbst ein idealer Mollifier liefert nicht 100 %. Wichtig: 100 % im Dichtesinn wäre ohnehin NICHT die RH — eine Nullstellenmenge der Dichte 0 abseits der Geraden bliebe zulässig.",
+      "betrifft": [
+        "doc-03",
+        "doc-04",
+        "doc-07",
+        "doc-17",
+        "doc-22"
+      ],
+      "fluchtbedingung": "Ein Mechanismus, der ALLE Nullstellen erfasst statt einen Anteil — Anteilsmethoden können die RH prinzipiell nicht abschließen, auch nicht im Limes.",
+      "orakel_test": null,
+      "quelle_docs": [
+        "doc-04",
+        "doc-41"
+      ]
+    },
+    {
+      "id": "blk-model-circularity",
+      "name": "Zirkularität der Modellannahme",
+      "kurz": "Zufallsmatrix- und probabilistische Modelle setzen die RH voraus, um überhaupt formuliert werden zu können.",
+      "tier": 3,
+      "beschreibung": "Die GUE-Statistik der Nullstellen wird nach 'Entfaltung' (unfolding) formuliert — dazu braucht man die Nullstellen als reelle Folge, was die RH bereits benutzt. Montgomerys Paarkorrelationssatz ist unter RH bewiesen. Cramérs Modell ist eine Heuristik und wurde von Maier in einem wichtigen Regime widerlegt. Modelle liefern also Vorhersagen und Plausibilität, aber keine Implikationsrichtung zur RH hin. Ausnahme und deshalb bemerkenswert: doc-53 zeigt Paarkorrelationsresultate OHNE RH.",
+      "betrifft": [
+        "doc-06",
+        "doc-07",
+        "doc-39",
+        "doc-33",
+        "doc-53"
+      ],
+      "fluchtbedingung": "Unbedingte Formulierung: Aussagen über Nullstellen ohne die Annahme, dass sie auf der Geraden liegen (doc-53 ist der Prototyp).",
+      "orakel_test": null,
+      "quelle_docs": [
+        "doc-06",
+        "doc-39",
+        "doc-53"
+      ]
+    },
+    {
+      "id": "blk-equivalence-trap",
+      "name": "Äquivalenz-Falle",
+      "kurz": "Ein Kriterium ist zur RH äquivalent und damit exakt gleich schwer — die Umformulierung erzeugt den Anschein von Fortschritt, ohne die Beweislast zu senken.",
+      "tier": 2,
+      "beschreibung": "Der logisch elementarste und zugleich am häufigsten übersehene Blocker. 'RH ⟺ X' heißt: X ist genau so schwer wie die RH. Eine Sammlung äquivalenter Kriterien wächst deshalb, ohne dass sich die Distanz zum Beweis verringert. Der Wert solcher Kriterien liegt woanders — sie machen die RH in verschiedenen Sprachen (Arithmetik, Kombinatorik, Funktionalanalysis) angreifbar und erhöhen so die Chance, dass EINE dieser Sprachen eine unabhängige Struktur mitbringt. Aber ein neues Äquivalent ist per se kein Fortschritt. blk-positivity-circular ist der wichtigste Spezialfall; dieser Blocker ist die allgemeine Form.",
+      "betrifft": [
+        "doc-13",
+        "doc-14",
+        "doc-15",
+        "doc-16",
+        "doc-45",
+        "doc-44",
+        "doc-29"
+      ],
+      "fluchtbedingung": "Eine der beiden Richtungen muss in STRIKT SCHWÄCHERER Form unbedingt bewiesen werden, oder es muss eine quantitative Größe geben, die sich unabhängig von der RH bewegen lässt (Λ ≤ 0.22, Anteil > 41 %, d_N-Raten). Nur solche Bewegungen zählen als Fortschritt — siehe docs/58.",
+      "orakel_test": null,
+      "quelle_docs": [
+        "doc-41",
+        "doc-45",
+        "doc-13"
+      ]
+    },
+    {
+      "id": "blk-unverifiable",
+      "name": "Nicht-Verifizierbarkeit",
+      "kurz": "Es existiert kein prüfbarer Beweistext — entweder gar keiner, oder einer, dessen Grundlage unpubliziert ist, oder einer, den niemand mehr nachprüft.",
+      "tier": 3,
+      "beschreibung": "Ein soziologisch-epistemischer Blocker, der mathematisch nichts über die RH sagt, aber die Fehlerlandschaft real prägt. Drei Ausprägungen: (a) kein Artefakt — Nash 1959 hinterließ keinen Beweistext; (b) unpublizierte Grundlage — Atiyahs RH-Argument sollte 'leicht' aus einem nie begutachteten Satz über die Todd-Funktion folgen; (c) Prüfungsermüdung — de Branges legte über drei Jahrzehnte wiederholt revidierte Fassungen vor, bis die Community die Nachprüfung faktisch einstellte. In allen drei Fällen ist der Status nicht 'falsch', sondern 'nicht entscheidbar mit vertretbarem Aufwand'. Genau hier setzen Formalisierung und maschinelle Verifikation an (doc-37, doc-54): sie machen Prüfaufwand von Reputation und Geduld unabhängig.",
+      "betrifft": [
+        "doc-25",
+        "doc-26",
+        "doc-20",
+        "doc-27"
+      ],
+      "fluchtbedingung": "Ein vollständiger, öffentlicher, selbsttragender Beweistext — im Idealfall maschinengeprüft. Das ist die einzige Fluchtbedingung der Sammlung, die heute schon technisch erreichbar ist.",
+      "orakel_test": null,
+      "quelle_docs": [
+        "doc-25",
+        "doc-26",
+        "doc-27",
+        "doc-37"
+      ]
+    }
+  ]
+}

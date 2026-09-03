@@ -1,0 +1,56 @@
+{
+  "dh": {
+    "test": "T6 Nachweisgrenze des Li-Kriteriums",
+    "erklaerung": "Der Beitrag einer Nullstelle links der Geraden waechst wie (1 + (1-2beta)/(2 gamma^2))^n. Die Rate faellt quadratisch mit der Hoehe, die noetige Ordnung n waechst daher wie gamma^2.",
+    "dh_nullstellen": [
+      {
+        "rho": "0.192000+85.7000i",
+        "wachstumsrate_minus_1": "4.194e-5",
+        "n_min": 342024
+      },
+      {
+        "rho": "0.349000+114.1600i",
+        "wachstumsrate_minus_1": "1.159e-5",
+        "n_min": 1368912
+      },
+      {
+        "rho": "0.426000+166.4800i",
+        "wachstumsrate_minus_1": "2.67e-6",
+        "n_min": 6576952
+      },
+      {
+        "rho": "0.276000+176.7000i",
+        "wachstumsrate_minus_1": "7.174e-6",
+        "n_min": 2288616
+      }
+    ],
+    "reichweite_je_budget": [
+      {
+        "n_budget": 10,
+        "gamma_max": "0.05"
+      },
+      {
+        "n_budget": 100,
+        "gamma_max": "1.4046"
+      },
+      {
+        "n_budget": 1000,
+        "gamma_max": "3.587"
+      },
+      {
+        "n_budget": 10000,
+        "gamma_max": "9.8071"
+      },
+      {
+        "n_budget": 1000000,
+        "gamma_max": "80.273"
+      },
+      {
+        "n_budget": 1000000000,
+        "gamma_max": "2089.0"
+      }
+    ],
+    "trennt_zeta_von_dh": false,
+    "lehre": "Numerische Li-Positivitaet ist als RH-Evidenz um Groessenordnungen schwaecher als direkte Nullstellenberechnung. Ein Budget von n <= 1000 schliesst Nullstellen abseits nur unterhalb der ERSTEN zeta-Nullstelle aus. Das ist kein Mangel der Rechnung, sondern der Sensitivitaet des Kriteriums."
+  }
+}

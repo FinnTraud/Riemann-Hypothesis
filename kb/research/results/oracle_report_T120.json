@@ -1,0 +1,238 @@
+{
+  "parameter": {
+    "T": 120.0,
+    "h": 0.1,
+    "mp_dps": 20
+  },
+  "ergebnisse": {
+    "zeta": {
+      "label": "Riemannsche zeta-Funktion",
+      "T1_funktionalgleichung": {
+        "test": "T1 Funktionalgleichung xi(s)=xi(1-s)",
+        "funktion": "zeta",
+        "bestanden": true,
+        "max_rel_abweichung": "1.71e-21",
+        "punkte": [
+          {
+            "s": "2+1i",
+            "rel_abweichung": "1.71e-21"
+          },
+          {
+            "s": "0.3+4.0i",
+            "rel_abweichung": "1.38e-21"
+          },
+          {
+            "s": "1.7+-2.5i",
+            "rel_abweichung": "1.19e-22"
+          }
+        ],
+        "trennt_zeta_von_dh": false,
+        "lehre": "Nicht trennend: die Funktionalgleichung ist KEIN RH-Indikator."
+      },
+      "T2_euler_produkt": {
+        "test": "T2 Multiplikativitaet a(mn)=a(m)a(n)  (Euler-Produkt)",
+        "funktion": "zeta",
+        "bestanden": true,
+        "verletzungen": [],
+        "trennt_zeta_von_dh": true,
+        "lehre": "Trennend. Die einzige der vier Struktureigenschaften, die DH fehlt -- und damit die einzige, an der ein RH-Beweis ansetzen kann."
+      },
+      "T3_offline_nullstellen": {
+        "test": "T3 Nullstellen abseits der kritischen Geraden",
+        "funktion": "zeta",
+        "rh_verletzung_nachgewiesen": false,
+        "gefunden": [
+          {
+            "nullstelle": "(0.5 + 114.320220915453j)",
+            "Re": "0.5",
+            "Im": "114.320220915453",
+            "abstand_zur_kritischen_geraden": "0.0",
+            "residuum_|f|": "9.05e-22",
+            "abseits": false
+          },
+          {
+            "nullstelle": "(0.5 + 176.44143429771j)",
+            "Re": "0.5",
+            "Im": "176.44143429771",
+            "abstand_zur_kritischen_geraden": "0.0",
+            "residuum_|f|": "4.7e-20",
+            "abseits": false
+          }
+        ],
+        "trennt_zeta_von_dh": true,
+        "lehre": "DH verletzt die RH nicht knapp, sondern deutlich (Re bis ~0.81 statt 0.5)."
+      },
+      "T4_vorzeichenwechsel_defizit": {
+        "test": "T4 Vorzeichenwechsel-Defizit (Turing-Methode)",
+        "funktion": "zeta",
+        "T": 120.0,
+        "schrittweite_h": 0.1,
+        "N(T)_argumentprinzip": "38.0",
+        "N(T)_gerundet": 38,
+        "rundungsabstand": "0.0",
+        "vorzeichenwechsel_von_Z": 38,
+        "defizit": 0,
+        "rh_verletzung_detektiert": false,
+        "trennt_zeta_von_dh": true,
+        "lehre": "Der einzige Test der Batterie, der die Verletzung von sich aus findet. Ein positives Defizit ist ein Existenzbeweis fuer Nullstellen abseits der Geraden -- ohne sie zu lokalisieren.",
+        "vorbehalt": "Schrittweite h=0.1; sehr enge Nullstellenpaare (Lehmer-Paare, docs/23) koennen ein Paar Vorzeichenwechsel verschlucken und ein Defizit VORTAEUSCHEN. h halbieren und nachpruefen."
+      },
+      "T5_rechts_von_1": {
+        "test": "T5 Nullstellen mit Re(s) > 1",
+        "funktion": "zeta",
+        "gerasterter_bereich": "Re in (1, 1.2], Im in (0, 120.0]",
+        "kleinstes_|f|_im_raster": "0.344625",
+        "an_stelle": "1.02+14.0i",
+        "gefundene_nullstellen": [],
+        "trennt_zeta_von_dh": false,
+        "lehre": "Im gerasterten Bereich findet der Test NICHTS -- fuer beide Funktionen. Fuer zeta ist das ein Satz, fuer DH nur eine Reichweitengrenze des Rasters (die Nullstellen mit Re>1 liegen sehr viel hoeher). Musterbeispiel dafuer, dass ein negatives numerisches Ergebnis KEINE Struktureigenschaft belegt -- vgl. Mertens/Skewes, docs/35."
+      }
+    },
+    "dh": {
+      "label": "Davenport-Heilbronn-Funktion",
+      "T1_funktionalgleichung": {
+        "test": "T1 Funktionalgleichung xi(s)=xi(1-s)",
+        "funktion": "dh",
+        "bestanden": true,
+        "max_rel_abweichung": "3.82e-21",
+        "punkte": [
+          {
+            "s": "2+1i",
+            "rel_abweichung": "1.3e-21"
+          },
+          {
+            "s": "0.3+4.0i",
+            "rel_abweichung": "2.27e-21"
+          },
+          {
+            "s": "1.7+-2.5i",
+            "rel_abweichung": "3.82e-21"
+          }
+        ],
+        "trennt_zeta_von_dh": false,
+        "lehre": "Nicht trennend: die Funktionalgleichung ist KEIN RH-Indikator."
+      },
+      "T2_euler_produkt": {
+        "test": "T2 Multiplikativitaet a(mn)=a(m)a(n)  (Euler-Produkt)",
+        "funktion": "dh",
+        "bestanden": false,
+        "verletzungen": [
+          {
+            "m": 2,
+            "n": 3,
+            "mn": 6,
+            "a(mn)": "1.0",
+            "a(m)a(n)": "-0.08070090315"
+          },
+          {
+            "m": 2,
+            "n": 7,
+            "mn": 14,
+            "a(mn)": "-1.0",
+            "a(m)a(n)": "0.08070090315"
+          }
+        ],
+        "trennt_zeta_von_dh": true,
+        "lehre": "Trennend. Die einzige der vier Struktureigenschaften, die DH fehlt -- und damit die einzige, an der ein RH-Beweis ansetzen kann."
+      },
+      "T3_offline_nullstellen": {
+        "test": "T3 Nullstellen abseits der kritischen Geraden",
+        "funktion": "dh",
+        "rh_verletzung_nachgewiesen": true,
+        "gefunden": [
+          {
+            "nullstelle": "(0.808517182456637 + 85.6993484853776j)",
+            "Re": "0.808517182456637",
+            "Im": "85.6993484853776",
+            "abstand_zur_kritischen_geraden": "0.308517",
+            "residuum_|f|": "3.07e-20",
+            "abseits": true
+          },
+          {
+            "nullstelle": "(0.650830080609737 + 114.163342730757j)",
+            "Re": "0.650830080609737",
+            "Im": "114.163342730757",
+            "abstand_zur_kritischen_geraden": "0.15083",
+            "residuum_|f|": "1.39e-20",
+            "abseits": true
+          },
+          {
+            "nullstelle": "(0.574356050450806 + 166.479305913168j)",
+            "Re": "0.574356050450806",
+            "Im": "166.479305913168",
+            "abstand_zur_kritischen_geraden": "0.0743561",
+            "residuum_|f|": "1.17e-20",
+            "abseits": true
+          },
+          {
+            "nullstelle": "(0.72425769462681 + 176.702461242856j)",
+            "Re": "0.72425769462681",
+            "Im": "176.702461242856",
+            "abstand_zur_kritischen_geraden": "0.224258",
+            "residuum_|f|": "6.21e-20",
+            "abseits": true
+          }
+        ],
+        "trennt_zeta_von_dh": true,
+        "lehre": "DH verletzt die RH nicht knapp, sondern deutlich (Re bis ~0.81 statt 0.5)."
+      },
+      "T4_vorzeichenwechsel_defizit": {
+        "test": "T4 Vorzeichenwechsel-Defizit (Turing-Methode)",
+        "funktion": "dh",
+        "T": 120.0,
+        "schrittweite_h": 0.1,
+        "N(T)_argumentprinzip": "68.0",
+        "N(T)_gerundet": 68,
+        "rundungsabstand": "1.08e-19",
+        "vorzeichenwechsel_von_Z": 64,
+        "defizit": 4,
+        "rh_verletzung_detektiert": true,
+        "trennt_zeta_von_dh": true,
+        "lehre": "Der einzige Test der Batterie, der die Verletzung von sich aus findet. Ein positives Defizit ist ein Existenzbeweis fuer Nullstellen abseits der Geraden -- ohne sie zu lokalisieren.",
+        "vorbehalt": "Schrittweite h=0.1; sehr enge Nullstellenpaare (Lehmer-Paare, docs/23) koennen ein Paar Vorzeichenwechsel verschlucken und ein Defizit VORTAEUSCHEN. h halbieren und nachpruefen."
+      },
+      "T5_rechts_von_1": {
+        "test": "T5 Nullstellen mit Re(s) > 1",
+        "funktion": "dh",
+        "gerasterter_bereich": "Re in (1, 1.2], Im in (0, 120.0]",
+        "kleinstes_|f|_im_raster": "0.351459",
+        "an_stelle": "1.02+85.5i",
+        "gefundene_nullstellen": [],
+        "trennt_zeta_von_dh": false,
+        "lehre": "Im gerasterten Bereich findet der Test NICHTS -- fuer beide Funktionen. Fuer zeta ist das ein Satz, fuer DH nur eine Reichweitengrenze des Rasters (die Nullstellen mit Re>1 liegen sehr viel hoeher). Musterbeispiel dafuer, dass ein negatives numerisches Ergebnis KEINE Struktureigenschaft belegt -- vgl. Mertens/Skewes, docs/35."
+      }
+    }
+  },
+  "fazit": [
+    {
+      "test": "T1 Funktionalgleichung xi(s)=xi(1-s)",
+      "zeta": "bestanden=True",
+      "dh": "bestanden=True",
+      "trennend": false
+    },
+    {
+      "test": "T2 Multiplikativitaet a(mn)=a(m)a(n)  (Euler-Produkt)",
+      "zeta": "bestanden=True",
+      "dh": "bestanden=False",
+      "trennend": true
+    },
+    {
+      "test": "T3 Nullstellen abseits der kritischen Geraden",
+      "zeta": "rh_verletzung_nachgewiesen=False",
+      "dh": "rh_verletzung_nachgewiesen=True",
+      "trennend": true
+    },
+    {
+      "test": "T4 Vorzeichenwechsel-Defizit (Turing-Methode)",
+      "zeta": "rh_verletzung_detektiert=False",
+      "dh": "rh_verletzung_detektiert=True",
+      "trennend": true
+    },
+    {
+      "test": "T5 Nullstellen mit Re(s) > 1",
+      "zeta": "gefundene_nullstellen=0",
+      "dh": "gefundene_nullstellen=0",
+      "trennend": false
+    }
+  ]
+}
