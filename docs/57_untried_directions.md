@@ -296,3 +296,17 @@ zugrunde liegenden DH-Nullstellen sind in `kb/research/results/oracle_offline_ze
 auf 15 Stellen dokumentiert und gegen
 [Balanzario–Sánchez-Ortiz, Math. Comp. 76 (2007)](https://www.ams.org/journals/mcom/2007-76-260/S0025-5718-07-01999-0/S0025-5718-07-01999-0.pdf)
 abgeglichen.
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!abstract]- Graph-Nachbarn (4)
+> - *ist Evidenz für* → [[14_Li_criterion_Bombieri_Lagarias_Weil_positivity|14 · Li-Kriterium, Bombieri–Lagarias & Weil-Positivität]] — Sensitivitaetsanalyse: die Nachweisgrenze des Li-Kriteriums skaliert wie gamma^2.
+> - *benutzt* → [[55_failure_taxonomy|55 · Muster im Scheitern]] — Leitet Richtungen aus den Luecken der Blocker-Matrix ab.
+> - *benutzt* → [[56_failure_autopsies|56 · Fehler-Autopsien]] — Nimmt Beobachtung 4 der Autopsien als Ausgangspunkt (leerer Euler-Quadrant).
+> - ← *wird benutzt von* [[63_experiment_decision_value|63 · Entscheidungswert von Experimenten]] — Priorisiert die dort abgeleiteten Richtungen.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

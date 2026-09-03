@@ -67,3 +67,20 @@ Klassische Siebmethoden (Brun, Selberg) können **prinzipiell** nicht zwischen Z
 - [On some reasons for doubting the Riemann hypothesis — A. Ivić (arXiv math/0311162)](https://arxiv.org/pdf/math/0311162)
 - [On Davenport and Heilbronn-Type of Functions (arXiv 1602.06328)](https://arxiv.org/abs/1602.06328)
 - [The Riemann Hypothesis — E. Bombieri (Clay official problem description)](https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!abstract]- Graph-Nachbarn (7)
+> - *ist Evidenz für* → **Euler-Produkt (Multiplikativität)** — Davenport–Heilbronn: ohne Euler-Produkt Off-Line-Nullstellen ⇒ Euler-Produkt nötig.
+> - *ist Obstruktion für* → **Riemann-Vermutung (RH)** — Sammlung der Barrieren (Parität, Mertens/Skewes-Warnung).
+> - ← *gestützt durch* [[16_Mertens_function_Riesz_criterion|16 · Mertens-Funktion & Riesz-Kriterium]] — Widerlegte Mertens-Vermutung: numerische Evidenz täuscht (Warnung).
+> - ← *gestützt durch* [[39_Cramer_probabilistic_model|39 · Cramér-Modell & probabilistische Heuristiken der Pr…]] — Maier-Satz: probabilistisches Modell im Detail falsch (Warnung).
+> - ← *wird benutzt von* [[55_failure_taxonomy|55 · Muster im Scheitern]] — Aggregiert die Obstruktionen zu einer Blocker-Taxonomie (Grund -> Ansaetze).
+> - ← *wird benutzt von* [[59_invariants_test_vectors|59 · Invarianten & Testvektoren]] — Ergaenzt die Anti-Crackpot-Checkliste um die Ueberschuss-Pruefung.
+> - ← *wird benutzt von* [[60_counterexample_oracle|60 · Das Gegenbeispiel-Orakel]] — Macht die Davenport-Heilbronn-Obstruktion maschinell pruefbar.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

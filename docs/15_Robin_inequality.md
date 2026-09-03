@@ -78,3 +78,25 @@ mit Gleichheit nur bei n = 1. **Herleitung:** Da H_n = log n + γ + O(1/n) und e
 - [Robin's Inequality & the Riemann Hypothesis — Emergent Mind](https://www.emergentmind.com/topics/robin-s-inequality)
 - [Criteria equivalent to the Riemann Hypothesis (arXiv 0808.0640)](https://arxiv.org/pdf/0808.0640)
 - [Riemann hypothesis — Wikipedia (Abschnitt: Consequences and equivalents)](https://en.wikipedia.org/wiki/Riemann_hypothesis)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (1)
+> - **Äquivalenz-Falle** *(Tier 2)* — Ein Kriterium ist zur RH äquivalent und damit exakt gleich schwer — die Umformulierung erzeugt den Anschein von Fortschritt, ohne die Beweislast zu senken.
+>   *Fluchtbedingung:* Eine der beiden Richtungen muss in STRIKT SCHWÄCHERER Form unbedingt bewiesen werden, oder es muss eine quantitative Größe geben, die sich unabhängig von der RH bewegen lässt (Λ ≤ 0.22, Anteil > 41 %, d_N-Raten). Nur solche Bewegungen zählen als Fortschritt — siehe docs/58.
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!missing]- Die fehlende Aussage
+> **Bewiesen:** Äquivalenz zur RH (Robin 1984); Lagarias' elementare Variante.
+> **Es fehlt:** Die Ungleichung selbst. Es gibt kein unbedingtes Teilresultat, das ihr näherkommt.
+> **Typ:** aequivalenz · Bewertung: [[58_gap_registry_near_miss]]
+
+> [!abstract]- Graph-Nachbarn (1)
+> - *äquivalent zu* → **Riemann-Vermutung (RH)** — Robin/Lagarias-Ungleichung ⟺ RH.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

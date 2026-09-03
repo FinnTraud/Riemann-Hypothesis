@@ -1,5 +1,5 @@
 {
-  "_comment": "Atomare mathematische Aussagen mit Status. status ∈ {proven, open, refuted}. kind ∈ {equivalence, theorem, conjecture, bound, counterexample}. doc = zugehöriges Dokument. Diese Schicht erlaubt dem Assistenten, NIE eine widerlegte Aussage als wahr auszugeben.",
+  "_comment": "Atomare mathematische Aussagen mit Status. status ∈ {proven, open, refuted}. kind ∈ {equivalence, theorem, conjecture, bound, counterexample}. doc = zugehöriges Dokument. Diese Schicht erlaubt dem Assistenten, NIE eine widerlegte Aussage als wahr auszugeben. ZUSATZ (docs/64): jeder Claim traegt trust (T0-lean-verified > T1-kanonisch > T2-peer-reviewed > T3-preprint > T4-repo-numerik > T5-konsens), trust_note mit Begruendung und zugang (sekundaer = aus Sekundaerdarstellungen erfasst, Primaerquelle fuer dieses Repo NICHT gelesen; eigene_rechnung = hier gerechnet).",
   "claims": [
     {
       "id": "claim-rh",
@@ -7,7 +7,10 @@
       "status": "open",
       "kind": "conjecture",
       "doc": "doc-38",
-      "source": "Clay/Bombieri 2000"
+      "source": "Clay/Bombieri 2000",
+      "trust": "T1-kanonisch",
+      "trust_note": "Offizielle Clay-Problemstellung (Bombieri). Status: offen.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-rh-fq",
@@ -15,7 +18,10 @@
       "status": "proven",
       "kind": "theorem",
       "doc": "doc-18",
-      "source": "Weil 1948 (Kurven), Deligne 1974 (allgemein)"
+      "source": "Weil 1948 (Kurven), Deligne 1974 (allgemein)",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-koch",
@@ -23,7 +29,10 @@
       "status": "proven",
       "kind": "equivalence",
       "doc": "doc-02",
-      "source": "von Koch 1901"
+      "source": "von Koch 1901",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-mertens-criterion",
@@ -31,7 +40,10 @@
       "status": "proven",
       "kind": "equivalence",
       "doc": "doc-16",
-      "source": "klassisch"
+      "source": "klassisch",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-mertens-conjecture",
@@ -39,7 +51,10 @@
       "status": "refuted",
       "kind": "counterexample",
       "doc": "doc-16",
-      "source": "Odlyzko–te Riele 1985: limsup M(x)/√x > 1.06"
+      "source": "Odlyzko–te Riele 1985: limsup M(x)/√x > 1.06",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-robin",
@@ -47,7 +62,10 @@
       "status": "proven",
       "kind": "equivalence",
       "doc": "doc-15",
-      "source": "Robin 1984"
+      "source": "Robin 1984",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-li",
@@ -55,7 +73,10 @@
       "status": "proven",
       "kind": "equivalence",
       "doc": "doc-14",
-      "source": "Li 1997"
+      "source": "Li 1997",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-weil-positivity",
@@ -63,7 +84,10 @@
       "status": "proven",
       "kind": "equivalence",
       "doc": "doc-14",
-      "source": "Weil 1952"
+      "source": "Weil 1952",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-nyman-beurling",
@@ -71,7 +95,10 @@
       "status": "proven",
       "kind": "equivalence",
       "doc": "doc-13",
-      "source": "Beurling 1955, Báez-Duarte 2003"
+      "source": "Beurling 1955, Báez-Duarte 2003",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-jensen-lp",
@@ -79,7 +106,10 @@
       "status": "proven",
       "kind": "equivalence",
       "doc": "doc-29",
-      "source": "Pólya 1927; GORZ 2019 (Teilfortschritt d≤8)"
+      "source": "Pólya 1927; GORZ 2019 (Teilfortschritt d≤8)",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-dbn-equiv",
@@ -87,7 +117,10 @@
       "status": "proven",
       "kind": "equivalence",
       "doc": "doc-23",
-      "source": "de Bruijn/Newman"
+      "source": "de Bruijn/Newman",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-dbn-lower",
@@ -95,7 +128,10 @@
       "status": "proven",
       "kind": "theorem",
       "doc": "doc-23",
-      "source": "Rodgers–Tao 2018"
+      "source": "Rodgers–Tao 2018",
+      "trust": "T2-peer-reviewed",
+      "trust_note": "In referierter Zeitschrift publiziert; noch nicht Lehrbuchbestand.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-dbn-upper",
@@ -103,7 +139,10 @@
       "status": "proven",
       "kind": "bound",
       "doc": "doc-23",
-      "source": "Polymath15 2019"
+      "source": "Polymath15 2019",
+      "trust": "T2-peer-reviewed",
+      "trust_note": "In referierter Zeitschrift publiziert; noch nicht Lehrbuchbestand.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-lapidus",
@@ -111,7 +150,10 @@
       "status": "proven",
       "kind": "equivalence",
       "doc": "doc-44",
-      "source": "Lapidus–Maier 1995"
+      "source": "Lapidus–Maier 1995",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-volchkov",
@@ -119,7 +161,10 @@
       "status": "proven",
       "kind": "equivalence",
       "doc": "doc-45",
-      "source": "Volchkov 1995"
+      "source": "Volchkov 1995",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-redheffer",
@@ -127,7 +172,10 @@
       "status": "proven",
       "kind": "equivalence",
       "doc": "doc-45",
-      "source": "Redheffer 1977"
+      "source": "Redheffer 1977",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-hardy",
@@ -135,7 +183,10 @@
       "status": "proven",
       "kind": "theorem",
       "doc": "doc-03",
-      "source": "Hardy 1914"
+      "source": "Hardy 1914",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-proportion",
@@ -143,7 +194,10 @@
       "status": "proven",
       "kind": "theorem",
       "doc": "doc-04",
-      "source": "Levinson 1/3, Conrey 2/5, später >0.41"
+      "source": "Levinson 1/3, Conrey 2/5, später >0.41",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-montgomery",
@@ -151,7 +205,10 @@
       "status": "open",
       "kind": "conjecture",
       "doc": "doc-06",
-      "source": "Montgomery 1973 (bedingt/teilbewiesen)"
+      "source": "Montgomery 1973 (bedingt/teilbewiesen)",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-guth-maynard",
@@ -159,7 +216,10 @@
       "status": "proven",
       "kind": "bound",
       "doc": "doc-22",
-      "source": "Guth–Maynard 2024"
+      "source": "Guth–Maynard 2024",
+      "trust": "T2-peer-reviewed",
+      "trust_note": "In referierter Zeitschrift publiziert; noch nicht Lehrbuchbestand.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-zhang",
@@ -167,7 +227,10 @@
       "status": "proven",
       "kind": "bound",
       "doc": "doc-32",
-      "source": "Zhang 2022"
+      "source": "Zhang 2022",
+      "trust": "T2-peer-reviewed",
+      "trust_note": "In referierter Zeitschrift publiziert; noch nicht Lehrbuchbestand.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-dh",
@@ -175,7 +238,10 @@
       "status": "proven",
       "kind": "counterexample",
       "doc": "doc-35",
-      "source": "Davenport–Heilbronn 1936"
+      "source": "Davenport–Heilbronn 1936",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-epstein",
@@ -183,7 +249,10 @@
       "status": "proven",
       "kind": "counterexample",
       "doc": "doc-43",
-      "source": "Davenport–Heilbronn; Voronin"
+      "source": "Davenport–Heilbronn; Voronin",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-selberg-rigidity",
@@ -191,7 +260,10 @@
       "status": "proven",
       "kind": "theorem",
       "doc": "doc-43",
-      "source": "Kaczorowski–Perelli"
+      "source": "Kaczorowski–Perelli",
+      "trust": "T2-peer-reviewed",
+      "trust_note": "In referierter Zeitschrift publiziert; noch nicht Lehrbuchbestand.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-voronin",
@@ -199,7 +271,10 @@
       "status": "proven",
       "kind": "theorem",
       "doc": "doc-46",
-      "source": "Voronin 1975"
+      "source": "Voronin 1975",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-debranges",
@@ -207,7 +282,10 @@
       "status": "refuted",
       "kind": "counterexample",
       "doc": "doc-20",
-      "source": "Conrey–Li 2000: für ζ verletzt"
+      "source": "Conrey–Li 2000: für ζ verletzt",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-atiyah",
@@ -215,7 +293,10 @@
       "status": "refuted",
       "kind": "counterexample",
       "doc": "doc-25",
-      "source": "Community 2018: Liouville-Verletzung, unveröffentlichte Grundlage"
+      "source": "Community 2018: Liouville-Verletzung, unveröffentlichte Grundlage",
+      "trust": "T5-konsens",
+      "trust_note": "Die Zurueckweisung ist Fachkonsens (Vortragskritik, Blogs, Presse), aber es existiert KEINE referierte Widerlegungsarbeit. Ehrlichste Einstufung: begruendeter Konsens, nicht publizierter Beweis.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-numerical",
@@ -223,7 +304,10 @@
       "status": "proven",
       "kind": "theorem",
       "doc": "doc-24",
-      "source": "Gourdon–Demichel 2004; Platt rigoros bis 3.06·10^10"
+      "source": "Gourdon–Demichel 2004; Platt rigoros bis 3.06·10^10",
+      "trust": "T2-peer-reviewed",
+      "trust_note": "Platts Verifikation nutzt Intervallarithmetik und ist ein Zertifikat, keine Stichprobe. Gourdon-Demichel dagegen ist unzertifizierte Numerik -- die beiden duerfen nicht gleich behandelt werden.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-selberg-zeta",
@@ -231,7 +315,10 @@
       "status": "proven",
       "kind": "theorem",
       "doc": "doc-19",
-      "source": "Selberg 1956"
+      "source": "Selberg 1956",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-lindelof",
@@ -239,7 +326,10 @@
       "status": "open",
       "kind": "theorem",
       "doc": "doc-17",
-      "source": "klassisch; LH selbst offen"
+      "source": "klassisch; LH selbst offen",
+      "trust": "T1-kanonisch",
+      "trust_note": "Lehrbuchniveau (Titchmarsh, Iwaniec-Kowalski, Edwards); jahrzehntelang unabhaengig geprueft.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-cvs-groundstate",
@@ -247,7 +337,10 @@
       "status": "proven",
       "kind": "theorem",
       "doc": "doc-52",
-      "source": "Connes-van Suijlekom, arXiv:2511.23257 (2025)"
+      "source": "Connes-van Suijlekom, arXiv:2511.23257 (2025)",
+      "trust": "T3-preprint",
+      "trust_note": "arXiv-Preprint bzw. sehr junge Arbeit; Begutachtungsstand hier nicht verifiziert.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-caratheodory-fejer",
@@ -255,7 +348,10 @@
       "status": "proven",
       "kind": "theorem",
       "doc": "doc-52",
-      "source": "Caratheodory-Fejer 1911; C*-Fassung in arXiv:2511.23257"
+      "source": "Caratheodory-Fejer 1911; C*-Fassung in arXiv:2511.23257",
+      "trust": "T3-preprint",
+      "trust_note": "arXiv-Preprint bzw. sehr junge Arbeit; Begutachtungsstand hier nicht verifiziert.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-truncated-weil-convergence",
@@ -263,7 +359,10 @@
       "status": "open",
       "kind": "conjecture",
       "doc": "doc-52",
-      "source": "Connes-van Suijlekom 2025; Connes 2026 (arXiv:2602.04022)"
+      "source": "Connes-van Suijlekom 2025; Connes 2026 (arXiv:2602.04022)",
+      "trust": "T3-preprint",
+      "trust_note": "arXiv-Preprint bzw. sehr junge Arbeit; Begutachtungsstand hier nicht verifiziert.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-ccm-numerics",
@@ -271,7 +370,10 @@
       "status": "proven",
       "kind": "bound",
       "doc": "doc-52",
-      "source": "Connes-Consani-Moscovici arXiv:2511.22755; Connes arXiv:2602.04022; arXiv:2605.20224 (numerische Beobachtung, kein Konvergenzbeweis)"
+      "source": "Connes-Consani-Moscovici arXiv:2511.22755; Connes arXiv:2602.04022; arXiv:2605.20224 (numerische Beobachtung, kein Konvergenzbeweis)",
+      "trust": "T3-preprint",
+      "trust_note": "arXiv-Preprint bzw. sehr junge Arbeit; Begutachtungsstand hier nicht verifiziert.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-pcc-simple-critical",
@@ -279,7 +381,10 @@
       "status": "proven",
       "kind": "theorem",
       "doc": "doc-53",
-      "source": "Goldston-Lee-Schettler-Suriajaya, arXiv:2503.15449 (2025)"
+      "source": "Goldston-Lee-Schettler-Suriajaya, arXiv:2503.15449 (2025)",
+      "trust": "T3-preprint",
+      "trust_note": "arXiv-Preprint bzw. sehr junge Arbeit; Begutachtungsstand hier nicht verifiziert.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-ah-pcc-simple-critical",
@@ -287,7 +392,10 @@
       "status": "proven",
       "kind": "theorem",
       "doc": "doc-53",
-      "source": "Goldston-Lee-Schettler-Suriajaya, arXiv:2507.06823 (2025)"
+      "source": "Goldston-Lee-Schettler-Suriajaya, arXiv:2507.06823 (2025)",
+      "trust": "T3-preprint",
+      "trust_note": "arXiv-Preprint bzw. sehr junge Arbeit; Begutachtungsstand hier nicht verifiziert.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-ah-essential-simplicity",
@@ -295,7 +403,10 @@
       "status": "proven",
       "kind": "theorem",
       "doc": "doc-53",
-      "source": "Baluyot-Goldston-Suriajaya-Turnage-Butterbaugh, arXiv:2508.10857 (2025)"
+      "source": "Baluyot-Goldston-Suriajaya-Turnage-Butterbaugh, arXiv:2508.10857 (2025)",
+      "trust": "T3-preprint",
+      "trust_note": "arXiv-Preprint bzw. sehr junge Arbeit; Begutachtungsstand hier nicht verifiziert.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-alternative-hypothesis",
@@ -303,7 +414,10 @@
       "status": "open",
       "kind": "conjecture",
       "doc": "doc-53",
-      "source": "Baluyot 2016; vgl. Landau-Siegel-Szenarien (Dok. 32)"
+      "source": "Baluyot 2016; vgl. Landau-Siegel-Szenarien (Dok. 32)",
+      "trust": "T3-preprint",
+      "trust_note": "arXiv-Preprint bzw. sehr junge Arbeit; Begutachtungsstand hier nicht verifiziert.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-lean-pnt",
@@ -311,7 +425,10 @@
       "status": "proven",
       "kind": "theorem",
       "doc": "doc-54",
-      "source": "PrimeNumberTheoremAnd (Kontorovich-Tao, ab 2024); Abschluss durch Math Inc. 'Gauss', September 2025"
+      "source": "PrimeNumberTheoremAnd (Kontorovich-Tao, ab 2024); Abschluss durch Math Inc. 'Gauss', September 2025",
+      "trust": "T0-lean-verified",
+      "trust_note": "Maschinell geprueft (Lean 4 / mathlib-Umfeld). Hoechste verfuegbare Stufe.",
+      "zugang": "sekundaer"
     },
     {
       "id": "claim-antedb",
@@ -319,7 +436,43 @@
       "status": "proven",
       "kind": "bound",
       "doc": "doc-54",
-      "source": "Tao-Trudgian-Yang, arXiv:2501.16779 (2025)"
+      "source": "Tao-Trudgian-Yang, arXiv:2501.16779 (2025)",
+      "trust": "T3-preprint",
+      "trust_note": "arXiv-Preprint bzw. sehr junge Arbeit; Begutachtungsstand hier nicht verifiziert.",
+      "zugang": "sekundaer"
+    },
+    {
+      "id": "claim-dh-offline-zeros-computed",
+      "statement": "Die Davenport-Heilbronn-Funktion hat in 0 < Im(s) < 200 genau vier Nullstellen abseits der kritischen Geraden in der oberen Halbebene, u.a. bei 0.808517+85.699348i und 0.650830+114.163343i.",
+      "status": "proven",
+      "kind": "counterexample",
+      "doc": "doc-60",
+      "source": "In diesem Repo gerechnet (kb/counterexample.py, mpmath 20 Stellen); erste drei mit Balanzario-Sanchez-Ortiz 2007 vertraeglich, die vierte (0.724258+176.702461i) hier gefunden.",
+      "trust": "T4-repo-numerik",
+      "trust_note": "Selbst gerechnet, nicht extern verifiziert. Zwei unabhaengige Verfahren im Repo (Argumentprinzip-Defizit und findroot) stimmen ueberein; das ist eine Konsistenzprobe, keine Peer Review.",
+      "zugang": "eigene_rechnung"
+    },
+    {
+      "id": "claim-turing-deficit-dh",
+      "statement": "Das Vorzeichenwechsel-Defizit N(T) minus Anzahl Vorzeichenwechsel von Z betraegt fuer die Davenport-Heilbronn-Funktion 4 bei T=120 und 8 bei T=200; fuer zeta ist es 0 bei beiden Hoehen.",
+      "status": "proven",
+      "kind": "bound",
+      "doc": "doc-60",
+      "source": "In diesem Repo gerechnet (kb/counterexample.py, Schrittweite h=0.1).",
+      "trust": "T4-repo-numerik",
+      "trust_note": "Selbst gerechnet. Vorbehalt: bei Schrittweite h koennen sehr enge Nullstellenpaare ein Defizit vortaeuschen; fuer DH durch unabhaengige Lokalisierung der vier Paare ausgeschlossen.",
+      "zugang": "eigene_rechnung"
+    },
+    {
+      "id": "claim-li-sensitivity",
+      "statement": "Die Nachweisgrenze des Li-Kriteriums skaliert wie gamma^2: um eine Nullstelle abseits der Geraden in Hoehe gamma zu detektieren, braucht man lambda_n bis n ~ C gamma^2. Ein Budget n <= 1000 schliesst Nullstellen abseits nur bis gamma ~ 3.6 aus.",
+      "status": "proven",
+      "kind": "bound",
+      "doc": "doc-57",
+      "source": "In diesem Repo hergeleitet und gerechnet (kb/counterexample.py, Funktion li_detection_threshold) aus |1-1/rho| = 1 + (1-2 beta)/(2 gamma^2) + O(gamma^-4).",
+      "trust": "T4-repo-numerik",
+      "trust_note": "Die Asymptotik von |1-1/rho| ist elementar und nachrechenbar; die Schwellenwerte haengen von der gewaehlten Vergleichsgroesse (Hauptterm ~ (n/2)(log n - 1 - log 2pi)) ab. Groessenordnung robust, exakte Zahlen konventionsabhaengig.",
+      "zugang": "eigene_rechnung"
     }
   ]
 }

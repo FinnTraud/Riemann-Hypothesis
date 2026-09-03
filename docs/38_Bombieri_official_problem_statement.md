@@ -56,3 +56,14 @@ RH ⟺ ψ(x) = x + O(√x log²x).
 - [Problems of the Millennium: the Riemann Hypothesis — E. Bombieri (Clay, PDF)](https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf)
 - [Riemann Hypothesis — Clay Mathematics Institute](https://www.claymath.org/millennium/riemann-hypothesis/)
 - [The Riemann Hypothesis — E. Bombieri (UC Davis Mirror)](https://www.math.ucdavis.edu/~tracy/courses/math205A/riemann.pdf)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!abstract]- Graph-Nachbarn (1)
+> - *ist Instanz von* → **Riemann-Vermutung (RH)** — Offizielle Clay-Problemstellung der RH.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

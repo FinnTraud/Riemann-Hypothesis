@@ -232,3 +232,18 @@ Belege stehen jeweils dort. Die primären Grundlagen der Blocker:
 - [On some reasons for doubting the Riemann hypothesis — A. Ivić (arXiv math/0311162)](https://arxiv.org/pdf/math/0311162)
 - [The Riemann Hypothesis — E. Bombieri (Clay)](https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf)
 - [Zeros of the Davenport–Heilbronn Counterexample (AMS Math. Comp. 76, 2007)](https://www.ams.org/journals/mcom/2007-76-260/S0025-5718-07-01999-0/S0025-5718-07-01999-0.pdf)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!abstract]- Graph-Nachbarn (5)
+> - *benutzt* → [[35_obstructions_barriers|35 · Obstruktionen & Barrieren]] — Aggregiert die Obstruktionen zu einer Blocker-Taxonomie (Grund -> Ansaetze).
+> - *benutzt* → [[41_synthesis_what_a_proof_needs|41 · Synthese]] — Invertiert die Leitmotiv-Zerlegung zur Obstruktions-x-Ansatz-Matrix.
+> - ← *wird benutzt von* [[57_untried_directions|57 · Noch nicht Versuchtes]] — Leitet Richtungen aus den Luecken der Blocker-Matrix ab.
+> - ← *wird benutzt von* [[58_gap_registry_near_miss|58 · GAP-Registry & Near-Miss-Bewertung]] — Bewertet die Luecken entlang der Blocker-Zuordnung.
+> - ← *wird benutzt von* [[63_experiment_decision_value|63 · Entscheidungswert von Experimenten]] — Bemisst Experimente an der Reichweite in der Blocker-Matrix.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

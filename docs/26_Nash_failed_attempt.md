@@ -51,3 +51,21 @@ Historisch/biografisch bedeutsam als Mahnung über die Schwere des Problems; mat
 - [A Brilliant Madness — PBS American Experience](https://www.pbs.org/wgbh/americanexperience/films/nash/)
 - [John Nash and his Experiences with Schizophrenia](https://lmclark7.com/john-nash-documentary/)
 - [Riemann Hypothesis — Wolfram MathWorld (history)](https://mathworld.wolfram.com/RiemannHypothesis.html)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (1)
+> - **Nicht-Verifizierbarkeit** *(Tier 3)* — Es existiert kein prüfbarer Beweistext — entweder gar keiner, oder einer, dessen Grundlage unpubliziert ist, oder einer, den niemand mehr nachprüft.
+>   *Fluchtbedingung:* Ein vollständiger, öffentlicher, selbsttragender Beweistext — im Idealfall maschinengeprüft. Das ist die einzige Fluchtbedingung der Sammlung, die heute schon technisch erreichbar ist.
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!abstract]- Graph-Nachbarn (2)
+> - *widerlegt durch* → **Riemann-Vermutung (RH)** — Nash: nie kohärenter Beweis.
+> - ← *wird benutzt von* [[56_failure_autopsies|56 · Fehler-Autopsien]] — Autopsie A3: kein pruefbares Artefakt.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

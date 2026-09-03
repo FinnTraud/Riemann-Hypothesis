@@ -106,3 +106,16 @@ Diese Identität ist der Angelpunkt der Spurformel-Ansätze (Connes, Dok. 10) un
 - [The Explicit Formula in simple terms (arXiv math/9810169)](https://arxiv.org/pdf/math/9810169)
 - [Sketch of the Riemann-von Mangoldt explicit formula — Reed College](https://people.reed.edu/~jerry/361/lectures/rvm.pdf)
 - [On the error term in the explicit formula of Riemann–von Mangoldt (arXiv 2111.10001)](https://arxiv.org/pdf/2111.10001)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!abstract]- Graph-Nachbarn (3)
+> - *benutzt* → [[01_Riemann_1859_original_paper|01 · Riemanns Originalarbeit]] — Explizite Formel baut auf Funktionalgleichung/ξ auf.
+> - ← *hat Instanz* **Explizite Formel (Primzahlen↔Nullstellen)** — Doc 02 stellt die explizite Formel dar.
+> - ← *wird benutzt von* [[52_Connes_truncated_Weil_spectral_realization|52 · Abgeschnittene Weil-Quadratform & Zeta-Spektraltrip…]] — Guinand-Weil-Testfunktionen kommen aus der expliziten Formel.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

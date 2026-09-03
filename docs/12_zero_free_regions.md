@@ -83,3 +83,20 @@ Unter RH wäre der Fehler O(√x log²x) — exponentiell besser. Das illustrier
 - [Explicit bounds on ζ(s) in the critical strip and a zero-free region (arXiv 2301.03165)](https://arxiv.org/pdf/2301.03165)
 - [Zero-free regions inspired by work of Heath-Brown (arXiv 2603.21490)](https://arxiv.org/html/2603.21490)
 - [Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function (arXiv 1410.3926)](https://arxiv.org/pdf/1410.3926)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (1)
+> - **Paritätsbarriere** *(Tier 1)* — Siebmethoden können gerade und ungerade Primfaktorzahl prinzipiell nicht trennen — genau das misst μ(n).
+>   *Fluchtbedingung:* Ein bilinearer Input (Typ-II-Summen), ein Spektralinput (automorphe Formen) oder eine andere Quelle von Kancellation, die nicht aus dem Sieb selbst kommt.
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!abstract]- Graph-Nachbarn (1)
+> - *schwächer als* → **Riemann-Vermutung (RH)** — Nullstellenfreie Region ist weit schwächer als RH.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

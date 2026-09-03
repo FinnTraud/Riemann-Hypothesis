@@ -69,3 +69,27 @@ Bessere N(σ,T)-Schranken ⇒ asymptotische Primzahlzählung in kürzeren Interv
 - [The Riemann Hypothesis ... Is a Step Closer to Being Solved — Scientific American](https://www.scientificamerican.com/article/the-riemann-hypothesis-the-biggest-problem-in-mathematics-is-a-step-closer/)
 - [New Horizons in Riemann Zeta Function Analysis: From Guth-Maynard Estimates ... (ResearchGate)](https://www.researchgate.net/publication/398421128_NEW_HORIZONS_IN_RIEMANN_ZETA_FUNCTION_ANALYSIS_FROM_GUTH-MAYNARD_ESTIMATES_TO_THE_GADU-IOMM_OPERATORIAL_PARADIGM)
 - [The Riemann Hypothesis: Past, Present and a Letter Through Time (arXiv 2602.04022)](https://arxiv.org/abs/2602.04022)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (1)
+> - **Anteils-Decke der Mollifier-Methoden** *(Tier 2)* — Levinson/Conrey-Technik liefert einen positiven Anteil, ist aber strukturell weit unter 100 % gedeckelt.
+>   *Fluchtbedingung:* Ein Mechanismus, der ALLE Nullstellen erfasst statt einen Anteil — Anteilsmethoden können die RH prinzipiell nicht abschließen, auch nicht im Limes.
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!missing]- Die fehlende Aussage
+> **Bewiesen:** Guth–Maynard 2024: erste substanzielle Verbesserung der Schranke für N(σ,T) bei σ = 3/4 seit 1940.
+> **Es fehlt:** Die volle Dichte-Hypothese, und danach die Lindelöf-Hypothese. Beide sind schwächer als die RH.
+> **Typ:** quantitativ · Bewertung: [[58_gap_registry_near_miss]]
+
+> [!abstract]- Graph-Nachbarn (3)
+> - *benutzt* → [[17_Lindelof_density_hypothesis|17 · Lindelöf-Hypothese & Dichte-Hypothese]] — Guth–Maynard verbessert Dichte-Abschätzungen Richtung Dichte-Hypothese.
+> - ← *gestützt durch* [[49_live_analytic_frontier|49 · Live-Front der analytischen Zahlentheorie]] — Live-Front: explizite Dichte, Subkonvexität, Momente.
+> - ← *wird benutzt von* [[54_machine_assisted_number_theory_ANTEDB_Lean|54 · Maschinengestützte Zahlentheorie]] — Additive Energie der Nullstellen ist die Guth-Maynard-Zwischengroesse.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

@@ -1,0 +1,788 @@
+{
+  "nodes": [
+    {
+      "id": "hdr-A",
+      "x": 0,
+      "y": -200,
+      "width": 280,
+      "height": 90,
+      "type": "text",
+      "text": "## Positivität / Reellwurzeligkeit\n\nLeitmotiv **A** · siehe [[41_synthesis_what_a_proof_needs]]",
+      "color": "2"
+    },
+    {
+      "id": "hdr-B",
+      "x": 320,
+      "y": -200,
+      "width": 280,
+      "height": 90,
+      "type": "text",
+      "text": "## Spektrale Interpretation\n\nLeitmotiv **B** · siehe [[41_synthesis_what_a_proof_needs]]",
+      "color": "5"
+    },
+    {
+      "id": "hdr-C",
+      "x": 640,
+      "y": -200,
+      "width": 280,
+      "height": 90,
+      "type": "text",
+      "text": "## Geometrie-Transfer\n\nLeitmotiv **C** · siehe [[41_synthesis_what_a_proof_needs]]",
+      "color": "3"
+    },
+    {
+      "id": "hdr-D",
+      "x": 960,
+      "y": -200,
+      "width": 280,
+      "height": 90,
+      "type": "text",
+      "text": "## Analytisch / numerisch\n\nLeitmotiv **D** · siehe [[41_synthesis_what_a_proof_needs]]",
+      "color": "6"
+    },
+    {
+      "id": "yr-1859",
+      "x": -200,
+      "y": 0,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 1859"
+    },
+    {
+      "id": "yr-1896",
+      "x": -200,
+      "y": 150,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 1896"
+    },
+    {
+      "id": "yr-1914",
+      "x": -200,
+      "y": 300,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 1914"
+    },
+    {
+      "id": "yr-1916",
+      "x": -200,
+      "y": 450,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 1916"
+    },
+    {
+      "id": "yr-1936",
+      "x": -200,
+      "y": 600,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 1936"
+    },
+    {
+      "id": "yr-1948",
+      "x": -200,
+      "y": 750,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 1948"
+    },
+    {
+      "id": "yr-1952",
+      "x": -200,
+      "y": 900,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 1952"
+    },
+    {
+      "id": "yr-1955",
+      "x": -200,
+      "y": 1050,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 1955"
+    },
+    {
+      "id": "yr-1956",
+      "x": -200,
+      "y": 1200,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 1956"
+    },
+    {
+      "id": "yr-1972",
+      "x": -200,
+      "y": 1350,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 1972"
+    },
+    {
+      "id": "yr-1974",
+      "x": -200,
+      "y": 1500,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 1974"
+    },
+    {
+      "id": "yr-1975",
+      "x": -200,
+      "y": 1650,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 1975"
+    },
+    {
+      "id": "yr-1976",
+      "x": -200,
+      "y": 1800,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 1976"
+    },
+    {
+      "id": "yr-1984",
+      "x": -200,
+      "y": 1950,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 1984"
+    },
+    {
+      "id": "yr-1986",
+      "x": -200,
+      "y": 2100,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 1986"
+    },
+    {
+      "id": "yr-1995",
+      "x": -200,
+      "y": 2250,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 1995"
+    },
+    {
+      "id": "yr-1997",
+      "x": -200,
+      "y": 2400,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 1997"
+    },
+    {
+      "id": "yr-1999",
+      "x": -200,
+      "y": 2550,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 1999"
+    },
+    {
+      "id": "yr-2000",
+      "x": -200,
+      "y": 2700,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 2000"
+    },
+    {
+      "id": "yr-2007",
+      "x": -200,
+      "y": 2850,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 2007"
+    },
+    {
+      "id": "yr-2017",
+      "x": -200,
+      "y": 3000,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 2017"
+    },
+    {
+      "id": "yr-2018",
+      "x": -200,
+      "y": 3150,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 2018"
+    },
+    {
+      "id": "yr-2019",
+      "x": -200,
+      "y": 3300,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 2019"
+    },
+    {
+      "id": "yr-2021",
+      "x": -200,
+      "y": 3450,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 2021"
+    },
+    {
+      "id": "yr-2022",
+      "x": -200,
+      "y": 3600,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 2022"
+    },
+    {
+      "id": "yr-2024",
+      "x": -200,
+      "y": 3750,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 2024"
+    },
+    {
+      "id": "yr-2025",
+      "x": -200,
+      "y": 3900,
+      "width": 150,
+      "height": 60,
+      "type": "text",
+      "text": "### 2025"
+    },
+    {
+      "id": "ev-0",
+      "x": 960,
+      "y": 0,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Riemann**\n\n[[01_Riemann_1859_original_paper]]",
+      "color": "6"
+    },
+    {
+      "id": "ev-1",
+      "x": 960,
+      "y": 150,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**PNT**\n\n[[12_zero_free_regions]]",
+      "color": "6"
+    },
+    {
+      "id": "ev-2",
+      "x": 960,
+      "y": 300,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Hardy**\n\n[[03_Hardy_1914_infinitely_many_zeros]]",
+      "color": "6"
+    },
+    {
+      "id": "ev-3",
+      "x": 0,
+      "y": 450,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Riesz**\n\n[[16_Mertens_function_Riesz_criterion]]",
+      "color": "2"
+    },
+    {
+      "id": "ev-4",
+      "x": 960,
+      "y": 600,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Davenport–Heilbronn**\n\n[[35_obstructions_barriers]]",
+      "color": "6"
+    },
+    {
+      "id": "ev-5",
+      "x": 640,
+      "y": 750,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Weil 𝔽_q**\n\n[[18_Weil_conjectures_function_fields_Deligne]]",
+      "color": "3"
+    },
+    {
+      "id": "ev-6",
+      "x": 0,
+      "y": 900,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Weil-Positivität**\n\n[[14_Li_criterion_Bombieri_Lagarias_Weil_positivity]]",
+      "color": "2"
+    },
+    {
+      "id": "ev-7",
+      "x": 0,
+      "y": 1050,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Nyman–Beurling**\n\n[[13_Nyman_Beurling_Baez_Duarte]]",
+      "color": "2"
+    },
+    {
+      "id": "ev-8",
+      "x": 320,
+      "y": 1200,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Selberg-Spurformel**\n\n[[19_Selberg_trace_formula_zeta]]",
+      "color": "5"
+    },
+    {
+      "id": "ev-9",
+      "x": 320,
+      "y": 1350,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Montgomery–Dyson**\n\n[[06_Montgomery_pair_correlation_RMT]]",
+      "color": "5"
+    },
+    {
+      "id": "ev-10",
+      "x": 960,
+      "y": 1500,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Levinson**\n\n[[04_Levinson_Conrey_positive_proportion]]",
+      "color": "6"
+    },
+    {
+      "id": "ev-11",
+      "x": 960,
+      "y": 1650,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Voronin**\n\n[[46_Voronin_universality]]",
+      "color": "6"
+    },
+    {
+      "id": "ev-12",
+      "x": 0,
+      "y": 1800,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**de Bruijn–Newman**\n\n[[23_de_Bruijn_Newman_constant_Polymath15]]",
+      "color": "2"
+    },
+    {
+      "id": "ev-13",
+      "x": 0,
+      "y": 1950,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Robin**\n\n[[15_Robin_inequality]]",
+      "color": "2"
+    },
+    {
+      "id": "ev-14",
+      "x": 0,
+      "y": 2100,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**de Branges**\n\n[[20_de_Branges_Hilbert_spaces]]",
+      "color": "2"
+    },
+    {
+      "id": "ev-15",
+      "x": 640,
+      "y": 2250,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Bost–Connes**\n\n[[34_Bost_Connes_system]]",
+      "color": "3"
+    },
+    {
+      "id": "ev-16",
+      "x": 0,
+      "y": 2400,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Li-Kriterium**\n\n[[14_Li_criterion_Bombieri_Lagarias_Weil_positivity]]",
+      "color": "2"
+    },
+    {
+      "id": "ev-17",
+      "x": 640,
+      "y": 2550,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Connes-Spurformel**\n\n[[10_Connes_noncommutative_geometry]]",
+      "color": "3"
+    },
+    {
+      "id": "ev-18",
+      "x": 320,
+      "y": 2550,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Berry–Keating**\n\n[[08_Berry_Keating_xp_model]]",
+      "color": "5"
+    },
+    {
+      "id": "ev-19",
+      "x": 320,
+      "y": 2700,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Keating–Snaith**\n\n[[07_Keating_Snaith_moments]]",
+      "color": "5"
+    },
+    {
+      "id": "ev-20",
+      "x": 640,
+      "y": 2850,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**𝔽₁ / arithmetic site**\n\n[[30_F1_field_one_element_arithmetic_site]]",
+      "color": "3"
+    },
+    {
+      "id": "ev-21",
+      "x": 320,
+      "y": 3000,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Bender–Brody–Müller**\n\n[[09_Bender_Brody_Muller_2017_Hamiltonian]]",
+      "color": "5"
+    },
+    {
+      "id": "ev-22",
+      "x": 0,
+      "y": 3150,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Rodgers–Tao Λ≥0**\n\n[[23_de_Bruijn_Newman_constant_Polymath15]]",
+      "color": "2"
+    },
+    {
+      "id": "ev-23",
+      "x": 0,
+      "y": 3300,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**GORZ Jensen**\n\n[[29_Jensen_Polya_Laguerre_Polya_GORZ]]",
+      "color": "2"
+    },
+    {
+      "id": "ev-24",
+      "x": 320,
+      "y": 3450,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Connes–Moscovici**\n\n[[11_Connes_Moscovici_prolate_spheroidal]]",
+      "color": "5"
+    },
+    {
+      "id": "ev-25",
+      "x": 960,
+      "y": 3600,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Zhang Landau–Siegel**\n\n[[32_Landau_Siegel_zeros_Zhang]]",
+      "color": "6"
+    },
+    {
+      "id": "ev-26",
+      "x": 960,
+      "y": 3750,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Guth–Maynard**\n\n[[22_Guth_Maynard_2024]]",
+      "color": "6"
+    },
+    {
+      "id": "ev-27",
+      "x": 0,
+      "y": 3900,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**Weil-Truncation**\n\n[[52_Connes_truncated_Weil_spectral_realization]]",
+      "color": "2"
+    },
+    {
+      "id": "ev-28",
+      "x": 320,
+      "y": 3900,
+      "width": 280,
+      "height": 110,
+      "type": "text",
+      "text": "**PCC ohne RH**\n\n[[53_pair_correlation_alternative_hypothesis]]",
+      "color": "5"
+    },
+    {
+      "id": "legend",
+      "x": 1340,
+      "y": 0,
+      "width": 460,
+      "height": 320,
+      "type": "text",
+      "text": "## Lesart\n\nVier Spalten = die vier Leitmotive. Pfeile verbinden aufeinanderfolgende Arbeiten **innerhalb** eines Motivs.\n\n**Was auffällt:**\n- Spalte C (Geometrie) hat die wenigsten Einträge — und enthält die einzige *bewiesene* RH (1948, 𝔽_q).\n- Spalte A (Positivität) ist die vollste. Neun Ansätze hängen am selben Blocker: [[55_failure_taxonomy]].\n- Nach 2018 verdichtet sich alles bei A und B — die Front ist schmal geworden.\n\nBewertung der jüngsten Einträge: [[58_gap_registry_near_miss]]"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-1",
+      "fromNode": "ev-0",
+      "fromSide": "bottom",
+      "toNode": "ev-1",
+      "toSide": "top",
+      "color": "6"
+    },
+    {
+      "id": "e-2",
+      "fromNode": "ev-1",
+      "fromSide": "bottom",
+      "toNode": "ev-2",
+      "toSide": "top",
+      "color": "6"
+    },
+    {
+      "id": "e-4",
+      "fromNode": "ev-2",
+      "fromSide": "bottom",
+      "toNode": "ev-4",
+      "toSide": "top",
+      "color": "6"
+    },
+    {
+      "id": "e-6",
+      "fromNode": "ev-3",
+      "fromSide": "bottom",
+      "toNode": "ev-6",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "e-7",
+      "fromNode": "ev-6",
+      "fromSide": "bottom",
+      "toNode": "ev-7",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "e-9",
+      "fromNode": "ev-8",
+      "fromSide": "bottom",
+      "toNode": "ev-9",
+      "toSide": "top",
+      "color": "5"
+    },
+    {
+      "id": "e-10",
+      "fromNode": "ev-4",
+      "fromSide": "bottom",
+      "toNode": "ev-10",
+      "toSide": "top",
+      "color": "6"
+    },
+    {
+      "id": "e-11",
+      "fromNode": "ev-10",
+      "fromSide": "bottom",
+      "toNode": "ev-11",
+      "toSide": "top",
+      "color": "6"
+    },
+    {
+      "id": "e-12",
+      "fromNode": "ev-7",
+      "fromSide": "bottom",
+      "toNode": "ev-12",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "e-13",
+      "fromNode": "ev-12",
+      "fromSide": "bottom",
+      "toNode": "ev-13",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "e-14",
+      "fromNode": "ev-13",
+      "fromSide": "bottom",
+      "toNode": "ev-14",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "e-15",
+      "fromNode": "ev-5",
+      "fromSide": "bottom",
+      "toNode": "ev-15",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "e-16",
+      "fromNode": "ev-14",
+      "fromSide": "bottom",
+      "toNode": "ev-16",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "e-17",
+      "fromNode": "ev-15",
+      "fromSide": "bottom",
+      "toNode": "ev-17",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "e-18",
+      "fromNode": "ev-9",
+      "fromSide": "bottom",
+      "toNode": "ev-18",
+      "toSide": "top",
+      "color": "5"
+    },
+    {
+      "id": "e-19",
+      "fromNode": "ev-18",
+      "fromSide": "bottom",
+      "toNode": "ev-19",
+      "toSide": "top",
+      "color": "5"
+    },
+    {
+      "id": "e-20",
+      "fromNode": "ev-17",
+      "fromSide": "bottom",
+      "toNode": "ev-20",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "e-21",
+      "fromNode": "ev-19",
+      "fromSide": "bottom",
+      "toNode": "ev-21",
+      "toSide": "top",
+      "color": "5"
+    },
+    {
+      "id": "e-22",
+      "fromNode": "ev-16",
+      "fromSide": "bottom",
+      "toNode": "ev-22",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "e-23",
+      "fromNode": "ev-22",
+      "fromSide": "bottom",
+      "toNode": "ev-23",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "e-24",
+      "fromNode": "ev-21",
+      "fromSide": "bottom",
+      "toNode": "ev-24",
+      "toSide": "top",
+      "color": "5"
+    },
+    {
+      "id": "e-25",
+      "fromNode": "ev-11",
+      "fromSide": "bottom",
+      "toNode": "ev-25",
+      "toSide": "top",
+      "color": "6"
+    },
+    {
+      "id": "e-26",
+      "fromNode": "ev-25",
+      "fromSide": "bottom",
+      "toNode": "ev-26",
+      "toSide": "top",
+      "color": "6"
+    },
+    {
+      "id": "e-27",
+      "fromNode": "ev-23",
+      "fromSide": "bottom",
+      "toNode": "ev-27",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "e-28",
+      "fromNode": "ev-24",
+      "fromSide": "bottom",
+      "toNode": "ev-28",
+      "toSide": "top",
+      "color": "5"
+    }
+  ]
+}

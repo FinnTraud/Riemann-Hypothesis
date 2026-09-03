@@ -1,8 +1,8 @@
 {
   "name": "Riemann Hypothesis Knowledge Base",
-  "version": "1.0",
-  "updated": "2026-08",
-  "count": 55,
+  "version": "1.1",
+  "updated": "2026-09",
+  "count": 65,
   "documents": [
     {
       "number": "00",
@@ -888,6 +888,170 @@
       ],
       "file": "docs/54_machine_assisted_number_theory_ANTEDB_Lean.md",
       "summary": "Nicht die RH hat sich bewegt, sondern die Arbeitsweise: ANTEDB macht die Exponenten-Landschaft der analytischen Zahlentheorie zu einer systematisch optimierbaren Datenbank (Tao-Trudgian-Yang 2025); der starke Primzahlsatz ist in Lean 4 formalisiert; Reproduzierbarkeitspakete mit Intervall-Zertifikaten werden zur Norm. Methodischer, kein inhaltlicher RH-Fortschritt."
+    },
+    {
+      "number": "55",
+      "id": "doc-55",
+      "title": "Muster im Scheitern: Blocker-Taxonomie & Obstruktions×Ansatz-Matrix",
+      "category": "meta",
+      "status": "meta",
+      "tags": [
+        "failure-patterns",
+        "taxonomy",
+        "blockers",
+        "meta-analysis",
+        "matrix"
+      ],
+      "file": "docs/55_failure_taxonomy.md",
+      "summary": ""
+    },
+    {
+      "number": "56",
+      "id": "doc-56",
+      "title": "Fehler-Autopsien: die exakte Bruchstelle je gescheitertem Ansatz",
+      "category": "meta",
+      "status": "meta",
+      "tags": [
+        "autopsy",
+        "failed-proofs",
+        "error-analysis",
+        "de-branges",
+        "atiyah",
+        "bbm",
+        "forensics"
+      ],
+      "file": "docs/56_failure_autopsies.md",
+      "summary": ""
+    },
+    {
+      "number": "57",
+      "id": "doc-57",
+      "title": "Noch nicht Versuchtes: aus den Blocker-Lücken abgeleitete Richtungen",
+      "category": "meta",
+      "status": "open",
+      "tags": [
+        "open-directions",
+        "generative",
+        "falsification",
+        "research-agenda",
+        "li-sensitivity"
+      ],
+      "file": "docs/57_untried_directions.md",
+      "summary": ""
+    },
+    {
+      "number": "58",
+      "id": "doc-58",
+      "title": "GAP-Registry & Near-Miss-Bewertung: das eine fehlende Lemma je Ansatz",
+      "category": "meta",
+      "status": "meta",
+      "tags": [
+        "gaps",
+        "near-miss",
+        "missing-lemma",
+        "ranking",
+        "methodology"
+      ],
+      "file": "docs/58_gap_registry_near_miss.md",
+      "summary": ""
+    },
+    {
+      "number": "59",
+      "id": "doc-59",
+      "title": "Invarianten & Testvektoren: beweist Ihr Argument zu viel?",
+      "category": "obstruction",
+      "status": "meta",
+      "tags": [
+        "invariants",
+        "test-vectors",
+        "overshoot",
+        "verification",
+        "anti-crackpot",
+        "checklist"
+      ],
+      "file": "docs/59_invariants_test_vectors.md",
+      "summary": ""
+    },
+    {
+      "number": "60",
+      "id": "doc-60",
+      "title": "Das Gegenbeispiel-Orakel: Kriterien gegen eine RH-verletzende Funktion testen",
+      "category": "verification",
+      "status": "reference",
+      "tags": [
+        "davenport-heilbronn",
+        "counterexample",
+        "oracle",
+        "turing-method",
+        "numerical",
+        "calibration"
+      ],
+      "file": "docs/60_counterexample_oracle.md",
+      "summary": ""
+    },
+    {
+      "number": "61",
+      "id": "doc-61",
+      "title": "Negativraum: was gilt, wenn die RH falsch ist?",
+      "category": "meta",
+      "status": "open",
+      "tags": [
+        "negative-space",
+        "counterfactual",
+        "falsity",
+        "lambda",
+        "robustness"
+      ],
+      "file": "docs/61_negative_space_if_rh_is_false.md",
+      "summary": ""
+    },
+    {
+      "number": "62",
+      "id": "doc-62",
+      "title": "KI-Arbeitsteilung & Selbstaudit dieser Wissensbasis",
+      "category": "ai-context",
+      "status": "meta",
+      "tags": [
+        "ai",
+        "division-of-labour",
+        "self-audit",
+        "limitations",
+        "failure-modes",
+        "honesty"
+      ],
+      "file": "docs/62_ai_division_of_labour_self_audit.md",
+      "summary": ""
+    },
+    {
+      "number": "63",
+      "id": "doc-63",
+      "title": "Entscheidungswert von Experimenten: welches Ergebnis tötet welchen Cluster?",
+      "category": "meta",
+      "status": "meta",
+      "tags": [
+        "experiment-design",
+        "information-gain",
+        "decision-value",
+        "prioritization"
+      ],
+      "file": "docs/63_experiment_decision_value.md",
+      "summary": ""
+    },
+    {
+      "number": "64",
+      "id": "doc-64",
+      "title": "Trust-Tiers: wie gut ist jede Behauptung dieser Wissensbasis belegt?",
+      "category": "meta",
+      "status": "reference",
+      "tags": [
+        "trust",
+        "verification-levels",
+        "epistemics",
+        "provenance",
+        "self-limits"
+      ],
+      "file": "docs/64_trust_tiers_verification_levels.md",
+      "summary": ""
     }
   ]
 }

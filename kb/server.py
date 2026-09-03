@@ -14,6 +14,25 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import core
 
 try:
+    import invariants as _inv
+    _INV = True
+except Exception:
+    _INV = False
+
+try:
+    import gaps as _gaps
+    import matrix as _matrix
+    _GAPS = True
+except Exception:
+    _GAPS = False
+
+try:
+    import counterexample as _cx
+    _CX = True
+except Exception:
+    _CX = False
+
+try:
     from mcp.server.fastmcp import FastMCP
 except Exception:
     sys.stderr.write(
@@ -201,6 +220,67 @@ if _FORMAL:
     def lean_status() -> dict:
         """Ehrlicher Status der Lean-Toolchain (elan installiert? lean nutzbar?)."""
         return _fm.lean_status()
+
+if _INV:
+    @mcp.tool()
+    def invariant_checklist() -> dict:
+        """Testvektoren + Ueberschuss-Tests: die Pruefliste, die ein RH-Beweis bestehen
+        muss (docs/59). Enthaelt Funktionen mit BEKANNTEM Wahrheitswert des RH-Analogons
+        (Davenport-Heilbronn, Epstein: FALSCH; F_q, Selberg: WAHR) und bekannte Wahrheiten,
+        die ein zu starkes Argument sofort widerlegen (Lambda >= 0, Mertens widerlegt,
+        S(T) unbeschraenkt). Nach evaluate_proof_idea aufrufen, nicht davor."""
+        return _inv.checklist()
+
+
+if _GAPS:
+    @mcp.tool()
+    def list_gaps() -> dict:
+        """GAP-Registry: fuer jeden Ansatz die EINE fehlende Aussage, mit auditierbarem
+        Near-Miss-Score (docs/58). Wichtig: hoher Score heisst 'viel unbedingt bewiesene
+        Struktur vorhanden', NICHT 'aussichtsreich' -- die folgenreichsten Luecken
+        (Weil-Positivitaet, kanonischer Operator, Geometrie ueber Spec(Z)) haben Score 0."""
+        data = _gaps.load()
+        out = []
+        for g in data["gaps"]:
+            s_, raw = _gaps.score(g)
+            out.append({**{k: v for k, v in g.items() if not k.endswith("_begruendung")},
+                        "score": s_, "score_roh": raw})
+        out.sort(key=lambda g: -g["score"])
+        return {"achsen": data["achsen"], "regel": "score = 3A+2B+2C+D-2E, Deckel 3 falls erreichbar=false",
+                "gaps": out, "siehe": "docs/58"}
+
+    @mcp.tool()
+    def list_blockers(doc_id: str = "") -> dict:
+        """Blocker-Taxonomie (docs/55): die 12 wiederkehrenden Scheiternsgruende mit Tier
+        und Fluchtbedingung. Mit doc_id (z.B. 'doc-20') nur die Blocker dieses Dokuments."""
+        import json as _json
+        from pathlib import Path as _P
+        blk = _json.loads((_P(__file__).resolve().parent / "graph" / "blockers.json")
+                          .read_text(encoding="utf-8"))["blockers"]
+        if doc_id:
+            blk = [b for b in blk if doc_id in b["betrifft"]]
+        return {"anzahl": len(blk), "blockers": blk, "siehe": "docs/55"}
+
+
+if _CX:
+    @mcp.tool()
+    def counterexample_oracle(test: str = "euler", T: float = 120.0) -> dict:
+        """Gegenbeispiel-Orakel (docs/60): laesst ein Kriterium gegen die
+        Davenport-Heilbronn-Funktion laufen, fuer die die RH NACHWEISLICH FALSCH ist.
+        test: fe | euler | offline | deficit | rightof1 | lisens.
+        Nur Tests, die zeta und DH TRENNEN, sind informativ. 'deficit' ist der einzige,
+        der die Verletzung selbstaendig findet (Turing-Methode). ACHTUNG: 'deficit' und
+        'rightof1' rechnen je nach T zwischen 30 s und mehreren Minuten."""
+        fn = {"fe": _cx.test_functional_equation,
+              "euler": _cx.test_euler_product,
+              "offline": _cx.test_offline_zeros,
+              "deficit": lambda n: _cx.test_sign_change_deficit(n, T),
+              "rightof1": lambda n: _cx.test_zeros_right_of_1(n, T=T),
+              "lisens": lambda n: _cx.test_li_sensitivity()}
+        if test not in fn:
+            return {"fehler": f"unbekannter Test '{test}'", "verfuegbar": sorted(fn)}
+        return {"zeta": fn[test]("zeta"), "dh": fn[test]("dh"), "siehe": "docs/60"}
+
 
 if __name__ == "__main__":
     mcp.run()

@@ -11,7 +11,7 @@ lang: de
 
 # Riemann Hypothesis — Dokumenten-Index (RAG Knowledge Base)
 
-> Diese Wissensbasis enthält je ein eigenständiges Dokument pro Paper, Beweisansatz, Kriterium, gescheitertem Beweis oder Meilenstein rund um die Riemann-Vermutung (Riemann Hypothesis, RH). Jede Datei ist als unabhängig abrufbarer Chunk für Vektordatenbank / RAG konzipiert: einheitliche Struktur (Metadaten → Zusammenfassung → Kernidee → Status → Bedeutung → Quellen). Stand: August 2026 (55 Dokumente, 00–54).
+> Diese Wissensbasis enthält je ein eigenständiges Dokument pro Paper, Beweisansatz, Kriterium, gescheitertem Beweis oder Meilenstein rund um die Riemann-Vermutung (Riemann Hypothesis, RH). Jede Datei ist als unabhängig abrufbarer Chunk für Vektordatenbank / RAG konzipiert: einheitliche Struktur (Metadaten → Zusammenfassung → Kernidee → Status → Bedeutung → Quellen). Stand: September 2026 (65 Dokumente, 00–64).
 
 ## Kategorien und Dokumente
 
@@ -99,8 +99,35 @@ lang: de
 - `53_pair_correlation_alternative_hypothesis.md` — **Paarkorrelation ohne RH & die Alternative Hypothese** (Goldston u. a.): PCC allein ⇒ 100 % einfache Nullstellen auf der kritischen Geraden
 - `54_machine_assisted_number_theory_ANTEDB_Lean.md` — ANTEDB & systematische Exponenten-Optimierung (Tao–Trudgian–Yang), formalisierter starker Primzahlsatz in Lean 4, Intervall-Zertifikate
 
+### P. Meta-Analyse-Schicht (Muster, Lücken, Prüfwerkzeuge)
+Diese Schicht enthält **keine neue Mathematik über ζ**. Sie wertet die Dokumente 01–54 quer aus und stellt Prüfwerkzeuge bereit. Datengrundlage: `kb/graph/blockers.json`, `gaps.json`, `invariants.json`; Generatoren: `kb/matrix.py`, `kb/gaps.py`, `kb/validate.py`, `kb/obsidian.py`.
+- `55_failure_taxonomy.md` — **Muster im Scheitern**: 12 Blocker statt 37 Einzelgeschichten, mit Tier-System, Fluchtbedingungen und generierter Obstruktions×Ansatz-Matrix. Kernbefund: zirkuläre Positivität allein trägt 9 Ansätze
+- `56_failure_autopsies.md` — **Fehler-Autopsien**: die exakte Bruchstelle je gescheitertem Beweis (de Branges, Atiyah, Nash, Bender–Brody–Müller, Berry–Keating, arXiv-Klasse) + Prüfprotokoll
+- `57_untried_directions.md` — **Noch nicht Versuchtes**: aus den Matrix-Lücken abgeleitete Richtungen, jede mit Abbruchkriterium. Enthält die gerechnete Sensitivitätsanalyse des Li-Kriteriums (Nachweisgrenze ~ γ²)
+- `58_gap_registry_near_miss.md` — **GAP-Registry**: das eine fehlende Lemma je Ansatz, mit auditierbarem Near-Miss-Score. Befund: Near-Miss und Aussicht sind antikorreliert
+- `59_invariants_test_vectors.md` — **Invarianten & Testvektoren**: „beweist Ihr Argument zu viel?" — bekannte Wahrheiten, die ein zu starkes Argument sofort widerlegen
+- `60_counterexample_oracle.md` — **Gegenbeispiel-Orakel**: Kriterien gegen die Davenport–Heilbronn-Funktion testen, für die die RH nachweislich falsch ist. Turing-Defizit detektiert die Verletzung selbstständig
+- `61_negative_space_if_rh_is_false.md` — **Negativraum**: was gilt, wenn die RH falsch ist? Robustheitsprüfung der Wissensbasis
+- `62_ai_division_of_labour_self_audit.md` — **KI-Arbeitsteilung & Selbstaudit**: was eine KI hier anders kann, und acht Befunde über die Schwächen dieses Repos
+- `63_experiment_decision_value.md` — **Entscheidungswert von Experimenten**: welches Ergebnis tötet welchen Cluster
+- `64_trust_tiers_verification_levels.md` — **Trust-Tiers**: Verifikationsstufe je Claim (T0-lean-verified … T5-konsens) und die Offenlegung, dass 40 von 43 Claims Sekundärwissen sind
+
+### Q. Obsidian-Schicht (generiert)
+- `_Statusboard.md` — Dashboard mit Dataview-Queries und statischem Fallback
+- `../Canvas/Zeitachse_Motive.canvas` — Zeitachse × Leitmotiv über 165 Jahre
+- `../Canvas/Obstruktionskarte.canvas` — welche Ansätze an welchem Blocker hängen
+- Jedes Dokument trägt einen generierten Block **„Verknüpfungen (auto)"** mit Blockern, fehlender Aussage und Graph-Nachbarn als Wikilinks (erzeugt von `kb/obsidian.py`, idempotent)
+
 ## Quellen-Verifikation / Recherche
-Diese Wissensbasis wurde durch einen 5-Schritt-Recherche-Agenten auf Vollständigkeit geprüft (Stand Juni 2026); die Dokumente 43–49 schließen die dabei identifizierten Lücken. Ein Literatur-Update im August 2026 ergänzte die Dokumente 52–54 um die Front 2025–2026. Hinweise zur Nutzung im Vektor-/MCP-Server: siehe `README_RAG.md`.
+Diese Wissensbasis wurde durch einen 5-Schritt-Recherche-Agenten auf Vollständigkeit geprüft (Stand Juni 2026); die Dokumente 43–49 schließen die dabei identifizierten Lücken. Ein Literatur-Update im August 2026 ergänzte die Dokumente 52–54 um die Front 2025–2026. Im September 2026 kam die Meta-Analyse-Schicht 55–64 hinzu; sie leitet ausschließlich aus den vorhandenen Dokumenten ab und rechnet selbst nach, wo das möglich ist (`docs/60`). **Zur Belastbarkeit der Einzelaussagen siehe `64_trust_tiers_verification_levels.md` — insbesondere die Offenlegung, dass die Primärquellen für diese Wissensbasis nicht gelesen wurden.** Hinweise zur Nutzung im Vektor-/MCP-Server: siehe `README_RAG.md`.
 
 ## Übergeordnete Übersichtsdatei
 Die Datei `../Riemann_Hypothesis_Proof_Approaches.md` (eine Ebene höher) enthält die zusammenfassende Gesamtübersicht aller Ansätze in einem Dokument.
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

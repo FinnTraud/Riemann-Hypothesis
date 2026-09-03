@@ -69,3 +69,23 @@ Zwei Nullstellen γ_n, γ_{n+1} mit Abstand ≪ Mittelwert bilden ein **Lehmer-P
 - [Schoenberg's Theory of Totally Positive Functions and the Riemann Zeta Function (arXiv 2007.12889)](https://arxiv.org/pdf/2007.12889)
 - [Lehmer pairs of zeros, the de Bruijn-Newman constant Λ, and the Riemann Hypothesis (ResearchGate)](https://www.researchgate.net/publication/226697760_Lehmer_pairs_of_zeros_the_de_Bruijn-Newman_constant_L_and_the_Riemann_Hypothesis)
 - [The early historical roots of Lee-Yang theorem (arXiv 1410.6450)](https://arxiv.org/pdf/1410.6450)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (2)
+> - **Zirkuläre Positivität** *(Tier 2)* — Die RH wird auf eine Positivitätsaussage reduziert, die selbst nur als äquivalent, nie unabhängig bewiesen ist.
+>   *Fluchtbedingung:* Die Positivität muss aus einer Struktur folgen, die unabhängig von der Nullstellenlage definiert ist. Im bewiesenen Fall 𝔽_q (doc-18) leistet das die Schnittform auf der Fläche C×C — dort ist Positivität ein Satz der Geometrie, nicht eine Umformulierung des Ziels.
+> - **Zirkularität der Modellannahme** *(Tier 3)* — Zufallsmatrix- und probabilistische Modelle setzen die RH voraus, um überhaupt formuliert werden zu können.
+>   *Fluchtbedingung:* Unbedingte Formulierung: Aussagen über Nullstellen ohne die Annahme, dass sie auf der Geraden liegen (doc-53 ist der Prototyp).
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!abstract]- Graph-Nachbarn (2)
+> - *ist Instanz von* → **Positivität / Reellwurzeligkeit** — Lee-Yang/Newman: Positivität erzwingt reelle Nullstellen.
+> - *benutzt* → [[23_de_Bruijn_Newman_constant_Polymath15|23 · De-Bruijn–Newman-Konstante]] — Statistische Mechanik liefert Werkzeuge für die dBN-Konstante.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

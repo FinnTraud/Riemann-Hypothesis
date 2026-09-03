@@ -71,3 +71,26 @@ Im Funktionenkörper-Fall (Dok. 18) ist genau diese Positivität die **Riemann�
 - [An essay on the Riemann Hypothesis — A. Connes (arXiv 1509.05576)](https://arxiv.org/pdf/1509.05576)
 - [A spectral interpretation for the zeros of the Riemann zeta function (arXiv math/0412277)](https://arxiv.org/pdf/math/0412277)
 - [What is new with Connes' approach to the Riemann hypothesis? — Khalkhali](https://www.math.uwo.ca/faculty/khalkhali/files/TehProg.pdf)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (2)
+> - **Zirkuläre Positivität** *(Tier 2)* — Die RH wird auf eine Positivitätsaussage reduziert, die selbst nur als äquivalent, nie unabhängig bewiesen ist.
+>   *Fluchtbedingung:* Die Positivität muss aus einer Struktur folgen, die unabhängig von der Nullstellenlage definiert ist. Im bewiesenen Fall 𝔽_q (doc-18) leistet das die Schnittform auf der Fläche C×C — dort ist Positivität ein Satz der Geometrie, nicht eine Umformulierung des Ziels.
+> - **Fehlende Geometrie über Spec(ℤ)** *(Tier 2)* — Der bewiesene Funktionenkörperfall braucht eine Fläche C×_𝔽 C; das Analogon Spec(ℤ)×_{𝔽₁}Spec(ℤ) existiert nicht.
+>   *Fluchtbedingung:* Konstruktion einer Kohomologietheorie über Spec(ℤ) mit (a) Lefschetz-Formel, die die explizite Formel reproduziert, (b) Poincaré-Dualität, (c) einem Positivitäts-/Index-Satz (Hodge-Index-Analogon). Alle drei, nicht nur (a).
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!abstract]- Graph-Nachbarn (5)
+> - *versucht Transfer von* → **Geometrie-Transfer (Funktionenkörper→ℤ)** — Connes adelische Spurformel.
+> - *modelliert* → **Hilbert–Pólya / spektrale Interpretation** — Connes: spektrale Realisierung als Absorptionsspektrum.
+> - *reduziert sich auf* → **Positivität / Reellwurzeligkeit** — Connes reduziert RH auf Weil-Positivität.
+> - *benutzt* → **Explizite Formel (Primzahlen↔Nullstellen)** — Connes-Spurformel reproduziert die explizite Formel.
+> - ← *wird benutzt von* [[52_Connes_truncated_Weil_spectral_realization|52 · Abgeschnittene Weil-Quadratform & Zeta-Spektraltrip…]] — Rahmen der nichtkommutativen Geometrie von Connes.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

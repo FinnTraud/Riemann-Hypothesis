@@ -90,3 +90,23 @@ Für Primzahlen in kurzen Intervallen [x, x+x^θ] genügt eine hinreichend stark
 - [An explicit log-free zero density estimate for the Riemann zeta-function (arXiv 2405.12545)](https://arxiv.org/pdf/2405.12545)
 - [Explicit zero density for the Riemann zeta function (arXiv 2101.12263)](https://arxiv.org/pdf/2101.12263)
 - [An explicit form of Ingham's zero density estimate (arXiv 2507.15184)](https://arxiv.org/pdf/2507.15184)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (1)
+> - **Anteils-Decke der Mollifier-Methoden** *(Tier 2)* — Levinson/Conrey-Technik liefert einen positiven Anteil, ist aber strukturell weit unter 100 % gedeckelt.
+>   *Fluchtbedingung:* Ein Mechanismus, der ALLE Nullstellen erfasst statt einen Anteil — Anteilsmethoden können die RH prinzipiell nicht abschließen, auch nicht im Limes.
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!abstract]- Graph-Nachbarn (4)
+> - *schwächer als* → **Riemann-Vermutung (RH)** — Lindelöf ist schwächer; Rückrichtung unbekannt.
+> - ← *gestützt durch* [[49_live_analytic_frontier|49 · Live-Front der analytischen Zahlentheorie]] — Subkonvexität nähert Lindelöf an.
+> - ← *wird impliziert von* **Riemann-Vermutung (RH)** — RH ⇒ Lindelöf-Hypothese.
+> - ← *wird benutzt von* [[22_Guth_Maynard_2024|22 · Guth–Maynard]] — Guth–Maynard verbessert Dichte-Abschätzungen Richtung Dichte-Hypothese.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

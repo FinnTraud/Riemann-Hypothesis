@@ -73,3 +73,15 @@ Aus den Obstruktionen (Dok. 35) destilliert:
 - [The Riemann Hypothesis over Finite Fields — J. Milne](https://www.jmilne.org/math/xnotes/pRH.html)
 - [An essay on the Riemann Hypothesis — A. Connes (arXiv 1509.05576)](https://arxiv.org/pdf/1509.05576)
 - (sowie die Dokumente 01–40 dieser Wissensbasis)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!abstract]- Graph-Nachbarn (2)
+> - *benutzt* → **Riemann-Vermutung (RH)** — Synthese: notwendige Bedingungen + Bewertungsraster für Beweise.
+> - ← *wird benutzt von* [[55_failure_taxonomy|55 · Muster im Scheitern]] — Invertiert die Leitmotiv-Zerlegung zur Obstruktions-x-Ansatz-Matrix.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

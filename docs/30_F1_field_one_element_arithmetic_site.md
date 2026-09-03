@@ -78,3 +78,26 @@ Die Determinante det_∞ (zeta-regularisiert) und die benötigte H¹-Kohomologie
 - [An arithmetic site of Connes-Consani type for imaginary quadratic fields with class number 1 (arXiv 1703.10521)](https://arxiv.org/pdf/1703.10521)
 - [Segal's Gamma rings and universal arithmetic — Connes–Consani (arXiv 2004.08879)](https://arxiv.org/pdf/2004.08879)
 - [The Riemann Hypothesis: Arithmetic and Geometry — J. Lagarias (Übersicht)](https://websites.umich.edu/~lagarias//doc/mt-holyoke-rev.pdf)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (1)
+> - **Fehlende Geometrie über Spec(ℤ)** *(Tier 2)* — Der bewiesene Funktionenkörperfall braucht eine Fläche C×_𝔽 C; das Analogon Spec(ℤ)×_{𝔽₁}Spec(ℤ) existiert nicht.
+>   *Fluchtbedingung:* Konstruktion einer Kohomologietheorie über Spec(ℤ) mit (a) Lefschetz-Formel, die die explizite Formel reproduziert, (b) Poincaré-Dualität, (c) einem Positivitäts-/Index-Satz (Hodge-Index-Analogon). Alle drei, nicht nur (a).
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!missing]- Die fehlende Aussage
+> **Bewiesen:** Teilstrukturen (arithmetic site, Bost–Connes-System, gefolierte Räume) existieren und reproduzieren einzelne Aspekte.
+> **Es fehlt:** Eine Kohomologietheorie über Spec(ℤ) mit Lefschetz-Formel, Poincaré-Dualität UND einem Hodge-Index-Analogon. Alle drei zusammen.
+> **Typ:** fehlendes objekt · Bewertung: [[58_gap_registry_near_miss]]
+
+> [!abstract]- Graph-Nachbarn (2)
+> - *versucht Transfer von* → **Geometrie-Transfer (Funktionenkörper→ℤ)** — 𝔽₁/arithmetic site: Weil-Beweis auf ℤ übertragen.
+> - *benutzt* → [[34_Bost_Connes_system|34 · Bost–Connes-System]] — Bost–Connes liefert Galois-/Frobenius-Symmetrie fürs 𝔽₁-Programm.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

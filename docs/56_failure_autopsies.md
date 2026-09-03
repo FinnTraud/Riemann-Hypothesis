@@ -277,3 +277,20 @@ Zentrale Primärbelege:
 - [A note on some positivity conditions related to zeta and L-functions — Conrey & Li (arXiv math/9812166)](https://arxiv.org/abs/math/9812166)
 - [Skepticism surrounds renowned mathematician's attempted proof — Science/AAAS](https://www.science.org/content/article/skepticism-surrounds-renowned-mathematician-s-attempted-proof-160-year-old-hypothesis)
 - [Hamiltonian for the zeros of the Riemann zeta function — Bender, Brody, Müller (Phys. Rev. Lett. 118, 130201)](https://arxiv.org/abs/1608.03679)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!abstract]- Graph-Nachbarn (7)
+> - *benutzt* → [[20_de_Branges_Hilbert_spaces|20 · Louis de Branges]] — Autopsie A1: Bruchstelle bei der Positivitaetsbedingung (Conrey-Li).
+> - *benutzt* → [[25_Atiyah_2018_failed_proof|25 · Michael Atiyah]] — Autopsie A2: Bruchstelle bei Liouville/Identitaetssatz.
+> - *benutzt* → [[26_Nash_failed_attempt|26 · John Nash]] — Autopsie A3: kein pruefbares Artefakt.
+> - *benutzt* → [[27_other_disputed_claimed_proofs|27 · Weitere umstrittene, zurückgezogene & fehlerhafte B…]] — Autopsie A6: der Standardfehler der arXiv-Klasse.
+> - *benutzt* → [[09_Bender_Brody_Muller_2017_Hamiltonian|09 · Bender–Brody–Müller]] — Autopsie A4: zirkulaere Operatorkonstruktion.
+> - *benutzt* → [[08_Berry_Keating_xp_model|08 · Berry–Keating H = xp Modell]] — Autopsie A5: Modell ohne selbstadjungierte Realisierung.
+> - ← *wird benutzt von* [[57_untried_directions|57 · Noch nicht Versuchtes]] — Nimmt Beobachtung 4 der Autopsien als Ausgangspunkt (leerer Euler-Quadrant).
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

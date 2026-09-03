@@ -191,3 +191,18 @@ und sind dort belegt: `docs/04`, `docs/05`, `docs/13`, `docs/14`, `docs/15`,
 - [Polymath15, *Effective approximation of heat flow evolution of the Riemann ξ function* (arXiv 1904.12438)](https://arxiv.org/abs/1904.12438)
 - [Griffin, Ono, Rolen & Zagier, *Jensen polynomials for the Riemann zeta function* (PNAS 116, 2019)](https://www.pnas.org/doi/10.1073/pnas.1902572116)
 - [Guth & Maynard, *New large value estimates for Dirichlet polynomials* (arXiv 2405.20552)](https://arxiv.org/abs/2405.20552)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!abstract]- Graph-Nachbarn (5)
+> - *benutzt* → [[55_failure_taxonomy|55 · Muster im Scheitern]] — Bewertet die Luecken entlang der Blocker-Zuordnung.
+> - *benutzt* → [[52_Connes_truncated_Weil_spectral_realization|52 · Abgeschnittene Weil-Quadratform & Zeta-Spektraltrip…]] — Bewertet den Grenzuebergang der abgeschnittenen Weil-Quadratform.
+> - *benutzt* → [[23_de_Bruijn_Newman_constant_Polymath15|23 · De-Bruijn–Newman-Konstante]] — Bewertet die Luecke 0 <= Lambda <= 0,22.
+> - *benutzt* → [[29_Jensen_Polya_Laguerre_Polya_GORZ|29 · Jensen–Pólya-Programm]] — Bewertet das gemeinsame Regime d ~ n der Jensen-Polynome.
+> - ← *wird benutzt von* [[63_experiment_decision_value|63 · Entscheidungswert von Experimenten]] — Kehrseite des Near-Miss-Befunds: messbar heisst ausgereizt.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

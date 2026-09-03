@@ -68,3 +68,21 @@ Sei N₀(T) die Anzahl der Nullstellen *auf* der kritischen Geraden bis Höhe T,
 - [A note on Hardy's theorem (HAL)](https://hal.science/hal-01425570v1/document)
 - [The Riemann zeta function and its zeros — Russian Math Surveys](https://www.mathnet.ru/php/getFT.phtml?jrnid=rm&paperid=2762&what=fullteng)
 - [Almost all of the nontrivial zeros of the Riemann zeta-function (arXiv 2205.09042)](https://arxiv.org/pdf/2205.09042)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (1)
+> - **Anteils-Decke der Mollifier-Methoden** *(Tier 2)* — Levinson/Conrey-Technik liefert einen positiven Anteil, ist aber strukturell weit unter 100 % gedeckelt.
+>   *Fluchtbedingung:* Ein Mechanismus, der ALLE Nullstellen erfasst statt einen Anteil — Anteilsmethoden können die RH prinzipiell nicht abschließen, auch nicht im Limes.
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!abstract]- Graph-Nachbarn (2)
+> - *ist Teilresultat für* → **Riemann-Vermutung (RH)** — Hardy: unendlich viele Nullstellen auf der Geraden.
+> - ← *Spezialfall von* [[04_Levinson_Conrey_positive_proportion|04 · Levinson, Conrey & Co.]] — Quantifiziert Hardys Resultat (positiver Anteil).
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

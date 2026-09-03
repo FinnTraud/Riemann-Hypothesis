@@ -50,3 +50,16 @@ theorem RiemannHypothesis :
 - [A Formal Proof of the Irrationality of ζ(3) in Lean 4 (arXiv 2503.07625)](https://arxiv.org/pdf/2503.07625)
 - [Lean4 — Terence Tao (Blog, PrimeNumberTheorem+)](https://terrytao.wordpress.com/tag/lean4/)
 - [Formalizing zeta and L-functions in Lean — Annales (afm.episciences.org)](https://afm.episciences.org/15954)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!abstract]- Graph-Nachbarn (3)
+> - *benutzt* → **Riemann-Vermutung (RH)** — Lean/Formalisierung als Verifikations-Gateway.
+> - ← *gestützt durch* [[54_machine_assisted_number_theory_ANTEDB_Lean|54 · Maschinengestützte Zahlentheorie]] — Der formalisierte starke Primzahlsatz zeigt, dass Lean analytische Zahlentheorie traegt.
+> - ← *wird benutzt von* [[64_trust_tiers_verification_levels|64 · Trust-Tiers]] — Formalisierung ist die einzige Technik, die T0 erreichbar macht.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

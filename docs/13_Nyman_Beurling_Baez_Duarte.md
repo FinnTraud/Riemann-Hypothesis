@@ -77,3 +77,30 @@ was den direkten Bezug Distanz ↔ Nullstellenlage herstellt.
 - [New versions of the Nyman-Beurling criterion for the Riemann hypothesis — Báez-Duarte (Wiley)](https://onlinelibrary.wiley.com/doi/pdf/10.1155/S0161171202013248)
 - [A strengthening of the Nyman-Beurling criterion for the Riemann hypothesis (arXiv math/0202141)](https://arxiv.org/pdf/math/0202141)
 - [On probabilistic generalizations of the Nyman-Beurling criterion (arXiv 1805.06733)](https://arxiv.org/pdf/1805.06733)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (3)
+> - **Zirkuläre Positivität** *(Tier 2)* — Die RH wird auf eine Positivitätsaussage reduziert, die selbst nur als äquivalent, nie unabhängig bewiesen ist.
+>   *Fluchtbedingung:* Die Positivität muss aus einer Struktur folgen, die unabhängig von der Nullstellenlage definiert ist. Im bewiesenen Fall 𝔽_q (doc-18) leistet das die Schnittform auf der Fläche C×C — dort ist Positivität ein Satz der Geometrie, nicht eine Umformulierung des Ziels.
+> - **Konvergenz- / Grenzübergangslücke** *(Tier 2)* — Für jede endliche Abschneidung bewiesen — der Grenzübergang ist offen.
+>   *Fluchtbedingung:* Eine von Λ (bzw. N, d) UNABHÄNGIGE Schranke — Kompaktheit, gleichgradige Stetigkeit oder eine explizite Fehlerabschätzung, die den Grenzübergang erlaubt.
+> - **Äquivalenz-Falle** *(Tier 2)* — Ein Kriterium ist zur RH äquivalent und damit exakt gleich schwer — die Umformulierung erzeugt den Anschein von Fortschritt, ohne die Beweislast zu senken.
+>   *Fluchtbedingung:* Eine der beiden Richtungen muss in STRIKT SCHWÄCHERER Form unbedingt bewiesen werden, oder es muss eine quantitative Größe geben, die sich unabhängig von der RH bewegen lässt (Λ ≤ 0.22, Anteil > 41 %, d_N-Raten). Nur solche Bewegungen zählen als Fortschritt — siehe docs/58.
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!missing]- Die fehlende Aussage
+> **Bewiesen:** Unter RH (mit einfachen Nullstellen) gilt d_N ~ C / log N. Unbedingte untere Schranken (Burnol-Typ): liminf (log N) d_N ≥ Σ_ρ m_ρ²/|ρ|².
+> **Es fehlt:** Eine UNBEDINGTE obere Schranke, die d_N → 0 erzwingt. Alle bekannten unbedingten Resultate zeigen nach unten, nicht nach oben.
+> **Typ:** aequivalenz · Bewertung: [[58_gap_registry_near_miss]]
+
+> [!abstract]- Graph-Nachbarn (2)
+> - *äquivalent zu* → **Riemann-Vermutung (RH)** — Nyman-Beurling/Báez-Duarte: Dichte ⟺ RH.
+> - ← *wird benutzt von* [[14_Li_criterion_Bombieri_Lagarias_Weil_positivity|14 · Li-Kriterium, Bombieri–Lagarias & Weil-Positivität]] — Beide Positivitäts-/Dichtekriterien, gemeinsames Leitmotiv.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

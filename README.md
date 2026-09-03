@@ -4,13 +4,17 @@ Ein vollständiges Werkzeug, um die **Riemann-Vermutung (RH)** zu verstehen, zu
 visualisieren, Ansätze auszuprobieren und mit einer KI strukturiert-analytisch zu
 untersuchen. Drei Teile:
 
-1. **Wissensbasis** (`docs/`, 55 Dokumente) — jeder Ansatz, jedes Kriterium, jeder
+1. **Wissensbasis** (`docs/`, 65 Dokumente) — jeder Ansatz, jedes Kriterium, jeder
    gescheiterte Beweis und jede Obstruktion, jeweils mit **mathematischem Kern**
-   (Formeln, Sätze, Beweisskizzen) und Quellen.
+   (Formeln, Sätze, Beweisskizzen) und Quellen. Dokumente 55–64 bilden eine
+   **Meta-Analyse-Schicht**: Muster im Scheitern, Autopsien, Lücken-Register,
+   Prüfwerkzeuge (siehe unten).
 2. **Wissensgraph + RAG** (`kb/`) — Dokumente + Konzepte + atomare *Claims* mit Status,
    verbunden durch typisierte Relationen; hybride Suche; als **MCP-Server** mit Tools.
 3. **Rechnen & Visualisieren** (`kb/compute.py`, `kb/visualize.py`) — echte ζ-/Nullstellen-
    Berechnungen (mpmath) und Grafiken (matplotlib).
+4. **Obsidian-Vault** — der kuratierte Graph ist als Wikilinks, Canvas und
+   Statusboard im Vault sichtbar (`kb/obsidian.py`, idempotent generiert).
 
 > **Ehrlich vorab:** Dieses Repo *beweist die RH nicht* und kann das auch nicht — niemand
 > kann das bisher. Es ist ein **Forschungs-, Lern- und Verifikationsinstrument**, das
@@ -50,6 +54,46 @@ Der Server stellt **~26 Tools** bereit: Suche/Graph/Claims, Denkprotokoll,
 Obstruktions-Prüfung, ζ-/Nullstellen-Rechnen, Plots, Experiment-Logbuch und ein
 Lean-Verifikations-Tool. Registrierung & System-Prompt: `kb/README.md`.
 
+## Die Meta-Analyse-Schicht (docs/55–64)
+
+Diese Schicht enthält **keine neue Mathematik über ζ**. Sie wertet die Dokumente
+01–54 quer aus — und genau daraus entstehen die Aussagen, die man an keinem
+Einzeldokument sieht:
+
+| Dok | Was es leistet | Kernbefund |
+|---|---|---|
+| **55** | Blocker-Taxonomie + Obstruktions×Ansatz-Matrix | 37 Ansätze scheitern an 12 Blockern; *zirkuläre Positivität* allein trägt 9 |
+| **56** | Fehler-Autopsien | Die Bruchstelle liegt nie in der Zahlentheorie — sie liegt bei Liouville, bedingter Konvergenz, Definitionsbereichen |
+| **57** | Noch nicht Versuchtes, mit Abbruchkriterien | Die Nachweisgrenze des Li-Kriteriums skaliert wie γ² — n ≤ 1000 reicht nicht bis zur ersten ζ-Nullstelle |
+| **58** | GAP-Registry mit Near-Miss-Score | Near-Miss und Aussicht sind **antikorreliert**: die drei folgenreichsten Lücken haben Score 0 |
+| **59** | Invarianten: „beweist Ihr Argument zu viel?" | Λ ≥ 0 heißt: die RH hat **keine Marge** — jedes Argument mit Spielraum ist falsch |
+| **60** | Gegenbeispiel-Orakel | Turing-Defizit findet die RH-Verletzung selbstständig: ζ 38/38 → 0, Davenport–Heilbronn 68/64 → **4** |
+| **61** | Negativraum ¬RH | Robust ist genau die Obstruktionsschicht; fragil sind die Äquivalenzen |
+| **62** | KI-Arbeitsteilung + Selbstaudit | 8 offengelegte Schwächen dieses Repos |
+| **63** | Entscheidungswert von Experimenten | Ein Experiment mit vorhersagbarem Ergebnis hat Wert 0 |
+| **64** | Trust-Tiers je Claim | **1 von 43** Claims ist maschinell verifiziert; 40 sind Sekundärwissen |
+
+```bash
+python3 kb/counterexample.py all -T 120   # Gegenbeispiel-Orakel (Kern von docs/60)
+python3 kb/invariants.py                  # Prüfliste: beweist es zu viel? (docs/59)
+python3 kb/trust.py                       # Verifikationsstufen (docs/64)
+python3 kb/validate.py                    # Konsistenz des Wissensgraphen
+python3 kb/matrix.py && python3 kb/gaps.py && python3 kb/obsidian.py   # alles neu generieren
+```
+
+## Als Obsidian-Vault
+Repo in Obsidian als Vault öffnen. Die Konfiguration liegt bei (`.obsidian/`,
+Graph-Farbgruppen nach Kategorie). Danach:
+- **Graph View** zeigt die 135 kuratierten Kanten statt isolierter Punkte
+- **`docs/_Statusboard.md`** ist das Dashboard (Dataview optional — statische
+  Tabelle als Fallback ist eingebaut)
+- **`Canvas/Zeitachse_Motive.canvas`** — 165 Jahre in vier Leitmotiv-Spalten
+- **`Canvas/Obstruktionskarte.canvas`** — Blocker mit den Ansätzen, die daran hängen
+- Jedes Dokument endet mit **„Verknüpfungen (auto)"**: Blocker, fehlende
+  Aussage, Graph-Nachbarn — generiert aus `kb/graph/*.json`, nie von Hand
+
+Neu generieren nach Änderungen an den Graph-Daten: `python3 kb/obsidian.py`.
+
 ## Wie die KI strukturiert-analytisch denkt
 Erzwungen durch Design (Details: `docs/50_reasoning_protocol.md`):
 - **Tool-Forcing** — Zahlen aus `compute_*`, Wahrheitswerte aus `get_claim` (Status),
@@ -59,10 +103,16 @@ Erzwungen durch Design (Details: `docs/50_reasoning_protocol.md`):
 - **Status-Trennung** — jede Antwort kennzeichnet `[BEWIESEN] / [OFFEN] / [EVIDENZ] / [HEURISTIK]`.
 - **Anti-Crackpot-Gate** — `evaluate_proof_idea` prüft jede Beweisidee gegen die bekannten
   Obstruktionen (Euler-Produkt nötig, Positivität nicht annehmen, kein „weicher" Beweis …).
+  Danach: `invariant_checklist` (beweist es zu viel? `docs/59`) und
+  `counterexample_oracle` (was sagt die Maschine? `docs/60`). Zur Schwäche des
+  Stichwort-Gates siehe `docs/62`, Befund 3.
 
 ## Verzeichnis
 ```
-docs/                 51 Wissensdokumente (00_INDEX.md = Einstieg)
+docs/                 65 Wissensdokumente (00_INDEX.md = Einstieg, 55–64 = Meta-Schicht)
+docs/_Statusboard.md  generiertes Dashboard
+Canvas/               2 generierte Obsidian-Canvas
+.obsidian/            Vault-Konfiguration (Graph-Farbgruppen)
 manifest.json         maschinenlesbares Verzeichnis
 README_RAG.md         Ingestion-/Chunking-Hinweise für Vektor-/MCP-Server
 kb/
@@ -75,22 +125,44 @@ kb/
   experiment.py       reproduzierbares Experiment-Logbuch -> kb/experiments/
   formal.py           Lean/mathlib-Brücke (formale Verifikation)
   demo.py             geführte Tour
-  graph/              kuratierte Knoten/Kanten/Claims
+  counterexample.py   Gegenbeispiel-Orakel (Davenport-Heilbronn)  -> docs/60
+  invariants.py       Testvektoren & Ueberschuss-Tests            -> docs/59
+  matrix.py           Obstruktions x Ansatz-Matrix                -> docs/55
+  gaps.py             Near-Miss-Ranking                           -> docs/58
+  trust.py            Verifikationsstufen je Claim                -> docs/64
+  obsidian.py         Wikilinks + Canvas + Statusboard + Config
+  validate.py         Konsistenzpruefung des Graphen
+  graph/              kuratierte Knoten/Kanten/Claims/Blocker/Luecken/Invarianten
+  lean/RH/Gaps.lean   Lean-Gap-Ledger (sorry-Adressliste)         -> docs/58
   README.md           Architektur & Tool-Referenz
 Riemann_Hypothesis_Proof_Approaches.md   Gesamtüberblick (eine Datei, EN)
 ```
 
 ## Roadmap (gemeinsam mit Fachperson/Professor)
-Realistisch & wertvoll:
+Priorisiert nach Entscheidungswert (`docs/63`) statt nach Aufwand:
 - **Numerische Experimente** (λ_n-Positivität, BBLS-Distanz, GUE-Statistik) — reproduzierbar
   über das Experiment-Logbuch.
 - **Formalisierung von Teilresultaten in Lean** (`docs/37`) — verifizierter, publizierbarer
   Fortschritt (z. B. Hardy, de-Bruijn–Newman Λ≥0).
 - **Ein äquivalentes Kriterium rechnerisch ausreizen** (z. B. Lapidus-Spektraloperator `docs/44`).
 
-Nicht erreichbar: ein vollständiger maschineller RH-Beweis (die Obstruktionen in `docs/35`,
-`43`, `46` erklären, warum das strukturell hart bleibt).
+**Ausdrücklich abgeraten** wird von „höher rechnen" (mehr Nullstellen verifizieren):
+Ergebnis vollständig vorhersagbar, Reichweite null, Kosten maximal — die
+schlechteste Kombination im Feld (`docs/63`, Position ⑥).
 
-## Lizenz / Quellen
+Nicht erreichbar: ein vollständiger maschineller RH-Beweis (die Obstruktionen in `docs/35`,
+`43`, `46`, `55` erklären, warum das strukturell hart bleibt).
+
+## Lizenz / Quellen — und eine wichtige Einschränkung
 Inhalte aus öffentlichen Quellen (arXiv, AMS, Clay/AIM, Wikipedia, Universitätsseiten),
 je Dokument am Ende belegt. Numerik ist **Evidenz, kein Beweis**.
+
+> **40 von 43 Claims tragen `zugang: sekundaer`: die Primärquellen wurden für
+> diese Wissensbasis nicht gelesen.** Die Links belegen, *wo* etwas nachzulesen
+> wäre — nicht, dass es nachgelesen wurde. Für Lehrbuchaussagen ist das
+> unkritisch, für die neun Preprint-Claims aus `docs/52`–`54` ist es die
+> entscheidende Einschränkung. Vollständig aufgeschlüsselt in `docs/64`,
+> jederzeit prüfbar mit `python3 kb/trust.py`.
+>
+> **Wer aus dieser Wissensbasis zitiert, zitiert die Primärquelle — nach
+> eigener Lektüre. Der Vault ist eine Landkarte, keine Quelle.**
