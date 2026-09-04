@@ -11,7 +11,7 @@ lang: de
 
 # Riemann Hypothesis — Dokumenten-Index (RAG Knowledge Base)
 
-> Diese Wissensbasis enthält je ein eigenständiges Dokument pro Paper, Beweisansatz, Kriterium, gescheitertem Beweis oder Meilenstein rund um die Riemann-Vermutung (Riemann Hypothesis, RH). Jede Datei ist als unabhängig abrufbarer Chunk für Vektordatenbank / RAG konzipiert: einheitliche Struktur (Metadaten → Zusammenfassung → Kernidee → Status → Bedeutung → Quellen). Stand: September 2026 (65 Dokumente, 00–64).
+> Diese Wissensbasis enthält je ein eigenständiges Dokument pro Paper, Beweisansatz, Kriterium, gescheitertem Beweis oder Meilenstein rund um die Riemann-Vermutung (Riemann Hypothesis, RH). Jede Datei ist als unabhängig abrufbarer Chunk für Vektordatenbank / RAG konzipiert: einheitliche Struktur (Metadaten → Zusammenfassung → Kernidee → Status → Bedeutung → Quellen). Stand: September 2026 (66 Dokumente, 00–65).
 
 ## Kategorien und Dokumente
 
@@ -110,7 +110,8 @@ Diese Schicht enthält **keine neue Mathematik über ζ**. Sie wertet die Dokume
 - `61_negative_space_if_rh_is_false.md` — **Negativraum**: was gilt, wenn die RH falsch ist? Robustheitsprüfung der Wissensbasis
 - `62_ai_division_of_labour_self_audit.md` — **KI-Arbeitsteilung & Selbstaudit**: was eine KI hier anders kann, und acht Befunde über die Schwächen dieses Repos
 - `63_experiment_decision_value.md` — **Entscheidungswert von Experimenten**: welches Ergebnis tötet welchen Cluster
-- `64_trust_tiers_verification_levels.md` — **Trust-Tiers**: Verifikationsstufe je Claim (T0-lean-verified … T5-konsens) und die Offenlegung, dass 40 von 43 Claims Sekundärwissen sind
+- `64_trust_tiers_verification_levels.md` — **Trust-Tiers**: Verifikationsstufe je Claim (T0-lean-verified … T5-konsens) und die Offenlegung, dass die Primärquellen für diese Wissensbasis nicht gelesen wurden
+- `65_criterion_sensitivity.md` — **Sensitivität der Kriterien**: wie weit numerische Evidenz wirklich trägt. Gemessen (Robin) bzw. gerechnet (d_N, Li) für vier äquivalente Kriterien; Rangfolge direkte Nullstellenberechnung ≫ Li ≫ Robin ≫ d_N. Neue Bewertungsachse: Komprimierbarkeit der Testobjekte
 
 ### Q. Obsidian-Schicht (generiert)
 - `_Statusboard.md` — Dashboard mit Dataview-Queries und statischem Fallback

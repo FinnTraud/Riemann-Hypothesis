@@ -473,6 +473,28 @@
       "trust": "T4-repo-numerik",
       "trust_note": "Die Asymptotik von |1-1/rho| ist elementar und nachrechenbar; die Schwellenwerte haengen von der gewaehlten Vergleichsgroesse (Hauptterm ~ (n/2)(log n - 1 - log 2pi)) ab. Groessenordnung robust, exakte Zahlen konventionsabhaengig.",
       "zugang": "eigene_rechnung"
+    },
+    {
+      "id": "claim-robin-margin-decay",
+      "statement": "Entlang kolossal abundanter Zahlen faellt die relative Robin-Marge 1 - sigma(n)/(e^gamma n loglog n) wie K/(sqrt(log n) log log n) mit K = 0.839; die absolute Luecke e^gamma loglog n - sigma(n)/n also wie 1.50/sqrt(log n).",
+      "status": "proven",
+      "kind": "bound",
+      "doc": "doc-65",
+      "source": "In diesem Repo gemessen (kb/sensitivity.py, 11 Messpunkte, log n von 112 bis 87995, relative Streuung 14%).",
+      "trust": "T4-repo-numerik",
+      "trust_note": "Gemessen, nicht aus der Literatur uebernommen und nicht gegen sie abgeglichen. Die Form 1/sqrt(log n) entspricht der bekannten Gestalt der Robin-Schranken; der Zahlenwert 1.50 ist ungeprueft. Selbstkontrolle bestanden: das Verfahren findet die bekannte Ausnahme n=2520 selbstaendig.",
+      "zugang": "eigene_rechnung"
+    },
+    {
+      "id": "claim-dn-resolution-limit",
+      "statement": "Unter der BBLS-Asymptotik d_N^2 ~ (2+gamma-log(4pi))/log N erfordert d_N < 0.01 eine Least-Squares-Dimension von N ~ 10^201; d_N < 0.001 erfordert N ~ 10^20061.",
+      "status": "proven",
+      "kind": "bound",
+      "doc": "doc-65",
+      "source": "In diesem Repo gerechnet (kb/sensitivity.py) aus der BBLS-Asymptotik; Konstante durch das eigene d_N-Experiment auf 4% bestaetigt.",
+      "trust": "T4-repo-numerik",
+      "trust_note": "Bedingt: d_N^2 ~ C/log N ist die BBLS-VERMUTUNG unter RH mit einfachen Nullstellen, kein Satz. Die Groessenordnung ist gegen die gemessenen d_N-Werte des Repo-Experiments konsistent.",
+      "zugang": "eigene_rechnung"
     }
   ]
 }

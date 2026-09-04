@@ -106,11 +106,12 @@ W(g) = Σ_ρ ĝ(−i(ρ − 1/2))
 > **Es fehlt:** Ein Beweis der Positivität, der die Nullstellenlage nicht voraussetzt — also eine Struktur über ℤ, aus der sie folgt.
 > **Typ:** aequivalenz · Bewertung: [[58_gap_registry_near_miss]]
 
-> [!abstract]- Graph-Nachbarn (5)
+> [!abstract]- Graph-Nachbarn (6)
 > - *äquivalent zu* → **Riemann-Vermutung (RH)** — Li-Koeffizienten λ_n≥0 ⟺ RH.
 > - *ist Instanz von* → **Positivität / Reellwurzeligkeit** — Weil-/Li-Positivität.
 > - *benutzt* → [[13_Nyman_Beurling_Baez_Duarte|13 · Nyman–Beurling-Kriterium & Báez-Duarte-Verschärfung]] — Beide Positivitäts-/Dichtekriterien, gemeinsames Leitmotiv.
 > - ← *gestützt durch* [[57_untried_directions|57 · Noch nicht Versuchtes]] — Sensitivitaetsanalyse: die Nachweisgrenze des Li-Kriteriums skaliert wie gamma^2.
+> - ← *gestützt durch* [[65_criterion_sensitivity|65 · Sensitivität der Kriterien]] — Ordnet die Li-Sensitivitaet in den Kriterienvergleich ein.
 > - ← *wird benutzt von* [[52_Connes_truncated_Weil_spectral_realization|52 · Abgeschnittene Weil-Quadratform & Zeta-Spektraltrip…]] — Baut direkt auf Weil-Positivitaet / der Weilschen Quadratform auf.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]

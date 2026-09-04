@@ -119,9 +119,13 @@ axiomatischer Fassung — und deckt Argumente auf, die das Euler-Produkt
 
 ### Ⓗ Endliche Numerik als Stütze
 **Bekannt:** Mertens und Skewes; und quantitativ die Sensitivitätsanalyse in
-`docs/57` (das Li-Kriterium bis n = 1000 schließt Nullstellen abseits nur bis
-Höhe γ ≈ 3,6 aus — nicht einmal bis zur ersten ζ-Nullstelle).
-**Konsequenz:** kein Beweis.
+`docs/65` für vier Kriterien. Auszug: das Li-Kriterium bis n = 1000 schließt
+Nullstellen abseits nur bis γ ≈ 3,6 aus (nicht einmal bis zur ersten
+ζ-Nullstelle bei 14,13); d_N < 0,01 verlangt eine Dimension von N ≈ 10²⁰¹;
+Robins Marge fällt nur wie 1/√(log n).
+**Konsequenz:** kein Beweis — und für diese drei Kriterien nicht einmal ein
+schwaches Indiz. Wer sich auf eine numerische Kriterienprüfung beruft, muss
+die Reichweite angeben.
 
 ### Ⓘ Mindestabstand zwischen Nullstellen
 **Bekannt:** Lehmer-Paare — Nullstellen kommen einander beliebig nahe, es gibt
@@ -187,11 +191,12 @@ Alle Sachaussagen sind in den Einzeldokumenten belegt: `docs/02`, `docs/12`,
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
-> [!abstract]- Graph-Nachbarn (5)
+> [!abstract]- Graph-Nachbarn (6)
 > - *benutzt* → [[35_obstructions_barriers|35 · Obstruktionen & Barrieren]] — Ergaenzt die Anti-Crackpot-Checkliste um die Ueberschuss-Pruefung.
 > - *benutzt* → [[43_Epstein_zeta_Selberg_class_rigidity|43 · Epstein-Zetafunktionen & Selberg-Klassen-Rigidität]] — Epstein-Zeta als zweiter, natuerlicher Testvektor.
 > - *benutzt* → [[23_de_Bruijn_Newman_constant_Polymath15|23 · De-Bruijn–Newman-Konstante]] — Lambda >= 0 als schaerfster Ueberschuss-Test (Marginlosigkeit).
 > - *benutzt* → [[16_Mertens_function_Riesz_criterion|16 · Mertens-Funktion & Riesz-Kriterium]] — Widerlegte Mertens-Vermutung als Ueberschuss-Test.
+> - *benutzt* → [[65_criterion_sensitivity|65 · Sensitivität der Kriterien]] — Ueberschuss-Test H stuetzt sich auf die gemessenen Reichweiten.
 > - ← *gestützt durch* [[60_counterexample_oracle|60 · Das Gegenbeispiel-Orakel]] — Liefert die maschinelle Haelfte der Invariantenpruefung.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]

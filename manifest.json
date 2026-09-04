@@ -1,8 +1,8 @@
 {
   "name": "Riemann Hypothesis Knowledge Base",
-  "version": "1.1",
+  "version": "1.2",
   "updated": "2026-09",
-  "count": 65,
+  "count": 66,
   "documents": [
     {
       "number": "00",
@@ -1051,6 +1051,24 @@
         "self-limits"
       ],
       "file": "docs/64_trust_tiers_verification_levels.md",
+      "summary": ""
+    },
+    {
+      "number": "65",
+      "id": "doc-65",
+      "title": "Sensitivität der Kriterien: wie weit trägt numerische Evidenz wirklich?",
+      "category": "verification",
+      "status": "reference",
+      "tags": [
+        "sensitivity",
+        "resolution",
+        "robin",
+        "baez-duarte",
+        "li-criterion",
+        "de-bruijn-newman",
+        "calibration"
+      ],
+      "file": "docs/65_criterion_sensitivity.md",
       "summary": ""
     }
   ]

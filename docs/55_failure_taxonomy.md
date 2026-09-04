@@ -130,11 +130,12 @@ Vollständige Beschreibungen inkl. Fluchtbedingungen: `kb/graph/blockers.json`.
 | `48` | Weitere algebraische/spektrale Programme |  |  |  |  |  | ● |  |  |  |  |  |  | **1** |
 | `52` | Abgeschnittene Weil-Quadratform & Zeta-Spek… |  |  |  |  | ● |  |  | ● |  |  |  |  | **2** |
 | `53` | Paarkorrelation ohne RH & die Alternative H… |  |  |  |  |  |  |  |  |  |  | ● |  | **1** |
-| | **Σ Ansätze je Blocker** | **4** | **3** | **3** | **7** | **5** | **5** | **5** | **9** | **5** | **5** | **5** | **4** | **60** |
+| `65` | Sensitivität der Kriterien |  |  |  | ● |  |  |  |  |  | ● |  |  | **2** |
+| | **Σ Ansätze je Blocker** | **4** | **3** | **3** | **8** | **5** | **5** | **5** | **9** | **5** | **6** | **5** | **4** | **62** |
 
 **Spaltenlegende:** `EUL` = Euler-Blindheit · `PAR` = Paritätsbarriere · `SOFT` = Weichheitsbarriere (Voronin) · `AEQ` = Äquivalenz-Falle · `LIM` = Konvergenz- / Grenzübergangslücke · `GEO` = Fehlende Geometrie über Spec(ℤ) · `OP` = Nicht-kanonischer Operator · `POS` = Zirkuläre Positivität · `PROP` = Anteils-Decke der Mollifier-Methoden · `NUM` = Numerische Extrapolation · `MOD` = Zirkularität der Modellannahme · `VER` = Nicht-Verifizierbarkeit
 
-**Kennzahlen (automatisch):** 37 Ansätze tragen zusammen 60 Blocker-Zuordnungen bei 12 Blockern — im Mittel 1.6 Blocker pro Ansatz. Häufigster Blocker: **Zirkuläre Positivität** (9 Ansätze). Am stärksten blockierte Ansätze: `29` (3), `27` (3), `16` (3), `13` (3).
+**Kennzahlen (automatisch):** 38 Ansätze tragen zusammen 62 Blocker-Zuordnungen bei 12 Blockern — im Mittel 1.6 Blocker pro Ansatz. Häufigster Blocker: **Zirkuläre Positivität** (9 Ansätze). Am stärksten blockierte Ansätze: `29` (3), `27` (3), `16` (3), `13` (3).
 
 <!-- MATRIX:END -->
 

@@ -130,13 +130,14 @@
       "name": "Numerische Extrapolation",
       "kurz": "Aus endlicher Rechnung wird auf asymptotisches Verhalten geschlossen — die RH-Landschaft hat dafür berüchtigte Gegenbeispiele.",
       "tier": 3,
-      "beschreibung": "Kein Hindernis für einen Beweis, sondern eine Fehlerquelle bei der Bewertung von Evidenz. Die Mertens-Vermutung galt bis 10^14 und ist falsch. π(x) < Li(x) gilt für jedes berechenbare x und kehrt sich bei ~10^316 um. S(T) ist im Mittel klein, unter RH aber unbeschränkt. Numerik ist im RH-Kontext systematisch irreführend, weil die relevanten Effekte mit log log x skalieren.",
+      "beschreibung": "Kein Hindernis für einen Beweis, sondern eine Fehlerquelle bei der Bewertung von Evidenz. Die Mertens-Vermutung galt bis 10^14 und ist falsch. π(x) < Li(x) gilt für jedes berechenbare x und kehrt sich bei ~10^316 um. S(T) ist im Mittel klein, unter RH aber unbeschränkt. Numerik ist im RH-Kontext systematisch irreführend, weil die relevanten Effekte mit log log x skalieren. docs/65 vermisst diesen Blocker erstmals quantitativ: fuer vier Kriterien wird angegeben, bis zu welcher Hoehe numerische Evidenz ueberhaupt traegt -- bei dreien lautet die Antwort praktisch: gar nicht.",
       "betrifft": [
         "doc-24",
         "doc-16",
         "doc-39",
         "doc-06",
-        "doc-23"
+        "doc-23",
+        "doc-65"
       ],
       "fluchtbedingung": "Nicht überwindbar, nur vermeidbar: Numerik darf Hypothesen erzeugen und widerlegen, aber nie stützen. Ein rigoroses Intervall-Zertifikat (doc-54) ist etwas anderes als eine Stichprobe.",
       "orakel_test": "T5_rechts_von_1",
@@ -217,7 +218,8 @@
         "doc-16",
         "doc-45",
         "doc-44",
-        "doc-29"
+        "doc-29",
+        "doc-65"
       ],
       "fluchtbedingung": "Eine der beiden Richtungen muss in STRIKT SCHWÄCHERER Form unbedingt bewiesen werden, oder es muss eine quantitative Größe geben, die sich unabhängig von der RH bewegen lässt (Λ ≤ 0.22, Anteil > 41 %, d_N-Raten). Nur solche Bewegungen zählen als Fortschritt — siehe docs/58.",
       "orakel_test": null,

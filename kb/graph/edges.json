@@ -810,6 +810,54 @@
       "to": "doc-50",
       "type": "uses",
       "note": "Ergaenzt die Statustrennung des Denkprotokolls um die Verifikationsstufe."
+    },
+    {
+      "from": "doc-65",
+      "to": "doc-57",
+      "type": "uses",
+      "note": "Fuehrt die in U1 angekuendigte Sensitivitaetsanalyse aus."
+    },
+    {
+      "from": "doc-65",
+      "to": "doc-63",
+      "type": "uses",
+      "note": "Ist Experiment (2) der Entscheidungswert-Rangliste."
+    },
+    {
+      "from": "doc-65",
+      "to": "doc-13",
+      "type": "evidence_for",
+      "note": "Miss die numerische Reichweite der Baez-Duarte-Distanz d_N."
+    },
+    {
+      "from": "doc-65",
+      "to": "doc-15",
+      "type": "evidence_for",
+      "note": "Miss die Robin-Marge entlang kolossal abundanter Zahlen."
+    },
+    {
+      "from": "doc-65",
+      "to": "doc-14",
+      "type": "evidence_for",
+      "note": "Ordnet die Li-Sensitivitaet in den Kriterienvergleich ein."
+    },
+    {
+      "from": "doc-65",
+      "to": "doc-23",
+      "type": "uses",
+      "note": "Lambda als Ausnahme: methodische statt rechnerische Wand."
+    },
+    {
+      "from": "doc-65",
+      "to": "doc-24",
+      "type": "uses",
+      "note": "Direkte Nullstellenberechnung als Referenzmassstab."
+    },
+    {
+      "from": "doc-59",
+      "to": "doc-65",
+      "type": "uses",
+      "note": "Ueberschuss-Test H stuetzt sich auf die gemessenen Reichweiten."
     }
   ]
 }

@@ -1,0 +1,317 @@
+{
+  "robin": {
+    "messpunkte": [
+      {
+        "eps": 0.05,
+        "omega": 4,
+        "groesster_primfaktor": 7,
+        "log_n": 7.832014180505469,
+        "stellen_von_n": 3.4014005407815437,
+        "sigma_n_durch_n": 3.714285714285714,
+        "e_gamma_loglog_n": 3.665838365996464,
+        "verhaeltnis_R": 1.0132158986437148,
+        "marge": -0.013215898643714752,
+        "robin_erfuellt": false
+      },
+      {
+        "eps": 0.02,
+        "omega": 7,
+        "groesster_primfaktor": 17,
+        "log_n": 19.722416717043693,
+        "stellen_von_n": 8.565336750008523,
+        "sigma_n_durch_n": 5.141587823940765,
+        "e_gamma_loglog_n": 5.31072317862928,
+        "verhaeltnis_R": 0.9681521049018094,
+        "marge": 0.03184789509819064,
+        "robin_erfuellt": true
+      },
+      {
+        "eps": 0.01,
+        "omega": 10,
+        "groesster_primfaktor": 29,
+        "log_n": 29.8627929226857,
+        "stellen_von_n": 12.96924618054188,
+        "sigma_n_durch_n": 5.888619482503654,
+        "e_gamma_loglog_n": 6.049614301771515,
+        "verhaeltnis_R": 0.9733875894830656,
+        "marge": 0.026612410516934415,
+        "robin_erfuellt": true
+      },
+      {
+        "eps": 0.005,
+        "omega": 15,
+        "groesster_primfaktor": 47,
+        "log_n": 51.97028744220637,
+        "stellen_von_n": 22.570409059076088,
+        "sigma_n_durch_n": 6.886112273366991,
+        "e_gamma_loglog_n": 7.03643321657435,
+        "verhaeltnis_R": 0.9786367697126326,
+        "marge": 0.02136323028736742,
+        "robin_erfuellt": true
+      },
+      {
+        "eps": 0.002,
+        "omega": 27,
+        "groesster_primfaktor": 103,
+        "log_n": 112.3523499269103,
+        "stellen_von_n": 48.79400560212036,
+        "sigma_n_durch_n": 8.275835329609468,
+        "e_gamma_loglog_n": 8.409582619468738,
+        "verhaeltnis_R": 0.984095846855748,
+        "marge": 0.015904153144251976,
+        "robin_erfuellt": true
+      },
+      {
+        "eps": 0.001,
+        "omega": 42,
+        "groesster_primfaktor": 181,
+        "log_n": 192.3184147975403,
+        "stellen_von_n": 83.52282631495244,
+        "sigma_n_durch_n": 9.260776166197923,
+        "e_gamma_loglog_n": 9.366931297298311,
+        "verhaeltnis_R": 0.9886670321654856,
+        "marge": 0.011332967834514429,
+        "robin_erfuellt": true
+      },
+      {
+        "eps": 0.0005,
+        "omega": 68,
+        "groesster_primfaktor": 337,
+        "log_n": 345.9464702784527,
+        "stellen_von_n": 150.2426430758393,
+        "sigma_n_durch_n": 10.338258088888066,
+        "e_gamma_loglog_n": 10.412655274375707,
+        "verhaeltnis_R": 0.9928551187447141,
+        "marge": 0.007144881255285895,
+        "robin_erfuellt": true
+      },
+      {
+        "eps": 0.0002,
+        "omega": 133,
+        "groesster_primfaktor": 751,
+        "log_n": 764.5046602274183,
+        "stellen_von_n": 332.0201553260882,
+        "sigma_n_durch_n": 11.767562606485145,
+        "e_gamma_loglog_n": 11.824946083298892,
+        "verhaeltnis_R": 0.9951472525617014,
+        "marge": 0.004852747438298555,
+        "robin_erfuellt": true
+      },
+      {
+        "eps": 0.0001,
+        "omega": 221,
+        "groesster_primfaktor": 1381,
+        "log_n": 1398.1358097892119,
+        "stellen_von_n": 607.2026671427892,
+        "sigma_n_durch_n": 12.859263095377296,
+        "e_gamma_loglog_n": 12.900120624615921,
+        "verhaeltnis_R": 0.996832779287299,
+        "marge": 0.0031672207127010354,
+        "robin_erfuellt": true
+      },
+      {
+        "eps": 5e-05,
+        "omega": 373,
+        "groesster_primfaktor": 2549,
+        "log_n": 2568.676960710915,
+        "stellen_von_n": 1115.5622298287662,
+        "sigma_n_durch_n": 13.952977728016844,
+        "e_gamma_loglog_n": 13.98346002489155,
+        "verhaeltnis_R": 0.997820117709033,
+        "marge": 0.0021798822909669946,
+        "robin_erfuellt": true
+      },
+      {
+        "eps": 2e-05,
+        "omega": 757,
+        "groesster_primfaktor": 5749,
+        "log_n": 5805.92533787919,
+        "stellen_von_n": 2521.481336583205,
+        "sigma_n_durch_n": 15.415460778881119,
+        "e_gamma_loglog_n": 15.435903281866846,
+        "verhaeltnis_R": 0.9986756523014924,
+        "marge": 0.0013243476985076441,
+        "robin_erfuellt": true
+      },
+      {
+        "eps": 1e-05,
+        "omega": 1311,
+        "groesster_primfaktor": 10753,
+        "log_n": 10833.8728607513,
+        "stellen_von_n": 4705.091201065687,
+        "sigma_n_durch_n": 16.532736576293868,
+        "e_gamma_loglog_n": 16.546933755432345,
+        "verhaeltnis_R": 0.9991420054405055,
+        "marge": 0.0008579945594945348,
+        "robin_erfuellt": true
+      },
+      {
+        "eps": 5e-06,
+        "omega": 2282,
+        "groesster_primfaktor": 20173,
+        "log_n": 20243.781557505,
+        "stellen_von_n": 8791.762623279237,
+        "sigma_n_durch_n": 17.64972388427232,
+        "e_gamma_loglog_n": 17.660406907373307,
+        "verhaeltnis_R": 0.9993950862425187,
+        "marge": 0.0006049137574812846,
+        "robin_erfuellt": true
+      },
+      {
+        "eps": 2e-06,
+        "omega": 4808,
+        "groesster_primfaktor": 46511,
+        "log_n": 46589.609920312265,
+        "stellen_von_n": 20233.610502416614,
+        "sigma_n_durch_n": 19.13817328482441,
+        "e_gamma_loglog_n": 19.144984004691462,
+        "verhaeltnis_R": 0.9996442556512253,
+        "marge": 0.0003557443487747225,
+        "robin_erfuellt": true
+      },
+      {
+        "eps": 1e-06,
+        "omega": 8529,
+        "groesster_primfaktor": 87833,
+        "log_n": 87995.49273415799,
+        "stellen_von_n": 38215.9569268025,
+        "sigma_n_durch_n": 20.272580745657095,
+        "e_gamma_loglog_n": 20.277582276980663,
+        "verhaeltnis_R": 0.9997533467621904,
+        "marge": 0.0002466532378095909,
+        "robin_erfuellt": true
+      }
+    ],
+    "fit": {
+      "K": 0.8392258193054978,
+      "streuung_relativ": 0.1357269352010837,
+      "punkte": 11,
+      "log_n_bereich": [
+        112.3523499269103,
+        87995.49273415799
+      ],
+      "formel": "marge ~ K / (sqrt(log n) * log log n)",
+      "absolute_luecke": "e^gamma loglog n - sigma(n)/n ~ K * e^gamma / sqrt(log n) = 1.495 / sqrt(log n)"
+    },
+    "reichweite": [
+      {
+        "marge": 0.001,
+        "log_n": 8584.589155839209,
+        "stellen_von_n": 3728.2396997874625,
+        "benoetigte_primzahlen_ca": 947.7644974961671
+      },
+      {
+        "marge": 0.0001,
+        "log_n": 420085.7311093016,
+        "stellen_von_n": 182440.91494706288,
+        "benoetigte_primzahlen_ca": 32443.526817914844
+      },
+      {
+        "marge": 1e-06,
+        "log_n": 1570786978.2684178,
+        "stellen_von_n": 682184116.907457,
+        "benoetigte_primzahlen_ca": 74181754.67116608
+      },
+      {
+        "marge": 1e-08,
+        "log_n": 7980157265466.304,
+        "stellen_von_n": 3465738265112.1587,
+        "benoetigte_primzahlen_ca": 268619996076.98526
+      }
+    ]
+  },
+  "dn": {
+    "C_BBLS": 0.04619141793224202,
+    "reichweite": [
+      {
+        "aufloesung_delta": 0.2,
+        "log_N": 1.1547854483060502,
+        "stellen_von_N": 0.5015169479814904
+      },
+      {
+        "aufloesung_delta": 0.1,
+        "log_N": 4.619141793224201,
+        "stellen_von_N": 2.0060677919259615
+      },
+      {
+        "aufloesung_delta": 0.05,
+        "log_N": 18.476567172896804,
+        "stellen_von_N": 8.024271167703846
+      },
+      {
+        "aufloesung_delta": 0.01,
+        "log_N": 461.9141793224202,
+        "stellen_von_N": 200.6067791925962
+      },
+      {
+        "aufloesung_delta": 0.001,
+        "log_N": 46191.41793224202,
+        "stellen_von_N": 20060.677919259622
+      },
+      {
+        "aufloesung_delta": 1e-06,
+        "log_N": 46191417932.24202,
+        "stellen_von_N": 20060677919.25962
+      }
+    ],
+    "vorbehalt": "d_N^2 ~ C/log N ist die BBLS-VERMUTUNG unter RH mit einfachen Nullstellen, kein Satz."
+  },
+  "vergleich": {
+    "frage": "Wie gross muss das Rechenbudget sein, damit ein Kriterium eine RH-Verletzung ueberhaupt SEHEN koennte?",
+    "kriterien": [
+      {
+        "kriterium": "Direkte Nullstellenberechnung (docs/24)",
+        "budget_parameter": "Hoehe T",
+        "kostengesetz": "linear in T (Riemann-Siegel / Turing-Zertifikat)",
+        "erreicht": "gamma ~ 3e12 rigoros verifiziert (Platt)",
+        "kompressibel": false,
+        "urteil": "Referenzmassstab. Alles andere wird hieran gemessen."
+      },
+      {
+        "kriterium": "Li-Koeffizienten lambda_n (docs/14)",
+        "budget_parameter": "Ordnung n",
+        "kostengesetz": "n ~ gamma^2 (aus |1-1/rho| = 1 + (1-2beta)/(2 gamma^2))",
+        "erreicht": "Budget n<=1e6 traegt bis gamma ~ 80; n<=1e9 bis gamma ~ 2089",
+        "kompressibel": false,
+        "urteil": "Um 9 Groessenordnungen schwaecher als direkte Rechnung."
+      },
+      {
+        "kriterium": "Robins Ungleichung (docs/15)",
+        "budget_parameter": "Groesse n (kolossal abundant)",
+        "kostengesetz": "marge ~ K/(sqrt(log n) log log n), K = 0.839 (hier gemessen)",
+        "erreicht": "Marge ~1e-3 bei log n ~ 8600 -- hier gerechnet",
+        "kompressibel": true,
+        "urteil": "Nominal astronomisch, praktisch aber weit tragfaehiger als es aussieht: CA-Zahlen speichert man als Exponentenvektor, die Kosten wachsen nur wie pi(log n)."
+      },
+      {
+        "kriterium": "Baez-Duarte-Distanz d_N (docs/13)",
+        "budget_parameter": "Dimension N des Least-Squares-Problems",
+        "kostengesetz": "d_N^2 ~ C/log N, C = 2+gamma-log(4pi) = 0.046191 (BBLS-VERMUTUNG, kein Satz)",
+        "erreicht": "N=32, d_N=0.117 (kb/research/results/dn_experiment_note.md)",
+        "kompressibel": false,
+        "urteil": "Schlechtestes Kriterium der Sammlung. d_N < 0.01 verlangt N ~ 1e201 -- und N ist die DIMENSION einer Matrix, nicht die Groesse einer Zahl. Nicht komprimierbar, also endgueltig."
+      },
+      {
+        "kriterium": "de-Bruijn-Newman-Konstante Lambda (docs/23)",
+        "budget_parameter": "kein Rechenbudget",
+        "kostengesetz": "nicht anwendbar -- siehe Bemerkung",
+        "erreicht": "0 <= Lambda <= 0.22 (Rodgers-Tao 2018 / Polymath15 2019)",
+        "kompressibel": null,
+        "urteil": "Strukturell anders und deshalb hier der interessanteste Fall: Lambda ist keine Aufloesungsfrage. Die Methode gewinnt ihre Kraft aus der Glaettung bei t > 0, und genau die verschwindet bei t -> 0. Es ist keine Wand aus Rechenzeit, sondern eine Wand aus Methode: mehr Rechnen hilft grundsaetzlich nicht."
+      }
+    ],
+    "rangfolge_schaerfe": [
+      "direkte Nullstellenberechnung",
+      "Li-Kriterium",
+      "Robin",
+      "d_N"
+    ],
+    "kernaussage": "Alle vier Kriterien sind LOGISCH aequivalent zur RH und NUMERISCH um viele Groessenordnungen verschieden scharf. Wer 'das Kriterium wurde numerisch bestaetigt' liest, muss fragen: bis zu welcher Hoehe eigentlich?",
+    "siehe": [
+      "docs/65",
+      "docs/57",
+      "docs/59",
+      "docs/63"
+    ]
+  }
+}

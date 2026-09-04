@@ -4,7 +4,7 @@ Ein vollständiges Werkzeug, um die **Riemann-Vermutung (RH)** zu verstehen, zu
 visualisieren, Ansätze auszuprobieren und mit einer KI strukturiert-analytisch zu
 untersuchen. Drei Teile:
 
-1. **Wissensbasis** (`docs/`, 65 Dokumente) — jeder Ansatz, jedes Kriterium, jeder
+1. **Wissensbasis** (`docs/`, 66 Dokumente) — jeder Ansatz, jedes Kriterium, jeder
    gescheiterte Beweis und jede Obstruktion, jeweils mit **mathematischem Kern**
    (Formeln, Sätze, Beweisskizzen) und Quellen. Dokumente 55–64 bilden eine
    **Meta-Analyse-Schicht**: Muster im Scheitern, Autopsien, Lücken-Register,
@@ -71,10 +71,12 @@ Einzeldokument sieht:
 | **61** | Negativraum ¬RH | Robust ist genau die Obstruktionsschicht; fragil sind die Äquivalenzen |
 | **62** | KI-Arbeitsteilung + Selbstaudit | 8 offengelegte Schwächen dieses Repos |
 | **63** | Entscheidungswert von Experimenten | Ein Experiment mit vorhersagbarem Ergebnis hat Wert 0 |
-| **64** | Trust-Tiers je Claim | **1 von 43** Claims ist maschinell verifiziert; 40 sind Sekundärwissen |
+| **64** | Trust-Tiers je Claim | **1 von 45** Claims ist maschinell verifiziert; 40 sind Sekundärwissen |
+| **65** | Sensitivität der Kriterien | d_N < 0,01 verlangt Dimension **10²⁰¹**; Robins Marge fällt nur wie 1/√(log n) — numerische Kriterienprüfung ist als RH-Evidenz wertlos |
 
 ```bash
 python3 kb/counterexample.py all -T 120   # Gegenbeispiel-Orakel (Kern von docs/60)
+python3 kb/sensitivity.py all             # Reichweite der Kriterien (docs/65)
 python3 kb/invariants.py                  # Prüfliste: beweist es zu viel? (docs/59)
 python3 kb/trust.py                       # Verifikationsstufen (docs/64)
 python3 kb/validate.py                    # Konsistenz des Wissensgraphen
@@ -109,7 +111,7 @@ Erzwungen durch Design (Details: `docs/50_reasoning_protocol.md`):
 
 ## Verzeichnis
 ```
-docs/                 65 Wissensdokumente (00_INDEX.md = Einstieg, 55–64 = Meta-Schicht)
+docs/                 66 Wissensdokumente (00_INDEX.md = Einstieg, 55–65 = Meta-Schicht)
 docs/_Statusboard.md  generiertes Dashboard
 Canvas/               2 generierte Obsidian-Canvas
 .obsidian/            Vault-Konfiguration (Graph-Farbgruppen)
@@ -126,6 +128,7 @@ kb/
   formal.py           Lean/mathlib-Brücke (formale Verifikation)
   demo.py             geführte Tour
   counterexample.py   Gegenbeispiel-Orakel (Davenport-Heilbronn)  -> docs/60
+  sensitivity.py      Reichweite der Kriterien (Robin/d_N/Li/Lambda) -> docs/65
   invariants.py       Testvektoren & Ueberschuss-Tests            -> docs/59
   matrix.py           Obstruktions x Ansatz-Matrix                -> docs/55
   gaps.py             Near-Miss-Ranking                           -> docs/58
@@ -140,8 +143,10 @@ Riemann_Hypothesis_Proof_Approaches.md   Gesamtüberblick (eine Datei, EN)
 
 ## Roadmap (gemeinsam mit Fachperson/Professor)
 Priorisiert nach Entscheidungswert (`docs/63`) statt nach Aufwand:
-- **Numerische Experimente** (λ_n-Positivität, BBLS-Distanz, GUE-Statistik) — reproduzierbar
-  über das Experiment-Logbuch.
+- **Numerische Experimente** — reproduzierbar über das Experiment-Logbuch. Aber:
+  `docs/65` zeigt, dass λ_n-Positivität und BBLS-Distanz als *Evidenz* nichts
+  taugen (Reichweite γ ≈ 3,6 bzw. Dimension 10²⁰¹). Ihr Wert liegt in der
+  Validierung von Implementierungen, nicht in der Bestätigung der RH.
 - **Formalisierung von Teilresultaten in Lean** (`docs/37`) — verifizierter, publizierbarer
   Fortschritt (z. B. Hardy, de-Bruijn–Newman Λ≥0).
 - **Ein äquivalentes Kriterium rechnerisch ausreizen** (z. B. Lapidus-Spektraloperator `docs/44`).
@@ -157,7 +162,7 @@ Nicht erreichbar: ein vollständiger maschineller RH-Beweis (die Obstruktionen i
 Inhalte aus öffentlichen Quellen (arXiv, AMS, Clay/AIM, Wikipedia, Universitätsseiten),
 je Dokument am Ende belegt. Numerik ist **Evidenz, kein Beweis**.
 
-> **40 von 43 Claims tragen `zugang: sekundaer`: die Primärquellen wurden für
+> **40 von 45 Claims tragen `zugang: sekundaer`: die Primärquellen wurden für
 > diese Wissensbasis nicht gelesen.** Die Links belegen, *wo* etwas nachzulesen
 > wäre — nicht, dass es nachgelesen wurde. Für Lehrbuchaussagen ist das
 > unkritisch, für die neun Preprint-Claims aus `docs/52`–`54` ist es die

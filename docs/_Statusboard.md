@@ -99,6 +99,7 @@ SORT number ASC
 | 62 | [[62_ai_division_of_labour_self_audit\|KI-Arbeitsteilung & Selbstaudit dieser Wissen…]] | `ai-context` | `meta` | — |
 | 63 | [[63_experiment_decision_value\|Entscheidungswert von Experimenten]] | `meta` | `meta` | — |
 | 64 | [[64_trust_tiers_verification_levels\|Trust-Tiers]] | `meta` | `reference` | — |
+| 65 | [[65_criterion_sensitivity\|Sensitivität der Kriterien]] | `verification` | `reference` | ●● |
 
 ## Lücken nach Near-Miss-Score
 
@@ -131,10 +132,10 @@ Bedeutung der Stufen: [[64_trust_tiers_verification_levels]]
 | `T1-kanonisch` | 23 |
 | `T2-peer-reviewed` | 6 |
 | `T3-preprint` | 9 |
-| `T4-repo-numerik` | 3 |
+| `T4-repo-numerik` | 5 |
 | `T5-konsens` | 1 |
 
-*43 Claims gesamt · 40 aus Sekundärdarstellungen erfasst (siehe [[62_ai_division_of_labour_self_audit]], Befund 1).*
+*45 Claims gesamt · 40 aus Sekundärdarstellungen erfasst (siehe [[62_ai_division_of_labour_self_audit]], Befund 1).*
 
 ## Karten
 

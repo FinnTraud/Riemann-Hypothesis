@@ -102,13 +102,26 @@ korrekt und nützlich. Es ist eine Aussage über seine **numerische
 Trennschärfe**, und diese Aussage fehlt in der Literatur zur Zetafunktion
 weitgehend, weil niemand das Kriterium an einem Gegenbeispiel kalibriert hat.
 
-**Abbruchkriterium.** Findet sich eine Arbeit, die diese Sensitivitätsanalyse
-bereits durchführt, wird U1 zu einem regulären Dokument. **Offene Fortsetzung:**
-dieselbe Analyse für d_N (Báez-Duarte, `docs/13`), Robin (`docs/15`) und die
-de-Bruijn–Newman-Schranken (`docs/23`). Vermutung: d_N hat eine ähnlich
-schlechte, Robin eine noch schlechtere Höhenskalierung.
+**Fortsetzung: durchgeführt.** Die angekündigte Analyse für d_N, Robin und Λ
+ist inzwischen gerechnet — Ergebnisse in **`docs/65`** (`kb/sensitivity.py`).
+Die damals geäußerte Vermutung („d_N ähnlich schlecht, Robin noch schlechter")
+war **in beide Richtungen falsch**:
 
-**Aufwand.** Klein bis mittel. Der Rahmen steht (`kb/counterexample.py`).
+- **d_N ist mit Abstand das schlechteste** Kriterium, nicht nur „ähnlich":
+  d_N < 0,01 verlangt eine Least-Squares-Dimension von N ≈ 10²⁰¹.
+- **Robin ist besser als erwartet**, weil seine Testobjekte *komprimierbar*
+  sind — kolossal abundante Zahlen speichert man als Exponentenvektor. Eine
+  Zahl mit 38 220 Stellen war in Sekunden gerechnet.
+- **Λ passt gar nicht ins Schema**: dort gibt es kein Rechenbudget, dessen
+  Erhöhung hilft. Die Wand ist methodisch, nicht rechnerisch.
+
+Die **Kompressionsfrage** war vor dieser Rechnung nicht sichtbar und ist eine
+eigene Bewertungsachse (`docs/65`, Punkt 4).
+
+**Abbruchkriterium.** Findet sich eine Arbeit, die diese Sensitivitätsanalyse
+bereits durchführt, wird U1 zu einem regulären Dokument.
+
+**Aufwand.** Erledigt. Offen bleiben Volchkov/Sekatskii/Redheffer (`docs/45`).
 
 ---
 
@@ -301,11 +314,12 @@ abgeglichen.
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
-> [!abstract]- Graph-Nachbarn (4)
+> [!abstract]- Graph-Nachbarn (5)
 > - *ist Evidenz für* → [[14_Li_criterion_Bombieri_Lagarias_Weil_positivity|14 · Li-Kriterium, Bombieri–Lagarias & Weil-Positivität]] — Sensitivitaetsanalyse: die Nachweisgrenze des Li-Kriteriums skaliert wie gamma^2.
 > - *benutzt* → [[55_failure_taxonomy|55 · Muster im Scheitern]] — Leitet Richtungen aus den Luecken der Blocker-Matrix ab.
 > - *benutzt* → [[56_failure_autopsies|56 · Fehler-Autopsien]] — Nimmt Beobachtung 4 der Autopsien als Ausgangspunkt (leerer Euler-Quadrant).
 > - ← *wird benutzt von* [[63_experiment_decision_value|63 · Entscheidungswert von Experimenten]] — Priorisiert die dort abgeleiteten Richtungen.
+> - ← *wird benutzt von* [[65_criterion_sensitivity|65 · Sensitivität der Kriterien]] — Fuehrt die in U1 angekuendigte Sensitivitaetsanalyse aus.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 

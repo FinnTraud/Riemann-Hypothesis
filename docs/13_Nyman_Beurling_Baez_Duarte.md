@@ -97,8 +97,9 @@ was den direkten Bezug Distanz ↔ Nullstellenlage herstellt.
 > **Es fehlt:** Eine UNBEDINGTE obere Schranke, die d_N → 0 erzwingt. Alle bekannten unbedingten Resultate zeigen nach unten, nicht nach oben.
 > **Typ:** aequivalenz · Bewertung: [[58_gap_registry_near_miss]]
 
-> [!abstract]- Graph-Nachbarn (2)
+> [!abstract]- Graph-Nachbarn (3)
 > - *äquivalent zu* → **Riemann-Vermutung (RH)** — Nyman-Beurling/Báez-Duarte: Dichte ⟺ RH.
+> - ← *gestützt durch* [[65_criterion_sensitivity|65 · Sensitivität der Kriterien]] — Miss die numerische Reichweite der Baez-Duarte-Distanz d_N.
 > - ← *wird benutzt von* [[14_Li_criterion_Bombieri_Lagarias_Weil_positivity|14 · Li-Kriterium, Bombieri–Lagarias & Weil-Positivität]] — Beide Positivitäts-/Dichtekriterien, gemeinsames Leitmotiv.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]

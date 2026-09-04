@@ -97,7 +97,7 @@ Ergebnis: **0 ≤ Λ ≤ 0,22**.
 > **Es fehlt:** Λ ≤ 0. Zusammen mit Λ ≥ 0 wäre das Λ = 0 und damit die RH.
 > **Typ:** quantitativ · Bewertung: [[58_gap_registry_near_miss]]
 
-> [!abstract]- Graph-Nachbarn (7)
+> [!abstract]- Graph-Nachbarn (8)
 > - *äquivalent zu* → **Riemann-Vermutung (RH)** — de-Bruijn–Newman: Λ≤0 ⟺ RH.
 > - *ist Instanz von* → **Positivität / Reellwurzeligkeit** — de-Bruijn–Newman Λ≤0.
 > - ← *wird benutzt von* [[33_statistical_mechanics_Lee_Yang|33 · Statistische Mechanik & Lee–Yang-Analogie]] — Statistische Mechanik liefert Werkzeuge für die dBN-Konstante.
@@ -105,6 +105,7 @@ Ergebnis: **0 ≤ Λ ≤ 0,22**.
 > - ← *wird benutzt von* [[58_gap_registry_near_miss|58 · GAP-Registry & Near-Miss-Bewertung]] — Bewertet die Luecke 0 <= Lambda <= 0,22.
 > - ← *wird benutzt von* [[59_invariants_test_vectors|59 · Invarianten & Testvektoren]] — Lambda >= 0 als schaerfster Ueberschuss-Test (Marginlosigkeit).
 > - ← *wird benutzt von* [[61_negative_space_if_rh_is_false|61 · Negativraum]] — Nicht-RH ist aequivalent zu Lambda > 0.
+> - ← *wird benutzt von* [[65_criterion_sensitivity|65 · Sensitivität der Kriterien]] — Lambda als Ausnahme: methodische statt rechnerische Wand.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 

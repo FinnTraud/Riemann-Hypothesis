@@ -94,8 +94,9 @@ mit Gleichheit nur bei n = 1. **Herleitung:** Da H_n = log n + γ + O(1/n) und e
 > **Es fehlt:** Die Ungleichung selbst. Es gibt kein unbedingtes Teilresultat, das ihr näherkommt.
 > **Typ:** aequivalenz · Bewertung: [[58_gap_registry_near_miss]]
 
-> [!abstract]- Graph-Nachbarn (1)
+> [!abstract]- Graph-Nachbarn (2)
 > - *äquivalent zu* → **Riemann-Vermutung (RH)** — Robin/Lagarias-Ungleichung ⟺ RH.
+> - ← *gestützt durch* [[65_criterion_sensitivity|65 · Sensitivität der Kriterien]] — Miss die Robin-Marge entlang kolossal abundanter Zahlen.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 

@@ -75,6 +75,13 @@ Offen sind dieselbe Analyse für d_N (Báez-Duarte), Robin und die
 Beidseitig informativ, niedrige Kosten, breite Reichweite. **Bestes
 Aufwand-Nutzen-Verhältnis der Liste.**
 
+> ✅ **Durchgeführt.** Ergebnis: `docs/65`. **Ausgang A ist eingetreten** — alle
+> drei geprüften Kriterien skalieren schlecht, aber auf drei verschiedene Arten.
+> Zusätzlich kam ein Befund heraus, der in keiner der beiden Prognosen stand:
+> die **Komprimierbarkeit der Testobjekte** ist eine eigene Bewertungsachse und
+> trennt Robin scharf von d_N. Das ist der Normalfall bei einem gut gewählten
+> Experiment — der Ertrag lag teilweise neben der Fragestellung.
+
 ### ③ Epstein-Zeta als zweiter Testvektor
 *(`docs/59`, `docs/60` · Kosten: mittel · Reichweite: `blk-euler-blindness`, Einwandsresistenz)*
 
@@ -115,17 +122,18 @@ verbreitetste Form numerischer RH-Arbeit.
 
 ## Zusammenfassung
 
-| Rang | Experiment | Beidseitig? | Vorhersagbar? | Kosten | Reichweite |
-|---|---|:-:|:-:|---|---|
-| ① | Weil-Truncation vs. DH | ✅ | nein | hoch | breit |
-| ② | Negativkontrollen d_N/Robin/Λ | ✅ | nein | **klein** | breit |
-| ③ | Epstein als Testvektor | ❌ | **ja** | mittel | eng (Werkzeugbau) |
-| ④ | Spektralstatistik endliches Modell | ✅ | nein | mittel | mittel |
-| ⑤ | Obstruktionen formalisieren | — | ja | hoch | eng, aber sicher |
-| ⑥ | Höher rechnen | ❌ | **ja** | sehr hoch | **null** |
+| Rang | Experiment | Beidseitig? | Vorhersagbar? | Kosten | Reichweite | Stand |
+|---|---|:-:|:-:|---|---|---|
+| ① | Weil-Truncation vs. DH | ✅ | nein | hoch | breit | offen |
+| ② | Negativkontrollen d_N/Robin/Λ | ✅ | nein | **klein** | breit | ✅ **erledigt** → `docs/65` |
+| ③ | Epstein als Testvektor | ❌ | **ja** | mittel | eng (Werkzeugbau) | offen |
+| ④ | Spektralstatistik endliches Modell | ✅ | nein | mittel | mittel | offen |
+| ⑤ | Obstruktionen formalisieren | — | ja | hoch | eng, aber sicher | offen |
+| ⑥ | Höher rechnen | ❌ | **ja** | sehr hoch | **null** | abgeraten |
 
-**Empfehlung:** ② zuerst — kleinste Kosten, breiteste Wirkung, beide Ausgänge
-informativ. Dann ①.
+**Stand:** ② ist durchgeführt (`docs/65`). Nächste Empfehlung: **①** — das
+einzige verbleibende Experiment, bei dem alle Ausgänge informativ sind und das
+den höchstplatzierten Ansatz des Near-Miss-Rankings direkt betrifft.
 
 ## Bezug zu docs/58
 
@@ -152,10 +160,11 @@ Sensitivitätsergebnisse, auf die es sich stützt, sind in `docs/57` und
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
-> [!abstract]- Graph-Nachbarn (3)
+> [!abstract]- Graph-Nachbarn (4)
 > - *benutzt* → [[55_failure_taxonomy|55 · Muster im Scheitern]] — Bemisst Experimente an der Reichweite in der Blocker-Matrix.
 > - *benutzt* → [[57_untried_directions|57 · Noch nicht Versuchtes]] — Priorisiert die dort abgeleiteten Richtungen.
 > - *benutzt* → [[58_gap_registry_near_miss|58 · GAP-Registry & Near-Miss-Bewertung]] — Kehrseite des Near-Miss-Befunds: messbar heisst ausgereizt.
+> - ← *wird benutzt von* [[65_criterion_sensitivity|65 · Sensitivität der Kriterien]] — Ist Experiment (2) der Entscheidungswert-Rangliste.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 

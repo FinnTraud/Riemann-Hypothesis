@@ -248,7 +248,7 @@
       "width": 560,
       "height": 300,
       "type": "text",
-      "text": "## Äquivalenz-Falle\n\nEin Kriterium ist zur RH äquivalent und damit exakt gleich schwer — die Umformulierung erzeugt den Anschein von Fortschritt, ohne die Beweislast zu senken.\n\n**Fluchtbedingung:** Eine der beiden Richtungen muss in STRIKT SCHWÄCHERER Form unbedingt bewiesen werden, oder es muss eine quantitative Größe geben, die sich unabhängig von der RH bewegen lässt (Λ ≤ 0.22, Anteil > 41 %, d_N-Raten). Nur solche Bewegungen zählen als Fortschritt — siehe docs/58.\n\n*7 Ansätze betroffen*",
+      "text": "## Äquivalenz-Falle\n\nEin Kriterium ist zur RH äquivalent und damit exakt gleich schwer — die Umformulierung erzeugt den Anschein von Fortschritt, ohne die Beweislast zu senken.\n\n**Fluchtbedingung:** Eine der beiden Richtungen muss in STRIKT SCHWÄCHERER Form unbedingt bewiesen werden, oder es muss eine quantitative Größe geben, die sich unabhängig von der RH bewegen lässt (Λ ≤ 0.22, Anteil > 41 %, d_N-Raten). Nur solche Bewegungen zählen als Fortschritt — siehe docs/58.\n\n*8 Ansätze betroffen*",
       "color": "6"
     },
     {
@@ -313,6 +313,15 @@
       "height": 90,
       "type": "file",
       "file": "docs/29_Jensen_Polya_Laguerre_Polya_GORZ.md"
+    },
+    {
+      "id": "blk-equivalence-trap--doc-65",
+      "x": 2040,
+      "y": 1195,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/65_criterion_sensitivity.md"
     },
     {
       "id": "blk-noncanonical-operator",
@@ -541,7 +550,7 @@
       "width": 560,
       "height": 300,
       "type": "text",
-      "text": "## Numerische Extrapolation\n\nAus endlicher Rechnung wird auf asymptotisches Verhalten geschlossen — die RH-Landschaft hat dafür berüchtigte Gegenbeispiele.\n\n**Fluchtbedingung:** Nicht überwindbar, nur vermeidbar: Numerik darf Hypothesen erzeugen und widerlegen, aber nie stützen. Ein rigoroses Intervall-Zertifikat (doc-54) ist etwas anderes als eine Stichprobe.\n\n*5 Ansätze betroffen* · maschinell prüfbar: `T5_rechts_von_1` ([[60_counterexample_oracle]])",
+      "text": "## Numerische Extrapolation\n\nAus endlicher Rechnung wird auf asymptotisches Verhalten geschlossen — die RH-Landschaft hat dafür berüchtigte Gegenbeispiele.\n\n**Fluchtbedingung:** Nicht überwindbar, nur vermeidbar: Numerik darf Hypothesen erzeugen und widerlegen, aber nie stützen. Ein rigoroses Intervall-Zertifikat (doc-54) ist etwas anderes als eine Stichprobe.\n\n*6 Ansätze betroffen* · maschinell prüfbar: `T5_rechts_von_1` ([[60_counterexample_oracle]])",
       "color": "4"
     },
     {
@@ -588,6 +597,15 @@
       "height": 90,
       "type": "file",
       "file": "docs/23_de_Bruijn_Newman_constant_Polymath15.md"
+    },
+    {
+      "id": "blk-finite-evidence--doc-65",
+      "x": 3440,
+      "y": 525,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/65_criterion_sensitivity.md"
     },
     {
       "id": "blk-model-circularity",
@@ -901,6 +919,14 @@
       "color": "6"
     },
     {
+      "id": "e-blk-equivalence-trap--doc-65",
+      "fromNode": "blk-equivalence-trap",
+      "fromSide": "right",
+      "toNode": "blk-equivalence-trap--doc-65",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
       "id": "e-blk-noncanonical-operator--doc-05",
       "fromNode": "blk-noncanonical-operator",
       "fromSide": "right",
@@ -1097,6 +1123,14 @@
       "fromNode": "blk-finite-evidence",
       "fromSide": "right",
       "toNode": "blk-finite-evidence--doc-23",
+      "toSide": "left",
+      "color": "4"
+    },
+    {
+      "id": "e-blk-finite-evidence--doc-65",
+      "fromNode": "blk-finite-evidence",
+      "fromSide": "right",
+      "toNode": "blk-finite-evidence--doc-65",
       "toSide": "left",
       "color": "4"
     },

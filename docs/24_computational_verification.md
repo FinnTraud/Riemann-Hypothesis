@@ -98,11 +98,12 @@ Alle gefundenen Nullstellen: einfach und exakt auf Re(s) = 1/2.
 > 
 > Vollständige Matrix: [[55_failure_taxonomy]]
 
-> [!abstract]- Graph-Nachbarn (4)
+> [!abstract]- Graph-Nachbarn (5)
 > - *ist Evidenz für* → **Riemann-Vermutung (RH)** — Numerische Verifikation (>10^13 Nullstellen) — Evidenz, kein Beweis.
 > - *ist Evidenz für* → [[52_Connes_truncated_Weil_spectral_realization|52 · Abgeschnittene Weil-Quadratform & Zeta-Spektraltrip…]] — Hochpraezise Nullstellendaten sind der Massstab fuer die Genauigkeitsangaben.
 > - ← *wird benutzt von* [[54_machine_assisted_number_theory_ANTEDB_Lean|54 · Maschinengestützte Zahlentheorie]] — Rigorose Verifikationsstandards (Platt, Intervall-Zertifikate).
 > - ← *wird benutzt von* [[60_counterexample_oracle|60 · Das Gegenbeispiel-Orakel]] — Benutzt Turings Nullstellenzaehlung als Verletzungsdetektor.
+> - ← *wird benutzt von* [[65_criterion_sensitivity|65 · Sensitivität der Kriterien]] — Direkte Nullstellenberechnung als Referenzmassstab.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
