@@ -89,3 +89,15 @@ mit Riemann-Siegel-Theta θ(t) = arg Γ(1/4 + it/2) − (t/2) log π und einem a
 - [On a Fair Copy of Riemann's 1859 Publication Created by Alfred Clebsch (arXiv 1512.02976)](https://arxiv.org/pdf/1512.02976)
 - [On Riemann's Nachlass for Analytic Number Theory: A translation of Siegel's Über (arXiv 1810.05198)](https://arxiv.org/pdf/1810.05198)
 - [A computational history of prime numbers and Riemann zeros (arXiv 1810.05244)](https://arxiv.org/pdf/1810.05244)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!abstract]- Graph-Nachbarn (2)
+> - *ist Instanz von* → **Kritische Gerade Re(s)=1/2** — Riemann 1859: Funktionalgleichung erzeugt Symmetrie um Re=1/2.
+> - ← *wird benutzt von* [[02_Riemann_von_Mangoldt_formula_explicit_formula|02 · Riemann–von-Mangoldt-Formel und die explizite Formel]] — Explizite Formel baut auf Funktionalgleichung/ξ auf.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

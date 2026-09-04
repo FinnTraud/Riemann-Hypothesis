@@ -58,3 +58,26 @@ Die **Selberg-Klasse 𝒮** (Dok. 21) verlangt zusätzlich zu Funktionalgleichun
 - [Positive proportion of zeros of Epstein zeta on the critical line (arXiv 2411.18492)](https://arxiv.org/pdf/2411.18492)
 - [On the Selberg class / converse theorems (arXiv 1605.02354)](https://arxiv.org/pdf/1605.02354)
 - [On some reasons for doubting the Riemann hypothesis — Ivić (arXiv math/0311162)](https://arxiv.org/pdf/math/0311162)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (2)
+> - **Euler-Blindheit** *(Tier 1)* — Das Argument benutzt nur Funktionalgleichung, Fortsetzung und Wachstum — es würde für Davenport–Heilbronn genauso gelten und ist damit falsch.
+>   *Fluchtbedingung:* Mindestens ein Beweisschritt muss eine Eigenschaft benutzen, die für Davenport–Heilbronn NACHWEISLICH FALSCH ist — praktisch immer: Multiplikativität der Koeffizienten / Euler-Produkt.
+> - **Weichheitsbarriere (Voronin)** *(Tier 1)* — ζ approximiert im kritischen Streifen JEDE nullstellenfreie analytische Funktion — 'weiche' Argumente können deshalb nicht greifen.
+>   *Fluchtbedingung:* Das Argument muss eine globale Rigiditätseigenschaft benutzen (Euler-Produkt, Grad in der Selberg-Klasse, Spurformel), die durch lokale Approximation nicht sichtbar ist.
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!abstract]- Graph-Nachbarn (5)
+> - *ist Evidenz für* → **Euler-Produkt (Multiplikativität)** — Epstein-Zeta + Selberg-Klassen-Rigidität: Euler-Produkt+Ramanujan erzwingen die Gerade.
+> - *ist Obstruktion für* → **Riemann-Vermutung (RH)** — Welche Eigenschaft die Gerade erzwingt; schließt 'weiche' Beweise aus.
+> - *ist Obstruktion für* → [[52_Connes_truncated_Weil_spectral_realization|52 · Abgeschnittene Weil-Quadratform & Zeta-Spektraltrip…]] — Epstein/Selberg-Rigiditaet verlangt echten Euler-Produkt-Input - Dok. 52 liefert ihn, besteht die Pruefung also.
+> - *benutzt* → [[21_GRH_Selberg_class_grand_RH|21 · Verallgemeinerte, Große Riemann-Vermutung & Selberg…]] — Selberg-Klassen-Klassifikation (Kaczorowski–Perelli).
+> - ← *wird benutzt von* [[59_invariants_test_vectors|59 · Invarianten & Testvektoren]] — Epstein-Zeta als zweiter, natuerlicher Testvektor.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

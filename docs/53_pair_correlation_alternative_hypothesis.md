@@ -126,3 +126,30 @@ präzise als offene Aufgabe formuliert.
 - [Baluyot, Goldston, Suriajaya, Turnage-Butterbaugh — *The Alternative Hypothesis for Zeros of the Riemann Zeta-Function* (arXiv:2508.10857)](https://arxiv.org/abs/2508.10857)
 - [Goldston, Suriajaya — *Zeta Zeros on the Critical Line* (arXiv:2511.20059)](https://arxiv.org/abs/2511.20059)
 - [Montgomery — *The pair correlation of zeros of the zeta function* (1973)](https://public.websites.umich.edu/~hlm/paircor1.pdf)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (1)
+> - **Zirkularität der Modellannahme** *(Tier 3)* — Zufallsmatrix- und probabilistische Modelle setzen die RH voraus, um überhaupt formuliert werden zu können.
+>   *Fluchtbedingung:* Unbedingte Formulierung: Aussagen über Nullstellen ohne die Annahme, dass sie auf der Geraden liegen (doc-53 ist der Prototyp).
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!missing]- Die fehlende Aussage
+> **Bewiesen:** Paarkorrelationsresultate ohne RH-Annahme; aus der Paarkorrelationsvermutung folgt, dass 100 % der Nullstellen einfach sind und auf der kritischen Geraden liegen.
+> **Es fehlt:** Die Paarkorrelationsvermutung selbst — bzw. der Ausschluss der Alternativen Hypothese (Abstände konzentriert auf halbzahligen Vielfachen).
+> **Typ:** bedingt auf offene vermutung · Bewertung: [[58_gap_registry_near_miss]]
+
+> [!abstract]- Graph-Nachbarn (6)
+> - *verallgemeinert* → [[06_Montgomery_pair_correlation_RMT|06 · Montgomery-Paarkorrelation & Random-Matrix-Theorie]] — Nimmt die RH-Annahme aus der Gallagher-Mueller-Methode heraus.
+> - *ist Teilresultat für* → **Kritische Gerade Re(s)=1/2** — PCC (ohne RH) impliziert 100 % einfache Nullstellen auf der kritischen Geraden.
+> - *benutzt* → [[07_Keating_Snaith_moments|07 · Keating–Snaith]] — Teilt den Random-Matrix-Rahmen mit Keating-Snaith.
+> - *schwächer als* → [[04_Levinson_Conrey_positive_proportion|04 · Levinson, Conrey & Co.]] — Die 100-%-Aussagen sind bedingt; unbedingt sind bislang nur ~41 % (Conrey).
+> - ← *hat Instanz* **Paarkorrelation der Nullstellen (Montgomery F(alpha,T))** — Dok. 53 behandelt die Paarkorrelation ohne RH-Annahme.
+> - ← *hat Instanz* **Alternative Hypothese (AH)** — Dok. 53 formuliert und verschaerft die Alternative Hypothese.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

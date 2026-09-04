@@ -83,3 +83,15 @@ Für eine geeignete Testfunktion h (gerade, holomorph im Streifen) mit Fourier-T
 - [The Selberg trace formula and the Riemann zeta function — Hejhal (Experts@Minnesota)](https://experts.umn.edu/en/publications/the-selberg-trace-formula-and-the-riemann-zeta-function)
 - [Selberg trace formula and zeta functions — M. Watkins](https://empslocal.ex.ac.uk/people/staff/mrwatkin/zeta/physics4.htm)
 - [Riemann hypothesis — Wikipedia (Selberg zeta)](https://en.wikipedia.org/wiki/Riemann_hypothesis)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!abstract]- Graph-Nachbarn (2)
+> - *ist Blaupause für* → **Hilbert–Pólya / spektrale Interpretation** — Selberg: BEWIESENES Modell (Laplace selbstadjungiert ⇒ RH-Analogon).
+> - *ist Blaupause für* → **Explizite Formel (Primzahlen↔Nullstellen)** — Selberg-Spurformel = Analogon der expliziten Formel.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

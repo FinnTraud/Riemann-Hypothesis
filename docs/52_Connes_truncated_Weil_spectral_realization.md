@@ -152,3 +152,41 @@ Tier-1-Obstruktion, hat aber eine klar benennbare offene Stelle.
 - [Suzuki — *Weil's quadratic form via the screw function* (arXiv:2606.09096)](https://arxiv.org/abs/2606.09096)
 - [*A Numerical Realization of Suzuki's Weil-Quadratic-Form Operator* (arXiv:2607.24830)](https://arxiv.org/abs/2607.24830)
 - [Connes — Publikationsseite](https://alainconnes.org/publications/)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (2)
+> - **Zirkuläre Positivität** *(Tier 2)* — Die RH wird auf eine Positivitätsaussage reduziert, die selbst nur als äquivalent, nie unabhängig bewiesen ist.
+>   *Fluchtbedingung:* Die Positivität muss aus einer Struktur folgen, die unabhängig von der Nullstellenlage definiert ist. Im bewiesenen Fall 𝔽_q (doc-18) leistet das die Schnittform auf der Fläche C×C — dort ist Positivität ein Satz der Geometrie, nicht eine Umformulierung des Ziels.
+> - **Konvergenz- / Grenzübergangslücke** *(Tier 2)* — Für jede endliche Abschneidung bewiesen — der Grenzübergang ist offen.
+>   *Fluchtbedingung:* Eine von Λ (bzw. N, d) UNABHÄNGIGE Schranke — Kompaktheit, gleichgradige Stetigkeit oder eine explizite Fehlerabschätzung, die den Grenzübergang erlaubt.
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!missing]- Die fehlende Aussage
+> **Bewiesen:** Für jeden endlichen Cutoff Λ liegen die Nullstellen der abgeschnittenen (Galerkin-)Weil-Quadratform korrekt. Das ist ein Satz, kein Postulat.
+> **Es fehlt:** Eine von Λ UNABHÄNGIGE Schranke, die den Grenzübergang Λ → ∞ erlaubt (Kompaktheit, gleichgradige Stetigkeit oder eine explizite Fehlerabschätzung).
+> **Typ:** grenzuebergang · Bewertung: [[58_gap_registry_near_miss]]
+
+> [!abstract]- Graph-Nachbarn (15)
+> - *ist Blaupause für* → **Riemann-Vermutung (RH)** — Programm fuer einen RH-Beweis; es fehlt der Konvergenzschritt Cutoff -> unendlich.
+> - *ist Evidenz für* → **Kritische Gerade Re(s)=1/2** — Nullstellen des Grundzustands liegen fuer jeden endlichen Cutoff auf Re(s)=1/2.
+> - *modelliert* → **Hilbert–Pólya / spektrale Interpretation** — Endlich-dimensionale, rechenbare Realisierung des Hilbert-Polya-Programms.
+> - *benutzt* → [[14_Li_criterion_Bombieri_Lagarias_Weil_positivity|14 · Li-Kriterium, Bombieri–Lagarias & Weil-Positivität]] — Baut direkt auf Weil-Positivitaet / der Weilschen Quadratform auf.
+> - *benutzt* → [[02_Riemann_von_Mangoldt_formula_explicit_formula|02 · Riemann–von-Mangoldt-Formel und die explizite Formel]] — Guinand-Weil-Testfunktionen kommen aus der expliziten Formel.
+> - *benutzt* → [[11_Connes_Moscovici_prolate_spheroidal|11 · Connes–Moscovici]] — Setzt die Connes-Moscovici-Linie (prolate spheroidal, Skalierungsoperator) fort.
+> - *benutzt* → [[10_Connes_noncommutative_geometry|10 · Alain Connes]] — Rahmen der nichtkommutativen Geometrie von Connes.
+> - *benutzt* → **Positivität / Reellwurzeligkeit** — Positivitaet (Caratheodory-Fejer / PSD-Toeplitz) erzwingt die Nullstellenlage.
+> - *benutzt* → **Euler-Produkt (Multiplikativität)** — Nur Euler-Faktoren p <= x gehen in die Konstruktion ein - der arithmetische Input.
+> - ← *gestützt durch* [[24_computational_verification|24 · Numerische Verifikation der Riemann-Vermutung]] — Hochpraezise Nullstellendaten sind der Massstab fuer die Genauigkeitsangaben.
+> - ← *hat Instanz* **Abgeschnittene Weil-Quadratform (Galerkin-Truncation)** — Dok. 52 stellt die abgeschnittene Weil-Quadratform dar.
+> - ← *wird obstruiert von* [[43_Epstein_zeta_Selberg_class_rigidity|43 · Epstein-Zetafunktionen & Selberg-Klassen-Rigidität]] — Epstein/Selberg-Rigiditaet verlangt echten Euler-Produkt-Input - Dok. 52 liefert ihn, besteht die Pruefung also.
+> - ← *wird obstruiert von* [[46_Voronin_universality|46 · Voronin-Universalität]] — Voronin-Universalitaet schliesst 'weiche' Argumente aus; Dok. 52 arbeitet ueber Positivitaet, nicht ueber Nullstellenformeln.
+> - ← *wird benutzt von* **Formale Verifikation / maschinengestuetzte Mathematik** — Die Weil-Form-Numerik wird mit Reproduzierbarkeitspaketen und Intervall-Zertifikaten geliefert.
+> - ← *wird benutzt von* [[58_gap_registry_near_miss|58 · GAP-Registry & Near-Miss-Bewertung]] — Bewertet den Grenzuebergang der abgeschnittenen Weil-Quadratform.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

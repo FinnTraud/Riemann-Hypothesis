@@ -114,3 +114,19 @@ Das ist der Standard, an dem sich auch die Experimente in `kb/research/` messen 
 - [Math, Inc. — *Introducing Gauss, an agent for autoformalization*](https://www.math.inc/gauss)
 - [Kontorovich, Tao — PrimeNumberTheoremAnd (Lean-Projekt)](https://leanprover-community.github.io/papers.html)
 - [Groskin — Reproduzierbarkeitspaket zur abgeschnittenen Weil-Form (arXiv:2607.02828)](https://arxiv.org/abs/2607.02828)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!abstract]- Graph-Nachbarn (6)
+> - *ist Evidenz für* → [[37_formalization_lean_proof_assistants|37 · Formalisierung]] — Der formalisierte starke Primzahlsatz zeigt, dass Lean analytische Zahlentheorie traegt.
+> - *ist Evidenz für* → [[28_AI_and_RH|28 · KI / Machine Learning und die Riemann-Vermutung]] — Autoformalisierung als konkreter KI-Beitrag im RH-Umfeld.
+> - *benutzt* → [[49_live_analytic_frontier|49 · Live-Front der analytischen Zahlentheorie]] — Systematisiert und verschaerft die Resultate der Live-Front.
+> - *benutzt* → [[22_Guth_Maynard_2024|22 · Guth–Maynard]] — Additive Energie der Nullstellen ist die Guth-Maynard-Zwischengroesse.
+> - *benutzt* → [[24_computational_verification|24 · Numerische Verifikation der Riemann-Vermutung]] — Rigorose Verifikationsstandards (Platt, Intervall-Zertifikate).
+> - ← *hat Instanz* **Formale Verifikation / maschinengestuetzte Mathematik** — Dok. 54 beschreibt ANTEDB, Lean-PNT und Zertifikate.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

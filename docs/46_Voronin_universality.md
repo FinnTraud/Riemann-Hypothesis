@@ -49,3 +49,24 @@ Dies macht die Universalität sogar zu einem (eher theoretischen) RH-Kriterium.
 - [Voronin's universality theorem — Wikipedia](https://en.wikipedia.org/wiki/Zeta_function_universality)
 - [J. Steuding — Value-Distribution of L-Functions (Springer Lecture Notes 1877) — Standardreferenz Universalität]
 - [On some reasons for doubting the Riemann hypothesis — Ivić (arXiv math/0311162)](https://arxiv.org/pdf/math/0311162)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (2)
+> - **Euler-Blindheit** *(Tier 1)* — Das Argument benutzt nur Funktionalgleichung, Fortsetzung und Wachstum — es würde für Davenport–Heilbronn genauso gelten und ist damit falsch.
+>   *Fluchtbedingung:* Mindestens ein Beweisschritt muss eine Eigenschaft benutzen, die für Davenport–Heilbronn NACHWEISLICH FALSCH ist — praktisch immer: Multiplikativität der Koeffizienten / Euler-Produkt.
+> - **Weichheitsbarriere (Voronin)** *(Tier 1)* — ζ approximiert im kritischen Streifen JEDE nullstellenfreie analytische Funktion — 'weiche' Argumente können deshalb nicht greifen.
+>   *Fluchtbedingung:* Das Argument muss eine globale Rigiditätseigenschaft benutzen (Euler-Produkt, Grad in der Selberg-Klasse, Spurformel), die durch lokale Approximation nicht sichtbar ist.
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!abstract]- Graph-Nachbarn (3)
+> - *äquivalent zu* → **Riemann-Vermutung (RH)** — Bagchi: starke Rekurrenz von ζ ⟺ RH (Universalitäts-Kriterium).
+> - *ist Obstruktion für* → **Riemann-Vermutung (RH)** — Voronin-Universalität: 'weiche' funktionentheoretische Beweise unmöglich.
+> - *ist Obstruktion für* → [[52_Connes_truncated_Weil_spectral_realization|52 · Abgeschnittene Weil-Quadratform & Zeta-Spektraltrip…]] — Voronin-Universalitaet schliesst 'weiche' Argumente aus; Dok. 52 arbeitet ueber Positivitaet, nicht ueber Nullstellenformeln.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

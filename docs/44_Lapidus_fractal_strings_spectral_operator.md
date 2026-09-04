@@ -66,3 +66,28 @@ Dies ordnet sich in das Hilbert–Pólya-Bild ein (Dok. 05): „komplexe Dimensi
 - [Riemann Zeroes and Phase Transitions via the Spectral Operator on Fractal Strings (arXiv 1203.4828)](https://arxiv.org/abs/1203.4828v2)
 - [The Sound of Fractal Strings and the Riemann Hypothesis (arXiv 1505.01548)](https://arxiv.org/pdf/1505.01548)
 - [Towards a fractal cohomology: Spectra of Pólya–Hilbert operators, regularized determinants and Riemann zeros (arXiv 1705.06222)](https://arxiv.org/pdf/1705.06222)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (2)
+> - **Konvergenz- / Grenzübergangslücke** *(Tier 2)* — Für jede endliche Abschneidung bewiesen — der Grenzübergang ist offen.
+>   *Fluchtbedingung:* Eine von Λ (bzw. N, d) UNABHÄNGIGE Schranke — Kompaktheit, gleichgradige Stetigkeit oder eine explizite Fehlerabschätzung, die den Grenzübergang erlaubt.
+> - **Äquivalenz-Falle** *(Tier 2)* — Ein Kriterium ist zur RH äquivalent und damit exakt gleich schwer — die Umformulierung erzeugt den Anschein von Fortschritt, ohne die Beweislast zu senken.
+>   *Fluchtbedingung:* Eine der beiden Richtungen muss in STRIKT SCHWÄCHERER Form unbedingt bewiesen werden, oder es muss eine quantitative Größe geben, die sich unabhängig von der RH bewegen lässt (Λ ≤ 0.22, Anteil > 41 %, d_N-Raten). Nur solche Bewegungen zählen als Fortschritt — siehe docs/58.
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!missing]- Die fehlende Aussage
+> **Bewiesen:** Teilresultate über das Verhalten des Spektraloperators in einzelnen Regimen; die Reformulierung als inverses Spektralproblem ist etabliert.
+> **Es fehlt:** Quasi-Invertierbarkeit bzw. Invertierbarkeit für alle Re(s) ≠ 1/2 — äquivalent zur RH.
+> **Typ:** aequivalenz · Bewertung: [[58_gap_registry_near_miss]]
+
+> [!abstract]- Graph-Nachbarn (2)
+> - *äquivalent zu* → **Riemann-Vermutung (RH)** — Lapidus: inverses Spektralproblem für alle D≠1/2 ⟺ RH.
+> - *modelliert* → **Hilbert–Pólya / spektrale Interpretation** — Lapidus-Spektraloperator ζ(∂).
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

@@ -69,3 +69,15 @@ Effektive untere Schranken für Klassenzahlen h(−d) (keine Siegel-Nullstelle, 
 - [Riemann hypothesis — Wikipedia (Consequences)](https://en.wikipedia.org/wiki/Riemann_hypothesis)
 - [The Riemann Hypothesis — E. Bombieri (Clay)](https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf)
 - [Generalized Riemann hypothesis — Wikipedia (Consequences)](https://en.wikipedia.org/wiki/Generalized_Riemann_hypothesis)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!abstract]- Graph-Nachbarn (2)
+> - *benutzt* → **Riemann-Vermutung (RH)** — Konsequenzen der RH (Anwendungskontext).
+> - ← *wird benutzt von* [[61_negative_space_if_rh_is_false|61 · Negativraum]] — Kontrafaktik zu den Konsequenzen der RH.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

@@ -74,3 +74,11 @@ lang: de
 ### Daten / Numerik
 - [A. Odlyzko — Tables of zeros of ζ](https://www-users.cse.umn.edu/~odlyzko/zeta_tables/index.html)
 - [LMFDB — L-functions and Modular Forms Database](https://www.lmfdb.org/)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

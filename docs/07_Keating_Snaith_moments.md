@@ -85,3 +85,24 @@ Momentschranken ⇒ untere Schranken für N₀(T)/N(T) (Anteil auf der Geraden, 
 - [Moments of the Riemann Zeta Function and Log-Correlated Random Variables (Oxford)](https://ora.ox.ac.uk/objects/uuid:9bbc320c-9738-43ef-b0f0-f18bf4b7c0d6/files/dh415pb096)
 - [On moments of the derivative of CUE characteristic polynomials and the Riemann zeta function (arXiv 2409.03687)](https://arxiv.org/html/2409.03687)
 - [Freezing transition and moments of moments of the Riemann zeta function (Oxford QJM)](https://academic.oup.com/qjmath/article/75/4/1481/7925234)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (2)
+> - **Anteils-Decke der Mollifier-Methoden** *(Tier 2)* — Levinson/Conrey-Technik liefert einen positiven Anteil, ist aber strukturell weit unter 100 % gedeckelt.
+>   *Fluchtbedingung:* Ein Mechanismus, der ALLE Nullstellen erfasst statt einen Anteil — Anteilsmethoden können die RH prinzipiell nicht abschließen, auch nicht im Limes.
+> - **Zirkularität der Modellannahme** *(Tier 3)* — Zufallsmatrix- und probabilistische Modelle setzen die RH voraus, um überhaupt formuliert werden zu können.
+>   *Fluchtbedingung:* Unbedingte Formulierung: Aussagen über Nullstellen ohne die Annahme, dass sie auf der Geraden liegen (doc-53 ist der Prototyp).
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!abstract]- Graph-Nachbarn (3)
+> - *ist Evidenz für* → **Hilbert–Pólya / spektrale Interpretation** — Keating-Snaith-Momente stützen das Random-Matrix-Bild.
+> - ← *gestützt durch* [[49_live_analytic_frontier|49 · Live-Front der analytischen Zahlentheorie]] — Harper/Radziwiłł–Soundararajan: scharfe Momentschranken stützen Keating-Snaith.
+> - ← *wird benutzt von* [[53_pair_correlation_alternative_hypothesis|53 · Paarkorrelation ohne RH & die Alternative Hypothese]] — Teilt den Random-Matrix-Rahmen mit Keating-Snaith.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

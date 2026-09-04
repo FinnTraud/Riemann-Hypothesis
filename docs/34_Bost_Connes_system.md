@@ -53,3 +53,21 @@ Für einen Zahlkörper K liefert das Connes–Marcolli-System die **Dedekind-Zet
 - [The dynamical system problem studied by Bost–Connes — AIM](https://aimath.org/WWN/rh/articles/html/101a/)
 - [Bost–Connes Systems in Arithmetic and Quantum Theory — Emergent Mind](https://www.emergentmind.com/topics/bost-connes-systems)
 - [Dedekind Zeta Functions and Quantum Statistical Mechanics (ESI preprint 617)](https://www.esi.ac.at/preprints/esi617.pdf)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (1)
+> - **Fehlende Geometrie über Spec(ℤ)** *(Tier 2)* — Der bewiesene Funktionenkörperfall braucht eine Fläche C×_𝔽 C; das Analogon Spec(ℤ)×_{𝔽₁}Spec(ℤ) existiert nicht.
+>   *Fluchtbedingung:* Konstruktion einer Kohomologietheorie über Spec(ℤ) mit (a) Lefschetz-Formel, die die explizite Formel reproduziert, (b) Poincaré-Dualität, (c) einem Positivitäts-/Index-Satz (Hodge-Index-Analogon). Alle drei, nicht nur (a).
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!abstract]- Graph-Nachbarn (2)
+> - *benutzt* → **Hilbert–Pólya / spektrale Interpretation** — Bost–Connes: Operator mit Spektrum {log n} (geometrische Seite).
+> - ← *wird benutzt von* [[30_F1_field_one_element_arithmetic_site|30 · Der Körper mit einem Element]] — Bost–Connes liefert Galois-/Frobenius-Symmetrie fürs 𝔽₁-Programm.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

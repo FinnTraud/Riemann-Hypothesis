@@ -80,3 +80,14 @@ Es fehlt für Spec(ℤ) das „×_{𝔽₁} "-Produkt, die Frobenius-Wirkung und
 - [The Riemann Hypothesis over Finite Fields — J. Milne](https://www.jmilne.org/math/xnotes/pRH.html)
 - [Weil conjectures — Wikipedia](https://en.wikipedia.org/wiki/Weil_conjectures)
 - [Deligne's proof of the Weil conjectures — E. Kowalski's blog](https://blogs.ethz.ch/kowalski/2008/03/15/delignes-proof-of-the-weil-conjectures/)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!abstract]- Graph-Nachbarn (1)
+> - *ist Blaupause für* → **Geometrie-Transfer (Funktionenkörper→ℤ)** — Weil/Deligne: BEWIESENES RH-Analogon über 𝔽_q — die Blaupause.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

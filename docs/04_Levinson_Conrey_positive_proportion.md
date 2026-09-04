@@ -74,3 +74,27 @@ Die Mollifier-Länge θ ist durch die verfügbaren Mittelwertsätze (zweite/vier
 - [Zeros on the Critical Line — E. Naslund (UBC)](https://personal.math.ubc.ca/~gerg/teaching/613-Winter2011/ZerosCriticalLine.pdf)
 - [On a choice of the mollified function in the Levinson-Conrey method (arXiv 1403.5786)](https://arxiv.org/pdf/1403.5786)
 - [Riemann hypothesis — Wikipedia](https://en.wikipedia.org/wiki/Riemann_hypothesis)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (1)
+> - **Anteils-Decke der Mollifier-Methoden** *(Tier 2)* — Levinson/Conrey-Technik liefert einen positiven Anteil, ist aber strukturell weit unter 100 % gedeckelt.
+>   *Fluchtbedingung:* Ein Mechanismus, der ALLE Nullstellen erfasst statt einen Anteil — Anteilsmethoden können die RH prinzipiell nicht abschließen, auch nicht im Limes.
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!missing]- Die fehlende Aussage
+> **Bewiesen:** Selberg (positiver Anteil, 1942), Levinson 1/3 (1974), Conrey 2/5 (1989), heute κ > 0,41 (Rekordbereich ~0,4172).
+> **Es fehlt:** 100 % — und selbst das wäre nicht die RH, da eine Ausnahmemenge der Dichte 0 zulässig bliebe.
+> **Typ:** quantitativ · Bewertung: [[58_gap_registry_near_miss]]
+
+> [!abstract]- Graph-Nachbarn (3)
+> - *verallgemeinert* → [[03_Hardy_1914_infinitely_many_zeros|03 · Hardy]] — Quantifiziert Hardys Resultat (positiver Anteil).
+> - *ist Teilresultat für* → **Riemann-Vermutung (RH)** — Levinson/Conrey: >41% auf der Geraden.
+> - ← *stärker als* [[53_pair_correlation_alternative_hypothesis|53 · Paarkorrelation ohne RH & die Alternative Hypothese]] — Die 100-%-Aussagen sind bedingt; unbedingt sind bislang nur ~41 % (Conrey).
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

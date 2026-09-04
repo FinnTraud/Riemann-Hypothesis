@@ -1,0 +1,158 @@
+{
+  "_comment": "Invarianten und Testvektoren. Zwei Sorten von Pruefungen, die ein vorgeschlagener RH-Beweis bestehen muss. TESTVEKTOREN sind konkrete Funktionen mit BEKANNTEM Wahrheitswert des RH-Analogons -- ein Argument muss sie korrekt klassifizieren. UEBERSCHUSS-TESTS ('beweist es zu viel?') sind bekannte WAHRHEITEN, die ein zu starkes Argument sofort widerlegen: wer nebenbei eine dieser Aussagen mitbeweist, hat einen Fehler. Der zweite Typ ist der schaerfere, weil er auch Argumente trifft, die keine offensichtliche Luecke haben. Siehe docs/59.",
+  "version": "1.0",
+  "testvektoren": [
+    {
+      "id": "tv-zeta",
+      "name": "Riemannsche ζ-Funktion",
+      "rh_analogon": "offen (vermutet wahr)",
+      "hat_euler_produkt": true,
+      "hat_funktionalgleichung": true,
+      "muss_klassifiziert_werden_als": "RH gilt (bzw. das Argument darf sie nicht widerlegen)",
+      "doc": "doc-01",
+      "orakel": "kb/counterexample.py --func zeta"
+    },
+    {
+      "id": "tv-davenport-heilbronn",
+      "name": "Davenport–Heilbronn-Funktion",
+      "rh_analogon": "FALSCH (bewiesen)",
+      "hat_euler_produkt": false,
+      "hat_funktionalgleichung": true,
+      "muss_klassifiziert_werden_als": "RH gilt NICHT — das Argument muss hier scheitern oder gar nicht anwendbar sein",
+      "doc": "doc-35",
+      "orakel": "kb/counterexample.py --func dh",
+      "bemerkung": "Der schärfste Testvektor: Funktionalgleichung, Fortsetzung, reelle Koeffizienten und ζ-artiges Wachstum sind alle vorhanden. Nur das Euler-Produkt fehlt. Numerisch bestätigt: vier Nullstellen abseits der Geraden bis T=200."
+    },
+    {
+      "id": "tv-epstein",
+      "name": "Epstein-Zetafunktion (Klassenzahl > 1)",
+      "rh_analogon": "FALSCH (bewiesen, Potter–Titchmarsh 1935)",
+      "hat_euler_produkt": false,
+      "hat_funktionalgleichung": true,
+      "muss_klassifiziert_werden_als": "RH gilt NICHT",
+      "doc": "doc-43",
+      "bemerkung": "Zweiter Gegenbeispiel-Typ und wichtiger als er aussieht: anders als Davenport–Heilbronn ist die Epstein-Zeta KEINE von Hand gebaute Linearkombination, sondern ein natürliches arithmetisches Objekt (Gitter/quadratische Form). Wer einwendet, DH sei 'künstlich', muss an Epstein trotzdem scheitern."
+    },
+    {
+      "id": "tv-dirichlet-L",
+      "name": "Dirichlet-L-Funktionen",
+      "rh_analogon": "offen (GRH, vermutet wahr)",
+      "hat_euler_produkt": true,
+      "hat_funktionalgleichung": true,
+      "muss_klassifiziert_werden_als": "GRH gilt",
+      "doc": "doc-21",
+      "bemerkung": "Diagnostisch: ein Argument, das für ζ funktioniert, aber für Dirichlet-L nicht, benutzt eine Eigenschaft, die ζ von seinen nächsten Verwandten trennt. Es sollte gesagt werden, welche."
+    },
+    {
+      "id": "tv-zeta-fq",
+      "name": "Zetafunktion einer Kurve über 𝔽_q",
+      "rh_analogon": "WAHR (bewiesen: Weil 1948, Deligne 1974)",
+      "hat_euler_produkt": true,
+      "hat_funktionalgleichung": true,
+      "muss_klassifiziert_werden_als": "RH gilt — und der Mechanismus des Arguments sollte hier sichtbar sein",
+      "doc": "doc-18",
+      "bemerkung": "Die Blaupause. Ein Argument, dessen Mechanismus im bewiesenen Fall NICHT wiederzuerkennen ist, erklärt nicht, warum es über ℤ funktionieren sollte."
+    },
+    {
+      "id": "tv-selberg-zeta",
+      "name": "Selberg-Zetafunktion",
+      "rh_analogon": "WAHR (bewiesen)",
+      "hat_euler_produkt": true,
+      "hat_funktionalgleichung": true,
+      "muss_klassifiziert_werden_als": "RH gilt",
+      "doc": "doc-19",
+      "bemerkung": "Das bewiesene SPEKTRALE Modell: hier liefert eine echte Spurformel die Nullstellenlage. Der Testvektor für Hilbert–Pólya-Vorschläge — wenn der vorgeschlagene Mechanismus hier nichts erklärt, erklärt er nichts."
+    }
+  ],
+  "ueberschuss_tests": [
+    {
+      "id": "ovs-lambda-negativ",
+      "frage": "Liefert das Argument nebenbei Λ < 0 für die de-Bruijn–Newman-Konstante?",
+      "bekannte_wahrheit": "Λ ≥ 0 (Rodgers–Tao 2018, bewiesen).",
+      "konsequenz": "Ein Argument, das Λ < 0 impliziert, ist FALSCH. Falls die RH gilt, ist Λ = 0 exakt — es gibt keine Marge.",
+      "doc": "doc-23",
+      "schaerfe": "hoch"
+    },
+    {
+      "id": "ovs-mertens",
+      "frage": "Liefert das Argument nebenbei |M(x)| < √x?",
+      "bekannte_wahrheit": "Die Mertens-Vermutung ist WIDERLEGT (Odlyzko–te Riele 1985), obwohl sie bis 10^14 zu gelten schien.",
+      "konsequenz": "Ein Argument, das diese Schranke mitliefert, ist FALSCH. Die RH braucht nur M(x) = O(x^{1/2+ε}) — die stärkere Aussage ist nachweislich unwahr.",
+      "doc": "doc-16",
+      "schaerfe": "hoch"
+    },
+    {
+      "id": "ovs-li-minus-pi",
+      "frage": "Liefert das Argument nebenbei π(x) < Li(x) für alle x?",
+      "bekannte_wahrheit": "Littlewood: die Differenz wechselt unendlich oft das Vorzeichen (erste Umkehr bei ~10^316).",
+      "konsequenz": "Ein Argument mit dieser Konsequenz ist FALSCH — auch wenn die Aussage für jedes berechenbare x gilt.",
+      "doc": "doc-35",
+      "schaerfe": "hoch"
+    },
+    {
+      "id": "ovs-s-of-t-beschraenkt",
+      "frage": "Impliziert das Argument, dass S(T) = (1/π)·arg ζ(1/2+iT) beschränkt ist?",
+      "bekannte_wahrheit": "Unter RH ist S(T) unbeschränkt (Selberg); im Mittel klein, aber ohne Schranke.",
+      "konsequenz": "Ein Argument, das S(T) = O(1) mitliefert, ist FALSCH.",
+      "doc": "doc-02",
+      "schaerfe": "mittel"
+    },
+    {
+      "id": "ovs-lehmer",
+      "frage": "Setzt das Argument einen Mindestabstand zwischen aufeinanderfolgenden Nullstellen voraus?",
+      "bekannte_wahrheit": "Lehmer-Paare: Nullstellen kommen einander beliebig nahe. Es gibt keine gleichmäßige untere Schranke für den normierten Abstand.",
+      "konsequenz": "Jedes Argument, das implizit eine Trennung annimmt (z. B. bei Vertauschungen oder Reihenumordnungen), ist FALSCH.",
+      "doc": "doc-23",
+      "schaerfe": "mittel"
+    },
+    {
+      "id": "ovs-ohne-euler",
+      "frage": "Gilt das Argument wortgleich für eine Dirichlet-Reihe ohne Euler-Produkt?",
+      "bekannte_wahrheit": "Davenport–Heilbronn und Epstein-Zeta erfüllen Funktionalgleichung und Fortsetzung, verletzen aber die RH.",
+      "konsequenz": "FALSCH. Dies ist die schärfste und am leichtesten prüfbare Obstruktion — sie ist maschinell testbar (kb/counterexample.py).",
+      "doc": "doc-35",
+      "schaerfe": "hoch",
+      "orakel_test": "T2_euler_produkt"
+    },
+    {
+      "id": "ovs-nullstellenfreie-region",
+      "frage": "Liefert das Argument eine nullstellenfreie Region, die besser ist als Vinogradov–Korobov?",
+      "bekannte_wahrheit": "Die beste bekannte Region ist seit 1958 im Wesentlichen unverändert. Eine substanzielle Verbesserung wäre selbst ein Durchbruch.",
+      "konsequenz": "Nicht automatisch falsch, aber: wer nebenbei ein 65 Jahre offenes Problem löst, sollte das bemerken und gesondert begründen.",
+      "doc": "doc-12",
+      "schaerfe": "mittel"
+    },
+    {
+      "id": "ovs-selberg-klasse",
+      "frage": "Gilt das Argument für die gesamte Selberg-Klasse, unabhängig vom Euler-Produkt-Axiom?",
+      "bekannte_wahrheit": "In der Selberg-Klasse wird die RH nur für Funktionen MIT Euler-Produkt erwartet; Grad-1-Funktionen ohne Euler-Produkt sind Gegenbeispiele.",
+      "konsequenz": "FALSCH, falls das Argument das Euler-Produkt-Axiom nicht benutzt.",
+      "doc": "doc-21",
+      "schaerfe": "hoch"
+    },
+    {
+      "id": "ovs-endliche-numerik",
+      "frage": "Stützt sich das Argument auf Verifikation bis zu einer endlichen Höhe?",
+      "bekannte_wahrheit": "Mertens und Skewes zeigen: im RH-Umfeld können Effekte erst bei astronomischen Größen einsetzen. Die Sensitivitätsanalyse in docs/57 quantifiziert das für das Li-Kriterium.",
+      "konsequenz": "Kein Beweis. Numerik darf Hypothesen erzeugen und widerlegen, nie stützen.",
+      "doc": "doc-24",
+      "schaerfe": "hoch"
+    },
+    {
+      "id": "ovs-zirkulaere-positivitaet",
+      "frage": "Wird eine Positivität (Weil, Li, de Branges) angenommen statt bewiesen?",
+      "bekannte_wahrheit": "Alle diese Positivitäten sind ÄQUIVALENT zur RH. Conrey–Li (2000) widerlegten de Branges' Annahme konkret.",
+      "konsequenz": "Zirkulär. Der Beweis muss die Positivität aus einer nullstellen-unabhängigen Struktur beziehen.",
+      "doc": "doc-14",
+      "schaerfe": "hoch"
+    },
+    {
+      "id": "ovs-umordnung",
+      "frage": "Wird Σ_ρ umgeordnet oder mit einem Limes vertauscht?",
+      "bekannte_wahrheit": "Σ_ρ konvergiert nur bedingt, gepaart nach ρ ↔ 1−ρ̄.",
+      "konsequenz": "FALSCH. Zweithäufigster Fehler der arXiv-Klasse (docs/56, A6).",
+      "doc": "doc-27",
+      "schaerfe": "hoch"
+    }
+  ]
+}

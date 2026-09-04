@@ -326,12 +326,6 @@
       "note": "Explizite Formel als Spurformel ⇒ spektrale Interpretation."
     },
     {
-      "from": "doc-20",
-      "to": "doc-20",
-      "type": "refuted_by",
-      "note": "Conrey–Li (2000): de Branges' Positivitätsbedingung für ζ verletzt."
-    },
-    {
       "from": "doc-35",
       "to": "concept-euler-product",
       "type": "evidence_for",
@@ -624,6 +618,246 @@
       "to": "doc-52",
       "type": "uses",
       "note": "Die Weil-Form-Numerik wird mit Reproduzierbarkeitspaketen und Intervall-Zertifikaten geliefert."
+    },
+    {
+      "from": "doc-55",
+      "to": "doc-35",
+      "type": "uses",
+      "note": "Aggregiert die Obstruktionen zu einer Blocker-Taxonomie (Grund -> Ansaetze)."
+    },
+    {
+      "from": "doc-55",
+      "to": "doc-41",
+      "type": "uses",
+      "note": "Invertiert die Leitmotiv-Zerlegung zur Obstruktions-x-Ansatz-Matrix."
+    },
+    {
+      "from": "doc-56",
+      "to": "doc-20",
+      "type": "uses",
+      "note": "Autopsie A1: Bruchstelle bei der Positivitaetsbedingung (Conrey-Li)."
+    },
+    {
+      "from": "doc-56",
+      "to": "doc-25",
+      "type": "uses",
+      "note": "Autopsie A2: Bruchstelle bei Liouville/Identitaetssatz."
+    },
+    {
+      "from": "doc-56",
+      "to": "doc-26",
+      "type": "uses",
+      "note": "Autopsie A3: kein pruefbares Artefakt."
+    },
+    {
+      "from": "doc-56",
+      "to": "doc-27",
+      "type": "uses",
+      "note": "Autopsie A6: der Standardfehler der arXiv-Klasse."
+    },
+    {
+      "from": "doc-56",
+      "to": "doc-09",
+      "type": "uses",
+      "note": "Autopsie A4: zirkulaere Operatorkonstruktion."
+    },
+    {
+      "from": "doc-56",
+      "to": "doc-08",
+      "type": "uses",
+      "note": "Autopsie A5: Modell ohne selbstadjungierte Realisierung."
+    },
+    {
+      "from": "doc-57",
+      "to": "doc-55",
+      "type": "uses",
+      "note": "Leitet Richtungen aus den Luecken der Blocker-Matrix ab."
+    },
+    {
+      "from": "doc-57",
+      "to": "doc-56",
+      "type": "uses",
+      "note": "Nimmt Beobachtung 4 der Autopsien als Ausgangspunkt (leerer Euler-Quadrant)."
+    },
+    {
+      "from": "doc-57",
+      "to": "doc-14",
+      "type": "evidence_for",
+      "note": "Sensitivitaetsanalyse: die Nachweisgrenze des Li-Kriteriums skaliert wie gamma^2."
+    },
+    {
+      "from": "doc-58",
+      "to": "doc-55",
+      "type": "uses",
+      "note": "Bewertet die Luecken entlang der Blocker-Zuordnung."
+    },
+    {
+      "from": "doc-58",
+      "to": "doc-52",
+      "type": "uses",
+      "note": "Bewertet den Grenzuebergang der abgeschnittenen Weil-Quadratform."
+    },
+    {
+      "from": "doc-58",
+      "to": "doc-23",
+      "type": "uses",
+      "note": "Bewertet die Luecke 0 <= Lambda <= 0,22."
+    },
+    {
+      "from": "doc-58",
+      "to": "doc-29",
+      "type": "uses",
+      "note": "Bewertet das gemeinsame Regime d ~ n der Jensen-Polynome."
+    },
+    {
+      "from": "doc-59",
+      "to": "doc-35",
+      "type": "uses",
+      "note": "Ergaenzt die Anti-Crackpot-Checkliste um die Ueberschuss-Pruefung."
+    },
+    {
+      "from": "doc-59",
+      "to": "doc-43",
+      "type": "uses",
+      "note": "Epstein-Zeta als zweiter, natuerlicher Testvektor."
+    },
+    {
+      "from": "doc-59",
+      "to": "doc-23",
+      "type": "uses",
+      "note": "Lambda >= 0 als schaerfster Ueberschuss-Test (Marginlosigkeit)."
+    },
+    {
+      "from": "doc-59",
+      "to": "doc-16",
+      "type": "uses",
+      "note": "Widerlegte Mertens-Vermutung als Ueberschuss-Test."
+    },
+    {
+      "from": "doc-60",
+      "to": "concept-euler-product",
+      "type": "instance_of",
+      "note": "Operationalisiert das Euler-Produkt als maschinellen Test."
+    },
+    {
+      "from": "doc-60",
+      "to": "doc-35",
+      "type": "uses",
+      "note": "Macht die Davenport-Heilbronn-Obstruktion maschinell pruefbar."
+    },
+    {
+      "from": "doc-60",
+      "to": "doc-24",
+      "type": "uses",
+      "note": "Benutzt Turings Nullstellenzaehlung als Verletzungsdetektor."
+    },
+    {
+      "from": "doc-60",
+      "to": "doc-59",
+      "type": "evidence_for",
+      "note": "Liefert die maschinelle Haelfte der Invariantenpruefung."
+    },
+    {
+      "from": "doc-61",
+      "to": "doc-36",
+      "type": "uses",
+      "note": "Kontrafaktik zu den Konsequenzen der RH."
+    },
+    {
+      "from": "doc-61",
+      "to": "doc-23",
+      "type": "uses",
+      "note": "Nicht-RH ist aequivalent zu Lambda > 0."
+    },
+    {
+      "from": "doc-62",
+      "to": "doc-28",
+      "type": "uses",
+      "note": "Vertieft die KI-Einordnung um Arbeitsteilung und Selbstaudit."
+    },
+    {
+      "from": "doc-62",
+      "to": "doc-64",
+      "type": "uses",
+      "note": "Befund 1 beruht auf der Trust-Tier-Auswertung."
+    },
+    {
+      "from": "doc-63",
+      "to": "doc-55",
+      "type": "uses",
+      "note": "Bemisst Experimente an der Reichweite in der Blocker-Matrix."
+    },
+    {
+      "from": "doc-63",
+      "to": "doc-57",
+      "type": "uses",
+      "note": "Priorisiert die dort abgeleiteten Richtungen."
+    },
+    {
+      "from": "doc-63",
+      "to": "doc-58",
+      "type": "uses",
+      "note": "Kehrseite des Near-Miss-Befunds: messbar heisst ausgereizt."
+    },
+    {
+      "from": "doc-64",
+      "to": "doc-37",
+      "type": "uses",
+      "note": "Formalisierung ist die einzige Technik, die T0 erreichbar macht."
+    },
+    {
+      "from": "doc-64",
+      "to": "doc-50",
+      "type": "uses",
+      "note": "Ergaenzt die Statustrennung des Denkprotokolls um die Verifikationsstufe."
+    },
+    {
+      "from": "doc-65",
+      "to": "doc-57",
+      "type": "uses",
+      "note": "Fuehrt die in U1 angekuendigte Sensitivitaetsanalyse aus."
+    },
+    {
+      "from": "doc-65",
+      "to": "doc-63",
+      "type": "uses",
+      "note": "Ist Experiment (2) der Entscheidungswert-Rangliste."
+    },
+    {
+      "from": "doc-65",
+      "to": "doc-13",
+      "type": "evidence_for",
+      "note": "Miss die numerische Reichweite der Baez-Duarte-Distanz d_N."
+    },
+    {
+      "from": "doc-65",
+      "to": "doc-15",
+      "type": "evidence_for",
+      "note": "Miss die Robin-Marge entlang kolossal abundanter Zahlen."
+    },
+    {
+      "from": "doc-65",
+      "to": "doc-14",
+      "type": "evidence_for",
+      "note": "Ordnet die Li-Sensitivitaet in den Kriterienvergleich ein."
+    },
+    {
+      "from": "doc-65",
+      "to": "doc-23",
+      "type": "uses",
+      "note": "Lambda als Ausnahme: methodische statt rechnerische Wand."
+    },
+    {
+      "from": "doc-65",
+      "to": "doc-24",
+      "type": "uses",
+      "note": "Direkte Nullstellenberechnung als Referenzmassstab."
+    },
+    {
+      "from": "doc-59",
+      "to": "doc-65",
+      "type": "uses",
+      "note": "Ueberschuss-Test H stuetzt sich auf die gemessenen Reichweiten."
     }
   ]
 }

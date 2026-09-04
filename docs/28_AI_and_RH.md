@@ -77,3 +77,15 @@ Trainiere f_θ: (Feature-Vektor aus {γ_n}) → {„on-line", „off-line"}. Bef
 - [AI Cannot Prove Goldbach's Conjecture — Towards AI](https://pub.towardsai.net/ai-cannot-prove-goldbachs-conjecture-115bca355678)
 - [Leitlinien: Mathematiker wollen Einsatz von KI eindämmen — Spektrum](https://www.spektrum.de/news/leitlinien-mathematiker-wollen-einsatz-von-ki-in-ihrem-fach-eindaemmen/2327655)
 - [Terence Tao: "Beweise sind nicht mehr das Wichtigste in der Mathematik" — Der Standard](https://www.derstandard.de/story/3000000320851/terence-tao-beweise-sind-nicht-mehr-das-wichtigste-in-der-mathematik)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!abstract]- Graph-Nachbarn (2)
+> - ← *gestützt durch* [[54_machine_assisted_number_theory_ANTEDB_Lean|54 · Maschinengestützte Zahlentheorie]] — Autoformalisierung als konkreter KI-Beitrag im RH-Umfeld.
+> - ← *wird benutzt von* [[62_ai_division_of_labour_self_audit|62 · KI-Arbeitsteilung & Selbstaudit dieser Wissensbasis]] — Vertieft die KI-Einordnung um Arbeitsteilung und Selbstaudit.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

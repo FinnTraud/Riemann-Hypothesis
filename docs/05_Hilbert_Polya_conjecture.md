@@ -68,3 +68,25 @@ Eine dazu äquivalente, operatorfreie Fassung (Dok. 29): RH ⟺ ξ liegt in der 
 - [The Riemann zeros as spectrum and the Riemann hypothesis (arXiv 1601.01797)](https://arxiv.org/pdf/1601.01797)
 - [On Hilbert-Polya conjecture: Hermitian operator naturally associated to L-functions (arXiv 1105.1500)](https://arxiv.org/pdf/1105.1500)
 - [The Hilbert-Pólya Conjecture and the Prolate Spheroidal Operator (TU Delft)](https://repository.tudelft.nl/file/File_a03b023e-2ba7-45fb-bde9-6fcc7a53d306)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (1)
+> - **Nicht-kanonischer Operator** *(Tier 2)* — Ein Hilbert–Pólya-Operator wird konstruiert, um das richtige Spektrum zu haben, statt aus der Arithmetik zu entstehen.
+>   *Fluchtbedingung:* Der Operator muss auf einem arithmetisch definierten Raum leben (Adele, arithmetic site, gefolierter Raum) UND eine Spurformel erfüllen, deren geometrische Seite die Primzahlterme der expliziten Formel liefert. Selbstadjungiertheit muss auf einem konkret angegebenen Definitionsbereich bewiesen sein, nicht behauptet.
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!missing]- Die fehlende Aussage
+> **Bewiesen:** Nichts Unbedingtes. Es existieren Modelle (xp, PT-symmetrisch, prolate) ohne die nötigen Eigenschaften.
+> **Es fehlt:** Ein selbstadjungierter Operator auf einem arithmetisch definierten Raum, mit bewiesenem Definitionsbereich und einer Spurformel, deren geometrische Seite die Primzahlterme liefert.
+> **Typ:** fehlendes objekt · Bewertung: [[58_gap_registry_near_miss]]
+
+> [!abstract]- Graph-Nachbarn (1)
+> - *ist Instanz von* → **Hilbert–Pólya / spektrale Interpretation** — Hilbert–Pólya-Vermutung selbst.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

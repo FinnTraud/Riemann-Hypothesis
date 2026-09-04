@@ -69,3 +69,23 @@ Die explizite Konstante (2+γ−log 4π) macht dies zum **konkretesten numerisch
 - [Equalities involving integrals of the logarithm of the Riemann ζ equivalent to RH — Sekatskii et al. (arXiv 0806.1596)](https://arxiv.org/pdf/0806.1596)
 - [The Riemann Hypothesis — AIM (Redheffer, Salem, Volchkov criteria)](https://www.aimath.org/WWN/rh/rh.pdf)
 - [A strengthening of the Nyman-Beurling criterion — Báez-Duarte et al. (arXiv math/0202141)](https://arxiv.org/pdf/math/0202141)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (2)
+> - **Zirkuläre Positivität** *(Tier 2)* — Die RH wird auf eine Positivitätsaussage reduziert, die selbst nur als äquivalent, nie unabhängig bewiesen ist.
+>   *Fluchtbedingung:* Die Positivität muss aus einer Struktur folgen, die unabhängig von der Nullstellenlage definiert ist. Im bewiesenen Fall 𝔽_q (doc-18) leistet das die Schnittform auf der Fläche C×C — dort ist Positivität ein Satz der Geometrie, nicht eine Umformulierung des Ziels.
+> - **Äquivalenz-Falle** *(Tier 2)* — Ein Kriterium ist zur RH äquivalent und damit exakt gleich schwer — die Umformulierung erzeugt den Anschein von Fortschritt, ohne die Beweislast zu senken.
+>   *Fluchtbedingung:* Eine der beiden Richtungen muss in STRIKT SCHWÄCHERER Form unbedingt bewiesen werden, oder es muss eine quantitative Größe geben, die sich unabhängig von der RH bewegen lässt (Λ ≤ 0.22, Anteil > 41 %, d_N-Raten). Nur solche Bewegungen zählen als Fortschritt — siehe docs/58.
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!abstract]- Graph-Nachbarn (2)
+> - *äquivalent zu* → **Riemann-Vermutung (RH)** — Volchkov/Sekatskii/Redheffer/Salem/BBLS-Kriterien ⟺ RH.
+> - ← *äquivalent zu* [[16_Mertens_function_Riesz_criterion|16 · Mertens-Funktion & Riesz-Kriterium]] — Redheffer-Matrix det(R_n)=M(n) verbindet Mertens und Matrix-Kriterium.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

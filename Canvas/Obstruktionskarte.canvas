@@ -1,0 +1,1210 @@
+{
+  "nodes": [
+    {
+      "id": "t1",
+      "x": 0,
+      "y": -260,
+      "width": 1200,
+      "height": 120,
+      "type": "text",
+      "text": "# Tier 1 — harte Obstruktion (Gegenbeispiel existiert)",
+      "color": "1"
+    },
+    {
+      "id": "t2",
+      "x": 1400,
+      "y": -260,
+      "width": 1200,
+      "height": 120,
+      "type": "text",
+      "text": "# Tier 2 — strukturelle Lücke (Forschungsfront)",
+      "color": "6"
+    },
+    {
+      "id": "t3",
+      "x": 2800,
+      "y": -260,
+      "width": 1200,
+      "height": 120,
+      "type": "text",
+      "text": "# Tier 3 — Methodengrenze / Warnung",
+      "color": "4"
+    },
+    {
+      "id": "blk-euler-blindness",
+      "x": 0,
+      "y": 0,
+      "width": 560,
+      "height": 300,
+      "type": "text",
+      "text": "## Euler-Blindheit\n\nDas Argument benutzt nur Funktionalgleichung, Fortsetzung und Wachstum — es würde für Davenport–Heilbronn genauso gelten und ist damit falsch.\n\n**Fluchtbedingung:** Mindestens ein Beweisschritt muss eine Eigenschaft benutzen, die für Davenport–Heilbronn NACHWEISLICH FALSCH ist — praktisch immer: Multiplikativität der Koeffizienten / Euler-Produkt.\n\n*4 Ansätze betroffen* · maschinell prüfbar: `T2_euler_produkt` ([[60_counterexample_oracle]])",
+      "color": "1"
+    },
+    {
+      "id": "blk-euler-blindness--doc-27",
+      "x": 640,
+      "y": 0,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/27_other_disputed_claimed_proofs.md"
+    },
+    {
+      "id": "blk-euler-blindness--doc-25",
+      "x": 640,
+      "y": 105,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/25_Atiyah_2018_failed_proof.md"
+    },
+    {
+      "id": "blk-euler-blindness--doc-46",
+      "x": 640,
+      "y": 210,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/46_Voronin_universality.md"
+    },
+    {
+      "id": "blk-euler-blindness--doc-43",
+      "x": 640,
+      "y": 315,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/43_Epstein_zeta_Selberg_class_rigidity.md"
+    },
+    {
+      "id": "blk-parity",
+      "x": 0,
+      "y": 460,
+      "width": 560,
+      "height": 300,
+      "type": "text",
+      "text": "## Paritätsbarriere\n\nSiebmethoden können gerade und ungerade Primfaktorzahl prinzipiell nicht trennen — genau das misst μ(n).\n\n**Fluchtbedingung:** Ein bilinearer Input (Typ-II-Summen), ein Spektralinput (automorphe Formen) oder eine andere Quelle von Kancellation, die nicht aus dem Sieb selbst kommt.\n\n*3 Ansätze betroffen*",
+      "color": "1"
+    },
+    {
+      "id": "blk-parity--doc-16",
+      "x": 640,
+      "y": 460,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/16_Mertens_function_Riesz_criterion.md"
+    },
+    {
+      "id": "blk-parity--doc-32",
+      "x": 640,
+      "y": 565,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/32_Landau_Siegel_zeros_Zhang.md"
+    },
+    {
+      "id": "blk-parity--doc-12",
+      "x": 640,
+      "y": 670,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/12_zero_free_regions.md"
+    },
+    {
+      "id": "blk-softness",
+      "x": 0,
+      "y": 920,
+      "width": 560,
+      "height": 300,
+      "type": "text",
+      "text": "## Weichheitsbarriere (Voronin)\n\nζ approximiert im kritischen Streifen JEDE nullstellenfreie analytische Funktion — 'weiche' Argumente können deshalb nicht greifen.\n\n**Fluchtbedingung:** Das Argument muss eine globale Rigiditätseigenschaft benutzen (Euler-Produkt, Grad in der Selberg-Klasse, Spurformel), die durch lokale Approximation nicht sichtbar ist.\n\n*3 Ansätze betroffen*",
+      "color": "1"
+    },
+    {
+      "id": "blk-softness--doc-46",
+      "x": 640,
+      "y": 920,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/46_Voronin_universality.md"
+    },
+    {
+      "id": "blk-softness--doc-27",
+      "x": 640,
+      "y": 1025,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/27_other_disputed_claimed_proofs.md"
+    },
+    {
+      "id": "blk-softness--doc-43",
+      "x": 640,
+      "y": 1130,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/43_Epstein_zeta_Selberg_class_rigidity.md"
+    },
+    {
+      "id": "blk-positivity-circular",
+      "x": 1400,
+      "y": 0,
+      "width": 560,
+      "height": 300,
+      "type": "text",
+      "text": "## Zirkuläre Positivität\n\nDie RH wird auf eine Positivitätsaussage reduziert, die selbst nur als äquivalent, nie unabhängig bewiesen ist.\n\n**Fluchtbedingung:** Die Positivität muss aus einer Struktur folgen, die unabhängig von der Nullstellenlage definiert ist. Im bewiesenen Fall 𝔽_q (doc-18) leistet das die Schnittform auf der Fläche C×C — dort ist Positivität ein Satz der Geometrie, nicht eine Umformulierung des Ziels.\n\n*9 Ansätze betroffen*",
+      "color": "6"
+    },
+    {
+      "id": "blk-positivity-circular--doc-13",
+      "x": 2040,
+      "y": 0,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/13_Nyman_Beurling_Baez_Duarte.md"
+    },
+    {
+      "id": "blk-positivity-circular--doc-14",
+      "x": 2040,
+      "y": 105,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/14_Li_criterion_Bombieri_Lagarias_Weil_positivity.md"
+    },
+    {
+      "id": "blk-positivity-circular--doc-20",
+      "x": 2040,
+      "y": 210,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/20_de_Branges_Hilbert_spaces.md"
+    },
+    {
+      "id": "blk-positivity-circular--doc-23",
+      "x": 2040,
+      "y": 315,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/23_de_Bruijn_Newman_constant_Polymath15.md"
+    },
+    {
+      "id": "blk-positivity-circular--doc-29",
+      "x": 2040,
+      "y": 420,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/29_Jensen_Polya_Laguerre_Polya_GORZ.md"
+    },
+    {
+      "id": "blk-positivity-circular--doc-33",
+      "x": 2040,
+      "y": 525,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/33_statistical_mechanics_Lee_Yang.md"
+    },
+    {
+      "id": "blk-positivity-circular--doc-10",
+      "x": 2040,
+      "y": 630,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/10_Connes_noncommutative_geometry.md"
+    },
+    {
+      "id": "blk-positivity-circular--doc-52",
+      "x": 2040,
+      "y": 735,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/52_Connes_truncated_Weil_spectral_realization.md"
+    },
+    {
+      "id": "blk-positivity-circular--doc-45",
+      "x": 2040,
+      "y": 840,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/45_further_equivalent_criteria.md"
+    },
+    {
+      "id": "blk-equivalence-trap",
+      "x": 1400,
+      "y": 460,
+      "width": 560,
+      "height": 300,
+      "type": "text",
+      "text": "## Äquivalenz-Falle\n\nEin Kriterium ist zur RH äquivalent und damit exakt gleich schwer — die Umformulierung erzeugt den Anschein von Fortschritt, ohne die Beweislast zu senken.\n\n**Fluchtbedingung:** Eine der beiden Richtungen muss in STRIKT SCHWÄCHERER Form unbedingt bewiesen werden, oder es muss eine quantitative Größe geben, die sich unabhängig von der RH bewegen lässt (Λ ≤ 0.22, Anteil > 41 %, d_N-Raten). Nur solche Bewegungen zählen als Fortschritt — siehe docs/58.\n\n*8 Ansätze betroffen*",
+      "color": "6"
+    },
+    {
+      "id": "blk-equivalence-trap--doc-13",
+      "x": 2040,
+      "y": 460,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/13_Nyman_Beurling_Baez_Duarte.md"
+    },
+    {
+      "id": "blk-equivalence-trap--doc-14",
+      "x": 2040,
+      "y": 565,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/14_Li_criterion_Bombieri_Lagarias_Weil_positivity.md"
+    },
+    {
+      "id": "blk-equivalence-trap--doc-15",
+      "x": 2040,
+      "y": 670,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/15_Robin_inequality.md"
+    },
+    {
+      "id": "blk-equivalence-trap--doc-16",
+      "x": 2040,
+      "y": 775,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/16_Mertens_function_Riesz_criterion.md"
+    },
+    {
+      "id": "blk-equivalence-trap--doc-45",
+      "x": 2040,
+      "y": 880,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/45_further_equivalent_criteria.md"
+    },
+    {
+      "id": "blk-equivalence-trap--doc-44",
+      "x": 2040,
+      "y": 985,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/44_Lapidus_fractal_strings_spectral_operator.md"
+    },
+    {
+      "id": "blk-equivalence-trap--doc-29",
+      "x": 2040,
+      "y": 1090,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/29_Jensen_Polya_Laguerre_Polya_GORZ.md"
+    },
+    {
+      "id": "blk-equivalence-trap--doc-65",
+      "x": 2040,
+      "y": 1195,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/65_criterion_sensitivity.md"
+    },
+    {
+      "id": "blk-noncanonical-operator",
+      "x": 1400,
+      "y": 920,
+      "width": 560,
+      "height": 300,
+      "type": "text",
+      "text": "## Nicht-kanonischer Operator\n\nEin Hilbert–Pólya-Operator wird konstruiert, um das richtige Spektrum zu haben, statt aus der Arithmetik zu entstehen.\n\n**Fluchtbedingung:** Der Operator muss auf einem arithmetisch definierten Raum leben (Adele, arithmetic site, gefolierter Raum) UND eine Spurformel erfüllen, deren geometrische Seite die Primzahlterme der expliziten Formel liefert. Selbstadjungiertheit muss auf einem konkret angegebenen Definitionsbereich bewiesen sein, nicht behauptet.\n\n*5 Ansätze betroffen*",
+      "color": "6"
+    },
+    {
+      "id": "blk-noncanonical-operator--doc-05",
+      "x": 2040,
+      "y": 920,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/05_Hilbert_Polya_conjecture.md"
+    },
+    {
+      "id": "blk-noncanonical-operator--doc-08",
+      "x": 2040,
+      "y": 1025,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/08_Berry_Keating_xp_model.md"
+    },
+    {
+      "id": "blk-noncanonical-operator--doc-09",
+      "x": 2040,
+      "y": 1130,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/09_Bender_Brody_Muller_2017_Hamiltonian.md"
+    },
+    {
+      "id": "blk-noncanonical-operator--doc-47",
+      "x": 2040,
+      "y": 1235,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/47_physics_layer_primon_gas_quantum_graphs.md"
+    },
+    {
+      "id": "blk-noncanonical-operator--doc-11",
+      "x": 2040,
+      "y": 1340,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/11_Connes_Moscovici_prolate_spheroidal.md"
+    },
+    {
+      "id": "blk-missing-base-geometry",
+      "x": 1400,
+      "y": 1380,
+      "width": 560,
+      "height": 300,
+      "type": "text",
+      "text": "## Fehlende Geometrie über Spec(ℤ)\n\nDer bewiesene Funktionenkörperfall braucht eine Fläche C×_𝔽 C; das Analogon Spec(ℤ)×_{𝔽₁}Spec(ℤ) existiert nicht.\n\n**Fluchtbedingung:** Konstruktion einer Kohomologietheorie über Spec(ℤ) mit (a) Lefschetz-Formel, die die explizite Formel reproduziert, (b) Poincaré-Dualität, (c) einem Positivitäts-/Index-Satz (Hodge-Index-Analogon). Alle drei, nicht nur (a).\n\n*5 Ansätze betroffen*",
+      "color": "6"
+    },
+    {
+      "id": "blk-missing-base-geometry--doc-30",
+      "x": 2040,
+      "y": 1380,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/30_F1_field_one_element_arithmetic_site.md"
+    },
+    {
+      "id": "blk-missing-base-geometry--doc-31",
+      "x": 2040,
+      "y": 1485,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/31_Deninger_cohomology_foliated_dynamical.md"
+    },
+    {
+      "id": "blk-missing-base-geometry--doc-10",
+      "x": 2040,
+      "y": 1590,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/10_Connes_noncommutative_geometry.md"
+    },
+    {
+      "id": "blk-missing-base-geometry--doc-48",
+      "x": 2040,
+      "y": 1695,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/48_Meyer_Kurokawa_algebraic_programs.md"
+    },
+    {
+      "id": "blk-missing-base-geometry--doc-34",
+      "x": 2040,
+      "y": 1800,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/34_Bost_Connes_system.md"
+    },
+    {
+      "id": "blk-limit-interchange",
+      "x": 1400,
+      "y": 1840,
+      "width": 560,
+      "height": 300,
+      "type": "text",
+      "text": "## Konvergenz- / Grenzübergangslücke\n\nFür jede endliche Abschneidung bewiesen — der Grenzübergang ist offen.\n\n**Fluchtbedingung:** Eine von Λ (bzw. N, d) UNABHÄNGIGE Schranke — Kompaktheit, gleichgradige Stetigkeit oder eine explizite Fehlerabschätzung, die den Grenzübergang erlaubt.\n\n*5 Ansätze betroffen*",
+      "color": "6"
+    },
+    {
+      "id": "blk-limit-interchange--doc-52",
+      "x": 2040,
+      "y": 1840,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/52_Connes_truncated_Weil_spectral_realization.md"
+    },
+    {
+      "id": "blk-limit-interchange--doc-11",
+      "x": 2040,
+      "y": 1945,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/11_Connes_Moscovici_prolate_spheroidal.md"
+    },
+    {
+      "id": "blk-limit-interchange--doc-44",
+      "x": 2040,
+      "y": 2050,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/44_Lapidus_fractal_strings_spectral_operator.md"
+    },
+    {
+      "id": "blk-limit-interchange--doc-13",
+      "x": 2040,
+      "y": 2155,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/13_Nyman_Beurling_Baez_Duarte.md"
+    },
+    {
+      "id": "blk-limit-interchange--doc-29",
+      "x": 2040,
+      "y": 2260,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/29_Jensen_Polya_Laguerre_Polya_GORZ.md"
+    },
+    {
+      "id": "blk-proportion-ceiling",
+      "x": 1400,
+      "y": 2300,
+      "width": 560,
+      "height": 300,
+      "type": "text",
+      "text": "## Anteils-Decke der Mollifier-Methoden\n\nLevinson/Conrey-Technik liefert einen positiven Anteil, ist aber strukturell weit unter 100 % gedeckelt.\n\n**Fluchtbedingung:** Ein Mechanismus, der ALLE Nullstellen erfasst statt einen Anteil — Anteilsmethoden können die RH prinzipiell nicht abschließen, auch nicht im Limes.\n\n*5 Ansätze betroffen*",
+      "color": "6"
+    },
+    {
+      "id": "blk-proportion-ceiling--doc-03",
+      "x": 2040,
+      "y": 2300,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/03_Hardy_1914_infinitely_many_zeros.md"
+    },
+    {
+      "id": "blk-proportion-ceiling--doc-04",
+      "x": 2040,
+      "y": 2405,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/04_Levinson_Conrey_positive_proportion.md"
+    },
+    {
+      "id": "blk-proportion-ceiling--doc-07",
+      "x": 2040,
+      "y": 2510,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/07_Keating_Snaith_moments.md"
+    },
+    {
+      "id": "blk-proportion-ceiling--doc-17",
+      "x": 2040,
+      "y": 2615,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/17_Lindelof_density_hypothesis.md"
+    },
+    {
+      "id": "blk-proportion-ceiling--doc-22",
+      "x": 2040,
+      "y": 2720,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/22_Guth_Maynard_2024.md"
+    },
+    {
+      "id": "blk-finite-evidence",
+      "x": 2800,
+      "y": 0,
+      "width": 560,
+      "height": 300,
+      "type": "text",
+      "text": "## Numerische Extrapolation\n\nAus endlicher Rechnung wird auf asymptotisches Verhalten geschlossen — die RH-Landschaft hat dafür berüchtigte Gegenbeispiele.\n\n**Fluchtbedingung:** Nicht überwindbar, nur vermeidbar: Numerik darf Hypothesen erzeugen und widerlegen, aber nie stützen. Ein rigoroses Intervall-Zertifikat (doc-54) ist etwas anderes als eine Stichprobe.\n\n*6 Ansätze betroffen* · maschinell prüfbar: `T5_rechts_von_1` ([[60_counterexample_oracle]])",
+      "color": "4"
+    },
+    {
+      "id": "blk-finite-evidence--doc-24",
+      "x": 3440,
+      "y": 0,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/24_computational_verification.md"
+    },
+    {
+      "id": "blk-finite-evidence--doc-16",
+      "x": 3440,
+      "y": 105,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/16_Mertens_function_Riesz_criterion.md"
+    },
+    {
+      "id": "blk-finite-evidence--doc-39",
+      "x": 3440,
+      "y": 210,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/39_Cramer_probabilistic_model.md"
+    },
+    {
+      "id": "blk-finite-evidence--doc-06",
+      "x": 3440,
+      "y": 315,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/06_Montgomery_pair_correlation_RMT.md"
+    },
+    {
+      "id": "blk-finite-evidence--doc-23",
+      "x": 3440,
+      "y": 420,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/23_de_Bruijn_Newman_constant_Polymath15.md"
+    },
+    {
+      "id": "blk-finite-evidence--doc-65",
+      "x": 3440,
+      "y": 525,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/65_criterion_sensitivity.md"
+    },
+    {
+      "id": "blk-model-circularity",
+      "x": 2800,
+      "y": 460,
+      "width": 560,
+      "height": 300,
+      "type": "text",
+      "text": "## Zirkularität der Modellannahme\n\nZufallsmatrix- und probabilistische Modelle setzen die RH voraus, um überhaupt formuliert werden zu können.\n\n**Fluchtbedingung:** Unbedingte Formulierung: Aussagen über Nullstellen ohne die Annahme, dass sie auf der Geraden liegen (doc-53 ist der Prototyp).\n\n*5 Ansätze betroffen*",
+      "color": "4"
+    },
+    {
+      "id": "blk-model-circularity--doc-06",
+      "x": 3440,
+      "y": 460,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/06_Montgomery_pair_correlation_RMT.md"
+    },
+    {
+      "id": "blk-model-circularity--doc-07",
+      "x": 3440,
+      "y": 565,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/07_Keating_Snaith_moments.md"
+    },
+    {
+      "id": "blk-model-circularity--doc-39",
+      "x": 3440,
+      "y": 670,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/39_Cramer_probabilistic_model.md"
+    },
+    {
+      "id": "blk-model-circularity--doc-33",
+      "x": 3440,
+      "y": 775,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/33_statistical_mechanics_Lee_Yang.md"
+    },
+    {
+      "id": "blk-model-circularity--doc-53",
+      "x": 3440,
+      "y": 880,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/53_pair_correlation_alternative_hypothesis.md"
+    },
+    {
+      "id": "blk-unverifiable",
+      "x": 2800,
+      "y": 920,
+      "width": 560,
+      "height": 300,
+      "type": "text",
+      "text": "## Nicht-Verifizierbarkeit\n\nEs existiert kein prüfbarer Beweistext — entweder gar keiner, oder einer, dessen Grundlage unpubliziert ist, oder einer, den niemand mehr nachprüft.\n\n**Fluchtbedingung:** Ein vollständiger, öffentlicher, selbsttragender Beweistext — im Idealfall maschinengeprüft. Das ist die einzige Fluchtbedingung der Sammlung, die heute schon technisch erreichbar ist.\n\n*4 Ansätze betroffen*",
+      "color": "4"
+    },
+    {
+      "id": "blk-unverifiable--doc-25",
+      "x": 3440,
+      "y": 920,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/25_Atiyah_2018_failed_proof.md"
+    },
+    {
+      "id": "blk-unverifiable--doc-26",
+      "x": 3440,
+      "y": 1025,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/26_Nash_failed_attempt.md"
+    },
+    {
+      "id": "blk-unverifiable--doc-20",
+      "x": 3440,
+      "y": 1130,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/20_de_Branges_Hilbert_spaces.md"
+    },
+    {
+      "id": "blk-unverifiable--doc-27",
+      "x": 3440,
+      "y": 1235,
+      "width": 480,
+      "height": 90,
+      "type": "file",
+      "file": "docs/27_other_disputed_claimed_proofs.md"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-blk-euler-blindness--doc-27",
+      "fromNode": "blk-euler-blindness",
+      "fromSide": "right",
+      "toNode": "blk-euler-blindness--doc-27",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e-blk-euler-blindness--doc-25",
+      "fromNode": "blk-euler-blindness",
+      "fromSide": "right",
+      "toNode": "blk-euler-blindness--doc-25",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e-blk-euler-blindness--doc-46",
+      "fromNode": "blk-euler-blindness",
+      "fromSide": "right",
+      "toNode": "blk-euler-blindness--doc-46",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e-blk-euler-blindness--doc-43",
+      "fromNode": "blk-euler-blindness",
+      "fromSide": "right",
+      "toNode": "blk-euler-blindness--doc-43",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e-blk-parity--doc-16",
+      "fromNode": "blk-parity",
+      "fromSide": "right",
+      "toNode": "blk-parity--doc-16",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e-blk-parity--doc-32",
+      "fromNode": "blk-parity",
+      "fromSide": "right",
+      "toNode": "blk-parity--doc-32",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e-blk-parity--doc-12",
+      "fromNode": "blk-parity",
+      "fromSide": "right",
+      "toNode": "blk-parity--doc-12",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e-blk-softness--doc-46",
+      "fromNode": "blk-softness",
+      "fromSide": "right",
+      "toNode": "blk-softness--doc-46",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e-blk-softness--doc-27",
+      "fromNode": "blk-softness",
+      "fromSide": "right",
+      "toNode": "blk-softness--doc-27",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e-blk-softness--doc-43",
+      "fromNode": "blk-softness",
+      "fromSide": "right",
+      "toNode": "blk-softness--doc-43",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e-blk-positivity-circular--doc-13",
+      "fromNode": "blk-positivity-circular",
+      "fromSide": "right",
+      "toNode": "blk-positivity-circular--doc-13",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-positivity-circular--doc-14",
+      "fromNode": "blk-positivity-circular",
+      "fromSide": "right",
+      "toNode": "blk-positivity-circular--doc-14",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-positivity-circular--doc-20",
+      "fromNode": "blk-positivity-circular",
+      "fromSide": "right",
+      "toNode": "blk-positivity-circular--doc-20",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-positivity-circular--doc-23",
+      "fromNode": "blk-positivity-circular",
+      "fromSide": "right",
+      "toNode": "blk-positivity-circular--doc-23",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-positivity-circular--doc-29",
+      "fromNode": "blk-positivity-circular",
+      "fromSide": "right",
+      "toNode": "blk-positivity-circular--doc-29",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-positivity-circular--doc-33",
+      "fromNode": "blk-positivity-circular",
+      "fromSide": "right",
+      "toNode": "blk-positivity-circular--doc-33",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-positivity-circular--doc-10",
+      "fromNode": "blk-positivity-circular",
+      "fromSide": "right",
+      "toNode": "blk-positivity-circular--doc-10",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-positivity-circular--doc-52",
+      "fromNode": "blk-positivity-circular",
+      "fromSide": "right",
+      "toNode": "blk-positivity-circular--doc-52",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-positivity-circular--doc-45",
+      "fromNode": "blk-positivity-circular",
+      "fromSide": "right",
+      "toNode": "blk-positivity-circular--doc-45",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-equivalence-trap--doc-13",
+      "fromNode": "blk-equivalence-trap",
+      "fromSide": "right",
+      "toNode": "blk-equivalence-trap--doc-13",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-equivalence-trap--doc-14",
+      "fromNode": "blk-equivalence-trap",
+      "fromSide": "right",
+      "toNode": "blk-equivalence-trap--doc-14",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-equivalence-trap--doc-15",
+      "fromNode": "blk-equivalence-trap",
+      "fromSide": "right",
+      "toNode": "blk-equivalence-trap--doc-15",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-equivalence-trap--doc-16",
+      "fromNode": "blk-equivalence-trap",
+      "fromSide": "right",
+      "toNode": "blk-equivalence-trap--doc-16",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-equivalence-trap--doc-45",
+      "fromNode": "blk-equivalence-trap",
+      "fromSide": "right",
+      "toNode": "blk-equivalence-trap--doc-45",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-equivalence-trap--doc-44",
+      "fromNode": "blk-equivalence-trap",
+      "fromSide": "right",
+      "toNode": "blk-equivalence-trap--doc-44",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-equivalence-trap--doc-29",
+      "fromNode": "blk-equivalence-trap",
+      "fromSide": "right",
+      "toNode": "blk-equivalence-trap--doc-29",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-equivalence-trap--doc-65",
+      "fromNode": "blk-equivalence-trap",
+      "fromSide": "right",
+      "toNode": "blk-equivalence-trap--doc-65",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-noncanonical-operator--doc-05",
+      "fromNode": "blk-noncanonical-operator",
+      "fromSide": "right",
+      "toNode": "blk-noncanonical-operator--doc-05",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-noncanonical-operator--doc-08",
+      "fromNode": "blk-noncanonical-operator",
+      "fromSide": "right",
+      "toNode": "blk-noncanonical-operator--doc-08",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-noncanonical-operator--doc-09",
+      "fromNode": "blk-noncanonical-operator",
+      "fromSide": "right",
+      "toNode": "blk-noncanonical-operator--doc-09",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-noncanonical-operator--doc-47",
+      "fromNode": "blk-noncanonical-operator",
+      "fromSide": "right",
+      "toNode": "blk-noncanonical-operator--doc-47",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-noncanonical-operator--doc-11",
+      "fromNode": "blk-noncanonical-operator",
+      "fromSide": "right",
+      "toNode": "blk-noncanonical-operator--doc-11",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-missing-base-geometry--doc-30",
+      "fromNode": "blk-missing-base-geometry",
+      "fromSide": "right",
+      "toNode": "blk-missing-base-geometry--doc-30",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-missing-base-geometry--doc-31",
+      "fromNode": "blk-missing-base-geometry",
+      "fromSide": "right",
+      "toNode": "blk-missing-base-geometry--doc-31",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-missing-base-geometry--doc-10",
+      "fromNode": "blk-missing-base-geometry",
+      "fromSide": "right",
+      "toNode": "blk-missing-base-geometry--doc-10",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-missing-base-geometry--doc-48",
+      "fromNode": "blk-missing-base-geometry",
+      "fromSide": "right",
+      "toNode": "blk-missing-base-geometry--doc-48",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-missing-base-geometry--doc-34",
+      "fromNode": "blk-missing-base-geometry",
+      "fromSide": "right",
+      "toNode": "blk-missing-base-geometry--doc-34",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-limit-interchange--doc-52",
+      "fromNode": "blk-limit-interchange",
+      "fromSide": "right",
+      "toNode": "blk-limit-interchange--doc-52",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-limit-interchange--doc-11",
+      "fromNode": "blk-limit-interchange",
+      "fromSide": "right",
+      "toNode": "blk-limit-interchange--doc-11",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-limit-interchange--doc-44",
+      "fromNode": "blk-limit-interchange",
+      "fromSide": "right",
+      "toNode": "blk-limit-interchange--doc-44",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-limit-interchange--doc-13",
+      "fromNode": "blk-limit-interchange",
+      "fromSide": "right",
+      "toNode": "blk-limit-interchange--doc-13",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-limit-interchange--doc-29",
+      "fromNode": "blk-limit-interchange",
+      "fromSide": "right",
+      "toNode": "blk-limit-interchange--doc-29",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-proportion-ceiling--doc-03",
+      "fromNode": "blk-proportion-ceiling",
+      "fromSide": "right",
+      "toNode": "blk-proportion-ceiling--doc-03",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-proportion-ceiling--doc-04",
+      "fromNode": "blk-proportion-ceiling",
+      "fromSide": "right",
+      "toNode": "blk-proportion-ceiling--doc-04",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-proportion-ceiling--doc-07",
+      "fromNode": "blk-proportion-ceiling",
+      "fromSide": "right",
+      "toNode": "blk-proportion-ceiling--doc-07",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-proportion-ceiling--doc-17",
+      "fromNode": "blk-proportion-ceiling",
+      "fromSide": "right",
+      "toNode": "blk-proportion-ceiling--doc-17",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-proportion-ceiling--doc-22",
+      "fromNode": "blk-proportion-ceiling",
+      "fromSide": "right",
+      "toNode": "blk-proportion-ceiling--doc-22",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e-blk-finite-evidence--doc-24",
+      "fromNode": "blk-finite-evidence",
+      "fromSide": "right",
+      "toNode": "blk-finite-evidence--doc-24",
+      "toSide": "left",
+      "color": "4"
+    },
+    {
+      "id": "e-blk-finite-evidence--doc-16",
+      "fromNode": "blk-finite-evidence",
+      "fromSide": "right",
+      "toNode": "blk-finite-evidence--doc-16",
+      "toSide": "left",
+      "color": "4"
+    },
+    {
+      "id": "e-blk-finite-evidence--doc-39",
+      "fromNode": "blk-finite-evidence",
+      "fromSide": "right",
+      "toNode": "blk-finite-evidence--doc-39",
+      "toSide": "left",
+      "color": "4"
+    },
+    {
+      "id": "e-blk-finite-evidence--doc-06",
+      "fromNode": "blk-finite-evidence",
+      "fromSide": "right",
+      "toNode": "blk-finite-evidence--doc-06",
+      "toSide": "left",
+      "color": "4"
+    },
+    {
+      "id": "e-blk-finite-evidence--doc-23",
+      "fromNode": "blk-finite-evidence",
+      "fromSide": "right",
+      "toNode": "blk-finite-evidence--doc-23",
+      "toSide": "left",
+      "color": "4"
+    },
+    {
+      "id": "e-blk-finite-evidence--doc-65",
+      "fromNode": "blk-finite-evidence",
+      "fromSide": "right",
+      "toNode": "blk-finite-evidence--doc-65",
+      "toSide": "left",
+      "color": "4"
+    },
+    {
+      "id": "e-blk-model-circularity--doc-06",
+      "fromNode": "blk-model-circularity",
+      "fromSide": "right",
+      "toNode": "blk-model-circularity--doc-06",
+      "toSide": "left",
+      "color": "4"
+    },
+    {
+      "id": "e-blk-model-circularity--doc-07",
+      "fromNode": "blk-model-circularity",
+      "fromSide": "right",
+      "toNode": "blk-model-circularity--doc-07",
+      "toSide": "left",
+      "color": "4"
+    },
+    {
+      "id": "e-blk-model-circularity--doc-39",
+      "fromNode": "blk-model-circularity",
+      "fromSide": "right",
+      "toNode": "blk-model-circularity--doc-39",
+      "toSide": "left",
+      "color": "4"
+    },
+    {
+      "id": "e-blk-model-circularity--doc-33",
+      "fromNode": "blk-model-circularity",
+      "fromSide": "right",
+      "toNode": "blk-model-circularity--doc-33",
+      "toSide": "left",
+      "color": "4"
+    },
+    {
+      "id": "e-blk-model-circularity--doc-53",
+      "fromNode": "blk-model-circularity",
+      "fromSide": "right",
+      "toNode": "blk-model-circularity--doc-53",
+      "toSide": "left",
+      "color": "4"
+    },
+    {
+      "id": "e-blk-unverifiable--doc-25",
+      "fromNode": "blk-unverifiable",
+      "fromSide": "right",
+      "toNode": "blk-unverifiable--doc-25",
+      "toSide": "left",
+      "color": "4"
+    },
+    {
+      "id": "e-blk-unverifiable--doc-26",
+      "fromNode": "blk-unverifiable",
+      "fromSide": "right",
+      "toNode": "blk-unverifiable--doc-26",
+      "toSide": "left",
+      "color": "4"
+    },
+    {
+      "id": "e-blk-unverifiable--doc-20",
+      "fromNode": "blk-unverifiable",
+      "fromSide": "right",
+      "toNode": "blk-unverifiable--doc-20",
+      "toSide": "left",
+      "color": "4"
+    },
+    {
+      "id": "e-blk-unverifiable--doc-27",
+      "fromNode": "blk-unverifiable",
+      "fromSide": "right",
+      "toNode": "blk-unverifiable--doc-27",
+      "toSide": "left",
+      "color": "4"
+    }
+  ]
+}

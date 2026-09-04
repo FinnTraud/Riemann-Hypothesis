@@ -59,3 +59,17 @@ Funktionalanalytische Implikationen zwischen Subkonvexitätsschranken und Moment
 - [An explicit log-free zero density estimate for the Riemann zeta-function (arXiv 2405.12545)](https://arxiv.org/pdf/2405.12545)
 - [Implications between subconvexity and moments (arXiv 2212.04421)](https://arxiv.org/pdf/2212.04421)
 - [P. Nelson — Bounds for standard L-functions (subconvexity for GL(n), arXiv 2109.15230)](https://arxiv.org/abs/2109.15230)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!abstract]- Graph-Nachbarn (4)
+> - *ist Evidenz für* → [[22_Guth_Maynard_2024|22 · Guth–Maynard]] — Live-Front: explizite Dichte, Subkonvexität, Momente.
+> - *ist Evidenz für* → [[17_Lindelof_density_hypothesis|17 · Lindelöf-Hypothese & Dichte-Hypothese]] — Subkonvexität nähert Lindelöf an.
+> - *ist Evidenz für* → [[07_Keating_Snaith_moments|07 · Keating–Snaith]] — Harper/Radziwiłł–Soundararajan: scharfe Momentschranken stützen Keating-Snaith.
+> - ← *wird benutzt von* [[54_machine_assisted_number_theory_ANTEDB_Lean|54 · Maschinengestützte Zahlentheorie]] — Systematisiert und verschaerft die Resultate der Live-Front.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

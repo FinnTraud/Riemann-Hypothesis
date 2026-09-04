@@ -84,3 +84,14 @@ FAZIT: gesichert / offen / nächster prüfbarer Schritt
 - docs/41 (Synthese & Bewertungsraster), docs/35 & 43 & 46 (Obstruktionen), docs/37 (Formalisierung).
 - Methodik angelehnt an Pólyas „How to Solve It", experimentelle Mathematik (Borwein) und
   formale Verifikation (Lean/mathlib).
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!abstract]- Graph-Nachbarn (1)
+> - ← *wird benutzt von* [[64_trust_tiers_verification_levels|64 · Trust-Tiers]] — Ergaenzt die Statustrennung des Denkprotokolls um die Verifikationsstufe.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

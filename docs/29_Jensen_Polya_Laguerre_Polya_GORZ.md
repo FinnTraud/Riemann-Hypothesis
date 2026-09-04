@@ -94,3 +94,32 @@ Die Hermite-Approximation kontrolliert nur das Regime n → ∞ bei **festem** d
 - [The Jensen-Pólya program for various L-functions (arXiv 1905.11269)](https://arxiv.org/abs/1905.11269)
 - [Jensen polynomials are not a plausible route to proving the Riemann Hypothesis (arXiv 2008.07206)](https://arxiv.org/pdf/2008.07206)
 - [On a new class of Laguerre-Pólya type functions with applications in number theory (arXiv 2108.01827)](https://ar5iv.labs.arxiv.org/html/2108.01827)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (3)
+> - **Zirkuläre Positivität** *(Tier 2)* — Die RH wird auf eine Positivitätsaussage reduziert, die selbst nur als äquivalent, nie unabhängig bewiesen ist.
+>   *Fluchtbedingung:* Die Positivität muss aus einer Struktur folgen, die unabhängig von der Nullstellenlage definiert ist. Im bewiesenen Fall 𝔽_q (doc-18) leistet das die Schnittform auf der Fläche C×C — dort ist Positivität ein Satz der Geometrie, nicht eine Umformulierung des Ziels.
+> - **Konvergenz- / Grenzübergangslücke** *(Tier 2)* — Für jede endliche Abschneidung bewiesen — der Grenzübergang ist offen.
+>   *Fluchtbedingung:* Eine von Λ (bzw. N, d) UNABHÄNGIGE Schranke — Kompaktheit, gleichgradige Stetigkeit oder eine explizite Fehlerabschätzung, die den Grenzübergang erlaubt.
+> - **Äquivalenz-Falle** *(Tier 2)* — Ein Kriterium ist zur RH äquivalent und damit exakt gleich schwer — die Umformulierung erzeugt den Anschein von Fortschritt, ohne die Beweislast zu senken.
+>   *Fluchtbedingung:* Eine der beiden Richtungen muss in STRIKT SCHWÄCHERER Form unbedingt bewiesen werden, oder es muss eine quantitative Größe geben, die sich unabhängig von der RH bewegen lässt (Λ ≤ 0.22, Anteil > 41 %, d_N-Raten). Nur solche Bewegungen zählen als Fortschritt — siehe docs/58.
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!missing]- Die fehlende Aussage
+> **Bewiesen:** GORZ 2019: für jedes feste d ist J^{d,n} hyperbolisch für alle hinreichend großen n (Dichte-1-Teilmenge); vollständig verifiziert für alle d ≤ 8 (zuvor d ≤ 3).
+> **Es fehlt:** Hyperbolizität für ALLE d und n simultan — insbesondere im Regime d ~ n, wo die Hermite-Approximation keine Kontrolle mehr liefert.
+> **Typ:** grenzuebergang · Bewertung: [[58_gap_registry_near_miss]]
+
+> [!abstract]- Graph-Nachbarn (4)
+> - *äquivalent zu* → **Riemann-Vermutung (RH)** — ξ∈Laguerre-Pólya / Jensen-Hyperbolizität ⟺ RH.
+> - *ist Instanz von* → **Positivität / Reellwurzeligkeit** — Jensen/Laguerre-Pólya-Reellwurzeligkeit.
+> - *benutzt* → [[23_de_Bruijn_Newman_constant_Polymath15|23 · De-Bruijn–Newman-Konstante]] — Laguerre-Pólya ⟺ Λ≤0; gemeinsame Pólya-Wurzel.
+> - ← *wird benutzt von* [[58_gap_registry_near_miss|58 · GAP-Registry & Near-Miss-Bewertung]] — Bewertet das gemeinsame Regime d ~ n der Jensen-Polynome.
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->

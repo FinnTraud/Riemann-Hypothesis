@@ -88,3 +88,15 @@ Diese strukturübergreifende Universalität ist starke Evidenz für die Große R
 - [Grand Riemann hypothesis — Wikipedia](https://en.wikipedia.org/wiki/Grand_Riemann_hypothesis)
 - [On relations equivalent to the generalized Riemann hypothesis for the Selberg class (arXiv 1511.04603)](https://arxiv.org/pdf/1511.04603)
 - [Equivalent criteria for the Riemann hypothesis for a general class of L-functions (arXiv 2409.17708)](https://arxiv.org/pdf/2409.17708)
+
+## Verknüpfungen (auto)
+
+<!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
+
+> [!abstract]- Graph-Nachbarn (2)
+> - *ist Instanz von* → **Verallgemeinerte/Große RH** — GRH/Selberg-Klasse/Große RH.
+> - ← *wird benutzt von* [[43_Epstein_zeta_Selberg_class_rigidity|43 · Epstein-Zetafunktionen & Selberg-Klassen-Rigidität]] — Selberg-Klassen-Klassifikation (Kaczorowski–Perelli).
+
+**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
+
+<!-- OBSIDIAN-LINKS:END -->
