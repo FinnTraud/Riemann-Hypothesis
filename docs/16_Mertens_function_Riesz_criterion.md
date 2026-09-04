@@ -87,6 +87,26 @@ RH  ⟺  Σ_{n=1}^∞ (−x)^n/(n! ζ(2n+1)) = O(x^{−1/4})   (x → ∞).
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `criterion` |
+> | Implikation | `equivalent` |
+> | Euler-Produkt | `essential` |
+> | Positivität | `n/a` |
+> | Strenge | `theorem` |
+> | Evidenz | `weak` |
+> | Testbar | `high` |
+> | Formalisierbar | `medium` |
+> 
+> **Offener Kernschritt:** M(x) << x^(1/2+eps) - blockiert durch die Paritätsbarriere; Mertens-Vermutung ist widerlegt.
+> 
+> **Hebel:** Direkteste Verbindung zwischen Möbius-Zufälligkeit und RH.
+> 
+> **Fehlermodi:** [[F8_parity-barrier|F8 Paritätsbarriere]] · [[F11_criterion-restates|F11 Äquivalenz-Falle]] · [[F6_numerics-as-proof|F6 Numerische Extrapolation]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-16`
+
 > [!warning]- Blocker — woran dieser Ansatz hängt (3)
 > - **Paritätsbarriere** *(Tier 1)* — Siebmethoden können gerade und ungerade Primfaktorzahl prinzipiell nicht trennen — genau das misst μ(n).
 >   *Fluchtbedingung:* Ein bilinearer Input (Typ-II-Summen), ein Spektralinput (automorphe Formen) oder eine andere Quelle von Kancellation, die nicht aus dem Sieb selbst kommt.
@@ -102,11 +122,13 @@ RH  ⟺  Σ_{n=1}^∞ (−x)^n/(n! ζ(2n+1)) = O(x^{−1/4})   (x → ∞).
 > **Es fehlt:** Die Schranke selbst. Reine Siebmethoden können sie prinzipiell nicht liefern.
 > **Typ:** aequivalenz · Bewertung: [[58_gap_registry_near_miss]]
 
-> [!abstract]- Graph-Nachbarn (4)
+> [!abstract]- Graph-Nachbarn (6)
 > - *äquivalent zu* → **Riemann-Vermutung (RH)** — Mertens-Kriterium M(x)=O(x^{1/2+ε}) ⟺ RH (NICHT die widerlegte Mertens-Vermutung).
 > - *äquivalent zu* → [[45_further_equivalent_criteria|45 · Weitere äquivalente Kriterien]] — Redheffer-Matrix det(R_n)=M(n) verbindet Mertens und Matrix-Kriterium.
 > - *ist Evidenz für* → [[35_obstructions_barriers|35 · Obstruktionen & Barrieren]] — Widerlegte Mertens-Vermutung: numerische Evidenz täuscht (Warnung).
+> - ← *gestützt durch* [[69_Mobius_randomness_Chowla_Sarnak|69 · Möbius-Zufälligkeit]] — Stützt die Heuristik hinter M(x)=O(x^{1/2+ε}), liefert sie aber nicht.
 > - ← *wird benutzt von* [[59_invariants_test_vectors|59 · Invarianten & Testvektoren]] — Widerlegte Mertens-Vermutung als Ueberschuss-Test.
+> - ← *wird benutzt von* [[61_negative_space_if_rh_is_false|61 · Negativraum]] — Mertens-Widerlegung als Kalibrierung der Numerik.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 

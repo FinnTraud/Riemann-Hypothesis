@@ -157,11 +157,31 @@ Tier-1-Obstruktion, hat aber eine klar benennbare offene Stelle.
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `spectral` |
+> | Implikation | `conditional` |
+> | Euler-Produkt | `essential` |
+> | Positivität | `must-prove` |
+> | Strenge | `theorem` |
+> | Evidenz | `strong` |
+> | Testbar | `high` |
+> | Formalisierbar | `medium` |
+> 
+> **Offener Kernschritt:** Gleichmäßiger Grenzübergang Cutoff -> unendlich (Turáns Partialsummen sind die Warnung).
+> 
+> **Hebel:** Pro Cutoff beweisbare Nullstellenlage + endliche Matrizen = numerisch angreifbar.
+> 
+> **Fehlermodi:** [[F9_truncation-limit-gap|F9 Konvergenz- / Grenzübergangslücke]] · [[F2_positivity-assumed|F2 Zirkuläre Positivität]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-52`
+
 > [!warning]- Blocker — woran dieser Ansatz hängt (2)
-> - **Zirkuläre Positivität** *(Tier 2)* — Die RH wird auf eine Positivitätsaussage reduziert, die selbst nur als äquivalent, nie unabhängig bewiesen ist.
->   *Fluchtbedingung:* Die Positivität muss aus einer Struktur folgen, die unabhängig von der Nullstellenlage definiert ist. Im bewiesenen Fall 𝔽_q (doc-18) leistet das die Schnittform auf der Fläche C×C — dort ist Positivität ein Satz der Geometrie, nicht eine Umformulierung des Ziels.
 > - **Konvergenz- / Grenzübergangslücke** *(Tier 2)* — Für jede endliche Abschneidung bewiesen — der Grenzübergang ist offen.
 >   *Fluchtbedingung:* Eine von Λ (bzw. N, d) UNABHÄNGIGE Schranke — Kompaktheit, gleichgradige Stetigkeit oder eine explizite Fehlerabschätzung, die den Grenzübergang erlaubt.
+> - **Zirkuläre Positivität** *(Tier 2)* — Die RH wird auf eine Positivitätsaussage reduziert, die selbst nur als äquivalent, nie unabhängig bewiesen ist.
+>   *Fluchtbedingung:* Die Positivität muss aus einer Struktur folgen, die unabhängig von der Nullstellenlage definiert ist. Im bewiesenen Fall 𝔽_q (doc-18) leistet das die Schnittform auf der Fläche C×C — dort ist Positivität ein Satz der Geometrie, nicht eine Umformulierung des Ziels.
 > 
 > Vollständige Matrix: [[55_failure_taxonomy]]
 
@@ -170,7 +190,7 @@ Tier-1-Obstruktion, hat aber eine klar benennbare offene Stelle.
 > **Es fehlt:** Eine von Λ UNABHÄNGIGE Schranke, die den Grenzübergang Λ → ∞ erlaubt (Kompaktheit, gleichgradige Stetigkeit oder eine explizite Fehlerabschätzung).
 > **Typ:** grenzuebergang · Bewertung: [[58_gap_registry_near_miss]]
 
-> [!abstract]- Graph-Nachbarn (15)
+> [!abstract]- Graph-Nachbarn (16)
 > - *ist Blaupause für* → **Riemann-Vermutung (RH)** — Programm fuer einen RH-Beweis; es fehlt der Konvergenzschritt Cutoff -> unendlich.
 > - *ist Evidenz für* → **Kritische Gerade Re(s)=1/2** — Nullstellen des Grundzustands liegen fuer jeden endlichen Cutoff auf Re(s)=1/2.
 > - *modelliert* → **Hilbert–Pólya / spektrale Interpretation** — Endlich-dimensionale, rechenbare Realisierung des Hilbert-Polya-Programms.
@@ -184,6 +204,7 @@ Tier-1-Obstruktion, hat aber eine klar benennbare offene Stelle.
 > - ← *hat Instanz* **Abgeschnittene Weil-Quadratform (Galerkin-Truncation)** — Dok. 52 stellt die abgeschnittene Weil-Quadratform dar.
 > - ← *wird obstruiert von* [[43_Epstein_zeta_Selberg_class_rigidity|43 · Epstein-Zetafunktionen & Selberg-Klassen-Rigidität]] — Epstein/Selberg-Rigiditaet verlangt echten Euler-Produkt-Input - Dok. 52 liefert ihn, besteht die Pruefung also.
 > - ← *wird obstruiert von* [[46_Voronin_universality|46 · Voronin-Universalität]] — Voronin-Universalitaet schliesst 'weiche' Argumente aus; Dok. 52 arbeitet ueber Positivitaet, nicht ueber Nullstellenformeln.
+> - ← *wird obstruiert von* [[67_Turan_power_sums_partial_sums|67 · Turáns Potenzsummen-Programm & die Partialsummen vo…]] — Warnung für alle Galerkin-/Cutoff-Programme: der Limes kann scheitern.
 > - ← *wird benutzt von* **Formale Verifikation / maschinengestuetzte Mathematik** — Die Weil-Form-Numerik wird mit Reproduzierbarkeitspaketen und Intervall-Zertifikaten geliefert.
 > - ← *wird benutzt von* [[58_gap_registry_near_miss|58 · GAP-Registry & Near-Miss-Bewertung]] — Bewertet den Grenzuebergang der abgeschnittenen Weil-Quadratform.
 

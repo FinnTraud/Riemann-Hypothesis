@@ -84,6 +84,26 @@ Ergebnis: **0 ≤ Λ ≤ 0,22**.
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `analytic` |
+> | Implikation | `conditional` |
+> | Euler-Produkt | `essential` |
+> | Positivität | `must-prove` |
+> | Strenge | `theorem` |
+> | Evidenz | `strong` |
+> | Testbar | `high` |
+> | Formalisierbar | `medium` |
+> 
+> **Offener Kernschritt:** Lambda <= 0 zeigen (Lambda >= 0 ist bewiesen); Lambda = 0 wäre äquivalent zur RH.
+> 
+> **Hebel:** Ein einziger reeller Parameter kodiert die RH - ideal für Numerik.
+> 
+> **Fehlermodi:** [[F9_truncation-limit-gap|F9 Konvergenz- / Grenzübergangslücke]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-23`
+
 > [!warning]- Blocker — woran dieser Ansatz hängt (2)
 > - **Zirkuläre Positivität** *(Tier 2)* — Die RH wird auf eine Positivitätsaussage reduziert, die selbst nur als äquivalent, nie unabhängig bewiesen ist.
 >   *Fluchtbedingung:* Die Positivität muss aus einer Struktur folgen, die unabhängig von der Nullstellenlage definiert ist. Im bewiesenen Fall 𝔽_q (doc-18) leistet das die Schnittform auf der Fläche C×C — dort ist Positivität ein Satz der Geometrie, nicht eine Umformulierung des Ziels.
@@ -97,15 +117,17 @@ Ergebnis: **0 ≤ Λ ≤ 0,22**.
 > **Es fehlt:** Λ ≤ 0. Zusammen mit Λ ≥ 0 wäre das Λ = 0 und damit die RH.
 > **Typ:** quantitativ · Bewertung: [[58_gap_registry_near_miss]]
 
-> [!abstract]- Graph-Nachbarn (8)
+> [!abstract]- Graph-Nachbarn (10)
 > - *äquivalent zu* → **Riemann-Vermutung (RH)** — de-Bruijn–Newman: Λ≤0 ⟺ RH.
 > - *ist Instanz von* → **Positivität / Reellwurzeligkeit** — de-Bruijn–Newman Λ≤0.
+> - ← *gestützt durch* [[75_extreme_values_FHK_multiplicative_chaos|75 · Extremwerte von ζ]] — Extremwerte und Lehmer-Paare messen beide, wie 'knapp' die RH gilt.
 > - ← *wird benutzt von* [[33_statistical_mechanics_Lee_Yang|33 · Statistische Mechanik & Lee–Yang-Analogie]] — Statistische Mechanik liefert Werkzeuge für die dBN-Konstante.
 > - ← *wird benutzt von* [[29_Jensen_Polya_Laguerre_Polya_GORZ|29 · Jensen–Pólya-Programm]] — Laguerre-Pólya ⟺ Λ≤0; gemeinsame Pólya-Wurzel.
 > - ← *wird benutzt von* [[58_gap_registry_near_miss|58 · GAP-Registry & Near-Miss-Bewertung]] — Bewertet die Luecke 0 <= Lambda <= 0,22.
 > - ← *wird benutzt von* [[59_invariants_test_vectors|59 · Invarianten & Testvektoren]] — Lambda >= 0 als schaerfster Ueberschuss-Test (Marginlosigkeit).
 > - ← *wird benutzt von* [[61_negative_space_if_rh_is_false|61 · Negativraum]] — Nicht-RH ist aequivalent zu Lambda > 0.
 > - ← *wird benutzt von* [[65_criterion_sensitivity|65 · Sensitivität der Kriterien]] — Lambda als Ausnahme: methodische statt rechnerische Wand.
+> - ← *wird benutzt von* [[66_Speiser_zeros_of_zeta_prime|66 · Speisers Satz & die Nullstellen von ζ′]] — Lehmer-Paare erzwingen ζ′-Nullstellen sehr nahe an der Geraden.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 

@@ -55,6 +55,32 @@ theorem RiemannHypothesis :
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `computational` |
+> | Implikation | `none` |
+> | Euler-Produkt | `partial` |
+> | Positivität | `n/a` |
+> | Strenge | `theorem` |
+> | Evidenz | `n/a` |
+> | Testbar | `high` |
+> | Formalisierbar | `high` |
+> 
+> **Offener Kernschritt:** Kein RH-Beweis - aber der einzige Filter ohne Halluzinationsrisiko für Teilresultate.
+> 
+> **Hebel:** Macht Teilfortschritte maschinenprüfbar und publizierbar.
+> 
+> **Fehlermodi:** [[F15_verification-collapse|F15 Nicht-Verifizierbarkeit]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-37`
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (1)
+> - **Nicht-Verifizierbarkeit** *(Tier 3)* — Es existiert kein prüfbarer Beweistext — entweder gar keiner, oder einer, dessen Grundlage unpubliziert ist, oder einer, den niemand mehr nachprüft.
+>   *Fluchtbedingung:* Ein vollständiger, öffentlicher, selbsttragender Beweistext — im Idealfall maschinengeprüft. Das ist die einzige Fluchtbedingung der Sammlung, die heute schon technisch erreichbar ist.
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
 > [!abstract]- Graph-Nachbarn (3)
 > - *benutzt* → **Riemann-Vermutung (RH)** — Lean/Formalisierung als Verifikations-Gateway.
 > - ← *gestützt durch* [[54_machine_assisted_number_theory_ANTEDB_Lean|54 · Maschinengestützte Zahlentheorie]] — Der formalisierte starke Primzahlsatz zeigt, dass Lean analytische Zahlentheorie traegt.

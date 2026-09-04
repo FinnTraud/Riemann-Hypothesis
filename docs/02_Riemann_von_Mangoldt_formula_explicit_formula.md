@@ -111,6 +111,12 @@ Diese Identität ist der Angelpunkt der Spurformel-Ansätze (Connes, Dok. 10) un
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!warning]- Blocker — woran dieser Ansatz hängt (1)
+> - **Unerlaubte Vertauschung** *(Tier 1)* — Bedingt konvergente Nullstellensummen, Konturen oder Doppelreihen werden frei umgeordnet.
+>   *Fluchtbedingung:* Jede Vertauschung von Limes, Summe und Integral einzeln durch dominierte oder gleichmaessige Konvergenz rechtfertigen; die Paarung rho <-> 1-conj(rho) durchgaengig beibehalten.
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
 > [!abstract]- Graph-Nachbarn (3)
 > - *benutzt* → [[01_Riemann_1859_original_paper|01 · Riemanns Originalarbeit]] — Explizite Formel baut auf Funktionalgleichung/ξ auf.
 > - ← *hat Instanz* **Explizite Formel (Primzahlen↔Nullstellen)** — Doc 02 stellt die explizite Formel dar.

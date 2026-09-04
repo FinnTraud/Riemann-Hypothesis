@@ -92,15 +92,36 @@ Alle gefundenen Nullstellen: einfach und exakt auf Re(s) = 1/2.
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `computational` |
+> | Implikation | `none` |
+> | Euler-Produkt | `partial` |
+> | Positivität | `n/a` |
+> | Strenge | `theorem` |
+> | Evidenz | `strong` |
+> | Testbar | `high` |
+> | Formalisierbar | `medium` |
+> 
+> **Offener Kernschritt:** Prinzipiell keiner - Verifikation kann RH nie beweisen, nur widerlegen.
+> 
+> **Hebel:** Kann die RH falsifizieren; liefert die Daten für alle Statistik-Tests.
+> 
+> **Fehlermodi:** [[F6_numerics-as-proof|F6 Numerische Extrapolation]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-24`
+
 > [!warning]- Blocker — woran dieser Ansatz hängt (1)
 > - **Numerische Extrapolation** *(Tier 3)* — Aus endlicher Rechnung wird auf asymptotisches Verhalten geschlossen — die RH-Landschaft hat dafür berüchtigte Gegenbeispiele.
 >   *Fluchtbedingung:* Nicht überwindbar, nur vermeidbar: Numerik darf Hypothesen erzeugen und widerlegen, aber nie stützen. Ein rigoroses Intervall-Zertifikat (doc-54) ist etwas anderes als eine Stichprobe.
 > 
 > Vollständige Matrix: [[55_failure_taxonomy]]
 
-> [!abstract]- Graph-Nachbarn (5)
+> [!abstract]- Graph-Nachbarn (6)
 > - *ist Evidenz für* → **Riemann-Vermutung (RH)** — Numerische Verifikation (>10^13 Nullstellen) — Evidenz, kein Beweis.
 > - *ist Evidenz für* → [[52_Connes_truncated_Weil_spectral_realization|52 · Abgeschnittene Weil-Quadratform & Zeta-Spektraltrip…]] — Hochpraezise Nullstellendaten sind der Massstab fuer die Genauigkeitsangaben.
+> - ← *wird obstruiert von* [[61_negative_space_if_rh_is_false|61 · Negativraum]] — Verifikation bis 3·10^12 schließt eine Ausnahme nicht aus.
 > - ← *wird benutzt von* [[54_machine_assisted_number_theory_ANTEDB_Lean|54 · Maschinengestützte Zahlentheorie]] — Rigorose Verifikationsstandards (Platt, Intervall-Zertifikate).
 > - ← *wird benutzt von* [[60_counterexample_oracle|60 · Das Gegenbeispiel-Orakel]] — Benutzt Turings Nullstellenzaehlung als Verletzungsdetektor.
 > - ← *wird benutzt von* [[65_criterion_sensitivity|65 · Sensitivität der Kriterien]] — Direkte Nullstellenberechnung als Referenzmassstab.

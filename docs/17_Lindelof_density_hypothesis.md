@@ -95,15 +95,36 @@ Für Primzahlen in kurzen Intervallen [x, x+x^θ] genügt eine hinreichend stark
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `analytic` |
+> | Implikation | `partial` |
+> | Euler-Produkt | `essential` |
+> | Positivität | `n/a` |
+> | Strenge | `theorem` |
+> | Evidenz | `medium` |
+> | Testbar | `medium` |
+> | Formalisierbar | `medium` |
+> 
+> **Offener Kernschritt:** Lindelöf folgt aus RH, impliziert sie aber nicht; selbst Lindelöf ist offen.
+> 
+> **Hebel:** Realistisches Zwischenziel mit messbarem Fortschritt (Exponenten).
+> 
+> **Fehlermodi:** [[F13_error-term-ceiling|F13 Anteils-Decke der Mollifier-Methoden]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-17`
+
 > [!warning]- Blocker — woran dieser Ansatz hängt (1)
 > - **Anteils-Decke der Mollifier-Methoden** *(Tier 2)* — Levinson/Conrey-Technik liefert einen positiven Anteil, ist aber strukturell weit unter 100 % gedeckelt.
 >   *Fluchtbedingung:* Ein Mechanismus, der ALLE Nullstellen erfasst statt einen Anteil — Anteilsmethoden können die RH prinzipiell nicht abschließen, auch nicht im Limes.
 > 
 > Vollständige Matrix: [[55_failure_taxonomy]]
 
-> [!abstract]- Graph-Nachbarn (4)
+> [!abstract]- Graph-Nachbarn (5)
 > - *schwächer als* → **Riemann-Vermutung (RH)** — Lindelöf ist schwächer; Rückrichtung unbekannt.
 > - ← *gestützt durch* [[49_live_analytic_frontier|49 · Live-Front der analytischen Zahlentheorie]] — Subkonvexität nähert Lindelöf an.
+> - ← *gestützt durch* [[75_extreme_values_FHK_multiplicative_chaos|75 · Extremwerte von ζ]] — Extremwert-Schranken kalibrieren Lindelöf.
 > - ← *wird impliziert von* **Riemann-Vermutung (RH)** — RH ⇒ Lindelöf-Hypothese.
 > - ← *wird benutzt von* [[22_Guth_Maynard_2024|22 · Guth–Maynard]] — Guth–Maynard verbessert Dichte-Abschätzungen Richtung Dichte-Hypothese.
 

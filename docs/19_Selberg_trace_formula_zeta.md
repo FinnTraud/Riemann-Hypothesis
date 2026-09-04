@@ -88,6 +88,26 @@ Für eine geeignete Testfunktion h (gerade, holomorph im Streifen) mit Fourier-T
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `spectral` |
+> | Implikation | `partial` |
+> | Euler-Produkt | `essential` |
+> | Positivität | `proves` |
+> | Strenge | `theorem` |
+> | Evidenz | `n/a` |
+> | Testbar | `medium` |
+> | Formalisierbar | `low` |
+> 
+> **Offener Kernschritt:** Für ζ fehlt der Raum (Geodäten <-> Primzahlen ist Analogie, kein Objekt).
+> 
+> **Hebel:** Zweites bewiesenes Analogon - und zwar ein spektrales.
+> 
+> **Fehlermodi:** [[F10_analogy-transfer-gap|F10 Fehlende Geometrie über Spec(ℤ)]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-19`
+
 > [!abstract]- Graph-Nachbarn (2)
 > - *ist Blaupause für* → **Hilbert–Pólya / spektrale Interpretation** — Selberg: BEWIESENES Modell (Laplace selbstadjungiert ⇒ RH-Analogon).
 > - *ist Blaupause für* → **Explizite Formel (Primzahlen↔Nullstellen)** — Selberg-Spurformel = Analogon der expliziten Formel.

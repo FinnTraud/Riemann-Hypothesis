@@ -83,6 +83,26 @@ F(α,T) ist nur für |α| ≤ 1 *unbedingt unter RH* bekannt; der Bereich |α| �
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `probabilistic` |
+> | Implikation | `model` |
+> | Euler-Produkt | `essential` |
+> | Positivität | `n/a` |
+> | Strenge | `theorem` |
+> | Evidenz | `strong` |
+> | Testbar | `high` |
+> | Formalisierbar | `low` |
+> 
+> **Offener Kernschritt:** Trägerbedingung |u|<1 aufheben - erfordert Primzahl-Korrelationen (Hardy-Littlewood).
+> 
+> **Hebel:** Stärkste Evidenz für spektrale Herkunft der Nullstellen.
+> 
+> **Fehlermodi:** [[F14_model-without-implication|F14 Zirkularität der Modellannahme]] · [[F13_error-term-ceiling|F13 Anteils-Decke der Mollifier-Methoden]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-06`
+
 > [!warning]- Blocker — woran dieser Ansatz hängt (2)
 > - **Numerische Extrapolation** *(Tier 3)* — Aus endlicher Rechnung wird auf asymptotisches Verhalten geschlossen — die RH-Landschaft hat dafür berüchtigte Gegenbeispiele.
 >   *Fluchtbedingung:* Nicht überwindbar, nur vermeidbar: Numerik darf Hypothesen erzeugen und widerlegen, aber nie stützen. Ein rigoroses Intervall-Zertifikat (doc-54) ist etwas anderes als eine Stichprobe.
@@ -91,10 +111,12 @@ F(α,T) ist nur für |α| ≤ 1 *unbedingt unter RH* bekannt; der Bereich |α| �
 > 
 > Vollständige Matrix: [[55_failure_taxonomy]]
 
-> [!abstract]- Graph-Nachbarn (3)
+> [!abstract]- Graph-Nachbarn (5)
 > - *ist Evidenz für* → **Hilbert–Pólya / spektrale Interpretation** — Montgomery-GUE: statistische Evidenz für chaotischen selbstadj. Operator.
 > - ← *Spezialfall von* [[53_pair_correlation_alternative_hypothesis|53 · Paarkorrelation ohne RH & die Alternative Hypothese]] — Nimmt die RH-Annahme aus der Gallagher-Mueller-Methode heraus.
+> - ← *Spezialfall von* [[76_higher_correlations_Rudnick_Sarnak|76 · Höhere Korrelationen]] — n-Level-Korrelationen verallgemeinern Montgomerys Paarkorrelation.
 > - ← *hat Instanz* **Paarkorrelation der Nullstellen (Montgomery F(alpha,T))** — Dok. 06 fuehrt Montgomerys Paarkorrelation ein.
+> - ← *modelliert von* [[74_hybrid_Euler_Hadamard_product|74 · Hybrides Euler–Hadamard-Produkt]] — Trennt arithmetischen von spektralem Anteil der Statistik.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 

@@ -78,8 +78,15 @@ Aus den Obstruktionen (Dok. 35) destilliert:
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
-> [!abstract]- Graph-Nachbarn (2)
+> [!warning]- Blocker — woran dieser Ansatz hängt (1)
+> - **Äquivalenz-Falle** *(Tier 2)* — Ein Kriterium ist zur RH äquivalent und damit exakt gleich schwer — die Umformulierung erzeugt den Anschein von Fortschritt, ohne die Beweislast zu senken.
+>   *Fluchtbedingung:* Eine der beiden Richtungen muss in STRIKT SCHWÄCHERER Form unbedingt bewiesen werden, oder es muss eine quantitative Größe geben, die sich unabhängig von der RH bewegen lässt (Λ ≤ 0.22, Anteil > 41 %, d_N-Raten). Nur solche Bewegungen zählen als Fortschritt — siehe docs/58.
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!abstract]- Graph-Nachbarn (3)
 > - *benutzt* → **Riemann-Vermutung (RH)** — Synthese: notwendige Bedingungen + Bewertungsraster für Beweise.
+> - ← *Spezialfall von* [[78_approach_comparison_matrix|78 · Vergleichsmatrix der Ansätze]] — Erweitert die drei Leitmotive zu acht vergleichbaren Achsen ueber 45 Ansaetze.
 > - ← *wird benutzt von* [[55_failure_taxonomy|55 · Muster im Scheitern]] — Invertiert die Leitmotiv-Zerlegung zur Obstruktions-x-Ansatz-Matrix.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]

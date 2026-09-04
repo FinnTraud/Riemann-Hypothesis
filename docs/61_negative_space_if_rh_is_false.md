@@ -13,7 +13,8 @@ lang: de
 
 **Kategorie:** Meta / Kontrafaktik
 **Status:** Analytische Auswertung bestehender Resultate
-**Verwandt:** `docs/35` (Ivićs Zweifelsgründe) · `docs/23` (Λ) · `docs/36` (Konsequenzen der RH) · `docs/59` (Invarianten)
+**Verwandt:** `docs/35` (Ivićs Zweifelsgründe) · `docs/23` (Λ) · `docs/36` (Konsequenzen der RH) · `docs/59` (Invarianten) · `docs/60` (Quadrupel-Struktur im Detektor) · `docs/65` (Nachweisgrenzen)
+**Herkunft:** Zusammenführung zweier unabhängig verfasster Fassungen (PR #5 `docs/67` und PR #6 `docs/61`); der mathematische Kern mit Θ stammt aus der ersten, die Robustheitsanalyse aus der zweiten.
 
 ## Warum diese Frage keine Spielerei ist
 
@@ -50,6 +51,43 @@ Das ist die präziseste Formulierung des offenen Problems, die die Wissensbasis
 enthält — und sie hat eine unbequeme Konsequenz: **Λ ≥ 0 heißt, dass die RH,
 falls wahr, keine Marge hat.** Sie ist der Randfall. Ein Gegenbeispiel wäre
 kein grober Verstoß, sondern ein hauchdünner.
+
+## Die zweite Skalarformulierung: Θ
+
+Neben Λ gibt es eine zweite Zahl, die dasselbe entscheidet:
+
+```
+Θ  :=  sup { Re(ρ) : ζ(ρ) = 0, 0 < Re ρ < 1 }   ∈ [1/2, 1]
+RH  ⟺  Θ = 1/2
+```
+
+Bekannt ist nur Θ ≤ 1 (Nichtverschwinden auf Re = 1, Primzahlsatz) und Θ ≥ 1/2
+(trivial aus Funktionalgleichung und Hardys Satz, `docs/03`). Zwischen diesen
+beiden Schranken liegt das gesamte Problem.
+
+**Quadrupel-Struktur.** Wegen ζ(s̄) = conj(ζ(s)) und ξ(s) = ξ(1−s) treten
+Nullstellen abseits der Geraden immer zu **viert** auf: ρ, ρ̄, 1−ρ, 1−ρ̄.
+**Eine einzelne Ausnahme kann es nicht geben** — genau diese Struktur macht das
+Turing-Defizit aus `docs/60` zu einem verlässlichen Detektor: das Defizit ist
+immer gerade, und für die Davenport–Heilbronn-Funktion misst es 4 bzw. 8.
+
+## Was bei Θ > 1/2 beweisbar folgt
+
+Diese Konsequenzen sind keine Spekulation, sondern bewiesene bedingte Sätze:
+
+| Größe | Aussage bei Θ > 1/2 |
+|---|---|
+| Primzahlsatz-Fehlerterm | ψ(x) − x = Ω_±(x^{Θ−ε}) und = O(x^{Θ+ε}) — der Fehler ist **beweisbar größer** als √x |
+| π(x) − Li(x) | Littlewoods Oszillationssatz gilt unverändert; Vorzeichenwechsel mit Amplitude x^Θ/log x |
+| Mertens-Funktion | M(x) = Ω(x^{Θ−ε}) — **keine** Schranke x^{1/2+ε} (`docs/16`) |
+| Robins Ungleichung | σ(n) < e^γ n log log n hätte **unendlich viele** Ausnahmen n > 5040 (`docs/15`) |
+| Li-Kriterium | mindestens ein λ_n < 0, und zwar exponentiell wachsend negativ (`docs/14`) |
+| Nyman–Beurling | d_N konvergierte **nicht** gegen 0 (`docs/13`, `docs/45`) |
+| de-Bruijn–Newman | Λ > 0 — äquivalent zu „RH falsch" (`docs/23`) |
+| Miller-Primzahltest | verlöre die O((log n)⁴)-Schranke; AKS bliebe unberührt (`docs/36`) |
+| Kryptographie | **kein** praktischer Zusammenbruch — RSA und ECC hängen nicht an der RH. Häufiges Missverständnis |
+
+Die letzte Zeile ist die, die am häufigsten falsch berichtet wird.
 
 ## Was zusammenbricht
 
@@ -121,6 +159,30 @@ Das erklärt beiläufig, warum `docs/57` U1 so ausfällt, wie es ausfällt: ein
 Kriterium mit γ²-Sensitivität hätte gegen ein Gegenbeispiel bei γ ~ 10¹²
 schlicht keine Chance.
 
+### Die Signatur — was man in Daten zuerst sähe
+
+1. **Lehmer-Paare mit immer kleinerem Abstand** (`docs/23`). Das ist das
+   numerische Vorbeben. Λ ≥ 0 bedeutet gerade, dass solche Paare asymptotisch
+   beliebig eng werden *müssen* — die RH gilt, wenn sie gilt, gerade eben.
+2. **Ausreißer in S(T)** (`docs/02`). Unter RH ist S(T) = O(log T / log log T);
+   anomale Sprünge wären ein Hinweis.
+3. **Abweichung der Momente** von a_k·g_k (`docs/74`) oder der Extremwerte von
+   der Fyodorov–Hiary–Keating-Formel (`docs/75`).
+
+**Ein negatives λ_n — mit einer Korrektur.** Ein bei berechenbarem n gefundenes
+λ_n < 0 wäre die direkteste denkbare Widerlegung. Daraus wird gelegentlich
+geschlossen, die λ_n-Berechnung sei deshalb ein lohnendes Experiment.
+**`docs/65` zeigt quantitativ, dass das nicht stimmt:** die Nachweisgrenze des
+Li-Kriteriums skaliert wie γ², ein Budget von n ≤ 1000 trägt bis γ ≈ 3,6 —
+unterhalb der ersten ζ-Nullstelle. Ein negatives λ_n wäre entscheidend, aber
+es ist bei erreichbarem n nicht auffindbar. Die Rechnung ist als
+*Implementierungsvalidierung* sinnvoll, nicht als Suche.
+
+*(Diese Korrektur entstand beim Zusammenführen zweier unabhängig verfasster
+Fassungen dieses Dokuments — die eine empfahl das Experiment, die andere hatte
+es durchgerechnet. Sie steht hier, weil genau solche Widersprüche ein
+sorgloser Merge verschluckt hätte.)*
+
 ## Die ehrliche Gesamteinschätzung
 
 Die Fachwelt hält die RH überwiegend für wahr. Die Gründe sind gut
@@ -128,6 +190,17 @@ Die Fachwelt hält die RH überwiegend für wahr. Die Gründe sind gut
 Geraden). Sie sind aber **allesamt von der Sorte, die bei der
 Mertens-Vermutung ebenfalls überzeugend aussah** — und die Mertens-Vermutung
 ist falsch.
+
+**Dafür:** GUE-Statistik über mehrere Korrelationsebenen (`docs/76`); die RH ist
+im Funktionenkörperfall (`docs/18`) und für die Selberg-Zeta (`docs/19`)
+**bewiesen**; über 41 % der Nullstellen liegen nachweislich auf der Geraden
+(`docs/04`); und alle bekannten Fast-Gegenbeispiele verletzen genau **eine**
+strukturelle Eigenschaft — das Euler-Produkt (`docs/60`).
+
+**Dagegen (Ivić):** Die Mertens-Vermutung sah genauso überzeugend aus und ist
+falsch; S(T) ist unbeschränkt; Lehmer-Paare zeigen keine Sicherheitsmarge; und
+die Fälle mit bewiesener RH haben allesamt eine Geometrie, die ℤ fehlt
+(`docs/71`, `docs/72`) — die Analogie könnte gerade dort brechen, wo sie zählt.
 
 > Die redliche Position ist nicht „die RH ist wahr", sondern: **„die RH ist
 > wahrscheinlich wahr, und alle unsere Gründe dafür sind genau der Typ Grund,
@@ -147,9 +220,19 @@ belegt. Zentrale Primärbelege:
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
-> [!abstract]- Graph-Nachbarn (2)
+> [!warning]- Blocker — woran dieser Ansatz hängt (1)
+> - **Numerische Extrapolation** *(Tier 3)* — Aus endlicher Rechnung wird auf asymptotisches Verhalten geschlossen — die RH-Landschaft hat dafür berüchtigte Gegenbeispiele.
+>   *Fluchtbedingung:* Nicht überwindbar, nur vermeidbar: Numerik darf Hypothesen erzeugen und widerlegen, aber nie stützen. Ein rigoroses Intervall-Zertifikat (doc-54) ist etwas anderes als eine Stichprobe.
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!abstract]- Graph-Nachbarn (6)
+> - *modelliert* → **Riemann-Vermutung (RH)** — Systematische Gegenprobe: Konsequenzen und numerische Signaturen von Θ>1/2.
+> - *ist Obstruktion für* → [[24_computational_verification|24 · Numerische Verifikation der Riemann-Vermutung]] — Verifikation bis 3·10^12 schließt eine Ausnahme nicht aus.
 > - *benutzt* → [[36_consequences_of_RH|36 · Konsequenzen der Riemann-Vermutung]] — Kontrafaktik zu den Konsequenzen der RH.
 > - *benutzt* → [[23_de_Bruijn_Newman_constant_Polymath15|23 · De-Bruijn–Newman-Konstante]] — Nicht-RH ist aequivalent zu Lambda > 0.
+> - *benutzt* → [[16_Mertens_function_Riesz_criterion|16 · Mertens-Funktion & Riesz-Kriterium]] — Mertens-Widerlegung als Kalibrierung der Numerik.
+> - *benutzt* → [[15_Robin_inequality|15 · Robins Ungleichung & Lagarias' elementares Kriterium]] — Robin: RH falsch ⇒ unendlich viele Ausnahmen.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 

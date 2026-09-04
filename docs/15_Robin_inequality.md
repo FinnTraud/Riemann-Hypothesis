@@ -83,6 +83,26 @@ mit Gleichheit nur bei n = 1. **Herleitung:** Da H_n = log n + γ + O(1/n) und e
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `criterion` |
+> | Implikation | `equivalent` |
+> | Euler-Produkt | `partial` |
+> | Positivität | `n/a` |
+> | Strenge | `theorem` |
+> | Evidenz | `medium` |
+> | Testbar | `high` |
+> | Formalisierbar | `high` |
+> 
+> **Offener Kernschritt:** Kein Zugang zu σ(n) jenseits von Extremalzahlen; Kriterium ist so hart wie RH.
+> 
+> **Hebel:** Völlig elementare Formulierung - didaktisch und formalisierbar.
+> 
+> **Fehlermodi:** [[F11_criterion-restates|F11 Äquivalenz-Falle]] · [[F6_numerics-as-proof|F6 Numerische Extrapolation]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-15`
+
 > [!warning]- Blocker — woran dieser Ansatz hängt (1)
 > - **Äquivalenz-Falle** *(Tier 2)* — Ein Kriterium ist zur RH äquivalent und damit exakt gleich schwer — die Umformulierung erzeugt den Anschein von Fortschritt, ohne die Beweislast zu senken.
 >   *Fluchtbedingung:* Eine der beiden Richtungen muss in STRIKT SCHWÄCHERER Form unbedingt bewiesen werden, oder es muss eine quantitative Größe geben, die sich unabhängig von der RH bewegen lässt (Λ ≤ 0.22, Anteil > 41 %, d_N-Raten). Nur solche Bewegungen zählen als Fortschritt — siehe docs/58.
@@ -94,9 +114,10 @@ mit Gleichheit nur bei n = 1. **Herleitung:** Da H_n = log n + γ + O(1/n) und e
 > **Es fehlt:** Die Ungleichung selbst. Es gibt kein unbedingtes Teilresultat, das ihr näherkommt.
 > **Typ:** aequivalenz · Bewertung: [[58_gap_registry_near_miss]]
 
-> [!abstract]- Graph-Nachbarn (2)
+> [!abstract]- Graph-Nachbarn (3)
 > - *äquivalent zu* → **Riemann-Vermutung (RH)** — Robin/Lagarias-Ungleichung ⟺ RH.
 > - ← *gestützt durch* [[65_criterion_sensitivity|65 · Sensitivität der Kriterien]] — Miss die Robin-Marge entlang kolossal abundanter Zahlen.
+> - ← *wird benutzt von* [[61_negative_space_if_rh_is_false|61 · Negativraum]] — Robin: RH falsch ⇒ unendlich viele Ausnahmen.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 

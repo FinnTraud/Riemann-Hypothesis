@@ -56,7 +56,9 @@ Historisch/biografisch bedeutsam als Mahnung über die Schwere des Problems; mat
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
-> [!warning]- Blocker — woran dieser Ansatz hängt (1)
+> [!warning]- Blocker — woran dieser Ansatz hängt (2)
+> - **Unerlaubte Vertauschung** *(Tier 1)* — Bedingt konvergente Nullstellensummen, Konturen oder Doppelreihen werden frei umgeordnet.
+>   *Fluchtbedingung:* Jede Vertauschung von Limes, Summe und Integral einzeln durch dominierte oder gleichmaessige Konvergenz rechtfertigen; die Paarung rho <-> 1-conj(rho) durchgaengig beibehalten.
 > - **Nicht-Verifizierbarkeit** *(Tier 3)* — Es existiert kein prüfbarer Beweistext — entweder gar keiner, oder einer, dessen Grundlage unpubliziert ist, oder einer, den niemand mehr nachprüft.
 >   *Fluchtbedingung:* Ein vollständiger, öffentlicher, selbsttragender Beweistext — im Idealfall maschinengeprüft. Das ist die einzige Fluchtbedingung der Sammlung, die heute schon technisch erreichbar ist.
 > 

@@ -71,11 +71,31 @@ Dies ordnet sich in das Hilbert–Pólya-Bild ein (Dok. 05): „komplexe Dimensi
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `spectral` |
+> | Implikation | `equivalent` |
+> | Euler-Produkt | `partial` |
+> | Positivität | `n/a` |
+> | Strenge | `theorem` |
+> | Evidenz | `medium` |
+> | Testbar | `medium` |
+> | Formalisierbar | `low` |
+> 
+> **Offener Kernschritt:** Quasi-Invertierbarkeit des Spektraloperators für alle c ungleich 1/2 zeigen.
+> 
+> **Hebel:** Bewiesene Äquivalenz in geometrischer Sprache - unterrepräsentiert.
+> 
+> **Fehlermodi:** [[F11_criterion-restates|F11 Äquivalenz-Falle]] · [[F9_truncation-limit-gap|F9 Konvergenz- / Grenzübergangslücke]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-44`
+
 > [!warning]- Blocker — woran dieser Ansatz hängt (2)
-> - **Konvergenz- / Grenzübergangslücke** *(Tier 2)* — Für jede endliche Abschneidung bewiesen — der Grenzübergang ist offen.
->   *Fluchtbedingung:* Eine von Λ (bzw. N, d) UNABHÄNGIGE Schranke — Kompaktheit, gleichgradige Stetigkeit oder eine explizite Fehlerabschätzung, die den Grenzübergang erlaubt.
 > - **Äquivalenz-Falle** *(Tier 2)* — Ein Kriterium ist zur RH äquivalent und damit exakt gleich schwer — die Umformulierung erzeugt den Anschein von Fortschritt, ohne die Beweislast zu senken.
 >   *Fluchtbedingung:* Eine der beiden Richtungen muss in STRIKT SCHWÄCHERER Form unbedingt bewiesen werden, oder es muss eine quantitative Größe geben, die sich unabhängig von der RH bewegen lässt (Λ ≤ 0.22, Anteil > 41 %, d_N-Raten). Nur solche Bewegungen zählen als Fortschritt — siehe docs/58.
+> - **Konvergenz- / Grenzübergangslücke** *(Tier 2)* — Für jede endliche Abschneidung bewiesen — der Grenzübergang ist offen.
+>   *Fluchtbedingung:* Eine von Λ (bzw. N, d) UNABHÄNGIGE Schranke — Kompaktheit, gleichgradige Stetigkeit oder eine explizite Fehlerabschätzung, die den Grenzübergang erlaubt.
 > 
 > Vollständige Matrix: [[55_failure_taxonomy]]
 

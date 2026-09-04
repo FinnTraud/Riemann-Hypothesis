@@ -80,9 +80,11 @@ Ein Millennium-Beweis wird erst nach Publikation in einer angesehenen Zeitschrif
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
-> [!warning]- Blocker — woran dieser Ansatz hängt (3)
+> [!warning]- Blocker — woran dieser Ansatz hängt (4)
 > - **Euler-Blindheit** *(Tier 1)* — Das Argument benutzt nur Funktionalgleichung, Fortsetzung und Wachstum — es würde für Davenport–Heilbronn genauso gelten und ist damit falsch.
 >   *Fluchtbedingung:* Mindestens ein Beweisschritt muss eine Eigenschaft benutzen, die für Davenport–Heilbronn NACHWEISLICH FALSCH ist — praktisch immer: Multiplikativität der Koeffizienten / Euler-Produkt.
+> - **Unerlaubte Vertauschung** *(Tier 1)* — Bedingt konvergente Nullstellensummen, Konturen oder Doppelreihen werden frei umgeordnet.
+>   *Fluchtbedingung:* Jede Vertauschung von Limes, Summe und Integral einzeln durch dominierte oder gleichmaessige Konvergenz rechtfertigen; die Paarung rho <-> 1-conj(rho) durchgaengig beibehalten.
 > - **Weichheitsbarriere (Voronin)** *(Tier 1)* — ζ approximiert im kritischen Streifen JEDE nullstellenfreie analytische Funktion — 'weiche' Argumente können deshalb nicht greifen.
 >   *Fluchtbedingung:* Das Argument muss eine globale Rigiditätseigenschaft benutzen (Euler-Produkt, Grad in der Selberg-Klasse, Spurformel), die durch lokale Approximation nicht sichtbar ist.
 > - **Nicht-Verifizierbarkeit** *(Tier 3)* — Es existiert kein prüfbarer Beweistext — entweder gar keiner, oder einer, dessen Grundlage unpubliziert ist, oder einer, den niemand mehr nachprüft.

@@ -90,6 +90,26 @@ Momentschranken ⇒ untere Schranken für N₀(T)/N(T) (Anteil auf der Geraden, 
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `probabilistic` |
+> | Implikation | `model` |
+> | Euler-Produkt | `essential` |
+> | Positivität | `n/a` |
+> | Strenge | `heuristic` |
+> | Evidenz | `strong` |
+> | Testbar | `high` |
+> | Formalisierbar | `low` |
+> 
+> **Offener Kernschritt:** Momente 2k für k>2 sind offen; Splitting-Vermutung unbewiesen.
+> 
+> **Hebel:** Quantitativ scharfe Vorhersagen - starker Konsistenztest.
+> 
+> **Fehlermodi:** [[F14_model-without-implication|F14 Zirkularität der Modellannahme]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-07`
+
 > [!warning]- Blocker — woran dieser Ansatz hängt (2)
 > - **Anteils-Decke der Mollifier-Methoden** *(Tier 2)* — Levinson/Conrey-Technik liefert einen positiven Anteil, ist aber strukturell weit unter 100 % gedeckelt.
 >   *Fluchtbedingung:* Ein Mechanismus, der ALLE Nullstellen erfasst statt einen Anteil — Anteilsmethoden können die RH prinzipiell nicht abschließen, auch nicht im Limes.
@@ -98,9 +118,10 @@ Momentschranken ⇒ untere Schranken für N₀(T)/N(T) (Anteil auf der Geraden, 
 > 
 > Vollständige Matrix: [[55_failure_taxonomy]]
 
-> [!abstract]- Graph-Nachbarn (3)
+> [!abstract]- Graph-Nachbarn (4)
 > - *ist Evidenz für* → **Hilbert–Pólya / spektrale Interpretation** — Keating-Snaith-Momente stützen das Random-Matrix-Bild.
 > - ← *gestützt durch* [[49_live_analytic_frontier|49 · Live-Front der analytischen Zahlentheorie]] — Harper/Radziwiłł–Soundararajan: scharfe Momentschranken stützen Keating-Snaith.
+> - ← *ist Reduktionsziel von* [[74_hybrid_Euler_Hadamard_product|74 · Hybrides Euler–Hadamard-Produkt]] — Strukturelle Begründung der Keating–Snaith-Vorhersage.
 > - ← *wird benutzt von* [[53_pair_correlation_alternative_hypothesis|53 · Paarkorrelation ohne RH & die Alternative Hypothese]] — Teilt den Random-Matrix-Rahmen mit Keating-Snaith.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]

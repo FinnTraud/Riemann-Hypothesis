@@ -20,6 +20,11 @@ Dieses Modul uebersetzt den Graphen in Obsidian-Bordmittel:
   3. CANVAS         Canvas/Zeitachse_Motive.canvas   (Zeit x Leitmotiv)
                     Canvas/Obstruktionskarte.canvas  (Blocker <-> Ansaetze)
   4. KONFIG         .obsidian/ mit Graph-Farbgruppen nach Kategorie.
+  5. ATOMNOTIZEN    docs/fehlermodi/ (je Blocker), docs/concepts/ (je Konzept),
+                    docs/moc/ (Maps of Content je Ansatz-Familie). Alle drei
+                    Verzeichnisse sind GENERIERT -- Quelle ist kb/graph/.
+                    Uebernommen aus PR#5 (dort kb/build_obsidian.py) und auf
+                    die zusammengefuehrte Taxonomie umgestellt.
 
     python3 kb/obsidian.py             # alles erzeugen
     python3 kb/obsidian.py --links     # nur Wikilinks
@@ -79,6 +84,15 @@ CAT_COLOR = {
 
 def _jload(name):
     return json.loads((GRAPH / name).read_text(encoding="utf-8"))
+
+
+def _approaches():
+    """doc-id -> Achsenprofil aus approaches.json (leer, falls Datei fehlt)."""
+    try:
+        data = _jload("approaches.json")
+    except FileNotFoundError:
+        return {}, {}
+    return {a["doc"]: a for a in data["approaches"]}, data.get("axis_help", {})
 
 
 def parse_frontmatter(text):
@@ -146,9 +160,36 @@ def build_link_blocks(docs):
             blk_of[d].append(b)
     gap_of = {g["doc"]: g for g in gaps}
 
+    appr, _ = _approaches()
+    blk_by_id = {b["id"]: b for b in blockers}
+    f_to_blk = {b["f_mode"]: b for b in blockers if b.get("f_mode")}
+
     blocks = {}
     for did, d in docs.items():
         lines = []
+
+        a = appr.get(did)
+        if a:
+            lines.append("> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist")
+            lines.append("> | Achse | Wert |")
+            lines.append("> |---|---|")
+            for key, label in (("family", "Familie"), ("equivalence", "Implikation"),
+                               ("euler_product", "Euler-Produkt"), ("positivity", "Positivität"),
+                               ("rigor", "Strenge"), ("evidence", "Evidenz"),
+                               ("testable", "Testbar"), ("formalizable", "Formalisierbar")):
+                if a.get(key):
+                    lines.append(f"> | {label} | `{a[key]}` |")
+            if a.get("open_step"):
+                lines.append(f"> \n> **Offener Kernschritt:** {a['open_step']}")
+            if a.get("lever"):
+                lines.append(f"> \n> **Hebel:** {a['lever']}")
+            fm = [f_to_blk[f] for f in a.get("failure_modes", []) if f in f_to_blk]
+            if fm:
+                lines.append("> \n> **Fehlermodi:** " + " · ".join(
+                    f"[[{b['f_mode']}_{b.get('f_slug', '')}|{b['f_mode']} {b['name']}]]" for b in fm))
+            lines.append("> \n> Vergleich: [[78_approach_comparison_matrix]] · "
+                         f"`python3 kb/compare.py profile {did}`")
+            lines.append("")
 
         bl = sorted(blk_of.get(did, []), key=lambda b: b["tier"])
         if bl:
@@ -456,6 +497,173 @@ def write_obsidian_config(dry=False):
     return list(files)
 
 
+
+
+# --------------------------------------------------------------------------
+# 5. Atomnotizen: fehlermodi/ concepts/ moc/
+# --------------------------------------------------------------------------
+
+def _write(path, text, dry):
+    if not dry:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(text.rstrip() + "\n", encoding="utf-8")
+
+
+def build_blocker_notes(docs, dry=False):
+    """Je Blocker eine Atomnotiz unter docs/fehlermodi/.
+
+    Dateiname traegt die F-ID der zusammengefuehrten Parallel-Taxonomie, damit
+    die Wikilinks der aus PR#5 uebernommenen Dokumente aufloesen (docs/55).
+    """
+    blockers = _jload("blockers.json")["blockers"]
+    appr, _ = _approaches()
+    by_doc = defaultdict(list)
+    for a in appr.values():
+        for f in a.get("failure_modes", []):
+            by_doc[f].append(a)
+    n = 0
+    for b in blockers:
+        fid = b.get("f_mode") or b["id"]
+        slug = b.get("f_slug", b["id"].replace("blk-", ""))
+        name = f"{fid}_{slug}.md"
+        L = [
+            "---", f"id: {b['id']}", f"f_mode: {fid}", f'title: "{fid} — {b["name"]}"',
+            "type: blocker", f"tier: {b['tier']}",
+            "tags: [blocker, fehlermodus, netzwerk]", "lang: de", "---", "",
+            f"# {fid} — {b['name']}", "",
+            "> [!note] Generiert aus `kb/graph/blockers.json` durch `python3 kb/obsidian.py`.",
+            "> Inhaltliche Änderungen dort vornehmen, nicht hier.", "",
+            f"**Tier {b['tier']}** · Blocker-ID `{b['id']}`", "",
+            f"> {b['kurz']}", "", b["beschreibung"], "",
+            "## Diagnosefrage", "", f"**{b.get('diagnosefrage', '—')}**", "",
+            "## Fluchtbedingung", "", b["fluchtbedingung"], "",
+        ]
+        if b.get("tier_abweichung"):
+            L += ["## Abweichende Einstufung", "", b["tier_abweichung"], ""]
+        if b.get("orakel_test"):
+            L += ["## Maschinell prüfbar", "",
+                  f"Dieser Blocker ist als einziger als Test implementiert: "
+                  f"`kb/counterexample.py` → `{b['orakel_test']}` "
+                  f"(siehe [[60_counterexample_oracle]]).", ""]
+        betroffen = [docs[d]["stem"] for d in b.get("betrifft", []) if d in docs]
+        if betroffen:
+            L += [f"## Betroffene Ansätze ({len(betroffen)})", ""]
+            L += [f"- [[{stem}]]" for stem in sorted(betroffen)]
+            L.append("")
+        L += ["## Einordnung", "",
+              "- Vollständige Matrix: [[55_failure_taxonomy]]",
+              "- Autopsien konkreter Fälle: [[56_failure_autopsies]]",
+              "- Achsenvergleich der Ansätze: [[78_approach_comparison_matrix]]", ""]
+        _write(DOCS / "fehlermodi" / name, "\n".join(L), dry)
+        n += 1
+    return n
+
+
+def build_concept_notes(docs, dry=False):
+    """Je Konzept eine Hub-Notiz unter docs/concepts/."""
+    concepts = _jload("nodes.json")["concepts"]
+    edges = _jload("edges.json")["edges"]
+    n = 0
+    for c in concepts:
+        inc = [e for e in edges if e["to"] == c["id"]]
+        out = [e for e in edges if e["from"] == c["id"]]
+        L = ["---", f"id: {c['id']}", f'title: "{c["label"]}"', "type: concept",
+             "tags: [concept, netzwerk]", "lang: de", "---", "",
+             f"# {c['label']}", "",
+             f"> {c.get('summary', '')}", "",
+             "> [!note] Generiert aus `kb/graph/nodes.json` + `edges.json` "
+             "durch `python3 kb/obsidian.py`.", ""]
+        if inc:
+            L += [f"## Dokumente, die auf dieses Konzept verweisen ({len(inc)})", ""]
+            for e in sorted(inc, key=lambda e: e["from"]):
+                stem = docs.get(e["from"], {}).get("stem")
+                lab = REL_LABEL.get(e["type"], (e["type"], e["type"]))[0]
+                L.append(f"- [[{stem}]] — *{lab}*" + (f" — {e['note']}" if e.get("note") else "")
+                         if stem else f"- `{e['from']}` — *{lab}*")
+            L.append("")
+        if out:
+            L += [f"## Ausgehend ({len(out)})", ""]
+            for e in sorted(out, key=lambda e: e["to"]):
+                stem = docs.get(e["to"], {}).get("stem")
+                lab = REL_LABEL.get(e["type"], (e["type"], e["type"]))[0]
+                L.append(f"- *{lab}* → [[{stem}]]" if stem else f"- *{lab}* → `{e['to']}`")
+            L.append("")
+        L += ["## Einordnung", "", "- [[moc/MOC_00_Hub|Netzwerk-Hub]] · "
+              "[[41_synthesis_what_a_proof_needs|41 · Leitmotive]] · "
+              "[[55_failure_taxonomy|55 · Blocker]]", ""]
+        _write(DOCS / "concepts" / f"concept_{c['id'].replace('concept-', '')}.md",
+               "\n".join(L), dry)
+        n += 1
+    return n
+
+
+FAMILY_LABEL = {
+    "spectral": ("MOC_spectral", "Spektrale Ansätze"),
+    "analytic": ("MOC_analytic", "Analytische Ansätze"),
+    "algebraic-geometric": ("MOC_algebraic_geometric", "Algebraisch-geometrische Ansätze"),
+    "probabilistic": ("MOC_probabilistic", "Probabilistische Modelle & Statistik"),
+    "physical": ("MOC_physical", "Physikalische Modelle"),
+    "criterion": ("MOC_criterion", "Äquivalente Kriterien"),
+    "computational": ("MOC_computational", "Rechnerische & formale Verifikation"),
+    "meta": ("MOC_meta", "Meta-Analyse & Werkzeuge"),
+}
+
+
+def build_moc(docs, dry=False):
+    """Maps of Content je Ansatz-Familie plus Hub."""
+    appr, _ = _approaches()
+    if not appr:
+        return 0
+    fam = defaultdict(list)
+    for a in appr.values():
+        fam[a.get("family", "meta")].append(a)
+    n = 0
+    for f, items in fam.items():
+        fname, label = FAMILY_LABEL.get(f, (f"MOC_{f}", f))
+        L = ["---", f"id: moc-{f}", f'title: "MOC — {label}"', "type: moc",
+             "tags: [moc, netzwerk]", "lang: de", "---", "", f"# MOC — {label}", "",
+             "> [!note] Generiert aus `kb/graph/approaches.json` durch `python3 kb/obsidian.py`.", "",
+             f"{len(items)} Ansätze dieser Familie.", "",
+             "| Ansatz | Status | Implikation | Offener Kernschritt |", "|---|---|---|---|"]
+        for a in sorted(items, key=lambda a: a["doc"]):
+            stem = docs.get(a["doc"], {}).get("stem", a["doc"])
+            L.append(f"| [[{stem}\|{a['label']}]] | `{a.get('status','?')}` | "
+                     f"`{a.get('equivalence','?')}` | {a.get('open_step','—')} |")
+        L += ["", "## Einordnung", "",
+              "- [[moc/MOC_00_Hub|Netzwerk-Hub]] · [[78_approach_comparison_matrix|78 · Vergleichsmatrix]] · "
+              "[[55_failure_taxonomy|55 · Blocker]]", ""]
+        _write(DOCS / "moc" / f"{fname}.md", "\n".join(L), dry)
+        n += 1
+
+    hub = ["---", "id: moc-hub", 'title: "MOC — Netzwerk-Hub"', "type: moc",
+           "tags: [moc, netzwerk, einstieg]", "lang: de", "---", "",
+           "# MOC — Netzwerk-Hub", "",
+           "> [!note] Generiert durch `python3 kb/obsidian.py`. Einstiegspunkt für die Graph-Ansicht.", "",
+           "## Ansatz-Familien", ""]
+    for f, items in sorted(fam.items()):
+        fname, label = FAMILY_LABEL.get(f, (f"MOC_{f}", f))
+        hub.append(f"- [[{fname}|{label}]] — {len(items)} Ansätze")
+    hub += ["", "## Meta-Ebene", "",
+            "- [[55_failure_taxonomy|55 · Muster im Scheitern]] — die 15 Blocker",
+            "- [[56_failure_autopsies|56 · Fehler-Autopsien]]",
+            "- [[57_untried_directions|57 · Noch nicht versucht]]",
+            "- [[58_gap_registry_near_miss|58 · Lücken & Near-Miss]]",
+            "- [[59_invariants_test_vectors|59 · Invarianten]]",
+            "- [[60_counterexample_oracle|60 · Gegenbeispiel-Orakel]]",
+            "- [[61_negative_space_if_rh_is_false|61 · Negativraum ¬RH]]",
+            "- [[63_experiment_decision_value|63 · Entscheidungswert von Experimenten]]",
+            "- [[64_trust_tiers_verification_levels|64 · Trust-Tiers]]",
+            "- [[65_criterion_sensitivity|65 · Sensitivität der Kriterien]]",
+            "- [[78_approach_comparison_matrix|78 · Vergleichsmatrix]]",
+            "- [[_Statusboard|Statusboard]]", "",
+            "## Fehlermodi", ""]
+    for b in sorted(_jload("blockers.json")["blockers"], key=lambda b: (b["tier"], b["id"])):
+        fid = b.get("f_mode") or b["id"]
+        hub.append(f"- [[{fid}_{b.get('f_slug','')}|{fid} {b['name']}]] *(Tier {b['tier']})*")
+    _write(DOCS / "moc" / "MOC_00_Hub.md", "\n".join(hub), dry)
+    return n + 1
+
+
 # --------------------------------------------------------------------------
 
 def main(argv=None):
@@ -490,6 +698,11 @@ def main(argv=None):
                 json.dumps(c, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         print(f"Canvas: Canvas/{name}.canvas ({len(c['nodes'])} Knoten, "
               f"{len(c['edges'])} Kanten)")
+
+    nb = build_blocker_notes(docs, dry=dry)
+    nc = build_concept_notes(docs, dry=dry)
+    nm = build_moc(docs, dry=dry)
+    print(f"Atomnotizen: docs/fehlermodi/ {nb} · docs/concepts/ {nc} · docs/moc/ {nm}")
 
     cfg = write_obsidian_config(dry=dry)
     print(f".obsidian/: {', '.join(cfg)}")

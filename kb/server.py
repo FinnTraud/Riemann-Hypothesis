@@ -33,6 +33,18 @@ except Exception:
     _CX = False
 
 try:
+    import compare as _cmp
+    _CMP = True
+except Exception:
+    _CMP = False
+
+try:
+    import sensitivity as _sens
+    _SENS = True
+except Exception:
+    _SENS = False
+
+try:
     from mcp.server.fastmcp import FastMCP
 except Exception:
     sys.stderr.write(
@@ -280,6 +292,54 @@ if _CX:
         if test not in fn:
             return {"fehler": f"unbekannter Test '{test}'", "verfuegbar": sorted(fn)}
         return {"zeta": fn[test]("zeta"), "dh": fn[test]("dh"), "siehe": "docs/60"}
+
+
+if _CMP:
+    @mcp.tool()
+    def compare_approaches(keys: str) -> dict:
+        """Vergleicht Ansaetze achsenweise (docs/78). keys: durch Komma getrennte
+        Schluessel, z.B. 'doc-10,doc-31,52'. Achsen: family, equivalence, euler_product,
+        positivity, rigor, evidence, testable, formalizable. Zeigt Gemeinsamkeiten und
+        Unterschiede sowie geteilte Fehlermodi."""
+        return _cmp.compare_approaches([k.strip() for k in keys.split(",") if k.strip()])
+
+    @mcp.tool()
+    def approach_profile(key: str) -> dict:
+        """Achsenprofil eines Ansatzes inkl. offenem Kernschritt und Fehlermodi.
+        key: app-ID, doc-ID ('doc-10'), Dokumentnummer ('10') oder Titelfragment."""
+        return _cmp.approach_profile(key)
+
+    @mcp.tool()
+    def bridge_approaches(a: str, b: str) -> dict:
+        """Verbindet zwei Ansaetze: gemeinsame Achsenwerte, geteilte Fehlermodi und
+        der Pfad im Wissensgraphen. Zwei Ansaetze mit demselben Fehlermodus haengen am
+        selben Problem -- ein Fortschritt dort wirkt auf beide (docs/55, docs/78)."""
+        return _cmp.bridge(a, b)
+
+    @mcp.tool()
+    def failure_statistics() -> dict:
+        """Woran Ansaetze am haeufigsten scheitern, aggregiert ueber alle 45 Profile
+        in approaches.json. Ergaenzt list_blockers um die Haeufigkeitssicht (docs/55)."""
+        return _cmp.failure_statistics()
+
+    @mcp.tool()
+    def diagnose_idea(text: str) -> dict:
+        """Prueft eine freie Beweisidee gegen alle Fehlermodi und nennt die
+        Diagnosefrage je Treffer. NACH evaluate_proof_idea und VOR der inhaltlichen
+        Wuerdigung aufrufen; danach invariant_checklist (docs/59) und
+        counterexample_oracle (docs/60)."""
+        return _cmp.diagnose(text)
+
+
+if _SENS:
+    @mcp.tool()
+    def criterion_sensitivity() -> dict:
+        """Wie weit traegt numerische Evidenz je Kriterium (docs/65)? Vergleicht
+        direkte Nullstellenberechnung, Li-Koeffizienten, Robin und Baez-Duarte nach
+        Kostengesetz, erreichter Reichweite und Komprimierbarkeit der Testobjekte.
+        Kernaussage: alle vier sind logisch aequivalent zur RH und numerisch um
+        Groessenordnungen verschieden scharf."""
+        return _sens.compare()
 
 
 if __name__ == "__main__":

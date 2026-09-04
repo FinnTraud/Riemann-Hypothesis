@@ -79,6 +79,26 @@ Die Mollifier-Länge θ ist durch die verfügbaren Mittelwertsätze (zweite/vier
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `analytic` |
+> | Implikation | `partial` |
+> | Euler-Produkt | `essential` |
+> | Positivität | `n/a` |
+> | Strenge | `theorem` |
+> | Evidenz | `n/a` |
+> | Testbar | `medium` |
+> | Formalisierbar | `medium` |
+> 
+> **Offener Kernschritt:** Mollifier-Länge θ < 4/7; Anteil 1 braucht Momente, die ohne RH unbekannt sind.
+> 
+> **Hebel:** Der einzige quantitative Fortschritt Richtung 'alle Nullstellen'.
+> 
+> **Fehlermodi:** [[F13_error-term-ceiling|F13 Anteils-Decke der Mollifier-Methoden]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-04`
+
 > [!warning]- Blocker — woran dieser Ansatz hängt (1)
 > - **Anteils-Decke der Mollifier-Methoden** *(Tier 2)* — Levinson/Conrey-Technik liefert einen positiven Anteil, ist aber strukturell weit unter 100 % gedeckelt.
 >   *Fluchtbedingung:* Ein Mechanismus, der ALLE Nullstellen erfasst statt einen Anteil — Anteilsmethoden können die RH prinzipiell nicht abschließen, auch nicht im Limes.
@@ -90,9 +110,10 @@ Die Mollifier-Länge θ ist durch die verfügbaren Mittelwertsätze (zweite/vier
 > **Es fehlt:** 100 % — und selbst das wäre nicht die RH, da eine Ausnahmemenge der Dichte 0 zulässig bliebe.
 > **Typ:** quantitativ · Bewertung: [[58_gap_registry_near_miss]]
 
-> [!abstract]- Graph-Nachbarn (3)
+> [!abstract]- Graph-Nachbarn (4)
 > - *verallgemeinert* → [[03_Hardy_1914_infinitely_many_zeros|03 · Hardy]] — Quantifiziert Hardys Resultat (positiver Anteil).
 > - *ist Teilresultat für* → **Riemann-Vermutung (RH)** — Levinson/Conrey: >41% auf der Geraden.
+> - ← *folgt Blaupause* [[66_Speiser_zeros_of_zeta_prime|66 · Speisers Satz & die Nullstellen von ζ′]] — Speiser/Levinson–Montgomery ist die technische Grundlage von Levinsons Mollifier-Methode.
 > - ← *stärker als* [[53_pair_correlation_alternative_hypothesis|53 · Paarkorrelation ohne RH & die Alternative Hypothese]] — Die 100-%-Aussagen sind bedingt; unbedingt sind bislang nur ~41 % (Conrey).
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]

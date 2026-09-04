@@ -1,8 +1,8 @@
 {
   "name": "Riemann Hypothesis Knowledge Base",
-  "version": "1.2",
+  "version": "2.0",
   "updated": "2026-09",
-  "count": 66,
+  "count": 79,
   "documents": [
     {
       "number": "00",
@@ -1069,6 +1069,236 @@
         "calibration"
       ],
       "file": "docs/65_criterion_sensitivity.md",
+      "summary": ""
+    },
+    {
+      "number": "66",
+      "id": "doc-66",
+      "title": "Speisers Satz & die Nullstellen von ζ′ (die Maschine hinter Levinson)",
+      "category": "criterion",
+      "status": "proven",
+      "tags": [
+        "speiser",
+        "derivative",
+        "levinson-montgomery",
+        "mollifier",
+        "critical-line",
+        "equivalent-criterion"
+      ],
+      "file": "docs/66_Speiser_zeros_of_zeta_prime.md",
+      "summary": ""
+    },
+    {
+      "number": "67",
+      "id": "doc-67",
+      "title": "Turáns Potenzsummen-Programm & die Partialsummen von ζ (widerlegter Ansatz)",
+      "category": "failed-proof",
+      "status": "refuted",
+      "tags": [
+        "turan",
+        "power-sums",
+        "partial-sums",
+        "montgomery-1983",
+        "dirichlet-polynomial",
+        "failed-approach"
+      ],
+      "file": "docs/67_Turan_power_sums_partial_sums.md",
+      "summary": ""
+    },
+    {
+      "number": "68",
+      "id": "doc-68",
+      "title": "Beurlingsche verallgemeinerte Primzahlen: Euler-Produkt allein genügt nicht",
+      "category": "obstruction",
+      "status": "proven",
+      "tags": [
+        "beurling",
+        "generalized-primes",
+        "diamond-montgomery-vorhauer",
+        "axioms",
+        "obstruction",
+        "euler-product"
+      ],
+      "file": "docs/68_Beurling_generalized_primes.md",
+      "summary": ""
+    },
+    {
+      "number": "69",
+      "id": "doc-69",
+      "title": "Möbius-Zufälligkeit: Chowla-Vermutung, Sarnak-Disjunktheit & die Paritätsbarriere",
+      "category": "solution-program",
+      "status": "open",
+      "tags": [
+        "mobius",
+        "chowla",
+        "sarnak",
+        "parity",
+        "liouville",
+        "tao",
+        "entropy",
+        "randomness"
+      ],
+      "file": "docs/69_Mobius_randomness_Chowla_Sarnak.md",
+      "summary": ""
+    },
+    {
+      "number": "70",
+      "id": "doc-70",
+      "title": "Langlands-Funktorialität & automorphe L-Funktionen: Weg zur GRH?",
+      "category": "solution-program",
+      "status": "open",
+      "tags": [
+        "langlands",
+        "functoriality",
+        "automorphic",
+        "ramanujan-petersson",
+        "converse-theorem",
+        "GRH",
+        "selberg-class"
+      ],
+      "file": "docs/70_Langlands_functoriality_automorphic.md",
+      "summary": ""
+    },
+    {
+      "number": "71",
+      "id": "doc-71",
+      "title": "Grothendiecks Standardvermutungen & Motive: die Herkunft der Positivität",
+      "category": "solution-program",
+      "status": "open",
+      "tags": [
+        "grothendieck",
+        "standard-conjectures",
+        "motives",
+        "hodge-index",
+        "weil-positivity",
+        "castelnuovo-severi",
+        "intersection-theory"
+      ],
+      "file": "docs/71_standard_conjectures_motives_positivity.md",
+      "summary": ""
+    },
+    {
+      "number": "72",
+      "id": "doc-72",
+      "title": "Arakelov-Geometrie & die Kompaktifizierung von Spec ℤ",
+      "category": "solution-program",
+      "status": "open",
+      "tags": [
+        "arakelov",
+        "arithmetic-surface",
+        "hodge-index",
+        "faltings",
+        "hriljac",
+        "spec-z",
+        "archimedean-place",
+        "soule"
+      ],
+      "file": "docs/72_Arakelov_geometry_SpecZ_compactification.md",
+      "summary": ""
+    },
+    {
+      "number": "73",
+      "id": "doc-73",
+      "title": "Tates These & adelische Analysis: warum die Funktionalgleichung „billig\\\" ist",
+      "category": "foundations",
+      "status": "proven",
+      "tags": [
+        "tate-thesis",
+        "adeles",
+        "poisson-summation",
+        "functional-equation",
+        "idele",
+        "weil",
+        "fourier-analysis"
+      ],
+      "file": "docs/73_Tate_thesis_adelic_analysis.md",
+      "summary": ""
+    },
+    {
+      "number": "74",
+      "id": "doc-74",
+      "title": "Hybrides Euler–Hadamard-Produkt (Gonek–Hughes–Keating)",
+      "category": "heuristic",
+      "status": "open",
+      "tags": [
+        "gonek-hughes-keating",
+        "hybrid-model",
+        "moments",
+        "splitting-conjecture",
+        "arithmetic-factor",
+        "random-matrix"
+      ],
+      "file": "docs/74_hybrid_Euler_Hadamard_product.md",
+      "summary": ""
+    },
+    {
+      "number": "75",
+      "id": "doc-75",
+      "title": "Extremwerte von ζ: Fyodorov–Hiary–Keating & multiplikatives Chaos",
+      "category": "frontier",
+      "status": "open",
+      "tags": [
+        "extreme-values",
+        "fyodorov-hiary-keating",
+        "multiplicative-chaos",
+        "branching-random-walk",
+        "lindelof",
+        "resonance-method",
+        "bondarenko-seip"
+      ],
+      "file": "docs/75_extreme_values_FHK_multiplicative_chaos.md",
+      "summary": ""
+    },
+    {
+      "number": "76",
+      "id": "doc-76",
+      "title": "Höhere Korrelationen: Hejhal, Rudnick–Sarnak & die GUE-Hypothese",
+      "category": "partial-results",
+      "status": "proven",
+      "tags": [
+        "n-level-correlation",
+        "rudnick-sarnak",
+        "hejhal",
+        "GUE",
+        "katz-sarnak",
+        "symmetry-types",
+        "restricted-support"
+      ],
+      "file": "docs/76_higher_correlations_Rudnick_Sarnak.md",
+      "summary": ""
+    },
+    {
+      "number": "77",
+      "id": "doc-77",
+      "title": "Bagchis Satz: RH als starke Rekurrenz (Universalität als Kriterium)",
+      "category": "criterion",
+      "status": "proven",
+      "tags": [
+        "bagchi",
+        "strong-recurrence",
+        "universality",
+        "voronin",
+        "almost-periodicity",
+        "ergodic",
+        "equivalent-criterion"
+      ],
+      "file": "docs/77_Bagchi_strong_recurrence.md",
+      "summary": ""
+    },
+    {
+      "number": "78",
+      "id": "doc-78",
+      "title": "Vergleichsmatrix der Ansätze: Achsen statt Ranglisten",
+      "category": "meta",
+      "status": "meta",
+      "tags": [
+        "comparison",
+        "axes",
+        "matrix",
+        "selection",
+        "approaches"
+      ],
+      "file": "docs/78_approach_comparison_matrix.md",
       "summary": ""
     }
   ]

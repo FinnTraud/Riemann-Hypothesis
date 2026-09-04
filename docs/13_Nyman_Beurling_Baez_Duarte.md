@@ -82,13 +82,33 @@ was den direkten Bezug Distanz ↔ Nullstellenlage herstellt.
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `criterion` |
+> | Implikation | `equivalent` |
+> | Euler-Produkt | `partial` |
+> | Positivität | `n/a` |
+> | Strenge | `theorem` |
+> | Evidenz | `medium` |
+> | Testbar | `high` |
+> | Formalisierbar | `medium` |
+> 
+> **Offener Kernschritt:** Approximationsgrad d_N -> 0 beweisen; bekannte untere Schranken sind vom richtigen Typ, obere fehlen.
+> 
+> **Hebel:** Sehr konkretes, numerisch messbares Kriterium (d_N).
+> 
+> **Fehlermodi:** [[F11_criterion-restates|F11 Äquivalenz-Falle]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-13`
+
 > [!warning]- Blocker — woran dieser Ansatz hängt (3)
-> - **Zirkuläre Positivität** *(Tier 2)* — Die RH wird auf eine Positivitätsaussage reduziert, die selbst nur als äquivalent, nie unabhängig bewiesen ist.
->   *Fluchtbedingung:* Die Positivität muss aus einer Struktur folgen, die unabhängig von der Nullstellenlage definiert ist. Im bewiesenen Fall 𝔽_q (doc-18) leistet das die Schnittform auf der Fläche C×C — dort ist Positivität ein Satz der Geometrie, nicht eine Umformulierung des Ziels.
-> - **Konvergenz- / Grenzübergangslücke** *(Tier 2)* — Für jede endliche Abschneidung bewiesen — der Grenzübergang ist offen.
->   *Fluchtbedingung:* Eine von Λ (bzw. N, d) UNABHÄNGIGE Schranke — Kompaktheit, gleichgradige Stetigkeit oder eine explizite Fehlerabschätzung, die den Grenzübergang erlaubt.
 > - **Äquivalenz-Falle** *(Tier 2)* — Ein Kriterium ist zur RH äquivalent und damit exakt gleich schwer — die Umformulierung erzeugt den Anschein von Fortschritt, ohne die Beweislast zu senken.
 >   *Fluchtbedingung:* Eine der beiden Richtungen muss in STRIKT SCHWÄCHERER Form unbedingt bewiesen werden, oder es muss eine quantitative Größe geben, die sich unabhängig von der RH bewegen lässt (Λ ≤ 0.22, Anteil > 41 %, d_N-Raten). Nur solche Bewegungen zählen als Fortschritt — siehe docs/58.
+> - **Konvergenz- / Grenzübergangslücke** *(Tier 2)* — Für jede endliche Abschneidung bewiesen — der Grenzübergang ist offen.
+>   *Fluchtbedingung:* Eine von Λ (bzw. N, d) UNABHÄNGIGE Schranke — Kompaktheit, gleichgradige Stetigkeit oder eine explizite Fehlerabschätzung, die den Grenzübergang erlaubt.
+> - **Zirkuläre Positivität** *(Tier 2)* — Die RH wird auf eine Positivitätsaussage reduziert, die selbst nur als äquivalent, nie unabhängig bewiesen ist.
+>   *Fluchtbedingung:* Die Positivität muss aus einer Struktur folgen, die unabhängig von der Nullstellenlage definiert ist. Im bewiesenen Fall 𝔽_q (doc-18) leistet das die Schnittform auf der Fläche C×C — dort ist Positivität ein Satz der Geometrie, nicht eine Umformulierung des Ziels.
 > 
 > Vollständige Matrix: [[55_failure_taxonomy]]
 

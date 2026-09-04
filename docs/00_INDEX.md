@@ -11,7 +11,7 @@ lang: de
 
 # Riemann Hypothesis — Dokumenten-Index (RAG Knowledge Base)
 
-> Diese Wissensbasis enthält je ein eigenständiges Dokument pro Paper, Beweisansatz, Kriterium, gescheitertem Beweis oder Meilenstein rund um die Riemann-Vermutung (Riemann Hypothesis, RH). Jede Datei ist als unabhängig abrufbarer Chunk für Vektordatenbank / RAG konzipiert: einheitliche Struktur (Metadaten → Zusammenfassung → Kernidee → Status → Bedeutung → Quellen). Stand: September 2026 (66 Dokumente, 00–65).
+> Diese Wissensbasis enthält je ein eigenständiges Dokument pro Paper, Beweisansatz, Kriterium, gescheitertem Beweis oder Meilenstein rund um die Riemann-Vermutung (Riemann Hypothesis, RH). Jede Datei ist als unabhängig abrufbarer Chunk für Vektordatenbank / RAG konzipiert: einheitliche Struktur (Metadaten → Zusammenfassung → Kernidee → Status → Bedeutung → Quellen). Stand: September 2026 (79 Dokumente, 00–78) — Zusammenführung zweier parallel entstandener Erweiterungen (PR #5 und PR #6).
 
 ## Kategorien und Dokumente
 
@@ -119,8 +119,29 @@ Diese Schicht enthält **keine neue Mathematik über ζ**. Sie wertet die Dokume
 - `../Canvas/Obstruktionskarte.canvas` — welche Ansätze an welchem Blocker hängen
 - Jedes Dokument trägt einen generierten Block **„Verknüpfungen (auto)"** mit Blockern, fehlender Aussage und Graph-Nachbarn als Wikilinks (erzeugt von `kb/obsidian.py`, idempotent)
 
+### R. Vertiefende Mathematik (aus PR #5, umnummeriert 55–66 → 66–77)
+Diese Schicht füllt Lücken, die die Meta-Analyse sichtbar gemacht hatte — mehrere Dokumente sind das direkte mathematische Gegenstück zu einem Blocker.
+- `66_Speiser_zeros_of_zeta_prime.md` — Speisers Satz & die Nullstellen von ζ′: **die Maschine hinter Levinson**
+- `67_Turan_power_sums_partial_sums.md` — Turáns Potenzsummen-Programm (widerlegter Ansatz; Musterfall für `blk-limit-interchange`)
+- `68_Beurling_generalized_primes.md` — **Beurlingsche verallgemeinerte Primzahlen: Euler-Produkt allein genügt nicht.** Das Gegenstück zu Davenport–Heilbronn und die zweite Hälfte von `blk-euler-blindness`
+- `69_Mobius_randomness_Chowla_Sarnak.md` — Möbius-Zufälligkeit: Chowla, Sarnak-Disjunktheit & die Paritätsbarriere
+- `70_Langlands_functoriality_automorphic.md` — Langlands-Funktorialität & automorphe L-Funktionen
+- `71_standard_conjectures_motives_positivity.md` — **Grothendiecks Standardvermutungen & Motive: die Herkunft der Positivität.** Das mathematische Gegenstück zu `gap-weil-positivity` (Score 0 in `docs/58`)
+- `72_Arakelov_geometry_SpecZ_compactification.md` — **Arakelov-Geometrie & die Kompaktifizierung von Spec ℤ.** Gegenstück zu `blk-missing-base-geometry`
+- `73_Tate_thesis_adelic_analysis.md` — **Tates These: warum die Funktionalgleichung „billig" ist.** Erklärt strukturell, was `docs/60` Test T1 numerisch misst
+- `74_hybrid_Euler_Hadamard_product.md` — Hybrides Euler–Hadamard-Produkt (Gonek–Hughes–Keating)
+- `75_extreme_values_FHK_multiplicative_chaos.md` — Extremwerte von ζ: Fyodorov–Hiary–Keating & multiplikatives Chaos
+- `76_higher_correlations_Rudnick_Sarnak.md` — Höhere Korrelationen: Hejhal, Rudnick–Sarnak & die GUE-Hypothese
+- `77_Bagchi_strong_recurrence.md` — Bagchis Satz: RH als starke Rekurrenz (Universalität als Kriterium)
+- `78_approach_comparison_matrix.md` — **Vergleichsmatrix der Ansätze**: 45 Ansätze × 8 Achsen, generiert aus `kb/graph/approaches.json`. Bestätigt den Positivitäts-Engpass unabhängig von der Blocker-Analyse
+
+### S. Atomnotizen (generiert)
+- `docs/fehlermodi/` — je Blocker eine Notiz (`F1`–`F15`), erzeugt aus `kb/graph/blockers.json`
+- `docs/concepts/` — je Konzept eine Hub-Notiz, erzeugt aus `nodes.json` + `edges.json`
+- `docs/moc/` — Maps of Content je Ansatz-Familie, erzeugt aus `approaches.json`; Einstieg: `moc/MOC_00_Hub.md`
+
 ## Quellen-Verifikation / Recherche
-Diese Wissensbasis wurde durch einen 5-Schritt-Recherche-Agenten auf Vollständigkeit geprüft (Stand Juni 2026); die Dokumente 43–49 schließen die dabei identifizierten Lücken. Ein Literatur-Update im August 2026 ergänzte die Dokumente 52–54 um die Front 2025–2026. Im September 2026 kam die Meta-Analyse-Schicht 55–64 hinzu; sie leitet ausschließlich aus den vorhandenen Dokumenten ab und rechnet selbst nach, wo das möglich ist (`docs/60`). **Zur Belastbarkeit der Einzelaussagen siehe `64_trust_tiers_verification_levels.md` — insbesondere die Offenlegung, dass die Primärquellen für diese Wissensbasis nicht gelesen wurden.** Hinweise zur Nutzung im Vektor-/MCP-Server: siehe `README_RAG.md`.
+Diese Wissensbasis wurde durch einen 5-Schritt-Recherche-Agenten auf Vollständigkeit geprüft (Stand Juni 2026); die Dokumente 43–49 schließen die dabei identifizierten Lücken. Ein Literatur-Update im August 2026 ergänzte die Dokumente 52–54 um die Front 2025–2026. Im September 2026 kam die Meta-Analyse-Schicht 55–65 hinzu, anschließend die Zusammenführung mit einer parallel entstandenen Erweiterung (Dokumente 66–78, Achsenprofile, Atomnotizen); sie leitet ausschließlich aus den vorhandenen Dokumenten ab und rechnet selbst nach, wo das möglich ist (`docs/60`). **Zur Belastbarkeit der Einzelaussagen siehe `64_trust_tiers_verification_levels.md` — insbesondere die Offenlegung, dass die Primärquellen für diese Wissensbasis nicht gelesen wurden.** Hinweise zur Nutzung im Vektor-/MCP-Server: siehe `README_RAG.md`.
 
 ## Übergeordnete Übersichtsdatei
 Die Datei `../Riemann_Hypothesis_Proof_Approaches.md` (eine Ebene höher) enthält die zusammenfassende Gesamtübersicht aller Ansätze in einem Dokument.

@@ -73,6 +73,26 @@ Sei N₀(T) die Anzahl der Nullstellen *auf* der kritischen Geraden bis Höhe T,
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `analytic` |
+> | Implikation | `partial` |
+> | Euler-Produkt | `partial` |
+> | Positivität | `n/a` |
+> | Strenge | `theorem` |
+> | Evidenz | `n/a` |
+> | Testbar | `medium` |
+> | Formalisierbar | `high` |
+> 
+> **Offener Kernschritt:** Von 'unendlich viele' zu 'alle' - der Sprung ist qualitativ, nicht quantitativ.
+> 
+> **Hebel:** Erster Beweis, dass die Gerade überhaupt ausgezeichnet ist.
+> 
+> **Fehlermodi:** [[F13_error-term-ceiling|F13 Anteils-Decke der Mollifier-Methoden]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-03`
+
 > [!warning]- Blocker — woran dieser Ansatz hängt (1)
 > - **Anteils-Decke der Mollifier-Methoden** *(Tier 2)* — Levinson/Conrey-Technik liefert einen positiven Anteil, ist aber strukturell weit unter 100 % gedeckelt.
 >   *Fluchtbedingung:* Ein Mechanismus, der ALLE Nullstellen erfasst statt einen Anteil — Anteilsmethoden können die RH prinzipiell nicht abschließen, auch nicht im Limes.

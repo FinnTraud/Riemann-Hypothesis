@@ -2,58 +2,22 @@
   "_comment": "Abstrakte Konzept-Knoten (zusätzlich zu den Dokument-Knoten, die build_kb.py aus manifest.json erzeugt). type=concept. Dokument-Knoten haben type=document.",
   "concepts": [
     {
-      "id": "concept-RH",
-      "label": "Riemann-Vermutung (RH)",
-      "type": "concept",
-      "summary": "Alle nicht-trivialen Nullstellen von ζ haben Re(s)=1/2."
-    },
-    {
       "id": "concept-GRH",
       "label": "Verallgemeinerte/Große RH",
       "type": "concept",
       "summary": "RH für alle Dirichlet- bzw. automorphen L-Funktionen."
     },
     {
-      "id": "concept-euler-product",
-      "label": "Euler-Produkt (Multiplikativität)",
+      "id": "concept-RH",
+      "label": "Riemann-Vermutung (RH)",
       "type": "concept",
-      "summary": "ζ(s)=∏(1-p^-s)^-1; kodiert Primzahlstruktur. Schlüsseleigenschaft, ohne die Off-Line-Nullstellen möglich sind."
+      "summary": "Alle nicht-trivialen Nullstellen von ζ haben Re(s)=1/2."
     },
     {
-      "id": "concept-positivity",
-      "label": "Positivität / Reellwurzeligkeit",
-      "type": "motif",
-      "summary": "RH als positive quadratische Form bzw. nur-reelle-Nullstellen-Aussage (Weil, Li, de Branges, Jensen, Lee-Yang, dBN)."
-    },
-    {
-      "id": "concept-hilbert-polya",
-      "label": "Hilbert–Pólya / spektrale Interpretation",
-      "type": "motif",
-      "summary": "Nullstellen = Eigenwerte eines selbstadjungierten/kanonischen Operators."
-    },
-    {
-      "id": "concept-geometry-transfer",
-      "label": "Geometrie-Transfer (Funktionenkörper→ℤ)",
-      "type": "motif",
-      "summary": "Übertragung von Weils/Delignes bewiesenem RH-Analogon über 𝔽_q auf Spec(ℤ)."
-    },
-    {
-      "id": "concept-explicit-formula",
-      "label": "Explizite Formel (Primzahlen↔Nullstellen)",
+      "id": "concept-adeles",
+      "label": "Adelische Analysis (Tate/Poisson)",
       "type": "concept",
-      "summary": "Weil/von-Mangoldt: verbindet Σ über Nullstellen mit Σ über Primzahlen; gemeinsamer Kern aller Spurformel-/Positivitätsansätze."
-    },
-    {
-      "id": "concept-critical-line",
-      "label": "Kritische Gerade Re(s)=1/2",
-      "type": "concept",
-      "summary": "Vermuteter Ort aller nicht-trivialen Nullstellen."
-    },
-    {
-      "id": "concept-truncated-weil",
-      "label": "Abgeschnittene Weil-Quadratform (Galerkin-Truncation)",
-      "type": "concept",
-      "summary": "Einschraenkung der Weilschen Quadratform auf ein endliches Intervall und endlich viele Euler-Faktoren (p <= x); liefert eine endliche Matrix, deren Grundzustand die Nullstellen approximiert."
+      "summary": "Harmonische Analysis auf 𝔸_ℚ: liefert Euler-Produkt und Funktionalgleichung 'gratis' — gemeinsame Sprache aller spektralen Programme."
     },
     {
       "id": "concept-alternative-hypothesis",
@@ -62,16 +26,88 @@
       "summary": "Gegenszenario zum GUE-Bild: normierte Nullstellenabstaende konzentrieren sich asymptotisch auf Vielfache des halben mittleren Abstands. Nicht ausgeschlossen; eng an Landau-Siegel-Nullstellen gekoppelt."
     },
     {
-      "id": "concept-pair-correlation",
-      "label": "Paarkorrelation der Nullstellen (Montgomery F(alpha,T))",
+      "id": "concept-critical-line",
+      "label": "Kritische Gerade Re(s)=1/2",
       "type": "concept",
-      "summary": "Vertikale Abstandsstatistik der Nullstellen; Montgomerys PCC besagt F(alpha,T) -> 1 fuer alpha >= 1, aequivalent zur GUE-Paarkorrelation."
+      "summary": "Vermuteter Ort aller nicht-trivialen Nullstellen."
+    },
+    {
+      "id": "concept-euler-product",
+      "label": "Euler-Produkt (Multiplikativität)",
+      "type": "concept",
+      "summary": "ζ(s)=∏(1-p^-s)^-1; kodiert Primzahlstruktur. Schlüsseleigenschaft, ohne die Off-Line-Nullstellen möglich sind."
+    },
+    {
+      "id": "concept-explicit-formula",
+      "label": "Explizite Formel (Primzahlen↔Nullstellen)",
+      "type": "concept",
+      "summary": "Weil/von-Mangoldt: verbindet Σ über Nullstellen mit Σ über Primzahlen; gemeinsamer Kern aller Spurformel-/Positivitätsansätze."
+    },
+    {
+      "id": "concept-failure-modes",
+      "label": "Fehlermodi (Scheiterns-Taxonomie)",
+      "type": "concept",
+      "summary": "F1–F15: klassifiziert, an welcher Stelle ein Ansatz bricht (fatal / blockierend / strukturell). Daten: kb/graph/failure_modes.json."
     },
     {
       "id": "concept-formal-verification",
       "label": "Formale Verifikation / maschinengestuetzte Mathematik",
       "type": "concept",
       "summary": "Lean/mathlib-Formalisierung, Exponenten-Datenbanken (ANTEDB) und Intervall-Zertifikate als Pruefschicht fuer Resultate im RH-Umfeld."
+    },
+    {
+      "id": "concept-geometry-transfer",
+      "label": "Geometrie-Transfer (Funktionenkörper→ℤ)",
+      "type": "motif",
+      "summary": "Übertragung von Weils/Delignes bewiesenem RH-Analogon über 𝔽_q auf Spec(ℤ)."
+    },
+    {
+      "id": "concept-hilbert-polya",
+      "label": "Hilbert–Pólya / spektrale Interpretation",
+      "type": "motif",
+      "summary": "Nullstellen = Eigenwerte eines selbstadjungierten/kanonischen Operators."
+    },
+    {
+      "id": "concept-intersection-positivity",
+      "label": "Schnittform-Positivität (Hodge-Index)",
+      "type": "concept",
+      "summary": "Im bewiesenen Fall erzeugt die Definitheit einer Schnittform die kritische Gerade — die einzige bekannte Herkunft echter Positivität."
+    },
+    {
+      "id": "concept-moments",
+      "label": "Momente & Zufallsmatrix-Modelle",
+      "type": "concept",
+      "summary": "Momente von ζ auf der kritischen Geraden, Keating–Snaith-Vorhersage, arithmetischer Faktor a_k × RMT-Faktor g_k."
+    },
+    {
+      "id": "concept-pair-correlation",
+      "label": "Paarkorrelation der Nullstellen (Montgomery F(alpha,T))",
+      "type": "concept",
+      "summary": "Vertikale Abstandsstatistik der Nullstellen; Montgomerys PCC besagt F(alpha,T) -> 1 fuer alpha >= 1, aequivalent zur GUE-Paarkorrelation."
+    },
+    {
+      "id": "concept-parity",
+      "label": "Paritätsbarriere (Möbius/Sieb)",
+      "type": "concept",
+      "summary": "Siebe und gemittelte Korrelationen können die Parität von Ω(n) nicht auflösen — blockiert alle μ-basierten Zugänge zur Einzelsummen-Schranke."
+    },
+    {
+      "id": "concept-positivity",
+      "label": "Positivität / Reellwurzeligkeit",
+      "type": "motif",
+      "summary": "RH als positive quadratische Form bzw. nur-reelle-Nullstellen-Aussage (Weil, Li, de Branges, Jensen, Lee-Yang, dBN)."
+    },
+    {
+      "id": "concept-truncated-weil",
+      "label": "Abgeschnittene Weil-Quadratform (Galerkin-Truncation)",
+      "type": "concept",
+      "summary": "Einschraenkung der Weilschen Quadratform auf ein endliches Intervall und endlich viele Euler-Faktoren (p <= x); liefert eine endliche Matrix, deren Grundzustand die Nullstellen approximiert."
+    },
+    {
+      "id": "concept-truncation-limit",
+      "label": "Abschneidung & Grenzübergang",
+      "type": "concept",
+      "summary": "Endliche Modelle (Galerkin, Partialsummen) sind beweisbar — der gleichmäßige Limes ist der offene Schritt und kann scheitern (Turán)."
     }
   ]
 }

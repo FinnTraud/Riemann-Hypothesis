@@ -58,14 +58,35 @@ Für einen Zahlkörper K liefert das Connes–Marcolli-System die **Dedekind-Zet
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `spectral` |
+> | Implikation | `model` |
+> | Euler-Produkt | `essential` |
+> | Positivität | `n/a` |
+> | Strenge | `theorem` |
+> | Evidenz | `medium` |
+> | Testbar | `low` |
+> | Formalisierbar | `low` |
+> 
+> **Offener Kernschritt:** Der Phasenübergang kodiert die Klassenkörpertheorie, nicht die Nullstellenlage.
+> 
+> **Hebel:** ζ als Zustandssumme - konzeptuell schönste Realisierung.
+> 
+> **Fehlermodi:** [[F14_model-without-implication|F14 Zirkularität der Modellannahme]] · [[F10_analogy-transfer-gap|F10 Fehlende Geometrie über Spec(ℤ)]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-34`
+
 > [!warning]- Blocker — woran dieser Ansatz hängt (1)
 > - **Fehlende Geometrie über Spec(ℤ)** *(Tier 2)* — Der bewiesene Funktionenkörperfall braucht eine Fläche C×_𝔽 C; das Analogon Spec(ℤ)×_{𝔽₁}Spec(ℤ) existiert nicht.
 >   *Fluchtbedingung:* Konstruktion einer Kohomologietheorie über Spec(ℤ) mit (a) Lefschetz-Formel, die die explizite Formel reproduziert, (b) Poincaré-Dualität, (c) einem Positivitäts-/Index-Satz (Hodge-Index-Analogon). Alle drei, nicht nur (a).
 > 
 > Vollständige Matrix: [[55_failure_taxonomy]]
 
-> [!abstract]- Graph-Nachbarn (2)
+> [!abstract]- Graph-Nachbarn (3)
 > - *benutzt* → **Hilbert–Pólya / spektrale Interpretation** — Bost–Connes: Operator mit Spektrum {log n} (geometrische Seite).
+> - ← *folgt Blaupause* [[73_Tate_thesis_adelic_analysis|73 · Tates These & adelische Analysis]] — Bost–Connes lebt auf demselben adelischen Objekt.
 > - ← *wird benutzt von* [[30_F1_field_one_element_arithmetic_site|30 · Der Körper mit einem Element]] — Bost–Connes liefert Galois-/Frobenius-Symmetrie fürs 𝔽₁-Programm.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
