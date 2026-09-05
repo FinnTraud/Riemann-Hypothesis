@@ -94,7 +94,10 @@ installiert; sonst TF-IDF-Cosinus ohne Download) + Graph-Expansion. Parameter `s
 
 ### Flaggschiff-Experiment
 `python3 kb/research/spacing_vs_gue.py 500` — Montgomery–Odlyzko-Gesetz (Nullstellenabstände
-vs. GUE), schreibt Ergebnis ins Logbuch.
+vs. GUE), schreibt Ergebnis ins Logbuch. Mit `--figure` zusätzlich die Abbildung
+(`kb/research/results/gue_spacing_N500.png`), mit `--figure-only` nur die Abbildung aus den
+gecachten Nullstellen (`kb/research/results/zeros_gamma.json`) — ohne neuen Logbuch-Eintrag.
+Ausgewerteter Lauf N=500: `kb/research/results/gue_spacing_note.md`.
 
 ## Empfohlener System-Prompt für den RH-Assistenten
 > Für jede Behauptung über die RH zuerst `get_claim` aufrufen und den `status` respektieren
