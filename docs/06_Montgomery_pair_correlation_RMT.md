@@ -72,6 +72,14 @@ Dyson identifizierte 1 − (sin πu/πu)² sofort als GUE-Kern. Odlyzko verifizi
 ### Grenze als Beweis
 F(α,T) ist nur für |α| ≤ 1 *unbedingt unter RH* bekannt; der Bereich |α| ≥ 1 (Montgomerys Vermutung) ist offen. Selbst vollständig bewiesen wäre es Statistik, kein Operator ⇒ kein RH-Beweis.
 
+### Eigenes Experiment im Repo (N = 500)
+`python3 kb/research/spacing_vs_gue.py 500 --figure` rechnet die Abstandsstatistik der
+ersten 500 Nullstellen nach. Ergebnis: Varianz 0.1404 (GUE 0.178, Poisson 1.0), nur 6.8 %
+der normierten Abstände unter 0.5 (Poisson erwartet 39.4 %), KS-Distanz 0.0476 zu GUE
+gegen 0.3291 zu Poisson. Die Niveau-Abstoßung ist damit direkt sichtbar.
+Abbildung und Einordnung (samt Grenzen — N = 500 ist tief, die Konvergenz logarithmisch):
+`kb/research/results/gue_spacing_note.md`, Abbildung `kb/research/results/gue_spacing_N500.png`.
+
 ## Quellen
 - [Montgomery's pair correlation conjecture — Wikipedia](https://en.wikipedia.org/wiki/Montgomery's_pair_correlation_conjecture)
 - [Montgomery's Pair Correlation Conjecture — Wolfram MathWorld](https://mathworld.wolfram.com/MontgomerysPairCorrelationConjecture.html)
