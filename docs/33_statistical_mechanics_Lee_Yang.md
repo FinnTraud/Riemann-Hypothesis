@@ -74,6 +74,26 @@ Zwei Nullstellen γ_n, γ_{n+1} mit Abstand ≪ Mittelwert bilden ein **Lehmer-P
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `physical` |
+> | Implikation | `model` |
+> | Euler-Produkt | `partial` |
+> | Positivität | `must-prove` |
+> | Strenge | `heuristic` |
+> | Evidenz | `medium` |
+> | Testbar | `medium` |
+> | Formalisierbar | `low` |
+> 
+> **Offener Kernschritt:** Ein Modell finden, dessen Lee-Yang-Kreis genau die kritische Gerade ist - bisher nur Analogie.
+> 
+> **Hebel:** Erklärt, warum Positivität und Nullstellenlage zusammenhängen.
+> 
+> **Fehlermodi:** [[F14_model-without-implication|F14 Zirkularität der Modellannahme]] · [[F1_no-euler-product|F1 Euler-Blindheit]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-33`
+
 > [!warning]- Blocker — woran dieser Ansatz hängt (2)
 > - **Zirkuläre Positivität** *(Tier 2)* — Die RH wird auf eine Positivitätsaussage reduziert, die selbst nur als äquivalent, nie unabhängig bewiesen ist.
 >   *Fluchtbedingung:* Die Positivität muss aus einer Struktur folgen, die unabhängig von der Nullstellenlage definiert ist. Im bewiesenen Fall 𝔽_q (doc-18) leistet das die Schnittform auf der Fläche C×C — dort ist Positivität ein Satz der Geometrie, nicht eine Umformulierung des Ziels.

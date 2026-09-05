@@ -88,9 +88,31 @@ Die effektive Schranke ist schwächer als „keine Siegel-Nullstelle" (das wäre
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
-> [!warning]- Blocker — woran dieser Ansatz hängt (1)
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `analytic` |
+> | Implikation | `partial` |
+> | Euler-Produkt | `essential` |
+> | Positivität | `n/a` |
+> | Strenge | `theorem` |
+> | Evidenz | `medium` |
+> | Testbar | `low` |
+> | Formalisierbar | `low` |
+> 
+> **Offener Kernschritt:** Ausschluss reeller Ausnahmennullstellen; Siegels Satz bleibt ineffektiv.
+> 
+> **Hebel:** Wichtig für GRH-Anwendungen; Fortschritt ist quantifizierbar.
+> 
+> **Fehlermodi:** [[F12_ineffective-nonuniform|F12 Ineffektive oder nicht gleichmaessige Konstanten]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-32`
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (2)
 > - **Paritätsbarriere** *(Tier 1)* — Siebmethoden können gerade und ungerade Primfaktorzahl prinzipiell nicht trennen — genau das misst μ(n).
 >   *Fluchtbedingung:* Ein bilinearer Input (Typ-II-Summen), ein Spektralinput (automorphe Formen) oder eine andere Quelle von Kancellation, die nicht aus dem Sieb selbst kommt.
+> - **Ineffektive oder nicht gleichmaessige Konstanten** *(Tier 2)* — Schranken sind nicht explizit oder nicht gleichmaessig in Hoehe und Fuehrer.
+>   *Fluchtbedingung:* Alle Konstanten explizit angeben und Gleichmaessigkeit in T und im Fuehrer q nachweisen. Genau das leistet das ANTEDB-Programm (doc-54).
 > 
 > Vollständige Matrix: [[55_failure_taxonomy]]
 
@@ -99,9 +121,10 @@ Die effektive Schranke ist schwächer als „keine Siegel-Nullstelle" (das wäre
 > **Es fehlt:** Vollständiger Ausschluss. Betrifft die GRH für Dirichlet-L-Funktionen, nicht die RH für ζ selbst.
 > **Typ:** quantitativ · Bewertung: [[58_gap_registry_near_miss]]
 
-> [!abstract]- Graph-Nachbarn (2)
+> [!abstract]- Graph-Nachbarn (3)
 > - *ist Teilresultat für* → **Verallgemeinerte/Große RH** — Zhang: Landau-Siegel-Nullstellen (Ausnahmen zur GRH) eingeschränkt.
 > - ← *modelliert von* **Alternative Hypothese (AH)** — Landau-Siegel-Ausnahmenullstellen erzwingen AH-artige Starrheit im Abstandsspektrum.
+> - ← *wird obstruiert von* [[70_Langlands_functoriality_automorphic|70 · Langlands-Funktorialität & automorphe L-Funktionen]] — Landau–Siegel-Nullstellen bleiben mit voller Funktorialität verträglich.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 

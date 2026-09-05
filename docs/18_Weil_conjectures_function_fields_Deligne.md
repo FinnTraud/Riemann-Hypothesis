@@ -85,8 +85,37 @@ Es fehlt für Spec(ℤ) das „×_{𝔽₁} "-Produkt, die Frobenius-Wirkung und
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
-> [!abstract]- Graph-Nachbarn (1)
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `algebraic-geometric` |
+> | Implikation | `partial` |
+> | Euler-Produkt | `essential` |
+> | Positivität | `proves` |
+> | Strenge | `theorem` |
+> | Evidenz | `n/a` |
+> | Testbar | `low` |
+> | Formalisierbar | `low` |
+> 
+> **Offener Kernschritt:** Transfer nach Z: es fehlen Fläche, Frobenius und Polarisierung.
+> 
+> **Hebel:** Der einzige vollständig bewiesene RH-Fall - Blaupause für alles Weitere.
+> 
+> **Fehlermodi:** [[F10_analogy-transfer-gap|F10 Fehlende Geometrie über Spec(ℤ)]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-18`
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (1)
+> - **Fehlende Geometrie über Spec(ℤ)** *(Tier 2)* — Der bewiesene Funktionenkörperfall braucht eine Fläche C×_𝔽 C; das Analogon Spec(ℤ)×_{𝔽₁}Spec(ℤ) existiert nicht.
+>   *Fluchtbedingung:* Konstruktion einer Kohomologietheorie über Spec(ℤ) mit (a) Lefschetz-Formel, die die explizite Formel reproduziert, (b) Poincaré-Dualität, (c) einem Positivitäts-/Index-Satz (Hodge-Index-Analogon). Alle drei, nicht nur (a).
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!abstract]- Graph-Nachbarn (4)
 > - *ist Blaupause für* → **Geometrie-Transfer (Funktionenkörper→ℤ)** — Weil/Deligne: BEWIESENES RH-Analogon über 𝔽_q — die Blaupause.
+> - ← *ist Reduktionsziel von* [[71_standard_conjectures_motives_positivity|71 · Grothendiecks Standardvermutungen & Motive]] — Isoliert den Schritt in Weils Beweis, der die kritische Gerade erzwingt.
+> - ← *wird benutzt von* [[70_Langlands_functoriality_automorphic|70 · Langlands-Funktorialität & automorphe L-Funktionen]] — Ramanujan–Petersson (lokales RH-Analogon) folgt aus Deligne/Weil.
+> - ← *wird benutzt von* [[76_higher_correlations_Rudnick_Sarnak|76 · Höhere Korrelationen]] — Katz–Sarnak: im Funktionenkörperfall ist die Symmetrie ein Satz.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 

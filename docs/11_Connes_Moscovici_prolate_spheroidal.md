@@ -66,11 +66,33 @@ Die Übereinstimmung E_n ~ (γ_n/2)² ist **asymptotisch** (führende Ordnung im
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
-> [!warning]- Blocker — woran dieser Ansatz hängt (2)
-> - **Nicht-kanonischer Operator** *(Tier 2)* — Ein Hilbert–Pólya-Operator wird konstruiert, um das richtige Spektrum zu haben, statt aus der Arithmetik zu entstehen.
->   *Fluchtbedingung:* Der Operator muss auf einem arithmetisch definierten Raum leben (Adele, arithmetic site, gefolierter Raum) UND eine Spurformel erfüllen, deren geometrische Seite die Primzahlterme der expliziten Formel liefert. Selbstadjungiertheit muss auf einem konkret angegebenen Definitionsbereich bewiesen sein, nicht behauptet.
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `spectral` |
+> | Implikation | `partial` |
+> | Euler-Produkt | `essential` |
+> | Positivität | `must-prove` |
+> | Strenge | `program` |
+> | Evidenz | `medium` |
+> | Testbar | `medium` |
+> | Formalisierbar | `low` |
+> 
+> **Offener Kernschritt:** Vom abgeschnittenen (skalierungsinvarianten) Modell zum unbeschränkten Limes.
+> 
+> **Hebel:** Konkreter, numerisch zugänglicher Operator mit Bezug zu ζ.
+> 
+> **Fehlermodi:** [[F9_truncation-limit-gap|F9 Konvergenz- / Grenzübergangslücke]] · [[F2_positivity-assumed|F2 Zirkuläre Positivität]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-11`
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (3)
 > - **Konvergenz- / Grenzübergangslücke** *(Tier 2)* — Für jede endliche Abschneidung bewiesen — der Grenzübergang ist offen.
 >   *Fluchtbedingung:* Eine von Λ (bzw. N, d) UNABHÄNGIGE Schranke — Kompaktheit, gleichgradige Stetigkeit oder eine explizite Fehlerabschätzung, die den Grenzübergang erlaubt.
+> - **Fehlende selbstadjungierte Realisierung** *(Tier 2)* — Der Operator ist formal hingeschrieben, aber ohne Definitionsbereich, Randbedingungen und Nachweis eines diskreten Spektrums.
+>   *Fluchtbedingung:* Hilbertraum, Definitionsbereich und Randbedingungen explizit angeben und wesentliche Selbstadjungiertheit sowie Diskretheit des Spektrums beweisen -- nicht behaupten.
+> - **Nicht-kanonischer Operator** *(Tier 2)* — Ein Hilbert–Pólya-Operator wird konstruiert, um das richtige Spektrum zu haben, statt aus der Arithmetik zu entstehen.
+>   *Fluchtbedingung:* Der Operator muss auf einem arithmetisch definierten Raum leben (Adele, arithmetic site, gefolierter Raum) UND eine Spurformel erfüllen, deren geometrische Seite die Primzahlterme der expliziten Formel liefert. Selbstadjungiertheit muss auf einem konkret angegebenen Definitionsbereich bewiesen sein, nicht behauptet.
 > 
 > Vollständige Matrix: [[55_failure_taxonomy]]
 

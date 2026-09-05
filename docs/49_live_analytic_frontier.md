@@ -64,6 +64,12 @@ Funktionalanalytische Implikationen zwischen Subkonvexitätsschranken und Moment
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!warning]- Blocker — woran dieser Ansatz hängt (1)
+> - **Ineffektive oder nicht gleichmaessige Konstanten** *(Tier 2)* — Schranken sind nicht explizit oder nicht gleichmaessig in Hoehe und Fuehrer.
+>   *Fluchtbedingung:* Alle Konstanten explizit angeben und Gleichmaessigkeit in T und im Fuehrer q nachweisen. Genau das leistet das ANTEDB-Programm (doc-54).
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
 > [!abstract]- Graph-Nachbarn (4)
 > - *ist Evidenz für* → [[22_Guth_Maynard_2024|22 · Guth–Maynard]] — Live-Front: explizite Dichte, Subkonvexität, Momente.
 > - *ist Evidenz für* → [[17_Lindelof_density_hypothesis|17 · Lindelöf-Hypothese & Dichte-Hypothese]] — Subkonvexität nähert Lindelöf an.

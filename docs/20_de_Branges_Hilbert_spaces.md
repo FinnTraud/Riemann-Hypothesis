@@ -72,6 +72,26 @@ Die de-Branges-Bedingung ist eng verwandt mit Weil-Positivität (Dok. 14) und Ny
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `criterion` |
+> | Implikation | `conditional` |
+> | Euler-Produkt | `none` |
+> | Positivität | `assumes` |
+> | Strenge | `refuted` |
+> | Evidenz | `weak` |
+> | Testbar | `low` |
+> | Formalisierbar | `low` |
+> 
+> **Offener Kernschritt:** Die benutzte Positivitätsbedingung ist für ζ nachweislich verletzt (Conrey-Li-Gegenbeispiel).
+> 
+> **Hebel:** Der Apparat selbst ist korrekt und wertvoll - nur der RH-Schluss nicht.
+> 
+> **Fehlermodi:** [[F2_positivity-assumed|F2 Zirkuläre Positivität]] · [[F1_no-euler-product|F1 Euler-Blindheit]] · [[F15_verification-collapse|F15 Nicht-Verifizierbarkeit]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-20`
+
 > [!warning]- Blocker — woran dieser Ansatz hängt (2)
 > - **Zirkuläre Positivität** *(Tier 2)* — Die RH wird auf eine Positivitätsaussage reduziert, die selbst nur als äquivalent, nie unabhängig bewiesen ist.
 >   *Fluchtbedingung:* Die Positivität muss aus einer Struktur folgen, die unabhängig von der Nullstellenlage definiert ist. Im bewiesenen Fall 𝔽_q (doc-18) leistet das die Schnittform auf der Fläche C×C — dort ist Positivität ein Satz der Geometrie, nicht eine Umformulierung des Ziels.

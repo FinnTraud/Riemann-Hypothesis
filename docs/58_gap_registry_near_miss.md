@@ -196,11 +196,12 @@ und sind dort belegt: `docs/04`, `docs/05`, `docs/13`, `docs/14`, `docs/15`,
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
-> [!abstract]- Graph-Nachbarn (5)
+> [!abstract]- Graph-Nachbarn (6)
 > - *benutzt* → [[55_failure_taxonomy|55 · Muster im Scheitern]] — Bewertet die Luecken entlang der Blocker-Zuordnung.
 > - *benutzt* → [[52_Connes_truncated_Weil_spectral_realization|52 · Abgeschnittene Weil-Quadratform & Zeta-Spektraltrip…]] — Bewertet den Grenzuebergang der abgeschnittenen Weil-Quadratform.
 > - *benutzt* → [[23_de_Bruijn_Newman_constant_Polymath15|23 · De-Bruijn–Newman-Konstante]] — Bewertet die Luecke 0 <= Lambda <= 0,22.
 > - *benutzt* → [[29_Jensen_Polya_Laguerre_Polya_GORZ|29 · Jensen–Pólya-Programm]] — Bewertet das gemeinsame Regime d ~ n der Jensen-Polynome.
+> - ← *gestützt durch* [[78_approach_comparison_matrix|78 · Vergleichsmatrix der Ansätze]] — Bestaetigt den Positivitaets-Engpass unabhaengig ueber die Achsenwerte.
 > - ← *wird benutzt von* [[63_experiment_decision_value|63 · Entscheidungswert von Experimenten]] — Kehrseite des Near-Miss-Befunds: messbar heisst ausgereizt.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]

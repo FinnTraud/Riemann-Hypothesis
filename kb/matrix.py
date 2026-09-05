@@ -36,6 +36,9 @@ SHORT = {
     "blk-model-circularity": "MOD",
     "blk-equivalence-trap": "AEQ",
     "blk-unverifiable": "VER",
+    "blk-no-selfadjoint-realization": "SA",
+    "blk-limit-exchange": "SWAP",
+    "blk-ineffective-constants": "EFF",
 }
 
 
@@ -90,9 +93,13 @@ def render(blockers, titles):
                + f" | **{sum(counts.values())}** |")
 
     out.append("")
-    out.append("**Spaltenlegende:** "
-               + " · ".join(f"`{c}` = {next(x['name'] for x in blockers if x['id'] == b)}"
-                            for b, c in zip(order, cols)))
+    def _legend(b, c):
+        x = next(y for y in blockers if y["id"] == b)
+        f = f" ({x['f_mode']})" if x.get("f_mode") else ""
+        return f"`{c}` = {x['name']}{f}"
+    out.append("**Spaltenlegende** (in Klammern die ID der zusammengeführten "
+               "Parallel-Taxonomie, siehe `kb/graph/blockers.json`): "
+               + " · ".join(_legend(b, c) for b, c in zip(order, cols)))
     out.append("")
     top = counts.most_common(3)
     multi = sorted(((len(h), d) for d, h in rows.items()), reverse=True)[:4]

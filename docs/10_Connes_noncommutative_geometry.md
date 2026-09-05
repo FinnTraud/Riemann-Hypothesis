@@ -76,19 +76,41 @@ Im Funktionenkörper-Fall (Dok. 18) ist genau diese Positivität die **Riemann�
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `spectral` |
+> | Implikation | `conditional` |
+> | Euler-Produkt | `essential` |
+> | Positivität | `must-prove` |
+> | Strenge | `program` |
+> | Evidenz | `strong` |
+> | Testbar | `low` |
+> | Formalisierbar | `low` |
+> 
+> **Offener Kernschritt:** Weil-Positivität des Spurterms unabhängig beweisen - im geometrischen Fall ist das der Hodge-Index-Satz, über Z fehlt die Fläche.
+> 
+> **Hebel:** Explizite Formel wird zur Spurformel; RH = Positivität.
+> 
+> **Fehlermodi:** [[F2_positivity-assumed|F2 Zirkuläre Positivität]] · [[F10_analogy-transfer-gap|F10 Fehlende Geometrie über Spec(ℤ)]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-10`
+
 > [!warning]- Blocker — woran dieser Ansatz hängt (2)
-> - **Zirkuläre Positivität** *(Tier 2)* — Die RH wird auf eine Positivitätsaussage reduziert, die selbst nur als äquivalent, nie unabhängig bewiesen ist.
->   *Fluchtbedingung:* Die Positivität muss aus einer Struktur folgen, die unabhängig von der Nullstellenlage definiert ist. Im bewiesenen Fall 𝔽_q (doc-18) leistet das die Schnittform auf der Fläche C×C — dort ist Positivität ein Satz der Geometrie, nicht eine Umformulierung des Ziels.
 > - **Fehlende Geometrie über Spec(ℤ)** *(Tier 2)* — Der bewiesene Funktionenkörperfall braucht eine Fläche C×_𝔽 C; das Analogon Spec(ℤ)×_{𝔽₁}Spec(ℤ) existiert nicht.
 >   *Fluchtbedingung:* Konstruktion einer Kohomologietheorie über Spec(ℤ) mit (a) Lefschetz-Formel, die die explizite Formel reproduziert, (b) Poincaré-Dualität, (c) einem Positivitäts-/Index-Satz (Hodge-Index-Analogon). Alle drei, nicht nur (a).
+> - **Zirkuläre Positivität** *(Tier 2)* — Die RH wird auf eine Positivitätsaussage reduziert, die selbst nur als äquivalent, nie unabhängig bewiesen ist.
+>   *Fluchtbedingung:* Die Positivität muss aus einer Struktur folgen, die unabhängig von der Nullstellenlage definiert ist. Im bewiesenen Fall 𝔽_q (doc-18) leistet das die Schnittform auf der Fläche C×C — dort ist Positivität ein Satz der Geometrie, nicht eine Umformulierung des Ziels.
 > 
 > Vollständige Matrix: [[55_failure_taxonomy]]
 
-> [!abstract]- Graph-Nachbarn (5)
+> [!abstract]- Graph-Nachbarn (7)
 > - *versucht Transfer von* → **Geometrie-Transfer (Funktionenkörper→ℤ)** — Connes adelische Spurformel.
 > - *modelliert* → **Hilbert–Pólya / spektrale Interpretation** — Connes: spektrale Realisierung als Absorptionsspektrum.
 > - *reduziert sich auf* → **Positivität / Reellwurzeligkeit** — Connes reduziert RH auf Weil-Positivität.
 > - *benutzt* → **Explizite Formel (Primzahlen↔Nullstellen)** — Connes-Spurformel reproduziert die explizite Formel.
+> - ← *folgt Blaupause* [[71_standard_conjectures_motives_positivity|71 · Grothendiecks Standardvermutungen & Motive]] — Sagt, woher die von Connes benötigte Positivität kommen müsste.
+> - ← *folgt Blaupause* [[73_Tate_thesis_adelic_analysis|73 · Tates These & adelische Analysis]] — Connes' Spurformel ist die spektrale Fortsetzung von Tates Bild.
 > - ← *wird benutzt von* [[52_Connes_truncated_Weil_spectral_realization|52 · Abgeschnittene Weil-Quadratform & Zeta-Spektraltrip…]] — Rahmen der nichtkommutativen Geometrie von Connes.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]

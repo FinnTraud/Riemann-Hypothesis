@@ -72,14 +72,32 @@ Klassische Siebmethoden (Brun, Selberg) können **prinzipiell** nicht zwischen Z
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
-> [!abstract]- Graph-Nachbarn (7)
+> [!warning]- Blocker — woran dieser Ansatz hängt (4)
+> - **Euler-Blindheit** *(Tier 1)* — Das Argument benutzt nur Funktionalgleichung, Fortsetzung und Wachstum — es würde für Davenport–Heilbronn genauso gelten und ist damit falsch.
+>   *Fluchtbedingung:* Mindestens ein Beweisschritt muss eine Eigenschaft benutzen, die für Davenport–Heilbronn NACHWEISLICH FALSCH ist — praktisch immer: Multiplikativität der Koeffizienten / Euler-Produkt.
+> - **Paritätsbarriere** *(Tier 1)* — Siebmethoden können gerade und ungerade Primfaktorzahl prinzipiell nicht trennen — genau das misst μ(n).
+>   *Fluchtbedingung:* Ein bilinearer Input (Typ-II-Summen), ein Spektralinput (automorphe Formen) oder eine andere Quelle von Kancellation, die nicht aus dem Sieb selbst kommt.
+> - **Nicht-kanonischer Operator** *(Tier 2)* — Ein Hilbert–Pólya-Operator wird konstruiert, um das richtige Spektrum zu haben, statt aus der Arithmetik zu entstehen.
+>   *Fluchtbedingung:* Der Operator muss auf einem arithmetisch definierten Raum leben (Adele, arithmetic site, gefolierter Raum) UND eine Spurformel erfüllen, deren geometrische Seite die Primzahlterme der expliziten Formel liefert. Selbstadjungiertheit muss auf einem konkret angegebenen Definitionsbereich bewiesen sein, nicht behauptet.
+> - **Numerische Extrapolation** *(Tier 3)* — Aus endlicher Rechnung wird auf asymptotisches Verhalten geschlossen — die RH-Landschaft hat dafür berüchtigte Gegenbeispiele.
+>   *Fluchtbedingung:* Nicht überwindbar, nur vermeidbar: Numerik darf Hypothesen erzeugen und widerlegen, aber nie stützen. Ein rigoroses Intervall-Zertifikat (doc-54) ist etwas anderes als eine Stichprobe.
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
+> [!abstract]- Graph-Nachbarn (13)
 > - *ist Evidenz für* → **Euler-Produkt (Multiplikativität)** — Davenport–Heilbronn: ohne Euler-Produkt Off-Line-Nullstellen ⇒ Euler-Produkt nötig.
 > - *ist Obstruktion für* → **Riemann-Vermutung (RH)** — Sammlung der Barrieren (Parität, Mertens/Skewes-Warnung).
 > - ← *gestützt durch* [[16_Mertens_function_Riesz_criterion|16 · Mertens-Funktion & Riesz-Kriterium]] — Widerlegte Mertens-Vermutung: numerische Evidenz täuscht (Warnung).
 > - ← *gestützt durch* [[39_Cramer_probabilistic_model|39 · Cramér-Modell & probabilistische Heuristiken der Pr…]] — Maier-Satz: probabilistisches Modell im Detail falsch (Warnung).
+> - ← *gestützt durch* [[73_Tate_thesis_adelic_analysis|73 · Tates These & adelische Analysis]] — Erklärt begrifflich, warum die Funktionalgleichung allein nichts erzwingt.
+> - ← *gestützt durch* [[77_Bagchi_strong_recurrence|77 · Bagchis Satz]] — Schärfste Formulierung, warum weiche Funktionentheorie nicht reicht.
+> - ← *Spezialfall von* [[68_Beurling_generalized_primes|68 · Beurlingsche verallgemeinerte Primzahlen]] — Zweite Säule neben Davenport–Heilbronn: auch Multiplikativität allein genügt nicht.
+> - ← *Spezialfall von* [[55_failure_taxonomy|55 · Muster im Scheitern]] — Diagnose-Ebene über den Obstruktionen.
+> - ← *widerlegt* [[67_Turan_power_sums_partial_sums|67 · Turáns Potenzsummen-Programm & die Partialsummen vo…]] — Montgomery 1983: ζ_N hat Nullstellen rechts von Re=1 — Prämisse falsch.
 > - ← *wird benutzt von* [[55_failure_taxonomy|55 · Muster im Scheitern]] — Aggregiert die Obstruktionen zu einer Blocker-Taxonomie (Grund -> Ansaetze).
 > - ← *wird benutzt von* [[59_invariants_test_vectors|59 · Invarianten & Testvektoren]] — Ergaenzt die Anti-Crackpot-Checkliste um die Ueberschuss-Pruefung.
 > - ← *wird benutzt von* [[60_counterexample_oracle|60 · Das Gegenbeispiel-Orakel]] — Macht die Davenport-Heilbronn-Obstruktion maschinell pruefbar.
+> - ← *wird benutzt von* [[69_Mobius_randomness_Chowla_Sarnak|69 · Möbius-Zufälligkeit]] — Paritätsproblem (Selberg) als strukturelle Grenze.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 

@@ -83,6 +83,26 @@ Die Determinante det_∞ (zeta-regularisiert) und die benötigte H¹-Kohomologie
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `algebraic-geometric` |
+> | Implikation | `conditional` |
+> | Euler-Produkt | `essential` |
+> | Positivität | `must-prove` |
+> | Strenge | `program` |
+> | Evidenz | `medium` |
+> | Testbar | `low` |
+> | Formalisierbar | `low` |
+> 
+> **Offener Kernschritt:** Spec ℤ ×_𝔽₁ Spec ℤ als geometrisches Objekt konstruieren und Weil-Positivität darauf beweisen.
+> 
+> **Hebel:** Würde Weils Beweis wörtlich übertragbar machen.
+> 
+> **Fehlermodi:** [[F10_analogy-transfer-gap|F10 Fehlende Geometrie über Spec(ℤ)]] · [[F2_positivity-assumed|F2 Zirkuläre Positivität]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-30`
+
 > [!warning]- Blocker — woran dieser Ansatz hängt (1)
 > - **Fehlende Geometrie über Spec(ℤ)** *(Tier 2)* — Der bewiesene Funktionenkörperfall braucht eine Fläche C×_𝔽 C; das Analogon Spec(ℤ)×_{𝔽₁}Spec(ℤ) existiert nicht.
 >   *Fluchtbedingung:* Konstruktion einer Kohomologietheorie über Spec(ℤ) mit (a) Lefschetz-Formel, die die explizite Formel reproduziert, (b) Poincaré-Dualität, (c) einem Positivitäts-/Index-Satz (Hodge-Index-Analogon). Alle drei, nicht nur (a).
@@ -94,9 +114,10 @@ Die Determinante det_∞ (zeta-regularisiert) und die benötigte H¹-Kohomologie
 > **Es fehlt:** Eine Kohomologietheorie über Spec(ℤ) mit Lefschetz-Formel, Poincaré-Dualität UND einem Hodge-Index-Analogon. Alle drei zusammen.
 > **Typ:** fehlendes objekt · Bewertung: [[58_gap_registry_near_miss]]
 
-> [!abstract]- Graph-Nachbarn (2)
+> [!abstract]- Graph-Nachbarn (3)
 > - *versucht Transfer von* → **Geometrie-Transfer (Funktionenkörper→ℤ)** — 𝔽₁/arithmetic site: Weil-Beweis auf ℤ übertragen.
 > - *benutzt* → [[34_Bost_Connes_system|34 · Bost–Connes-System]] — Bost–Connes liefert Galois-/Frobenius-Symmetrie fürs 𝔽₁-Programm.
+> - ← *ist Reduktionsziel von* [[72_Arakelov_geometry_SpecZ_compactification|72 · Arakelov-Geometrie & die Kompaktifizierung von Spec…]] — Für die fehlende zweite Dimension braucht man Spec ℤ ×_{𝔽₁} Spec ℤ.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 

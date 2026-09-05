@@ -1,0 +1,949 @@
+{
+  "_comment": "Strukturierte Profile aller RH-Ansätze für Vergleich (kb/compare.py) und Fehleranalyse. Achsen siehe 'axes'. Prosa: docs/69 (Vergleich) und docs/68 (Fehlermodi).",
+  "axes": {
+    "family": [
+      "spectral",
+      "analytic",
+      "algebraic-geometric",
+      "probabilistic",
+      "physical",
+      "criterion",
+      "computational",
+      "meta"
+    ],
+    "equivalence": [
+      "equivalent",
+      "conditional",
+      "partial",
+      "model",
+      "none"
+    ],
+    "euler_product": [
+      "essential",
+      "partial",
+      "none"
+    ],
+    "positivity": [
+      "proves",
+      "assumes",
+      "must-prove",
+      "n/a"
+    ],
+    "rigor": [
+      "theorem",
+      "program",
+      "model",
+      "heuristic",
+      "refuted"
+    ],
+    "evidence": [
+      "strong",
+      "medium",
+      "weak",
+      "n/a"
+    ],
+    "testable": [
+      "high",
+      "medium",
+      "low"
+    ],
+    "formalizable": [
+      "high",
+      "medium",
+      "low"
+    ]
+  },
+  "axis_help": {
+    "equivalence": "equivalent = beweisbar RH-äquivalent; conditional = würde RH liefern, wenn ein offener Schritt gelingt; partial = liefert Teilresultate; model = beschreibt nur; none = kein Implikationspfeil",
+    "euler_product": "Benutzt der Ansatz Multiplikativität wesentlich? 'none' ist nach Davenport-Heilbronn (F1) fatal für einen Beweisanspruch.",
+    "positivity": "Rolle der Positivität (Weil/Li/de Branges): proves = leitet sie her; assumes = setzt sie voraus (zirkulär); must-prove = sie ist der offene Kernschritt",
+    "testable": "Wie gut lässt sich der Ansatz numerisch prüfen/experimentell ausreizen (Experiment-Logbuch)?",
+    "formalizable": "Realistische Chance, Teilresultate in Lean/mathlib zu formalisieren (docs/37, 54)"
+  },
+  "approaches": [
+    {
+      "id": "app-hardy",
+      "doc": "doc-03",
+      "label": "Hardy: unendlich viele Nullstellen auf der Geraden",
+      "family": "analytic",
+      "status": "proven",
+      "equivalence": "partial",
+      "euler_product": "partial",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "n/a",
+      "testable": "medium",
+      "formalizable": "high",
+      "failure_modes": [
+        "F13"
+      ],
+      "open_step": "Von 'unendlich viele' zu 'alle' - der Sprung ist qualitativ, nicht quantitativ.",
+      "lever": "Erster Beweis, dass die Gerade überhaupt ausgezeichnet ist."
+    },
+    {
+      "id": "app-levinson",
+      "doc": "doc-04",
+      "label": "Levinson/Conrey: positiver Anteil (>41%)",
+      "family": "analytic",
+      "status": "proven",
+      "equivalence": "partial",
+      "euler_product": "essential",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "n/a",
+      "testable": "medium",
+      "formalizable": "medium",
+      "failure_modes": [
+        "F13"
+      ],
+      "open_step": "Mollifier-Länge θ < 4/7; Anteil 1 braucht Momente, die ohne RH unbekannt sind.",
+      "lever": "Der einzige quantitative Fortschritt Richtung 'alle Nullstellen'."
+    },
+    {
+      "id": "app-hilbert-polya",
+      "doc": "doc-05",
+      "label": "Hilbert-Pólya: selbstadjungierter Operator",
+      "family": "spectral",
+      "status": "open",
+      "equivalence": "conditional",
+      "euler_product": "partial",
+      "positivity": "must-prove",
+      "rigor": "program",
+      "evidence": "strong",
+      "testable": "low",
+      "formalizable": "low",
+      "failure_modes": [
+        "F3",
+        "F4"
+      ],
+      "open_step": "Einen kanonisch aus der Arithmetik stammenden Operator konstruieren, dessen Selbstadjungiertheit unabhängig beweisbar ist.",
+      "lever": "Würde RH sofort liefern; erklärt die GUE-Statistik."
+    },
+    {
+      "id": "app-montgomery",
+      "doc": "doc-06",
+      "label": "Montgomery-Paarkorrelation / GUE",
+      "family": "probabilistic",
+      "status": "proven",
+      "equivalence": "model",
+      "euler_product": "essential",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "strong",
+      "testable": "high",
+      "formalizable": "low",
+      "failure_modes": [
+        "F14",
+        "F13"
+      ],
+      "open_step": "Trägerbedingung |u|<1 aufheben - erfordert Primzahl-Korrelationen (Hardy-Littlewood).",
+      "lever": "Stärkste Evidenz für spektrale Herkunft der Nullstellen."
+    },
+    {
+      "id": "app-keating-snaith",
+      "doc": "doc-07",
+      "label": "Keating-Snaith: Momente via CUE",
+      "family": "probabilistic",
+      "status": "open",
+      "equivalence": "model",
+      "euler_product": "essential",
+      "positivity": "n/a",
+      "rigor": "heuristic",
+      "evidence": "strong",
+      "testable": "high",
+      "formalizable": "low",
+      "failure_modes": [
+        "F14"
+      ],
+      "open_step": "Momente 2k für k>2 sind offen; Splitting-Vermutung unbewiesen.",
+      "lever": "Quantitativ scharfe Vorhersagen - starker Konsistenztest."
+    },
+    {
+      "id": "app-berry-keating",
+      "doc": "doc-08",
+      "label": "Berry-Keating H = xp",
+      "family": "physical",
+      "status": "open",
+      "equivalence": "conditional",
+      "euler_product": "none",
+      "positivity": "must-prove",
+      "rigor": "heuristic",
+      "evidence": "medium",
+      "testable": "low",
+      "formalizable": "low",
+      "failure_modes": [
+        "F4",
+        "F3",
+        "F1"
+      ],
+      "open_step": "Regularisierung von xp zu einem Operator mit diskretem Spektrum und korrekter Zählfunktion; Primzahlen tauchen nur als periodische Orbits 'per Hand' auf.",
+      "lever": "Semiklassische Zählfunktion reproduziert N(T) exakt."
+    },
+    {
+      "id": "app-bbm",
+      "doc": "doc-09",
+      "label": "Bender-Brody-Müller PT-Hamiltonian",
+      "family": "physical",
+      "status": "refuted",
+      "equivalence": "conditional",
+      "euler_product": "none",
+      "positivity": "assumes",
+      "rigor": "refuted",
+      "evidence": "weak",
+      "testable": "low",
+      "formalizable": "low",
+      "failure_modes": [
+        "F3",
+        "F4",
+        "F1"
+      ],
+      "open_step": "Der behauptete Similaritätstransformations-Schritt setzt die Realität des Spektrums voraus - zirkulär.",
+      "lever": "Zeigt anschaulich, wie ein Operator-Ansatz genau scheitert."
+    },
+    {
+      "id": "app-connes",
+      "doc": "doc-10",
+      "label": "Connes: NKG-Spurformel",
+      "family": "spectral",
+      "status": "open",
+      "equivalence": "conditional",
+      "euler_product": "essential",
+      "positivity": "must-prove",
+      "rigor": "program",
+      "evidence": "strong",
+      "testable": "low",
+      "formalizable": "low",
+      "failure_modes": [
+        "F2",
+        "F10"
+      ],
+      "open_step": "Weil-Positivität des Spurterms unabhängig beweisen - im geometrischen Fall ist das der Hodge-Index-Satz, über Z fehlt die Fläche.",
+      "lever": "Explizite Formel wird zur Spurformel; RH = Positivität."
+    },
+    {
+      "id": "app-connes-moscovici",
+      "doc": "doc-11",
+      "label": "Connes-Moscovici: prolate Operatoren",
+      "family": "spectral",
+      "status": "open",
+      "equivalence": "partial",
+      "euler_product": "essential",
+      "positivity": "must-prove",
+      "rigor": "program",
+      "evidence": "medium",
+      "testable": "medium",
+      "formalizable": "low",
+      "failure_modes": [
+        "F9",
+        "F2"
+      ],
+      "open_step": "Vom abgeschnittenen (skalierungsinvarianten) Modell zum unbeschränkten Limes.",
+      "lever": "Konkreter, numerisch zugänglicher Operator mit Bezug zu ζ."
+    },
+    {
+      "id": "app-zero-free",
+      "doc": "doc-12",
+      "label": "Nullstellenfreie Regionen",
+      "family": "analytic",
+      "status": "proven",
+      "equivalence": "partial",
+      "euler_product": "essential",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "n/a",
+      "testable": "high",
+      "formalizable": "medium",
+      "failure_modes": [
+        "F13",
+        "F12"
+      ],
+      "open_step": "Vinogradov-Korobov-Region ist seit 1958 nicht substanziell verbessert; jede Verbesserung Richtung fester Streifen wäre ein Durchbruch.",
+      "lever": "Einzige Methode, die Nullstellen wirklich ausschließt - nur eben nicht genug."
+    },
+    {
+      "id": "app-nyman-beurling",
+      "doc": "doc-13",
+      "label": "Nyman-Beurling / Baez-Duarte",
+      "family": "criterion",
+      "status": "open",
+      "equivalence": "equivalent",
+      "euler_product": "partial",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "medium",
+      "testable": "high",
+      "formalizable": "medium",
+      "failure_modes": [
+        "F11"
+      ],
+      "open_step": "Approximationsgrad d_N -> 0 beweisen; bekannte untere Schranken sind vom richtigen Typ, obere fehlen.",
+      "lever": "Sehr konkretes, numerisch messbares Kriterium (d_N)."
+    },
+    {
+      "id": "app-li-weil",
+      "doc": "doc-14",
+      "label": "Li-Kriterium / Weil-Positivität",
+      "family": "criterion",
+      "status": "open",
+      "equivalence": "equivalent",
+      "euler_product": "essential",
+      "positivity": "must-prove",
+      "rigor": "theorem",
+      "evidence": "medium",
+      "testable": "high",
+      "formalizable": "medium",
+      "failure_modes": [
+        "F2",
+        "F11"
+      ],
+      "open_step": "λ_n >= 0 für alle n zeigen, ohne die Nullstellenlage zu benutzen.",
+      "lever": "Verbindet Numerik (λ_n berechenbar) mit der Positivitätsfrage."
+    },
+    {
+      "id": "app-robin",
+      "doc": "doc-15",
+      "label": "Robins Ungleichung (Teilersumme)",
+      "family": "criterion",
+      "status": "open",
+      "equivalence": "equivalent",
+      "euler_product": "partial",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "medium",
+      "testable": "high",
+      "formalizable": "high",
+      "failure_modes": [
+        "F11",
+        "F6"
+      ],
+      "open_step": "Kein Zugang zu σ(n) jenseits von Extremalzahlen; Kriterium ist so hart wie RH.",
+      "lever": "Völlig elementare Formulierung - didaktisch und formalisierbar."
+    },
+    {
+      "id": "app-mertens-riesz",
+      "doc": "doc-16",
+      "label": "Mertens-Funktion / Riesz-Kriterium",
+      "family": "criterion",
+      "status": "open",
+      "equivalence": "equivalent",
+      "euler_product": "essential",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "weak",
+      "testable": "high",
+      "formalizable": "medium",
+      "failure_modes": [
+        "F8",
+        "F11",
+        "F6"
+      ],
+      "open_step": "M(x) << x^(1/2+eps) - blockiert durch die Paritätsbarriere; Mertens-Vermutung ist widerlegt.",
+      "lever": "Direkteste Verbindung zwischen Möbius-Zufälligkeit und RH."
+    },
+    {
+      "id": "app-lindeloef",
+      "doc": "doc-17",
+      "label": "Lindelöf- & Dichte-Hypothese",
+      "family": "analytic",
+      "status": "open",
+      "equivalence": "partial",
+      "euler_product": "essential",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "medium",
+      "testable": "medium",
+      "formalizable": "medium",
+      "failure_modes": [
+        "F13"
+      ],
+      "open_step": "Lindelöf folgt aus RH, impliziert sie aber nicht; selbst Lindelöf ist offen.",
+      "lever": "Realistisches Zwischenziel mit messbarem Fortschritt (Exponenten)."
+    },
+    {
+      "id": "app-weil-deligne",
+      "doc": "doc-18",
+      "label": "Weil-Vermutungen / RH über endlichen Körpern",
+      "family": "algebraic-geometric",
+      "status": "proven",
+      "equivalence": "partial",
+      "euler_product": "essential",
+      "positivity": "proves",
+      "rigor": "theorem",
+      "evidence": "n/a",
+      "testable": "low",
+      "formalizable": "low",
+      "failure_modes": [
+        "F10"
+      ],
+      "open_step": "Transfer nach Z: es fehlen Fläche, Frobenius und Polarisierung.",
+      "lever": "Der einzige vollständig bewiesene RH-Fall - Blaupause für alles Weitere."
+    },
+    {
+      "id": "app-selberg-trace",
+      "doc": "doc-19",
+      "label": "Selberg-Spurformel / Selberg-Zeta",
+      "family": "spectral",
+      "status": "proven",
+      "equivalence": "partial",
+      "euler_product": "essential",
+      "positivity": "proves",
+      "rigor": "theorem",
+      "evidence": "n/a",
+      "testable": "medium",
+      "formalizable": "low",
+      "failure_modes": [
+        "F10"
+      ],
+      "open_step": "Für ζ fehlt der Raum (Geodäten <-> Primzahlen ist Analogie, kein Objekt).",
+      "lever": "Zweites bewiesenes Analogon - und zwar ein spektrales."
+    },
+    {
+      "id": "app-de-branges",
+      "doc": "doc-20",
+      "label": "de Branges: Hilberträume ganzer Funktionen",
+      "family": "criterion",
+      "status": "refuted",
+      "equivalence": "conditional",
+      "euler_product": "none",
+      "positivity": "assumes",
+      "rigor": "refuted",
+      "evidence": "weak",
+      "testable": "low",
+      "formalizable": "low",
+      "failure_modes": [
+        "F2",
+        "F1",
+        "F15"
+      ],
+      "open_step": "Die benutzte Positivitätsbedingung ist für ζ nachweislich verletzt (Conrey-Li-Gegenbeispiel).",
+      "lever": "Der Apparat selbst ist korrekt und wertvoll - nur der RH-Schluss nicht."
+    },
+    {
+      "id": "app-guth-maynard",
+      "doc": "doc-22",
+      "label": "Guth-Maynard: Dichteschranke (2024)",
+      "family": "analytic",
+      "status": "proven",
+      "equivalence": "partial",
+      "euler_product": "essential",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "n/a",
+      "testable": "medium",
+      "formalizable": "low",
+      "failure_modes": [
+        "F13"
+      ],
+      "open_step": "Verbesserte Exponenten bleiben weit von der Dichtehypothese entfernt.",
+      "lever": "Erster Fortschritt bei Ingham-Schranken seit 1940 - Methode neu."
+    },
+    {
+      "id": "app-dbn",
+      "doc": "doc-23",
+      "label": "de-Bruijn-Newman-Konstante / Polymath15",
+      "family": "analytic",
+      "status": "proven",
+      "equivalence": "conditional",
+      "euler_product": "essential",
+      "positivity": "must-prove",
+      "rigor": "theorem",
+      "evidence": "strong",
+      "testable": "high",
+      "formalizable": "medium",
+      "failure_modes": [
+        "F9"
+      ],
+      "open_step": "Lambda <= 0 zeigen (Lambda >= 0 ist bewiesen); Lambda = 0 wäre äquivalent zur RH.",
+      "lever": "Ein einziger reeller Parameter kodiert die RH - ideal für Numerik."
+    },
+    {
+      "id": "app-computational",
+      "doc": "doc-24",
+      "label": "Numerische Verifikation (Odlyzko, Platt)",
+      "family": "computational",
+      "status": "proven",
+      "equivalence": "none",
+      "euler_product": "partial",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "strong",
+      "testable": "high",
+      "formalizable": "medium",
+      "failure_modes": [
+        "F6"
+      ],
+      "open_step": "Prinzipiell keiner - Verifikation kann RH nie beweisen, nur widerlegen.",
+      "lever": "Kann die RH falsifizieren; liefert die Daten für alle Statistik-Tests."
+    },
+    {
+      "id": "app-jensen-polya",
+      "doc": "doc-29",
+      "label": "Jensen-Pólya / Laguerre-Pólya (GORZ)",
+      "family": "analytic",
+      "status": "open",
+      "equivalence": "equivalent",
+      "euler_product": "partial",
+      "positivity": "must-prove",
+      "rigor": "theorem",
+      "evidence": "medium",
+      "testable": "high",
+      "formalizable": "medium",
+      "failure_modes": [
+        "F11",
+        "F13"
+      ],
+      "open_step": "Hyperbolizität der Jensen-Polynome für ALLE Grade d bei festem n (bewiesen: jedes feste d für große n).",
+      "lever": "Ein bewiesener Teilfortschritt (GORZ 2019) mit klarer Fortsetzungsrichtung."
+    },
+    {
+      "id": "app-f1",
+      "doc": "doc-30",
+      "label": "Körper mit einem Element / arithmetic site",
+      "family": "algebraic-geometric",
+      "status": "open",
+      "equivalence": "conditional",
+      "euler_product": "essential",
+      "positivity": "must-prove",
+      "rigor": "program",
+      "evidence": "medium",
+      "testable": "low",
+      "formalizable": "low",
+      "failure_modes": [
+        "F10",
+        "F2"
+      ],
+      "open_step": "Spec ℤ ×_𝔽₁ Spec ℤ als geometrisches Objekt konstruieren und Weil-Positivität darauf beweisen.",
+      "lever": "Würde Weils Beweis wörtlich übertragbar machen."
+    },
+    {
+      "id": "app-deninger",
+      "doc": "doc-31",
+      "label": "Deninger: Kohomologie gefolierter Räume",
+      "family": "algebraic-geometric",
+      "status": "open",
+      "equivalence": "conditional",
+      "euler_product": "essential",
+      "positivity": "must-prove",
+      "rigor": "program",
+      "evidence": "medium",
+      "testable": "low",
+      "formalizable": "low",
+      "failure_modes": [
+        "F10",
+        "F2"
+      ],
+      "open_step": "Den dynamischen Raum mit R-Fluss tatsächlich konstruieren (bisher nur axiomatisch gefordert).",
+      "lever": "Formal perfekte Uebersetzung: Nullstellen = Eigenwerte des Flusses."
+    },
+    {
+      "id": "app-landau-siegel",
+      "doc": "doc-32",
+      "label": "Landau-Siegel-Nullstellen (Zhang 2022)",
+      "family": "analytic",
+      "status": "open",
+      "equivalence": "partial",
+      "euler_product": "essential",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "medium",
+      "testable": "low",
+      "formalizable": "low",
+      "failure_modes": [
+        "F12"
+      ],
+      "open_step": "Ausschluss reeller Ausnahmennullstellen; Siegels Satz bleibt ineffektiv.",
+      "lever": "Wichtig für GRH-Anwendungen; Fortschritt ist quantifizierbar."
+    },
+    {
+      "id": "app-lee-yang",
+      "doc": "doc-33",
+      "label": "Statistische Mechanik / Lee-Yang",
+      "family": "physical",
+      "status": "open",
+      "equivalence": "model",
+      "euler_product": "partial",
+      "positivity": "must-prove",
+      "rigor": "heuristic",
+      "evidence": "medium",
+      "testable": "medium",
+      "formalizable": "low",
+      "failure_modes": [
+        "F14",
+        "F1"
+      ],
+      "open_step": "Ein Modell finden, dessen Lee-Yang-Kreis genau die kritische Gerade ist - bisher nur Analogie.",
+      "lever": "Erklärt, warum Positivität und Nullstellenlage zusammenhängen."
+    },
+    {
+      "id": "app-bost-connes",
+      "doc": "doc-34",
+      "label": "Bost-Connes-Quantenstatistik",
+      "family": "spectral",
+      "status": "open",
+      "equivalence": "model",
+      "euler_product": "essential",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "medium",
+      "testable": "low",
+      "formalizable": "low",
+      "failure_modes": [
+        "F14",
+        "F10"
+      ],
+      "open_step": "Der Phasenübergang kodiert die Klassenkörpertheorie, nicht die Nullstellenlage.",
+      "lever": "ζ als Zustandssumme - konzeptuell schönste Realisierung."
+    },
+    {
+      "id": "app-lapidus",
+      "doc": "doc-44",
+      "label": "Lapidus: fraktale Saiten / Spektraloperator",
+      "family": "spectral",
+      "status": "open",
+      "equivalence": "equivalent",
+      "euler_product": "partial",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "medium",
+      "testable": "medium",
+      "formalizable": "low",
+      "failure_modes": [
+        "F11",
+        "F9"
+      ],
+      "open_step": "Quasi-Invertierbarkeit des Spektraloperators für alle c ungleich 1/2 zeigen.",
+      "lever": "Bewiesene Äquivalenz in geometrischer Sprache - unterrepräsentiert."
+    },
+    {
+      "id": "app-voronin",
+      "doc": "doc-46",
+      "label": "Voronin-Universalität",
+      "family": "analytic",
+      "status": "proven",
+      "equivalence": "none",
+      "euler_product": "essential",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "n/a",
+      "testable": "medium",
+      "formalizable": "low",
+      "failure_modes": [
+        "F7"
+      ],
+      "open_step": "Keiner - der Satz ist eine Obstruktion, kein Ansatz.",
+      "lever": "Schließt eine ganze Klasse von Beweisversuchen aus."
+    },
+    {
+      "id": "app-meyer-kurokawa",
+      "doc": "doc-48",
+      "label": "Meyer (Distributionen) / Kurokawa (absolute Zeta)",
+      "family": "spectral",
+      "status": "open",
+      "equivalence": "partial",
+      "euler_product": "essential",
+      "positivity": "must-prove",
+      "rigor": "program",
+      "evidence": "weak",
+      "testable": "low",
+      "formalizable": "low",
+      "failure_modes": [
+        "F3",
+        "F10"
+      ],
+      "open_step": "Meyers Spektralrealisierung existiert OHNE RH - genau deshalb erzwingt sie die Lage nicht.",
+      "lever": "Zeigt präzise, was eine Spektralrealisierung leisten muss (und was nicht reicht)."
+    },
+    {
+      "id": "app-connes-truncated",
+      "doc": "doc-52",
+      "label": "Abgeschnittene Weil-Quadratform (Connes-van Suijlekom)",
+      "family": "spectral",
+      "status": "open",
+      "equivalence": "conditional",
+      "euler_product": "essential",
+      "positivity": "must-prove",
+      "rigor": "theorem",
+      "evidence": "strong",
+      "testable": "high",
+      "formalizable": "medium",
+      "failure_modes": [
+        "F9",
+        "F2"
+      ],
+      "open_step": "Gleichmäßiger Grenzübergang Cutoff -> unendlich (Turáns Partialsummen sind die Warnung).",
+      "lever": "Pro Cutoff beweisbare Nullstellenlage + endliche Matrizen = numerisch angreifbar."
+    },
+    {
+      "id": "app-pair-correlation-ah",
+      "doc": "doc-53",
+      "label": "Paarkorrelation ohne RH / Alternative Hypothese",
+      "family": "probabilistic",
+      "status": "open",
+      "equivalence": "partial",
+      "euler_product": "essential",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "medium",
+      "testable": "high",
+      "formalizable": "low",
+      "failure_modes": [
+        "F14",
+        "F13"
+      ],
+      "open_step": "AH ausschließen - mit heutiger Trägerbedingung nicht möglich.",
+      "lever": "PCC allein liefert 100% einfache Nullstellen auf der Geraden."
+    },
+    {
+      "id": "app-speiser",
+      "doc": "doc-66",
+      "label": "Speiser: Nullstellen von ζ′",
+      "family": "criterion",
+      "status": "open",
+      "equivalence": "equivalent",
+      "euler_product": "partial",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "medium",
+      "testable": "high",
+      "formalizable": "high",
+      "failure_modes": [
+        "F11",
+        "F13"
+      ],
+      "open_step": "Ueber ζ′ links der Geraden weiß man nichts, was man nicht über ζ wüsste.",
+      "lever": "Die einzige Äquivalenz, aus der quantitativer Fortschritt floss (Levinson)."
+    },
+    {
+      "id": "app-turan",
+      "doc": "doc-67",
+      "label": "Turán: Partialsummen von ζ",
+      "family": "analytic",
+      "status": "refuted",
+      "equivalence": "conditional",
+      "euler_product": "none",
+      "positivity": "n/a",
+      "rigor": "refuted",
+      "evidence": "n/a",
+      "testable": "high",
+      "formalizable": "medium",
+      "failure_modes": [
+        "F9",
+        "F1"
+      ],
+      "open_step": "Prämisse widerlegt: Montgomery 1983 zeigt Nullstellen von zeta_N rechts von Re=1.",
+      "lever": "Präzedenzfall dafür, dass Abschneide-Modelle NICHT vererben."
+    },
+    {
+      "id": "app-beurling",
+      "doc": "doc-68",
+      "label": "Beurling-Systeme (Obstruktion)",
+      "family": "analytic",
+      "status": "proven",
+      "equivalence": "none",
+      "euler_product": "essential",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "n/a",
+      "testable": "medium",
+      "formalizable": "medium",
+      "failure_modes": [
+        "F1"
+      ],
+      "open_step": "Keiner - Negativresultat: Euler-Produkt + Dichte reichen nicht.",
+      "lever": "Zweite Säule der Einkreisung neben Davenport-Heilbronn."
+    },
+    {
+      "id": "app-mobius-randomness",
+      "doc": "doc-69",
+      "label": "Möbius-Zufälligkeit (Chowla/Sarnak)",
+      "family": "probabilistic",
+      "status": "open",
+      "equivalence": "none",
+      "euler_product": "essential",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "medium",
+      "testable": "high",
+      "formalizable": "low",
+      "failure_modes": [
+        "F8",
+        "F14"
+      ],
+      "open_step": "Korrelationsschranken liefern keine Einzelsummen-Schranke; Paritätsbarriere.",
+      "lever": "Präzisiert, was 'mu ist zufällig' heißen darf - und was nicht."
+    },
+    {
+      "id": "app-langlands",
+      "doc": "doc-70",
+      "label": "Langlands-Funktorialität",
+      "family": "algebraic-geometric",
+      "status": "open",
+      "equivalence": "none",
+      "euler_product": "essential",
+      "positivity": "n/a",
+      "rigor": "program",
+      "evidence": "medium",
+      "testable": "low",
+      "formalizable": "low",
+      "failure_modes": [
+        "F10"
+      ],
+      "open_step": "Funktorialität organisiert die Familie, sagt aber nichts über Nullstellenlage.",
+      "lever": "Liefert Nichtverschwinden bei Re=1, Subkonvexität, Familien-Statistik."
+    },
+    {
+      "id": "app-standard-conjectures",
+      "doc": "doc-71",
+      "label": "Standardvermutungen / Motive",
+      "family": "algebraic-geometric",
+      "status": "open",
+      "equivalence": "partial",
+      "euler_product": "essential",
+      "positivity": "proves",
+      "rigor": "theorem",
+      "evidence": "n/a",
+      "testable": "low",
+      "formalizable": "low",
+      "failure_modes": [
+        "F10"
+      ],
+      "open_step": "Analogon der Hodge-Standardvermutung über Z formulieren - dazu fehlt die Varietät.",
+      "lever": "Zeigt exakt, woher Positivität im bewiesenen Fall kommt."
+    },
+    {
+      "id": "app-arakelov",
+      "doc": "doc-72",
+      "label": "Arakelov-Geometrie / Spec ℤ",
+      "family": "algebraic-geometric",
+      "status": "open",
+      "equivalence": "conditional",
+      "euler_product": "essential",
+      "positivity": "proves",
+      "rigor": "theorem",
+      "evidence": "medium",
+      "testable": "low",
+      "formalizable": "low",
+      "failure_modes": [
+        "F10"
+      ],
+      "open_step": "Spec ℤ ist eindimensional; das Produkt über einer absoluten Basis fehlt.",
+      "lever": "Arithmetischer Hodge-Index-Satz existiert bereits (Faltings-Hriljac)."
+    },
+    {
+      "id": "app-tate",
+      "doc": "doc-73",
+      "label": "Tates These / adelische Analysis",
+      "family": "spectral",
+      "status": "proven",
+      "equivalence": "none",
+      "euler_product": "essential",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "n/a",
+      "testable": "low",
+      "formalizable": "medium",
+      "failure_modes": [
+        "F1"
+      ],
+      "open_step": "Keiner - liefert Funktionalgleichung, nicht Nullstellenlage.",
+      "lever": "Gemeinsame Sprache aller spektralen Programme; erklärt, was gratis ist."
+    },
+    {
+      "id": "app-hybrid",
+      "doc": "doc-74",
+      "label": "Hybrides Euler-Hadamard-Produkt",
+      "family": "probabilistic",
+      "status": "open",
+      "equivalence": "model",
+      "euler_product": "essential",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "strong",
+      "testable": "high",
+      "formalizable": "low",
+      "failure_modes": [
+        "F14"
+      ],
+      "open_step": "Splitting-Vermutung (Unabhängigkeit von Primzahl- und Nullstellenfaktor).",
+      "lever": "Erklärt strukturell, warum RMT funktioniert und wo die Arithmetik sitzt."
+    },
+    {
+      "id": "app-extreme-values",
+      "doc": "doc-75",
+      "label": "Extremwerte / FHK / multiplikatives Chaos",
+      "family": "probabilistic",
+      "status": "open",
+      "equivalence": "model",
+      "euler_product": "essential",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "strong",
+      "testable": "high",
+      "formalizable": "low",
+      "failure_modes": [
+        "F14"
+      ],
+      "open_step": "Volle FHK-Vermutung; Lücke zwischen Omega-Resultaten und Lindelöf.",
+      "lever": "Scharfer, numerisch prüfbarer Konsistenztest für die RH."
+    },
+    {
+      "id": "app-higher-correlations",
+      "doc": "doc-76",
+      "label": "Höhere Korrelationen (Rudnick-Sarnak)",
+      "family": "probabilistic",
+      "status": "proven",
+      "equivalence": "model",
+      "euler_product": "essential",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "strong",
+      "testable": "high",
+      "formalizable": "low",
+      "failure_modes": [
+        "F14",
+        "F13"
+      ],
+      "open_step": "Trägerbedingung Σ|u_j|<2 - jenseits davon braucht man Primzahl-Korrelationen.",
+      "lever": "GUE über alle Ebenen bewiesen (im Trägerbereich) - starke Strukturevidenz."
+    },
+    {
+      "id": "app-bagchi",
+      "doc": "doc-77",
+      "label": "Bagchi: starke Rekurrenz",
+      "family": "criterion",
+      "status": "open",
+      "equivalence": "equivalent",
+      "euler_product": "none",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "weak",
+      "testable": "medium",
+      "formalizable": "low",
+      "failure_modes": [
+        "F7",
+        "F11"
+      ],
+      "open_step": "Selbstbezüglich: Voronin verlangt Nullstellenfreiheit auf K - also genau die RH.",
+      "lever": "Formuliert präzise, warum weiche Funktionentheorie nicht reichen kann."
+    },
+    {
+      "id": "app-lean",
+      "doc": "doc-37",
+      "label": "Formalisierung in Lean/mathlib",
+      "family": "computational",
+      "status": "open",
+      "equivalence": "none",
+      "euler_product": "partial",
+      "positivity": "n/a",
+      "rigor": "theorem",
+      "evidence": "n/a",
+      "testable": "high",
+      "formalizable": "high",
+      "failure_modes": [
+        "F15"
+      ],
+      "open_step": "Kein RH-Beweis - aber der einzige Filter ohne Halluzinationsrisiko für Teilresultate.",
+      "lever": "Macht Teilfortschritte maschinenprüfbar und publizierbar."
+    }
+  ]
+}

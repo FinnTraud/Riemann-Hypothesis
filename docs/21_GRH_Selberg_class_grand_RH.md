@@ -93,9 +93,10 @@ Diese strukturübergreifende Universalität ist starke Evidenz für die Große R
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
-> [!abstract]- Graph-Nachbarn (2)
+> [!abstract]- Graph-Nachbarn (3)
 > - *ist Instanz von* → **Verallgemeinerte/Große RH** — GRH/Selberg-Klasse/Große RH.
 > - ← *wird benutzt von* [[43_Epstein_zeta_Selberg_class_rigidity|43 · Epstein-Zetafunktionen & Selberg-Klassen-Rigidität]] — Selberg-Klassen-Klassifikation (Kaczorowski–Perelli).
+> - ← *wird benutzt von* [[70_Langlands_functoriality_automorphic|70 · Langlands-Funktorialität & automorphe L-Funktionen]] — Selberg-Klasse als axiomatische Schattenversion der automorphen Welt.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 

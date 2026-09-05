@@ -119,6 +119,14 @@ Das ist der Standard, an dem sich auch die Experimente in `kb/research/` messen 
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!warning]- Blocker — woran dieser Ansatz hängt (2)
+> - **Ineffektive oder nicht gleichmaessige Konstanten** *(Tier 2)* — Schranken sind nicht explizit oder nicht gleichmaessig in Hoehe und Fuehrer.
+>   *Fluchtbedingung:* Alle Konstanten explizit angeben und Gleichmaessigkeit in T und im Fuehrer q nachweisen. Genau das leistet das ANTEDB-Programm (doc-54).
+> - **Nicht-Verifizierbarkeit** *(Tier 3)* — Es existiert kein prüfbarer Beweistext — entweder gar keiner, oder einer, dessen Grundlage unpubliziert ist, oder einer, den niemand mehr nachprüft.
+>   *Fluchtbedingung:* Ein vollständiger, öffentlicher, selbsttragender Beweistext — im Idealfall maschinengeprüft. Das ist die einzige Fluchtbedingung der Sammlung, die heute schon technisch erreichbar ist.
+> 
+> Vollständige Matrix: [[55_failure_taxonomy]]
+
 > [!abstract]- Graph-Nachbarn (6)
 > - *ist Evidenz für* → [[37_formalization_lean_proof_assistants|37 · Formalisierung]] — Der formalisierte starke Primzahlsatz zeigt, dass Lean analytische Zahlentheorie traegt.
 > - *ist Evidenz für* → [[28_AI_and_RH|28 · KI / Machine Learning und die Riemann-Vermutung]] — Autoformalisierung als konkreter KI-Beitrag im RH-Umfeld.

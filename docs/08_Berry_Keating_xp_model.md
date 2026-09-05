@@ -82,7 +82,29 @@ Connes' adelische Version (Dok. 10) liefert statt eines diskreten Emissionsspekt
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
-> [!warning]- Blocker — woran dieser Ansatz hängt (1)
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `physical` |
+> | Implikation | `conditional` |
+> | Euler-Produkt | `none` |
+> | Positivität | `must-prove` |
+> | Strenge | `heuristic` |
+> | Evidenz | `medium` |
+> | Testbar | `low` |
+> | Formalisierbar | `low` |
+> 
+> **Offener Kernschritt:** Regularisierung von xp zu einem Operator mit diskretem Spektrum und korrekter Zählfunktion; Primzahlen tauchen nur als periodische Orbits 'per Hand' auf.
+> 
+> **Hebel:** Semiklassische Zählfunktion reproduziert N(T) exakt.
+> 
+> **Fehlermodi:** [[F4_no-selfadjoint-realization|F4 Fehlende selbstadjungierte Realisierung]] · [[F3_non-canonical-operator|F3 Nicht-kanonischer Operator]] · [[F1_no-euler-product|F1 Euler-Blindheit]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-08`
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (2)
+> - **Fehlende selbstadjungierte Realisierung** *(Tier 2)* — Der Operator ist formal hingeschrieben, aber ohne Definitionsbereich, Randbedingungen und Nachweis eines diskreten Spektrums.
+>   *Fluchtbedingung:* Hilbertraum, Definitionsbereich und Randbedingungen explizit angeben und wesentliche Selbstadjungiertheit sowie Diskretheit des Spektrums beweisen -- nicht behaupten.
 > - **Nicht-kanonischer Operator** *(Tier 2)* — Ein Hilbert–Pólya-Operator wird konstruiert, um das richtige Spektrum zu haben, statt aus der Arithmetik zu entstehen.
 >   *Fluchtbedingung:* Der Operator muss auf einem arithmetisch definierten Raum leben (Adele, arithmetic site, gefolierter Raum) UND eine Spurformel erfüllen, deren geometrische Seite die Primzahlterme der expliziten Formel liefert. Selbstadjungiertheit muss auf einem konkret angegebenen Definitionsbereich bewiesen sein, nicht behauptet.
 > 

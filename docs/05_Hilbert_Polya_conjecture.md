@@ -73,7 +73,29 @@ Eine dazu äquivalente, operatorfreie Fassung (Dok. 29): RH ⟺ ξ liegt in der 
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
-> [!warning]- Blocker — woran dieser Ansatz hängt (1)
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `spectral` |
+> | Implikation | `conditional` |
+> | Euler-Produkt | `partial` |
+> | Positivität | `must-prove` |
+> | Strenge | `program` |
+> | Evidenz | `strong` |
+> | Testbar | `low` |
+> | Formalisierbar | `low` |
+> 
+> **Offener Kernschritt:** Einen kanonisch aus der Arithmetik stammenden Operator konstruieren, dessen Selbstadjungiertheit unabhängig beweisbar ist.
+> 
+> **Hebel:** Würde RH sofort liefern; erklärt die GUE-Statistik.
+> 
+> **Fehlermodi:** [[F3_non-canonical-operator|F3 Nicht-kanonischer Operator]] · [[F4_no-selfadjoint-realization|F4 Fehlende selbstadjungierte Realisierung]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-05`
+
+> [!warning]- Blocker — woran dieser Ansatz hängt (2)
+> - **Fehlende selbstadjungierte Realisierung** *(Tier 2)* — Der Operator ist formal hingeschrieben, aber ohne Definitionsbereich, Randbedingungen und Nachweis eines diskreten Spektrums.
+>   *Fluchtbedingung:* Hilbertraum, Definitionsbereich und Randbedingungen explizit angeben und wesentliche Selbstadjungiertheit sowie Diskretheit des Spektrums beweisen -- nicht behaupten.
 > - **Nicht-kanonischer Operator** *(Tier 2)* — Ein Hilbert–Pólya-Operator wird konstruiert, um das richtige Spektrum zu haben, statt aus der Arithmetik zu entstehen.
 >   *Fluchtbedingung:* Der Operator muss auf einem arithmetisch definierten Raum leben (Adele, arithmetic site, gefolierter Raum) UND eine Spurformel erfüllen, deren geometrische Seite die Primzahlterme der expliziten Formel liefert. Selbstadjungiertheit muss auf einem konkret angegebenen Definitionsbereich bewiesen sein, nicht behauptet.
 > 

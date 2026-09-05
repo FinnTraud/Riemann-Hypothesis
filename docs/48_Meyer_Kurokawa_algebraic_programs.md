@@ -51,15 +51,36 @@ motiviert vom Wunsch, „Spec(ℤ) ×_{𝔽₁} Spec(ℤ)" zetafunktional zu rea
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `spectral` |
+> | Implikation | `partial` |
+> | Euler-Produkt | `essential` |
+> | Positivität | `must-prove` |
+> | Strenge | `program` |
+> | Evidenz | `weak` |
+> | Testbar | `low` |
+> | Formalisierbar | `low` |
+> 
+> **Offener Kernschritt:** Meyers Spektralrealisierung existiert OHNE RH - genau deshalb erzwingt sie die Lage nicht.
+> 
+> **Hebel:** Zeigt präzise, was eine Spektralrealisierung leisten muss (und was nicht reicht).
+> 
+> **Fehlermodi:** [[F3_non-canonical-operator|F3 Nicht-kanonischer Operator]] · [[F10_analogy-transfer-gap|F10 Fehlende Geometrie über Spec(ℤ)]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-48`
+
 > [!warning]- Blocker — woran dieser Ansatz hängt (1)
 > - **Fehlende Geometrie über Spec(ℤ)** *(Tier 2)* — Der bewiesene Funktionenkörperfall braucht eine Fläche C×_𝔽 C; das Analogon Spec(ℤ)×_{𝔽₁}Spec(ℤ) existiert nicht.
 >   *Fluchtbedingung:* Konstruktion einer Kohomologietheorie über Spec(ℤ) mit (a) Lefschetz-Formel, die die explizite Formel reproduziert, (b) Poincaré-Dualität, (c) einem Positivitäts-/Index-Satz (Hodge-Index-Analogon). Alle drei, nicht nur (a).
 > 
 > Vollständige Matrix: [[55_failure_taxonomy]]
 
-> [!abstract]- Graph-Nachbarn (2)
+> [!abstract]- Graph-Nachbarn (3)
 > - *versucht Transfer von* → **Geometrie-Transfer (Funktionenkörper→ℤ)** — Kurokawa absolute Zeta/Tensorprodukte.
 > - *modelliert* → **Hilbert–Pólya / spektrale Interpretation** — Meyer: distributionelle Spektralrealisierung.
+> - ← *folgt Blaupause* [[73_Tate_thesis_adelic_analysis|73 · Tates These & adelische Analysis]] — Meyers Distributionenansatz setzt Tates Rahmen fort.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 

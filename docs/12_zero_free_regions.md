@@ -88,14 +88,35 @@ Unter RH wäre der Fehler O(√x log²x) — exponentiell besser. Das illustrier
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `analytic` |
+> | Implikation | `partial` |
+> | Euler-Produkt | `essential` |
+> | Positivität | `n/a` |
+> | Strenge | `theorem` |
+> | Evidenz | `n/a` |
+> | Testbar | `high` |
+> | Formalisierbar | `medium` |
+> 
+> **Offener Kernschritt:** Vinogradov-Korobov-Region ist seit 1958 nicht substanziell verbessert; jede Verbesserung Richtung fester Streifen wäre ein Durchbruch.
+> 
+> **Hebel:** Einzige Methode, die Nullstellen wirklich ausschließt - nur eben nicht genug.
+> 
+> **Fehlermodi:** [[F13_error-term-ceiling|F13 Anteils-Decke der Mollifier-Methoden]] · [[F12_ineffective-nonuniform|F12 Ineffektive oder nicht gleichmaessige Konstanten]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-12`
+
 > [!warning]- Blocker — woran dieser Ansatz hängt (1)
 > - **Paritätsbarriere** *(Tier 1)* — Siebmethoden können gerade und ungerade Primfaktorzahl prinzipiell nicht trennen — genau das misst μ(n).
 >   *Fluchtbedingung:* Ein bilinearer Input (Typ-II-Summen), ein Spektralinput (automorphe Formen) oder eine andere Quelle von Kancellation, die nicht aus dem Sieb selbst kommt.
 > 
 > Vollständige Matrix: [[55_failure_taxonomy]]
 
-> [!abstract]- Graph-Nachbarn (1)
+> [!abstract]- Graph-Nachbarn (2)
 > - *schwächer als* → **Riemann-Vermutung (RH)** — Nullstellenfreie Region ist weit schwächer als RH.
+> - ← *wird obstruiert von* [[68_Beurling_generalized_primes|68 · Beurlingsche verallgemeinerte Primzahlen]] — Zeigt: die klassische nullstellenfreie Region ist im Beurling-Rahmen optimal.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 

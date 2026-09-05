@@ -54,6 +54,26 @@ Dies macht die Universalität sogar zu einem (eher theoretischen) RH-Kriterium.
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `analytic` |
+> | Implikation | `none` |
+> | Euler-Produkt | `essential` |
+> | Positivität | `n/a` |
+> | Strenge | `theorem` |
+> | Evidenz | `n/a` |
+> | Testbar | `medium` |
+> | Formalisierbar | `low` |
+> 
+> **Offener Kernschritt:** Keiner - der Satz ist eine Obstruktion, kein Ansatz.
+> 
+> **Hebel:** Schließt eine ganze Klasse von Beweisversuchen aus.
+> 
+> **Fehlermodi:** [[F7_soft-function-theory|F7 Weichheitsbarriere (Voronin)]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-46`
+
 > [!warning]- Blocker — woran dieser Ansatz hängt (2)
 > - **Euler-Blindheit** *(Tier 1)* — Das Argument benutzt nur Funktionalgleichung, Fortsetzung und Wachstum — es würde für Davenport–Heilbronn genauso gelten und ist damit falsch.
 >   *Fluchtbedingung:* Mindestens ein Beweisschritt muss eine Eigenschaft benutzen, die für Davenport–Heilbronn NACHWEISLICH FALSCH ist — praktisch immer: Multiplikativität der Koeffizienten / Euler-Produkt.
@@ -62,10 +82,11 @@ Dies macht die Universalität sogar zu einem (eher theoretischen) RH-Kriterium.
 > 
 > Vollständige Matrix: [[55_failure_taxonomy]]
 
-> [!abstract]- Graph-Nachbarn (3)
+> [!abstract]- Graph-Nachbarn (4)
 > - *äquivalent zu* → **Riemann-Vermutung (RH)** — Bagchi: starke Rekurrenz von ζ ⟺ RH (Universalitäts-Kriterium).
 > - *ist Obstruktion für* → **Riemann-Vermutung (RH)** — Voronin-Universalität: 'weiche' funktionentheoretische Beweise unmöglich.
 > - *ist Obstruktion für* → [[52_Connes_truncated_Weil_spectral_realization|52 · Abgeschnittene Weil-Quadratform & Zeta-Spektraltrip…]] — Voronin-Universalitaet schliesst 'weiche' Argumente aus; Dok. 52 arbeitet ueber Positivitaet, nicht ueber Nullstellenformeln.
+> - ← *wird benutzt von* [[77_Bagchi_strong_recurrence|77 · Bagchis Satz]] — Beruht direkt auf Voronin-Universalität.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 

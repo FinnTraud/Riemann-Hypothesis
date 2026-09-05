@@ -61,8 +61,9 @@ limsup (p_{n+1} − p_n)/(log p_n)²  ≥  2 e^{−γ} ≈ 1,1229.
 > 
 > Vollständige Matrix: [[55_failure_taxonomy]]
 
-> [!abstract]- Graph-Nachbarn (1)
+> [!abstract]- Graph-Nachbarn (2)
 > - *ist Evidenz für* → [[35_obstructions_barriers|35 · Obstruktionen & Barrieren]] — Maier-Satz: probabilistisches Modell im Detail falsch (Warnung).
+> - ← *modelliert von* [[69_Mobius_randomness_Chowla_Sarnak|69 · Möbius-Zufälligkeit]] — Alternatives, präziseres Zufälligkeitsmodell gegenüber Cramér.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 

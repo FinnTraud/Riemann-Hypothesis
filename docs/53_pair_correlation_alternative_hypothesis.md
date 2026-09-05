@@ -131,6 +131,26 @@ präzise als offene Aufgabe formuliert.
 
 <!-- OBSIDIAN-LINKS:BEGIN (generiert von kb/obsidian.py) -->
 
+> [!info]- Achsenprofil — wie dieser Ansatz einzuordnen ist
+> | Achse | Wert |
+> |---|---|
+> | Familie | `probabilistic` |
+> | Implikation | `partial` |
+> | Euler-Produkt | `essential` |
+> | Positivität | `n/a` |
+> | Strenge | `theorem` |
+> | Evidenz | `medium` |
+> | Testbar | `high` |
+> | Formalisierbar | `low` |
+> 
+> **Offener Kernschritt:** AH ausschließen - mit heutiger Trägerbedingung nicht möglich.
+> 
+> **Hebel:** PCC allein liefert 100% einfache Nullstellen auf der Geraden.
+> 
+> **Fehlermodi:** [[F14_model-without-implication|F14 Zirkularität der Modellannahme]] · [[F13_error-term-ceiling|F13 Anteils-Decke der Mollifier-Methoden]]
+> 
+> Vergleich: [[78_approach_comparison_matrix]] · `python3 kb/compare.py profile doc-53`
+
 > [!warning]- Blocker — woran dieser Ansatz hängt (1)
 > - **Zirkularität der Modellannahme** *(Tier 3)* — Zufallsmatrix- und probabilistische Modelle setzen die RH voraus, um überhaupt formuliert werden zu können.
 >   *Fluchtbedingung:* Unbedingte Formulierung: Aussagen über Nullstellen ohne die Annahme, dass sie auf der Geraden liegen (doc-53 ist der Prototyp).
@@ -142,13 +162,14 @@ präzise als offene Aufgabe formuliert.
 > **Es fehlt:** Die Paarkorrelationsvermutung selbst — bzw. der Ausschluss der Alternativen Hypothese (Abstände konzentriert auf halbzahligen Vielfachen).
 > **Typ:** bedingt auf offene vermutung · Bewertung: [[58_gap_registry_near_miss]]
 
-> [!abstract]- Graph-Nachbarn (6)
+> [!abstract]- Graph-Nachbarn (7)
 > - *verallgemeinert* → [[06_Montgomery_pair_correlation_RMT|06 · Montgomery-Paarkorrelation & Random-Matrix-Theorie]] — Nimmt die RH-Annahme aus der Gallagher-Mueller-Methode heraus.
 > - *ist Teilresultat für* → **Kritische Gerade Re(s)=1/2** — PCC (ohne RH) impliziert 100 % einfache Nullstellen auf der kritischen Geraden.
 > - *benutzt* → [[07_Keating_Snaith_moments|07 · Keating–Snaith]] — Teilt den Random-Matrix-Rahmen mit Keating-Snaith.
 > - *schwächer als* → [[04_Levinson_Conrey_positive_proportion|04 · Levinson, Conrey & Co.]] — Die 100-%-Aussagen sind bedingt; unbedingt sind bislang nur ~41 % (Conrey).
 > - ← *hat Instanz* **Paarkorrelation der Nullstellen (Montgomery F(alpha,T))** — Dok. 53 behandelt die Paarkorrelation ohne RH-Annahme.
 > - ← *hat Instanz* **Alternative Hypothese (AH)** — Dok. 53 formuliert und verschaerft die Alternative Hypothese.
+> - ← *wird obstruiert von* [[76_higher_correlations_Rudnick_Sarnak|76 · Höhere Korrelationen]] — Trägerbedingung erklärt, warum die Alternative Hypothese nicht auszuschließen ist.
 
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
