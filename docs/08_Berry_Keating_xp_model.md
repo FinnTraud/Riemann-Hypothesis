@@ -114,6 +114,8 @@ Connes' adelische Version (Dok. 10) liefert statt eines diskreten Emissionsspekt
 > - *modelliert* → **Hilbert–Pólya / spektrale Interpretation** — Berry–Keating xp-Modell (nur geglättete Dichte).
 > - ← *wird benutzt von* [[56_failure_autopsies|56 · Fehler-Autopsien]] — Autopsie A5: Modell ohne selbstadjungierte Realisierung.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/1-heuristik (Heuristik) · scheitert an #scheitert-an/F1 #scheitert-an/F3 #scheitert-an/F4
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

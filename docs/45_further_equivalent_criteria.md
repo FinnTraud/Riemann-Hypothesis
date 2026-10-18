@@ -86,6 +86,8 @@ Die explizite Konstante (2+γ−log 4π) macht dies zum **konkretesten numerisch
 > - *äquivalent zu* → **Riemann-Vermutung (RH)** — Volchkov/Sekatskii/Redheffer/Salem/BBLS-Kriterien ⟺ RH.
 > - ← *äquivalent zu* [[16_Mertens_function_Riesz_criterion|16 · Mertens-Funktion & Riesz-Kriterium]] — Redheffer-Matrix det(R_n)=M(n) verbindet Mertens und Matrix-Kriterium.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/3-umformulierung (Umformulierung bewiesen) · scheitert an #scheitert-an/F2 #scheitert-an/F11
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

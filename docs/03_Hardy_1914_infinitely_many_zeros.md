@@ -103,6 +103,8 @@ Sei N₀(T) die Anzahl der Nullstellen *auf* der kritischen Geraden bis Höhe T,
 > - *ist Teilresultat für* → **Riemann-Vermutung (RH)** — Hardy: unendlich viele Nullstellen auf der Geraden.
 > - ← *Spezialfall von* [[04_Levinson_Conrey_positive_proportion|04 · Levinson, Conrey & Co.]] — Quantifiziert Hardys Resultat (positiver Anteil).
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/4-bewiesen (Teilresultat / Analogon bewiesen) · scheitert an #scheitert-an/F13
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

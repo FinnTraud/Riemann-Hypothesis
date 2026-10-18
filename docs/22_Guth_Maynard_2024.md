@@ -110,6 +110,8 @@ Bessere N(σ,T)-Schranken ⇒ asymptotische Primzahlzählung in kürzeren Interv
 > - ← *gestützt durch* [[49_live_analytic_frontier|49 · Live-Front der analytischen Zahlentheorie]] — Live-Front: explizite Dichte, Subkonvexität, Momente.
 > - ← *wird benutzt von* [[54_machine_assisted_number_theory_ANTEDB_Lean|54 · Maschinengestützte Zahlentheorie]] — Additive Energie der Nullstellen ist die Guth-Maynard-Zwischengroesse.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/4-bewiesen (Teilresultat / Analogon bewiesen) · scheitert an #scheitert-an/F13
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

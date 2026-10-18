@@ -115,6 +115,8 @@ Das Hybridmodell ist **symmetrisch in der Nullstellenlage**: `Z_X` ist über *di
 > - *benutzt* → **Euler-Produkt (Multiplikativität)** — Kurzes Euler-Produkt P_X als arithmetischer Faktor.
 > - ← *wird benutzt von* [[75_extreme_values_FHK_multiplicative_chaos|75 · Extremwerte von ζ]] — Zerlegung in Primzahl- und Nullstellenanteil ist der technische Kern.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/2-offen (Offenes Programm) · scheitert an #scheitert-an/F14
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

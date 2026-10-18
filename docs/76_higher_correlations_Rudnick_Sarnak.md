@@ -112,6 +112,8 @@ Im **Funktionenkörperfall** ist das ein **Satz** (Katz–Sarnak, via Deligne-Ä
 > - *benutzt* → **Explizite Formel (Primzahlen↔Nullstellen)** — Übersetzt Nullstellenkorrelationen in Primzahlsummen.
 > - *benutzt* → [[18_Weil_conjectures_function_fields_Deligne|18 · Weil-Vermutungen]] — Katz–Sarnak: im Funktionenkörperfall ist die Symmetrie ein Satz.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/4-bewiesen (Teilresultat / Analogon bewiesen) · scheitert an #scheitert-an/F13 #scheitert-an/F14
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

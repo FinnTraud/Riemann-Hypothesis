@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scheiternskarte RH</title>
+<!-- Vorlage fuer kb/failure_map.py. Die erzeugte Datei viz/scheiternskarte.html nicht von Hand aendern. -->
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
+  --grid: #e1e0d9; --axis: #c3c2b7; --ring: rgba(11,11,11,0.10);
+  --stage-0: #86b6ef; --stage-1: #5598e7; --stage-2: #2a78d6; --stage-3: #1c5cab; --stage-4: #104281;
+  --blocker: #eb6834; --edge: #c3c2b7; --edge-hi: #52514e;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --axis: #383835; --ring: rgba(255,255,255,0.10);
+    --stage-0: #184f95; --stage-1: #2a78d6; --stage-2: #5598e7; --stage-3: #86b6ef; --stage-4: #cde2fb;
+    --blocker: #d95926; --edge: #383835; --edge-hi: #c3c2b7;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
+  --grid: #2c2c2a; --axis: #383835; --ring: rgba(255,255,255,0.10);
+  --stage-0: #184f95; --stage-1: #2a78d6; --stage-2: #5598e7; --stage-3: #86b6ef; --stage-4: #cde2fb;
+  --blocker: #d95926; --edge: #383835; --edge-hi: #c3c2b7;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--page); color: var(--ink);
+  font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header { padding: 20px 16px 8px; max-width: 1400px; margin: 0 auto; }
+h1 { font-size: 22px; margin: 0 0 4px; font-weight: 650; }
+.sub { color: var(--ink-2); margin: 0; max-width: 820px; }
+.controls { max-width: 1400px; margin: 0 auto; padding: 8px 16px; display: flex; flex-wrap: wrap;
+  gap: 8px 16px; align-items: center; }
+.seg { display: inline-flex; border: 1px solid var(--ring); border-radius: 8px; overflow: hidden; }
+.seg button { border: 0; background: var(--surface); color: var(--ink-2); padding: 6px 12px; font: inherit; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
+label.chk { color: var(--ink-2); display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+select, input[type="search"] { font: inherit; color: var(--ink); background: var(--surface);
+  border: 1px solid var(--ring); border-radius: 8px; padding: 6px 8px; }
+input[type="search"] { width: 200px; max-width: 100%; }
+.legend { max-width: 1400px; margin: 0 auto; padding: 4px 16px 8px; display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; }
+.legend .title { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+.lg { display: inline-flex; align-items: center; gap: 6px; border: 1px solid transparent; background: none;
+  color: var(--ink-2); font: inherit; padding: 3px 6px; border-radius: 6px; cursor: pointer; }
+.lg:hover { border-color: var(--ring); }
+.lg[aria-pressed="false"] { opacity: .35; text-decoration: line-through; }
+.lg .n { color: var(--muted); font-variant-numeric: tabular-nums; }
+.sw { width: 12px; height: 12px; border-radius: 50%; display: inline-block; flex: none; }
+.dia { width: 11px; height: 11px; transform: rotate(45deg); display: inline-block; flex: none; margin: 0 1px; }
+.st0 { fill: var(--stage-0); background: var(--stage-0); } .st1 { fill: var(--stage-1); background: var(--stage-1); }
+.st2 { fill: var(--stage-2); background: var(--stage-2); } .st3 { fill: var(--stage-3); background: var(--stage-3); }
+.st4 { fill: var(--stage-4); background: var(--stage-4); }
+.sep { width: 1px; align-self: stretch; background: var(--grid); }
+main { max-width: 1400px; margin: 0 auto; padding: 0 16px 16px; display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px; gap: 16px; }
+@media (max-width: 860px) { main { grid-template-columns: minmax(0, 1fr); } }
+.stage { background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; position: relative;
+  height: min(76vh, 760px); min-height: 420px; overflow: hidden; touch-action: none; }
+svg { width: 100%; height: 100%; display: block; cursor: grab; user-select: none; }
+svg.panning { cursor: grabbing; }
+.link-fail { stroke: var(--edge); stroke-width: 1.2; }
+.link-rel { stroke: var(--edge); stroke-width: 1; stroke-dasharray: 3 3; }
+.link-fail.hi { stroke: var(--blocker); stroke-width: 2; }
+.link-rel.hi { stroke: var(--edge-hi); stroke-width: 1.5; }
+.fade { opacity: .12; }
+.node { cursor: pointer; }
+.node .mark { stroke: var(--surface); stroke-width: 2; }
+.node.sel .mark { stroke: var(--ink); stroke-width: 2.5; }
+.node .x { stroke: var(--surface); stroke-width: 2; stroke-linecap: round; }
+.node .hit { fill: transparent; }
+.blk .mark { fill: var(--blocker); }
+.blk.t2 .mark { fill: var(--surface); stroke: var(--blocker); stroke-width: 3; }
+.blk.t3 .mark { fill: var(--surface); stroke: var(--blocker); stroke-width: 2.5; stroke-dasharray: 4 3; }
+.blk.sel .mark { stroke: var(--ink); }
+.lbl { fill: var(--ink-2); paint-order: stroke; stroke: var(--surface); pointer-events: none; }
+.lbl.blk-lbl { fill: var(--ink); font-weight: 600; }
+.colhead { fill: var(--muted); text-anchor: middle; font-weight: 600; }
+.tip { position: absolute; pointer-events: none; background: var(--surface); color: var(--ink); border: 1px solid var(--ring);
+  border-radius: 8px; padding: 8px 10px; font-size: 12px; max-width: 280px; box-shadow: 0 4px 16px rgba(0,0,0,.12); display: none; }
+.tip b { display: block; margin-bottom: 2px; }
+.tip .m { color: var(--ink-2); }
+.zoom { position: absolute; right: 10px; bottom: 10px; display: flex; flex-direction: column; gap: 4px; }
+.zoom button { width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--ring); background: var(--surface);
+  color: var(--ink); font: 16px system-ui; cursor: pointer; }
+aside { background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; padding: 16px;
+  max-height: min(76vh, 760px); overflow: auto; }
+@media (max-width: 860px) { aside { max-height: none; } }
+aside h2 { font-size: 17px; margin: 0 0 6px; }
+aside h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 16px 0 6px; }
+aside p { margin: 4px 0; color: var(--ink-2); }
+aside code { font-size: 12px; color: var(--muted); }
+.chip { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--ink-2);
+  border: 1px solid var(--ring); border-radius: 999px; padding: 2px 8px; margin: 2px 4px 2px 0; }
+.item { display: flex; gap: 8px; align-items: flex-start; padding: 6px 0; border-top: 1px solid var(--grid); }
+.item:first-child { border-top: 0; }
+.item button, a.jump { all: unset; cursor: pointer; color: var(--ink); text-decoration: underline;
+  text-decoration-color: var(--axis); text-underline-offset: 2px; }
+.item button:focus-visible, a.jump:focus-visible { outline: 2px solid var(--stage-2); }
+.item .sw, .item .dia { margin-top: 4px; }
+.item small { display: block; color: var(--ink-2); }
+details.flucht { margin-top: 2px; color: var(--ink-2); font-size: 13px; }
+details.flucht summary { cursor: pointer; color: var(--muted); }
+.bar { display: flex; height: 8px; border-radius: 4px; overflow: hidden; gap: 2px; margin: 6px 0 2px; }
+section.tbl { max-width: 1400px; margin: 0 auto; padding: 0 16px 32px; }
+section.tbl summary { cursor: pointer; color: var(--ink-2); }
+table { border-collapse: collapse; width: 100%; margin-top: 8px; font-size: 13px; background: var(--surface); }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--grid); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; }
+.wrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Scheiternskarte der Riemann-Hypothese</h1>
+  <p class="sub">Jeder Kreis ist ein Beweisversuch. Die Farbe zeigt, wie weit er gekommen ist, die Kanten führen zu den
+  Blockern (◆), an denen er hängt. Die Stufen beschreiben den erreichten Endstand, keine Rangliste des Werts.</p>
+</header>
+
+<div class="controls">
+  <div class="seg" role="group" aria-label="Ansicht">
+    <button id="mNet" aria-pressed="true">Netzwerk</button>
+    <button id="mCol" aria-pressed="false">Nach Reichweite</button>
+  </div>
+  <label class="chk"><input type="checkbox" id="rel"> Querverbindungen zwischen Versuchen</label>
+  <select id="fam" aria-label="Familie"><option value="">Alle Familien</option></select>
+  <input type="search" id="q" placeholder="Versuch oder Blocker suchen" aria-label="Suchen">
+</div>
+
+<div class="legend" id="legend" aria-label="Legende"></div>
+
+<main>
+  <div class="stage" id="stage">
+    <svg id="svg" role="img" aria-label="Netzwerk der Beweisversuche und ihrer Blocker">
+      <g id="world"><g id="cols"></g><g id="links"></g><g id="nodes"></g><g id="labels"></g></g>
+    </svg>
+    <div class="tip" id="tip"></div>
+    <div class="zoom"><button id="zin" aria-label="Vergrößern">+</button><button id="zout" aria-label="Verkleinern">−</button><button id="zfit" aria-label="Einpassen">⤢</button></div>
+  </div>
+  <aside id="panel" aria-live="polite"></aside>
+</main>
+
+<section class="tbl">
+  <details><summary>Als Tabelle anzeigen</summary><div class="wrap"><table id="table"></table></div></details>
+</section>
+
+<script>
+const DATA = /*__DATA__*/null;
+const S = DATA.stages, A = DATA.attempts, B = DATA.blockers;
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const NS = "http://www.w3.org/2000/svg";
+const el = (tag, attrs = {}, parent) => { const e = document.createElementNS(NS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
+
+// ---------- Modell ----------
+const nodes = [], byId = {};
+A.forEach(a => { const n = { ...a, kind: "a", r: 9 }; nodes.push(n); byId[a.id] = n; });
+B.forEach(b => { const n = { ...b, kind: "b", r: 9 + Math.sqrt(b.n) * 2.6 }; nodes.push(n); byId[b.id] = n; });
+nodes.forEach(n => n.rc = n.kind === "b" ? n.r * 1.25 : n.r);
+// Spaltenansicht: Blocker auf festen Plaetzen, gruppiert nach Tier wie in der Legende
+nodes.filter(n => n.kind === "b").sort((a, b) => a.tier - b.tier || b.n - a.n)
+  .forEach((n, i, all) => n.cy = (i - (all.length - 1) / 2) * 38);
+const links = [];
+A.forEach(a => a.blockers.forEach(f => links.push({ s: byId[a.id], t: byId[f], kind: "fail" })));
+DATA.links.forEach(l => links.push({ s: byId[l.s], t: byId[l.t], kind: "rel", type: l.type }));
+const nbr = new Map(nodes.map(n => [n, new Set()]));
+links.forEach(l => { nbr.get(l.s).add(l.t); nbr.get(l.t).add(l.s); });
+
+const state = { mode: "net", rel: false, fam: "", q: "", stages: new Set(S.map(s => s.n)), sel: null, hover: null };
+const COLW = 200;
+const colX = n => n.kind === "b" ? (S.length - 2) * COLW + 40 : (n.stage - (S.length - 1) / 2 - 0.5) * COLW;
+
+function visible(n) {
+  if (n.kind === "b") return true;
+  if (!state.stages.has(n.stage)) return false;
+  if (state.fam && n.family !== state.fam) return false;
+  return true;
+}
+const linkOn = l => (l.kind === "fail" || state.rel) && visible(l.s) && visible(l.t);
+
+// ---------- Kraftsimulation (ohne Bibliothek) ----------
+let seed = 0x2f6b1d; // mulberry32: deterministisches Layout bei jedem Laden
+const rand = () => { seed = (seed + 0x6d2b79f5) | 0; let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+  t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+nodes.forEach(n => { n.x = colX(n) + (rand() - .5) * 80; n.y = (rand() - .5) * 500; n.vx = 0; n.vy = 0; });
+let alpha = 1;
+function tick() {
+  const vis = nodes.filter(visible), act = links.filter(linkOn);
+  for (let i = 0; i < vis.length; i++) for (let j = i + 1; j < vis.length; j++) {
+    const a = vis[i], b = vis[j]; let dx = b.x - a.x, dy = b.y - a.y, d2 = dx * dx + dy * dy || 1;
+    if (d2 > 160000) continue;
+    const f = (state.mode === "col" ? 600 : 1400) * alpha / d2, d = Math.sqrt(d2);
+    a.vx -= dx / d * f; a.vy -= dy / d * f; b.vx += dx / d * f; b.vy += dy / d * f;
+    const min = a.rc + b.rc + 6;
+    if (d < min) { const p = (min - d) / d * .5; a.x -= dx * p; a.y -= dy * p; b.x += dx * p; b.y += dy * p; }
+  }
+  act.forEach(l => {
+    const len = l.kind === "fail" ? 95 : 70, k = state.mode === "col" ? .02 : (l.kind === "fail" ? .06 : .03);
+    let dx = l.t.x - l.s.x, dy = l.t.y - l.s.y, d = Math.hypot(dx, dy) || 1;
+    const f = (d - len) / d * k * alpha, ws = l.s.kind === "b" ? .25 : 1, wt = l.t.kind === "b" ? .25 : 1;
+    if (state.mode === "col") { dx = 0; }
+    l.s.vx += dx * f * ws; l.s.vy += dy * f * ws; l.t.vx -= dx * f * wt; l.t.vy -= dy * f * wt;
+  });
+  vis.forEach(n => {
+    if (state.mode === "col" && n.kind === "b") { n.x = colX(n); n.y = n.cy; n.vx = n.vy = 0; return; }
+    if (state.mode === "col") { n.vx += (colX(n) - n.x) * .3 * alpha; n.vy -= n.y * .01 * alpha; }
+    else { n.vx -= n.x * .012 * alpha; n.vy -= n.y * .02 * alpha; }
+    if (n.fixed) { n.vx = n.vy = 0; return; }
+    n.vx *= .6; n.vy *= .6; n.x += n.vx; n.y += n.vy;
+  });
+  alpha *= .985;
+}
+for (let i = 0; i < 260; i++) tick();
+let running = false;
+function heat(a = .6) { alpha = Math.max(alpha, a); if (!running) { running = true; requestAnimationFrame(loop); } }
+function loop() { tick(); draw(); if (alpha > .01) requestAnimationFrame(loop); else { running = false; drawCols(); } }
+
+// ---------- Zeichnen ----------
+const svg = document.getElementById("svg"), world = document.getElementById("world");
+const gL = document.getElementById("links"), gN = document.getElementById("nodes"), gT = document.getElementById("labels"), gC = document.getElementById("cols");
+const view = { x: 0, y: 0, k: 1 };
+function applyView() { const r = svg.getBoundingClientRect();
+  world.setAttribute("transform", `translate(${r.width / 2 + view.x},${r.height / 2 + view.y}) scale(${view.k})`);
+  // Schrift bleibt beim Zoomen gleich gross
+  gT.style.fontSize = (11 / view.k) + "px"; gT.style.strokeWidth = (3 / view.k) + "px";
+  gC.style.fontSize = (12 / view.k) + "px"; drawCols(); draw(); }
+
+links.forEach(l => { l.el = el("line", { class: l.kind === "fail" ? "link-fail" : "link-rel" }, gL); });
+const DIA = r => `M0,${-r} L${r},0 L0,${r} L${-r},0 Z`;
+nodes.forEach(n => {
+  const g = el("g", { class: n.kind === "a" ? "node att" : `node blk t${n.tier}`, tabindex: 0, role: "button",
+    "aria-label": n.kind === "a" ? `${n.label}, ${S[n.stage].label}` : `Blocker ${n.id} ${n.name}` }, gN);
+  el("circle", { class: "hit", r: n.r + 7 }, g);
+  if (n.kind === "a") {
+    el("circle", { class: `mark st${n.stage}`, r: n.r }, g);
+    if (n.stage === 0) { const c = 3.6; el("path", { class: "x", d: `M${-c},${-c}L${c},${c}M${c},${-c}L${-c},${c}` }, g); }
+  } else el("path", { class: "mark", d: DIA(n.r * 1.25) }, g);
+  n.el = g;
+  n.lbl = el("text", { class: n.kind === "b" ? "lbl blk-lbl" : "lbl", "text-anchor": "middle" }, gT);
+  n.lbl.textContent = n.kind === "b" ? `${n.id} ${n.name}` : n.label;
+  g.addEventListener("pointerenter", e => { state.hover = n; showTip(n, e); restyle(); });
+  g.addEventListener("pointerleave", () => { state.hover = null; hideTip(); restyle(); });
+  g.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select(n); } });
+  g.addEventListener("pointerdown", e => startDrag(e, n));
+});
+
+function drawCols() {
+  gC.innerHTML = "";
+  if (state.mode !== "col") return;
+  const top = Math.min(...nodes.filter(visible).map(n => n.y - n.rc)) - 40 / view.k;
+  const head = (x, txt) => { const t = el("text", { class: "colhead", x, y: top }, gC);
+    const w = txt.split(" "), mid = Math.ceil(w.length / 2);
+    [w.slice(0, mid).join(" "), w.slice(mid).join(" ")].filter(Boolean).forEach((line, i) => {
+      const ts = el("tspan", { x, dy: i ? 15 / view.k : 0 }, t); ts.textContent = line; }); };
+  S.forEach(s => head((s.n - (S.length - 1) / 2 - .5) * COLW, s.label));
+  head((S.length - 2) * COLW + 40, "Blocker (nach Tier)");
+}
+
+function draw() {
+  links.forEach(l => { l.el.setAttribute("x1", l.s.x); l.el.setAttribute("y1", l.s.y); l.el.setAttribute("x2", l.t.x); l.el.setAttribute("y2", l.t.y); });
+  nodes.forEach(n => { n.el.setAttribute("transform", `translate(${n.x},${n.y})`);
+    const side = n.kind === "b" && state.mode === "col", u = 1 / view.k;
+    n.lbl.setAttribute("text-anchor", side ? "start" : "middle");
+    n.lbl.setAttribute("x", side ? n.x + n.rc + 8 * u : n.x);
+    n.lbl.setAttribute("y", side ? n.y + 4 * u : n.kind === "b" ? n.y - n.rc - 6 * u : n.y + n.r + 13 * u); });
+}
+
+function matches(n) {
+  if (!state.q) return true;
+  const q = state.q.toLowerCase();
+  return (n.label || "").toLowerCase().includes(q) || (n.name || "").toLowerCase().includes(q) || n.id.toLowerCase() === q;
+}
+
+function restyle() {
+  const focus = state.hover || state.sel;
+  const near = focus ? new Set([focus, ...nbr.get(focus)]) : null;
+  nodes.forEach(n => {
+    const on = visible(n);
+    n.el.style.display = on ? "" : "none";
+    const dim = (near && !near.has(n)) || (!near && state.q && !matches(n));
+    n.el.classList.toggle("fade", !!dim);
+    n.el.classList.toggle("sel", n === state.sel);
+    const showLbl = on && !dim && (n.kind === "b" || (near && near.has(n)) || (state.q && matches(n)));
+    n.lbl.style.display = showLbl ? "" : "none";
+    if (n.kind === "b") n.lbl.textContent = state.mode === "col" || n === focus ? `${n.id} ${n.name}` : n.id;
+    n.lbl.classList.toggle("fade", !!dim);
+  });
+  links.forEach(l => {
+    const on = linkOn(l); l.el.style.display = on ? "" : "none";
+    const hi = focus && (l.s === focus || l.t === focus);
+    l.el.classList.toggle("hi", !!hi);
+    l.el.classList.toggle("fade", !!(focus && !hi) || (!focus && state.q && !(matches(l.s) || matches(l.t))));
+  });
+}
+
+// ---------- Tooltip ----------
+const tip = document.getElementById("tip"), stageBox = document.getElementById("stage");
+function showTip(n, e) {
+  tip.innerHTML = n.kind === "a"
+    ? `<b>${esc(n.label)}</b><span class="m">${esc(S[n.stage].label)} · ${esc(n.family)}</span><br>scheitert an: ${n.blockers.map(f => esc(f + " " + byId[f].name)).join(", ") || "—"}`
+    : `<b>${esc(n.id)} ${esc(n.name)}</b><span class="m">Tier ${n.tier} · ${n.n} Versuche</span><br>${esc(n.kurz)}`;
+  tip.style.display = "block"; moveTip(e);
+}
+function moveTip(e) { const r = stageBox.getBoundingClientRect();
+  let x = e.clientX - r.left + 14, y = e.clientY - r.top + 14;
+  if (x + 290 > r.width) x = Math.max(8, x - 300);
+  if (y + tip.offsetHeight > r.height) y = Math.max(8, y - tip.offsetHeight - 24);
+  tip.style.left = x + "px"; tip.style.top = y + "px"; }
+function hideTip() { tip.style.display = "none"; }
+
+// ---------- Zoom, Pan, Ziehen ----------
+let drag = null;
+function toWorld(e) { const r = svg.getBoundingClientRect();
+  return { x: (e.clientX - r.left - r.width / 2 - view.x) / view.k, y: (e.clientY - r.top - r.height / 2 - view.y) / view.k }; }
+function startDrag(e, n) { e.stopPropagation(); drag = { n, moved: false, sx: e.clientX, sy: e.clientY }; n.fixed = true; svg.setPointerCapture(e.pointerId); }
+svg.addEventListener("pointerdown", e => { drag = { pan: true, sx: e.clientX, sy: e.clientY, vx: view.x, vy: view.y, moved: false }; svg.classList.add("panning"); svg.setPointerCapture(e.pointerId); });
+svg.addEventListener("pointermove", e => {
+  if (!drag) { if (state.hover) moveTip(e); return; }
+  if (Math.hypot(e.clientX - drag.sx, e.clientY - drag.sy) > 3) drag.moved = true;
+  if (drag.pan) { view.x = drag.vx + e.clientX - drag.sx; view.y = drag.vy + e.clientY - drag.sy; applyView(); }
+  else if (drag.moved) { const p = toWorld(e); drag.n.x = p.x; drag.n.y = p.y; hideTip(); heat(.15); draw(); }
+});
+svg.addEventListener("pointerup", () => {
+  if (!drag) return;
+  svg.classList.remove("panning");
+  if (drag.n) { drag.n.fixed = false; if (!drag.moved) select(drag.n); }
+  else if (!drag.moved) select(null);
+  drag = null;
+});
+svg.addEventListener("wheel", e => { e.preventDefault(); zoomAt(e.deltaY < 0 ? 1.15 : 1 / 1.15, e); }, { passive: false });
+function zoomAt(f, e) { const r = svg.getBoundingClientRect();
+  const cx = e ? e.clientX - r.left - r.width / 2 : 0, cy = e ? e.clientY - r.top - r.height / 2 : 0;
+  const k = Math.min(4, Math.max(.25, view.k * f)); f = k / view.k;
+  view.x = cx - (cx - view.x) * f; view.y = cy - (cy - view.y) * f; view.k = k; applyView(); }
+function fit() { const vis = nodes.filter(visible); if (!vis.length) return; const r = svg.getBoundingClientRect();
+  let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;
+  vis.forEach(n => { x0 = Math.min(x0, n.x - n.rc); x1 = Math.max(x1, n.x + n.rc); y0 = Math.min(y0, n.y - n.rc); y1 = Math.max(y1, n.y + n.rc); });
+  // Raender in Bildschirmpixeln: Platz fuer Beschriftungen, die nicht mitskalieren
+  const col = state.mode === "col", pl = col ? 70 : 40, pr = col ? 300 : 40, pt = col ? 80 : 40, pb = 40;
+  view.k = Math.min(1.6, (r.width - pl - pr) / (x1 - x0 || 1), (r.height - pt - pb) / (y1 - y0 || 1));
+  view.x = (pl - pr) / 2 - (x0 + x1) / 2 * view.k; view.y = (pt - pb) / 2 - (y0 + y1) / 2 * view.k; applyView(); }
+document.getElementById("zin").onclick = () => zoomAt(1.25);
+document.getElementById("zout").onclick = () => zoomAt(1 / 1.25);
+document.getElementById("zfit").onclick = fit;
+window.addEventListener("resize", applyView);
+
+// ---------- Legende & Filter ----------
+const legend = document.getElementById("legend");
+const cnt = s => A.filter(a => a.stage === s.n).length;
+legend.innerHTML = `<span class="title">Reichweite</span>` +
+  S.map(s => `<button class="lg" data-stage="${s.n}" aria-pressed="true" title="${esc(s.rule)}"><span class="sw st${s.n}"></span>${esc(s.label)} <span class="n">${cnt(s)}</span></button>`).join("") +
+  `<span class="sep"></span><span class="title">Blocker</span>` +
+  `<span class="lg" style="cursor:default"><span class="dia" style="background:var(--blocker)"></span>Tier 1 · Gegenbeispiel</span>` +
+  `<span class="lg" style="cursor:default"><span class="dia" style="border:2.5px solid var(--blocker)"></span>Tier 2 · strukturelle Lücke</span>` +
+  `<span class="lg" style="cursor:default"><span class="dia" style="border:2px dashed var(--blocker)"></span>Tier 3 · Methodengrenze</span>` +
+  `<span class="lg" style="cursor:default">Größe ◆ = Anzahl Versuche</span>`;
+legend.querySelectorAll("button[data-stage]").forEach(b => b.onclick = () => {
+  const n = +b.dataset.stage; state.stages.has(n) ? state.stages.delete(n) : state.stages.add(n);
+  b.setAttribute("aria-pressed", state.stages.has(n)); if (state.sel && !visible(state.sel)) select(null); restyle(); heat(.4); });
+const fam = document.getElementById("fam");
+[...new Set(A.map(a => a.family))].sort().forEach(f => fam.add(new Option(f, f)));
+fam.onchange = () => { state.fam = fam.value; if (state.sel && !visible(state.sel)) select(null); restyle(); heat(.4); };
+document.getElementById("q").oninput = e => { state.q = e.target.value.trim(); restyle(); };
+document.getElementById("rel").onchange = e => { state.rel = e.target.checked; restyle(); heat(.4); };
+function setMode(m) { state.mode = m; document.getElementById("mNet").setAttribute("aria-pressed", m === "net");
+  document.getElementById("mCol").setAttribute("aria-pressed", m === "col"); drawCols();
+  for (let i = 0; i < 200; i++) { alpha = Math.max(alpha, .8 - i * .003); tick(); } draw(); drawCols(); fit(); restyle(); }
+document.getElementById("mNet").onclick = () => setMode("net");
+document.getElementById("mCol").onclick = () => setMode("col");
+
+// ---------- Detailpanel ----------
+const panel = document.getElementById("panel");
+const sw = n => n.kind === "a" ? `<span class="sw st${n.stage}"></span>` : `<span class="dia" style="background:var(--blocker)"></span>`;
+const jump = n => `<button data-go="${esc(n.id)}">${esc(n.kind === "a" ? n.label : n.id + " " + n.name)}</button>`;
+function select(n) { state.sel = n; render(); restyle(); }
+function render() {
+  const n = state.sel;
+  if (!n) {
+    const tot = A.length;
+    panel.innerHTML = `<h2>Überblick</h2><p>${tot} Versuche, ${B.length} Blocker. Knoten anklicken für Details, Legende anklicken zum Ein-/Ausblenden.</p>
+      <h3>Wie weit die Versuche kommen</h3><div class="bar">${S.map(s => `<span class="st${s.n}" style="flex:${cnt(s)}" title="${esc(s.label)}: ${cnt(s)}"></span>`).join("")}</div>
+      ${S.slice().reverse().map(s => `<div class="item">${`<span class="sw st${s.n}"></span>`}<div>${esc(s.label)} · ${cnt(s)}<small>${esc(s.rule)}</small></div></div>`).join("")}
+      <h3>Häufigste Blocker</h3>${B.slice().sort((a, b) => b.n - a.n).slice(0, 8).map(b => `<div class="item">${sw(byId[b.id])}<div>${jump(byId[b.id])}<small>Tier ${b.tier} · ${b.n} Versuche</small></div></div>`).join("")}`;
+  } else if (n.kind === "a") {
+    const rel = [...nbr.get(n)].filter(m => m.kind === "a");
+    panel.innerHTML = `<h2>${esc(n.label)}</h2><code>${esc(n.file)}</code>
+      <div><span class="chip"><span class="sw st${n.stage}"></span>${esc(S[n.stage].label)}</span><span class="chip">${esc(n.family)}</span>${n.status ? `<span class="chip">Status: ${esc(n.status)}</span>` : ""}</div>
+      <h3>Wie weit</h3><p>${esc(S[n.stage].rule)}</p>
+      ${n.open_step ? `<h3>Wo es hängt</h3><p>${esc(n.open_step)}</p>` : ""}
+      ${n.lever ? `<h3>Was er erreicht hat</h3><p>${esc(n.lever)}</p>` : ""}
+      <h3>Scheitert an (${n.blockers.length})</h3>${n.blockers.map(f => { const b = byId[f]; return `<div class="item">${sw(b)}<div>${jump(b)} <small>Tier ${b.tier} · ${esc(b.kurz)}</small><details class="flucht"><summary>Fluchtbedingung</summary>${esc(b.flucht)}</details></div></div>`; }).join("") || "<p>—</p>"}
+      ${rel.length ? `<h3>Verbunden mit</h3>${rel.map(m => `<div class="item">${sw(m)}<div>${jump(m)}</div></div>`).join("")}` : ""}`;
+  } else {
+    const hit = A.filter(a => a.blockers.includes(n.id)).sort((a, b) => b.stage - a.stage);
+    const tier = { 1: "Tier 1 · harte Obstruktion mit Gegenbeispiel", 2: "Tier 2 · strukturelle Lücke ohne bekannten Ausweg", 3: "Tier 3 · Methodengrenze / Warnung" }[n.tier];
+    panel.innerHTML = `<h2>${esc(n.id)} ${esc(n.name)}</h2><code>${esc(n.file)}</code><div><span class="chip">${esc(tier)}</span></div>
+      <p>${esc(n.kurz)}</p><h3>Fluchtbedingung</h3><p>${esc(n.flucht)}</p>
+      ${n.frage ? `<h3>Prüffrage</h3><p>${esc(n.frage)}</p>` : ""}
+      <h3>Betroffene Versuche (${hit.length})</h3><div class="bar">${S.map(s => { const c = hit.filter(a => a.stage === s.n).length; return c ? `<span class="st${s.n}" style="flex:${c}" title="${esc(s.label)}: ${c}"></span>` : ""; }).join("")}</div>
+      ${hit.map(a => `<div class="item">${sw(byId[a.id])}<div>${jump(byId[a.id])}<small>${esc(S[a.stage].label)}</small></div></div>`).join("")}`;
+  }
+  panel.querySelectorAll("[data-go]").forEach(b => b.onclick = () => select(byId[b.dataset.go]));
+}
+
+// ---------- Tabelle ----------
+document.getElementById("table").innerHTML = `<thead><tr><th>Versuch</th><th>Familie</th><th>Reichweite</th><th>Scheitert an</th><th>Datei</th></tr></thead><tbody>` +
+  A.slice().sort((a, b) => b.stage - a.stage || a.label.localeCompare(b.label)).map(a =>
+    `<tr><td>${esc(a.label)}</td><td>${esc(a.family)}</td><td><span class="sw st${a.stage}"></span> ${esc(S[a.stage].label)}</td><td>${a.blockers.map(f => esc(f + " " + byId[f].name)).join(", ")}</td><td><code>${esc(a.file)}</code></td></tr>`).join("") + `</tbody>`;
+
+draw(); restyle(); render(); applyView(); fit();
+</script>
+</body>
+</html>

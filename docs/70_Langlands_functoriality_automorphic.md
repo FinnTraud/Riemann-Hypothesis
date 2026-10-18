@@ -98,6 +98,8 @@ Diese Asymmetrie ist **der** Kern des Problems und verbindet dieses Dokument dir
 > - *benutzt* → [[21_GRH_Selberg_class_grand_RH|21 · Verallgemeinerte, Große Riemann-Vermutung & Selberg…]] — Selberg-Klasse als axiomatische Schattenversion der automorphen Welt.
 > - *benutzt* → [[18_Weil_conjectures_function_fields_Deligne|18 · Weil-Vermutungen]] — Ramanujan–Petersson (lokales RH-Analogon) folgt aus Deligne/Weil.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/2-offen (Offenes Programm) · scheitert an #scheitert-an/F10
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

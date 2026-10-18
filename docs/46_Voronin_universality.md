@@ -88,6 +88,8 @@ Dies macht die Universalität sogar zu einem (eher theoretischen) RH-Kriterium.
 > - *ist Obstruktion für* → [[52_Connes_truncated_Weil_spectral_realization|52 · Abgeschnittene Weil-Quadratform & Zeta-Spektraltrip…]] — Voronin-Universalitaet schliesst 'weiche' Argumente aus; Dok. 52 arbeitet ueber Positivitaet, nicht ueber Nullstellenformeln.
 > - ← *wird benutzt von* [[77_Bagchi_strong_recurrence|77 · Bagchis Satz]] — Beruht direkt auf Voronin-Universalität.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/4-bewiesen (Teilresultat / Analogon bewiesen) · scheitert an #scheitert-an/F1 #scheitert-an/F7
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

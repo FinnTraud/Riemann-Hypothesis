@@ -109,6 +109,8 @@ Eine dazu äquivalente, operatorfreie Fassung (Dok. 29): RH ⟺ ξ liegt in der 
 > [!abstract]- Graph-Nachbarn (1)
 > - *ist Instanz von* → **Hilbert–Pólya / spektrale Interpretation** — Hilbert–Pólya-Vermutung selbst.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/2-offen (Offenes Programm) · scheitert an #scheitert-an/F3 #scheitert-an/F4
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

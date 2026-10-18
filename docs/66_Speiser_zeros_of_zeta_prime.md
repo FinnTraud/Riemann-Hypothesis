@@ -94,6 +94,8 @@ Unter RH liegen alle ζ′-Nullstellen rechts von Re = 1/2, können ihr aber bel
 > - *ist Instanz von* → **Kritische Gerade Re(s)=1/2** — Charakterisierung der Geraden über die Ableitung.
 > - *benutzt* → [[23_de_Bruijn_Newman_constant_Polymath15|23 · De-Bruijn–Newman-Konstante]] — Lehmer-Paare erzwingen ζ′-Nullstellen sehr nahe an der Geraden.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/3-umformulierung (Umformulierung bewiesen) · scheitert an #scheitert-an/F11 #scheitert-an/F13
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

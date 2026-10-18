@@ -112,6 +112,8 @@ Für eine geeignete Testfunktion h (gerade, holomorph im Streifen) mit Fourier-T
 > - *ist Blaupause für* → **Hilbert–Pólya / spektrale Interpretation** — Selberg: BEWIESENES Modell (Laplace selbstadjungiert ⇒ RH-Analogon).
 > - *ist Blaupause für* → **Explizite Formel (Primzahlen↔Nullstellen)** — Selberg-Spurformel = Analogon der expliziten Formel.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/4-bewiesen (Teilresultat / Analogon bewiesen) · scheitert an #scheitert-an/F10
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

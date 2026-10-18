@@ -19,7 +19,9 @@ Dieses Modul uebersetzt den Graphen in Obsidian-Bordmittel:
                     Community-Plugin und in diesem Repo nicht mitgeliefert).
   3. CANVAS         Canvas/Zeitachse_Motive.canvas   (Zeit x Leitmotiv)
                     Canvas/Obstruktionskarte.canvas  (Blocker <-> Ansaetze)
-  4. KONFIG         .obsidian/ mit Graph-Farbgruppen nach Kategorie.
+  4. KONFIG         .obsidian/ mit Graph-Farbgruppen: Versuche nach Reichweite,
+                    Blocker-Notizen orange (Legende: docs/_Scheiternskarte.md,
+                    erzeugt von kb/failure_map.py).
   5. ATOMNOTIZEN    docs/fehlermodi/ (je Blocker), docs/concepts/ (je Konzept),
                     docs/moc/ (Maps of Content je Ansatz-Familie). Alle drei
                     Verzeichnisse sind GENERIERT -- Quelle ist kb/graph/.
@@ -36,8 +38,12 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 from collections import defaultdict
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import failure_map  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs"
@@ -161,6 +167,7 @@ def build_link_blocks(docs):
     gap_of = {g["doc"]: g for g in gaps}
 
     appr, _ = _approaches()
+    fmap = failure_map.build()
     blk_by_id = {b["id"]: b for b in blockers}
     f_to_blk = {b["f_mode"]: b for b in blockers if b.get("f_mode")}
 
@@ -224,6 +231,11 @@ def build_link_blocks(docs):
         if rel:
             lines.append(f"> [!abstract]- Graph-Nachbarn ({len(rel)})")
             lines.extend(rel)
+            lines.append("")
+
+        tag_line = failure_map.obsidian_tag_line(did, fmap)
+        if tag_line:
+            lines.append(tag_line)
             lines.append("")
 
         lines.append("**Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · "
@@ -475,13 +487,8 @@ def write_obsidian_config(dry=False):
             "collapse-filter": False, "search": "", "showTags": True,
             "showAttachments": False, "hideUnresolved": True, "showOrphans": True,
             "collapse-color-groups": False,
-            "colorGroups": [
-                {"query": "path:docs/ tag:#obstruction OR file:(35 OR 55 OR 56 OR 59 OR 60)",
-                 "color": {"a": 1, "rgb": 14701138}},
-                {"query": "path:docs/ category:spectral", "color": {"a": 1, "rgb": 5431378}},
-                {"query": "path:docs/ category:criterion", "color": {"a": 1, "rgb": 11621088}},
-                {"query": "path:docs/ category:proven-analogue", "color": {"a": 1, "rgb": 5099334}},
-                {"query": "path:docs/ category:failed-proof", "color": {"a": 1, "rgb": 14701138}},
+            # Erste passende Gruppe gewinnt: Reichweite und Blocker vor Meta.
+            "colorGroups": failure_map.obsidian_color_groups() + [
                 {"query": "path:docs/ category:meta", "color": {"a": 1, "rgb": 8355711}},
             ],
             "collapse-display": False, "showArrow": True, "textFadeMultiplier": 0,
@@ -706,6 +713,12 @@ def main(argv=None):
 
     cfg = write_obsidian_config(dry=dry)
     print(f".obsidian/: {', '.join(cfg)}")
+
+    if not dry:
+        data = failure_map.build()
+        failure_map.write_note(data)
+        failure_map.write_html(data)
+    print("Scheiternskarte: docs/_Scheiternskarte.md · viz/scheiternskarte.html")
 
 
 if __name__ == "__main__":

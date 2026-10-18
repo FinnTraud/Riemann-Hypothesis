@@ -84,13 +84,20 @@ python3 kb/compare.py diagnose "<Beweisidee>"  # gegen alle 15 Fehlermodi prüfe
 python3 kb/invariants.py                  # Prüfliste: beweist es zu viel? (docs/59)
 python3 kb/trust.py                       # Verifikationsstufen (docs/64)
 python3 kb/validate.py                    # Konsistenz des Wissensgraphen
+python3 kb/failure_map.py                 # Scheiternskarte: Reichweite + Blocker je Versuch
 python3 kb/matrix.py && python3 kb/gaps.py && python3 kb/obsidian.py   # alles neu generieren
 ```
 
 ## Als Obsidian-Vault
 Repo in Obsidian als Vault öffnen. Die Konfiguration liegt bei (`.obsidian/`,
-Graph-Farbgruppen nach Kategorie). Danach:
-- **Graph View** zeigt die 209 kuratierten Kanten statt isolierter Punkte
+Graph-Farbgruppen nach Reichweite). Danach:
+- **Graph View** zeigt die 209 kuratierten Kanten statt isolierter Punkte;
+  jeder Versuch ist nach seiner **Reichweite** eingefärbt (hell = widerlegt →
+  dunkel = Teilresultat/Analogon bewiesen), die Blocker-Notizen sind orange.
+  Legende und Regeln: **`docs/_Scheiternskarte.md`**
+- **`viz/scheiternskarte.html`** — dieselbe Karte interaktiv im Browser: Netzwerk
+  oder Spalten nach Reichweite, Klick auf einen Versuch zeigt, woran er hängt
+  (offener Kernschritt, Blocker, Fluchtbedingung)
 - **`docs/_Statusboard.md`** ist das Dashboard (Dataview optional — statische
   Tabelle als Fallback ist eingebaut)
 - **`Canvas/Zeitachse_Motive.canvas`** — 165 Jahre in vier Leitmotiv-Spalten
@@ -121,8 +128,10 @@ docs/fehlermodi/      generiert: je Blocker eine Atomnotiz (F1-F15)
 docs/concepts/        generiert: je Konzept eine Hub-Notiz
 docs/moc/             generiert: Maps of Content je Ansatz-Familie
 docs/_Statusboard.md  generiertes Dashboard
+docs/_Scheiternskarte.md  generiert: Legende Reichweite/Blocker + Liste
+viz/scheiternskarte.html  generiert: interaktive Scheiternskarte (offline)
 Canvas/               2 generierte Obsidian-Canvas
-.obsidian/            Vault-Konfiguration (Graph-Farbgruppen)
+.obsidian/            Vault-Konfiguration (Graph-Farbgruppen nach Reichweite)
 manifest.json         maschinenlesbares Verzeichnis
 README_RAG.md         Ingestion-/Chunking-Hinweise für Vektor-/MCP-Server
 kb/
@@ -143,6 +152,7 @@ kb/
   gaps.py             Near-Miss-Ranking                           -> docs/58
   trust.py            Verifikationsstufen je Claim                -> docs/64
   obsidian.py         Wikilinks + Canvas + Statusboard + Config
+  failure_map.py      Scheiternskarte (Reichweite-Stufen, Tags, HTML)
   validate.py         Konsistenzpruefung des Graphen
   graph/              kuratierte Knoten/Kanten/Claims/Blocker/Luecken/Invarianten
                       + approaches.json (45 Ansaetze x 8 Achsen)

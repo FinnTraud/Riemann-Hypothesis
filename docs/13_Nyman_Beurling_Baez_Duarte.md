@@ -122,6 +122,8 @@ was den direkten Bezug Distanz ↔ Nullstellenlage herstellt.
 > - ← *gestützt durch* [[65_criterion_sensitivity|65 · Sensitivität der Kriterien]] — Miss die numerische Reichweite der Baez-Duarte-Distanz d_N.
 > - ← *wird benutzt von* [[14_Li_criterion_Bombieri_Lagarias_Weil_positivity|14 · Li-Kriterium, Bombieri–Lagarias & Weil-Positivität]] — Beide Positivitäts-/Dichtekriterien, gemeinsames Leitmotiv.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/3-umformulierung (Umformulierung bewiesen) · scheitert an #scheitert-an/F2 #scheitert-an/F9 #scheitert-an/F11
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

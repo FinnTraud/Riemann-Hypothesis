@@ -126,6 +126,8 @@ Abbildung und Einordnung (samt Grenzen — N = 500 ist tief, die Konvergenz loga
 > - ← *hat Instanz* **Paarkorrelation der Nullstellen (Montgomery F(alpha,T))** — Dok. 06 fuehrt Montgomerys Paarkorrelation ein.
 > - ← *modelliert von* [[74_hybrid_Euler_Hadamard_product|74 · Hybrides Euler–Hadamard-Produkt]] — Trennt arithmetischen von spektralem Anteil der Statistik.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/4-bewiesen (Teilresultat / Analogon bewiesen) · scheitert an #scheitert-an/F6 #scheitert-an/F13 #scheitert-an/F14
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

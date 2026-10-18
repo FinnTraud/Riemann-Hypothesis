@@ -119,6 +119,8 @@ Die Determinante det_∞ (zeta-regularisiert) und die benötigte H¹-Kohomologie
 > - *benutzt* → [[34_Bost_Connes_system|34 · Bost–Connes-System]] — Bost–Connes liefert Galois-/Frobenius-Symmetrie fürs 𝔽₁-Programm.
 > - ← *ist Reduktionsziel von* [[72_Arakelov_geometry_SpecZ_compactification|72 · Arakelov-Geometrie & die Kompaktifizierung von Spec…]] — Für die fehlende zweite Dimension braucht man Spec ℤ ×_{𝔽₁} Spec ℤ.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/2-offen (Offenes Programm) · scheitert an #scheitert-an/F2 #scheitert-an/F10
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

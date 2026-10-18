@@ -96,6 +96,8 @@ Ein Millennium-Beweis wird erst nach Publikation in einer angesehenen Zeitschrif
 > - *widerlegt durch* → **Riemann-Vermutung (RH)** — Diverse zurückgezogene/fehlerhafte Behauptungen.
 > - ← *wird benutzt von* [[56_failure_autopsies|56 · Fehler-Autopsien]] — Autopsie A6: der Standardfehler der arXiv-Klasse.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/0-widerlegt (Widerlegt / zurückgezogen) · scheitert an #scheitert-an/F1 #scheitert-an/F5 #scheitert-an/F7 #scheitert-an/F15
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

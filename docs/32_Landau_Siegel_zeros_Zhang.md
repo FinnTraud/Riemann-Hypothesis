@@ -126,6 +126,8 @@ Die effektive Schranke ist schwächer als „keine Siegel-Nullstelle" (das wäre
 > - ← *modelliert von* **Alternative Hypothese (AH)** — Landau-Siegel-Ausnahmenullstellen erzwingen AH-artige Starrheit im Abstandsspektrum.
 > - ← *wird obstruiert von* [[70_Langlands_functoriality_automorphic|70 · Langlands-Funktorialität & automorphe L-Funktionen]] — Landau–Siegel-Nullstellen bleiben mit voller Funktorialität verträglich.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/2-offen (Offenes Programm) · scheitert an #scheitert-an/F8 #scheitert-an/F12
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

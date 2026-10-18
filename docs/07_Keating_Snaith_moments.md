@@ -124,6 +124,8 @@ Momentschranken ⇒ untere Schranken für N₀(T)/N(T) (Anteil auf der Geraden, 
 > - ← *ist Reduktionsziel von* [[74_hybrid_Euler_Hadamard_product|74 · Hybrides Euler–Hadamard-Produkt]] — Strukturelle Begründung der Keating–Snaith-Vorhersage.
 > - ← *wird benutzt von* [[53_pair_correlation_alternative_hypothesis|53 · Paarkorrelation ohne RH & die Alternative Hypothese]] — Teilt den Random-Matrix-Rahmen mit Keating-Snaith.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/1-heuristik (Heuristik) · scheitert an #scheitert-an/F13 #scheitert-an/F14
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

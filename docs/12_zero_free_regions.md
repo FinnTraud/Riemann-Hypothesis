@@ -118,6 +118,8 @@ Unter RH wäre der Fehler O(√x log²x) — exponentiell besser. Das illustrier
 > - *schwächer als* → **Riemann-Vermutung (RH)** — Nullstellenfreie Region ist weit schwächer als RH.
 > - ← *wird obstruiert von* [[68_Beurling_generalized_primes|68 · Beurlingsche verallgemeinerte Primzahlen]] — Zeigt: die klassische nullstellenfreie Region ist im Beurling-Rahmen optimal.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/4-bewiesen (Teilresultat / Analogon bewiesen) · scheitert an #scheitert-an/F8 #scheitert-an/F12 #scheitert-an/F13
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

@@ -89,6 +89,8 @@ Für einen Zahlkörper K liefert das Connes–Marcolli-System die **Dedekind-Zet
 > - ← *folgt Blaupause* [[73_Tate_thesis_adelic_analysis|73 · Tates These & adelische Analysis]] — Bost–Connes lebt auf demselben adelischen Objekt.
 > - ← *wird benutzt von* [[30_F1_field_one_element_arithmetic_site|30 · Der Körper mit einem Element]] — Bost–Connes liefert Galois-/Frobenius-Symmetrie fürs 𝔽₁-Programm.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/2-offen (Offenes Programm) · scheitert an #scheitert-an/F10 #scheitert-an/F14
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

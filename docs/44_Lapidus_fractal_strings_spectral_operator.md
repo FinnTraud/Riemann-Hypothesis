@@ -108,6 +108,8 @@ Dies ordnet sich in das Hilbert–Pólya-Bild ein (Dok. 05): „komplexe Dimensi
 > - *äquivalent zu* → **Riemann-Vermutung (RH)** — Lapidus: inverses Spektralproblem für alle D≠1/2 ⟺ RH.
 > - *modelliert* → **Hilbert–Pólya / spektrale Interpretation** — Lapidus-Spektraloperator ζ(∂).
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/3-umformulierung (Umformulierung bewiesen) · scheitert an #scheitert-an/F9 #scheitert-an/F11
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

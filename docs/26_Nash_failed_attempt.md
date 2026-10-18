@@ -68,6 +68,8 @@ Historisch/biografisch bedeutsam als Mahnung über die Schwere des Problems; mat
 > - *widerlegt durch* → **Riemann-Vermutung (RH)** — Nash: nie kohärenter Beweis.
 > - ← *wird benutzt von* [[56_failure_autopsies|56 · Fehler-Autopsien]] — Autopsie A3: kein pruefbares Artefakt.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/0-widerlegt (Widerlegt / zurückgezogen) · scheitert an #scheitert-an/F5 #scheitert-an/F15
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

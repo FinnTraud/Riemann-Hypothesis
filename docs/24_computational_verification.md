@@ -126,6 +126,8 @@ Alle gefundenen Nullstellen: einfach und exakt auf Re(s) = 1/2.
 > - ← *wird benutzt von* [[60_counterexample_oracle|60 · Das Gegenbeispiel-Orakel]] — Benutzt Turings Nullstellenzaehlung als Verletzungsdetektor.
 > - ← *wird benutzt von* [[65_criterion_sensitivity|65 · Sensitivität der Kriterien]] — Direkte Nullstellenberechnung als Referenzmassstab.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/4-bewiesen (Teilresultat / Analogon bewiesen) · scheitert an #scheitert-an/F6
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

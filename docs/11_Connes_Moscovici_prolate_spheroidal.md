@@ -100,6 +100,8 @@ Die Übereinstimmung E_n ~ (γ_n/2)² ist **asymptotisch** (führende Ordnung im
 > - *modelliert* → **Hilbert–Pólya / spektrale Interpretation** — Prolate-Operator: approximative HP-Realisierung.
 > - ← *wird benutzt von* [[52_Connes_truncated_Weil_spectral_realization|52 · Abgeschnittene Weil-Quadratform & Zeta-Spektraltrip…]] — Setzt die Connes-Moscovici-Linie (prolate spheroidal, Skalierungsoperator) fort.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/2-offen (Offenes Programm) · scheitert an #scheitert-an/F2 #scheitert-an/F3 #scheitert-an/F4 #scheitert-an/F9
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->

@@ -8,38 +8,45 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:docs/ tag:#obstruction OR file:(35 OR 55 OR 56 OR 59 OR 60)",
+      "query": "tag:#reichweite/0-widerlegt",
       "color": {
         "a": 1,
-        "rgb": 14701138
+        "rgb": 8828655
       }
     },
     {
-      "query": "path:docs/ category:spectral",
+      "query": "tag:#reichweite/1-heuristik",
       "color": {
         "a": 1,
-        "rgb": 5431378
+        "rgb": 5609703
       }
     },
     {
-      "query": "path:docs/ category:criterion",
+      "query": "tag:#reichweite/2-offen",
       "color": {
         "a": 1,
-        "rgb": 11621088
+        "rgb": 2783446
       }
     },
     {
-      "query": "path:docs/ category:proven-analogue",
+      "query": "tag:#reichweite/3-umformulierung",
       "color": {
         "a": 1,
-        "rgb": 5099334
+        "rgb": 1858731
       }
     },
     {
-      "query": "path:docs/ category:failed-proof",
+      "query": "tag:#reichweite/4-bewiesen",
       "color": {
         "a": 1,
-        "rgb": 14701138
+        "rgb": 1065601
+      }
+    },
+    {
+      "query": "path:docs/fehlermodi",
+      "color": {
+        "a": 1,
+        "rgb": 15427636
       }
     },
     {

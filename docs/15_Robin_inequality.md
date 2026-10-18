@@ -119,6 +119,8 @@ mit Gleichheit nur bei n = 1. **Herleitung:** Da H_n = log n + γ + O(1/n) und e
 > - ← *gestützt durch* [[65_criterion_sensitivity|65 · Sensitivität der Kriterien]] — Miss die Robin-Marge entlang kolossal abundanter Zahlen.
 > - ← *wird benutzt von* [[61_negative_space_if_rh_is_false|61 · Negativraum]] — Robin: RH falsch ⇒ unendlich viele Ausnahmen.
 
+**[[_Scheiternskarte|Scheiternskarte]]:** #reichweite/3-umformulierung (Umformulierung bewiesen) · scheitert an #scheitert-an/F6 #scheitert-an/F11
+
 **Meta-Ebene:** [[55_failure_taxonomy|55 · Muster im Scheitern]] · [[56_failure_autopsies|56 · Autopsien]] · [[57_untried_directions|57 · Noch nicht versucht]] · [[58_gap_registry_near_miss|58 · Lücken]] · [[59_invariants_test_vectors|59 · Invarianten]] · [[60_counterexample_oracle|60 · Orakel]] · [[_Statusboard|Statusboard]]
 
 <!-- OBSIDIAN-LINKS:END -->
