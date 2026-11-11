@@ -45,6 +45,11 @@ python3 kb/query.py zero 1            # 1. Nullstelle: γ = 14.1347…
 python3 kb/query.py scaffold "Ich will die RH beweisen"
 ```
 
+Nur die ersten 3 Nullstellen (γ-Werte), minimal:
+```bash
+python3 first_zeros.py
+```
+
 ## Als KI-Werkzeug (MCP-Server)
 ```bash
 pip install "mcp[cli]"
